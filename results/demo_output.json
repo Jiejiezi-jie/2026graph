@@ -1,0 +1,31 @@
+{
+  "question": "What is the most common type of skin cancer?",
+  "selected_route": "vector",
+  "route_probabilities": {
+    "light_proxy": 0.24695868840276292,
+    "path_proxy": 0.1338978494164853,
+    "vector": 0.6191434621807518
+  },
+  "answer_proxy": "Key points Squamous cell skin cancer is the second most common type of skin cancer. It is the second most common type of skin cancer, after basal cell carcinoma.",
+  "context_words": 538,
+  "latency_ms": 2.3246040000231005,
+  "retrieved_chunk_ids": [
+    27,
+    0,
+    43
+  ],
+  "trace": {
+    "strategy": "direct_tfidf",
+    "seed_chunks": [
+      27,
+      0,
+      43
+    ]
+  },
+  "context_previews": [
+    "hormones in blood, urine, and/or saliva that may be made by the adrenal tumor. Symptoms may be seen when your body makes too much of a hormone. Your doctor may consider these tests if you may have an adrenal tumor or syndromes caused by a tumor. More information on biochemical tests can be found in Guide Guide 1 Biochemical tests\nSquamous cell skin",
+    "About basal cell skin cancer What is basal cell skin cancer? How is basal cell skin cancer treated? What can you do to get the best care? Basal cell skin cancer, also known as basal cell carcinoma (BCC), is the most common type of skin cancer. About 3 million cases of basal cell skin cancer are diagnosed every year in the United States. The good ne",
+    "in other parts of the body. Lymph nodes are small, bean-shaped structures that are part of the body's immune system. Lymph nodes filter substances that travel through the lymphatic fluid. They contain lymphocytes (white blood cells) that help the body fight infection and disease. If your lymph nodes feel larger than they should be, cancer may have "
+  ],
+  "warning": "Extractive offline proxy, not an LLM-generated medical answer."
+}

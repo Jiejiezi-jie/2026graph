@@ -1,0 +1,21 @@
+{
+  "seed": 42,
+  "question_types": [
+    "Fact Retrieval",
+    "Complex Reasoning"
+  ],
+  "max_per_type": null,
+  "chunk_words": 180,
+  "chunk_overlap_words": 40,
+  "vector_top_k": 3,
+  "light_top_k": 5,
+  "path_top_k": 7,
+  "graph_neighbors": 8,
+  "graph_similarity_floor": 0.05,
+  "adjacent_edge_weight": 0.18,
+  "route_quality_tolerance": 0.02,
+  "evidence_hit_threshold": 0.75,
+  "test_size": 0.20,
+  "dev_size_within_train": 0.25
+}
+

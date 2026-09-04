@@ -1,0 +1,264 @@
+{
+  "protocol_status": "Offline retrieval-layer proxy run. These numbers are not official LightRAG/PathRAG generation results; official backends require an LLM API or Ollama.",
+  "benchmark": {
+    "name": "GraphRAG-Bench Medical",
+    "commit": "fdbab5959b18c96532580877ffe27d112bccc0ec",
+    "corpus_words": 174610,
+    "chunks": 1255,
+    "questions": 1607,
+    "question_type_counts": {
+      "Fact Retrieval": 1098,
+      "Complex Reasoning": 509
+    },
+    "split_counts": {
+      "test": 322,
+      "train": 963,
+      "dev": 322
+    }
+  },
+  "silver_label_distribution": {
+    "vector": 870,
+    "light_proxy": 330,
+    "path_proxy": 407
+  },
+  "router": {
+    "family": "TF-IDF + LogisticRegression",
+    "selected_hyperparameters": {
+      "feature_kind": "word_char",
+      "class_weight": "balanced",
+      "c_value": 0.5,
+      "macro_f1": 0.4263325728161817,
+      "accuracy": 0.484472049689441
+    },
+    "test_accuracy": 0.5031055900621118,
+    "test_macro_f1": 0.44936181232528777,
+    "majority_label": "vector",
+    "majority_accuracy": 0.5403726708074534,
+    "majority_macro_f1": 0.2338709677419355,
+    "labels": [
+      "vector",
+      "light_proxy",
+      "path_proxy"
+    ],
+    "confusion_matrix": [
+      [
+        105,
+        37,
+        32
+      ],
+      [
+        30,
+        19,
+        17
+      ],
+      [
+        27,
+        17,
+        38
+      ]
+    ],
+    "dataset_prior_ablation": [
+      {
+        "prior_repeats": 1,
+        "dev_accuracy": 0.4751552795031056,
+        "dev_macro_f1": 0.38871127717806075
+      },
+      {
+        "prior_repeats": 2,
+        "dev_accuracy": 0.48757763975155277,
+        "dev_macro_f1": 0.39275936116477617
+      }
+    ]
+  },
+  "test_policies": {
+    "vector": {
+      "n": 322,
+      "evidence_coverage": 0.7332819065444398,
+      "evidence_hit_rate": 0.5562831061278266,
+      "answer_proxy_rouge_l": 0.19169799967391693,
+      "context_words": 536.944099378882,
+      "latency_ms": 1.8446477173801559,
+      "route_distribution": {
+        "vector": 322
+      }
+    },
+    "light_proxy": {
+      "n": 322,
+      "evidence_coverage": 0.7680815418642615,
+      "evidence_hit_rate": 0.6139694415315533,
+      "answer_proxy_rouge_l": 0.191021831801577,
+      "context_words": 894.835403726708,
+      "latency_ms": 2.4967282017472745,
+      "route_distribution": {
+        "light_proxy": 322
+      }
+    },
+    "path_proxy": {
+      "n": 322,
+      "evidence_coverage": 0.8108730929632659,
+      "evidence_hit_rate": 0.6914492081417548,
+      "answer_proxy_rouge_l": 0.19596413276058147,
+      "context_words": 1252.7919254658384,
+      "latency_ms": 4.187774493911098,
+      "route_distribution": {
+        "path_proxy": 322
+      }
+    },
+    "adaptive": {
+      "n": 322,
+      "evidence_coverage": 0.7746376848528579,
+      "evidence_hit_rate": 0.6261800570030384,
+      "answer_proxy_rouge_l": 0.1928053060406725,
+      "context_words": 811.1552795031056,
+      "latency_ms": 2.7080267295250393,
+      "route_distribution": {
+        "vector": 162,
+        "path_proxy": 87,
+        "light_proxy": 73
+      }
+    },
+    "oracle": {
+      "n": 322,
+      "evidence_coverage": 0.8113134212685011,
+      "evidence_hit_rate": 0.6922256056572827,
+      "answer_proxy_rouge_l": 0.19336713382515278,
+      "context_words": 792.6708074534162,
+      "latency_ms": 2.6372887516106474,
+      "route_distribution": {
+        "vector": 174,
+        "path_proxy": 82,
+        "light_proxy": 66
+      }
+    }
+  },
+  "test_policies_by_question_type": {
+    "Fact Retrieval": {
+      "vector": {
+        "n": 220,
+        "evidence_coverage": 0.7711295866831581,
+        "evidence_hit_rate": 0.6259848484848485,
+        "answer_proxy_rouge_l": 0.20685803521577248,
+        "context_words": 536.9545454545455,
+        "latency_ms": 1.8441038862709485,
+        "route_distribution": {
+          "vector": 220
+        }
+      },
+      "light_proxy": {
+        "n": 220,
+        "evidence_coverage": 0.8018174774960489,
+        "evidence_hit_rate": 0.6731439393939392,
+        "answer_proxy_rouge_l": 0.20483897404851162,
+        "context_words": 894.9363636363636,
+        "latency_ms": 2.480564199967458,
+        "route_distribution": {
+          "light_proxy": 220
+        }
+      },
+      "path_proxy": {
+        "n": 220,
+        "evidence_coverage": 0.8468066850477565,
+        "evidence_hit_rate": 0.7560227272727272,
+        "answer_proxy_rouge_l": 0.20916167481521736,
+        "context_words": 1253.0590909090909,
+        "latency_ms": 3.98940987734849,
+        "route_distribution": {
+          "path_proxy": 220
+        }
+      },
+      "adaptive": {
+        "n": 220,
+        "evidence_coverage": 0.80844779856387,
+        "evidence_hit_rate": 0.6897348484848486,
+        "answer_proxy_rouge_l": 0.208480134270404,
+        "context_words": 743.45,
+        "latency_ms": 2.4088843269551448,
+        "route_distribution": {
+          "vector": 134,
+          "path_proxy": 41,
+          "light_proxy": 45
+        }
+      },
+      "oracle": {
+        "n": 220,
+        "evidence_coverage": 0.8467255162165876,
+        "evidence_hit_rate": 0.7560227272727272,
+        "answer_proxy_rouge_l": 0.20730850108241092,
+        "context_words": 738.8818181818182,
+        "latency_ms": 2.389384513695735,
+        "route_distribution": {
+          "vector": 138,
+          "path_proxy": 42,
+          "light_proxy": 40
+        }
+      }
+    },
+    "Complex Reasoning": {
+      "vector": {
+        "n": 102,
+        "evidence_coverage": 0.6516496552648514,
+        "evidence_hit_rate": 0.4059460147695442,
+        "answer_proxy_rouge_l": 0.15899988379932642,
+        "context_words": 536.9215686274509,
+        "latency_ms": 1.8458206864392304,
+        "route_distribution": {
+          "vector": 102
+        }
+      },
+      "light_proxy": {
+        "n": 102,
+        "evidence_coverage": 0.6953177591290337,
+        "evidence_hit_rate": 0.4863381716322892,
+        "answer_proxy_rouge_l": 0.1612201524454435,
+        "context_words": 894.6176470588235,
+        "latency_ms": 2.5315917349978596,
+        "route_distribution": {
+          "light_proxy": 102
+        }
+      },
+      "path_proxy": {
+        "n": 102,
+        "evidence_coverage": 0.7333692668986787,
+        "evidence_hit_rate": 0.5521729904082845,
+        "answer_proxy_rouge_l": 0.16749884597607265,
+        "context_words": 1252.2156862745098,
+        "latency_ms": 4.615619745320645,
+        "route_distribution": {
+          "path_proxy": 102
+        }
+      },
+      "adaptive": {
+        "n": 102,
+        "evidence_coverage": 0.7017139101820473,
+        "evidence_hit_rate": 0.48910109498344784,
+        "answer_proxy_rouge_l": 0.15899685299615368,
+        "context_words": 957.1862745098039,
+        "latency_ms": 3.353235833107165,
+        "route_distribution": {
+          "light_proxy": 28,
+          "path_proxy": 46,
+          "vector": 28
+        }
+      },
+      "oracle": {
+        "n": 102,
+        "evidence_coverage": 0.7349343929490988,
+        "evidence_hit_rate": 0.5546239708004413,
+        "answer_proxy_rouge_l": 0.16329751817224306,
+        "context_words": 908.6862745098039,
+        "latency_ms": 3.1719841667212427,
+        "route_distribution": {
+          "path_proxy": 40,
+          "vector": 36,
+          "light_proxy": 26
+        }
+      }
+    }
+  },
+  "runtime_seconds": 30.597378484999354,
+  "limitations": [
+    "Retrieval proxies use TF-IDF and a chunk graph; they are not paper-faithful LLM graph extraction.",
+    "Evidence coverage is a deterministic lexical proxy, while the official benchmark uses an LLM judge.",
+    "The extractive answer proxy is reported only as a pipeline sanity check, not as an LLM answer score."
+  ]
+}

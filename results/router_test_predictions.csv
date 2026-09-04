@@ -1,0 +1,323 @@
+id,question,question_type,silver_label,predicted_label,p_light_proxy,p_path_proxy,p_vector
+Medical-73586ddc,What is the most common type of skin cancer?,Fact Retrieval,vector,vector,0.24695868840276292,0.1338978494164853,0.6191434621807518
+Medical-6b0f8bc4,Does older age influence the risk of basal cell carcinoma?,Fact Retrieval,vector,vector,0.20271465425124877,0.14046753436803064,0.6568178113807206
+Medical-75c9949b,How does family history impact the risk of basal cell carcinoma?,Fact Retrieval,vector,vector,0.3103646255063456,0.15994599027744297,0.5296893842162115
+Medical-ec091b24,Is immune suppression a risk factor for BCC?,Fact Retrieval,vector,vector,0.102106763452006,0.24254048083693822,0.6553527557110559
+Medical-88c0b2ba,Which diagnostic methods are used for BCC?,Fact Retrieval,path_proxy,path_proxy,0.18995063215785424,0.6539926258602233,0.1560567419819224
+Medical-6884d3fa,What does follow-up for BCC typically include?,Fact Retrieval,path_proxy,light_proxy,0.43201632128732764,0.23799442653862274,0.32998925217404945
+Medical-fc6d1c33,Which skin cancer subtype arises from basal cells?,Fact Retrieval,vector,light_proxy,0.5037671715800981,0.09466070277718856,0.4015721256427134
+Medical-df1408f4,What hair and eye colors are associated with increased BCC risk?,Fact Retrieval,path_proxy,path_proxy,0.21553406421701665,0.49999351674534526,0.2844724190376379
+Medical-17ae12cd,Can a history of radiation therapy increase BCC risk?,Fact Retrieval,path_proxy,vector,0.2681801277761858,0.2549299534004634,0.47688991882335074
+Medical-5175a85e,What is the role of biopsy in BCC diagnosis?,Fact Retrieval,vector,path_proxy,0.25327681851739675,0.42844313830364084,0.31828004317896247
+Medical-e3923e5f,Can BCC spread to lymph nodes?,Fact Retrieval,vector,vector,0.1804811170934386,0.3448105419568847,0.4747083409496767
+Medical-b6dc1118,What is the relationship between organ transplant and BCC risk?,Fact Retrieval,path_proxy,vector,0.2698968192563794,0.2769792074829601,0.45312397326066045
+Medical-f6b5155a,Does a family history of skin cancer affect the risk of BCC?,Fact Retrieval,vector,vector,0.394247556068977,0.18574951387034375,0.42000293006067924
+Medical-4aab8ef7,What is the most common treatment for basal cell carcinoma?,Fact Retrieval,vector,vector,0.23851636275791147,0.17715160098921529,0.5843320362528733
+Medical-cb249d9b,What does recurrence mean in the context of BCC?,Fact Retrieval,path_proxy,path_proxy,0.27009798796047574,0.3805247414563176,0.34937727058320667
+Medical-de0b30b1,Are organ transplant recipients at higher risk for BCC?,Fact Retrieval,light_proxy,vector,0.32054627481718884,0.19980057306412669,0.47965315211868453
+Medical-74440a6a,What is included in annual follow-up for BCC patients?,Fact Retrieval,light_proxy,path_proxy,0.34359571450085646,0.35663936089049025,0.2997649246086532
+Medical-f80cbf85,What is the most common location affected by primary CNS lymphoma?,Fact Retrieval,vector,vector,0.24272806604958674,0.18401826573519667,0.5732536682152166
+Medical-304b0354,"List three anatomical sites, other than the brain, that primary CNS lymphoma can involve.",Fact Retrieval,vector,vector,0.35603660437149864,0.15349717114310743,0.49046622448539406
+Medical-1b824083,Which diagnostic imaging technique is considered most useful for identifying primary CNS lymphoma?,Fact Retrieval,vector,vector,0.23167977616570137,0.2951291643432615,0.4731910594910371
+Medical-8866282b,What are common symptoms of CSCC?,Fact Retrieval,light_proxy,light_proxy,0.5294894580328553,0.20377640085167653,0.26673414111546834
+Medical-c8c9c0ee,Which imaging modalities are used for staging and surveillance in CSCC?,Fact Retrieval,path_proxy,path_proxy,0.30185730721355636,0.49355396155036996,0.20458873123607363
+Medical-3e2b82f5,Which clinical management strategy is used for surveillance in high-risk or regional CSCC?,Fact Retrieval,vector,light_proxy,0.43777013916473634,0.2728652168730938,0.2893646439621697
+Medical-e49be454,Which chromosomal translocation results in the BCR::ABL1 gene?,Fact Retrieval,vector,vector,0.11850024879917564,0.1534115760456434,0.728088175155181
+Medical-dc60c354,Which phase of CML is considered advanced?,Fact Retrieval,vector,vector,0.3930513646147438,0.2050237403187725,0.4019248950664837
+Medical-62a9b979,Which blood cell type is produced in increased numbers in CML?,Fact Retrieval,vector,vector,0.2570939280508542,0.14909715927896758,0.5938089126701782
+Medical-5c8f25b0,Which phase of CML is associated with increased blasts in the blood or bone marrow?,Fact Retrieval,light_proxy,vector,0.1632008581753882,0.3376772597891379,0.4991218820354738
+Medical-9b7aadb2,Which two main laboratory methods are used for CML diagnosis?,Fact Retrieval,path_proxy,path_proxy,0.35459470470448,0.44869497413855786,0.19671032115696216
+Medical-f18cea43,What is the relationship between the Philadelphia chromosome and the BCR::ABL1 fusion gene?,Fact Retrieval,vector,vector,0.13135730428489312,0.31305298794499375,0.5555897077701131
+Medical-7db5b20d,Which progenitor cells are increased in blast phase CML?,Fact Retrieval,vector,vector,0.24681080138762532,0.27970680621642446,0.47348239239595014
+Medical-419cadfe,What type of cells does adenocarcinoma often form from?,Fact Retrieval,path_proxy,vector,0.2210458643697037,0.1498796610014211,0.6290744746288751
+Medical-74016ca7,What stages of NSCLC are considered locally advanced?,Fact Retrieval,vector,light_proxy,0.4391232989241434,0.2677025430975007,0.293174157978356
+Medical-64042235,List environmental risk factors for lung cancer besides tobacco.,Fact Retrieval,light_proxy,path_proxy,0.2719538778377804,0.42305634358312877,0.3049897785790907
+Medical-61cf41ee,What does follow-up care after lung cancer treatment include?,Fact Retrieval,vector,path_proxy,0.2819759845171131,0.3909365325982704,0.32708748288461664
+Medical-09d21113,Which imaging method is used to detect lung nodules?,Fact Retrieval,light_proxy,vector,0.2390940727799003,0.2282474025959828,0.5326585246241169
+Medical-4ae5ec38,What are the main treatments for NSCLC?,Fact Retrieval,light_proxy,path_proxy,0.33865710149365763,0.4566165327725972,0.2047263657337452
+Medical-2f2b791e,Which symptoms are specifically associated with NSCLC?,Fact Retrieval,path_proxy,path_proxy,0.29083336336823884,0.3770059857067973,0.33216065092496383
+Medical-6aaabde4,What is the relationship between NSCLC and lung carcinoma?,Fact Retrieval,vector,vector,0.23851177591708403,0.3609482538013341,0.4005399702815819
+Medical-de0767ce,What system is used to stage nasopharyngeal carcinoma?,Fact Retrieval,path_proxy,vector,0.3362189023245894,0.2151161350251433,0.44866496265026723
+Medical-51e5f06f,Which imaging methods are used for diagnosis of NPC?,Fact Retrieval,path_proxy,path_proxy,0.26341469868807155,0.5360875483840116,0.20049775292791683
+Medical-b696a6b5,What is the purpose of EBV DNA testing in NPC?,Fact Retrieval,light_proxy,vector,0.1364262250374482,0.24344062278715103,0.6201331521754008
+Medical-41723902,How is the cancer subtype determined in NPC?,Fact Retrieval,light_proxy,vector,0.41271414177297033,0.11083418941781195,0.4764516688092179
+Medical-0155c059,Which factors are considered prognostic in NPC?,Fact Retrieval,light_proxy,path_proxy,0.14620753023792332,0.5589511129156142,0.2948413568464625
+Medical-5d011928,What is the significance of symptoms being absent until advanced stage in NPC?,Fact Retrieval,vector,vector,0.2810737523316981,0.3195879731899729,0.39933827447832904
+Medical-35f3815e,From which type of polyp do most colon cancers originate?,Fact Retrieval,vector,vector,0.12991197033619958,0.12728526124692566,0.7428027684168748
+Medical-04a90969,Which types of polyps rarely become cancerous in the colon?,Fact Retrieval,vector,vector,0.3586200458569163,0.18787779654124453,0.4535021576018391
+Medical-d3fcc0fe,What procedure is used to remove polyps during colonoscopy?,Fact Retrieval,vector,vector,0.3421604930931595,0.26088693495760606,0.39695257194923445
+Medical-5b005bba,Which system is used to stage colon cancer?,Fact Retrieval,vector,vector,0.1740890656445762,0.25027920356979244,0.5756317307856313
+Medical-25302adf,What characterizes Stage 1 colon cancer?,Fact Retrieval,vector,vector,0.15877181590859266,0.38776620088176567,0.4534619832096417
+Medical-6c255c33,What is the primary cancer type affecting the esophagus?,Fact Retrieval,vector,vector,0.2570476125902507,0.24399385521885236,0.498958532190897
+Medical-34c3dd3d,Which cancer subtype arises from mucus-secreting cells in the esophagus?,Fact Retrieval,vector,vector,0.3504433142920151,0.14485375890085925,0.5047029268071256
+Medical-4bb6d825,What are the common metastatic sites for esophageal cancer?,Fact Retrieval,vector,vector,0.328442710861277,0.26655137999642287,0.4050059091423001
+Medical-deee1f4b,What are Siewert types used for in esophageal cancer?,Fact Retrieval,vector,light_proxy,0.5412452900712982,0.18460990021975882,0.27414480970894295
+Medical-db30377a,What anatomical layers can esophageal cancer invade?,Fact Retrieval,vector,light_proxy,0.5180983900483176,0.12486498825695713,0.3570366216947253
+Medical-0f576b9d,Which genetic assessments are part of esophageal cancer diagnosis?,Fact Retrieval,vector,vector,0.26590195138587785,0.19167243247756904,0.5424256161365532
+Medical-430e59ee,What methods are used for biomarker and genetic risk assessment in esophageal cancer?,Fact Retrieval,vector,light_proxy,0.4605307695868922,0.29524522401801306,0.24422400639509473
+Medical-c5412c78,What is the typical stage at diagnosis for non-mediastinal gray zone lymphomas?,Fact Retrieval,vector,vector,0.16992999790007957,0.15974626675715903,0.6703237353427614
+Medical-60151004,Which professional is required for the diagnosis of MGZL?,Fact Retrieval,vector,vector,0.32617246114211973,0.20957503061665955,0.4642525082412208
+Medical-e84ba674,Which cells are a histopathological hallmark of MGZL?,Fact Retrieval,light_proxy,vector,0.3864360617007591,0.19637860644876,0.41718533185048084
+Medical-47995a35,What is the epidemiological profile of non-mediastinal gray zone lymphomas?,Fact Retrieval,vector,vector,0.1308089733428611,0.1353550231021851,0.7338360035549538
+Medical-5f5a35d2,What is the main diagnostic method for gray zone lymphoma?,Fact Retrieval,path_proxy,vector,0.16434963564732738,0.3725301713114149,0.4631201930412578
+Medical-a52a80e6,Which virus is most commonly associated with cervical cancer?,Fact Retrieval,path_proxy,vector,0.20131413834010056,0.17624420175011427,0.6224416599097852
+Medical-e8a07389,Which radiation therapies are used for local control in cervical cancer?,Fact Retrieval,path_proxy,vector,0.3322153611196742,0.27107737903701296,0.39670725984331295
+Medical-bfa6e03a,What corresponds to a low-grade squamous intraepithelial lesion (LSIL) in cervical pathology?,Fact Retrieval,vector,vector,0.2838342120914128,0.21951983796355998,0.4966459499450273
+Medical-38ee28b6,What is the relationship between cervical dysplasia and cervical cancer?,Fact Retrieval,vector,vector,0.19710140115643357,0.2584761953882089,0.5444224034553576
+Medical-6c42674a,What type of cancer is Hodgkin lymphoma?,Fact Retrieval,vector,light_proxy,0.43733628552770154,0.1317895270764968,0.4308741873958017
+Medical-d81ad4db,Which cell type is characteristic of NLPHL?,Fact Retrieval,vector,vector,0.16764229688633442,0.23240512132597427,0.5999525817876913
+Medical-41eb01ac,Into which disease can NLPHL transform?,Fact Retrieval,vector,vector,0.24028932312151052,0.18715470301446716,0.5725559738640223
+Medical-2b8c042d,Where does Hodgkin lymphoma usually start?,Fact Retrieval,vector,vector,0.2862896144035748,0.2258804265017805,0.48782995909464477
+Medical-140a1830,What are the common sites involved in Hodgkin lymphoma?,Fact Retrieval,path_proxy,light_proxy,0.4453512928840113,0.2713267034298158,0.28332200368617283
+Medical-9d5ac399,What is the main cell type that distinguishes NLPHL from CHL?,Fact Retrieval,vector,vector,0.20827867855800336,0.39152734623687474,0.40019397520512195
+Medical-59a9ad6d,What are two age-related risk factors for Hodgkin lymphoma?,Fact Retrieval,path_proxy,path_proxy,0.35081273690652565,0.45552852153686363,0.19365874155661064
+Medical-15c48832,Which imaging techniques are part of the diagnostic methods for Hodgkin lymphoma?,Fact Retrieval,vector,light_proxy,0.38751206616603473,0.37121003950783016,0.24127789432613517
+Medical-14c841bc,On what basis is bile duct cancer staging determined?,Fact Retrieval,path_proxy,vector,0.31221293429704133,0.20952951103883322,0.47825755466412545
+Medical-d8aa135d,What is the primary tumor characteristic used for staging bile duct cancer?,Fact Retrieval,vector,vector,0.16947719674726966,0.30470302592885795,0.5258197773238724
+Medical-edc4f2c6,What is the relationship between the muscularis and perimuscular fibrous tissue?,Fact Retrieval,vector,path_proxy,0.2464754231119847,0.3896523548014115,0.36387222208660364
+Medical-af5dbcb0,What anatomical layers must a tumor penetrate to reach the serosa in the bile duct?,Fact Retrieval,vector,vector,0.23987514934367354,0.3411949957396367,0.41892985491668966
+Medical-78788ae0,From which cell type does follicular lymphoma (FL) develop?,Fact Retrieval,light_proxy,vector,0.21182867713317272,0.30000820063169775,0.4881631222351295
+Medical-2e05b3f3,How is uncommon FL (uFL) treated?,Fact Retrieval,vector,vector,0.25914660269144574,0.1744139374530767,0.5664394598554776
+Medical-26ce4d1c,What can follicular lymphoma (FL) transform into?,Fact Retrieval,light_proxy,vector,0.20422275423896066,0.2441406116635932,0.5516366340974461
+Medical-cf21d241,What symptoms are collectively referred to as B symptoms in FL?,Fact Retrieval,vector,vector,0.315231458915378,0.33584561753680064,0.34892292354782134
+Medical-4664e4cf,What is a major risk factor for developing liver cancer?,Fact Retrieval,path_proxy,path_proxy,0.3191767270913832,0.3527207951795509,0.32810247772906587
+Medical-72938445,Is alcohol use a risk factor for liver cancer?,Fact Retrieval,light_proxy,light_proxy,0.5190395112781092,0.1512988775222632,0.32966161119962756
+Medical-d7f052f4,Is stage 4 primary biliary cholangitis a risk factor for liver cancer?,Fact Retrieval,vector,vector,0.24465402480388612,0.19382585243522962,0.5615201227608843
+Medical-0c921721,What screening methods are used for liver cancer?,Fact Retrieval,vector,light_proxy,0.4441297298143545,0.39815620286866305,0.1577140673169824
+Medical-f4ba3ee9,What are common sites of liver cancer metastasis?,Fact Retrieval,vector,light_proxy,0.48425934646295543,0.2501498956376866,0.265590757899358
+Medical-ff8f3b0c,What anatomical structure is the origin of primary liver cancer?,Fact Retrieval,vector,vector,0.3857236303615948,0.09312512941636629,0.521151240222039
+Medical-3c025533,Which diagnostic methods are listed for liver cancer in the ontology?,Fact Retrieval,vector,light_proxy,0.3612213989515878,0.28171313218841254,0.3570654688599996
+Medical-2e96fdbb,What is the standard medication for thyroid hormone replacement?,Fact Retrieval,path_proxy,vector,0.26411909787274795,0.32846363416233576,0.4074172679649163
+Medical-74ed1afe,For which thyroid cancer subtypes is RAI therapy not effective?,Fact Retrieval,light_proxy,vector,0.36647382324825334,0.2612817065042627,0.372244470247484
+Medical-dc537cd7,What is the role of chemotherapy in thyroid cancer?,Fact Retrieval,path_proxy,vector,0.2311318272334615,0.34621433844691385,0.4226538343196247
+Medical-af243069,"What biomarkers are recommended for testing in recurrent, advanced, or metastatic thyroid cancers not treatable with RAI?",Fact Retrieval,path_proxy,path_proxy,0.3601670903784802,0.41919475630029873,0.22063815332122103
+Medical-0ad1bc85,What may rising thyroglobulin after thyroidectomy indicate?,Fact Retrieval,vector,path_proxy,0.27058911353559817,0.42520731186869026,0.30420357459571146
+Medical-35f5fbd3,Which gene mutations are considered actionable biomarkers in thyroid cancer?,Fact Retrieval,vector,path_proxy,0.3352902157437695,0.4487859349139814,0.21592384934224926
+Medical-edb040bb,What is the origin of primary bone cancer?,Fact Retrieval,vector,vector,0.17135297427138946,0.25071878733008074,0.5779282383985299
+Medical-84c13f69,What are secondary bone malignancies?,Fact Retrieval,vector,light_proxy,0.393183880791767,0.3332998154723843,0.2735163037358485
+Medical-2bd43819,Which cancers commonly metastasize to bone?,Fact Retrieval,vector,vector,0.16548735383592927,0.3706464493739526,0.46386619679011815
+Medical-9a0c1ed4,Where does osteosarcoma most commonly arise?,Fact Retrieval,vector,vector,0.1953395343040495,0.23091261645912592,0.5737478492368246
+Medical-6ded047c,Where does giant cell tumor of bone often occur?,Fact Retrieval,light_proxy,vector,0.12361349518068523,0.22546288245968224,0.6509236223596325
+Medical-dc9df053,Which imaging tests are used for bone cancer diagnosis?,Fact Retrieval,vector,path_proxy,0.24463912564371063,0.43904543953154473,0.3163154348247446
+Medical-4dc9127d,Which mutation in chondrosarcoma can be targeted with ivosidenib?,Fact Retrieval,vector,light_proxy,0.3889890021086341,0.31219422317163725,0.2988167747197286
+Medical-54b3e97f,Which status may be treated with pembrolizumab in bone cancer?,Fact Retrieval,path_proxy,path_proxy,0.22641846675206498,0.4735946355145591,0.29998689773337595
+Medical-7dd6e939,What treatments are available for tumor mutational burden-high (TMB-H) bone cancers?,Fact Retrieval,light_proxy,path_proxy,0.29767023006912524,0.37895603811495626,0.32337373181591855
+Medical-142025a5,What system is used for staging bone cancer?,Fact Retrieval,light_proxy,vector,0.137059406575184,0.39761199035296246,0.46532860307185353
+Medical-4a90fe75,Which gene fusions are biomarkers for Ewing sarcoma?,Fact Retrieval,vector,path_proxy,0.3449093619926381,0.393905258048942,0.2611853799584199
+Medical-9418792b,Which diagnostic methods are used for bone sarcomas?,Fact Retrieval,path_proxy,path_proxy,0.10716862904363353,0.7613162650197456,0.13151510593662102
+Medical-6b20ca96,Which genetic alteration is associated with Ewing sarcoma?,Fact Retrieval,path_proxy,vector,0.1351692974556059,0.41951074551951967,0.4453199570248744
+Medical-9a2bd385,What does Tis represent in the TNM classification for mouth cancer?,Fact Retrieval,path_proxy,vector,0.1399372179353646,0.2652960378788746,0.5947667441857608
+Medical-acda3403,Which imaging tests are used for diagnosis and staging of mouth cancer?,Fact Retrieval,path_proxy,vector,0.2533052120069033,0.29921169290060173,0.447483095092495
+Medical-ab04c717,What symptoms may indicate mouth cancer?,Fact Retrieval,path_proxy,vector,0.2225549951895253,0.32461204592803405,0.4528329588824407
+Medical-69907f97,How is dental health affected by mouth cancer and its treatment?,Fact Retrieval,path_proxy,vector,0.26671554064475916,0.2706568371986607,0.4626276221565802
+Medical-9c46dbea,What are the numbered stages used in mouth cancer staging?,Fact Retrieval,vector,vector,0.16574021081263102,0.3649660465870038,0.46929374260036516
+Medical-f41a6eed,What is the purpose of a dental exam in mouth cancer management?,Fact Retrieval,light_proxy,vector,0.10449134715492944,0.3109157035239824,0.5845929493210881
+Medical-7f529715,Which assessments are included in the clinical evaluation of mouth cancer patients?,Fact Retrieval,vector,vector,0.255251236745469,0.22477226625972518,0.5199764969948057
+Medical-5dedb4ec,Through which layers does stomach cancer spread outward?,Fact Retrieval,light_proxy,vector,0.2720859390998587,0.1715568623956743,0.556357198504467
+Medical-fc8c1f25,What genetic risk factor is listed for stomach cancer?,Fact Retrieval,path_proxy,vector,0.17062467949213686,0.21349656584241433,0.6158787546654488
+Medical-e542c70c,What are two main symptoms of stomach cancer listed in the ontology?,Fact Retrieval,vector,vector,0.3231387428611804,0.13973324635298684,0.5371280107858328
+Medical-d3bb30e3,What is the significance of the mucosa in stomach cancer development?,Fact Retrieval,vector,vector,0.15545785529584347,0.33020590030106356,0.514336244403093
+Medical-da451391,From which cells do gliomas develop?,Fact Retrieval,vector,vector,0.18729426775849387,0.2628185026362474,0.5498872296052587
+Medical-8b6ad218,Which grades are considered low-grade gliomas?,Fact Retrieval,light_proxy,vector,0.12078495322089236,0.16078316142482493,0.7184318853542827
+Medical-981edc6b,What is recommended for follow-up after glioma treatment?,Fact Retrieval,vector,vector,0.2711359534173938,0.29661745956743735,0.4322465870151688
+Medical-28389677,What is assessed to determine treatment eligibility for glioma?,Fact Retrieval,vector,light_proxy,0.41098840756139965,0.2519167435627737,0.3370948488758267
+Medical-86e59474,What laboratory tests are conducted for glioma diagnosis?,Fact Retrieval,path_proxy,vector,0.31991768980867724,0.31796525618929844,0.36211705400202426
+Medical-2db59cde,What are the risk factors for glioma?,Fact Retrieval,path_proxy,path_proxy,0.28342175643674106,0.4552444485862774,0.2613337949769815
+Medical-42ab49a0,What defines AML subtypes?,Fact Retrieval,vector,vector,0.3599173501415242,0.1735523371568903,0.4665303127015854
+Medical-514e9bd7,When is hematopoietic cell transplant considered in AML?,Fact Retrieval,vector,vector,0.28369220263624023,0.14271596880071383,0.5735918285630459
+Medical-5d792183,What is the cell of origin for AML?,Fact Retrieval,vector,vector,0.16708361983433373,0.1653312527036368,0.6675851274620294
+Medical-67b8e0a9,What fertility preservation options are recommended in AML?,Fact Retrieval,path_proxy,path_proxy,0.22701076439093065,0.47565955571376783,0.2973296798953015
+Medical-78cecf8c,What is the most common type of ovarian cancer?,Fact Retrieval,light_proxy,vector,0.19696238835449126,0.20529400381732535,0.5977436078281835
+Medical-1a736b11,What are the common symptoms of ovarian cancer?,Fact Retrieval,vector,light_proxy,0.4527356920283514,0.27671239571643197,0.2705519122552168
+Medical-40918a31,Who should receive genetic testing for BRCA and other syndromes in ovarian cancer?,Fact Retrieval,vector,light_proxy,0.5246003459245454,0.2255228896342879,0.24987676444116663
+Medical-1043deff,What tumor biomarker tests are performed in ovarian cancer?,Fact Retrieval,light_proxy,light_proxy,0.448381325438555,0.20370173005138487,0.3479169445100601
+Medical-cf87aed7,What is the standard initial treatment for most ovarian cancers?,Fact Retrieval,vector,vector,0.23469633971032963,0.273266249518943,0.4920374107707273
+Medical-2ca3a0ac,Which drug may be added to chemotherapy in some ovarian cancer cases?,Fact Retrieval,path_proxy,vector,0.2498801745671056,0.32822481964946526,0.4218950057834292
+Medical-0f6078ff,Which therapies are considered for recurrent ovarian cancer based on platinum sensitivity?,Fact Retrieval,light_proxy,light_proxy,0.4288233394471836,0.2335713594295546,0.33760530112326176
+Medical-bdb21d34,What is the primary site of SLL?,Fact Retrieval,vector,vector,0.15036465141084432,0.26682042696849506,0.5828149216206606
+Medical-2ea1a654,Can CLL be asymptomatic?,Fact Retrieval,vector,light_proxy,0.45685287150018883,0.17007163568155328,0.3730754928182578
+Medical-a43be732,How does family history affect CLL risk?,Fact Retrieval,path_proxy,light_proxy,0.46855211915555844,0.26021279904499534,0.2712350817994462
+Medical-3d64f92a,What is the treatment goal regarding minimal residual disease in CLL?,Fact Retrieval,vector,light_proxy,0.3890954616972223,0.36204375415573514,0.24886078414704263
+Medical-9f87cac2,What is the purpose of a comprehensive metabolic panel in CLL management?,Fact Retrieval,path_proxy,path_proxy,0.16401789037988143,0.4254398977703337,0.4105422118497849
+Medical-2621de32,Which symptoms may indicate advanced CLL?,Fact Retrieval,vector,light_proxy,0.3967984565815772,0.36849037147803815,0.23471117194038466
+Medical-bff8d7f5,Which cancer type does throat cancer belong to?,Fact Retrieval,vector,vector,0.2834629637898997,0.15469440073673354,0.5618426354733668
+Medical-bfc7447f,What are the numbered stages of throat cancer according to the ontology?,Fact Retrieval,light_proxy,vector,0.38075269879612506,0.19407458201008584,0.42517271919378924
+Medical-844b00fe,What tumor size corresponds to T2 in the AJCC TNM staging?,Fact Retrieval,path_proxy,path_proxy,0.100434927618908,0.5603122896678058,0.3392527827132862
+Medical-c808d555,Which biomarker expressions may guide immunotherapy treatment decisions in throat cancer?,Fact Retrieval,vector,vector,0.2719846642159606,0.29073924137139545,0.43727609441264387
+Medical-d1271e37,What are common symptoms of cutaneous B-cell lymphoma?,Fact Retrieval,light_proxy,vector,0.18751055782176387,0.3314590744074099,0.48103036777082625
+Medical-fa689991,Which cancer type does primary cutaneous lymphoma (PCL) belong to?,Fact Retrieval,vector,vector,0.17226781147068845,0.19144382459432177,0.6362883639349898
+Medical-fa265328,What are the two main cell origins for primary cutaneous lymphoma?,Fact Retrieval,vector,vector,0.12561190339562472,0.31598297660195657,0.5584051200024187
+Medical-8bfc6705,Which categories of biomarkers are assessed in CBCL testing?,Fact Retrieval,light_proxy,light_proxy,0.3506590276115333,0.33927911273414013,0.31006185965432664
+Medical-b3af6970,What are the possible disease sites for ALL?,Fact Retrieval,light_proxy,light_proxy,0.4281351131992795,0.33095726226748934,0.24090762453323117
+Medical-ac636dac,Which lymphocyte subtype is the cell of origin for B-ALL?,Fact Retrieval,vector,vector,0.23083933657294894,0.1124233398094871,0.6567373236175639
+Medical-0c88cd2e,What is the standard supportive care for ALL?,Fact Retrieval,vector,path_proxy,0.32101020390950885,0.36644424966607886,0.3125455464244124
+Medical-411895da,Which genetic alteration is a biomarker for B-ALL?,Fact Retrieval,vector,path_proxy,0.27260883746263714,0.3872836611977553,0.3401075013396075
+Medical-2f6c215a,What is the most common subtype of rectal cancer?,Fact Retrieval,vector,vector,0.3264894453891895,0.1469721115656097,0.5265384430452008
+Medical-49bb5694,Which polyps rarely become cancerous in the rectum?,Fact Retrieval,vector,vector,0.1895445818224571,0.245792895993455,0.564662522184088
+Medical-63846367,Which biomarkers are associated with rectal cancer?,Fact Retrieval,vector,path_proxy,0.34069566249098354,0.4608088156727479,0.19849552183626856
+Medical-5025010a,Which genetic syndrome causes multiple polyps and increases rectal cancer risk?,Fact Retrieval,path_proxy,vector,0.3033487278898186,0.289947010019823,0.40670426209035837
+Medical-ebc00ba5,What blood test is used for monitoring rectal cancer?,Fact Retrieval,vector,light_proxy,0.3989992161047657,0.2630220422725463,0.337978741622688
+Medical-58b16818,Which surgical procedure is an option for T1 tumors at the end of the rectum?,Fact Retrieval,vector,vector,0.21018548371967824,0.286144507528069,0.5036700087522528
+Medical-1537264f,Which chemotherapy drugs may be included in rectal cancer regimens?,Fact Retrieval,vector,light_proxy,0.36623800101745185,0.33295571938686735,0.3008062795956808
+Medical-43c23661,Which diagnostic methods are listed for rectal cancer?,Fact Retrieval,path_proxy,path_proxy,0.22149795407680323,0.5386954940551751,0.23980655186802174
+Medical-8cd77727,Which stages of bladder cancer are considered non–muscle-invasive?,Fact Retrieval,vector,vector,0.26864402928107095,0.2372676697244742,0.494088300994455
+Medical-0dbb19e7,What characterizes Stage 4 bladder cancer?,Fact Retrieval,light_proxy,vector,0.19841664207614618,0.26575771190708414,0.5358256460167696
+Medical-7171cb7e,List other risk factors for bladder cancer besides smoking.,Fact Retrieval,light_proxy,light_proxy,0.40123609138425514,0.2572311063969075,0.3415328022188373
+Medical-390dfa49,List urinary diversion procedures after bladder surgery.,Fact Retrieval,light_proxy,light_proxy,0.42570477489961583,0.18321880303867044,0.3910764220617138
+Medical-b0dbdd5a,Which targeted therapies are available for bladder cancer?,Fact Retrieval,vector,light_proxy,0.43973194246102665,0.2299115765760182,0.33035648096295506
+Medical-01f6cee9,What is trimodal therapy in bladder cancer?,Fact Retrieval,light_proxy,vector,0.3225745695836719,0.16586289759708073,0.5115625328192474
+Medical-5c1d4e51,What are common side effects of bladder cancer treatment?,Fact Retrieval,vector,path_proxy,0.31724276405856905,0.35347320327238047,0.32928403266905043
+Medical-185686b9,What is the most common type of kidney cancer?,Fact Retrieval,vector,vector,0.10501486886930658,0.1558537381844848,0.7391313929462087
+Medical-a8f6fa76,Where does renal cell carcinoma originate in the kidney?,Fact Retrieval,vector,vector,0.09462010844463005,0.08346162742198598,0.821918264133384
+Medical-10f571cf,Name two anatomical structures in the kidney where cancer can spread locally.,Fact Retrieval,vector,vector,0.20887801429318845,0.20471559789513852,0.5864063878116731
+Medical-b8dfd72f,Which factors determine the treatment approach for RCC?,Fact Retrieval,light_proxy,path_proxy,0.23610696961275407,0.5254570148669139,0.23843601552033195
+Medical-e3a6570b,List three diagnostic tests for kidney cancer.,Fact Retrieval,vector,vector,0.18331055382821923,0.24779563142732874,0.568893814744452
+Medical-d44fbd5d,Which kidney cancer subtype is described as fumarate hydratase-deficient?,Fact Retrieval,light_proxy,vector,0.23983113045016702,0.13732395617053808,0.6228449133792949
+Medical-10a38986,Which kidney cancer arises from the connective tissue?,Fact Retrieval,light_proxy,vector,0.21029269297611042,0.17375499475846298,0.6159523122654266
+Medical-b53a2a5a,Which subtypes are included in non-clear cell RCC according to the ontology?,Fact Retrieval,vector,vector,0.330542585760059,0.2309983906200872,0.4384590236198537
+Medical-b821991a,Which test is used to evaluate biomarkers in kidney cancer?,Fact Retrieval,vector,vector,0.32536332531060946,0.25414590759682526,0.4204907670925653
+Medical-a653aa5d,What is the most common subtype of anal cancer?,Fact Retrieval,vector,vector,0.37963174731233273,0.13811279229305873,0.4822554603946085
+Medical-a0d64e65,Which virus is the strongest risk factor for anal cancer?,Fact Retrieval,vector,vector,0.18002165219057695,0.282157994924436,0.5378203528849871
+Medical-c87340df,Which high-risk HPV strain is associated with anal cancer?,Fact Retrieval,vector,light_proxy,0.38016723292095495,0.24602151154347313,0.37381125553557193
+Medical-97813815,What chemotherapy regimens are recommended with radiation for anal cancer?,Fact Retrieval,vector,light_proxy,0.4432627297608098,0.32321928816857687,0.23351798207061325
+Medical-5a8f962a,Which imaging techniques are used in the diagnosis of anal cancer?,Fact Retrieval,vector,light_proxy,0.4434136442010611,0.2860978492653371,0.2704885065336017
+Medical-6b2c8ad5,Which immunotherapy drugs are recommended for metastatic anal cancer that progresses after chemotherapy?,Fact Retrieval,vector,vector,0.34112212030188555,0.27609122719469115,0.3827866525034232
+Medical-042aa09a,What is the preferred radiation technique for anal cancer?,Fact Retrieval,vector,vector,0.2578845881366456,0.2620395425662962,0.48007586929705826
+Medical-beaf1678,What fertility preservation options should be discussed before chemoradiation for anal cancer?,Fact Retrieval,vector,path_proxy,0.2798015302953934,0.5845289979563038,0.1356694717483028
+Medical-912613b8,Which supportive care measures are provided for anal cancer patients?,Fact Retrieval,path_proxy,light_proxy,0.4375922461580886,0.3394161074755747,0.22299164636633667
+Medical-dff662c1,Which populations are at increased risk of anal cancer due to immunosuppression?,Fact Retrieval,light_proxy,vector,0.3225581245420581,0.22802471295809199,0.44941716249985
+Medical-abe5fc71,Which cells are the origin of ALL?,Fact Retrieval,light_proxy,vector,0.3125691350313277,0.22778931019617712,0.459641554772495
+Medical-3eede906,What diagnostic threshold defines ALL based on bone marrow lymphoblasts?,Fact Retrieval,vector,path_proxy,0.21328787708001246,0.4193599828683315,0.3673521400516561
+Medical-ce4f84f0,What is mature B-cell ALL also called?,Fact Retrieval,vector,vector,0.2647182946630041,0.19933694297068502,0.535944762366311
+Medical-ae39f048,Which biomarker is associated with B-cell ALL?,Fact Retrieval,light_proxy,path_proxy,0.32669065215568033,0.36675476286364145,0.3065545849806782
+Medical-a06b41f4,Which subtype of ALL is associated with an enlarged thymus?,Fact Retrieval,vector,vector,0.2069184007499533,0.20815225095157983,0.5849293482984669
+Medical-76a07999,Which diagnostic procedure is used to examine the central nervous system in ALL?,Fact Retrieval,vector,path_proxy,0.19647719956686197,0.43641568345605625,0.3671071169770818
+Medical-f27ac6b8,What characterizes Stage I pancreatic cancer?,Fact Retrieval,vector,vector,0.18501085028631528,0.2569809227231636,0.5580082269905212
+Medical-0c8447e4,List three risk factors for pancreatic cancer.,Fact Retrieval,vector,vector,0.3624974688056389,0.2742369876615624,0.3632655435327987
+Medical-5a1326ab,What is a common genetic syndrome associated with increased pancreatic cancer risk?,Fact Retrieval,vector,vector,0.3021167135388942,0.3298346641490988,0.368048622312007
+Medical-53fae064,Which genetic mutation increases the risk of prostate cancer?,Fact Retrieval,vector,vector,0.2629177959395551,0.3312173807058431,0.4058648233546017
+Medical-34a94dcc,Which diagnostic methods are used for localized prostate cancer?,Fact Retrieval,vector,path_proxy,0.12482536198542403,0.7643763545853979,0.11079828342917823
+Medical-f9135c63,Which genetic alterations are associated with metastatic prostate cancer?,Fact Retrieval,path_proxy,path_proxy,0.16719712945452478,0.507202403840212,0.32560046670526327
+Medical-1ad52a4e,What are common urinary symptoms of prostate cancer?,Fact Retrieval,light_proxy,light_proxy,0.431397661072858,0.32233552461630444,0.24626681431083755
+Medical-677867c1,Which blood and urine biomarker tests are used in prostate cancer diagnosis?,Fact Retrieval,vector,light_proxy,0.4692622130326782,0.3075713074535052,0.22316647951381657
+Medical-bbe1e6e4,Which demographic factor increases prostate cancer risk?,Fact Retrieval,path_proxy,path_proxy,0.2608818482479288,0.3742787785133528,0.36483937323871835
+Medical-338ef222,What is the most common type of adrenal gland tumor?,Fact Retrieval,vector,vector,0.18801258745347674,0.13864941854350796,0.6733379940030154
+Medical-29777a9b,Which adrenal tumor arises from the adrenal cortex and is malignant?,Fact Retrieval,vector,vector,0.29025979824322395,0.15991459011630396,0.5498256116404721
+Medical-bfb768d9,What hormone is produced in excess by aldosteronoma?,Fact Retrieval,vector,vector,0.3479091715927704,0.27751517765989747,0.3745756507473321
+Medical-d909a766,Which adrenal tumor is associated with Cushing syndrome?,Fact Retrieval,vector,vector,0.2443744239045623,0.26811954178006897,0.48750603431536876
+Medical-32b97819,What is the main population at risk for adrenocortical carcinoma?,Fact Retrieval,vector,light_proxy,0.4670768254827579,0.19912133242655858,0.3338018420906835
+Medical-c78a374e,Which adrenal tumor may metastasize to bones?,Fact Retrieval,light_proxy,vector,0.15140663738671908,0.23355592444470716,0.6150374381685738
+Medical-3b36f388,What is the role of biopsy in adrenal tumor diagnosis?,Fact Retrieval,vector,vector,0.22287461045946647,0.27925766162136584,0.49786772791916784
+Medical-539448fd,What is the biomarker for aldosteronoma?,Fact Retrieval,vector,light_proxy,0.5044874757435894,0.20789539083811873,0.2876171334182917
+Medical-77bf9d25,What is the biomarker for cortisol-producing adenoma?,Fact Retrieval,vector,light_proxy,0.39395873764309913,0.25853763631644483,0.3475036260404561
+Medical-efe7f41a,Which syndrome is associated with excess cortisol production by adrenal adenoma?,Fact Retrieval,vector,light_proxy,0.36828613015710904,0.2793240828599533,0.35238978698293777
+Medical-b79e4ca7,How are adrenal tumors often discovered?,Fact Retrieval,vector,vector,0.3342843625820596,0.19787761994344436,0.46783801747449594
+Medical-8df61619,Which stages of breast cancer are considered invasive?,Fact Retrieval,vector,vector,0.2296354904100692,0.28716462120875375,0.48319988838117706
+Medical-3e184ed2,Which mutation can be targeted with specific therapies in breast cancer?,Fact Retrieval,vector,vector,0.3594743508503521,0.25539820528240365,0.3851274438672442
+Medical-1560f6ac,How is lymph node involvement assessed in breast cancer?,Fact Retrieval,vector,vector,0.2307682327447985,0.23648841974053922,0.5327433475146622
+Medical-6c8055a7,Which therapy is used for hormone receptor-positive breast cancer?,Fact Retrieval,vector,vector,0.4054670772487862,0.18247274101088692,0.4120601817403268
+Medical-6fa265bc,What therapy is used for HER2-positive breast cancer?,Fact Retrieval,vector,light_proxy,0.40538986789230247,0.1935882003237271,0.4010219317839705
+Medical-329de573,What should be discussed before starting breast cancer treatment regarding reproductive health?,Fact Retrieval,vector,light_proxy,0.5395925835216048,0.2975522412206498,0.16285517525774534
+Medical-883feb97,What does follow-up for breast cancer include?,Fact Retrieval,vector,vector,0.3369889598797249,0.23320247262614632,0.4298085674941289
+Medical-831bb1e6,Which combination of risk factors should prompt earlier and more frequent skin exams for BCC?,Complex Reasoning,path_proxy,light_proxy,0.4522076056906209,0.3766893323679284,0.17110306194145075
+Medical-f034d77d,How does UV radiation contribute to both the development and recurrence of basal cell carcinoma?,Complex Reasoning,vector,path_proxy,0.2922273711937287,0.4055187721639424,0.302253856642329
+Medical-1eab8fa2,Why should a patient with a family history of skin cancer and light eye color be particularly vigilant about skin changes?,Complex Reasoning,light_proxy,light_proxy,0.44551684486477733,0.3812144290123253,0.17326872612289745
+Medical-14016ce3,What is the rationale for recommending surgery as the most common treatment for BCC lesions on sun-exposed areas?,Complex Reasoning,light_proxy,vector,0.2714622523534951,0.2906624307785806,0.43787531686792425
+Medical-8ff5dd5a,Why might systemic therapy be considered for a patient with BCC that has spread to distant sites?,Complex Reasoning,path_proxy,light_proxy,0.4226656058728582,0.3820265520327695,0.19530784209437232
+Medical-322bb52d,How do medical and family history contribute to the diagnostic process for BCC in a patient with a suspicious skin lesion?,Complex Reasoning,vector,path_proxy,0.1656052129367998,0.7108716861928437,0.12352310087035663
+Medical-b6fbf092,Why is clinical trial participation recommended for all primary CNS lymphoma patients regardless of treatment phase?,Complex Reasoning,path_proxy,light_proxy,0.43256028910824834,0.23605942102459632,0.3313802898671553
+Medical-eb7624ca,What is the recommended follow-up strategy after treatment for regional CSCC compared to local low-risk CSCC?,Complex Reasoning,path_proxy,path_proxy,0.22156036471517424,0.4490567709122432,0.3293828643725824
+Medical-f978cb28,What is the role of clinical trials in the management of advanced or refractory CSCC?,Complex Reasoning,vector,vector,0.37485726459952295,0.12692044311361364,0.49822229228686343
+Medical-db5aa2e3,What distinguishes Mohs surgery from other surgical options in the treatment of high-risk local CSCC?,Complex Reasoning,vector,light_proxy,0.4447217724504377,0.2460159145103543,0.3092623130392079
+Medical-a7826934,"Explain the relationship between the Philadelphia chromosome, BCR::ABL1 fusion gene, and the origin of CML.",Complex Reasoning,vector,vector,0.1524157083211331,0.23031324230954286,0.617271049369324
+Medical-4fe06961,What is the sequence of genetic and chromosomal events leading to CML?,Complex Reasoning,vector,vector,0.17824773293565194,0.33799796688738115,0.48375430017696686
+Medical-41b1601a,"Which two main biomarkers are tested to confirm a diagnosis of CML, and how are they related?",Complex Reasoning,vector,path_proxy,0.3879404104937533,0.4339510216311621,0.17810856787508464
+Medical-34a9155d,Why is a lung nodule detected by imaging not sufficient for a lung cancer diagnosis?,Complex Reasoning,vector,path_proxy,0.1736417988599637,0.4218297358475517,0.40452846529248454
+Medical-b7e4be0e,What combination of risk factors and diagnostic methods would justify recommending lung cancer screening?,Complex Reasoning,vector,path_proxy,0.0843393910976135,0.7893050761344454,0.126355532767941
+Medical-ee49f3e8,Why is surgery not typically a treatment option for Stage 4 NSCLC?,Complex Reasoning,light_proxy,light_proxy,0.36952234203666445,0.2636409742121896,0.36683668375114586
+Medical-6fb8996b,What factors would lead to recommending a clinical trial for a lung cancer patient?,Complex Reasoning,vector,path_proxy,0.1850551311821439,0.45197613610433457,0.3629687327135216
+Medical-328006b7,What combination of exposure and symptom would most strongly suggest the need for diagnostic evaluation for lung cancer?,Complex Reasoning,path_proxy,path_proxy,0.22416677590469491,0.421951312096805,0.35388191199850016
+Medical-659d7c0a,How do the purposes of lung cancer screening and follow-up care differ?,Complex Reasoning,path_proxy,path_proxy,0.10720926554755733,0.5770112708403992,0.31577946361204345
+Medical-a7e62dce,What combination of diagnostic methods is necessary to both confirm nasopharyngeal carcinoma and determine its subtype?,Complex Reasoning,path_proxy,path_proxy,0.30733887419995465,0.5480633489695954,0.14459777683044978
+Medical-0e2be889,"How does the AJCC TNM system contribute to the staging of nasopharyngeal carcinoma, and what aspects does it assess?",Complex Reasoning,light_proxy,path_proxy,0.1628983003209075,0.5486287445606807,0.2884729551184118
+Medical-ff2105ab,Why is dental health assessment important in the management of nasopharyngeal carcinoma?,Complex Reasoning,light_proxy,light_proxy,0.4742404388042305,0.1347793315207998,0.39098022967496976
+Medical-0d237b40,Which metastatic sites are most common in nasopharyngeal carcinoma and how is this reflected in the ontology?,Complex Reasoning,light_proxy,vector,0.3980336549854631,0.19396511702224087,0.408001227992296
+Medical-cfab4b2d,Why is immunotherapy with checkpoint inhibitors recommended for some colon cancer patients but not others?,Complex Reasoning,vector,path_proxy,0.25194287830159534,0.5061948333493766,0.24186228834902798
+Medical-3447851a,Why should young adults with colon cancer be counseled about fertility preservation before treatment?,Complex Reasoning,path_proxy,path_proxy,0.27651813302995065,0.5966128070770166,0.12686905989303268
+Medical-781a9787,"What diagnostic tests are used for both initial evaluation and staging of colon cancer, and what unique information does each provide?",Complex Reasoning,path_proxy,path_proxy,0.31492631904707574,0.4799034576181337,0.20517022333479046
+Medical-e8957bed,Why is ctDNA testing not routinely used in colon cancer management outside clinical trials?,Complex Reasoning,vector,vector,0.26591590295087686,0.22098751710380224,0.513096579945321
+Medical-38fc968c,Which surgical procedures may be required for colon cancer patients and under what circumstances is a colostomy necessary?,Complex Reasoning,path_proxy,path_proxy,0.2559636667936696,0.40930463635607517,0.3347316968502553
+Medical-166bcaa7,Why is Siewert type classification particularly important in the staging and treatment planning of tumors at the esophagogastric junction?,Complex Reasoning,path_proxy,light_proxy,0.358315429852925,0.33185874488002315,0.3098258252670518
+Medical-c7bf38df,"If a tumor is located at the esophagogastric junction, which classification system and factors are used for staging and treatment planning?",Complex Reasoning,path_proxy,path_proxy,0.23018880698997923,0.5143971002086287,0.255414092801392
+Medical-16a39fa8,What role do anatomical layers of the esophagus play in distinguishing early-stage from locoregional esophageal cancer?,Complex Reasoning,light_proxy,light_proxy,0.36973460810085657,0.2965317615389231,0.3337336303602203
+Medical-7b682af7,"Which additional therapy may be used alongside chemotherapy for localized MGZL, and under what circumstance?",Complex Reasoning,vector,path_proxy,0.290225780614993,0.42152094249266353,0.2882532768923435
+Medical-35afeb4b,What treatment modification is made for MGZL patients to enhance chemoimmunotherapy?,Complex Reasoning,vector,light_proxy,0.4069471841245748,0.26275290694782355,0.33029990892760164
+Medical-b9f39886,What factors distinguish non-mediastinal gray zone lymphomas from mediastinal gray zone lymphomas?,Complex Reasoning,vector,vector,0.18183791700511648,0.21834081944583716,0.5998212635490463
+Medical-34a70628,Which population is most at risk for developing mediastinal gray zone lymphoma based on epidemiology?,Complex Reasoning,vector,vector,0.27758735742027424,0.24238156743032063,0.48003107514940524
+Medical-04e9f25b,Which imaging modalities are used both for staging and surveillance in cervical cancer management?,Complex Reasoning,vector,path_proxy,0.2762011013898694,0.4894996878978778,0.23429921071225276
+Medical-86e095c3,How does smoking status influence both the risk and treatment outcomes of cervical cancer?,Complex Reasoning,path_proxy,vector,0.2894633089550425,0.2565106795646076,0.4540260114803499
+Medical-02d254bc,"For which stages of cervical cancer is surgery the primary treatment, and when is chemoradiation preferred?",Complex Reasoning,vector,vector,0.22874641844358032,0.22733419461451154,0.5439193869419082
+Medical-4b359d87,"If a patient's lymph node biopsy reveals popcorn-shaped cells, what is the diagnosis and what is a potential complication?",Complex Reasoning,path_proxy,path_proxy,0.2982088080717489,0.41048019476321096,0.2913109971650402
+Medical-5459ea22,Why is a tumor classified as Tis (carcinoma in situ) in intrahepatic bile duct cancer only found in the epithelium and not in deeper layers?,Complex Reasoning,light_proxy,vector,0.15892236681717375,0.21819658326320387,0.6228810499196223
+Medical-904e0a11,How does the anatomical structure of the bile duct relate to the spread of cancer to the liver?,Complex Reasoning,vector,vector,0.27485208593108146,0.17323147040389886,0.5519164436650197
+Medical-3c536762,Why is tumor size and extent of spread important in staging bile duct cancer?,Complex Reasoning,path_proxy,vector,0.188122609907946,0.2801515145725448,0.5317258755195092
+Medical-41284331,"If a tumor is described as intraductal and confined to the epithelium, what stage and tumor characteristic does it correspond to in intrahepatic bile duct cancer?",Complex Reasoning,path_proxy,vector,0.1415405135495062,0.3017737344638966,0.5566857519865972
+Medical-6a5c89f3,Why do not all patients with follicular lymphoma require immediate treatment upon diagnosis?,Complex Reasoning,path_proxy,path_proxy,0.33599759109254024,0.4766084845554501,0.18739392435200974
+Medical-ee644399,"Why is lobectomy preferred over total thyroidectomy for some small, low-risk differentiated thyroid cancers?",Complex Reasoning,light_proxy,path_proxy,0.22173487749141535,0.4119742067048194,0.36629091580376527
+Medical-0e57f27f,"When should a clinical trial be considered for a thyroid cancer patient, and what disease characteristics warrant this recommendation?",Complex Reasoning,path_proxy,light_proxy,0.3647248702603312,0.33640004169696425,0.29887508804270463
+Medical-81c95a46,"Which anatomic locations are most commonly associated with osteosarcoma and giant cell tumor of bone, and what do these locations have in common?",Complex Reasoning,path_proxy,light_proxy,0.3592686540576597,0.31899622977427505,0.32173511616806544
+Medical-fe7f2575,What two performance status scales are considered when planning treatment for primary bone cancer?,Complex Reasoning,light_proxy,light_proxy,0.39742916960941116,0.3521914642449321,0.25037936614565687
+Medical-fe83d01e,What two assessments are necessary for comprehensive care due to the effects of mouth cancer and its treatment on dental health and swallowing?,Complex Reasoning,path_proxy,path_proxy,0.23198916887367613,0.44079733600690857,0.3272134951194153
+Medical-b016ff7a,Why is depth of invasion (DOI) important in the TNM staging of mouth cancer?,Complex Reasoning,vector,vector,0.13501482177739127,0.309721575217335,0.5552636030052737
+Medical-2cc4ff58,"For a patient with a tumor in the retromolar trigone, which cancer subtype and anatomic site categories are relevant for diagnosis and staging?",Complex Reasoning,vector,light_proxy,0.402815770691257,0.3542690851301332,0.24291514417860985
+Medical-aa9a54c8,Which diagnostic methods would be used to assess both lymph node involvement and distant metastasis in mouth cancer?,Complex Reasoning,path_proxy,path_proxy,0.16533490268474,0.6759127998555151,0.15875229745974484
+Medical-ec4712e3,Why is a panoramic dental x-ray (Panorex) included in diagnostic evaluation for mouth cancer?,Complex Reasoning,vector,vector,0.33033922907007324,0.3221131748353984,0.34754759609452834
+Medical-7faeddee,"If a patient presents with an ulcer and mass in the stomach, what cancer subtype is most likely and what is the cell of origin?",Complex Reasoning,path_proxy,vector,0.2143014564537071,0.3516652841514986,0.4340332593947942
+Medical-370cff35,How does stomach cancer typically progress from a precancerous state to metastatic disease?,Complex Reasoning,path_proxy,vector,0.2858446071689253,0.2501633718989455,0.4639920209321292
+Medical-84ec68f0,Why is it important to perform both biomarker and genetic risk testing in the diagnosis of stomach cancer?,Complex Reasoning,path_proxy,light_proxy,0.5173371540338292,0.27349678984751224,0.20916605611865866
+Medical-2157ec85,What features distinguish diffuse type adenocarcinoma from intestinal type in stomach cancer pathology?,Complex Reasoning,vector,light_proxy,0.48221228354127327,0.13215952283345392,0.38562819362527284
+Medical-7fba506d,How does the anatomical location within the stomach influence the potential spread of cancer to nearby organs?,Complex Reasoning,light_proxy,vector,0.25992573843615036,0.13350641675374317,0.6065678448101064
+Medical-889e2c6a,"What factors contribute to a poorer prognosis in glioma patients, and how are these factors determined?",Complex Reasoning,vector,path_proxy,0.22572260303734407,0.6128425081008142,0.1614348888618417
+Medical-4191d4b2,Which two diagnostic methods are essential for both initial detection and definitive classification of glioma?,Complex Reasoning,light_proxy,path_proxy,0.24818949101202942,0.4435066734225957,0.3083038355653748
+Medical-669af50b,How does performance status impact the treatment plan for an AML patient?,Complex Reasoning,vector,path_proxy,0.38825329336282194,0.41478739151736027,0.1969593151198179
+Medical-8f1032c7,What diagnostic steps should be taken for a woman presenting with persistent bloating and pelvic pain suggestive of ovarian cancer?,Complex Reasoning,light_proxy,light_proxy,0.42691020833241455,0.3547528523329433,0.2183369393346422
+Medical-e851fe04,What factors determine the use of fertility-sparing surgery in ovarian cancer patients?,Complex Reasoning,light_proxy,light_proxy,0.41804718266122015,0.33985072431090024,0.24210209302787955
+Medical-2ebcf55d,What is the clinical significance of detecting a 17p deletion or TP53 mutation in CLL patients?,Complex Reasoning,vector,vector,0.37790127136528223,0.23523056622299043,0.3868681624117274
+Medical-ce7076ea,Why is a comprehensive metabolic panel and assessment of performance status important before starting CLL treatment?,Complex Reasoning,path_proxy,light_proxy,0.47842557443203204,0.34061604444469207,0.18095838112327597
+Medical-6108fa72,"What follow-up strategies are recommended for CLL patients not requiring immediate therapy, and what is their purpose?",Complex Reasoning,light_proxy,path_proxy,0.23308749086910902,0.5457468071633315,0.22116570196755944
+Medical-56131016,How do family history and older age together influence the risk and screening approach for CLL?,Complex Reasoning,vector,path_proxy,0.2064630943764444,0.5959167534552058,0.1976201521683498
+Medical-30e7caf0,Which diagnostic methods are required to confirm throat cancer and determine its biomarkers?,Complex Reasoning,light_proxy,path_proxy,0.3028443882933919,0.5680923626752122,0.12906324903139585
+Medical-95bdfdba,Which symptoms should prompt consideration of throat cancer and subsequent diagnostic evaluation?,Complex Reasoning,path_proxy,light_proxy,0.4663571601199708,0.2662580777769728,0.2673847621030564
+Medical-1892185a,What is the role of p16 protein in distinguishing subtypes of squamous cell carcinoma in the oropharynx?,Complex Reasoning,path_proxy,light_proxy,0.4062429725601902,0.28352548562142044,0.31023154181838924
+Medical-ade34649,"Which diagnostic procedures are used for tissue sampling in throat cancer, and why are they important?",Complex Reasoning,light_proxy,path_proxy,0.33853124562970294,0.38441386753765805,0.27705488683263907
+Medical-a0a1a141,"Which imaging modalities are used for both diagnosis and staging of throat cancer, and what is their role?",Complex Reasoning,path_proxy,path_proxy,0.28509283287745757,0.5319925572872173,0.18291460983532518
+Medical-8d55a40b,Which cancer type is characterized by the development of abnormal lymphocytes in the skin and can originate from either B or T cells?,Complex Reasoning,path_proxy,vector,0.30325428134354404,0.15397038385757147,0.5427753347988845
+Medical-bb678310,"What is the hierarchical relationship between non-Hodgkin lymphoma, primary cutaneous lymphoma, and cutaneous B-cell lymphoma?",Complex Reasoning,vector,vector,0.1367072081255299,0.331612033256851,0.5316807586176191
+Medical-417cbcfd,What is the connection between the assessment of biomarkers/genetic changes and the selection of diagnostic methods in CBCL?,Complex Reasoning,vector,path_proxy,0.172050554607501,0.5487537609231561,0.27919568446934284
+Medical-213847bd,Why is clinical trial enrollment especially considered for certain B-ALL and T-ALL cases in children?,Complex Reasoning,light_proxy,vector,0.2684799931793554,0.22598223414267346,0.5055377726779712
+Medical-1a56336a,"What distinguishes B-cell lymphoblastic lymphoma (B-LL, B-LBL) from B-cell ALL in terms of disease site?",Complex Reasoning,path_proxy,path_proxy,0.16822152150257608,0.5156177028277266,0.3161607756696973
+Medical-4d6219bc,Why is pharmacogenomic and biomarker testing important in the management of pediatric ALL?,Complex Reasoning,path_proxy,light_proxy,0.5918020654437505,0.21764011431107078,0.1905578202451788
+Medical-fad3190e,"For a patient with a history of FAP, what combination of surveillance and diagnostic methods is most critical?",Complex Reasoning,light_proxy,path_proxy,0.13111074274221227,0.7570661729639152,0.11182308429387257
+Medical-91c35427,"What is the standard surgical procedure for muscle-invasive bladder cancer, and what urinary diversion options may follow?",Complex Reasoning,path_proxy,vector,0.28624351670521087,0.35420666383370125,0.359549819461088
+Medical-27edd702,What systemic therapies are available for bladder cancer patients with advanced or metastatic disease?,Complex Reasoning,light_proxy,light_proxy,0.5764360443066294,0.2217074127418266,0.20185654295154393
+Medical-025c325c,Which symptoms and risk factors would prompt early diagnostic evaluation for bladder cancer?,Complex Reasoning,light_proxy,light_proxy,0.4358182549908518,0.38450496707702814,0.17967677793211992
+Medical-97e7a1d0,"If a kidney tumor is found to have sarcomatoid features, what does this indicate regarding its subtype and disease aggressiveness?",Complex Reasoning,light_proxy,vector,0.3340338850522236,0.29164651179707085,0.3743196031507055
+Medical-daeae948,"What are the most common and less common subtypes of RCC, and how are they organized?",Complex Reasoning,vector,path_proxy,0.23894238483167649,0.48137093018627186,0.27968668498205174
+Medical-a5f2e7a9,What are the key factors that determine the treatment approach for RCC according to the classification system?,Complex Reasoning,light_proxy,path_proxy,0.29479334021273496,0.4550737164959004,0.25013294329136476
+Medical-219da1ba,Why should fertility preservation be discussed before chemoradiation in a young patient with Stage II anal cancer?,Complex Reasoning,path_proxy,path_proxy,0.16535871386110815,0.753336352958366,0.08130493318052595
+Medical-ec0be6f4,How is the treatment approach different for a patient with Stage III anal cancer compared to one with Stage IV disease?,Complex Reasoning,vector,path_proxy,0.2876232736466757,0.4913299410186036,0.22104678533472055
+Medical-3d54d9e7,Which diagnostic methods are necessary to confirm a diagnosis of ALL and why must both bone marrow and blood tests be used?,Complex Reasoning,vector,path_proxy,0.14321843732418088,0.7583158744737692,0.0984656882020497
+Medical-64f219fe,"Why is fertility preservation considered before ALL treatment, and which treatment modalities make this necessary?",Complex Reasoning,vector,path_proxy,0.16733993692637933,0.7039775720565474,0.12868249101707324
+Medical-594504cc,What genetic and biomarker testing is necessary for ALL patients and how does it impact therapy selection?,Complex Reasoning,light_proxy,light_proxy,0.4384338529276603,0.3575808303245214,0.20398531674781817
+Medical-82f4c628,"How does the disease site differ between B-cell lymphoblastic lymphoma and T-cell lymphoblastic lymphoma, and what does this imply for clinical presentation?",Complex Reasoning,path_proxy,vector,0.18744770826820886,0.33322890367105396,0.4793233880607372
+Medical-2148e062,What is the purpose of surveillance for relapse in ALL patients and which follow-up methods are used?,Complex Reasoning,path_proxy,path_proxy,0.289311099421427,0.4761007195083825,0.2345881810701906
+Medical-42d7ac7c,"If a patient presents with jaundice and has a family history of breast cancer, which diagnostic tests and risk factors should be considered?",Complex Reasoning,light_proxy,path_proxy,0.21561269657375495,0.670579275168839,0.11380802825740609
+Medical-833eac1d,Which risk factors and genetic syndromes should prompt genetic testing in a patient with pancreatic cancer?,Complex Reasoning,path_proxy,path_proxy,0.33960593626324476,0.5039213336490428,0.15647273008771242
+Medical-25c17c3d,What treatments are recommended for advanced or metastatic pancreatic ductal adenocarcinoma?,Complex Reasoning,vector,light_proxy,0.48785776218253596,0.23166260592344196,0.28047963189402214
+Medical-aba4e30c,"Which stages of pancreatic ductal adenocarcinoma may involve lymph node spread, and how does this affect staging?",Complex Reasoning,vector,vector,0.23995138911122763,0.3123349973051013,0.4477136135836711
+Medical-b914d234,Which diagnostic procedures and biomarkers are required to confirm and assess the aggressiveness of localized prostate cancer?,Complex Reasoning,path_proxy,path_proxy,0.18095833883813356,0.6865471302566695,0.1324945309051969
+Medical-b3fece20,Why should germline genetic testing be considered for a patient with metastatic prostate cancer?,Complex Reasoning,path_proxy,path_proxy,0.1927804848061117,0.6652354256262553,0.14198408956763311
+Medical-8ff4d088,"What treatment options are specifically recommended for hormone receptor-positive, HER2-negative, PIK3CA-mutated metastatic breast cancer?",Complex Reasoning,path_proxy,light_proxy,0.4626186743645465,0.18721439253662017,0.35016693309883334
+Medical-24f2e8ea,How does the presence of HER2 positivity alter the systemic therapy options for invasive breast cancer?,Complex Reasoning,vector,vector,0.33425255839919527,0.2661465611706784,0.3996008804301263
+Medical-d1a87cb4,What combination of clinical findings and diagnostic results would indicate metastatic breast cancer (Stage IV)?,Complex Reasoning,light_proxy,path_proxy,0.1717839659084854,0.5290657221483201,0.29915031194319447
+Medical-ac117ebf,Why is a biopsy essential in both the diagnosis and management planning for breast cancer?,Complex Reasoning,path_proxy,light_proxy,0.409248434088934,0.40085104090938706,0.18990052500167887

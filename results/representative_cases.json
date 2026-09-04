@@ -1,0 +1,617 @@
+[
+  {
+    "id": "Medical-73586ddc",
+    "question": "What is the most common type of skin cancer?",
+    "answer": "Basal cell carcinoma (BCC) is the most common type of skin cancer.",
+    "evidence": "Basal cell carcinoma (BCC) is the most common type of skin cancer.",
+    "evidence_relations": "Basal cell carcinoma (BCC) is the most common type of skin cancer",
+    "question_type": "Fact Retrieval",
+    "silver_label": "vector",
+    "best_evidence_coverage": 1.0,
+    "low_signal": false,
+    "split": "test",
+    "oracle_route": "vector",
+    "predicted_route": "vector",
+    "route_correct": true,
+    "methods": {
+      "vector": {
+        "metrics": {
+          "id": "Medical-73586ddc",
+          "question_type": "Fact Retrieval",
+          "method": "vector",
+          "evidence_coverage": 1.0,
+          "evidence_hit_rate": 1.0,
+          "evidence_count": 1,
+          "answer_proxy_rouge_l": 0.4390243902439025,
+          "context_words": 538,
+          "latency_ms": 2.6424500028952025,
+          "retrieved_chunk_ids": "[27, 0, 43]",
+          "trace": "{\"strategy\": \"direct_tfidf\", \"seed_chunks\": [27, 0, 43]}",
+          "answer_proxy": "Key points Squamous cell skin cancer is the second most common type of skin cancer. It is the second most common type of skin cancer, after basal cell carcinoma."
+        },
+        "contexts": [
+          "hormones in blood, urine, and/or saliva that may be made by the adrenal tumor. Symptoms may be seen when your body makes too much of a hormone. Your doctor may consider these tests if you may have an adrenal tumor or syndromes caused by a tumor. More information on biochemical tests can be found in Guide Guide 1 Biochemical tests\nSquamous cell skin cancer basics 5 Skin basics 6 Risk factors 8 Diagnosis 11 Key points Squamous cell skin cancer is the second most common type of skin cancer. It is highly treatable and can often be cured. Squamous cell skin cancer is a common skin cancer, especially in fair-skinned people. It is the second most common type of skin cancer, after basal cell carcinoma. The third type—melanoma—is much less common than the other types but can be more aggressive. Because they do not behave like melanoma, basal cell and squamous cell skin cancers are often referred to as nonmelanoma skin cancers or keratinocyte carcinomas. Cancer that starts in a squamous cell is called a squamous cell",
+          "About basal cell skin cancer What is basal cell skin cancer? How is basal cell skin cancer treated? What can you do to get the best care? Basal cell skin cancer, also known as basal cell carcinoma (BCC), is the most common type of skin cancer. About 3 million cases of basal cell skin cancer are diagnosed every year in the United States. The good news is it can be cured in most cases. Treatment usually involves surgery to remove the cancer. Keep reading to find out more. What is basal cell skin cancer? Basal cell skin cancer is the most common of all skin cancer types. If caught early, it is easily treatable and curable. This is because it rarely metastasizes (spreads). Skin cancers often occur in the top layer of the skin (epidermis) and less commonly in the middle layer of the skin (dermis). The epidermis is made up of basal cells and other cells. Basal cell skin cancer occurs when some basal cells become abnormal and grow out of control. This cancer usually develops in areas exposed",
+          "in other parts of the body. Lymph nodes are small, bean-shaped structures that are part of the body's immune system. Lymph nodes filter substances that travel through the lymphatic fluid. They contain lymphocytes (white blood cells) that help the body fight infection and disease. If your lymph nodes feel larger than they should be, cancer may have spread to the lymph nodes (this is also called “nodal disease”). To find out, your doctor will use a needle biopsy to take a sample from the lymph node for testing. Squamous cell skin cancer that has not spread to nearby lymph nodes is referred to as “local” squamous cell skin cancer.  See Part 3 for more information on local CSCC. If cancer is found in the lymph nodes, it is called “regional” squamous cell skin cancer.  See Part 4 for more information on regional CSCC. Kno“wing there is treatment available gave me hope at diagnosis and for the future. Key points Squamous cell skin cancer is the second most common type of skin cancer. It is highly treatable and can often"
+        ],
+        "trace": {
+          "strategy": "direct_tfidf",
+          "seed_chunks": [
+            27,
+            0,
+            43
+          ]
+        }
+      },
+      "light_proxy": {
+        "metrics": {
+          "id": "Medical-73586ddc",
+          "question_type": "Fact Retrieval",
+          "method": "light_proxy",
+          "evidence_coverage": 1.0,
+          "evidence_hit_rate": 1.0,
+          "evidence_count": 1,
+          "answer_proxy_rouge_l": 0.4285714285714285,
+          "context_words": 901,
+          "latency_ms": 2.712255001824815,
+          "retrieved_chunk_ids": "[27, 0, 44, 43, 5]",
+          "trace": "{\"strategy\": \"one_hop_graph_diffusion\", \"seed_chunks\": [27, 0, 43, 44, 5, 31, 41, 1087]}",
+          "answer_proxy": "Key points Squamous cell skin cancer is the second most common type of skin cancer. Key points Squamous cell skin cancer is the second most common type of skin cancer."
+        },
+        "contexts": [
+          "hormones in blood, urine, and/or saliva that may be made by the adrenal tumor. Symptoms may be seen when your body makes too much of a hormone. Your doctor may consider these tests if you may have an adrenal tumor or syndromes caused by a tumor. More information on biochemical tests can be found in Guide Guide 1 Biochemical tests\nSquamous cell skin cancer basics 5 Skin basics 6 Risk factors 8 Diagnosis 11 Key points Squamous cell skin cancer is the second most common type of skin cancer. It is highly treatable and can often be cured. Squamous cell skin cancer is a common skin cancer, especially in fair-skinned people. It is the second most common type of skin cancer, after basal cell carcinoma. The third type—melanoma—is much less common than the other types but can be more aggressive. Because they do not behave like melanoma, basal cell and squamous cell skin cancers are often referred to as nonmelanoma skin cancers or keratinocyte carcinomas. Cancer that starts in a squamous cell is called a squamous cell",
+          "About basal cell skin cancer What is basal cell skin cancer? How is basal cell skin cancer treated? What can you do to get the best care? Basal cell skin cancer, also known as basal cell carcinoma (BCC), is the most common type of skin cancer. About 3 million cases of basal cell skin cancer are diagnosed every year in the United States. The good news is it can be cured in most cases. Treatment usually involves surgery to remove the cancer. Keep reading to find out more. What is basal cell skin cancer? Basal cell skin cancer is the most common of all skin cancer types. If caught early, it is easily treatable and curable. This is because it rarely metastasizes (spreads). Skin cancers often occur in the top layer of the skin (epidermis) and less commonly in the middle layer of the skin (dermis). The epidermis is made up of basal cells and other cells. Basal cell skin cancer occurs when some basal cells become abnormal and grow out of control. This cancer usually develops in areas exposed",
+          "on regional CSCC. Kno“wing there is treatment available gave me hope at diagnosis and for the future. Key points Squamous cell skin cancer is the second most common type of skin cancer. It is highly treatable and can often be cured. Squamous cell skin cancer is most commonly caused by getting sunburns or spending too much time in the sun over many years. h An actinic keratosis is an area of scaly or rough skin that has a higher chance of becoming squamous cell skin cancer. You may be more likely to get squamous cell skin cancer if you have actinic keratoses, a weakened immune system, or certain genetic syndromes. Squamous cell skin cancer can form in old wounds, burns, or scars. This is called Marjolin’s ulcer and it can be harder to treat. Testing for CSCC could include a full health history, an examination of any lesions, and a skin biopsy to remove a sample and test it for cancer. Imaging scans will also be done if cancer goes deeper into the skin or has spread to",
+          "in other parts of the body. Lymph nodes are small, bean-shaped structures that are part of the body's immune system. Lymph nodes filter substances that travel through the lymphatic fluid. They contain lymphocytes (white blood cells) that help the body fight infection and disease. If your lymph nodes feel larger than they should be, cancer may have spread to the lymph nodes (this is also called “nodal disease”). To find out, your doctor will use a needle biopsy to take a sample from the lymph node for testing. Squamous cell skin cancer that has not spread to nearby lymph nodes is referred to as “local” squamous cell skin cancer.  See Part 3 for more information on local CSCC. If cancer is found in the lymph nodes, it is called “regional” squamous cell skin cancer.  See Part 4 for more information on regional CSCC. Kno“wing there is treatment available gave me hope at diagnosis and for the future. Key points Squamous cell skin cancer is the second most common type of skin cancer. It is highly treatable and can often",
+          "skin cancer include: UV light exposure – UV light (radiation) that comes from the sun or tanning beds increases your risk. Fair skin, red or blond hair, or light eye color – People with lighter-colored skin are at a higher risk of developing skin cancer because melanin (skin pigment) filters out the sun's harmful UV rays. Age – Risk increases with age because sun exposure builds up over time. But skin cancer is becoming more common in younger people. History of skin cancer – If you or someone in your family has had skin cancer, you’re more likely to develop any type of skin cancer. Radiation therapy – Radiation treatment for other conditions, especially at a young age, can cause skin cancer. Immune suppression – People with weakened immune systems from organ transplants or autoimmune diseases are at higher risk for basal cell skin cancer. How is basal cell skin cancer treated? Basal cell skin cancer is highly treatable and curable. Catching it and treating it early is key. Surgery is the most common treatment for basal cell skin cancer. In some cases, radiation therapy"
+        ],
+        "trace": {
+          "strategy": "one_hop_graph_diffusion",
+          "seed_chunks": [
+            27,
+            0,
+            43,
+            44,
+            5,
+            31,
+            41,
+            1087
+          ]
+        }
+      },
+      "path_proxy": {
+        "metrics": {
+          "id": "Medical-73586ddc",
+          "question_type": "Fact Retrieval",
+          "method": "path_proxy",
+          "evidence_coverage": 1.0,
+          "evidence_hit_rate": 1.0,
+          "evidence_count": 1,
+          "answer_proxy_rouge_l": 0.4285714285714285,
+          "context_words": 1261,
+          "latency_ms": 4.474675995879807,
+          "retrieved_chunk_ids": "[27, 0, 44, 43, 5, 31, 41]",
+          "trace": "{\"strategy\": \"relation_path_proxy\", \"paths\": [[27, 0], [27, 43], [27, 44], [0, 27, 43], [0, 27, 44], [43, 44]]}",
+          "answer_proxy": "Key points Squamous cell skin cancer is the second most common type of skin cancer. Key points Squamous cell skin cancer is the second most common type of skin cancer."
+        },
+        "contexts": [
+          "hormones in blood, urine, and/or saliva that may be made by the adrenal tumor. Symptoms may be seen when your body makes too much of a hormone. Your doctor may consider these tests if you may have an adrenal tumor or syndromes caused by a tumor. More information on biochemical tests can be found in Guide Guide 1 Biochemical tests\nSquamous cell skin cancer basics 5 Skin basics 6 Risk factors 8 Diagnosis 11 Key points Squamous cell skin cancer is the second most common type of skin cancer. It is highly treatable and can often be cured. Squamous cell skin cancer is a common skin cancer, especially in fair-skinned people. It is the second most common type of skin cancer, after basal cell carcinoma. The third type—melanoma—is much less common than the other types but can be more aggressive. Because they do not behave like melanoma, basal cell and squamous cell skin cancers are often referred to as nonmelanoma skin cancers or keratinocyte carcinomas. Cancer that starts in a squamous cell is called a squamous cell",
+          "About basal cell skin cancer What is basal cell skin cancer? How is basal cell skin cancer treated? What can you do to get the best care? Basal cell skin cancer, also known as basal cell carcinoma (BCC), is the most common type of skin cancer. About 3 million cases of basal cell skin cancer are diagnosed every year in the United States. The good news is it can be cured in most cases. Treatment usually involves surgery to remove the cancer. Keep reading to find out more. What is basal cell skin cancer? Basal cell skin cancer is the most common of all skin cancer types. If caught early, it is easily treatable and curable. This is because it rarely metastasizes (spreads). Skin cancers often occur in the top layer of the skin (epidermis) and less commonly in the middle layer of the skin (dermis). The epidermis is made up of basal cells and other cells. Basal cell skin cancer occurs when some basal cells become abnormal and grow out of control. This cancer usually develops in areas exposed",
+          "on regional CSCC. Kno“wing there is treatment available gave me hope at diagnosis and for the future. Key points Squamous cell skin cancer is the second most common type of skin cancer. It is highly treatable and can often be cured. Squamous cell skin cancer is most commonly caused by getting sunburns or spending too much time in the sun over many years. h An actinic keratosis is an area of scaly or rough skin that has a higher chance of becoming squamous cell skin cancer. You may be more likely to get squamous cell skin cancer if you have actinic keratoses, a weakened immune system, or certain genetic syndromes. Squamous cell skin cancer can form in old wounds, burns, or scars. This is called Marjolin’s ulcer and it can be harder to treat. Testing for CSCC could include a full health history, an examination of any lesions, and a skin biopsy to remove a sample and test it for cancer. Imaging scans will also be done if cancer goes deeper into the skin or has spread to",
+          "in other parts of the body. Lymph nodes are small, bean-shaped structures that are part of the body's immune system. Lymph nodes filter substances that travel through the lymphatic fluid. They contain lymphocytes (white blood cells) that help the body fight infection and disease. If your lymph nodes feel larger than they should be, cancer may have spread to the lymph nodes (this is also called “nodal disease”). To find out, your doctor will use a needle biopsy to take a sample from the lymph node for testing. Squamous cell skin cancer that has not spread to nearby lymph nodes is referred to as “local” squamous cell skin cancer.  See Part 3 for more information on local CSCC. If cancer is found in the lymph nodes, it is called “regional” squamous cell skin cancer.  See Part 4 for more information on regional CSCC. Kno“wing there is treatment available gave me hope at diagnosis and for the future. Key points Squamous cell skin cancer is the second most common type of skin cancer. It is highly treatable and can often",
+          "skin cancer include: UV light exposure – UV light (radiation) that comes from the sun or tanning beds increases your risk. Fair skin, red or blond hair, or light eye color – People with lighter-colored skin are at a higher risk of developing skin cancer because melanin (skin pigment) filters out the sun's harmful UV rays. Age – Risk increases with age because sun exposure builds up over time. But skin cancer is becoming more common in younger people. History of skin cancer – If you or someone in your family has had skin cancer, you’re more likely to develop any type of skin cancer. Radiation therapy – Radiation treatment for other conditions, especially at a young age, can cause skin cancer. Immune suppression – People with weakened immune systems from organ transplants or autoimmune diseases are at higher risk for basal cell skin cancer. How is basal cell skin cancer treated? Basal cell skin cancer is highly treatable and curable. Catching it and treating it early is key. Surgery is the most common treatment for basal cell skin cancer. In some cases, radiation therapy",
+          "with light skin, hair, and eyes who have been in the sun very often throughout their lives are at the highest risk for squamous cell skin cancer. People who work outdoors are also at higher risk. Because longterm sun exposure can lead to squamous cell skin cancer, it is more common in people who have spent more years in the sun. Sun exposure Most squamous cell skin cancers are caused by spending too much time in the sun over a long period of time, frequent tanning, and getting sunburns. Indoor tanning Indoor tanning is a major risk factor for squamous cell skin cancer. Using all types of indoor tanning machines (eg, booths, beds) increases the risk of getting any type of skin cancer. Environmental toxins People who are often exposed to pollutants such as tobacco smoke, exhaust from cars or other vehicles, and arsenic (which can be found in soil, water, and air) can experience skin damage that can lead to squamous cell carcinoma. Scars and chronic wounds CSCC can form in scars or chronic (nonhealing) wounds, such as ulcers",
+          "a harmful reaction. A positron emission tomography (PET) scan uses a radioactive drug called a tracer. A tracer is injected into a vein (through an IV using a needle). The needle is most often inserted on the inside of your elbow. The tracer travels through your blood and collects in organs and tissues. This helps the radiologist see certain areas more clearly. You may need to wait for the tracer to be absorbed by your body, which takes about 1 hour. The tracer is attached to a substance that your cells and tissues use. Cancer cells use the substance differently than non-cancer cells. The radioactive part of the tracer lets your care team see how your cells are using the Cutaneous squamous cell carcinoma (CSCC) A very common type of skin cancer Occurs more often in lighter-skinned people Is commonly found in areas of the body exposed to sun, especially the head and neck Rarely spreads to distant areas of the body Can spread in the area where it first forms If not treated can cause severe skin damage and"
+        ],
+        "trace": {
+          "strategy": "relation_path_proxy",
+          "paths": [
+            [
+              27,
+              0
+            ],
+            [
+              27,
+              43
+            ],
+            [
+              27,
+              44
+            ],
+            [
+              0,
+              27,
+              43
+            ],
+            [
+              0,
+              27,
+              44
+            ],
+            [
+              43,
+              44
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "Medical-8866282b",
+    "question": "What are common symptoms of CSCC?",
+    "answer": "Symptoms of CSCC include scaly patches, solid or misshapen skin lesions, and lesions in areas of chronic damage.",
+    "evidence": "Common symptoms of CSCC include scaly patches.; Common symptoms of CSCC include solid or misshapen skin lesions.; Common symptoms of CSCC include lesions in areas of chronic damage.",
+    "evidence_relations": "Symptoms of CSCC include scaly patches, solid or misshapen skin lesions, and lesions in areas of chronic damage",
+    "question_type": "Fact Retrieval",
+    "silver_label": "light_proxy",
+    "best_evidence_coverage": 0.6388888888888888,
+    "low_signal": false,
+    "split": "test",
+    "oracle_route": "light_proxy",
+    "predicted_route": "light_proxy",
+    "route_correct": true,
+    "methods": {
+      "vector": {
+        "metrics": {
+          "id": "Medical-8866282b",
+          "question_type": "Fact Retrieval",
+          "method": "vector",
+          "evidence_coverage": 0.4166666666666667,
+          "evidence_hit_rate": 0.0,
+          "evidence_count": 3,
+          "answer_proxy_rouge_l": 0.09876543209876543,
+          "context_words": 538,
+          "latency_ms": 1.7832419980550185,
+          "retrieved_chunk_ids": "[1045, 260, 1038]",
+          "trace": "{\"strategy\": \"direct_tfidf\", \"seed_chunks\": [1045, 260, 1038]}",
+          "answer_proxy": "Common symptoms include: Headaches – Headaches are very common and often the first symptom in people with a glioma. Common symptoms include: Feeling bloated Heartburn and indigestion Pain or pressure in the pelvis or belly Trouble eating or feeling full fast Having to urinate often or urgently Pain during sex These symptoms can also be caused by hormonal changes or other common health problems."
+        },
+        "contexts": [
+          "well as the size of the tumor. Symptoms develop as the glioma grows against, or weaves itself into, a part of the brain. This growth can cause swelling (edema) in the brain tissue around the tumor. Sometimes a tumor blocks the flow of fluid (cerebrospinal fluid) in and around the brain. Some people with low-grade gliomas never have symptoms. Low-grade gliomas generally grow slowly and can develop for years before they’re diagnosed. High-grade gliomas can cause a range of symptoms. These gliomas can grow quickly, developing in months or weeks. However, symptoms can also be caused by medical problems other than tumors. So for the most accurate diagnosis, be sure to tell your provider and care team about any and all symptoms you’re having, even if the symptoms seem unrelated. Common symptoms include: Headaches – Headaches are very common and often the first symptom in people with a glioma. Headaches can be worse in the morning, wake you up in the middle of the night, and occur with nausea and vomiting. Seizures – Seizures are also frequent in people with",
+          "the tumor has grown large or the cancer has spread. Common symptoms include: Feeling bloated Heartburn and indigestion Pain or pressure in the pelvis or belly Trouble eating or feeling full fast Having to urinate often or urgently Pain during sex These symptoms can also be caused by hormonal changes or other common health problems. Ovarian cancer is more likely to be the cause if the symptoms: h Began less than 1 year ago, h Occur more than 12 days per month, and Are becoming more severe over time. If your provider suspects ovarian cancer based on your symptoms, you will have testing as described in this chapter. Testing helps determine the clinical (pre-treatment) stage. The clinical stage provides a best guess of how far the cancer has spread. It is a best guess because surgery is needed in order to know exactly how much cancer is in the body. Testing also helps determine whether surgery first is the best treatment. Having surgery first may not be possible based on the size and location of the tumor, or because of",
+          "and welldefined edges like the one in this illustration. Most gliomas blend deeply into normal brain tissue and have vague borders. This makes them very difficult to remove entirely. When the tumor is removed, some tumor cells must be left behind to avoid damaging nearby brain tissue. How are gliomas diagnosed? A glioma is often found when it starts causing symptoms. A symptom is a problem or feeling that may be a sign of disease. Gliomas cause symptoms when they put pressure on the brain or invade brain tissue. Some people have many symptoms while others don’t have any. Common symptoms of gliomas include: Unusual or frequent headaches Seizures Changes in personality or mood Nausea and vomiting Difficulty speaking or swallowing Muscle weakness Difficulty with walking, balance, or coordination Symptoms provide clues that something is wrong. But they don’t provide enough information to identify a specific illness. Different tests, physical exams, and surgical procedures are required to diagnose a glioma. If these tests show that you have a glioma, your care team will discuss your treatment options with"
+        ],
+        "trace": {
+          "strategy": "direct_tfidf",
+          "seed_chunks": [
+            1045,
+            260,
+            1038
+          ]
+        }
+      },
+      "light_proxy": {
+        "metrics": {
+          "id": "Medical-8866282b",
+          "question_type": "Fact Retrieval",
+          "method": "light_proxy",
+          "evidence_coverage": 0.6388888888888888,
+          "evidence_hit_rate": 0.0,
+          "evidence_count": 3,
+          "answer_proxy_rouge_l": 0.09876543209876543,
+          "context_words": 897,
+          "latency_ms": 2.508479003154207,
+          "retrieved_chunk_ids": "[1045, 260, 259, 1038, 79]",
+          "trace": "{\"strategy\": \"one_hop_graph_diffusion\", \"seed_chunks\": [1045, 260, 1038, 259, 86, 78, 79, 43]}",
+          "answer_proxy": "Common symptoms include: Headaches – Headaches are very common and often the first symptom in people with a glioma. Common symptoms include: Feeling bloated Heartburn and indigestion Pain or pressure in the pelvis or belly Trouble eating or feeling full fast Having to urinate often or urgently Pain during sex These symptoms can also be caused by hormonal changes or other common health problems."
+        },
+        "contexts": [
+          "well as the size of the tumor. Symptoms develop as the glioma grows against, or weaves itself into, a part of the brain. This growth can cause swelling (edema) in the brain tissue around the tumor. Sometimes a tumor blocks the flow of fluid (cerebrospinal fluid) in and around the brain. Some people with low-grade gliomas never have symptoms. Low-grade gliomas generally grow slowly and can develop for years before they’re diagnosed. High-grade gliomas can cause a range of symptoms. These gliomas can grow quickly, developing in months or weeks. However, symptoms can also be caused by medical problems other than tumors. So for the most accurate diagnosis, be sure to tell your provider and care team about any and all symptoms you’re having, even if the symptoms seem unrelated. Common symptoms include: Headaches – Headaches are very common and often the first symptom in people with a glioma. Headaches can be worse in the morning, wake you up in the middle of the night, and occur with nausea and vomiting. Seizures – Seizures are also frequent in people with",
+          "the tumor has grown large or the cancer has spread. Common symptoms include: Feeling bloated Heartburn and indigestion Pain or pressure in the pelvis or belly Trouble eating or feeling full fast Having to urinate often or urgently Pain during sex These symptoms can also be caused by hormonal changes or other common health problems. Ovarian cancer is more likely to be the cause if the symptoms: h Began less than 1 year ago, h Occur more than 12 days per month, and Are becoming more severe over time. If your provider suspects ovarian cancer based on your symptoms, you will have testing as described in this chapter. Testing helps determine the clinical (pre-treatment) stage. The clinical stage provides a best guess of how far the cancer has spread. It is a best guess because surgery is needed in order to know exactly how much cancer is in the body. Testing also helps determine whether surgery first is the best treatment. Having surgery first may not be possible based on the size and location of the tumor, or because of",
+          "ovarian cancers affect the layer of tissue surrounding the ovaries, called the epithelium. High-grade serous carcinoma (HGSC) and high-grade endometrioid carcinoma are the most common types of ovarian tumors. Less common ovarian cancers can start in the epithelium, in tissues that support the ovaries, or in the reproductive (egg) cells of the ovary. Treating ovarian cancer takes a team of experts. Gynecologic oncologists and medical oncologists often work together to plan your treatment. 2 Testing for ovarian cancer Abdominal and pelvic exam Imaging tests Biopsy Family history and genetic testing Nutritional and digestive tract health Blood tests Biomarker testing Key points This chapter describes the testing used to learn more about suspected ovarian cancer, including whether surgery is possible. Ovarian cancer can cause changes in the body that you can feel or notice. But you might not have symptoms until the tumor has grown large or the cancer has spread. Common symptoms include: Feeling bloated Heartburn and indigestion Pain or pressure in the pelvis or belly Trouble eating or feeling full fast Having to urinate often or urgently Pain during",
+          "and welldefined edges like the one in this illustration. Most gliomas blend deeply into normal brain tissue and have vague borders. This makes them very difficult to remove entirely. When the tumor is removed, some tumor cells must be left behind to avoid damaging nearby brain tissue. How are gliomas diagnosed? A glioma is often found when it starts causing symptoms. A symptom is a problem or feeling that may be a sign of disease. Gliomas cause symptoms when they put pressure on the brain or invade brain tissue. Some people have many symptoms while others don’t have any. Common symptoms of gliomas include: Unusual or frequent headaches Seizures Changes in personality or mood Nausea and vomiting Difficulty speaking or swallowing Muscle weakness Difficulty with walking, balance, or coordination Symptoms provide clues that something is wrong. But they don’t provide enough information to identify a specific illness. Different tests, physical exams, and surgical procedures are required to diagnose a glioma. If these tests show that you have a glioma, your care team will discuss your treatment options with",
+          "it. Curettage and electrodesiccation C&E or shave excision are recommended treatment options for low-risk, local CSCC. Usually it is considered for early, small CSCC on the surface of the skin. If the tumor ends up being deeper than expected into the skin during the procedure, a standard surgical or shave excision should be performed rather than C&E to remove deep areas of cancerous tissue. Standard surgical excision Standard surgical excision is a recommended treatment option for low-risk, local CSCC. If testing after surgery finds cancer cells in the surrounding tissue removed with the tumor, more treatment is needed. Further treatment options include: Mohs surgery or resection with PDEMA Another surgical excision Radiation therapy (if more surgery cannot be done) Mohs surgery or PDEMA Mohs surgery or another form of PDEMA is a recommended treatment option for low-risk CSCC that has not spread to lymph nodes.  See Part 2: Types of treatment for more detailed descriptions of these treatments. If you smoke or vape, seek help to quit If you smoke tobacco or use e-cigarettes, it is very important"
+        ],
+        "trace": {
+          "strategy": "one_hop_graph_diffusion",
+          "seed_chunks": [
+            1045,
+            260,
+            1038,
+            259,
+            86,
+            78,
+            79,
+            43
+          ]
+        }
+      },
+      "path_proxy": {
+        "metrics": {
+          "id": "Medical-8866282b",
+          "question_type": "Fact Retrieval",
+          "method": "path_proxy",
+          "evidence_coverage": 0.6388888888888888,
+          "evidence_hit_rate": 0.0,
+          "evidence_count": 3,
+          "answer_proxy_rouge_l": 0.09876543209876543,
+          "context_words": 1252,
+          "latency_ms": 4.059453996887896,
+          "retrieved_chunk_ids": "[1045, 260, 259, 1038, 79, 86, 78]",
+          "trace": "{\"strategy\": \"relation_path_proxy\", \"paths\": [[1045, 1038], [260, 259]]}",
+          "answer_proxy": "Common symptoms include: Headaches – Headaches are very common and often the first symptom in people with a glioma. Common symptoms include: Feeling bloated Heartburn and indigestion Pain or pressure in the pelvis or belly Trouble eating or feeling full fast Having to urinate often or urgently Pain during sex These symptoms can also be caused by hormonal changes or other common health problems."
+        },
+        "contexts": [
+          "well as the size of the tumor. Symptoms develop as the glioma grows against, or weaves itself into, a part of the brain. This growth can cause swelling (edema) in the brain tissue around the tumor. Sometimes a tumor blocks the flow of fluid (cerebrospinal fluid) in and around the brain. Some people with low-grade gliomas never have symptoms. Low-grade gliomas generally grow slowly and can develop for years before they’re diagnosed. High-grade gliomas can cause a range of symptoms. These gliomas can grow quickly, developing in months or weeks. However, symptoms can also be caused by medical problems other than tumors. So for the most accurate diagnosis, be sure to tell your provider and care team about any and all symptoms you’re having, even if the symptoms seem unrelated. Common symptoms include: Headaches – Headaches are very common and often the first symptom in people with a glioma. Headaches can be worse in the morning, wake you up in the middle of the night, and occur with nausea and vomiting. Seizures – Seizures are also frequent in people with",
+          "the tumor has grown large or the cancer has spread. Common symptoms include: Feeling bloated Heartburn and indigestion Pain or pressure in the pelvis or belly Trouble eating or feeling full fast Having to urinate often or urgently Pain during sex These symptoms can also be caused by hormonal changes or other common health problems. Ovarian cancer is more likely to be the cause if the symptoms: h Began less than 1 year ago, h Occur more than 12 days per month, and Are becoming more severe over time. If your provider suspects ovarian cancer based on your symptoms, you will have testing as described in this chapter. Testing helps determine the clinical (pre-treatment) stage. The clinical stage provides a best guess of how far the cancer has spread. It is a best guess because surgery is needed in order to know exactly how much cancer is in the body. Testing also helps determine whether surgery first is the best treatment. Having surgery first may not be possible based on the size and location of the tumor, or because of",
+          "ovarian cancers affect the layer of tissue surrounding the ovaries, called the epithelium. High-grade serous carcinoma (HGSC) and high-grade endometrioid carcinoma are the most common types of ovarian tumors. Less common ovarian cancers can start in the epithelium, in tissues that support the ovaries, or in the reproductive (egg) cells of the ovary. Treating ovarian cancer takes a team of experts. Gynecologic oncologists and medical oncologists often work together to plan your treatment. 2 Testing for ovarian cancer Abdominal and pelvic exam Imaging tests Biopsy Family history and genetic testing Nutritional and digestive tract health Blood tests Biomarker testing Key points This chapter describes the testing used to learn more about suspected ovarian cancer, including whether surgery is possible. Ovarian cancer can cause changes in the body that you can feel or notice. But you might not have symptoms until the tumor has grown large or the cancer has spread. Common symptoms include: Feeling bloated Heartburn and indigestion Pain or pressure in the pelvis or belly Trouble eating or feeling full fast Having to urinate often or urgently Pain during",
+          "and welldefined edges like the one in this illustration. Most gliomas blend deeply into normal brain tissue and have vague borders. This makes them very difficult to remove entirely. When the tumor is removed, some tumor cells must be left behind to avoid damaging nearby brain tissue. How are gliomas diagnosed? A glioma is often found when it starts causing symptoms. A symptom is a problem or feeling that may be a sign of disease. Gliomas cause symptoms when they put pressure on the brain or invade brain tissue. Some people have many symptoms while others don’t have any. Common symptoms of gliomas include: Unusual or frequent headaches Seizures Changes in personality or mood Nausea and vomiting Difficulty speaking or swallowing Muscle weakness Difficulty with walking, balance, or coordination Symptoms provide clues that something is wrong. But they don’t provide enough information to identify a specific illness. Different tests, physical exams, and surgical procedures are required to diagnose a glioma. If these tests show that you have a glioma, your care team will discuss your treatment options with",
+          "it. Curettage and electrodesiccation C&E or shave excision are recommended treatment options for low-risk, local CSCC. Usually it is considered for early, small CSCC on the surface of the skin. If the tumor ends up being deeper than expected into the skin during the procedure, a standard surgical or shave excision should be performed rather than C&E to remove deep areas of cancerous tissue. Standard surgical excision Standard surgical excision is a recommended treatment option for low-risk, local CSCC. If testing after surgery finds cancer cells in the surrounding tissue removed with the tumor, more treatment is needed. Further treatment options include: Mohs surgery or resection with PDEMA Another surgical excision Radiation therapy (if more surgery cannot be done) Mohs surgery or PDEMA Mohs surgery or another form of PDEMA is a recommended treatment option for low-risk CSCC that has not spread to lymph nodes.  See Part 2: Types of treatment for more detailed descriptions of these treatments. If you smoke or vape, seek help to quit If you smoke tobacco or use e-cigarettes, it is very important",
+          "highest risk factor found. If the tumor has grown into a nerve or group of nerves, usually seen under the microscope, it is a high-risk or very highrisk cancer. The tumor grade is a rating of how fast your doctors expect the cancer to grow and spread. The deeper the tumor has invaded into the skin, the higher the risk of the cancer returning after treatment. Recommended types of surgery for local, low-risk CSCC include curettage and electrodesiccation (C&E), standard surgical excision, or Mohs surgery or another form of PDEMA. For low-risk CSCC in non-surgical candidates, treatment with radiation therapy is an option. Recommended types of surgery for local, high-risk or very high-risk CSCC include Mohs surgery/PDEMA and standard surgical excision. For high-risk or very high-risk CSCC in non-surgical candidates, treatment with radiation therapy and/or systemic therapy is an option. 4 Regional CSCC (in lymph nodes) Testing Treatment Metastatic squamous cell skin cancer Key points Squamous cell carcinoma that has spread to nearby lymph nodes is known as “regional”. The goal of testing for regional cancer will",
+          "outside of the main tumor, it means that the cancer is more likely to spread to nearby lymph nodes and other parts of the body. This is known as lymphovascular invasion. Weakened immune system People with a weakened immune system have a higher risk of getting CSCC, and they are at higher risk of cancer returning after treatment. Examples of conditions that weaken the immune system include long-term corticosteroid use, having human immunodeficiency virus (HIV) or AIDS, or having received an organ transplant. Low-risk Surgery is the preferred treatment for low-risk CSCC that has not spread to lymph nodes. The options for surgery include: Curettage and electrodesiccation (C&E) or shave excision Standard surgical excision Mohs surgery or another form of PDEMA If you are not a candidate for surgery, treatment with radiation therapy is recommended if you can have it. Curettage and electrodesiccation C&E or shave excision are recommended treatment options for low-risk, local CSCC. Usually it is considered for early, small CSCC on the surface of the skin. If the tumor ends up being deeper than expected"
+        ],
+        "trace": {
+          "strategy": "relation_path_proxy",
+          "paths": [
+            [
+              1045,
+              1038
+            ],
+            [
+              260,
+              259
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "Medical-88c0b2ba",
+    "question": "Which diagnostic methods are used for BCC?",
+    "answer": "Diagnosis of BCC involves medical and family history, physical exam, skin exam, biopsy, and sometimes imaging.",
+    "evidence": "Diagnosis of BCC involves medical history.; Diagnosis of BCC involves family history.; Diagnosis of BCC involves a physical exam.; Diagnosis of BCC involves a skin exam.; Diagnosis of BCC involves a biopsy.; Diagnosis of BCC may involve imaging.",
+    "evidence_relations": "Diagnosis of BCC involves medical and family history, physical exam, skin exam, biopsy, and sometimes imaging",
+    "question_type": "Fact Retrieval",
+    "silver_label": "path_proxy",
+    "best_evidence_coverage": 0.4833333333333334,
+    "low_signal": false,
+    "split": "test",
+    "oracle_route": "path_proxy",
+    "predicted_route": "path_proxy",
+    "route_correct": true,
+    "methods": {
+      "vector": {
+        "metrics": {
+          "id": "Medical-88c0b2ba",
+          "question_type": "Fact Retrieval",
+          "method": "vector",
+          "evidence_coverage": 0.2416666666666667,
+          "evidence_hit_rate": 0.0,
+          "evidence_count": 6,
+          "answer_proxy_rouge_l": 0.05555555555555556,
+          "context_words": 532,
+          "latency_ms": 1.7545900045661256,
+          "retrieved_chunk_ids": "[449, 234, 572]",
+          "trace": "{\"strategy\": \"direct_tfidf\", \"seed_chunks\": [449, 234, 572]}",
+          "answer_proxy": "Diagnostic tests Diagnostic tests are used to confirm you have cancer. Diagnostic tests include imaging scans, biopsies, and genetic tests."
+        },
+        "contexts": [
+          "and chromosomes). A sample of your blood or bone marrow will be used to see if the AML cancer cells have any specific mutations. Some mutations may determine the type of treatment given. FISH Fluorescence in situ hybridization (FISH) is a method that involves special dyes called probes that attach to pieces of DNA. FISH can look for changes (abnormalities) that are too small to be seen with other methods. It can only be used for known changes. Since this test doesn’t need growing cells, it can be performed on either a bone marrow or blood sample. Sometimes, a bone marrow sample is needed to get all the information the care team needs to help plan your treatment. Karyotype A karyotype is a picture of your chromosomes. Karyotype A karyotype is a picture of chromosomes. Normal human cells contain 23 pairs of chromosomes for a total of 46 chromosomes. A karyotype will show extra, missing, rearranged, or abnormal pieces of chromosomes. Since a karyotype requires growing cells, a sample of bone marrow or blood must be used. Next-generation sequencing",
+          "Fluorescence in situ hybridization (FISH) is a method that involves special dyes called probes that attach to pieces of DNA. FISH can look for changes (abnormalities) that are too small to be seen with other methods. It can only be used for known changes. Since this test doesn’t need growing cells, it can be performed on either a bone marrow or blood sample. Sometimes, a bone marrow sample is needed to get all the information the care team needs to help plan your treatment. Karyotype A karyotype is a picture of your chromosomes. Karyotype A karyotype is a picture of chromosomes. Normal human cells contain 23 pairs of chromosomes for a total of 46 chromosomes. A karyotype will show extra, missing, rearranged, or abnormal pieces of chromosomes. Since a karyotype requires growing cells, a sample of bone marrow or blood must be used. Next-generation sequencing Next-generation sequencing (NGS) is a method used to determine a portion of a person’s DNA sequence. It shows if a gene has any mutations that might affect how the gene works. NGS looks",
+          "of life Your doctor or another member of your care team will ask you a series of questions about what symptoms you may have (such as peeing frequently, difficulty peeing or pooping, or sexual problems). You’ll also be asked how these symptoms affect your quality of life. Quality of life refers to your overall satisfaction with your well-being and your ability to participate in regular activities. It’s important to answer all these questions honestly and completely so your care team has full and upto-date information about how you’re doing. Diagnostic tests Diagnostic tests are used to confirm you have cancer. They’re also used to find out if the cancer is localized or advanced. Diagnostic tests can help plan treatment after you’ve been diagnosed and can detect whether the cancer is still growing or spreading after treatment. Diagnostic tests include imaging scans, biopsies, and genetic tests. Imaging tests An imaging test takes pictures (images) of the insides of your body. The images can reveal cancer, including its size, location, and other features such as the size"
+        ],
+        "trace": {
+          "strategy": "direct_tfidf",
+          "seed_chunks": [
+            449,
+            234,
+            572
+          ]
+        }
+      },
+      "light_proxy": {
+        "metrics": {
+          "id": "Medical-88c0b2ba",
+          "question_type": "Fact Retrieval",
+          "method": "light_proxy",
+          "evidence_coverage": 0.2416666666666667,
+          "evidence_hit_rate": 0.0,
+          "evidence_count": 6,
+          "answer_proxy_rouge_l": 0.05405405405405405,
+          "context_words": 890,
+          "latency_ms": 2.6172819998464547,
+          "retrieved_chunk_ids": "[449, 234, 621, 653, 572]",
+          "trace": "{\"strategy\": \"one_hop_graph_diffusion\", \"seed_chunks\": [449, 234, 572, 621, 0, 653, 644, 649]}",
+          "answer_proxy": "Diagnostic tests Diagnostic tests are used to confirm you have cancer. What’s the difference between a screening and diagnostic mammogram?"
+        },
+        "contexts": [
+          "and chromosomes). A sample of your blood or bone marrow will be used to see if the AML cancer cells have any specific mutations. Some mutations may determine the type of treatment given. FISH Fluorescence in situ hybridization (FISH) is a method that involves special dyes called probes that attach to pieces of DNA. FISH can look for changes (abnormalities) that are too small to be seen with other methods. It can only be used for known changes. Since this test doesn’t need growing cells, it can be performed on either a bone marrow or blood sample. Sometimes, a bone marrow sample is needed to get all the information the care team needs to help plan your treatment. Karyotype A karyotype is a picture of your chromosomes. Karyotype A karyotype is a picture of chromosomes. Normal human cells contain 23 pairs of chromosomes for a total of 46 chromosomes. A karyotype will show extra, missing, rearranged, or abnormal pieces of chromosomes. Since a karyotype requires growing cells, a sample of bone marrow or blood must be used. Next-generation sequencing",
+          "Fluorescence in situ hybridization (FISH) is a method that involves special dyes called probes that attach to pieces of DNA. FISH can look for changes (abnormalities) that are too small to be seen with other methods. It can only be used for known changes. Since this test doesn’t need growing cells, it can be performed on either a bone marrow or blood sample. Sometimes, a bone marrow sample is needed to get all the information the care team needs to help plan your treatment. Karyotype A karyotype is a picture of your chromosomes. Karyotype A karyotype is a picture of chromosomes. Normal human cells contain 23 pairs of chromosomes for a total of 46 chromosomes. A karyotype will show extra, missing, rearranged, or abnormal pieces of chromosomes. Since a karyotype requires growing cells, a sample of bone marrow or blood must be used. Next-generation sequencing Next-generation sequencing (NGS) is a method used to determine a portion of a person’s DNA sequence. It shows if a gene has any mutations that might affect how the gene works. NGS looks",
+          "found only in the ducts. Invasive breast cancer is cancer that has grown outside the ducts or lobules into surrounding tissue. Once outside the ducts or lobules, breast cancer can spread through lymph or blood to lymph nodes or other parts of the body. What’s the difference between a screening and diagnostic mammogram? A mammogram is a picture of the inside of your breast made using x-rays. During a mammogram, the breast is pressed between two plates while you stand in different positions. Multiple x-rays will be taken. A computer combines the x-rays to make detailed pictures. Screening mammograms are done on a regular basis when there are no signs or symptoms of breast cancer. Results take a few days. Diagnostic mammograms are used for those who have symptoms such as a lump, pain, nipple thickening or discharge, or whose breasts have changed shape or size. Diagnostic mammograms are also used to take a closer look at an abnormal area found in a screening mammogram. A radiologist will evaluate the diagnostic mammogram while you wait so if additional testing",
+          "detailed pictures. Screening mammograms are done on a regular basis when there are no signs or symptoms of breast cancer. Results take a few days. Diagnostic mammograms are used for those who have symptoms such as a lump, pain, nipple thickening or discharge, or whose breasts have changed shape or size. Diagnostic mammograms are also used to take a closer look at an abnormal area found in a screening mammogram. A radiologist will evaluate the diagnostic mammogram while you wait so if additional testing is needed, it can be done right away. Both types of mammograms use low dose x-rays to examine the breast. They may use either the standard 2-dimensional (2D) digital mammography or 3-dimensional (3D) mammograms known as tomosynthesis. might not be used if you have a serious allergy or if your kidneys aren’t working well. PET scan A positron emission tomography (PET) scan uses a radioactive drug called a tracer. A tracer is a substance injected into a vein to see where cancer cells are in the body and if they are using sugar produced by",
+          "of life Your doctor or another member of your care team will ask you a series of questions about what symptoms you may have (such as peeing frequently, difficulty peeing or pooping, or sexual problems). You’ll also be asked how these symptoms affect your quality of life. Quality of life refers to your overall satisfaction with your well-being and your ability to participate in regular activities. It’s important to answer all these questions honestly and completely so your care team has full and upto-date information about how you’re doing. Diagnostic tests Diagnostic tests are used to confirm you have cancer. They’re also used to find out if the cancer is localized or advanced. Diagnostic tests can help plan treatment after you’ve been diagnosed and can detect whether the cancer is still growing or spreading after treatment. Diagnostic tests include imaging scans, biopsies, and genetic tests. Imaging tests An imaging test takes pictures (images) of the insides of your body. The images can reveal cancer, including its size, location, and other features such as the size"
+        ],
+        "trace": {
+          "strategy": "one_hop_graph_diffusion",
+          "seed_chunks": [
+            449,
+            234,
+            572,
+            621,
+            0,
+            653,
+            644,
+            649
+          ]
+        }
+      },
+      "path_proxy": {
+        "metrics": {
+          "id": "Medical-88c0b2ba",
+          "question_type": "Fact Retrieval",
+          "method": "path_proxy",
+          "evidence_coverage": 0.4833333333333334,
+          "evidence_hit_rate": 0.0,
+          "evidence_count": 6,
+          "answer_proxy_rouge_l": 0.08695652173913045,
+          "context_words": 1249,
+          "latency_ms": 4.283078997104894,
+          "retrieved_chunk_ids": "[449, 234, 621, 572, 653, 0, 649]",
+          "trace": "{\"strategy\": \"relation_path_proxy\", \"paths\": [[449, 234]]}",
+          "answer_proxy": "Diagnostic tests Diagnostic tests are used to confirm you have cancer. Basal cell skin cancer, also known as basal cell carcinoma (BCC), is the most common type of skin cancer."
+        },
+        "contexts": [
+          "and chromosomes). A sample of your blood or bone marrow will be used to see if the AML cancer cells have any specific mutations. Some mutations may determine the type of treatment given. FISH Fluorescence in situ hybridization (FISH) is a method that involves special dyes called probes that attach to pieces of DNA. FISH can look for changes (abnormalities) that are too small to be seen with other methods. It can only be used for known changes. Since this test doesn’t need growing cells, it can be performed on either a bone marrow or blood sample. Sometimes, a bone marrow sample is needed to get all the information the care team needs to help plan your treatment. Karyotype A karyotype is a picture of your chromosomes. Karyotype A karyotype is a picture of chromosomes. Normal human cells contain 23 pairs of chromosomes for a total of 46 chromosomes. A karyotype will show extra, missing, rearranged, or abnormal pieces of chromosomes. Since a karyotype requires growing cells, a sample of bone marrow or blood must be used. Next-generation sequencing",
+          "Fluorescence in situ hybridization (FISH) is a method that involves special dyes called probes that attach to pieces of DNA. FISH can look for changes (abnormalities) that are too small to be seen with other methods. It can only be used for known changes. Since this test doesn’t need growing cells, it can be performed on either a bone marrow or blood sample. Sometimes, a bone marrow sample is needed to get all the information the care team needs to help plan your treatment. Karyotype A karyotype is a picture of your chromosomes. Karyotype A karyotype is a picture of chromosomes. Normal human cells contain 23 pairs of chromosomes for a total of 46 chromosomes. A karyotype will show extra, missing, rearranged, or abnormal pieces of chromosomes. Since a karyotype requires growing cells, a sample of bone marrow or blood must be used. Next-generation sequencing Next-generation sequencing (NGS) is a method used to determine a portion of a person’s DNA sequence. It shows if a gene has any mutations that might affect how the gene works. NGS looks",
+          "found only in the ducts. Invasive breast cancer is cancer that has grown outside the ducts or lobules into surrounding tissue. Once outside the ducts or lobules, breast cancer can spread through lymph or blood to lymph nodes or other parts of the body. What’s the difference between a screening and diagnostic mammogram? A mammogram is a picture of the inside of your breast made using x-rays. During a mammogram, the breast is pressed between two plates while you stand in different positions. Multiple x-rays will be taken. A computer combines the x-rays to make detailed pictures. Screening mammograms are done on a regular basis when there are no signs or symptoms of breast cancer. Results take a few days. Diagnostic mammograms are used for those who have symptoms such as a lump, pain, nipple thickening or discharge, or whose breasts have changed shape or size. Diagnostic mammograms are also used to take a closer look at an abnormal area found in a screening mammogram. A radiologist will evaluate the diagnostic mammogram while you wait so if additional testing",
+          "of life Your doctor or another member of your care team will ask you a series of questions about what symptoms you may have (such as peeing frequently, difficulty peeing or pooping, or sexual problems). You’ll also be asked how these symptoms affect your quality of life. Quality of life refers to your overall satisfaction with your well-being and your ability to participate in regular activities. It’s important to answer all these questions honestly and completely so your care team has full and upto-date information about how you’re doing. Diagnostic tests Diagnostic tests are used to confirm you have cancer. They’re also used to find out if the cancer is localized or advanced. Diagnostic tests can help plan treatment after you’ve been diagnosed and can detect whether the cancer is still growing or spreading after treatment. Diagnostic tests include imaging scans, biopsies, and genetic tests. Imaging tests An imaging test takes pictures (images) of the insides of your body. The images can reveal cancer, including its size, location, and other features such as the size",
+          "detailed pictures. Screening mammograms are done on a regular basis when there are no signs or symptoms of breast cancer. Results take a few days. Diagnostic mammograms are used for those who have symptoms such as a lump, pain, nipple thickening or discharge, or whose breasts have changed shape or size. Diagnostic mammograms are also used to take a closer look at an abnormal area found in a screening mammogram. A radiologist will evaluate the diagnostic mammogram while you wait so if additional testing is needed, it can be done right away. Both types of mammograms use low dose x-rays to examine the breast. They may use either the standard 2-dimensional (2D) digital mammography or 3-dimensional (3D) mammograms known as tomosynthesis. might not be used if you have a serious allergy or if your kidneys aren’t working well. PET scan A positron emission tomography (PET) scan uses a radioactive drug called a tracer. A tracer is a substance injected into a vein to see where cancer cells are in the body and if they are using sugar produced by",
+          "About basal cell skin cancer What is basal cell skin cancer? How is basal cell skin cancer treated? What can you do to get the best care? Basal cell skin cancer, also known as basal cell carcinoma (BCC), is the most common type of skin cancer. About 3 million cases of basal cell skin cancer are diagnosed every year in the United States. The good news is it can be cured in most cases. Treatment usually involves surgery to remove the cancer. Keep reading to find out more. What is basal cell skin cancer? Basal cell skin cancer is the most common of all skin cancer types. If caught early, it is easily treatable and curable. This is because it rarely metastasizes (spreads). Skin cancers often occur in the top layer of the skin (epidermis) and less commonly in the middle layer of the skin (dermis). The epidermis is made up of basal cells and other cells. Basal cell skin cancer occurs when some basal cells become abnormal and grow out of control. This cancer usually develops in areas exposed",
+          "issues. Your care team may order x-rays if your bones hurt or were abnormal on a bone scan. Diagnostic mammogram A mammogram is a picture of the insides of your breast. The pictures are made using x-rays. A computer combines the x-rays to make detailed pictures. A bilateral mammogram includes pictures of both breasts. Mammogram results are used to plan treatment. Diagnostic mammograms look at specific areas of your breasts, which may not be clearly seen on screening mammograms. They are used to see tumor and the size of the tumor(s). Diagnostic mammograms include extra compression in certain areas of the breast, magnification views, or rolling the breast to image additional areas of the breast. Other tests may include a breast MRI or ultrasound. MRI scan A magnetic resonance imaging (MRI) scan uses radio waves and powerful magnets to take pictures of the inside of the body. It does not use x-rays. Because of the very strong magnets used in the MRI machine, tell the technologist if you have any metal in your body. During the test, you will"
+        ],
+        "trace": {
+          "strategy": "relation_path_proxy",
+          "paths": [
+            [
+              449,
+              234
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "Medical-6884d3fa",
+    "question": "What does follow-up for BCC typically include?",
+    "answer": "Follow-up includes full skin exams with a doctor at least once a year.",
+    "evidence": "Follow-up for basal cell carcinoma includes full skin exams with a doctor.; Follow-up for basal cell carcinoma occurs at least once a year.",
+    "evidence_relations": "Follow-up includes full skin exams with a doctor at least once a year",
+    "question_type": "Fact Retrieval",
+    "silver_label": "path_proxy",
+    "best_evidence_coverage": 0.95,
+    "low_signal": false,
+    "split": "test",
+    "oracle_route": "path_proxy",
+    "predicted_route": "light_proxy",
+    "route_correct": false,
+    "methods": {
+      "vector": {
+        "metrics": {
+          "id": "Medical-6884d3fa",
+          "question_type": "Fact Retrieval",
+          "method": "vector",
+          "evidence_coverage": 0.7388888888888889,
+          "evidence_hit_rate": 0.5,
+          "evidence_count": 2,
+          "answer_proxy_rouge_l": 0.08163265306122448,
+          "context_words": 537,
+          "latency_ms": 1.7386649997206405,
+          "retrieved_chunk_ids": "[0, 1210, 798]",
+          "trace": "{\"strategy\": \"direct_tfidf\", \"seed_chunks\": [0, 1210, 798]}",
+          "answer_proxy": "Basal cell skin cancer, also known as basal cell carcinoma (BCC), is the most common type of skin cancer. If cancer is found during initial follow-up examination, it does not mean that treatment failed."
+        },
+        "contexts": [
+          "About basal cell skin cancer What is basal cell skin cancer? How is basal cell skin cancer treated? What can you do to get the best care? Basal cell skin cancer, also known as basal cell carcinoma (BCC), is the most common type of skin cancer. About 3 million cases of basal cell skin cancer are diagnosed every year in the United States. The good news is it can be cured in most cases. Treatment usually involves surgery to remove the cancer. Keep reading to find out more. What is basal cell skin cancer? Basal cell skin cancer is the most common of all skin cancer types. If caught early, it is easily treatable and curable. This is because it rarely metastasizes (spreads). Skin cancers often occur in the top layer of the skin (epidermis) and less commonly in the middle layer of the skin (dermis). The epidermis is made up of basal cells and other cells. Basal cell skin cancer occurs when some basal cells become abnormal and grow out of control. This cancer usually develops in areas exposed",
+          "If cancer is found during initial follow-up examination, it does not mean that treatment failed. Some anal cancers take longer to respond to treatment than others. It may be safe to monitor the cancer for as long as 6 months after treatment to see if there is improvement. Waiting to see if the cancer improves may avoid the need for surgery to remove the anus. If the cancer does not go into complete remission or gets worse, see “Progressive disease” below. If the cancer goes into remission, surveillance as described above under “Complete remission” is started. Progressive disease If the follow-up examination 8 to 12 weeks after treatment finds that the cancer has progressed, a biopsy will be performed to be certain. If biopsy results confirm progression, the next step is imaging. Imaging can show if the cancer is limited to the anal area (locally progressive) or whether it has spread to areas far from the pelvis (metastatic disease). See page 26 for information on the treatment of metastatic anal cancer. Treatment for locally progressive anal cancer is similar to",
+          "effects of treatment. More information on supportive care is available at NCCN.org/patientguidelines and on the NCCN Patient Guides for Cancer app. Stage 3 Chemotherapy is recommended after colectomy for all stage 3 colon cancers. Preferred regimens include CAPEOX and FOLFOX. Other recommended options include capecitabine and 5-FU. Chemotherapy is typically given for 3 to 6 months. The length of treatment depends on the regimen and the risk of recurrence. Surveillance Follow-up testing is started when there are no signs of cancer after treatment. It can help find new cancer growth early. Stage 1 A colonoscopy is recommended 1 year after surgery for stage 1 cancers. If the results are normal, your next colonoscopy should be in 3 years, and then every 5 years. If a concerning or high-risk adenoma is found, your next colonoscopy will be needed within 1 year. If you don’t have any symptoms, other testing is not needed on a regular basis. Imaging tests may be ordered if your doctor thinks the cancer may have come back or spread. Stages 2 and 3 In"
+        ],
+        "trace": {
+          "strategy": "direct_tfidf",
+          "seed_chunks": [
+            0,
+            1210,
+            798
+          ]
+        }
+      },
+      "light_proxy": {
+        "metrics": {
+          "id": "Medical-6884d3fa",
+          "question_type": "Fact Retrieval",
+          "method": "light_proxy",
+          "evidence_coverage": 0.8444444444444444,
+          "evidence_hit_rate": 1.0,
+          "evidence_count": 2,
+          "answer_proxy_rouge_l": 0.08163265306122448,
+          "context_words": 897,
+          "latency_ms": 2.395691000856459,
+          "retrieved_chunk_ids": "[0, 1207, 1210, 798, 1206]",
+          "trace": "{\"strategy\": \"one_hop_graph_diffusion\", \"seed_chunks\": [0, 1210, 798, 904, 1207, 1206, 91, 114]}",
+          "answer_proxy": "Basal cell skin cancer, also known as basal cell carcinoma (BCC), is the most common type of skin cancer. If cancer is found during initial follow-up examination, it does not mean that treatment failed."
+        },
+        "contexts": [
+          "About basal cell skin cancer What is basal cell skin cancer? How is basal cell skin cancer treated? What can you do to get the best care? Basal cell skin cancer, also known as basal cell carcinoma (BCC), is the most common type of skin cancer. About 3 million cases of basal cell skin cancer are diagnosed every year in the United States. The good news is it can be cured in most cases. Treatment usually involves surgery to remove the cancer. Keep reading to find out more. What is basal cell skin cancer? Basal cell skin cancer is the most common of all skin cancer types. If caught early, it is easily treatable and curable. This is because it rarely metastasizes (spreads). Skin cancers often occur in the top layer of the skin (epidermis) and less commonly in the middle layer of the skin (dermis). The epidermis is made up of basal cells and other cells. Basal cell skin cancer occurs when some basal cells become abnormal and grow out of control. This cancer usually develops in areas exposed",
+          "regimens that may be used with radiation include: Mitomycin and capecitabine Mitomycin and 5-FU 5-FU and cisplatin Next steps See Follow-up and surveillance on page 22 for next steps. Chemoradiation Chemoradiation is recommended for all nonmetastatic perianal cancers that do not meet the criteria for local excision. This includes: Fast-growing (high-grade) stage I and II cancers Stage II cancers that have invaded the sphincter Stage III cancers Chemoradiation treatment for perianal cancer is the same as for anal canal cancer. See page 17 for treatment information. Next steps See Follow-up and surveillance on page 22 for next steps. Follow-up and surveillance After finishing treatment for anal cancer, you will have testing to find early signs that cancer may have returned. This is called surveillance. Surveillance for the return of anal canal cancer and perianal cancer is the same. A follow-up physical exam with digital rectal examination (DRE) and anoscopy is recommended 8 to 12 weeks after completing chemoradiation to check the results of treatment. Your doctor may also order imaging tests. Depending on the results, the cancer is assigned to",
+          "If cancer is found during initial follow-up examination, it does not mean that treatment failed. Some anal cancers take longer to respond to treatment than others. It may be safe to monitor the cancer for as long as 6 months after treatment to see if there is improvement. Waiting to see if the cancer improves may avoid the need for surgery to remove the anus. If the cancer does not go into complete remission or gets worse, see “Progressive disease” below. If the cancer goes into remission, surveillance as described above under “Complete remission” is started. Progressive disease If the follow-up examination 8 to 12 weeks after treatment finds that the cancer has progressed, a biopsy will be performed to be certain. If biopsy results confirm progression, the next step is imaging. Imaging can show if the cancer is limited to the anal area (locally progressive) or whether it has spread to areas far from the pelvis (metastatic disease). See page 26 for information on the treatment of metastatic anal cancer. Treatment for locally progressive anal cancer is similar to",
+          "effects of treatment. More information on supportive care is available at NCCN.org/patientguidelines and on the NCCN Patient Guides for Cancer app. Stage 3 Chemotherapy is recommended after colectomy for all stage 3 colon cancers. Preferred regimens include CAPEOX and FOLFOX. Other recommended options include capecitabine and 5-FU. Chemotherapy is typically given for 3 to 6 months. The length of treatment depends on the regimen and the risk of recurrence. Surveillance Follow-up testing is started when there are no signs of cancer after treatment. It can help find new cancer growth early. Stage 1 A colonoscopy is recommended 1 year after surgery for stage 1 cancers. If the results are normal, your next colonoscopy should be in 3 years, and then every 5 years. If a concerning or high-risk adenoma is found, your next colonoscopy will be needed within 1 year. If you don’t have any symptoms, other testing is not needed on a regular basis. Imaging tests may be ordered if your doctor thinks the cancer may have come back or spread. Stages 2 and 3 In",
+          "are 5 possible grades: GX: Grade cannot be assessed (undetermined grade) G1: Well differentiated (low grade) G2: Moderately differentiated (intermediate grade) G3: Poorly differentiated (high grade) G4: Undifferentiated (high grade) Local excision should only be considered for low-grade (G1) and intermediate-grade (G2) perianal cancers. The normal tissue surrounding the lesion removed during surgery is called the surgical margin. If a margin of at least 1 cm is removed and it does not contain cancer cells, no further treatment is needed. The cancer will be observed. See Follow-up and surveillance on page 22 for next steps. If a margin of less than 1 cm is removed or if the tissue contains cancer cells, more treatment is needed. The preferred next treatment is another surgery (re-excision). Another option is radiation therapy with or without chemotherapy. If this treatment option is planned, chemotherapy regimens that may be used with radiation include: Mitomycin and capecitabine Mitomycin and 5-FU 5-FU and cisplatin Next steps See Follow-up and surveillance on page 22 for next steps. Chemoradiation Chemoradiation is recommended for all nonmetastatic perianal cancers that do"
+        ],
+        "trace": {
+          "strategy": "one_hop_graph_diffusion",
+          "seed_chunks": [
+            0,
+            1210,
+            798,
+            904,
+            1207,
+            1206,
+            91,
+            114
+          ]
+        }
+      },
+      "path_proxy": {
+        "metrics": {
+          "id": "Medical-6884d3fa",
+          "question_type": "Fact Retrieval",
+          "method": "path_proxy",
+          "evidence_coverage": 0.95,
+          "evidence_hit_rate": 1.0,
+          "evidence_count": 2,
+          "answer_proxy_rouge_l": 0.08163265306122448,
+          "context_words": 1255,
+          "latency_ms": 3.6677970056189224,
+          "retrieved_chunk_ids": "[798, 904, 0, 1210, 1207, 1206, 91]",
+          "trace": "{\"strategy\": \"relation_path_proxy\", \"paths\": [[798, 904]]}",
+          "answer_proxy": "Basal cell skin cancer, also known as basal cell carcinoma (BCC), is the most common type of skin cancer. If cancer is found during initial follow-up examination, it does not mean that treatment failed."
+        },
+        "contexts": [
+          "effects of treatment. More information on supportive care is available at NCCN.org/patientguidelines and on the NCCN Patient Guides for Cancer app. Stage 3 Chemotherapy is recommended after colectomy for all stage 3 colon cancers. Preferred regimens include CAPEOX and FOLFOX. Other recommended options include capecitabine and 5-FU. Chemotherapy is typically given for 3 to 6 months. The length of treatment depends on the regimen and the risk of recurrence. Surveillance Follow-up testing is started when there are no signs of cancer after treatment. It can help find new cancer growth early. Stage 1 A colonoscopy is recommended 1 year after surgery for stage 1 cancers. If the results are normal, your next colonoscopy should be in 3 years, and then every 5 years. If a concerning or high-risk adenoma is found, your next colonoscopy will be needed within 1 year. If you don’t have any symptoms, other testing is not needed on a regular basis. Imaging tests may be ordered if your doctor thinks the cancer may have come back or spread. Stages 2 and 3 In",
+          "upon with your doctor Time frame ranges are used to allow for differences in individual risk of recurrence and in patient and provider preference. Those considered at higher risk of recurrence may benefit from more frequent exams than those with a lower risk. After the fifth year, visits are generally spaced out to once per year. Or you and your doctor may agree on a different schedule after discussing your personal risk of recurrence. Imaging Unlike physical exams, imaging is generally not needed at regular intervals for an extended time after treatment. Imaging is typically ordered if you have new or worsening symptoms, or if other findings suggest recurrence or spread. Follow-up imaging is described below according to the cancer stage. Stage 1 If you had radiation or chemoradiation after non–fertility-sparing treatment, or if the cancer is stage 1B3, you may have a fluorodeoxyglucose (FDG) positron emission tomography/computed tomography (FDGPET/CT) scan 3 to 6 months after finishing treatment. The area from the neck to the midthigh is typically scanned. After fertility-sparing treatment, you may have an MRI",
+          "About basal cell skin cancer What is basal cell skin cancer? How is basal cell skin cancer treated? What can you do to get the best care? Basal cell skin cancer, also known as basal cell carcinoma (BCC), is the most common type of skin cancer. About 3 million cases of basal cell skin cancer are diagnosed every year in the United States. The good news is it can be cured in most cases. Treatment usually involves surgery to remove the cancer. Keep reading to find out more. What is basal cell skin cancer? Basal cell skin cancer is the most common of all skin cancer types. If caught early, it is easily treatable and curable. This is because it rarely metastasizes (spreads). Skin cancers often occur in the top layer of the skin (epidermis) and less commonly in the middle layer of the skin (dermis). The epidermis is made up of basal cells and other cells. Basal cell skin cancer occurs when some basal cells become abnormal and grow out of control. This cancer usually develops in areas exposed",
+          "If cancer is found during initial follow-up examination, it does not mean that treatment failed. Some anal cancers take longer to respond to treatment than others. It may be safe to monitor the cancer for as long as 6 months after treatment to see if there is improvement. Waiting to see if the cancer improves may avoid the need for surgery to remove the anus. If the cancer does not go into complete remission or gets worse, see “Progressive disease” below. If the cancer goes into remission, surveillance as described above under “Complete remission” is started. Progressive disease If the follow-up examination 8 to 12 weeks after treatment finds that the cancer has progressed, a biopsy will be performed to be certain. If biopsy results confirm progression, the next step is imaging. Imaging can show if the cancer is limited to the anal area (locally progressive) or whether it has spread to areas far from the pelvis (metastatic disease). See page 26 for information on the treatment of metastatic anal cancer. Treatment for locally progressive anal cancer is similar to",
+          "regimens that may be used with radiation include: Mitomycin and capecitabine Mitomycin and 5-FU 5-FU and cisplatin Next steps See Follow-up and surveillance on page 22 for next steps. Chemoradiation Chemoradiation is recommended for all nonmetastatic perianal cancers that do not meet the criteria for local excision. This includes: Fast-growing (high-grade) stage I and II cancers Stage II cancers that have invaded the sphincter Stage III cancers Chemoradiation treatment for perianal cancer is the same as for anal canal cancer. See page 17 for treatment information. Next steps See Follow-up and surveillance on page 22 for next steps. Follow-up and surveillance After finishing treatment for anal cancer, you will have testing to find early signs that cancer may have returned. This is called surveillance. Surveillance for the return of anal canal cancer and perianal cancer is the same. A follow-up physical exam with digital rectal examination (DRE) and anoscopy is recommended 8 to 12 weeks after completing chemoradiation to check the results of treatment. Your doctor may also order imaging tests. Depending on the results, the cancer is assigned to",
+          "are 5 possible grades: GX: Grade cannot be assessed (undetermined grade) G1: Well differentiated (low grade) G2: Moderately differentiated (intermediate grade) G3: Poorly differentiated (high grade) G4: Undifferentiated (high grade) Local excision should only be considered for low-grade (G1) and intermediate-grade (G2) perianal cancers. The normal tissue surrounding the lesion removed during surgery is called the surgical margin. If a margin of at least 1 cm is removed and it does not contain cancer cells, no further treatment is needed. The cancer will be observed. See Follow-up and surveillance on page 22 for next steps. If a margin of less than 1 cm is removed or if the tissue contains cancer cells, more treatment is needed. The preferred next treatment is another surgery (re-excision). Another option is radiation therapy with or without chemotherapy. If this treatment option is planned, chemotherapy regimens that may be used with radiation include: Mitomycin and capecitabine Mitomycin and 5-FU 5-FU and cisplatin Next steps See Follow-up and surveillance on page 22 for next steps. Chemoradiation Chemoradiation is recommended for all nonmetastatic perianal cancers that do",
+          "If you cannot have surgery, a discussion between different cancer doctors to consider your treatment options is recommended. If you can have it, radiation therapy with or without systemic therapy is recommended. Platinumbased chemotherapy is a recommended option for use with radiation. If radiation therapy is not expected to kill the cancer completely or may damage healthy organs, systemic therapy alone is recommended. If you are eligible, immunotherapy with an immune checkpoint inhibitor is preferred. Enrolling in a clinical trial may also be an option. A clinical trial could involve treatment with chemotherapy, targeted therapy, or immunotherapy. If you are not eligible for an immune checkpoint inhibitor or a clinical trial, options for systemic therapy include platinum-based chemotherapy and targeted therapy.  See Part 6: When treatment is over for information on monitoring and follow-up care. Metastatic squamous cell skin cancer Cancer cells can spread through blood and lymph to form tumors in other areas of the body. This is called metastasis. Squamous cell skin cancer does not metastasize often. For this reason, there is not much research on the best"
+        ],
+        "trace": {
+          "strategy": "relation_path_proxy",
+          "paths": [
+            [
+              798,
+              904
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "Medical-831bb1e6",
+    "question": "Which combination of risk factors should prompt earlier and more frequent skin exams for BCC?",
+    "answer": "A combination of older age, fair skin, and family history of skin cancer should prompt more frequent skin exams.",
+    "evidence": "Older age is a risk factor for basal cell carcinoma.; Fair skin is a risk factor for basal cell carcinoma.; Family history of skin cancer is a risk factor for basal cell carcinoma.; A combination of these risk factors should prompt more frequent skin exams.",
+    "evidence_relations": "Older age is associated with higher risk of BCC; Fair skin and family history of skin cancer increase risk of BCC; Follow-up includes full skin exams with a doctor at least once a year",
+    "question_type": "Complex Reasoning",
+    "silver_label": "path_proxy",
+    "best_evidence_coverage": 0.738095238095238,
+    "low_signal": false,
+    "split": "test",
+    "oracle_route": "path_proxy",
+    "predicted_route": "light_proxy",
+    "route_correct": false,
+    "methods": {
+      "vector": {
+        "metrics": {
+          "id": "Medical-831bb1e6",
+          "question_type": "Complex Reasoning",
+          "method": "vector",
+          "evidence_coverage": 0.40079365079365076,
+          "evidence_hit_rate": 0.0,
+          "evidence_count": 4,
+          "answer_proxy_rouge_l": 0.18867924528301885,
+          "context_words": 537,
+          "latency_ms": 1.673019003646914,
+          "retrieved_chunk_ids": "[96, 95, 97]",
+          "trace": "{\"strategy\": \"direct_tfidf\", \"seed_chunks\": [96, 95, 97]}",
+          "answer_proxy": "How often you should have skin exams depends on whether cancer has spread to nearby lymph nodes. How often you should have skin exams depends on whether cancer has spread to nearby lymph nodes."
+        },
+        "contexts": [
+          "depends on whether the cancer was local (not in nearby lymph nodes) or regional (in nearby lymph nodes). For local CSCC, monitoring during the first 2 years after treatment is the most important. Exams should occur at least every 3 to 12 months (for patients who are low risk) or every 3 to 6 months (for patients who are high risk) during this time. If no further skin cancer develops in the first 2 years, then exams are spaced out to every 6 to 12 months (once or twice a year) for another 3 years. After that, having an exam once a year for the rest of your life is recommended by NCCN experts. For very high-risk local CSCC, exams should occur every 3 to 6 months during the first 2 years, then every 6 months for the next 3 Skin exams by your doctor After finishing treatment, you should have your skin examined by a doctor on a regular basis. How often you should have skin exams depends on whether cancer has spread to nearby lymph nodes. years. After",
+          "or when—cancer might return. Because you’ve already had squamous cell skin cancer, you are at higher risk of getting it again. You’re also at higher risk of getting other types of skin cancer. This chapter explains how you can help prevent and detect future skin cancers. Skin exams by your doctor After finishing treatment, getting regular skin exams to monitor for the return of squamous cell skin cancer is very important. These followup exams should include a complete check of the skin on your entire body, as well as the lymph nodes closest to the cancer site. You will be asked to undress and put on a paper gown or drape. Undergarments can be worn during the exam. The gown will be adjusted to allow your doctor to see different areas. How often you should be checked depends on whether the cancer was local (not in nearby lymph nodes) or regional (in nearby lymph nodes). For local CSCC, monitoring during the first 2 years after treatment is the most important. Exams should occur at least every 3",
+          "Skin exams by your doctor After finishing treatment, you should have your skin examined by a doctor on a regular basis. How often you should have skin exams depends on whether cancer has spread to nearby lymph nodes. years. After that, exams can be spaced out to every 6 to 12 months (once or twice a year) for the rest of your life, as recommended by NCCN experts. In addition, imaging tests may be used to monitor some people who have local CSCC. For regional CSCC, physical exams with skin checks should be performed every 2 to 3 months for 1 year, every 2 to 4 months for the second year, every 4 to 6 months for another 3 years, and then every 6 to 12 months for the rest of your life. For patients with regional CSCC, your doctor may want you to have CT scans on a regular basis to look for signs of cancer in nearby lymph nodes or in other parts of your body. The follow-up exam schedules for both local and regional squamous cell skin"
+        ],
+        "trace": {
+          "strategy": "direct_tfidf",
+          "seed_chunks": [
+            96,
+            95,
+            97
+          ]
+        }
+      },
+      "light_proxy": {
+        "metrics": {
+          "id": "Medical-831bb1e6",
+          "question_type": "Complex Reasoning",
+          "method": "light_proxy",
+          "evidence_coverage": 0.5555555555555556,
+          "evidence_hit_rate": 0.0,
+          "evidence_count": 4,
+          "answer_proxy_rouge_l": 0.18867924528301885,
+          "context_words": 890,
+          "latency_ms": 2.3372759969788603,
+          "retrieved_chunk_ids": "[96, 95, 97, 94, 6]",
+          "trace": "{\"strategy\": \"one_hop_graph_diffusion\", \"seed_chunks\": [96, 95, 97, 94, 6, 123, 124, 1174]}",
+          "answer_proxy": "How often you should have skin exams depends on whether cancer has spread to nearby lymph nodes. How often you should have skin exams depends on whether cancer has spread to nearby lymph nodes."
+        },
+        "contexts": [
+          "depends on whether the cancer was local (not in nearby lymph nodes) or regional (in nearby lymph nodes). For local CSCC, monitoring during the first 2 years after treatment is the most important. Exams should occur at least every 3 to 12 months (for patients who are low risk) or every 3 to 6 months (for patients who are high risk) during this time. If no further skin cancer develops in the first 2 years, then exams are spaced out to every 6 to 12 months (once or twice a year) for another 3 years. After that, having an exam once a year for the rest of your life is recommended by NCCN experts. For very high-risk local CSCC, exams should occur every 3 to 6 months during the first 2 years, then every 6 months for the next 3 Skin exams by your doctor After finishing treatment, you should have your skin examined by a doctor on a regular basis. How often you should have skin exams depends on whether cancer has spread to nearby lymph nodes. years. After",
+          "or when—cancer might return. Because you’ve already had squamous cell skin cancer, you are at higher risk of getting it again. You’re also at higher risk of getting other types of skin cancer. This chapter explains how you can help prevent and detect future skin cancers. Skin exams by your doctor After finishing treatment, getting regular skin exams to monitor for the return of squamous cell skin cancer is very important. These followup exams should include a complete check of the skin on your entire body, as well as the lymph nodes closest to the cancer site. You will be asked to undress and put on a paper gown or drape. Undergarments can be worn during the exam. The gown will be adjusted to allow your doctor to see different areas. How often you should be checked depends on whether the cancer was local (not in nearby lymph nodes) or regional (in nearby lymph nodes). For local CSCC, monitoring during the first 2 years after treatment is the most important. Exams should occur at least every 3",
+          "Skin exams by your doctor After finishing treatment, you should have your skin examined by a doctor on a regular basis. How often you should have skin exams depends on whether cancer has spread to nearby lymph nodes. years. After that, exams can be spaced out to every 6 to 12 months (once or twice a year) for the rest of your life, as recommended by NCCN experts. In addition, imaging tests may be used to monitor some people who have local CSCC. For regional CSCC, physical exams with skin checks should be performed every 2 to 3 months for 1 year, every 2 to 4 months for the second year, every 4 to 6 months for another 3 years, and then every 6 to 12 months for the rest of your life. For patients with regional CSCC, your doctor may want you to have CT scans on a regular basis to look for signs of cancer in nearby lymph nodes or in other parts of your body. The follow-up exam schedules for both local and regional squamous cell skin",
+          "to kill leftover cancer cells. If surgery is not possible or not recommended, radiation therapy, systemic therapy, or a combination of both may be options. If radiation therapy is not expected to kill the cancer completely or may harm critical healthy organs, systemic therapy alone is recommended. Although it is uncommon, squamous cell skin cancer can metastasize. Metastatic CSCC that cannot be removed with surgery and/or radiation is treated with systemic therapy. Systemic therapy options for metastatic CSCC include immunotherapy or a systemic therapy given in a clinical trial. If you are not a candidate for either of these, your doctor may recommend platinum-based chemotherapy or targeted therapy. 5 When treatment is over Skin exams by your doctor Prevention for patients at high-risk Steps you can take Key points You’ve finished treatment. Now you may be wondering if—or when—cancer might return. Because you’ve already had squamous cell skin cancer, you are at higher risk of getting it again. You’re also at higher risk of getting other types of skin cancer. This chapter explains how",
+          "How is basal cell skin cancer treated? Basal cell skin cancer is highly treatable and curable. Catching it and treating it early is key. Surgery is the most common treatment for basal cell skin cancer. In some cases, radiation therapy or systemic therapy might be used to treat it. Following your treatment, you will have full skin exams with your doctor at least once a year. Between these periods, prevention is important. See Chapter 4: Treatment by risk and recurrence for more information. Recurrence is when basal cell skin cancer returns to the area where it was originally found, or it has metastasized (spread) to the lymph nodes or to distant parts of the body. But there are several options for how to treat it. Read more about how your cancer is treated in Chapter 3: Types of treatment and Chapter 4: Treatment by risk and recurrence. What can you do to get the best care? Advocate for yourself. You have an important role to play in your care. In fact, you’re more likely to get the care you"
+        ],
+        "trace": {
+          "strategy": "one_hop_graph_diffusion",
+          "seed_chunks": [
+            96,
+            95,
+            97,
+            94,
+            6,
+            123,
+            124,
+            1174
+          ]
+        }
+      },
+      "path_proxy": {
+        "metrics": {
+          "id": "Medical-831bb1e6",
+          "question_type": "Complex Reasoning",
+          "method": "path_proxy",
+          "evidence_coverage": 0.738095238095238,
+          "evidence_hit_rate": 0.5,
+          "evidence_count": 4,
+          "answer_proxy_rouge_l": 0.18867924528301885,
+          "context_words": 1249,
+          "latency_ms": 4.808993006008677,
+          "retrieved_chunk_ids": "[96, 95, 97, 94, 6, 124, 123]",
+          "trace": "{\"strategy\": \"relation_path_proxy\", \"paths\": [[96, 95], [96, 97], [95, 96, 97]]}",
+          "answer_proxy": "How often you should have skin exams depends on whether cancer has spread to nearby lymph nodes. How often you should have skin exams depends on whether cancer has spread to nearby lymph nodes."
+        },
+        "contexts": [
+          "depends on whether the cancer was local (not in nearby lymph nodes) or regional (in nearby lymph nodes). For local CSCC, monitoring during the first 2 years after treatment is the most important. Exams should occur at least every 3 to 12 months (for patients who are low risk) or every 3 to 6 months (for patients who are high risk) during this time. If no further skin cancer develops in the first 2 years, then exams are spaced out to every 6 to 12 months (once or twice a year) for another 3 years. After that, having an exam once a year for the rest of your life is recommended by NCCN experts. For very high-risk local CSCC, exams should occur every 3 to 6 months during the first 2 years, then every 6 months for the next 3 Skin exams by your doctor After finishing treatment, you should have your skin examined by a doctor on a regular basis. How often you should have skin exams depends on whether cancer has spread to nearby lymph nodes. years. After",
+          "or when—cancer might return. Because you’ve already had squamous cell skin cancer, you are at higher risk of getting it again. You’re also at higher risk of getting other types of skin cancer. This chapter explains how you can help prevent and detect future skin cancers. Skin exams by your doctor After finishing treatment, getting regular skin exams to monitor for the return of squamous cell skin cancer is very important. These followup exams should include a complete check of the skin on your entire body, as well as the lymph nodes closest to the cancer site. You will be asked to undress and put on a paper gown or drape. Undergarments can be worn during the exam. The gown will be adjusted to allow your doctor to see different areas. How often you should be checked depends on whether the cancer was local (not in nearby lymph nodes) or regional (in nearby lymph nodes). For local CSCC, monitoring during the first 2 years after treatment is the most important. Exams should occur at least every 3",
+          "Skin exams by your doctor After finishing treatment, you should have your skin examined by a doctor on a regular basis. How often you should have skin exams depends on whether cancer has spread to nearby lymph nodes. years. After that, exams can be spaced out to every 6 to 12 months (once or twice a year) for the rest of your life, as recommended by NCCN experts. In addition, imaging tests may be used to monitor some people who have local CSCC. For regional CSCC, physical exams with skin checks should be performed every 2 to 3 months for 1 year, every 2 to 4 months for the second year, every 4 to 6 months for another 3 years, and then every 6 to 12 months for the rest of your life. For patients with regional CSCC, your doctor may want you to have CT scans on a regular basis to look for signs of cancer in nearby lymph nodes or in other parts of your body. The follow-up exam schedules for both local and regional squamous cell skin",
+          "to kill leftover cancer cells. If surgery is not possible or not recommended, radiation therapy, systemic therapy, or a combination of both may be options. If radiation therapy is not expected to kill the cancer completely or may harm critical healthy organs, systemic therapy alone is recommended. Although it is uncommon, squamous cell skin cancer can metastasize. Metastatic CSCC that cannot be removed with surgery and/or radiation is treated with systemic therapy. Systemic therapy options for metastatic CSCC include immunotherapy or a systemic therapy given in a clinical trial. If you are not a candidate for either of these, your doctor may recommend platinum-based chemotherapy or targeted therapy. 5 When treatment is over Skin exams by your doctor Prevention for patients at high-risk Steps you can take Key points You’ve finished treatment. Now you may be wondering if—or when—cancer might return. Because you’ve already had squamous cell skin cancer, you are at higher risk of getting it again. You’re also at higher risk of getting other types of skin cancer. This chapter explains how",
+          "How is basal cell skin cancer treated? Basal cell skin cancer is highly treatable and curable. Catching it and treating it early is key. Surgery is the most common treatment for basal cell skin cancer. In some cases, radiation therapy or systemic therapy might be used to treat it. Following your treatment, you will have full skin exams with your doctor at least once a year. Between these periods, prevention is important. See Chapter 4: Treatment by risk and recurrence for more information. Recurrence is when basal cell skin cancer returns to the area where it was originally found, or it has metastasized (spread) to the lymph nodes or to distant parts of the body. But there are several options for how to treat it. Read more about how your cancer is treated in Chapter 3: Types of treatment and Chapter 4: Treatment by risk and recurrence. What can you do to get the best care? Advocate for yourself. You have an important role to play in your care. In fact, you’re more likely to get the care you",
+          "lung cancer. As your family health history changes, it is important to keep your HCP updated. Risk factors Risk is your chance of developing lung cancer. Everyone has some risk for developing lung cancer. However, some people are at increased risk. Risk factors can be activities that people do, things in the environment, or traits passed down from biological parents to children through genes. Genes are a set of instructions that tell new cells what to become (for example, lung, heart, and skin) and what to do (make hormones, absorb nutrients, and kill germs). Known risk factors for lung cancer are listed in Guide\nLung cancer basics What is lung cancer? What are the causes and risk factors? What are the symptoms of SCLC? What's the treatment for SCLC? Key points Small cell lung cancer forms from cells that line the inner airways of the lungs. It’s a cancer that can be aggressive and grows fast. This chapter gives you the basics of small cell lung cancer. What is lung cancer? The lungs are the main organs of the",
+          "cancer. Ask your health care provider if you qualify for lung cancer screening. Your wishes are always important. Talk to your health care provider and make your wishes known. 2 Risk assessment Risk factors Find out your level of risk Care team Start before you have symptoms Key points Risk is your chance of developing lung cancer. Some people are more likely than others to develop lung cancer. Anything that increases your chances of developing lung cancer is called a risk factor. Lung cancer screening is based on your risk factors described in this chapter. See your health care provider (HCP) regularly for checkups and cancer screenings, which may include screenings for skin, breast, prostate cancer, and other types of cancer. You might be asked to see your HCP more than every year based on your risk factors for developing lung cancer. As your family health history changes, it is important to keep your HCP updated. Risk factors Risk is your chance of developing lung cancer. Everyone has some risk for developing lung cancer. However, some people are at increased"
+        ],
+        "trace": {
+          "strategy": "relation_path_proxy",
+          "paths": [
+            [
+              96,
+              95
+            ],
+            [
+              96,
+              97
+            ],
+            [
+              95,
+              96,
+              97
+            ]
+          ]
+        }
+      }
+    }
+  }
+]

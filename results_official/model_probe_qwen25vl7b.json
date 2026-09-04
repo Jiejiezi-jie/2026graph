@@ -1,0 +1,296 @@
+{
+  "model": "/home/user/wangyuhan/models/Qwen2.5-VL-7B-Instruct",
+  "device": "cuda:0",
+  "temperature": 0,
+  "max_new_tokens": 256,
+  "gpu_free_before_gib": 22.62152099609375,
+  "gpu_total_gib": 23.5164794921875,
+  "qa_success": 5,
+  "qa_total": 5,
+  "json_success": 5,
+  "json_total": 5,
+  "usage": {
+    "input_tokens": 1732,
+    "output_tokens": 764,
+    "calls": 10
+  },
+  "qa": [
+    {
+      "id": "Medical-73586ddc",
+      "question": "What is the most common type of skin cancer?",
+      "answer": "Basal cell carcinoma",
+      "nonempty": true,
+      "input_tokens": 34,
+      "output_tokens": 5
+    },
+    {
+      "id": "Medical-a8bad1cf",
+      "question": "From which cell type does basal cell carcinoma arise?",
+      "answer": "Basal cell carcinoma arises from basal cells, which are the most superficial layer of cells in the epidermis.",
+      "nonempty": true,
+      "input_tokens": 34,
+      "output_tokens": 24
+    },
+    {
+      "id": "Medical-422500d5",
+      "question": "Which anatomical locations are most commonly affected by basal cell carcinoma?",
+      "answer": "The face, neck, and ears are the most commonly affected anatomical locations for basal cell carcinoma.",
+      "nonempty": true,
+      "input_tokens": 37,
+      "output_tokens": 21
+    },
+    {
+      "id": "Medical-6d2a190d",
+      "question": "What is the primary risk factor for basal cell carcinoma?",
+      "answer": "Excessive exposure to ultraviolet (UV) radiation from the sun or tanning beds is the primary risk factor for basal cell carcinoma.",
+      "nonempty": true,
+      "input_tokens": 35,
+      "output_tokens": 28
+    },
+    {
+      "id": "Medical-5ad931db",
+      "question": "How does fair skin affect the risk of developing BCC?",
+      "answer": "Fair skin increases the risk of developing Basal Cell Carcinoma (BCC).",
+      "nonempty": true,
+      "input_tokens": 36,
+      "output_tokens": 18
+    }
+  ],
+  "extractions": [
+    {
+      "chunk_index": 0,
+      "chunk": "About basal cell skin cancer What is basal cell skin cancer? How is basal cell skin cancer treated? What can you do to get the best care? Basal cell skin cancer, also known as basal cell carcinoma (BCC), is the most common type of skin cancer. About 3 million cases of basal cell skin cancer are diagnosed every year in the United States. The good news is it can be cured in most cases. Treatment usually involves surgery to remove the cancer. Keep reading to find out more. What is basal cell skin cancer? Basal cell skin cancer is the most common of all skin cancer types. If caught early, it is easily treatable and curable. This is because it rarely metastasizes (spreads). Skin cancers often occur in the top layer of the skin (epidermis) and less commonly in the middle layer of the skin (dermis). The epidermis is made up of basal cells and other cells. Basal cell skin cancer occurs when some basal cells become abnormal and grow out of control. This cancer usually develops in areas exposed",
+      "raw_output": "{\"entities\":[{\"name\":\"basal cell skin cancer\",\"type\":\"disease\",\"description\":\"A type of skin cancer\"},{\"name\":\"basal cell carcinoma (BCC)\",\"type\":\"disease\",\"description\":\"Another term for basal cell skin cancer\"},{\"name\":\"skin cancer\",\"type\":\"disease\",\"description\":\"A group of diseases characterized by abnormal growths on the skin\"}],\"relations\":[{\"source\":\"basal cell skin cancer\",\"target\":\"epidermis\",\"relation\":\"occurs in\"},{\"source\":\"basal cell skin cancer\",\"target\":\"dermis\",\"relation\":\"less commonly occurs in\"},{\"source\":\"basal cell skin cancer\",\"target\":\"basal cells\",\"relation\":\"abnormal growth of\"}]}",
+      "parsed": {
+        "entities": [
+          {
+            "name": "basal cell skin cancer",
+            "type": "disease",
+            "description": "A type of skin cancer"
+          },
+          {
+            "name": "basal cell carcinoma (BCC)",
+            "type": "disease",
+            "description": "Another term for basal cell skin cancer"
+          },
+          {
+            "name": "skin cancer",
+            "type": "disease",
+            "description": "A group of diseases characterized by abnormal growths on the skin"
+          }
+        ],
+        "relations": [
+          {
+            "source": "basal cell skin cancer",
+            "target": "epidermis",
+            "relation": "occurs in"
+          },
+          {
+            "source": "basal cell skin cancer",
+            "target": "dermis",
+            "relation": "less commonly occurs in"
+          },
+          {
+            "source": "basal cell skin cancer",
+            "target": "basal cells",
+            "relation": "abnormal growth of"
+          }
+        ]
+      },
+      "json_valid": true,
+      "error": null,
+      "input_tokens": 303,
+      "output_tokens": 140
+    },
+    {
+      "chunk_index": 1,
+      "chunk": "middle layer of the skin (dermis). The epidermis is made up of basal cells and other cells. Basal cell skin cancer occurs when some basal cells become abnormal and grow out of control. This cancer usually develops in areas exposed to the sun, including the face, head, neck, arms, legs, and trunk. But it can occur anywhere on the body. Skin lesions Basal cell skin cancer is often found on the face, head, and neck. Here is a basal cell lesion pictured on a person's cheek. Skin basics Did you know that your skin is your body’s largest organ and if you measured it it would stretch to about 20 square feet? Working as a barrier, your skin protects you from bacteria and chemicals and helps control your body temperature. It has 3 layers: Epidermis – The top layer of skin provides a waterproof barrier and creates skin color (melanin). Dermis – The middle layer involves connective tissue, blood vessels, oil and sweat glands, nerves, and hair follicles. Hypodermis – The deepest tissue layer is made up of fat and connective tissue",
+      "raw_output": "{\"entities\":[{\"name\":\"basal cell skin cancer\",\"type\":\"disease\",\"description\":\"abnormal growth of basal cells\"},{\"name\":\"skin\",\"type\":\"body_part\",\"description\":\"protects from bacteria and chemicals and controls body temperature\"},{\"name\":\"epidermis\",\"type\":\"skin_layer\",\"description\":\"top layer of skin providing a waterproof barrier and creating skin color\"}],\"relations\":[{\"source\":\"basal cell skin cancer\",\"target\":\"skin\",\"relation\":\"occurs_on\"},{\"source\":\"basal cell skin cancer\",\"target\":\"face\",\"relation\":\"common_location\"},{\"source\":\"skin\",\"target\":\"epidermis\",\"relation\":\"has_layer\"},{\"source\":\"skin\",\"target\":\"dermis\",\"relation\":\"has_layer\"},{\"source\":\"skin\",\"target\":\"hypodermis\",\"relation\":\"has_layer\"}]}",
+      "parsed": {
+        "entities": [
+          {
+            "name": "basal cell skin cancer",
+            "type": "disease",
+            "description": "abnormal growth of basal cells"
+          },
+          {
+            "name": "skin",
+            "type": "body_part",
+            "description": "protects from bacteria and chemicals and controls body temperature"
+          },
+          {
+            "name": "epidermis",
+            "type": "skin_layer",
+            "description": "top layer of skin providing a waterproof barrier and creating skin color"
+          }
+        ],
+        "relations": [
+          {
+            "source": "basal cell skin cancer",
+            "target": "skin",
+            "relation": "occurs_on"
+          },
+          {
+            "source": "basal cell skin cancer",
+            "target": "face",
+            "relation": "common_location"
+          },
+          {
+            "source": "skin",
+            "target": "epidermis",
+            "relation": "has_layer"
+          },
+          {
+            "source": "skin",
+            "target": "dermis",
+            "relation": "has_layer"
+          },
+          {
+            "source": "skin",
+            "target": "hypodermis",
+            "relation": "has_layer"
+          }
+        ]
+      },
+      "json_valid": true,
+      "error": null,
+      "input_tokens": 315,
+      "output_tokens": 158
+    },
+    {
+      "chunk_index": 2,
+      "chunk": "skin provides a waterproof barrier and creates skin color (melanin). Dermis – The middle layer involves connective tissue, blood vessels, oil and sweat glands, nerves, and hair follicles. Hypodermis – The deepest tissue layer is made up of fat and connective tissue. Most skin cancers form in the cells of the epidermis. It has 3 main types of cells: Squamous cells – These cells are flat cells found in the upper part of the epidermis. Basal cells – Found in the lower part of the epidermis, basal cells constantly divide to form new cells that replace the squamous cells on the skin’s surface. Melanocytes – Melanocytes are cells located in the lower part of the epidermis that produce melanin. Melanin is responsible for our hair, skin, and eye color. It also protects our skin from harmful ultraviolet (UV) rays. This book is only about basal cell skin cancer. For more information on squamous cell skin cancer or melanoma, read the NCCN Guidelines for Patients, available at NCCN.org/patientguidelines and on the NCCN Patient Guides for Cancer app. Signs and symptoms Basal cell skin",
+      "raw_output": "{\"entities\":[{\"name\":\"skin\",\"type\":\"body_part\",\"description\":\"The outermost layer of the skin\"},{\"name\":\"epidermis\",\"type\":\"tissue_layer\",\"description\":\"The outermost layer of the skin\"},{\"name\":\"basal_cells\",\"type\":\"cell_type\",\"description\":\"Cells in the lower part of the epidermis that constantly divide to form new cells\"}],\"relations\":[{\"source\":\"skin\",\"target\":\"epidermis\",\"relation\":\"composition\"},{\"source\":\"epidermis\",\"target\":\"basal_cells\",\"relation\":\"location\"},{\"source\":\"basal_cells\",\"target\":\"squamous_cells\",\"relation\":\"replacement\"}]}",
+      "parsed": {
+        "entities": [
+          {
+            "name": "skin",
+            "type": "body_part",
+            "description": "The outermost layer of the skin"
+          },
+          {
+            "name": "epidermis",
+            "type": "tissue_layer",
+            "description": "The outermost layer of the skin"
+          },
+          {
+            "name": "basal_cells",
+            "type": "cell_type",
+            "description": "Cells in the lower part of the epidermis that constantly divide to form new cells"
+          }
+        ],
+        "relations": [
+          {
+            "source": "skin",
+            "target": "epidermis",
+            "relation": "composition"
+          },
+          {
+            "source": "epidermis",
+            "target": "basal_cells",
+            "relation": "location"
+          },
+          {
+            "source": "basal_cells",
+            "target": "squamous_cells",
+            "relation": "replacement"
+          }
+        ]
+      },
+      "json_valid": true,
+      "error": null,
+      "input_tokens": 335,
+      "output_tokens": 126
+    },
+    {
+      "chunk_index": 3,
+      "chunk": "basal cell skin cancer. For more information on squamous cell skin cancer or melanoma, read the NCCN Guidelines for Patients, available at NCCN.org/patientguidelines and on the NCCN Patient Guides for Cancer app. Signs and symptoms Basal cell skin cancer can happen to anyone but it’s most common in people with lighter skin, lighter hair, or lighter eyes. In lighter skin, its lesions can look like any of the following: h Flat, pale or yellow areas, like a scar h Red patches that might be itchy Small, pink or red, shiny bumps that may have blue, brown, or black areas Open sores that don’t heal and might bleed, or go away and come back In darker (brown and black) skin, basal cell skin cancer can appear as a brown or glossy black bump with a rolled border. It can be mistaken for a normal mole. Be sure to look out for any new, changing, bleeding, or unusual skin growths. Skin cancer is easier to cure when it is caught early. To find out how basal cell skin",
+      "raw_output": "{\"entities\":[{\"name\":\"Basal cell skin cancer\",\"type\":\"disease\",\"description\":\"A type of skin cancer\"},{\"name\":\"Squamous cell skin cancer\",\"type\":\"disease\",\"description\":\"Another type of skin cancer\"},{\"name\":\"Melanoma\",\"type\":\"disease\",\"description\":\"A type of skin cancer\"}],\"relations\":[{\"source\":\"Basal cell skin cancer\",\"target\":\"Skin cancer\",\"relation\":\"type\"},{\"source\":\"Squamous cell skin cancer\",\"target\":\"Skin cancer\",\"relation\":\"type\"},{\"source\":\"Melanoma\",\"target\":\"Skin cancer\",\"relation\":\"type\"}]}",
+      "parsed": {
+        "entities": [
+          {
+            "name": "Basal cell skin cancer",
+            "type": "disease",
+            "description": "A type of skin cancer"
+          },
+          {
+            "name": "Squamous cell skin cancer",
+            "type": "disease",
+            "description": "Another type of skin cancer"
+          },
+          {
+            "name": "Melanoma",
+            "type": "disease",
+            "description": "A type of skin cancer"
+          }
+        ],
+        "relations": [
+          {
+            "source": "Basal cell skin cancer",
+            "target": "Skin cancer",
+            "relation": "type"
+          },
+          {
+            "source": "Squamous cell skin cancer",
+            "target": "Skin cancer",
+            "relation": "type"
+          },
+          {
+            "source": "Melanoma",
+            "target": "Skin cancer",
+            "relation": "type"
+          }
+        ]
+      },
+      "json_valid": true,
+      "error": null,
+      "input_tokens": 307,
+      "output_tokens": 120
+    },
+    {
+      "chunk_index": 4,
+      "chunk": "It can be mistaken for a normal mole. Be sure to look out for any new, changing, bleeding, or unusual skin growths. Skin cancer is easier to cure when it is caught early. To find out how basal cell skin cancer is diagnosed, read Chapter 2: Testing for basal cell skin cancer. Causes and risk factors Basal cell skin cancer is caused by exposure to UV radiation from the sun or other sources like tanning beds. UV radiation can harm the DNA inside basal skin cells. DNA controls how cells grow and function. If the DNA inside cells becomes damaged, the cells can become abnormal and grow out of control. You’re more likely to have basal cell skin cancer if you have certain risk factors. A risk factor increases the chance of developing cancer. Risk factors for basal cell skin cancer include: UV light exposure – UV light (radiation) that comes from the sun or tanning beds increases your risk. Fair skin, red or blond hair, or light eye color – People with lighter-colored skin are at a higher risk of",
+      "raw_output": "{\"entities\":[{\"name\":\"Skin cancer\",\"type\":\"disease\",\"description\":\"A condition characterized by abnormal growths on the skin\"},{\"name\":\"Basal cell skin cancer\",\"type\":\"disease\",\"description\":\"A specific type of skin cancer\"},{\"name\":\"UV radiation\",\"type\":\"exposure\",\"description\":\"Radiation from the sun or tanning beds that can damage DNA\"}],\"relations\":[{\"source\":\"Skin cancer\",\"target\":\"Normal mole\",\"relation\":\"confusion\"},{\"source\":\"Basal cell skin cancer\",\"target\":\"Skin cancer\",\"relation\":\"type\"},{\"source\":\"UV radiation\",\"target\":\"DNA\",\"relation\":\"damage\"}]}",
+      "parsed": {
+        "entities": [
+          {
+            "name": "Skin cancer",
+            "type": "disease",
+            "description": "A condition characterized by abnormal growths on the skin"
+          },
+          {
+            "name": "Basal cell skin cancer",
+            "type": "disease",
+            "description": "A specific type of skin cancer"
+          },
+          {
+            "name": "UV radiation",
+            "type": "exposure",
+            "description": "Radiation from the sun or tanning beds that can damage DNA"
+          }
+        ],
+        "relations": [
+          {
+            "source": "Skin cancer",
+            "target": "Normal mole",
+            "relation": "confusion"
+          },
+          {
+            "source": "Basal cell skin cancer",
+            "target": "Skin cancer",
+            "relation": "type"
+          },
+          {
+            "source": "UV radiation",
+            "target": "DNA",
+            "relation": "damage"
+          }
+        ]
+      },
+      "json_valid": true,
+      "error": null,
+      "input_tokens": 296,
+      "output_tokens": 124
+    }
+  ]
+}

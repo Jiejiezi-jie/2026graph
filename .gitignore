@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.venv_official/
+data/vendor/
+third_party/
+results_official/indexes/
+results_official/debug/
+results_official/pipeline.log
+PathRAG.log
+artifacts/*.joblib
