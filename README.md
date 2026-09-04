@@ -155,6 +155,16 @@ PYTHONPATH=. conda run --no-capture-output -n qwen_saliency \
   .venv_official/bin/python -m scripts.evaluate_official --stage p0
 ```
 
+LightRAG 完成全部 Chunk 的实体/关系抽取和图合并后，可校验并导出 GraphML：
+
+```bash
+PYTHONPATH=. .venv_official/bin/python -m scripts.export_lightrag_graph
+```
+
+脚本只接受同时存在完成态索引清单、非空节点和非空边的图，输出到
+`artifacts/lightrag/graph_chunk_entity_relation.graphml`，并生成包含节点数、
+边数和 SHA-256 的 `manifest.json`。未完成的中间索引不会被当作成果导出。
+
 P1 固定为每类 60 题，60%/20%/20% 划分在模型运行前冻结；runner 支持按
 逐题 JSONL 自动续跑：
 

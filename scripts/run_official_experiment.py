@@ -73,8 +73,7 @@ def _check_cuda_headroom(config: dict[str, Any]) -> None:
         device = str(entry.get("device", ""))
         if not device.startswith("cuda:"):
             continue
-        index = int(device.split(":", 1)[1])
-        free, total = torch.cuda.mem_get_info(index)
+        free, total = torch.cuda.mem_get_info(device)
         free_gib = free / 2**30
         required_gib = float(entry.get("min_free_gib", 0))
         print(

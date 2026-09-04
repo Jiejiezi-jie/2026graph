@@ -30,8 +30,8 @@
   },
   "embedding": {
     "model_path": "/home/user/wangyuhan/models/bge-m3",
-    "device": "cuda:4",
-    "min_free_gib": 6,
+    "device": "cpu",
+    "min_free_gib": 0,
     "batch_size": 4,
     "max_length": 2048,
     "normalize": true
