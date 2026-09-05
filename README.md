@@ -1,5 +1,49 @@
 # Adaptive GraphRAG：阶段一可复现实验
 
+## Novel 数据准备阶段
+
+当前新的数据准备阶段使用 GraphRAG-Bench 官方 Novel 子集，与下方
+已归档的 Medical 实验相互独立。本阶段只完成数据审计、选书、问题类型
+筛选和 8:2 分层划分，不进行切块、建图、检索、LLM 调用或路由训练。
+
+```bash
+git clone --depth 1 \
+  https://github.com/GraphRAG-Bench/GraphRAG-Benchmark.git \
+  data/external/GraphRAG-Benchmark
+
+python scripts/prepare_dataset.py \
+  --dataset-root data/external/GraphRAG-Benchmark \
+  --output-dir data/processed/phase1 \
+  --seed 42 \
+  --test-size 0.2
+
+python -m unittest tests.test_prepare_dataset -v
+```
+
+当前确定性规则选中 `Novel-40700` / *Dandy Dick*，并生成 62 道训练题和
+16 道测试题。完整数据审计与 20 个候选统计见
+[`reports/phase1_data_selection.md`](reports/phase1_data_selection.md)。未来索引或建图只能读取
+`data/processed/phase1/indexing_input.json`。
+
+## Novel 文本清洗与结构切块阶段
+
+阶段 2 只读取上述 `indexing_input.json`，确定性删除 Gutenberg 格式噪声，
+恢复 *Dandy Dick* 的前置信息、演出历史、演员表、三幕及第三幕两场结构，
+再以完整对话轮和舞台说明为基本单元切块。
+
+```bash
+python scripts/clean_and_chunk.py \
+  --input data/processed/phase1/indexing_input.json \
+  --config configs/chunking_config.json \
+  --output-dir data/processed/phase2
+
+python -m unittest tests.test_clean_and_chunk -v
+```
+
+详细删除区间、结构范围、人物集合、切块统计与人工抽样见
+[`reports/phase2_cleaning_and_chunking.md`](reports/phase2_cleaning_and_chunking.md)。
+本阶段不读取问题、答案或证据，也不调用 LLM/Embedding、建图或检索。
+
 本项目把 Adaptive-RAG 的核心协议迁移到三个异构检索后端：
 
 1. `vector`：直接文本向量检索；

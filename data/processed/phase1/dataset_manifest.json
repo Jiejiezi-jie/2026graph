@@ -1,0 +1,33 @@
+{
+  "dataset_name": "GraphRAG-Bench",
+  "subset": "Novel",
+  "official_url": "https://github.com/GraphRAG-Bench/GraphRAG-Benchmark",
+  "source_remote": "https://github.com/GraphRAG-Bench/GraphRAG-Benchmark.git",
+  "revision": "fdbab5959b18c96532580877ffe27d112bccc0ec",
+  "download_date": "2026-09-05",
+  "raw_file_hashes": {
+    "Datasets/Corpus/novel.json": "b0b4b2e7dc1b5d72f774783130d08b5d62e922fa9dc3e58612154b78b6089d15",
+    "Datasets/Questions/novel_questions.json": "d02b3db9c44d273371960f700f9ff9bf174dbc885542a7cadf636cded32c7af1"
+  },
+  "raw_file_sizes_bytes": {
+    "Datasets/Corpus/novel.json": 4848282,
+    "Datasets/Questions/novel_questions.json": 1312016
+  },
+  "selected_corpus": "Novel-40700",
+  "selected_title": "Dandy Dick",
+  "selected_genre": "三幕喜剧／闹剧",
+  "selection_rule": "先满足非《红楼梦》、单一连贯叙事作品、Fact Retrieval + Complex Reasoning >= 70、Complex Reasoning >= 25、文本非空且 source 严格匹配；再优先单一完整作品；以近似词数最少为主，距最短作品不超过 10% 时优先Complex Reasoning 更多者，最后按 corpus_name 字典序。",
+  "included_question_types": [
+    "Fact Retrieval",
+    "Complex Reasoning"
+  ],
+  "excluded_question_types": [
+    "Contextual Summarize",
+    "Creative Generation"
+  ],
+  "random_seed": 42,
+  "test_size": 0.2,
+  "validation_set": false,
+  "raw_question_id_unique": false,
+  "selected_question_ids_unique": true
+}

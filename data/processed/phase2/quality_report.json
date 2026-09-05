@@ -1,0 +1,211 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "input_corpus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "act_order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "first_second_act_end_markers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "third_act_two_scenes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "required_front_material_preserved",
+      "passed": true,
+      "detail": {
+        "title": true,
+        "author": true,
+        "production_history": true,
+        "theatre": true,
+        "cast": true
+      }
+    },
+    {
+      "name": "at_least_eight_characters",
+      "passed": true,
+      "detail": 11
+    },
+    {
+      "name": "dialogue_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stage_direction_nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clean_content_conserved_during_structure_restore",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stage_direction_markup_preserved",
+      "passed": true,
+      "detail": {
+        "opening_brackets": 627,
+        "closing_brackets": 451,
+        "italic_underscores": 1482
+      }
+    },
+    {
+      "name": "unit_ids_unique",
+      "passed": true,
+      "detail": 1404
+    },
+    {
+      "name": "chunk_ids_unique",
+      "passed": true,
+      "detail": 62
+    },
+    {
+      "name": "all_units_covered",
+      "passed": true,
+      "detail": 1404
+    },
+    {
+      "name": "no_cross_section_or_scene",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_empty_chunks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_duplicate_chunks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chunk_minimum_or_documented_tail",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "chunk_maximum_or_long_sentence_exception",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "overlap_present_or_documented",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "chunk_links_valid",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "chunk_unit_references_valid",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "chunk_counts_and_retrieval_prefixes_valid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "chunk_schema_has_no_supervision_keys",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retention_at_least_85_percent",
+      "passed": true,
+      "detail": 0.9810981489671773
+    },
+    {
+      "name": "work_end_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "footer_removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "removed_spans_logged",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "retention_ratio": 0.9810981489671773,
+  "small_chunk_exceptions": [
+    {
+      "chunk_id": "dd_front_c0001",
+      "reasons": [
+        "entire_section_below_min_words"
+      ]
+    }
+  ],
+  "oversize_chunk_exceptions": [],
+  "overlap_exceptions": [
+    {
+      "chunk_id": "dd_act02_c0012",
+      "reasons": [
+        "overlap_omitted_to_preserve_complete_unit_and_max_words"
+      ]
+    },
+    {
+      "chunk_id": "dd_act02_c0013",
+      "reasons": [
+        "overlap_omitted_to_preserve_complete_unit_and_max_words"
+      ]
+    }
+  ],
+  "input_sha256_before": "526bf7453bd9a59ab4df479b77257427d82d4839a56dcc0811fff787a1968ed6",
+  "input_sha256_after": "526bf7453bd9a59ab4df479b77257427d82d4839a56dcc0811fff787a1968ed6",
+  "stage1_input_unchanged": true,
+  "core_double_build_digest": "d5dca418f41e54e49d5b139ed0b9597a81f2c4814248c568c75d753980cd34aa",
+  "unit_type_counts": {
+    "cast_entry": 11,
+    "dialogue": 1320,
+    "heading": 12,
+    "prose": 57,
+    "stage_direction": 4
+  },
+  "section_chunk_counts": {
+    "act_1": 17,
+    "act_2": 17,
+    "act_3_scene_1": 13,
+    "act_3_scene_2": 11,
+    "cast": 1,
+    "front_matter": 1,
+    "production_history": 2
+  },
+  "chunk_word_statistics": {
+    "min": 60,
+    "p25": 446.0,
+    "median": 457.0,
+    "p75": 472.5,
+    "max": 515
+  },
+  "removed_category_counts": {
+    "删除正文标题前的 Project Gutenberg 制作者信息": {
+      "span_count": 1,
+      "character_count": 91
+    },
+    "删除作品结束后的转录说明和 Gutenberg 页脚": {
+      "span_count": 1,
+      "character_count": 2516
+    }
+  }
+}

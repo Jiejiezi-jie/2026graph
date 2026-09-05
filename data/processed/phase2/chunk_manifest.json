@@ -1,0 +1,98 @@
+{
+  "corpus_name": "Novel-40700",
+  "title": "Dandy Dick",
+  "input_file": "data/processed/phase1/indexing_input.json",
+  "input_sha256": "526bf7453bd9a59ab4df479b77257427d82d4839a56dcc0811fff787a1968ed6",
+  "config_file": "/home/user/wangyuhan/2026graph/configs/chunking_config.json",
+  "config_sha256": "129eff9be4399c27f6b9ddc906a38255360043c4f544c9af34760492335fbe4d",
+  "cleaning_version": "phase2-v1",
+  "chunking_config": {
+    "target_words": 380,
+    "min_words": 120,
+    "max_words": 520,
+    "overlap_words": 60,
+    "approx_token_chars": 4,
+    "cross_section": false,
+    "cross_act": false,
+    "cross_scene": false,
+    "preserve_dialogue_turn": true,
+    "preserve_stage_direction": true,
+    "structure_markers": {
+      "introductory_note": "INTRODUCTORY NOTE.",
+      "cast_start": "ROYAL COURT THEATRE, SLOANE SQUARE, S.W.",
+      "cast_end": "\"Dandy Dick\" was performed 171 times",
+      "main_title": "DANDY DICK.",
+      "act_1": "THE FIRST ACT.",
+      "act_1_end": "END OF THE FIRST ACT.",
+      "act_2": "THE SECOND ACT.",
+      "act_2_end": "END OF THE SECOND ACT.",
+      "act_3": "THE THIRD ACT.",
+      "act_3_scene_1_end": "THE END OF THE FIRST SCENE.",
+      "act_3_scene_2": "The second scene is the Morning Room at the Deanery again.",
+      "work_end": "THE END",
+      "footer_start": "_Transcriber's Note_"
+    },
+    "final_speakers": [
+      "THE DEAN",
+      "SIR TRISTRAM",
+      "GEORGIANA",
+      "SALOME",
+      "SHEBA",
+      "TARVER",
+      "DARBEY",
+      "BLORE",
+      "NOAH",
+      "HANNAH",
+      "HATCHAM",
+      "ALL"
+    ],
+    "collective_speakers": [
+      "ALL"
+    ],
+    "cast_role_markers": {
+      "THE DEAN": "THE VERY REV. AUGUSTIN JEDD, D.D.",
+      "SIR TRISTRAM": "SIR TRISTRAM MARDON, Bart",
+      "TARVER": "MAJOR TARVER",
+      "DARBEY": "MR. DARBEY",
+      "BLORE": "BLORE (Butler at the Deanery)",
+      "NOAH": "NOAH TOPPING (Constable at",
+      "HATCHAM": "HATCHAM (Sir Tristram's groom)",
+      "GEORGIANA": "GEORGIANA TIDMAN (a Widow,",
+      "SALOME": "SALOME } the Dean's Daughters",
+      "SHEBA": "SHEBA }",
+      "HANNAH": "HANNAH TOPPING (formerly in"
+    }
+  },
+  "raw_char_count": 137923,
+  "cleaned_char_count": 135316,
+  "structured_clean_file_char_count": 136720,
+  "structural_separator_characters_added": 1404,
+  "retention_ratio": 0.9810981489671773,
+  "unit_count": 1404,
+  "unit_type_counts": {
+    "cast_entry": 11,
+    "dialogue": 1320,
+    "heading": 12,
+    "prose": 57,
+    "stage_direction": 4
+  },
+  "chunk_count": 62,
+  "section_counts": {
+    "act_1": 17,
+    "act_2": 17,
+    "act_3_scene_1": 13,
+    "act_3_scene_2": 11,
+    "cast": 1,
+    "front_matter": 1,
+    "production_history": 2
+  },
+  "chunk_word_statistics": {
+    "min": 60,
+    "p25": 446.0,
+    "median": 457.0,
+    "p75": 472.5,
+    "max": 515
+  },
+  "deterministic": true,
+  "determinism_digest": "d5dca418f41e54e49d5b139ed0b9597a81f2c4814248c568c75d753980cd34aa"
+}
