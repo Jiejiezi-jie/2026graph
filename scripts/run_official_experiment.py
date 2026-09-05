@@ -26,6 +26,10 @@ def parse_args() -> argparse.Namespace:
         "--backend", choices=["all", "vector", "lightrag", "pathrag"], default="all"
     )
     parser.add_argument("--skip-index", action="store_true")
+    parser.add_argument("--llm-device", help="Override only the configured LLM device")
+    parser.add_argument(
+        "--embedding-device", help="Override only the configured embedding device"
+    )
     return parser.parse_args()
 
 
@@ -44,12 +48,29 @@ def _write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
 def _load_completed(path: Path) -> set[str]:
     if not path.exists():
         return set()
-    completed = set()
+    successful: dict[str, dict[str, Any]] = {}
+    order: list[str] = []
+    original: list[dict[str, Any]] = []
     with path.open(encoding="utf-8") as handle:
         for line in handle:
             if line.strip():
-                completed.add(json.loads(line)["question_id"])
-    return completed
+                row = json.loads(line)
+                original.append(row)
+                question_id = row["question_id"]
+                if (
+                    not row.get("error")
+                    and str(row.get("answer", "")).strip()
+                    and row.get("contexts")
+                ):
+                    if question_id not in successful:
+                        order.append(question_id)
+                    successful[question_id] = row
+    retained = [successful[question_id] for question_id in order]
+    if retained != original:
+        temporary = path.with_suffix(path.suffix + ".resume.tmp")
+        _write_jsonl(temporary, retained)
+        temporary.replace(path)
+    return set(successful)
 
 
 def _load_json_object(path: Path) -> dict[str, Any]:
@@ -133,6 +154,10 @@ async def main() -> None:
     project_dir = Path(__file__).resolve().parents[1]
     config_path = _resolve(project_dir, str(args.config))
     config = json.loads(config_path.read_text(encoding="utf-8"))
+    if args.llm_device:
+        config["llm"]["device"] = args.llm_device
+    if args.embedding_device:
+        config["embedding"]["device"] = args.embedding_device
     _check_cuda_headroom(config)
     benchmark_dir = _resolve(project_dir, config["benchmark_dir"])
     results_dir = _resolve(project_dir, config["results_dir"])

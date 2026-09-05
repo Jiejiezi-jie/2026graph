@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import re
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -18,6 +19,37 @@ class _Message:
     content: str
 
 
+FACTUALITY_JSON_SYSTEM_PROMPT = """You are a strict JSON API. Return only one valid JSON object with exactly the keys TP, FP, and FN. Each value must be a JSON array of objects with statement and reason string fields. Put every classified statement inside one of those arrays. Use concise reasons of at most 20 words. Do not emit Markdown, headings, analysis outside JSON, or additional keys."""
+
+
+def extract_json_payload(text: str) -> str:
+    """Return a valid JSON value embedded in a local judge response when present."""
+
+    stripped = text.strip()
+    try:
+        json.loads(stripped)
+        return stripped
+    except json.JSONDecodeError:
+        pass
+    for fenced in re.findall(r"```(?:json)?\s*(.*?)\s*```", text, flags=re.DOTALL | re.I):
+        candidate = fenced.strip()
+        try:
+            json.loads(candidate)
+            return candidate
+        except json.JSONDecodeError:
+            continue
+    decoder = json.JSONDecoder()
+    for index, character in enumerate(text):
+        if character not in "[{":
+            continue
+        try:
+            _, end = decoder.raw_decode(text[index:])
+        except json.JSONDecodeError:
+            continue
+        return text[index : index + end]
+    return text
+
+
 class LocalJudgeLLM:
     """Small duck-typed adapter for GraphRAG-Bench's official metric code."""
 
@@ -26,9 +58,20 @@ class LocalJudgeLLM:
         self.trace: list[dict[str, str]] = []
 
     async def ainvoke(self, prompt: str, config: Any = None) -> _Message:
-        response = await self.client.generate(prompt)
-        self.trace.append({"prompt": prompt, "response": response.text})
-        return _Message(content=response.text)
+        system_prompt = (
+            FACTUALITY_JSON_SYSTEM_PROMPT
+            if "Given a ground truth and an answer statements" in prompt
+            else None
+        )
+        response = await self.client.generate(prompt, system_prompt=system_prompt)
+        normalized = extract_json_payload(response.text)
+        trace = {"prompt": prompt, "response": response.text}
+        if system_prompt:
+            trace["system_prompt"] = system_prompt
+        if normalized != response.text:
+            trace["normalized_response"] = normalized
+        self.trace.append(trace)
+        return _Message(content=normalized)
 
 
 class LocalJudgeEmbeddings:
@@ -99,4 +142,3 @@ async def evaluate_official_row(
 def load_jsonl(path: Path) -> list[dict[str, Any]]:
     with path.open(encoding="utf-8") as handle:
         return [json.loads(line) for line in handle if line.strip()]
-

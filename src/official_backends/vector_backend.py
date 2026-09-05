@@ -65,6 +65,25 @@ class VectorRAGBackend(RAGBackend):
     def _vectors_path(self) -> Path:
         return self.working_dir / "vectors.npy"
 
+    def _load_persisted_index(self) -> bool:
+        metadata_path = self._metadata_path()
+        vectors_path = self._vectors_path()
+        if not metadata_path.exists() or not vectors_path.exists():
+            return False
+        metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+        if (
+            int(metadata.get("chunk_tokens", -1)) != self.chunk_tokens
+            or int(metadata.get("chunk_overlap_tokens", -1))
+            != self.chunk_overlap_tokens
+            or metadata.get("embedding_model") != str(self.embedding.model_path)
+        ):
+            raise RuntimeError("Persisted vector index configuration does not match")
+        self.chunks = list(metadata["chunks"])
+        self.vectors = np.load(vectors_path)
+        if self.vectors.shape[0] != len(self.chunks):
+            raise RuntimeError("Persisted vector index has inconsistent chunk/vector counts")
+        return True
+
     async def index(self, corpus: str) -> dict[str, Any]:
         self.working_dir.mkdir(parents=True, exist_ok=True)
         corpus_hash = hashlib.sha256(corpus.encode("utf-8")).hexdigest()
@@ -73,8 +92,7 @@ class VectorRAGBackend(RAGBackend):
         if metadata_path.exists() and vectors_path.exists():
             metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
             if metadata.get("corpus_sha256") == corpus_hash:
-                self.chunks = list(metadata["chunks"])
-                self.vectors = np.load(vectors_path)
+                self._load_persisted_index()
                 return {**metadata["index_stats"], "cached": True}
 
         started = time.perf_counter()
@@ -111,7 +129,7 @@ class VectorRAGBackend(RAGBackend):
         return stats
 
     async def query(self, question: str, question_id: str = "") -> dict[str, Any]:
-        if self.vectors is None or not self.chunks:
+        if (self.vectors is None or not self.chunks) and not self._load_persisted_index():
             raise RuntimeError("Vector index is not initialized")
         total_started = time.perf_counter()
         before = self.llm.snapshot()
@@ -149,4 +167,3 @@ class VectorRAGBackend(RAGBackend):
         row["retrieved_chunk_ids"] = [int(index) for index in selected]
         row["retrieval_scores"] = [float(scores[int(index)]) for index in selected]
         return row
-

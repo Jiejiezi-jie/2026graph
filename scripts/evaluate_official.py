@@ -19,6 +19,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--backend", choices=["all", "vector", "lightrag", "pathrag"], default="all"
     )
+    parser.add_argument("--llm-device", help="Override only the configured judge device")
+    parser.add_argument(
+        "--embedding-device", help="Override only the configured embedding device"
+    )
+    parser.add_argument("--source", type=Path, help="Override one backend's input JSONL")
+    parser.add_argument("--target", type=Path, help="Override one backend's output JSONL")
     return parser.parse_args()
 
 
@@ -33,17 +39,24 @@ async def main() -> None:
     project_dir = Path(__file__).resolve().parents[1]
     config_path = args.config if args.config.is_absolute() else project_dir / args.config
     config = json.loads(config_path.read_text(encoding="utf-8"))
+    if args.llm_device:
+        config["llm"]["device"] = args.llm_device
+    if args.embedding_device:
+        config["embedding"]["device"] = args.embedding_device
     result_dir = project_dir / config["results_dir"] / args.stage
     benchmark_dir = project_dir / config["benchmark_dir"]
     llm_config = config["llm"]
     embedding_config = config["embedding"]
+    judge_max_new_tokens = int(
+        config.get("judge_max_new_tokens", llm_config["max_callback_new_tokens"])
+    )
     judge = TransformersChatClient(
         model_path=llm_config["model_path"],
         device=llm_config["device"],
         dtype=llm_config["dtype"],
         temperature=0,
-        max_new_tokens=llm_config["max_new_tokens"],
-        max_callback_new_tokens=llm_config["max_callback_new_tokens"],
+        max_new_tokens=judge_max_new_tokens,
+        max_callback_new_tokens=judge_max_new_tokens,
     )
     embedding = TransformersEmbeddingClient(
         model_path=embedding_config["model_path"],
@@ -53,10 +66,17 @@ async def main() -> None:
         normalize=embedding_config["normalize"],
     )
     methods = ["vector", "lightrag", "pathrag"] if args.backend == "all" else [args.backend]
+    if (args.source or args.target) and len(methods) != 1:
+        raise ValueError("--source/--target require a single --backend")
     try:
         for method in methods:
-            source = result_dir / f"{method}.jsonl"
-            target = result_dir / f"{method}_evaluated.jsonl"
+            source = args.source or result_dir / f"{method}.jsonl"
+            target = args.target or result_dir / f"{method}_evaluated.jsonl"
+            if not source.is_absolute():
+                source = project_dir / source
+            if not target.is_absolute():
+                target = project_dir / target
+            target.parent.mkdir(parents=True, exist_ok=True)
             done = completed_ids(target)
             rows = load_jsonl(source)
             with target.open("a", encoding="utf-8") as handle:
@@ -80,4 +100,3 @@ async def main() -> None:
 
 if __name__ == "__main__":
     asyncio.run(main())
-

@@ -36,7 +36,7 @@ No credential values were read or printed.
 | Embedding fallback | BAAI/bge-large-en-v1.5 | `/home/user/wangyuhan/models/bge-large-en-v1.5` | 1.34 GB main weights | Downloaded and validated | Valid 1024-d normalized embeddings, but its 512-token limit would force LightRAG to split the shared 1,200-token chunks; retained only for a possible short-chunk ablation. |
 | Router baseline | TF-IDF + Logistic Regression | project code / sklearn 1.7.2 | negligible | Yes | Required reproducible baseline; selected on validation Macro-F1 only. |
 | Neural router | T5-Small/Base | no local checkpoint found | n/a | No | Optional only after a separate model download; not needed to unblock the required lightweight router. |
-| Independent judge | Qwen2.5-VL-7B-Instruct | local 7B path above | 16 GiB | Technically present, not yet validated | Same model family and VL architecture, so independence is weak. Official Answer Correctness judging should be reported with this bias or replaced by a stronger separate text model. |
+| Independent judge | Qwen2.5-VL-7B-Instruct | local 7B path above | 16 GiB | Used with limitation | GraphRAG-Bench metric prompts ran at temperature 0 with saved traces; same model family and VL architecture means independence is weak and possible self-evaluation bias is reported. |
 
 The Hugging Face cache contains a partial Qwen2-VL-72B snapshot and
 `bert-base-uncased`, but neither is a usable dedicated sentence embedding model;
@@ -55,6 +55,6 @@ the 72B cache is only 2.6 GiB and does not contain complete weights. The local
   `b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38`.
   No proxy or VLM hidden-state substitute is used.
 - Router: TF-IDF + Logistic Regression first; no test labels used for tuning.
-- GPU assignment: Qwen2.5-VL-7B on GPU 1 with an 18 GiB free-memory preflight
-  floor; BGE-M3 on GPU 4 with a 6 GiB floor. The user authorized the sustained
-  P0/P1 workload after the concrete memory and runtime estimate was reported.
+- GPU assignment: P1 used three parallel pairs: Vector on 0/1, LightRAG on 2/3,
+  and PathRAG on 4/5 (Qwen/BGE respectively), with 18/6 GiB free-memory
+  preflight floors. The user authorized the sustained P0/P1 workload.

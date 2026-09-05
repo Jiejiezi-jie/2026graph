@@ -5,8 +5,10 @@ import hashlib
 import io
 import json
 import logging
+import os
 import re
 import sys
+import threading
 import time
 import types
 from pathlib import Path
@@ -37,10 +39,31 @@ def _install_provider_import_shim() -> None:
 
 
 def _csv_records(text: str) -> list[dict[str, str]]:
-    rows = list(csv.reader(io.StringIO(text.strip())))
+    normalized = text.strip()
+    first_line, separator, body = normalized.partition("\n")
+    tab_headers = [value.strip() for value in first_line.rstrip("\r").split(",\t")]
+    # PathRAG's process_combine_contexts() emits source records as
+    # ``id,\tcontent`` without CSV-quoting the content again.  Parsing that
+    # with csv.reader both leaves a tab on the header and truncates evidence
+    # at its first comma.  Split only at PathRAG's record marker so the exact
+    # retrieved chunk is retained, including commas and embedded newlines.
+    if separator and tab_headers == ["id", "content"]:
+        matches = list(re.finditer(r"(?m)^(\d+),\t", body))
+        records: list[dict[str, str]] = []
+        for index, match in enumerate(matches):
+            end = matches[index + 1].start() if index + 1 < len(matches) else len(body)
+            records.append(
+                {
+                    "id": match.group(1),
+                    "content": body[match.end() : end].rstrip("\r\n"),
+                }
+            )
+        return records
+
+    rows = list(csv.reader(io.StringIO(normalized)))
     if len(rows) < 2:
         return []
-    headers = rows[0]
+    headers = [header.strip() for header in rows[0]]
     return [
         {header: value for header, value in zip(headers, row)}
         for row in rows[1:]
@@ -78,6 +101,84 @@ def parse_pathrag_context(context: str) -> dict[str, list[Any]]:
     }
 
 
+class _PersistentCallCache:
+    """Crash-tolerant JSONL cache for local PathRAG callback generations."""
+
+    def __init__(self, path: Path) -> None:
+        self.path = path
+        self._entries: dict[str, dict[str, Any]] = {}
+        self._write_lock = threading.Lock()
+        if not path.exists():
+            return
+        lines = path.read_text(encoding="utf-8").splitlines()
+        valid: list[dict[str, Any]] = []
+        truncated_tail = False
+        for index, line in enumerate(lines):
+            if not line.strip():
+                continue
+            try:
+                entry = json.loads(line)
+            except json.JSONDecodeError:
+                if index != len(lines) - 1:
+                    raise
+                truncated_tail = True
+                break
+            if not isinstance(entry, dict) or not isinstance(entry.get("key"), str):
+                raise ValueError(f"Invalid callback cache entry in {path}")
+            valid.append(entry)
+            self._entries[entry["key"]] = entry
+        if truncated_tail:
+            temporary = path.with_suffix(path.suffix + ".repair.tmp")
+            temporary.write_text(
+                "".join(
+                    json.dumps(entry, ensure_ascii=False, separators=(",", ":")) + "\n"
+                    for entry in valid
+                ),
+                encoding="utf-8",
+            )
+            temporary.replace(path)
+
+    @staticmethod
+    def key(
+        model_name: str,
+        prompt: str,
+        system_prompt: str | None,
+        history_messages: list[dict[str, Any]] | None,
+        max_new_tokens: int,
+        temperature: float,
+    ) -> str:
+        payload = json.dumps(
+            {
+                "version": 1,
+                "model": model_name,
+                "prompt": prompt,
+                "system_prompt": system_prompt,
+                "history_messages": history_messages or [],
+                "max_new_tokens": int(max_new_tokens),
+                "temperature": float(temperature),
+            },
+            ensure_ascii=False,
+            sort_keys=True,
+            separators=(",", ":"),
+        )
+        return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+    def get(self, key: str) -> dict[str, Any] | None:
+        return self._entries.get(key)
+
+    def put(self, entry: dict[str, Any]) -> None:
+        key = str(entry["key"])
+        with self._write_lock:
+            if key in self._entries:
+                return
+            self.path.parent.mkdir(parents=True, exist_ok=True)
+            with self.path.open("a", encoding="utf-8") as handle:
+                handle.write(
+                    json.dumps(entry, ensure_ascii=False, separators=(",", ":")) + "\n"
+                )
+                handle.flush()
+                os.fsync(handle.fileno())
+            self._entries[key] = entry
 class PathRAGBackend(RAGBackend):
     """Adapter over unmodified BUPT-GAMMA PathRAG retrieval code."""
 
@@ -106,6 +207,7 @@ class PathRAGBackend(RAGBackend):
         self.generation_prompt = generation_prompt
         self.rag: Any = None
         self._query_param_cls: Any = None
+        self._callback_cache: _PersistentCallCache | None = None
 
     async def _initialize(self) -> None:
         if self.rag is not None:
@@ -117,6 +219,10 @@ class PathRAGBackend(RAGBackend):
         _install_provider_import_shim()
         from PathRAG import PathRAG, QueryParam
         from PathRAG.utils import EmbeddingFunc, logger
+
+        self._callback_cache = _PersistentCallCache(
+            self.working_dir / "adapter_llm_cache.jsonl"
+        )
 
         if not logger.handlers:
             log_path = self.working_dir / "PathRAG.log"
@@ -135,12 +241,41 @@ class PathRAGBackend(RAGBackend):
             history_messages: list[dict[str, Any]] | None = None,
             **kwargs: Any,
         ) -> str:
-            return await self.llm.complete(
+            max_new_tokens = int(
+                kwargs.get("max_tokens")
+                or kwargs.get("max_new_tokens")
+                or self.llm.max_callback_new_tokens
+            )
+            assert self._callback_cache is not None
+            key = self._callback_cache.key(
+                self.llm.model_name,
+                prompt,
+                system_prompt,
+                history_messages,
+                max_new_tokens,
+                self.llm.temperature,
+            )
+            cached = self._callback_cache.get(key)
+            if cached is not None:
+                self.llm.account_cached_generation(
+                    int(cached["input_tokens"]), int(cached["output_tokens"])
+                )
+                return str(cached["text"])
+            generation = await self.llm.generate(
                 prompt,
                 system_prompt=system_prompt,
                 history_messages=history_messages,
-                **kwargs,
+                max_new_tokens=max_new_tokens,
             )
+            self._callback_cache.put(
+                {
+                    "key": key,
+                    "text": generation.text,
+                    "input_tokens": generation.input_tokens,
+                    "output_tokens": generation.output_tokens,
+                }
+            )
+            return generation.text
 
         embedding_func = EmbeddingFunc(
             embedding_dim=self.embedding.dimension,
@@ -154,11 +289,19 @@ class PathRAGBackend(RAGBackend):
             chunk_overlap_token_size=self.chunk_overlap_tokens,
             llm_model_func=llm_callback,
             llm_model_name=self.llm.model_name,
-            llm_model_max_async=1,
+            # PathRAG starts one coroutine per chunk and implements its own
+            # limiter with a 0.1 ms polling loop. Keep its gate above the
+            # corpus chunk count so the event loop does not busy-spin; the
+            # local chat client still serializes model.generate with its
+            # inference lock, preserving deterministic single-model calls.
+            llm_model_max_async=256,
             llm_model_max_token_size=32768,
             embedding_func=embedding_func,
             embedding_batch_num=self.embedding.batch_size,
-            embedding_func_max_async=1,
+            # The embedding client already serializes access to one BGE-M3
+            # instance. Keep PathRAG's polling gate above every expected batch
+            # so hundreds of waiting coroutines do not starve the worker.
+            embedding_func_max_async=512,
             entity_extract_max_gleaning=1,
             enable_llm_cache=True,
             addon_params={"language": "English"},

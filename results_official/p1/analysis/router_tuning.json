@@ -1,0 +1,194 @@
+[
+  {
+    "include_all_failed": false,
+    "feature_kind": "word",
+    "class_weight": null,
+    "c_value": 0.5,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": false,
+    "feature_kind": "word",
+    "class_weight": null,
+    "c_value": 1.0,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": false,
+    "feature_kind": "word",
+    "class_weight": null,
+    "c_value": 2.0,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": false,
+    "feature_kind": "word",
+    "class_weight": "balanced",
+    "c_value": 0.5,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": false,
+    "feature_kind": "word",
+    "class_weight": "balanced",
+    "c_value": 1.0,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": false,
+    "feature_kind": "word",
+    "class_weight": "balanced",
+    "c_value": 2.0,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": false,
+    "feature_kind": "word_char",
+    "class_weight": null,
+    "c_value": 0.5,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": false,
+    "feature_kind": "word_char",
+    "class_weight": null,
+    "c_value": 1.0,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": false,
+    "feature_kind": "word_char",
+    "class_weight": null,
+    "c_value": 2.0,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": false,
+    "feature_kind": "word_char",
+    "class_weight": "balanced",
+    "c_value": 0.5,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": false,
+    "feature_kind": "word_char",
+    "class_weight": "balanced",
+    "c_value": 1.0,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": false,
+    "feature_kind": "word_char",
+    "class_weight": "balanced",
+    "c_value": 2.0,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word",
+    "class_weight": null,
+    "c_value": 0.5,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word",
+    "class_weight": null,
+    "c_value": 1.0,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word",
+    "class_weight": null,
+    "c_value": 2.0,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word",
+    "class_weight": "balanced",
+    "c_value": 0.5,
+    "validation_accuracy": 0.9583333333333334,
+    "validation_macro_f1": 0.326241134751773
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word",
+    "class_weight": "balanced",
+    "c_value": 1.0,
+    "validation_accuracy": 0.9583333333333334,
+    "validation_macro_f1": 0.326241134751773
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word",
+    "class_weight": "balanced",
+    "c_value": 2.0,
+    "validation_accuracy": 0.9583333333333334,
+    "validation_macro_f1": 0.326241134751773
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word_char",
+    "class_weight": null,
+    "c_value": 0.5,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word_char",
+    "class_weight": null,
+    "c_value": 1.0,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word_char",
+    "class_weight": null,
+    "c_value": 2.0,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word_char",
+    "class_weight": "balanced",
+    "c_value": 0.5,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word_char",
+    "class_weight": "balanced",
+    "c_value": 1.0,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word_char",
+    "class_weight": "balanced",
+    "c_value": 2.0,
+    "validation_accuracy": 1.0,
+    "validation_macro_f1": 0.3333333333333333
+  }
+]

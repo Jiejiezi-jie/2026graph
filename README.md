@@ -8,9 +8,9 @@
 
 三个后端先在 GraphRAG-Bench Medical 上逐题运行；随后根据“证据覆盖近似最优时优先选择便宜路线”的规则自动构造银标，并用问题文本重新训练一个轻量三分类器。推理时，分类器只读取问题并选择一个后端，不使用题型标签、参考答案或证据。
 
-## 重要边界
+## 原始 proxy 基线的重要边界
 
-当前环境没有 LLM API、Ollama、GPU 和 Transformers，因此仓库中的首轮数字属于**检索层离线代理实验**：
+以下内容描述压缩包归档时的 proxy 实验环境，不代表当前服务器。原始首轮数字属于**检索层离线代理实验**：
 
 - 使用真实 GraphRAG-Bench Medical 语料、问题、答案和证据；
 - 使用确定性的TF-IDF、文本块图扩散和路径搜索；
@@ -95,6 +95,11 @@ Q(r,q) >= max_r Q(r,q) - 0.02
 proxy 基线，未被覆盖。正式实现位于 `src/official_backends/`，正式输出只写入
 `results_official/`。
 
+正式 P0 与 P1 已完成。P1 测试集上固定 Vector、LightRAG、PathRAG 的
+Answer Correctness 分别为 0.7135、0.3524、0.4908；TF-IDF Adaptive
+为 0.7135，Oracle 为 0.7266。详细的真实结果、限制和产物路径见
+[`report/OFFICIAL_PHASE1_RESULTS.md`](report/OFFICIAL_PHASE1_RESULTS.md)。
+
 固定上游版本：
 
 - GraphRAG-Bench `fdbab5959b18c96532580877ffe27d112bccc0ec`；
@@ -155,16 +160,6 @@ PYTHONPATH=. conda run --no-capture-output -n qwen_saliency \
   .venv_official/bin/python -m scripts.evaluate_official --stage p0
 ```
 
-LightRAG 完成全部 Chunk 的实体/关系抽取和图合并后，可校验并导出 GraphML：
-
-```bash
-PYTHONPATH=. .venv_official/bin/python -m scripts.export_lightrag_graph
-```
-
-脚本只接受同时存在完成态索引清单、非空节点和非空边的图，输出到
-`artifacts/lightrag/graph_chunk_entity_relation.graphml`，并生成包含节点数、
-边数和 SHA-256 的 `manifest.json`。未完成的中间索引不会被当作成果导出。
-
 P1 固定为每类 60 题，60%/20%/20% 划分在模型运行前冻结；runner 支持按
 逐题 JSONL 自动续跑：
 
@@ -173,6 +168,18 @@ bash scripts/run_official_local.sh --stage p1 --backend all
 PYTHONPATH=. conda run --no-capture-output -n qwen_saliency \
   .venv_official/bin/python -m scripts.evaluate_official --stage p1
 PYTHONPATH=. .venv_official/bin/python -m scripts.analyze_official --stage p1
+```
+
+多 GPU 可只覆盖设备而不改变其他实验参数，例如：
+
+```bash
+bash scripts/run_official_local.sh --stage p1 --backend vector --skip-index \
+  --llm-device cuda:0 --embedding-device cuda:1
+PYTHONPATH=. conda run --no-capture-output -n qwen_saliency \
+  .venv_official/bin/python -m scripts.evaluate_official --stage p1 \
+  --backend vector --llm-device cuda:0 --embedding-device cuda:1
+PYTHONPATH=. .venv_official/bin/python -m scripts.validate_p0 \
+  --dir results_official/p1 --expected-count 120
 ```
 
 测试命令：

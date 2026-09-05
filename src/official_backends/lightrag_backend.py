@@ -135,6 +135,25 @@ class LightRAGBackend(RAGBackend):
             "chunks": list(data.get("chunks") or []),
         }
 
+    @staticmethod
+    def _retrieval_contexts(section: dict[str, list[Any]]) -> list[str]:
+        contexts: list[str] = []
+        if section["entities"]:
+            contexts.append(
+                "Entities:\n" + json.dumps(section["entities"], ensure_ascii=False)
+            )
+        if section["relationships"]:
+            contexts.append(
+                "Relationships:\n"
+                + json.dumps(section["relationships"], ensure_ascii=False)
+            )
+        contexts.extend(
+            str(chunk.get("content", ""))
+            for chunk in section["chunks"]
+            if isinstance(chunk, dict) and chunk.get("content")
+        )
+        return contexts
+
     async def query(self, question: str, question_id: str = "") -> dict[str, Any]:
         await self._initialize()
         from lightrag import QueryParam
@@ -156,22 +175,12 @@ class LightRAGBackend(RAGBackend):
         )
         retrieval_ms = (time.perf_counter() - retrieval_started) * 1000
         section = self._data_section(raw)
-        contexts = [
-            str(chunk.get("content", ""))
-            for chunk in section["chunks"]
-            if isinstance(chunk, dict) and chunk.get("content")
-        ]
-        structured = [
-            "Entities:\n" + json.dumps(section["entities"], ensure_ascii=False),
-            "Relationships:\n"
-            + json.dumps(section["relationships"], ensure_ascii=False),
-            *contexts,
-        ]
+        contexts = self._retrieval_contexts(section)
         generation_started = time.perf_counter()
         generation = await generate_grounded_answer(
             self.llm,
             question,
-            structured,
+            contexts,
             system_prompt=self.generation_prompt,
             max_context_tokens=self.max_context_tokens,
         )

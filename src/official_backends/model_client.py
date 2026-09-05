@@ -235,6 +235,16 @@ class TransformersChatClient:
         with self._usage_lock:
             return self._usage
 
+    def account_cached_generation(self, input_tokens: int, output_tokens: int) -> None:
+        """Account for a persisted callback result reused after an interrupted run."""
+
+        with self._usage_lock:
+            self._usage = UsageSnapshot(
+                self._usage.input_tokens + int(input_tokens),
+                self._usage.output_tokens + int(output_tokens),
+                self._usage.calls + 1,
+            )
+
     def unload(self) -> None:
         if self._model is None:
             return

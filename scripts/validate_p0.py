@@ -28,12 +28,15 @@ REQUIRED_FIELDS = {
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dir", type=Path, default=Path("results_official/p0"))
+    parser.add_argument("--expected-count", type=int, default=10)
     args = parser.parse_args()
     ids_by_method = {}
     for method in METHODS:
         rows = load_jsonl(args.dir / f"{method}.jsonl")
-        if len(rows) != 10:
-            raise AssertionError(f"{method}: expected 10 rows, found {len(rows)}")
+        if len(rows) != args.expected_count:
+            raise AssertionError(
+                f"{method}: expected {args.expected_count} rows, found {len(rows)}"
+            )
         ids_by_method[method] = [row["question_id"] for row in rows]
         for row in rows:
             missing = REQUIRED_FIELDS - row.keys()
@@ -51,7 +54,11 @@ def main() -> None:
             raise AssertionError(f"P0 question alignment differs for {method}")
     print(
         json.dumps(
-            {"status": "passed", "questions": 10, "backends": list(METHODS)},
+            {
+                "status": "passed",
+                "questions": args.expected_count,
+                "backends": list(METHODS),
+            },
             ensure_ascii=False,
         )
     )
@@ -59,4 +66,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

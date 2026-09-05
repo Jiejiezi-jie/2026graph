@@ -8,5 +8,11 @@ third_party/
 results_official/indexes/
 results_official/debug/
 results_official/pipeline.log
+results_official/*.log
+results_official/p0/lightrag*.jsonl
+results_official/p0/pathrag*.jsonl
+results_official/p0/vector_evaluated.jsonl
+results_official/p1/*.jsonl
+results_official/p1/*.log
 PathRAG.log
 artifacts/*.joblib

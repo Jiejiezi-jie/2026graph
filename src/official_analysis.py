@@ -213,6 +213,11 @@ def analyze_official(
             "GraphRAG-Bench official metric code was used, but the local judge is the same "
             "Qwen2.5-VL-7B family as the generator; scores may contain self-evaluation bias."
         ),
+        "manual_review": {
+            "sample_size": min(20, len(labels)),
+            "status": "Template generated; independent human verdicts are pending.",
+            "file": "manual_review_sample.jsonl",
+        },
     }
     with (output_dir / "silver_labels.jsonl").open("w", encoding="utf-8") as handle:
         for row in labels:
@@ -229,6 +234,87 @@ def analyze_official(
             handle.write(
                 json.dumps({**row, "predicted_label": predicted}, ensure_ascii=False) + "\n"
             )
+    case_rows = []
+    for row, predicted in zip(test, predictions):
+        qid = row["question_id"]
+        truth_method = row["silver_label"]
+        predicted_metrics = backend_rows[qid][predicted]
+        truth_metrics = backend_rows[qid][truth_method]
+        case_rows.append(
+            {
+                **row,
+                "predicted_label": predicted,
+                "route_correct": predicted == truth_method,
+                "correctness_gap": float(
+                    truth_metrics["answer_correctness"]
+                    - predicted_metrics["answer_correctness"]
+                ),
+                "methods": {
+                    method: {
+                        "answer": backend_rows[qid][method]["answer"],
+                        "answer_correctness": backend_rows[qid][method][
+                            "answer_correctness"
+                        ],
+                        "rouge_l": backend_rows[qid][method]["rouge_l"],
+                        "evidence_recall": backend_rows[qid][method][
+                            "evidence_recall"
+                        ],
+                        "online_tokens": backend_rows[qid][method]["input_tokens"]
+                        + backend_rows[qid][method]["output_tokens"],
+                        "latency_ms": backend_rows[qid][method]["total_time_ms"],
+                    }
+                    for method in METHODS
+                },
+            }
+        )
+    correct_cases = sorted(
+        (row for row in case_rows if row["route_correct"]),
+        key=lambda row: (-row["methods"][row["predicted_label"]]["answer_correctness"], row["question_id"]),
+    )[:3]
+    failed_cases = sorted(
+        (row for row in case_rows if not row["route_correct"]),
+        key=lambda row: (-row["correctness_gap"], row["question_id"]),
+    )[:2]
+    (output_dir / "representative_cases.json").write_text(
+        json.dumps(
+            {"successful_routes": correct_cases, "failed_routes": failed_cases},
+            indent=2,
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
+    rng = np.random.default_rng(seed)
+    review_ids = rng.choice(
+        sorted(backend_rows), size=min(20, len(backend_rows)), replace=False
+    ).tolist()
+    with (output_dir / "manual_review_sample.jsonl").open(
+        "w", encoding="utf-8"
+    ) as handle:
+        for qid in review_ids:
+            source = question_info[qid]
+            review = {
+                "question_id": qid,
+                "split": source["split"],
+                "question_type": source["question_type"],
+                "question": source["question"],
+                "ground_truth": source["ground_truth"],
+                "evidence": source.get("evidence", ""),
+                "answers": {
+                    method: {
+                        "answer": backend_rows[qid][method]["answer"],
+                        "answer_correctness": backend_rows[qid][method][
+                            "answer_correctness"
+                        ],
+                    }
+                    for method in METHODS
+                },
+                "human_review": {
+                    "reviewer": None,
+                    "verdict": None,
+                    "notes": None,
+                },
+            }
+            handle.write(json.dumps(review, ensure_ascii=False) + "\n")
     joblib.dump(router, output_dir / "router.joblib")
     _save_plots(summary, matrix, output_dir)
     return summary
@@ -265,4 +351,3 @@ def _save_plots(summary: dict, matrix: np.ndarray, output_dir: Path) -> None:
     plt.tight_layout()
     plt.savefig(output_dir / "router_confusion_matrix.png", dpi=180)
     plt.close()
-

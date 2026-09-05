@@ -1,0 +1,191 @@
+{
+  "successful_routes": [
+    {
+      "question_id": "Medical-83e047ca",
+      "question": "What stage is regional prostate cancer classified as?",
+      "question_type": "Fact Retrieval",
+      "split": "test",
+      "silver_label": "vector",
+      "all_failed": false,
+      "predicted_label": "vector",
+      "route_correct": true,
+      "correctness_gap": 0.0,
+      "methods": {
+        "vector": {
+          "answer": "Regional prostate cancer is classified as advanced-stage prostate cancer.",
+          "answer_correctness": 0.9937477453400327,
+          "rouge_l": 0.888888888888889,
+          "evidence_recall": 1.0,
+          "online_tokens": 5096,
+          "latency_ms": 877.2429530508816
+        },
+        "lightrag": {
+          "answer": "I don't know.",
+          "answer_correctness": 0.17234234945761512,
+          "rouge_l": 0.0,
+          "evidence_recall": 1.0,
+          "online_tokens": 6718,
+          "latency_ms": 1940.9094098955393
+        },
+        "pathrag": {
+          "answer": "I don't know.",
+          "answer_correctness": 0.17234234945761512,
+          "rouge_l": 0.0,
+          "evidence_recall": 1.0,
+          "online_tokens": 5595,
+          "latency_ms": 2033.3873769268394
+        }
+      }
+    },
+    {
+      "question_id": "Medical-819d9c6c",
+      "question": "What distinguishes intrahepatic cholangiocarcinoma from other primary liver cancer subtypes in terms of anatomical origin?",
+      "question_type": "Complex Reasoning",
+      "split": "test",
+      "silver_label": "vector",
+      "all_failed": false,
+      "predicted_label": "vector",
+      "route_correct": true,
+      "correctness_gap": 0.0,
+      "methods": {
+        "vector": {
+          "answer": "Intrahepatic cholangiocarcinoma (ICC) originates from the bile ducts within the liver, whereas hepatocellular carcinoma (HCC) arises from the hepatocytes (liver cells) within the liver.",
+          "answer_correctness": 0.9882849354722101,
+          "rouge_l": 0.5,
+          "evidence_recall": 0.3333333333333333,
+          "online_tokens": 5198,
+          "latency_ms": 1774.8996745795012
+        },
+        "lightrag": {
+          "answer": "I don't know.",
+          "answer_correctness": 0.16512439535631357,
+          "rouge_l": 0.0,
+          "evidence_recall": 0.3333333333333333,
+          "online_tokens": 6822,
+          "latency_ms": 2474.747824948281
+        },
+        "pathrag": {
+          "answer": "Intrahepatic cholangiocarcinoma is a cancer of the bile ducts within the liver.",
+          "answer_correctness": 0.8307779286177107,
+          "rouge_l": 0.5714285714285715,
+          "evidence_recall": 0.6666666666666666,
+          "online_tokens": 5764,
+          "latency_ms": 3144.6760380640626
+        }
+      }
+    },
+    {
+      "question_id": "Medical-0be2176d",
+      "question": "Why might a patient with FRα-positive platinum-resistant ovarian cancer be treated with mirvetuximab soravtansine-gynx?",
+      "question_type": "Complex Reasoning",
+      "split": "test",
+      "silver_label": "vector",
+      "all_failed": false,
+      "predicted_label": "vector",
+      "route_correct": true,
+      "correctness_gap": 0.0,
+      "methods": {
+        "vector": {
+          "answer": "Mirvetuximab soravtansine-gynx is preferred for treating platinum-resistant ovarian cancer with the Folate Receptor Alpha (FRα) biomarker.",
+          "answer_correctness": 0.9856709235201897,
+          "rouge_l": 0.5294117647058824,
+          "evidence_recall": 1.0,
+          "online_tokens": 5254,
+          "latency_ms": 1483.7870406918228
+        },
+        "lightrag": {
+          "answer": "mirvetuximab soravtansine-gynx is used because it targets FRα-positive platinum-resistant ovarian cancer.",
+          "answer_correctness": 0.9923644485035696,
+          "rouge_l": 0.7333333333333334,
+          "evidence_recall": 1.0,
+          "online_tokens": 6782,
+          "latency_ms": 2924.737472087145
+        },
+        "pathrag": {
+          "answer": "Mirvetuximab soravtansine-gynx is a targeted therapy used to treat platinum-resistant ovarian cancer. It targets the folate receptor alpha (FRα) on the surface of ovarian cancer cells, allowing for selective delivery of the payload to the cancer cells. This targeted approach aims to enhance efficacy while minimizing toxicity compared to traditional chemotherapy.",
+          "answer_correctness": 0.9349311621720364,
+          "rouge_l": 0.31884057971014496,
+          "evidence_recall": 1.0,
+          "online_tokens": 5776,
+          "latency_ms": 4483.578271232545
+        }
+      }
+    }
+  ],
+  "failed_routes": [
+    {
+      "question_id": "Medical-f3af6f24",
+      "question": "For a patient with primary CNS lymphoma and cerebrospinal fluid involvement, which specialized treatment is indicated and how is the involvement detected?",
+      "question_type": "Complex Reasoning",
+      "split": "test",
+      "silver_label": "pathrag",
+      "all_failed": false,
+      "predicted_label": "vector",
+      "route_correct": false,
+      "correctness_gap": 0.18589149307252772,
+      "methods": {
+        "vector": {
+          "answer": "For a patient with primary CNS lymphoma and cerebrospinal fluid involvement, the specialized treatment indicated is chemotherapy, radiation therapy, stem cell transplant, or a combination of these treatments. The involvement is detected through various tests including a lumbar puncture to check cerebrospinal fluid for cancer cells, an eye exam to check for lymphoma in the eyes, and imaging tests like MRI and CT scans to assess the extent of the cancer within the central nervous system.",
+          "answer_correctness": 0.4672800078824062,
+          "rouge_l": 0.11494252873563217,
+          "evidence_recall": 1.0,
+          "online_tokens": 5320,
+          "latency_ms": 2950.7196662016213
+        },
+        "lightrag": {
+          "answer": "For a patient with primary CNS lymphoma and cerebrospinal fluid involvement, the specialized treatment indicated is chemotherapy, specifically methotrexate. The involvement in the cerebrospinal fluid is detected through cerebrospinal fluid analysis, which may include testing for lymphoma cells or markers specific to the disease.",
+          "answer_correctness": 0.6412812963900548,
+          "rouge_l": 0.10909090909090909,
+          "evidence_recall": 1.0,
+          "online_tokens": 6996,
+          "latency_ms": 4052.509002853185
+        },
+        "pathrag": {
+          "answer": "For a patient with primary CNS lymphoma and cerebrospinal fluid involvement, immunotherapy and intrathecal chemotherapy are indicated. Cerebrospinal fluid involvement is detected through lumbar puncture, which collects cerebrospinal fluid for testing.",
+          "answer_correctness": 0.6531715009549339,
+          "rouge_l": 0.3333333333333333,
+          "evidence_recall": 0.5,
+          "online_tokens": 5810,
+          "latency_ms": 3943.982607219368
+        }
+      }
+    },
+    {
+      "question_id": "Medical-dbfb3406",
+      "question": "How is T2 defined in mouth cancer TNM classification?",
+      "question_type": "Fact Retrieval",
+      "split": "test",
+      "silver_label": "pathrag",
+      "all_failed": false,
+      "predicted_label": "vector",
+      "route_correct": false,
+      "correctness_gap": 0.12881107787079776,
+      "methods": {
+        "vector": {
+          "answer": "T2 in mouth cancer TNM classification indicates a tumor that is 1 cm to 5 cm in size.",
+          "answer_correctness": 0.47246060315021426,
+          "rouge_l": 0.3333333333333333,
+          "evidence_recall": 0.0,
+          "online_tokens": 5169,
+          "latency_ms": 1179.291252978146
+        },
+        "lightrag": {
+          "answer": "T2 defines the extent of the tumor in the TNM classification for mouth cancer.",
+          "answer_correctness": 0.4662940818904189,
+          "rouge_l": 0.125,
+          "evidence_recall": 0.0,
+          "online_tokens": 6763,
+          "latency_ms": 2560.4433859698474
+        },
+        "pathrag": {
+          "answer": "T2 in the TNM classification for mouth cancer refers to the size of the primary tumor. Specifically, T2 indicates a tumor that is larger than 2 cm but not more than 4 cm in its greatest dimension.",
+          "answer_correctness": 0.601271681021012,
+          "rouge_l": 0.2545454545454546,
+          "evidence_recall": 0.0,
+          "online_tokens": 5725,
+          "latency_ms": 3354.1129119694233
+        }
+      }
+    }
+  ]
+}
