@@ -9,8 +9,9 @@
 代码位于 `backend/`、`frontend/`、`scripts/`。分块与图谱在
 [exports/Novel-4128-chunks](exports/Novel-4128-chunks/README.md)，包括 51 个原文分块和完整 GraphML（729 节点、1,369 条关系）。
 数据文件已纳入 Git；无需获取 `.worktrees` 文件夹。
-API Key、本地环境文件、模型缓存、查询历史、依赖目录和运行时向量索引不随仓库交接。
-GraphML 与 chunks 可直接用于队友自己的实验；要运行完整 LightRAG 问答，还需按下方 Runtime contract 配置环境并建立或另行导入完整索引。
+完整可复用索引现已包含在 [exports/Novel-4128-runtime](exports/Novel-4128-runtime/README.md)：原文、分块、GraphML、三个向量库、文档状态及完整索引清单。
+按包内说明安装固定版本依赖，然后在本目录运行 `python exports/Novel-4128-runtime/restore.py --target .`，即可恢复已建索引，无需重新建图。
+API Key、个人 `.env`、embedding 模型权重、查询历史和依赖目录不随仓库交接；队友使用自己的 Key 并安装匹配模型。运行目录仍被 Git 忽略，Git 跟踪的是 exports 下的完整快照。
 
 ## 启动网页
 

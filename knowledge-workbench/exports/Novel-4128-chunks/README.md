@@ -32,3 +32,7 @@ print(graph.number_of_nodes(), graph.number_of_edges())  # 729 1369
 队友可以直接对这些 chunks 做自己的检索实验，或读取 GraphML 分析节点关系。
 仅把这几个文件复制到工作目录，不能恢复完整 LightRAG 问答：仍需要相匹配的向量存储、完整文档存储、索引 manifest 等运行数据，以及匹配的本地运行环境。
 相邻分块可能有重叠，不要直接拼接作为去重原文。
+
+## 需要直接恢复查询时
+
+本目录仍为分块与图谱包。完整运行索引已另外提供在 [Novel-4128-runtime](../Novel-4128-runtime/README.md)，请恢复该完整包，不要只复制本目录的几个文件。
