@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"This statement is not supported by the ground truth, which only mentions the Royal Court Theatre and does not mention Toole's Theatre.\",\"statement\":\"The play 'Dandy Dick' was later performed at Toole's Theatre.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which states that the play was performed at the Royal Court Theatre.\",\"statement\":\"The play 'Dandy Dick' was performed at the Royal Court Theatre.\"}]}",
+  "prompt_sha256": "d5607de846a7174d81aebe961e8fb1b2a6d1178fdea175ed3bb1c6b2312c8719",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"The play 'Dandy Dick' was performed at the Royal Court Theatre.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that the play was performed at the Royal Court Theatre.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"The play 'Dandy Dick' was later performed at Toole's Theatre.\",\n      \"reason\": \"This statement is not supported by the ground truth, which only mentions the Royal Court Theatre and does not mention Toole's Theatre.\"\n    }\n  ],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681691,
+    "id": "8a84647b-25ee-434c-bf0b-15e41babe6e6",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 129,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 104,
+      "prompt_tokens": 872,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1001
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2342.794241,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 129,
+          "prompt_tokens": 872,
+          "total_tokens": 1001
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 129,
+      "prompt_tokens": 872,
+      "total_tokens": 1001
+    }
+  },
+  "request_fingerprint": "bdd81bee227e81f661ae7b8a2885b699d9c3b4ccb2cc5ea11a4da613f3e649c0"
+}

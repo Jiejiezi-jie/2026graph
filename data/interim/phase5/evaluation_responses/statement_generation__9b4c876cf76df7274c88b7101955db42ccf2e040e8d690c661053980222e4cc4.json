@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"During the narrative, DARBEY is present with the Dean.\",\n  \"During the narrative, DARBEY is present with Salome.\",\n  \"During the narrative, DARBEY is present with Sheba.\",\n  \"During the narrative, DARBEY is present with Major Tarver.\",\n  \"Later in the narrative, DARBEY is present with Georgiana.\",\n  \"Later in the narrative, DARBEY is present with Sir Tristram.\",\n  \"Later in the narrative, DARBEY is present with others.\",\n  \"In scenes involving the younger generation at the Deanery, DARBEY is with Salome.\",\n  \"In scenes involving the younger generation at the Deanery, DARBEY is with Sheba.\",\n  \"In scenes involving the younger generation at the Deanery, DARBEY is with Major Tarver.\"\n]",
+  "prompt_sha256": "9b4c876cf76df7274c88b7101955db42ccf2e040e8d690c661053980222e4cc4",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"During the narrative, DARBEY is present with the Dean.\",\n  \"During the narrative, DARBEY is present with Salome.\",\n  \"During the narrative, DARBEY is present with Sheba.\",\n  \"During the narrative, DARBEY is present with Major Tarver.\",\n  \"Later in the narrative, DARBEY is present with Georgiana.\",\n  \"Later in the narrative, DARBEY is present with Sir Tristram.\",\n  \"Later in the narrative, DARBEY is present with others.\",\n  \"In scenes involving the younger generation at the Deanery, DARBEY is with Salome.\",\n  \"In scenes involving the younger generation at the Deanery, DARBEY is with Sheba.\",\n  \"In scenes involving the younger generation at the Deanery, DARBEY is with Major Tarver.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681658,
+    "id": "d226dd34-4b61-4b82-a4c4-a7673afda082",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 186,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 170,
+      "prompt_tokens": 298,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 484
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2374.490623,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 186,
+          "prompt_tokens": 298,
+          "total_tokens": 484
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 186,
+      "prompt_tokens": 298,
+      "total_tokens": 484
+    }
+  },
+  "request_fingerprint": "1fd80c2d9dba5e9ba7979a81b7c2231a91b5b79887d8c1007f97cffb05c81874"
+}

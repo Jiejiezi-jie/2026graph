@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\n  \"TP\": [\n    {\n      \"statement\": \"John Clayton performed as an actor in a leading role in the play \\\"Dandy Dick\\\".\",\n      \"reason\": \"The ground truth states that John Clayton acted in Dandy Dick, which directly supports the answer's claim that he performed as an actor in that play. The answer adds 'leading role', but the core fact of acting in Dandy Dick is supported.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+  "prompt_sha256": "81946eb382d7ce63894fde4b8eec3ed8ed9deb02ddeac7459c42b926d03dc4d3",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"John Clayton performed as an actor in a leading role in the play \\\"Dandy Dick\\\".\",\n      \"reason\": \"The ground truth states that John Clayton acted in Dandy Dick, which directly supports the answer's claim that he performed as an actor in that play. The answer adds 'leading role', but the core fact of acting in Dandy Dick is supported.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680637,
+    "id": "4871471d-a1e4-4261-9263-ec3bffc701aa",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 102,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 86,
+      "prompt_tokens": 854,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 956
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1702.614934,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 102,
+          "prompt_tokens": 854,
+          "total_tokens": 956
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 102,
+      "prompt_tokens": 854,
+      "total_tokens": 956
+    }
+  },
+  "request_fingerprint": "a0f0d100d9ce6dea9c12bb3dc7037f4ff983ee50277edda03757607127291c14"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"SHEBA expresses extreme devotion to SHEBA during the unfolding events.\"]",
+  "prompt_sha256": "53477978a983ce00a1b71b7ea4fdbee329ebb1640e7ef6d26fef2ec7b87a3d53",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"SHEBA expresses extreme devotion to SHEBA during the unfolding events.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681693,
+    "id": "f053e704-17ce-4829-b69b-35c96520a089",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 20,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 106,
+      "prompt_tokens": 234,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 254
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1166.209368,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 20,
+          "prompt_tokens": 234,
+          "total_tokens": 254
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 20,
+      "prompt_tokens": 234,
+      "total_tokens": 254
+    }
+  },
+  "request_fingerprint": "033a13358fdcb2be62fd98b3c92371d43d86047cde5b5a1a19ea3c299b5db59e"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Salome Jedd joins Sheba in scenes involving youthful excitement and social events.\", \"Salome Jedd joins Sheba at the Fancy Dress Masked Ball at Durnstone.\"]",
+  "prompt_sha256": "e0c125f9172c92b57490aa2911bbdb042392c90208315dac47b8eab001911060",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Salome Jedd joins Sheba in scenes involving youthful excitement and social events.\", \"Salome Jedd joins Sheba at the Fancy Dress Masked Ball at Durnstone.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681342,
+    "id": "cd7da8db-37f7-4dc2-bab7-9f7df0263c9e",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 39,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 132,
+      "prompt_tokens": 260,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 299
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1677.131686,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 39,
+          "prompt_tokens": 260,
+          "total_tokens": 299
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 39,
+      "prompt_tokens": 260,
+      "total_tokens": 299
+    }
+  },
+  "request_fingerprint": "0123fbf9dc3fe772bfa51f49f25ddfe262e34c273b39c3d4a1b88e6de806a3cc"
+}

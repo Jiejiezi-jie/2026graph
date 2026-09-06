@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"The residence of The Dean in the play is The Deanery.\", \"The Deanery serves as the main setting for much of the action in the play.\"]",
+  "prompt_sha256": "a2f12365bc34b8befd19fdfd4d8cbeab0273ea486136f8f92e10adbf49c9f1c5",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"The residence of The Dean in the play is The Deanery.\", \"The Deanery serves as the main setting for much of the action in the play.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681632,
+    "id": "8b121643-738a-45b8-bb15-113a40323308",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 33,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 105,
+      "prompt_tokens": 233,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 266
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1345.924058,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 33,
+          "prompt_tokens": 233,
+          "total_tokens": 266
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 33,
+      "prompt_tokens": 233,
+      "total_tokens": 266
+    }
+  },
+  "request_fingerprint": "7676be82758ead75fcaf09ee21d44c893d5c778b77329256411c17b24a55e9bc"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Arthur W. Pinero was the author of the play 'Dandy Dick'.\"]",
+  "prompt_sha256": "348955d1959a3094d11e6f91d61ea838a159707ebb48443a5388582d67545214",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Arthur W. Pinero was the author of the play 'Dandy Dick'.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681039,
+    "id": "f91b2084-7371-46ce-aa07-222fbca7de2b",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 19,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 99,
+      "prompt_tokens": 227,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 246
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1447.316488,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 19,
+          "prompt_tokens": 227,
+          "total_tokens": 246
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 19,
+      "prompt_tokens": 227,
+      "total_tokens": 246
+    }
+  },
+  "request_fingerprint": "171238d59e4c176c5fc5eb554ee537e2e1ecc391b716c9ba765ea35b5ddd2ba2"
+}

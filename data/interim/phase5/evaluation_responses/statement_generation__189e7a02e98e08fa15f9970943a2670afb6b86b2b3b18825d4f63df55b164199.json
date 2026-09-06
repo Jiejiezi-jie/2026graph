@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Salome Jedd expresses extreme devotion to SHEBA during the unfolding events.\"]",
+  "prompt_sha256": "189e7a02e98e08fa15f9970943a2670afb6b86b2b3b18825d4f63df55b164199",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Salome Jedd expresses extreme devotion to SHEBA during the unfolding events.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681698,
+    "id": "8077567e-5a9b-4903-970b-87ac24ec7f7c",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 17,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 98,
+      "prompt_tokens": 226,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 243
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1235.894719,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 17,
+          "prompt_tokens": 226,
+          "total_tokens": 243
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 17,
+      "prompt_tokens": 226,
+      "total_tokens": 243
+    }
+  },
+  "request_fingerprint": "0a9a161a9d716c76f2bc64a829651d6800397c77431fc896e28de7f1a6d7bfc8"
+}

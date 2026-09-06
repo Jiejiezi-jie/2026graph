@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"This statement is not directly supported by any statement in the ground truth. The ground truth only states that The Dean's residence is The Deanery, without mentioning that it serves as the main setting for much of the action.\",\"statement\":\"The Deanery serves as the main setting for much of the action in the play.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which states that The Dean's residence is The Deanery.\",\"statement\":\"The residence of The Dean in the play is The Deanery.\"},{\"reason\":\"This statement is not directly supported by the ground truth, but it is a reasonable inference from the context that The Deanery is the residence and likely a main setting. However, since the ground truth only mentions the residence, this statement is not directly supported.\",\"statement\":\"The Deanery serves as the main setting for much of the action in the play.\"}]}",
+  "prompt_sha256": "ab378e301670a722ef96fbeccb10fe145ca5e2cc6bea5307dbde93a685a24070",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"The residence of The Dean in the play is The Deanery.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that The Dean's residence is The Deanery.\"\n    },\n    {\n      \"statement\": \"The Deanery serves as the main setting for much of the action in the play.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, but it is a reasonable inference from the context that The Deanery is the residence and likely a main setting. However, since the ground truth only mentions the residence, this statement is not directly supported.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"The Deanery serves as the main setting for much of the action in the play.\",\n      \"reason\": \"This statement is not directly supported by any statement in the ground truth. The ground truth only states that The Dean's residence is The Deanery, without mentioning that it serves as the main setting for much of the action.\"\n    }\n  ],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681634,
+    "id": "2d44dfa1-61a0-4e77-bb51-76256e8ad4cf",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 227,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 106,
+      "prompt_tokens": 874,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1101
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3512.176226,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 227,
+          "prompt_tokens": 874,
+          "total_tokens": 1101
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 227,
+      "prompt_tokens": 874,
+      "total_tokens": 1101
+    }
+  },
+  "request_fingerprint": "06f8acedeb8523deafee8dd3ed81008add20a864f87d455db42025e48bffe100"
+}

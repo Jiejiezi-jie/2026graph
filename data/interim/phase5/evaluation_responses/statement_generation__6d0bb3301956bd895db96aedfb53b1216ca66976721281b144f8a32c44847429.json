@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Salome and Sheba are sisters.\",\n  \"Salome and Sheba are daughters of the Dean.\",\n  \"Major Tarver is romantically interested in Salome.\",\n  \"Salome and Sheba plan to attend a fancy dress ball.\",\n  \"Salome plans to attend the fancy dress ball with Major Tarver.\",\n  \"Sheba plans to attend the fancy dress ball with Mr. Darbey.\",\n  \"Salome and Sheba plan to attend the fancy dress ball without their father's knowledge.\"\n]",
+  "prompt_sha256": "6d0bb3301956bd895db96aedfb53b1216ca66976721281b144f8a32c44847429",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Salome and Sheba are sisters.\",\n  \"Salome and Sheba are daughters of the Dean.\",\n  \"Major Tarver is romantically interested in Salome.\",\n  \"Salome and Sheba plan to attend a fancy dress ball.\",\n  \"Salome plans to attend the fancy dress ball with Major Tarver.\",\n  \"Sheba plans to attend the fancy dress ball with Mr. Darbey.\",\n  \"Salome and Sheba plan to attend the fancy dress ball without their father's knowledge.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681736,
+    "id": "33b0e65e-40be-4fde-9165-75a0e924fb25",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 107,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 166,
+      "prompt_tokens": 294,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 401
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1523.593034,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 107,
+          "prompt_tokens": 294,
+          "total_tokens": 401
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 107,
+      "prompt_tokens": 294,
+      "total_tokens": 401
+    }
+  },
+  "request_fingerprint": "7f0fb40d566fc5d1afbfc0fae14ac44ec88cbdaa1a21d20566307ef50a72c7a0"
+}

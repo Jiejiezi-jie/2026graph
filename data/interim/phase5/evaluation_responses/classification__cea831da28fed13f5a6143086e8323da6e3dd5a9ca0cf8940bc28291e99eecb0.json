@@ -1,0 +1,61 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FN item 1.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FN item 2.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FN item 3.\"}],\"FP\":[{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 1.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 2.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 3.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 4.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 5.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 6.\"}],\"TP\":[]}",
+  "prompt_sha256": "cea831da28fed13f5a6143086e8323da6e3dd5a9ca0cf8940bc28291e99eecb0",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": 0,\n  \"FP\": 6,\n  \"FN\": 3\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681235,
+    "id": "f84d8080-04ef-424d-8bbf-ed198d332d10",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 23,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 328,
+      "prompt_tokens": 328,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 351
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "error": "official judge categorized item has no TP/FP/FN label",
+        "error_type": "Phase5Error",
+        "status": "failed"
+      },
+      {
+        "attempt": 2,
+        "elapsed_ms": 1399.087587,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 23,
+          "prompt_tokens": 328,
+          "total_tokens": 351
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 23,
+      "prompt_tokens": 328,
+      "total_tokens": 351
+    }
+  },
+  "request_fingerprint": "d9aecf34afb2aff6709226a6c32068129c5b458d568c1f940e1a873da3f8fde1"
+}

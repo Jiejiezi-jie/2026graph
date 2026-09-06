@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"John Clayton acted in Dandy Dick.\"]",
+  "prompt_sha256": "2049ed98617d5158b49a19eb90e0cce1fbb55f1f5bde6fd23519a508e87f3bdf",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"John Clayton acted in Dandy Dick.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680636,
+    "id": "12004f78-41ca-4f54-af3e-a3fb39f64b8d",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 10,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 103,
+      "prompt_tokens": 231,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 241
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1188.219904,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 10,
+          "prompt_tokens": 231,
+          "total_tokens": 241
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 10,
+      "prompt_tokens": 231,
+      "total_tokens": 241
+    }
+  },
+  "request_fingerprint": "e5cde842f2cf278b982e03a96b85d5d0bcc195ea6179b893298b1664a3c87e5d"
+}

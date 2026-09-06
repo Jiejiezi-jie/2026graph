@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement is present in the ground truth but not mentioned in the answer.\",\"statement\":\"Noah took up a man at St. Marvells.\"}],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth statement 'Noah performs his duties as a constable at St. Marvells.'\",\"statement\":\"Noah Topping performs his duties as a constable at St. Marvells.\"},{\"reason\":\"This statement is supported by the ground truth statements 'Noah performs his duties as a constable at St. Marvells.' and 'The confusion involves THE DEAN.'\",\"statement\":\"Noah Topping performs his duties during the confusion involving THE DEAN.\"}]}",
+  "prompt_sha256": "1c06950022f41269932da425b99b524a8688ffb17f5c8eac405bbe2989783a15",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Noah Topping performs his duties as a constable at St. Marvells.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Noah performs his duties as a constable at St. Marvells.'\"\n    },\n    {\n      \"statement\": \"Noah Topping performs his duties during the confusion involving THE DEAN.\",\n      \"reason\": \"This statement is supported by the ground truth statements 'Noah performs his duties as a constable at St. Marvells.' and 'The confusion involves THE DEAN.'\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": [\n    {\n      \"statement\": \"Noah took up a man at St. Marvells.\",\n      \"reason\": \"This statement is present in the ground truth but not mentioned in the answer.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681191,
+    "id": "2857b312-26ac-4e04-84f0-fa0643ccbf8d",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 188,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 139,
+      "prompt_tokens": 907,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1095
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1953.091625,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 188,
+          "prompt_tokens": 907,
+          "total_tokens": 1095
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 188,
+      "prompt_tokens": 907,
+      "total_tokens": 1095
+    }
+  },
+  "request_fingerprint": "5a03f42a5a7a0cccfec85f4698ecb8574f84902eec239fd3a1fe04068d1578c4"
+}

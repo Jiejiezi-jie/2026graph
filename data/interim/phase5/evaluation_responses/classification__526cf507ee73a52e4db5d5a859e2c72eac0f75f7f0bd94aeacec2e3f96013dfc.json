@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth statements that Ernest Warren wrote The Nettle, The Nettle is a play authored by Ernest Warren, and The Nettle is performed as a comedietta before 'Dandy Dick'.\",\"statement\":\"The title of the play authored by Ernest Warren that is performed as a comedietta before 'Dandy Dick' is The Nettle.\"}]}",
+  "prompt_sha256": "526cf507ee73a52e4db5d5a859e2c72eac0f75f7f0bd94aeacec2e3f96013dfc",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"The title of the play authored by Ernest Warren that is performed as a comedietta before 'Dandy Dick' is The Nettle.\",\n      \"reason\": \"This statement is directly supported by the ground truth statements that Ernest Warren wrote The Nettle, The Nettle is a play authored by Ernest Warren, and The Nettle is performed as a comedietta before 'Dandy Dick'.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681186,
+    "id": "f63554f8-8db5-4dbc-b131-e64842386ef2",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 108,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 136,
+      "prompt_tokens": 904,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1012
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1896.67321,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 108,
+          "prompt_tokens": 904,
+          "total_tokens": 1012
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 108,
+      "prompt_tokens": 904,
+      "total_tokens": 1012
+    }
+  },
+  "request_fingerprint": "58a7cdbee868e2c43431cf6e624c695d2956d102a73ba41e9d3cd24f2a848983"
+}

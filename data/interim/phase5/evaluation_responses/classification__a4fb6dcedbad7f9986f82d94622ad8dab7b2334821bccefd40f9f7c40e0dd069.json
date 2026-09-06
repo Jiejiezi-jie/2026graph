@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth statements: 'The Dean mentions John Cox.', 'John Cox is the author of 'The Horse and its Ailments'.', and 'The mention of John Cox is in relation to veterinary remedies in the play.'\",\"statement\":\"The Dean mentions John Cox, the author of 'The Horse and its Ailments', in relation to veterinary remedies in the play.\"},{\"reason\":\"This statement is supported by the ground truth because the mention of John Cox is in relation to veterinary remedies, and administering a Bolus is a veterinary remedy. The ground truth implies that the Dean's mention of John Cox is connected to veterinary remedies, which includes administering a Bolus.\",\"statement\":\"The Dean refers to the book when the Dean decides to administer a Bolus to the horse.\"},{\"reason\":\"This statement is supported by the ground truth because it directly involves the Dean mentioning John Cox, who is the author of 'The Horse and its Ailments'. The ground truth states that the Dean mentions John Cox, and this statement elaborates on that mention.\",\"statement\":\"Later the Dean tells Sir Tristram to remember the little volume and its humane author, John Cox.\"}]}",
+  "prompt_sha256": "a4fb6dcedbad7f9986f82d94622ad8dab7b2334821bccefd40f9f7c40e0dd069",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"The Dean mentions John Cox, the author of 'The Horse and its Ailments', in relation to veterinary remedies in the play.\",\n      \"reason\": \"This statement is directly supported by the ground truth statements: 'The Dean mentions John Cox.', 'John Cox is the author of 'The Horse and its Ailments'.', and 'The mention of John Cox is in relation to veterinary remedies in the play.'\"\n    },\n    {\n      \"statement\": \"The Dean refers to the book when the Dean decides to administer a Bolus to the horse.\",\n      \"reason\": \"This statement is supported by the ground truth because the mention of John Cox is in relation to veterinary remedies, and administering a Bolus is a veterinary remedy. The ground truth implies that the Dean's mention of John Cox is connected to veterinary remedies, which includes administering a Bolus.\"\n    },\n    {\n      \"statement\": \"Later the Dean tells Sir Tristram to remember the little volume and its humane author, John Cox.\",\n      \"reason\": \"This statement is supported by the ground truth because it directly involves the Dean mentioning John Cox, who is the author of 'The Horse and its Ailments'. The ground truth states that the Dean mentions John Cox, and this statement elaborates on that mention.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681195,
+    "id": "70f46aed-ebb9-47bc-9f06-c39435dd5c9b",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 289,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 178,
+      "prompt_tokens": 946,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1235
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3919.038877,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 289,
+          "prompt_tokens": 946,
+          "total_tokens": 1235
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 289,
+      "prompt_tokens": 946,
+      "total_tokens": 1235
+    }
+  },
+  "request_fingerprint": "516ce1f021e823db0a20bb9e8afccf7bb953fe3a7d18333212c464fab5057b68"
+}

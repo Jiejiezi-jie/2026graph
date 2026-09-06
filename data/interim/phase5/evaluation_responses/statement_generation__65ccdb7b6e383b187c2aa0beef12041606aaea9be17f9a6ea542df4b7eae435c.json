@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Major Tarver is the character accepted by Salome in the narrative.\", \"The acceptance of Major Tarver by Salome marks a significant development in the romantic plot.\"]",
+  "prompt_sha256": "65ccdb7b6e383b187c2aa0beef12041606aaea9be17f9a6ea542df4b7eae435c",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Major Tarver is the character accepted by Salome in the narrative.\", \"The acceptance of Major Tarver by Salome marks a significant development in the romantic plot.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681556,
+    "id": "cdee97d4-b9f9-4fd0-a612-57df04fdd05d",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 35,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 104,
+      "prompt_tokens": 232,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 267
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1352.929295,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 35,
+          "prompt_tokens": 232,
+          "total_tokens": 267
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 35,
+      "prompt_tokens": 232,
+      "total_tokens": 267
+    }
+  },
+  "request_fingerprint": "0ef9cc40f5d83f709c64955b66d223f6e6235ba1ac7ea957d80d770a36e8e13b"
+}

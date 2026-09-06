@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Georgiana Tidman confronts Tarver and Darbey for taking Salome and Sheba out without Georgiana Tidman.\",\n  \"Georgiana Tidman calls for Sir Tristram to run Tarver and Darbey into the road.\",\n  \"Salome and Sheba cling to Tarver and Darbey's legs.\",\n  \"Salome and Sheba plead to spare Salome and Sheba.\",\n  \"Sir Tristram twists Tarver's wig around.\",\n  \"The gate bell rings violently.\",\n  \"Georgiana Tidman opens the door.\",\n  \"Salome tells Tarver and Darbey to fly.\",\n  \"Tarver and Darbey disappear through the window curtains.\",\n  \"Georgiana Tidman calls for Hatcham.\",\n  \"Hatcham enters breathlessly followed by Blore.\",\n  \"Hatcham reports that the villain who set fire to the 'Swan' has been caught.\",\n  \"The villain who set fire to the 'Swan' has been taken to the lock-up.\",\n  \"Blore is in agony.\",\n  \"Blore says 'They've got the Dean!'\",\n  \"The sequence of events leads to Blore's instructions regarding Major Tarver.\",\n  \"Blore is present in the unfolding situation.\",\n  \"Blore is involved in the unfolding situation.\",\n  \"The specific instructions are not detailed in the provided evidence.\"\n]",
+  "prompt_sha256": "2bc6cc17a8cd09354a04fefa854c73a543fa7a68cc7bc2873eee4c192ef185e7",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Georgiana Tidman confronts Tarver and Darbey for taking Salome and Sheba out without Georgiana Tidman.\",\n  \"Georgiana Tidman calls for Sir Tristram to run Tarver and Darbey into the road.\",\n  \"Salome and Sheba cling to Tarver and Darbey's legs.\",\n  \"Salome and Sheba plead to spare Salome and Sheba.\",\n  \"Sir Tristram twists Tarver's wig around.\",\n  \"The gate bell rings violently.\",\n  \"Georgiana Tidman opens the door.\",\n  \"Salome tells Tarver and Darbey to fly.\",\n  \"Tarver and Darbey disappear through the window curtains.\",\n  \"Georgiana Tidman calls for Hatcham.\",\n  \"Hatcham enters breathlessly followed by Blore.\",\n  \"Hatcham reports that the villain who set fire to the 'Swan' has been caught.\",\n  \"The villain who set fire to the 'Swan' has been taken to the lock-up.\",\n  \"Blore is in agony.\",\n  \"Blore says 'They've got the Dean!'\",\n  \"The sequence of events leads to Blore's instructions regarding Major Tarver.\",\n  \"Blore is present in the unfolding situation.\",\n  \"Blore is involved in the unfolding situation.\",\n  \"The specific instructions are not detailed in the provided evidence.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681582,
+    "id": "3f3d32da-5765-40c6-849a-b6351fed7673",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 288,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 335,
+      "prompt_tokens": 463,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 751
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3318.403029,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 288,
+          "prompt_tokens": 463,
+          "total_tokens": 751
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 288,
+      "prompt_tokens": 463,
+      "total_tokens": 751
+    }
+  },
+  "request_fingerprint": "bfe10ceb252a3e37a79d04afc2c47f7485189c4394f9d8c018bb1341865a31cb"
+}

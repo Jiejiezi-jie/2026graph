@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"The ground truth does not mention the Dean being present with DARBEY.\",\"statement\":\"During the narrative, DARBEY is present with the Dean.\"},{\"reason\":\"The ground truth does not mention Salome being present with DARBEY.\",\"statement\":\"During the narrative, DARBEY is present with Salome.\"},{\"reason\":\"The ground truth does not mention Major Tarver being present with DARBEY.\",\"statement\":\"During the narrative, DARBEY is present with Major Tarver.\"},{\"reason\":\"The ground truth does not mention Georgiana being present with DARBEY.\",\"statement\":\"Later in the narrative, DARBEY is present with Georgiana.\"},{\"reason\":\"The ground truth does not mention Sir Tristram being present with DARBEY.\",\"statement\":\"Later in the narrative, DARBEY is present with Sir Tristram.\"},{\"reason\":\"The ground truth does not mention 'others' being present with DARBEY.\",\"statement\":\"Later in the narrative, DARBEY is present with others.\"},{\"reason\":\"The ground truth does not mention Salome being present with DARBEY.\",\"statement\":\"In scenes involving the younger generation at the Deanery, DARBEY is with Salome.\"},{\"reason\":\"The ground truth does not mention Major Tarver being present with DARBEY.\",\"statement\":\"In scenes involving the younger generation at the Deanery, DARBEY is with Major Tarver.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth statement 'SHEBA is present with DARBEY during the narrative.'\",\"statement\":\"During the narrative, DARBEY is present with Sheba.\"},{\"reason\":\"This statement is directly supported by the ground truth statement 'SHEBA is present with DARBEY during the narrative.'\",\"statement\":\"In scenes involving the younger generation at the Deanery, DARBEY is with Sheba.\"}]}",
+  "prompt_sha256": "568f53558d2bd3e4d283bfda277bcd5b6713f3afbe3c54b8cc24057c70bec00d",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"During the narrative, DARBEY is present with Sheba.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'SHEBA is present with DARBEY during the narrative.'\"\n    },\n    {\n      \"statement\": \"In scenes involving the younger generation at the Deanery, DARBEY is with Sheba.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'SHEBA is present with DARBEY during the narrative.'\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"During the narrative, DARBEY is present with the Dean.\",\n      \"reason\": \"The ground truth does not mention the Dean being present with DARBEY.\"\n    },\n    {\n      \"statement\": \"During the narrative, DARBEY is present with Salome.\",\n      \"reason\": \"The ground truth does not mention Salome being present with DARBEY.\"\n    },\n    {\n      \"statement\": \"During the narrative, DARBEY is present with Major Tarver.\",\n      \"reason\": \"The ground truth does not mention Major Tarver being present with DARBEY.\"\n    },\n    {\n      \"statement\": \"Later in the narrative, DARBEY is present with Georgiana.\",\n      \"reason\": \"The ground truth does not mention Georgiana being present with DARBEY.\"\n    },\n    {\n      \"statement\": \"Later in the narrative, DARBEY is present with Sir Tristram.\",\n      \"reason\": \"The ground truth does not mention Sir Tristram being present with DARBEY.\"\n    },\n    {\n      \"statement\": \"Later in the narrative, DARBEY is present with others.\",\n      \"reason\": \"The ground truth does not mention 'others' being present with DARBEY.\"\n    },\n    {\n      \"statement\": \"In scenes involving the younger generation at the Deanery, DARBEY is with Salome.\",\n      \"reason\": \"The ground truth does not mention Salome being present with DARBEY.\"\n    },\n    {\n      \"statement\": \"In scenes involving the younger generation at the Deanery, DARBEY is with Major Tarver.\",\n      \"reason\": \"The ground truth does not mention Major Tarver being present with DARBEY.\"\n    }\n  ],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681661,
+    "id": "7054f216-265c-46dd-9845-d5f3d5ffa749",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 510,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 255,
+      "prompt_tokens": 1023,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1533
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 5204.165358,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 510,
+          "prompt_tokens": 1023,
+          "total_tokens": 1533
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 510,
+      "prompt_tokens": 1023,
+      "total_tokens": 1533
+    }
+  },
+  "request_fingerprint": "9b5fc40e4b7d55a1b079a1fd03ec06e5e704d2b9d57e410b8a232a5f0870ff5f"
+}

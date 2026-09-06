@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"This statement is not directly supported by the ground truth, which only mentions that THE DEAN subscribed to the Restoration Fund without any conditions.\",\"statement\":\"THE DEAN (Dr. Jedd) subscribed the sum on condition that seven other donors come forward with the same amount.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth which states that THE DEAN subscribed to the Restoration Fund, indicating involvement.\",\"statement\":\"THE DEAN (Dr. Jedd) is involved with the Restoration Fund.\"},{\"reason\":\"This statement is directly supported by the ground truth which states that THE DEAN subscribed to the Restoration Fund, and the answer provides additional specific details about the subscription amount.\",\"statement\":\"THE DEAN (Dr. Jedd) subscribed a munificent sum of one thousand pounds to the Restoration Fund.\"}]}",
+  "prompt_sha256": "c242c1ea69a513dba01e206e80219394734803f74cb1ff524c22930f5aa9e6e0",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"THE DEAN (Dr. Jedd) is involved with the Restoration Fund.\",\n      \"reason\": \"This statement is directly supported by the ground truth which states that THE DEAN subscribed to the Restoration Fund, indicating involvement.\"\n    },\n    {\n      \"statement\": \"THE DEAN (Dr. Jedd) subscribed a munificent sum of one thousand pounds to the Restoration Fund.\",\n      \"reason\": \"This statement is directly supported by the ground truth which states that THE DEAN subscribed to the Restoration Fund, and the answer provides additional specific details about the subscription amount.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"THE DEAN (Dr. Jedd) subscribed the sum on condition that seven other donors come forward with the same amount.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which only mentions that THE DEAN subscribed to the Restoration Fund without any conditions.\"\n    }\n  ],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681515,
+    "id": "a5b37e1b-38ab-49db-a449-0d3f9e48a05d",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 212,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 131,
+      "prompt_tokens": 899,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1111
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3071.862268,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 212,
+          "prompt_tokens": 899,
+          "total_tokens": 1111
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 212,
+      "prompt_tokens": 899,
+      "total_tokens": 1111
+    }
+  },
+  "request_fingerprint": "2f0825eefbf94335a90f44c463c4cddd25b4af152b93aa26383dfaa907f9d257"
+}

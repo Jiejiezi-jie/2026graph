@@ -1,0 +1,114 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "error": "official judge categorized item has no TP/FP/FN label",
+      "error_type": "Phase5Error",
+      "status": "failed"
+    },
+    {
+      "attempt": 2,
+      "error": "official judge categorized item has no TP/FP/FN label",
+      "error_type": "Phase5Error",
+      "status": "failed"
+    },
+    {
+      "attempt": 3,
+      "error": "official judge classification schema is invalid",
+      "error_type": "Phase5Error",
+      "status": "failed"
+    }
+  ],
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "outcome": "failure",
+  "prompt_sha256": "47963d3e5b80238bf1b4a1876d0fc830e7c147d496ecbceead625a0aecbf2a3c",
+  "raw_responses": [
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Blore is employed by The Dean (Augustin Jedd) at the Deanery.\",\n      \"reason\": \"This is directly supported by the ground truth statement 'Blore works for The Dean.'\"\n    },\n    {\n      \"statement\": \"Sheba is The Dean's daughter.\",\n      \"reason\": \"This is directly supported by the ground truth statement 'The Dean is the father of Sheba.'\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Blore's professional connection to The Dean is relevant.\",\n      \"reason\": \"This is a meta-statement about relevance, not directly supported by any ground truth statement.\"\n    },\n    {\n      \"statement\": \"Blore's actions are intertwined with The Dean's own secret betting activities.\",\n      \"reason\": \"The ground truth does not mention any betting activities by The Dean.\"\n    },\n    {\n      \"statement\": \"Blore's actions include poisoning Dandy Dick.\",\n      \"reason\": \"The ground truth does not mention poisoning Dandy Dick.\"\n    },\n    {\n      \"statement\": \"Blore's actions include placing bets.\",\n      \"reason\": \"The ground truth does not mention Blore placing bets.\"\n    },\n    {\n      \"statement\": \"The Dean is involved in the horse race.\",\n      \"reason\": \"The ground truth does not mention a horse race.\"\n    },\n    {\n      \"statement\": \"The Dean attempts to influence the outcome of the horse race.\",\n      \"reason\": \"The ground truth does not mention a horse race or attempts to influence it.\"\n    },\n    {\n      \"statement\": \"The Dean's involvement in the horse race creates a situation.\",\n      \"reason\": \"The ground truth does not mention a horse race.\"\n    },\n    {\n      \"statement\": \"The Dean's attempts to influence the outcome create a situation.\",\n      \"reason\": \"The ground truth does not mention attempts to influence an outcome.\"\n    },\n    {\n      \"statement\": \"Blore's actions directly affect The Dean's interests.\",\n      \"reason\": \"The ground truth does not specify that Blore's actions affect The Dean's interests.\"\n    },\n    {\n      \"statement\": \"Blore's professional connection to The Dean leads to a mutual cover-up.\",\n      \"reason\": \"The ground truth does not mention a mutual cover-up.\"\n    },\n    {\n      \"statement\": \"Blore fears exposure of Blore's gambling.\",\n      \"reason\": \"The ground",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1788681103,
+      "id": "257ecdfd-5b5b-4352-8654-3472428159b4",
+      "model": "deepseek-v4-pro",
+      "object": "chat.completion",
+      "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+      "usage": {
+        "completion_tokens": 512,
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 430,
+        "prompt_tokens": 1198,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "total_tokens": 1710
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Blore is employed by The Dean (Augustin Jedd) at the Deanery.\",\n      \"reason\": \"Matches ground truth that Blore works for The Dean.\"\n    },\n    {\n      \"statement\": \"Blore's professional connection to The Dean is relevant.\",\n      \"reason\": \"The question asks about relevance, and this statement directly addresses it.\"\n    },\n    {\n      \"statement\": \"Sheba is The Dean's daughter.\",\n      \"reason\": \"Matches ground truth that The Dean is the father of Sheba.\"\n    },\n    {\n      \"statement\": \"Blore's professional role gives Blore leverage.\",\n      \"reason\": \"Implied by the ground truth that Blore works for The Dean and is told to show Major Tarver, suggesting a role with responsibilities.\"\n    },\n    {\n      \"statement\": \"Blore's knowledge of The Dean's secrets gives Blore leverage.\",\n      \"reason\": \"Implied by the ground truth that Blore is told to show Major Tarver, indicating knowledge of The Dean's affairs.\"\n    },\n    {\n      \"statement\": \"Blore uses the leverage to remain in service.\",\n      \"reason\": \"Implied by the ground truth that Blore works for The Dean and is given instructions, suggesting a continuing employment relationship.\"\n    },\n    {\n      \"statement\": \"Blore's professional role contributes to the chaotic events at the Deanery.\",\n      \"reason\": \"Implied by the ground truth that Blore is told to show Major Tarver, which is part of the events.\"\n    },\n    {\n      \"statement\": \"Blore's knowledge of The Dean's secrets contributes to the chaotic events at the Deanery.\",\n      \"reason\": \"Implied by the ground truth that Blore is told to show Major Tarver, indicating involvement in the events.\"\n    },\n    {\n      \"statement\": \"The dynamic of Blore's leverage contributes to the chaotic events at the Deanery.\",\n      \"reason\": \"Implied by the ground truth that Blore's role and instructions lead to involvement in the events.\"\n    },\n    {\n      \"statement\": \"The chaotic events at the Deanery include the proposals to Sheba.\",\n      \"reason\": \"Implied by the ground truth that The Dean is the father of Sheba and Blore is told to show Major Tarver, suggesting a connection to Sheba.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Blore",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1788681110,
+      "id": "b0ebb921-e092-4a9e-9e09-52ed96db88d2",
+      "model": "deepseek-v4-pro",
+      "object": "chat.completion",
+      "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+      "usage": {
+        "completion_tokens": 512,
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 529,
+        "prompt_tokens": 529,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 1041
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Blore is employed by The Dean (Augustin Jedd) at the Deanery.\",\n      \"reason\": \"Matches ground truth that Blore works for The Dean.\"\n    },\n    {\n      \"statement\": \"Blore's professional connection to The Dean is relevant.\",\n      \"reason\": \"The question asks about relevance, and this statement directly addresses it.\"\n    },\n    {\n      \"statement\": \"Blore's actions are intertwined with The Dean's own secret betting activities.\",\n      \"reason\": \"Implied by the context of mutual cover-up and gambling, though not explicitly in ground truth, it is a reasonable inference from the narrative.\"\n    },\n    {\n      \"statement\": \"Blore's actions include placing bets.\",\n      \"reason\": \"Supported by the mention of Blore's gambling and betting activities.\"\n    },\n    {\n      \"statement\": \"The Dean is involved in the horse race.\",\n      \"reason\": \"Implied by The Dean's secret betting activities and attempts to influence the race.\"\n    },\n    {\n      \"statement\": \"The Dean attempts to influence the outcome of the horse race.\",\n      \"reason\": \"Directly stated in the answer statements.\"\n    },\n    {\n      \"statement\": \"The Dean's involvement in the horse race creates a situation.\",\n      \"reason\": \"This is a general statement that is true given the context.\"\n    },\n    {\n      \"statement\": \"The Dean's attempts to influence the outcome create a situation.\",\n      \"reason\": \"Similar to above, true as a consequence.\"\n    },\n    {\n      \"statement\": \"Blore's actions directly affect The Dean's interests.\",\n      \"reason\": \"Because Blore's actions are intertwined with The Dean's betting activities.\"\n    },\n    {\n      \"statement\": \"Blore's professional connection to The Dean leads to a mutual cover-up.\",\n      \"reason\": \"Supported by the statement about mutual cover-up.\"\n    },\n    {\n      \"statement\": \"Blore fears exposure of Blore's gambling.\",\n      \"reason\": \"Implied by the mutual cover-up and fear of exposure.\"\n    },\n    {\n      \"statement\": \"The Dean fears exposure of The Dean's gambling.\",\n      \"reason\": \"Implied by the mutual cover-up and fear of exposure.\"\n    },\n    {\n      \"statement\": \"The actions involving Sheba and Major Tarver are part of the broader comedic entanglement.\",\n      \"reason\": \"This is a general statement that fits the",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1788681120,
+      "id": "9b336b4a-def5-40a5-9764-0a9a63d93a11",
+      "model": "deepseek-v4-pro",
+      "object": "chat.completion",
+      "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+      "usage": {
+        "completion_tokens": 512,
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 17,
+        "prompt_tokens": 529,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "total_tokens": 1041
+      }
+    }
+  ],
+  "request_fingerprint": "c17e6d79a68e89452860524f36f6a7c76df0307070b5707655ec68405939c438"
+}

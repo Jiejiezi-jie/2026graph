@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Georgiana Tidman enters with Salome.\",\n  \"Salome pointed to Sheba.\",\n  \"Sheba hushes Blore.\",\n  \"Blore is told to show in Major Tarver.\"\n]",
+  "prompt_sha256": "1696a59bf6c454046f1a5c6d9ce41f5b2697a616a2465bd38bfe2f389a8aae32",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Georgiana Tidman enters with Salome.\",\n  \"Salome pointed to Sheba.\",\n  \"Sheba hushes Blore.\",\n  \"Blore is told to show in Major Tarver.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681585,
+    "id": "3ee9b63c-250c-413c-b5d3-4559469b4b72",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 44,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 141,
+      "prompt_tokens": 269,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 313
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1199.531965,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 44,
+          "prompt_tokens": 269,
+          "total_tokens": 313
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 44,
+      "prompt_tokens": 269,
+      "total_tokens": 313
+    }
+  },
+  "request_fingerprint": "a5415fd8a6cc6281085df7bcc7fb9198989aa9543635c922b87c361bbda02014"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement is partially covered by the answer's first statement, but the answer adds 'regarding the management of Dandy Dick' which is not in this ground truth statement. However, the ground truth also has a separate statement about the key scenes regarding the management of Dandy Dick, so the combination is covered. But as a standalone statement, it is not fully present in the answer because the answer combines it with the management of Dandy Dick. Therefore, it is considered a false negative.\",\"statement\":\"Georgiana is seen accompanying Sir Tristram during the story's key scenes.\"},{\"reason\":\"This statement is not explicitly present as a separate statement in the answer; it is combined with the first answer statement. Therefore, it is considered a false negative.\",\"statement\":\"The key scenes particularly regard the management of Dandy Dick.\"}],\"FP\":[{\"reason\":\"This specific action is not mentioned in the ground truth.\",\"statement\":\"Georgiana suggests bringing Dandy Dick into the Deanery stables.\"},{\"reason\":\"This specific action is not mentioned in the ground truth.\",\"statement\":\"Georgiana goes out with Sir Tristram to bring Dandy Dick into the Deanery stables.\"},{\"reason\":\"This specific action is not mentioned in the ground truth.\",\"statement\":\"Georgiana clutches Sir Tristram's arm at the police station.\"},{\"reason\":\"This specific action is not mentioned in the ground truth.\",\"statement\":\"Georgiana discusses the situation with Sir Tristram at the police station.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which states that Georgiana is seen accompanying Sir Tristram during key scenes regarding the management of Dandy Dick.\",\"statement\":\"Georgiana (Mrs. Tidman) is seen accompanying Sir Tristram during key scenes regarding the management of Dandy Dick.\"}]}",
+  "prompt_sha256": "d2890de38ffed8f930f121d2a47ffafc15c93f6cac438f33cb0ead78b3ef7fad",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Georgiana (Mrs. Tidman) is seen accompanying Sir Tristram during key scenes regarding the management of Dandy Dick.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that Georgiana is seen accompanying Sir Tristram during key scenes regarding the management of Dandy Dick.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Georgiana suggests bringing Dandy Dick into the Deanery stables.\",\n      \"reason\": \"This specific action is not mentioned in the ground truth.\"\n    },\n    {\n      \"statement\": \"Georgiana goes out with Sir Tristram to bring Dandy Dick into the Deanery stables.\",\n      \"reason\": \"This specific action is not mentioned in the ground truth.\"\n    },\n    {\n      \"statement\": \"Georgiana clutches Sir Tristram's arm at the police station.\",\n      \"reason\": \"This specific action is not mentioned in the ground truth.\"\n    },\n    {\n      \"statement\": \"Georgiana discusses the situation with Sir Tristram at the police station.\",\n      \"reason\": \"This specific action is not mentioned in the ground truth.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"Georgiana is seen accompanying Sir Tristram during the story's key scenes.\",\n      \"reason\": \"This statement is partially covered by the answer's first statement, but the answer adds 'regarding the management of Dandy Dick' which is not in this ground truth statement. However, the ground truth also has a separate statement about the key scenes regarding the management of Dandy Dick, so the combination is covered. But as a standalone statement, it is not fully present in the answer because the answer combines it with the management of Dandy Dick. Therefore, it is considered a false negative.\"\n    },\n    {\n      \"statement\": \"The key scenes particularly regard the management of Dandy Dick.\",\n      \"reason\": \"This statement is not explicitly present as a separate statement in the answer; it is combined with the first answer statement. Therefore, it is considered a false negative.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681756,
+    "id": "2024b04c-6bb9-48be-95d7-e89e91d6fb27",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 448,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 193,
+      "prompt_tokens": 961,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1409
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 5628.009479,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 448,
+          "prompt_tokens": 961,
+          "total_tokens": 1409
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 448,
+      "prompt_tokens": 961,
+      "total_tokens": 1409
+    }
+  },
+  "request_fingerprint": "f314fa4f55365986e5a0dd36b9d04f8d62512c786c3590e4dabd7aa446eef7fe"
+}

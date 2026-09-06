@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth statement 'W. H. Denny performed in the play Dandy Dick.'\",\"statement\":\"W. H. Denny performed as an actor in the play Dandy Dick.\"},{\"reason\":\"This statement is directly supported by the ground truth statement 'W. H. Denny took on the role of Noah Topping in the play Dandy Dick.'\",\"statement\":\"W. H. Denny took on the role of Noah Topping in the play Dandy Dick.\"}]}",
+  "prompt_sha256": "d5ddc4697e67adb23f20013398319ba381705a7869dd19be4bcb0c3b282a7e0b",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"W. H. Denny performed as an actor in the play Dandy Dick.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'W. H. Denny performed in the play Dandy Dick.'\"\n    },\n    {\n      \"statement\": \"W. H. Denny took on the role of Noah Topping in the play Dandy Dick.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'W. H. Denny took on the role of Noah Topping in the play Dandy Dick.'\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681292,
+    "id": "c3c5fc77-d0af-44cb-abcf-b6ef491728f0",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 144,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 143,
+      "prompt_tokens": 911,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1055
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2053.031548,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 144,
+          "prompt_tokens": 911,
+          "total_tokens": 1055
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 144,
+      "prompt_tokens": 911,
+      "total_tokens": 1055
+    }
+  },
+  "request_fingerprint": "96e134f6599aa3265b7da74cdc749a294946ebcc6361bd4c6ed8c27bdf0ed212"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Arthur Cecil and John Clayton were joint lessees of the Royal Court Theatre.\", \"Arthur Cecil and John Clayton were joint managers of the Royal Court Theatre.\"]",
+  "prompt_sha256": "d3f3249072f170f1929958e97e0b7c426ced5a33ebba2887337f70c8dafe5c43",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Arthur Cecil and John Clayton were joint lessees of the Royal Court Theatre.\", \"Arthur Cecil and John Clayton were joint managers of the Royal Court Theatre.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681627,
+    "id": "a65e850e-32c4-4117-b23e-5179cfefd75f",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 32,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 127,
+      "prompt_tokens": 255,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 287
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1312.86125,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 32,
+          "prompt_tokens": 255,
+          "total_tokens": 287
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 32,
+      "prompt_tokens": 255,
+      "total_tokens": 287
+    }
+  },
+  "request_fingerprint": "05983ccc1c1a48e516101fb0f604b40cbadb1b9438a338add772d1956b6ee620"
+}

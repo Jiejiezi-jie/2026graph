@@ -1,0 +1,113 @@
+{
+  "class_imbalance_warnings": [],
+  "config_sha256": "65eb11f8adb8e9fdf8c8b764943a6a93c2adcc1a71514f5cf1375fecb2b43349",
+  "counts": {
+    "method_scores": 186,
+    "questions": 62,
+    "router_labels": 62,
+    "train_answers": 186
+  },
+  "evaluation": {
+    "answer_correctness_implementation": "GraphRAG-Bench official",
+    "classification_response_shapes": {
+      "compatible_other": 1,
+      "count_object": 18,
+      "official_array_object": 103
+    },
+    "embedding": {
+      "batch_size": 32,
+      "device": "cpu",
+      "document_prefix": "",
+      "local_model_path": "/home/user/wangyuhan/models/bge-small-en-v1.5",
+      "max_length": 512,
+      "model_name": "BAAI/bge-small-en-v1.5",
+      "model_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+      "normalize": true,
+      "pooling": "cls",
+      "query_prefix": "Represent this sentence for searching relevant passages: ",
+      "weights_file": "model.safetensors",
+      "weights_sha256": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad"
+    },
+    "evidence_token_recall_threshold": 0.8,
+    "factuality_weight": 0.75,
+    "judge_cache_count": 302,
+    "judge_cache_types": {
+      "classification": 122,
+      "statement_generation": 180
+    },
+    "judge_cached_token_usage": {
+      "completion_tokens": 38159,
+      "prompt_tokens": 149604,
+      "total_tokens": 187763
+    },
+    "judge_failure_audit_count": 2,
+    "official_metric_sha256": "3fec93df5521d71ca0cca5b6acb8b149bac78db91e5d92766cb280907ba9f98b",
+    "offline_replay_api_calls": 0,
+    "semantic_weight": 0.25
+  },
+  "generation": {
+    "max_context_chunks": 5,
+    "max_retries": 2,
+    "model": "deepseek-v4-pro",
+    "offline_replay_api_calls": 0,
+    "retrieval_failure_skip_count": 10,
+    "successful_cache_count": 176,
+    "temperature": 0,
+    "thinking": "disabled"
+  },
+  "inputs": {
+    "chunks": {
+      "path": "data/processed/phase2/chunks.jsonl",
+      "sha256": "a081ba0f863a37e71fae17a8c7b42f2aa46019e8d62ca1d98e818e4988811427"
+    },
+    "retrieval_results": {
+      "path": "data/processed/phase4/train_retrieval_results.jsonl",
+      "sha256": "71b69cb61a302129d0891431646f93e40620b8c33337cd2f2ccda0845be231f1"
+    },
+    "train_questions": {
+      "path": "data/processed/phase1/train_questions.jsonl",
+      "sha256": "84b25f68b6658c11c92af381f684e14efb09444d28e34475671bcf468c697332"
+    }
+  },
+  "label_distribution": {
+    "neighborhood": 23,
+    "path": 14,
+    "vector": 25
+  },
+  "outputs": {
+    "method_scores": {
+      "path": "data/processed/phase5/train_method_scores.jsonl",
+      "sha256": "c4cd0e8f09b337e80080913bbab0e2d2eb0e78aba672824592edf5469c7547bb"
+    },
+    "method_summary": {
+      "path": "data/processed/phase5/method_summary.json",
+      "sha256": "b3f56a66ea07609fe1e7bf10f78b35d1732d723e56b8583fe1d6f9d5249326c6"
+    },
+    "router_labels": {
+      "path": "data/processed/phase5/train_router_labels.jsonl",
+      "sha256": "5dfb36e8731671e4ec9292f8fd4122baead3f9bddb85a9dd0e0729330ee55d98"
+    },
+    "train_answers": {
+      "path": "data/processed/phase5/train_answers.jsonl",
+      "sha256": "457218d395d26c45d4da03f5ab6fb80cc20c72ef5858ce7975c253b6579f281c"
+    }
+  },
+  "retrievers_rerun": false,
+  "router_trained": false,
+  "schema_version": "phase5-v1",
+  "scope": "training-only generation, evaluation, and pseudo-labeling",
+  "standard_answers_in_generation_prompt": false,
+  "system_prompt_sha256": "0c0bcad2c897c10555b093778488ef591a1b942838734531e03c01963045cbe8",
+  "test_set_accessed": false,
+  "thresholds": {
+    "answer_correctness_threshold": 0.75,
+    "difficulty_order": {
+      "neighborhood": 1,
+      "path": 2,
+      "vector": 0
+    },
+    "evidence_coverage_threshold": 0.5,
+    "minimum_class_count_warning": 5,
+    "minimum_class_rate_warning": 0.1
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"THE DEAN (Augustin Jedd) is connected to the character Gus in 'Dandy Dick' through the horse Dandy Dick.\",\n  \"Gus is the horse's nickname.\",\n  \"THE DEAN becomes involved with the horse when THE DEAN administers a remedy to the horse.\",\n  \"THE DEAN's administering a remedy to the horse leads to THE DEAN's arrest.\"\n]",
+  "prompt_sha256": "39838a9acf7a07e05e7cf3ce6bbabaafede5f0e27b5d7a7ead337ffa560d0bdb",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"THE DEAN (Augustin Jedd) is connected to the character Gus in 'Dandy Dick' through the horse Dandy Dick.\",\n  \"Gus is the horse's nickname.\",\n  \"THE DEAN becomes involved with the horse when THE DEAN administers a remedy to the horse.\",\n  \"THE DEAN's administering a remedy to the horse leads to THE DEAN's arrest.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681478,
+    "id": "2a8b4395-4c29-4737-a321-d73911006e5f",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 84,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 156,
+      "prompt_tokens": 284,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 368
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1721.984183,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 84,
+          "prompt_tokens": 284,
+          "total_tokens": 368
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 84,
+      "prompt_tokens": 284,
+      "total_tokens": 368
+    }
+  },
+  "request_fingerprint": "6e5575bb7c03c359e29c6ff5e0f5f54ae639154968edb90e7151868e00c8d5cc"
+}

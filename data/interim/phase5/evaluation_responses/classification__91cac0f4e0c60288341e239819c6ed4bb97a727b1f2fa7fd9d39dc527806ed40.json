@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"The ground truth states that Sheba won money at The Races, but the answer does not mention Sheba at all.\",\"statement\":\"Sheba won money at The Races.\"}],\"FP\":[{\"reason\":\"The answer attributes the win to Georgiana (George Tidd), but the ground truth states that Sheba won money at The Races. There is no support for Georgiana winning.\",\"statement\":\"Georgiana (George Tidd) wins money at the races.\"},{\"reason\":\"This statement provides a specific amount won by Georgiana, but the ground truth only mentions Sheba winning money without any amount or details about Georgiana.\",\"statement\":\"Georgiana (George Tidd) clears fifteen hundred over the Handicap.\"}],\"TP\":[]}",
+  "prompt_sha256": "91cac0f4e0c60288341e239819c6ed4bb97a727b1f2fa7fd9d39dc527806ed40",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [],\n  \"FP\": [\n    {\n      \"statement\": \"Georgiana (George Tidd) wins money at the races.\",\n      \"reason\": \"The answer attributes the win to Georgiana (George Tidd), but the ground truth states that Sheba won money at The Races. There is no support for Georgiana winning.\"\n    },\n    {\n      \"statement\": \"Georgiana (George Tidd) clears fifteen hundred over the Handicap.\",\n      \"reason\": \"This statement provides a specific amount won by Georgiana, but the ground truth only mentions Sheba winning money without any amount or details about Georgiana.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"Sheba won money at The Races.\",\n      \"reason\": \"The ground truth states that Sheba won money at The Races, but the answer does not mention Sheba at all.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681035,
+    "id": "1505a2c1-81f9-4853-8b6b-b2645c1e5da4",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 193,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 92,
+      "prompt_tokens": 860,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1053
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3267.325878,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 193,
+          "prompt_tokens": 860,
+          "total_tokens": 1053
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 193,
+      "prompt_tokens": 860,
+      "total_tokens": 1053
+    }
+  },
+  "request_fingerprint": "49197fac62ae6264fbe24dbba004e0ae791d265fe2bc0eeccdd32ac504a935a5"
+}

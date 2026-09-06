@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"THE DEAN is also known as Dr. Jedd.\"]",
+  "prompt_sha256": "47880add2bc795fa95b38d154d0e6e4f5c66cce956b53f0ea3e643667213836a",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"THE DEAN is also known as Dr. Jedd.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681712,
+    "id": "6938d52b-d1c5-47c9-9923-e7ee4a68866c",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 18,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 111,
+      "prompt_tokens": 239,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 257
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1114.93509,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 18,
+          "prompt_tokens": 239,
+          "total_tokens": 257
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 18,
+      "prompt_tokens": 239,
+      "total_tokens": 257
+    }
+  },
+  "request_fingerprint": "61f8a4ab062284269e8f335635b81c162342020561ebe980befbbe9aef8b6ca5"
+}

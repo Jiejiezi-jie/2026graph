@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Noah performs his duties as a constable at St. Marvells.\", \"The confusion involves THE DEAN.\", \"Noah took up a man at St. Marvells.\"]",
+  "prompt_sha256": "476158d2bca23363191b5b03881b6cc2e8039a10dfdc536728ecb47aa978f21f",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"Noah performs his duties as a constable at St. Marvells.\", \"The confusion involves THE DEAN.\", \"Noah took up a man at St. Marvells.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681189,
+    "id": "a709dc7c-30fa-423f-ac1c-57b501cdbba8",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 44,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 115,
+      "prompt_tokens": 243,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 287
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1489.610268,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 44,
+          "prompt_tokens": 243,
+          "total_tokens": 287
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 44,
+      "prompt_tokens": 243,
+      "total_tokens": 287
+    }
+  },
+  "request_fingerprint": "c19d06ea9ed317b1d6a56d30fff67e347407728e47f5b33580c6a02811b1b24f"
+}

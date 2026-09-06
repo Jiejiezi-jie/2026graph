@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement from the ground truth is not present in the answer.\",\"statement\":\"W. H. Denny contributed to the comic success of the play Dandy Dick.\"}],\"FP\":[{\"reason\":\"The ground truth does not mention the specific role played by W. H. Denny, so this statement is not directly supported.\",\"statement\":\"W. H. Denny played the role of Noah Topping in the play \\\"Dandy Dick\\\".\"},{\"reason\":\"The ground truth does not mention the character Noah Topping or his role as Constable, so this statement is not directly supported.\",\"statement\":\"Noah Topping was the Constable at St. Marvell's in the play \\\"Dandy Dick\\\".\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth statement 'W. H. Denny performed as an actor in the play Dandy Dick.'\",\"statement\":\"W. H. Denny performed as an actor in the play \\\"Dandy Dick\\\".\"}]}",
+  "prompt_sha256": "c5ff5d3b8eb559f4f1b858e504174500ead791525cf6dfc499a4783bc2194634",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"W. H. Denny performed as an actor in the play \\\"Dandy Dick\\\".\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'W. H. Denny performed as an actor in the play Dandy Dick.'\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"W. H. Denny played the role of Noah Topping in the play \\\"Dandy Dick\\\".\",\n      \"reason\": \"The ground truth does not mention the specific role played by W. H. Denny, so this statement is not directly supported.\"\n    },\n    {\n      \"statement\": \"Noah Topping was the Constable at St. Marvell's in the play \\\"Dandy Dick\\\".\",\n      \"reason\": \"The ground truth does not mention the character Noah Topping or his role as Constable, so this statement is not directly supported.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"W. H. Denny contributed to the comic success of the play Dandy Dick.\",\n      \"reason\": \"This statement from the ground truth is not present in the answer.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681523,
+    "id": "b2e41f78-2e08-44c3-91e6-c6f312564a08",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 255,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 169,
+      "prompt_tokens": 937,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1192
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2480.832213,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 255,
+          "prompt_tokens": 937,
+          "total_tokens": 1192
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 255,
+      "prompt_tokens": 937,
+      "total_tokens": 1192
+    }
+  },
+  "request_fingerprint": "9d10d0d0db1db2ccefc49678b770dd5504af7a5ab3b1c3f9838d1b66aef6000d"
+}

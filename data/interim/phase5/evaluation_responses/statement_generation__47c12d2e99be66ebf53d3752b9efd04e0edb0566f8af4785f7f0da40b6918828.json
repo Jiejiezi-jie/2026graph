@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Georgiana (George Tidd) wins money at the races.\", \"Georgiana (George Tidd) clears fifteen hundred over the Handicap.\"]",
+  "prompt_sha256": "47c12d2e99be66ebf53d3752b9efd04e0edb0566f8af4785f7f0da40b6918828",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"Georgiana (George Tidd) wins money at the races.\", \"Georgiana (George Tidd) clears fifteen hundred over the Handicap.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681034,
+    "id": "166c7025-f300-4705-91df-0e6b0f335d63",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 36,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 111,
+      "prompt_tokens": 239,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 275
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1853.512432,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 36,
+          "prompt_tokens": 239,
+          "total_tokens": 275
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 36,
+      "prompt_tokens": 239,
+      "total_tokens": 275
+    }
+  },
+  "request_fingerprint": "96aa4c6f1f6ffc3247bfa2edc0c7e3832cdcda46ecc90ed51fa8dac27df1cd55"
+}

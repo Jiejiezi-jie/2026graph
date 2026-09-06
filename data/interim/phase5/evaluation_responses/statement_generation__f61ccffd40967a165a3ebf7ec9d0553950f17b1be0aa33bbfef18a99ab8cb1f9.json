@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Georgiana Tidman introduces herself as 'George Tidd.'\",\n  \"'George Tidd' is Georgiana Tidman's racing name.\",\n  \"Georgiana Tidman tells Salome and Sheba to ask after George Tidd at Newmarket.\",\n  \"Georgiana Tidman uses the nickname 'George Tidd' to assert her identity in the horse-racing world.\",\n  \"Later, Georgiana Tidman rallies her old racing acquaintances to rescue the Dean.\",\n  \"Georgiana Tidman's old racing acquaintances recognize her as 'George Tidd.'\"\n]",
+  "prompt_sha256": "f61ccffd40967a165a3ebf7ec9d0553950f17b1be0aa33bbfef18a99ab8cb1f9",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Georgiana Tidman introduces herself as 'George Tidd.'\",\n  \"'George Tidd' is Georgiana Tidman's racing name.\",\n  \"Georgiana Tidman tells Salome and Sheba to ask after George Tidd at Newmarket.\",\n  \"Georgiana Tidman uses the nickname 'George Tidd' to assert her identity in the horse-racing world.\",\n  \"Later, Georgiana Tidman rallies her old racing acquaintances to rescue the Dean.\",\n  \"Georgiana Tidman's old racing acquaintances recognize her as 'George Tidd.'\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681843,
+    "id": "86a11824-38cf-454a-8c29-ab38f2d8ac97",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 116,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 177,
+      "prompt_tokens": 305,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 421
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2147.572434,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 116,
+          "prompt_tokens": 305,
+          "total_tokens": 421
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 116,
+      "prompt_tokens": 305,
+      "total_tokens": 421
+    }
+  },
+  "request_fingerprint": "c785f4431b4a0b5a8527eaf3d8855d28c6113e4bd7af73ef1645cd327cd89375"
+}

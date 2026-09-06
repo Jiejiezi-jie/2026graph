@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Ada Rehan performed in \\\"Dandy Dick\\\" in an American production.\",\n  \"Ada Rehan took on Mrs. John Wood's part in \\\"Dandy Dick\\\".\"\n]",
+  "prompt_sha256": "4333aa057042d929d9fb69e9947a7950b9ecf2f1c8df82812812cbd9154c4ad4",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\n  \"Ada Rehan performed in \\\"Dandy Dick\\\" in an American production.\",\n  \"Ada Rehan took on Mrs. John Wood's part in \\\"Dandy Dick\\\".\"\n]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681315,
+    "id": "31071520-c0fc-4e3e-9b81-73791b10e695",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 43,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 123,
+      "prompt_tokens": 251,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 294
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1617.011921,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 43,
+          "prompt_tokens": 251,
+          "total_tokens": 294
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 43,
+      "prompt_tokens": 251,
+      "total_tokens": 294
+    }
+  },
+  "request_fingerprint": "a2c73f9da389e18501ba3e08241dc2876f1036880d47d61c5dbb2000a5a64acf"
+}

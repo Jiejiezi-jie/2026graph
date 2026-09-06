@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement is in the ground truth but not present in the answer.\",\"statement\":\"The Dean is the father of Sheba.\"},{\"reason\":\"This statement is in the ground truth but not explicitly present in the answer. The answer mentions Blore's relationship influencing his role, but does not state that he is told to show Major Tarver.\",\"statement\":\"Blore is told to show Major Tarver.\"}],\"FP\":[{\"reason\":\"There is no ground truth statement that mentions Blore's involvement in the household routine.\",\"statement\":\"Blore is involved in the household routine.\"},{\"reason\":\"The ground truth does not mention any rounds or specific times.\",\"statement\":\"Blore accompanies The Dean on The Dean's rounds at half-past nine.\"},{\"reason\":\"The ground truth does not mention Tarver and Salome planning a secret meeting or The Dean's rounds.\",\"statement\":\"Tarver and Salome plan their secret meeting based on the timing of The Dean's rounds.\"},{\"reason\":\"The ground truth does not mention Tarver and Salome planning a secret meeting or Blore's rounds.\",\"statement\":\"Tarver and Salome plan their secret meeting based on the timing of Blore's rounds.\"},{\"reason\":\"The ground truth only states that Blore is told to show Major Tarver, but does not specify that his duties affect Major Tarver's ability to interact with the household.\",\"statement\":\"Blore's duties affect Major Tarver's ability to interact with the household.\"}],\"TP\":[{\"reason\":\"This is directly supported by the ground truth statement 'Blore works for The Dean.'\",\"statement\":\"Blore is employed by The Dean.\"},{\"reason\":\"The ground truth indicates that Blore works for The Dean and is told to show Major Tarver, implying that his employment relationship influences his role with Major Tarver.\",\"statement\":\"Blore's relationship with The Dean influences Blore's role with Major Tarver.\"}]}",
+  "prompt_sha256": "1911629bd80aa7855dca9476d9d5f68cf10199c40374f691046a81831a8348a1",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Blore is employed by The Dean.\",\n      \"reason\": \"This is directly supported by the ground truth statement 'Blore works for The Dean.'\"\n    },\n    {\n      \"statement\": \"Blore's relationship with The Dean influences Blore's role with Major Tarver.\",\n      \"reason\": \"The ground truth indicates that Blore works for The Dean and is told to show Major Tarver, implying that his employment relationship influences his role with Major Tarver.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Blore is involved in the household routine.\",\n      \"reason\": \"There is no ground truth statement that mentions Blore's involvement in the household routine.\"\n    },\n    {\n      \"statement\": \"Blore accompanies The Dean on The Dean's rounds at half-past nine.\",\n      \"reason\": \"The ground truth does not mention any rounds or specific times.\"\n    },\n    {\n      \"statement\": \"Tarver and Salome plan their secret meeting based on the timing of The Dean's rounds.\",\n      \"reason\": \"The ground truth does not mention Tarver and Salome planning a secret meeting or The Dean's rounds.\"\n    },\n    {\n      \"statement\": \"Tarver and Salome plan their secret meeting based on the timing of Blore's rounds.\",\n      \"reason\": \"The ground truth does not mention Tarver and Salome planning a secret meeting or Blore's rounds.\"\n    },\n    {\n      \"statement\": \"Blore's duties affect Major Tarver's ability to interact with the household.\",\n      \"reason\": \"The ground truth only states that Blore is told to show Major Tarver, but does not specify that his duties affect Major Tarver's ability to interact with the household.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"The Dean is the father of Sheba.\",\n      \"reason\": \"This statement is in the ground truth but not present in the answer.\"\n    },\n    {\n      \"statement\": \"Blore is told to show Major Tarver.\",\n      \"reason\": \"This statement is in the ground truth but not explicitly present in the answer. The answer mentions Blore's relationship influencing his role, but does not state that he is told to show Major Tarver.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681083,
+    "id": "1e73c3c0-164b-48b2-8769-da4f2abea864",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 483,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 205,
+      "prompt_tokens": 973,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1456
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 5407.975419,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 483,
+          "prompt_tokens": 973,
+          "total_tokens": 1456
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 483,
+      "prompt_tokens": 973,
+      "total_tokens": 1456
+    }
+  },
+  "request_fingerprint": "21cd0fde874cfb28963d38dadab4b10d9ceca4e358fe32124609be0403f61fac"
+}

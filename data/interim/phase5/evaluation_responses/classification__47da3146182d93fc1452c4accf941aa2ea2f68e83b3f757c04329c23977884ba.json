@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"This statement is not directly supported by the ground truth; the ground truth only mentions the Dean's fear of facing his children at the Deanery, not a question about facing his simple children.\",\"statement\":\"The Dean asks how he could face his simple children.\"},{\"reason\":\"This statement is not directly supported by the ground truth; the ground truth does not mention the children's perception of the Dean.\",\"statement\":\"The Dean's children regarded the Dean as faultless.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which states that the Dean is afraid to face his children at the Deanery.\",\"statement\":\"The Dean feels apprehensive about facing his children at the Deanery.\"}]}",
+  "prompt_sha256": "47da3146182d93fc1452c4accf941aa2ea2f68e83b3f757c04329c23977884ba",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"The Dean feels apprehensive about facing his children at the Deanery.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that the Dean is afraid to face his children at the Deanery.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"The Dean asks how he could face his simple children.\",\n      \"reason\": \"This statement is not directly supported by the ground truth; the ground truth only mentions the Dean's fear of facing his children at the Deanery, not a question about facing his simple children.\"\n    },\n    {\n      \"statement\": \"The Dean's children regarded the Dean as faultless.\",\n      \"reason\": \"This statement is not directly supported by the ground truth; the ground truth does not mention the children's perception of the Dean.\"\n    }\n  ],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681212,
+    "id": "0e78a804-fc4c-4c9c-8f01-22146174d988",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 188,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 120,
+      "prompt_tokens": 888,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1076
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2476.28927,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 188,
+          "prompt_tokens": 888,
+          "total_tokens": 1076
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 188,
+      "prompt_tokens": 888,
+      "total_tokens": 1076
+    }
+  },
+  "request_fingerprint": "3cd11ca9884ef1d96cc3bd1914a5bd1fc18014fc74279cfaf20e42dd42cf7e80"
+}

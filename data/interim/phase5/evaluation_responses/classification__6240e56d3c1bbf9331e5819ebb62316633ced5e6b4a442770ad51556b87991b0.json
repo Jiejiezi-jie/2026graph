@@ -1,0 +1,61 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FN item 1.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FN item 2.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FN item 3.\"}],\"FP\":[{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 1.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 2.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 3.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 4.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 5.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 6.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 7.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 8.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 9.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 10.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 11.\"}],\"TP\":[]}",
+  "prompt_sha256": "6240e56d3c1bbf9331e5819ebb62316633ced5e6b4a442770ad51556b87991b0",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": 0,\n  \"FP\": 11,\n  \"FN\": 3\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681397,
+    "id": "bfa94df6-ab67-4075-9045-8a715c20c97c",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 23,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 343,
+      "prompt_tokens": 343,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 366
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "error": "official judge classification schema is invalid",
+        "error_type": "Phase5Error",
+        "status": "failed"
+      },
+      {
+        "attempt": 2,
+        "elapsed_ms": 1460.149292,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 23,
+          "prompt_tokens": 343,
+          "total_tokens": 366
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 23,
+      "prompt_tokens": 343,
+      "total_tokens": 366
+    }
+  },
+  "request_fingerprint": "15cb097297a18adee196e23de8f3550831369a7fcc438276076e1d0e36a266b2"
+}

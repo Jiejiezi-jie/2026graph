@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"SALOME reflects upon her father, the Dean, in relation to family dynamics and guidance in the play.\",\n  \"SALOME refers to her father as 'Poor Papa'.\",\n  \"SALOME refers to her father as 'Poor dear Papa'.\",\n  \"SALOME expresses concern about her father's absence.\",\n  \"SALOME expresses anxiety over her father's return.\",\n  \"SALOME's concern and anxiety indicate her reliance on her father as her only parental figure.\"\n]",
+  "prompt_sha256": "8e9c143e318ebf94231e1232346ef7b469a144e4aa3e0d4d223abaf6e3a7283c",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"SALOME reflects upon her father, the Dean, in relation to family dynamics and guidance in the play.\",\n  \"SALOME refers to her father as 'Poor Papa'.\",\n  \"SALOME refers to her father as 'Poor dear Papa'.\",\n  \"SALOME expresses concern about her father's absence.\",\n  \"SALOME expresses anxiety over her father's return.\",\n  \"SALOME's concern and anxiety indicate her reliance on her father as her only parental figure.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681666,
+    "id": "8e22f5f0-91e5-4268-ac1c-b69dfc51be19",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 104,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 157,
+      "prompt_tokens": 285,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 389
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2024.822721,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 104,
+          "prompt_tokens": 285,
+          "total_tokens": 389
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 104,
+      "prompt_tokens": 285,
+      "total_tokens": 389
+    }
+  },
+  "request_fingerprint": "2bac23ffb4c7107f60fe24e586b9defb3b5fcd218c0efc720c7dd90f3896593a"
+}

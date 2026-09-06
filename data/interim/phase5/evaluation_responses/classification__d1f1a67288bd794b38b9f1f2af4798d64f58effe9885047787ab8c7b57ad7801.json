@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"The answer states the venue as 'Court Theatre', which is a shortened form of 'Royal Court Theatre' as mentioned in the ground truth. The core information about the venue is directly supported.\",\"statement\":\"The play 'Dandy Dick' was performed at the Court Theatre.\"}]}",
+  "prompt_sha256": "d1f1a67288bd794b38b9f1f2af4798d64f58effe9885047787ab8c7b57ad7801",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"The play 'Dandy Dick' was performed at the Court Theatre.\",\n      \"reason\": \"The answer states the venue as 'Court Theatre', which is a shortened form of 'Royal Court Theatre' as mentioned in the ground truth. The core information about the venue is directly supported.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681687,
+    "id": "5530aa1a-8cb0-4b5d-b2b5-19baa91be1c3",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 85,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 86,
+      "prompt_tokens": 854,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 939
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2017.141398,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 85,
+          "prompt_tokens": 854,
+          "total_tokens": 939
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 85,
+      "prompt_tokens": 854,
+      "total_tokens": 939
+    }
+  },
+  "request_fingerprint": "9f3dd5d7b27695808e74ef39f06d2067a0070c0737e886f1a477681a955d5cfb"
+}

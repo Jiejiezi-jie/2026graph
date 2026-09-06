@@ -1,0 +1,84 @@
+{
+  "cache_version": "phase5-generation-cache-v1",
+  "context_chunk_ids": [
+    "dd_front_c0001",
+    "dd_prod_c0002",
+    "dd_prod_c0001",
+    "dd_act01_c0015",
+    "dd_act03s01_c0013"
+  ],
+  "invalid_citations": [],
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "prompt_sha256": "b6471273c102e1b40f76d5ae059ed7e5350b8e921873c91d4f48588490ddb50c",
+  "query_id": "Novel-025c325c",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"answer\": \"Augustin\",\n  \"citations\": [\"dd_act01_c0015\"],\n  \"insufficient_evidence\": false\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680128,
+    "id": "099c6a72-4355-4808-bd5d-74e26ba88a5e",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 33,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2697,
+      "prompt_tokens": 2697,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 2730
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1616.149159,
+        "finish_reason": "stop",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 33,
+          "prompt_tokens": 2697,
+          "total_tokens": 2730
+        }
+      }
+    ],
+    "elapsed_ms": 1616.149159,
+    "token_usage": {
+      "completion_tokens": 33,
+      "prompt_tokens": 2697,
+      "total_tokens": 2730
+    }
+  },
+  "request_fingerprint": "6a0460e9cb30c08d2c55b1eba224b3828a01cdf77eaa49e218e58dedb130d5e0",
+  "request_messages": [
+    {
+      "content": "You are a grounded question-answering system.\n\nAnswer the user's QUESTION using only the supplied EVIDENCE CHUNKS and, when\npresent, GRAPH CONTEXT. Do not use outside knowledge or infer unsupported facts.\nIf the supplied evidence is insufficient, set insufficient_evidence to true and\nset answer exactly to INSUFFICIENT_EVIDENCE.\n\nReturn exactly one JSON object with exactly these fields:\n{\n  \"answer\": \"concise grounded answer or INSUFFICIENT_EVIDENCE\",\n  \"citations\": [\"chunk_id\"],\n  \"insufficient_evidence\": false\n}\n\nEvery citation must be a chunk_id that appears in EVIDENCE CHUNKS. Cite only\nchunks that support the answer. Do not output Markdown, explanations, additional\nkeys, or text outside the JSON object.",
+      "role": "system"
+    },
+    {
+      "content": "QUESTION:\nIn the narrative of 'Dandy Dick', by what other name is THE DEAN known?\n\nEVIDENCE CHUNKS:\n[CHUNK_ID: dd_front_c0001]\nDANDY DICK A PLAY IN THREE ACTS By ARTHUR W. PINERO AUTHOR OF \"SWEET LAVENDER,\" \"THE TIMES,\" \"THE CABINET MINISTER,\" \"LADY BOUNTIFUL,\" ETC. All rights reserved. Performance forbidden, and right of representation reserved. Application for the right of performing this piece must be made to the publishers. BOSTON _WALTER H. BAKER_ Copyright, 1893, by ARTHUR W. PINERO _All rights reserved._\n\n[CHUNK_ID: dd_prod_c0002]\n\"Dandy Dick\" was performed 171 times between the first night and the 22d of July, when, the old theatre being demolished, Mr. Clayton took a temporary lease of Toole's Theatre, and transferred the play thither, where it ran 75 nights more. A company had already been sent out, under the auspices of the Court management, to perform \"Dandy Dick\" in the provinces; but, when the play was withdrawn from the London boards, Mr. Clayton set out himself with a company, and it was during this tour that he died at Liverpool. In America Mr. Daly produced \"Dandy Dick\" with Miss Ada Rehan in Mrs. John Wood's part, but no very great success was achieved; whereas in Australia its reception was so enthusiastic that it ran for quite an unusual time both in Melbourne and Sydney. In the character of the Dean, Mr. G. W. Anson achieved perhaps the greatest of his Australian successes, and Mr. Robert Brough made his mark as the policeman. MALCOLM C. SALAMAK. _December_, 1892.\n\n[CHUNK_ID: dd_prod_c0001]\nINTRODUCTORY NOTE. \"Dandy Dick\" was the third of the farces which Mr. Pinero wrote for the old Court Theatre--a series of plays which, besides giving playgoers a fresh source of laughter, and the English stage a new order of comic play, brought plentiful prosperity to the joint management of Mr. Arthur Cecil and the late Mr. John Clayton. But a kind of melancholy interest attaches to \"Dandy Dick,\" for this play was, as it were, the swan-song of the old theatre and of the Clayton and Cecil partnership; and it was the piece in which Mr. Clayton was acting when death overtook him, to the general grief. The production of \"Dandy Dick\" may be considered as something of a _tour de force_ in its way. \"The Schoolmistress\" was at the end of its successful run, and Mr. Pinero was under contract to supply its successor by a certain date, when Mr. Clayton one day went down to Brighton, where the dramatist was then at work, to hear him read the two completed acts of the new play. To Mr. Clayton's consternation, however, Mr. Pinero announced that he was dissatisfied with his work, and proposed to begin an entirely new play, as he had a more promising idea. But time was pressing, and a successor to \"The Schoolmistress\" was an immediate necessity. However, Mr. Pinero's idea of writing a play round a dean, who, while being a paragon of dignity and decorum, should be driven by an indiscreet act into a most undignified dilemma, appealed to Mr. Clayton, and hastening back to London with the sketches for the requisite scenes, he left Mr. Pinero to set to work at once upon the new scheme. And within a few weeks, indeed by the time the scenery was ready, the new play was completed, the rural constable of a village adjacent to Brighton having suggested the character of Noah Topping. \"Dandy Dick\" was produced at the Court Theatre on January 27th, 1887, and, meeting with a most favorable initial reception, it settled down immediately into a complete success. The following is a copy of the first-night programme:--\n\n[CHUNK_ID: dd_act01_c0015]\nTHE DEAN. [_In horror._] Salome, Sheba, children! I must speak to you. Excuse me, Mardon. [_To himself._] Oh, what shall I do with my widowed sister? [_He goes into the garden._ SHEBA. [_To SALOME._] That's like pa, just as we were getting interested. SALOME. We'll come back in a minute. [_They go out by the window._ SIR TRISTRAM. Lord! How odd! You know your brother and I were at Oxford together, George? GEORGIANA. Were you, Tris! Then are you putting up here? SIR TRISTRAM. He won't have me. GEORGIANA. Won't have you! SIR TRISTRAM. Because I'm down here racing. You see, he's a Dean. GEORGIANA. Is he? Well, then, you just lay a thousand sovereigns to a gooseberry that in this house I'm a Dean, too! SIR TRISTRAM. I suppose he's thinking of the Canons--and the Bishop--and those chaps. GEORGIANA. Lord bless your heart, they're all right when you cheer them up a bit! If I'm here till the autumn meeting you'll find me lunching on the hill, with the Canons marking my card and the dear old Bishop mixing the salad. So say the word, Tris--I'll make it all right with Augustin. SIR TRISTRAM. No, thanks, old fellow. The fact is I'm fixed at the \"Swan\" with--what do you think, George?--with Dandy Dick. GEORGIANA. Oh! my old Dandy! SIR TRISTRAM. I brought him down with me in lavender. You know he runs for the Durnstone Handicap to-morrow. GEORGIANA. Know! There's precious little that horse does that I don't know, and what I don't know I dream. Is he fit? SIR TRISTRAM. As a fiddle--shines like a mirror--not an ounce too much or too little. He'll romp in! GEORGIANA. He'll dance in! Tris Mardon! SIR TRISTRAM. Eh? GEORGIANA. [_Mysteriously._] Tris, Dandy Dick doesn't belong to you--not _all_ of him. SIR TRISTRAM. No--I've only a half share. At your sale he was knocked down to John Fielder the trainer. The other half belongs to John. GEORGIANA. No, it doesn't, it belongs to _me!_ SIR TRISTRAM. George! GEORGIANA. Yes, directly I saw Dandy Dick marched out before the auctioneer I asked John Fielder to help me, and he did, like a Briton. For I can't live without horseflesh, if it's only a piece of cat's meat on a skewer. But when I condescended to keep company with the Canons and the Bishop here I promised Augustin that I wouldn't own anything on four legs, so John sold you half of Dick, and I can swear I don't own a horse--and I don't--not a whole one. But half a horse is better than no bread, Tris--and we're partners. SIR TRISTRAM. [_Roaring with laughter._] Ho! ho! ha! ha! ha! GEORGIANA. What are you laughing at, man?\n\n[CHUNK_ID: dd_act03s01_c0013]\nTHE DEAN. I was discovered administering to a suffering beast a simple remedy for chills. I am an unfortunate creature. Do with me what you will. GEORGIANA. The analysis hasn't come home from the chemist's yet. Is this the truth? THE DEAN. Yes. SIR TRISTRAM. [_To NOAH._] Release this man. NOAH. Release him! He was found trespassin' in the stables of the la-ate De-an, who has committed sooicide. THE DEAN. Oh! I---- SIR TRISTRAM, GEORGIANA _and_ HANNAH. Hush! NOAH. The Diseased De-an is the honly man wot can withdraw one charge---- THE DEAN. I--listen! SIR TRISTRAM, GEORGIANA _and_ HANNAH. Hush! NOAH. And I'm the honly man wot can withdraw the other. SIR TRISTRAM. You? Get out! GEORGIANA. Get out! NOAH. I charge this person unknown with allynating the affections o' my wife while I was puttin' my 'orse to. And I'm goin' to drive him over to Durnstone with the hevidence. HANNAH. Oh lady, lady, it's appearances what is against us. NOAH. [_Through the opening of the door._] Woa! Steady there! Get back! GEORGIANA. [_Whispering to THE DEAN._] I am disappointed in you, Angustin. Have you got this wretched woman's whistle? THE DEAN. Yes. SIR TRISTRAM. [_Softly to THE DEAN._] Oh Jedd, Jedd--and these are what you call Principles! Have you got the key of your handcuffs? THE DEAN. Yes. NOAH. [_Appearing in the doorway._] Time's oop. Coom on! THE DEAN. May I say a few parting words in the home I have apparently wrecked? NOAH. Say' em and 'a done. THE DEAN. In setting out upon a journey, the termination of which is problematical, I desire to attest that this erring constable is the husband of a wife from whom it is impossible to withhold respect, if not admiration. NOAH. You 'ear' im! THE DEAN. As for my wretched self, the confession of my weaknesses must be reserved for another time--another place. [_To GEORGIANA._] To you, whose privilege it is to shelter in the sanctity of the Deanery, I give this earnest admonition. Within an hour from this terrible moment, let the fire be lighted in the drawing-room--let the missing man's warm bath be waiting for its master--a change of linen prepared. Withhold your judgments. Wait. NOAH. This is none of your business. Coom on. THE DEAN. I am ready! [_NOAH takes him by the arm and leads him out._ GEORGIANA. Oh, what am I to think of my brother? HANNAH. [_Kneeling at GEORGIANA'S feet._] Think! That he's the beautifullest, sweetest man in all Durnshire! GEORGIANA. Woman! HANNAH. It's I and my whistle and Nick the fire-brigade horse what'll bring him back to the Deanery safe and unharmed. Not a soul but we three'll ever know of his misfortune. [_Listening._] Hark! They're off! NOAH. [_Outside._] Get up, now! Get-oop, old girl! HANNAH. [_With a cry._] Ah! [_Rushing to the door and looking out._] He's done for! GEORGIANA _and_ SIR TRISTRAM. Done for! HANNAH. The Dean can whistle himself blue! Noah's put Kitty in the cart, and left Old Nick at home! THE END OF THE FIRST SCENE.",
+      "role": "user"
+    }
+  ],
+  "retriever": "vector",
+  "validated_output": {
+    "answer": "Augustin",
+    "citations": [
+      "dd_act01_c0015"
+    ],
+    "insufficient_evidence": false
+  }
+}

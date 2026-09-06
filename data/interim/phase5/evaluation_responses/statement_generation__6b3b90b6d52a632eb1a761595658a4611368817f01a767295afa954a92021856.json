@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"THE DEAN recalls being a promising youth at college.\",\n  \"THE DEAN recalls walking in the old streets at Oxford.\",\n  \"THE DEAN recalls avoiding the shops where THE DEAN owed youthful bills.\",\n  \"THE DEAN recalls seeing the broad meadows.\",\n  \"THE DEAN recalls seeing the tall Spire of the college.\",\n  \"THE DEAN reflects that THE DEAN's whole life seems made up of Bills and Spires.\"\n]",
+  "prompt_sha256": "6b3b90b6d52a632eb1a761595658a4611368817f01a767295afa954a92021856",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"THE DEAN recalls being a promising youth at college.\",\n  \"THE DEAN recalls walking in the old streets at Oxford.\",\n  \"THE DEAN recalls avoiding the shops where THE DEAN owed youthful bills.\",\n  \"THE DEAN recalls seeing the broad meadows.\",\n  \"THE DEAN recalls seeing the tall Spire of the college.\",\n  \"THE DEAN reflects that THE DEAN's whole life seems made up of Bills and Spires.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681265,
+    "id": "764888b6-4a61-432d-b4f2-51e50702b4a0",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 94,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 36,
+      "prompt_tokens": 292,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "total_tokens": 386
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1826.378458,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 94,
+          "prompt_tokens": 292,
+          "total_tokens": 386
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 94,
+      "prompt_tokens": 292,
+      "total_tokens": 386
+    }
+  },
+  "request_fingerprint": "f6cd083756759488f50b03e501abf2031b48889496576c2d364a47ec1f8ed50a"
+}

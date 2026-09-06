@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"THE DEAN (Dr. Jedd) is involved with the Restoration Fund.\",\n  \"THE DEAN (Dr. Jedd) subscribed a munificent sum of one thousand pounds to the Restoration Fund.\",\n  \"THE DEAN (Dr. Jedd) subscribed the sum on condition that seven other donors come forward with the same amount.\"\n]",
+  "prompt_sha256": "bd679f052632f767c08daeabaced27865df8b52629b9f2096e82767afd7c40dc",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"THE DEAN (Dr. Jedd) is involved with the Restoration Fund.\",\n  \"THE DEAN (Dr. Jedd) subscribed a munificent sum of one thousand pounds to the Restoration Fund.\",\n  \"THE DEAN (Dr. Jedd) subscribed the sum on condition that seven other donors come forward with the same amount.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681514,
+    "id": "2fb91c52-d6f6-4982-9a50-1f7ff11c90aa",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 73,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 133,
+      "prompt_tokens": 261,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 334
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1372.167737,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 73,
+          "prompt_tokens": 261,
+          "total_tokens": 334
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 73,
+      "prompt_tokens": 261,
+      "total_tokens": 334
+    }
+  },
+  "request_fingerprint": "ab82308e8129a88704e305820f361ac5030a65b77092cc88d5a3baa3d06aa0cb"
+}

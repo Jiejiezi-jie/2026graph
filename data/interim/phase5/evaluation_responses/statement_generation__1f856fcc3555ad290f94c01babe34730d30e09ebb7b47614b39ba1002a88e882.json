@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"GEORGIANA is also known as George Tidd.\"]",
+  "prompt_sha256": "1f856fcc3555ad290f94c01babe34730d30e09ebb7b47614b39ba1002a88e882",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"GEORGIANA is also known as George Tidd.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681494,
+    "id": "63b5ef07-449b-437c-b2d6-ffc1fdff0b18",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 14,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 113,
+      "prompt_tokens": 241,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 255
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1451.717046,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 14,
+          "prompt_tokens": 241,
+          "total_tokens": 255
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 14,
+      "prompt_tokens": 241,
+      "total_tokens": 255
+    }
+  },
+  "request_fingerprint": "931f78d4d7bc42d60c5fd26c27ebcc13e0c75cd97f946c4aaaf1ce70955038f9"
+}

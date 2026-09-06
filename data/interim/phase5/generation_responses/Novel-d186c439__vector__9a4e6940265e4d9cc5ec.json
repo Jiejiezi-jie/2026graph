@@ -1,0 +1,84 @@
+{
+  "cache_version": "phase5-generation-cache-v1",
+  "context_chunk_ids": [
+    "dd_prod_c0002",
+    "dd_prod_c0001",
+    "dd_front_c0001",
+    "dd_cast_c0001",
+    "dd_act01_c0001"
+  ],
+  "invalid_citations": [],
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "prompt_sha256": "9a4e6940265e4d9cc5ec0dcb49adba70b8faa821f7388df04d16e7010e74715a",
+  "query_id": "Novel-d186c439",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"answer\": \"The play 'Dandy Dick' was performed at the Court Theatre.\",\n  \"citations\": [\"dd_prod_c0001\"],\n  \"insufficient_evidence\": false\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680483,
+    "id": "7b2c775b-a6e0-49d6-9426-dd67aab7b5d0",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 43,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2127,
+      "prompt_tokens": 2127,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 2170
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1893.275958,
+        "finish_reason": "stop",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 43,
+          "prompt_tokens": 2127,
+          "total_tokens": 2170
+        }
+      }
+    ],
+    "elapsed_ms": 1893.275958,
+    "token_usage": {
+      "completion_tokens": 43,
+      "prompt_tokens": 2127,
+      "total_tokens": 2170
+    }
+  },
+  "request_fingerprint": "e941dae861928421d3b68dd6207683cfe3911fce759015578a9f3a600045b79f",
+  "request_messages": [
+    {
+      "content": "You are a grounded question-answering system.\n\nAnswer the user's QUESTION using only the supplied EVIDENCE CHUNKS and, when\npresent, GRAPH CONTEXT. Do not use outside knowledge or infer unsupported facts.\nIf the supplied evidence is insufficient, set insufficient_evidence to true and\nset answer exactly to INSUFFICIENT_EVIDENCE.\n\nReturn exactly one JSON object with exactly these fields:\n{\n  \"answer\": \"concise grounded answer or INSUFFICIENT_EVIDENCE\",\n  \"citations\": [\"chunk_id\"],\n  \"insufficient_evidence\": false\n}\n\nEvery citation must be a chunk_id that appears in EVIDENCE CHUNKS. Cite only\nchunks that support the answer. Do not output Markdown, explanations, additional\nkeys, or text outside the JSON object.",
+      "role": "system"
+    },
+    {
+      "content": "QUESTION:\nAt which venue was the play 'Dandy Dick' performed?\n\nEVIDENCE CHUNKS:\n[CHUNK_ID: dd_prod_c0002]\n\"Dandy Dick\" was performed 171 times between the first night and the 22d of July, when, the old theatre being demolished, Mr. Clayton took a temporary lease of Toole's Theatre, and transferred the play thither, where it ran 75 nights more. A company had already been sent out, under the auspices of the Court management, to perform \"Dandy Dick\" in the provinces; but, when the play was withdrawn from the London boards, Mr. Clayton set out himself with a company, and it was during this tour that he died at Liverpool. In America Mr. Daly produced \"Dandy Dick\" with Miss Ada Rehan in Mrs. John Wood's part, but no very great success was achieved; whereas in Australia its reception was so enthusiastic that it ran for quite an unusual time both in Melbourne and Sydney. In the character of the Dean, Mr. G. W. Anson achieved perhaps the greatest of his Australian successes, and Mr. Robert Brough made his mark as the policeman. MALCOLM C. SALAMAK. _December_, 1892.\n\n[CHUNK_ID: dd_prod_c0001]\nINTRODUCTORY NOTE. \"Dandy Dick\" was the third of the farces which Mr. Pinero wrote for the old Court Theatre--a series of plays which, besides giving playgoers a fresh source of laughter, and the English stage a new order of comic play, brought plentiful prosperity to the joint management of Mr. Arthur Cecil and the late Mr. John Clayton. But a kind of melancholy interest attaches to \"Dandy Dick,\" for this play was, as it were, the swan-song of the old theatre and of the Clayton and Cecil partnership; and it was the piece in which Mr. Clayton was acting when death overtook him, to the general grief. The production of \"Dandy Dick\" may be considered as something of a _tour de force_ in its way. \"The Schoolmistress\" was at the end of its successful run, and Mr. Pinero was under contract to supply its successor by a certain date, when Mr. Clayton one day went down to Brighton, where the dramatist was then at work, to hear him read the two completed acts of the new play. To Mr. Clayton's consternation, however, Mr. Pinero announced that he was dissatisfied with his work, and proposed to begin an entirely new play, as he had a more promising idea. But time was pressing, and a successor to \"The Schoolmistress\" was an immediate necessity. However, Mr. Pinero's idea of writing a play round a dean, who, while being a paragon of dignity and decorum, should be driven by an indiscreet act into a most undignified dilemma, appealed to Mr. Clayton, and hastening back to London with the sketches for the requisite scenes, he left Mr. Pinero to set to work at once upon the new scheme. And within a few weeks, indeed by the time the scenery was ready, the new play was completed, the rural constable of a village adjacent to Brighton having suggested the character of Noah Topping. \"Dandy Dick\" was produced at the Court Theatre on January 27th, 1887, and, meeting with a most favorable initial reception, it settled down immediately into a complete success. The following is a copy of the first-night programme:--\n\n[CHUNK_ID: dd_front_c0001]\nDANDY DICK A PLAY IN THREE ACTS By ARTHUR W. PINERO AUTHOR OF \"SWEET LAVENDER,\" \"THE TIMES,\" \"THE CABINET MINISTER,\" \"LADY BOUNTIFUL,\" ETC. All rights reserved. Performance forbidden, and right of representation reserved. Application for the right of performing this piece must be made to the publishers. BOSTON _WALTER H. BAKER_ Copyright, 1893, by ARTHUR W. PINERO _All rights reserved._\n\n[CHUNK_ID: dd_cast_c0001]\nROYAL COURT THEATRE, SLOANE SQUARE, S.W. _Lessees and Managers:_ Mr. John Clayton and Mr. Arthur Cecil. Programme THIS EVENING, THURSDAY, JANUARY 27, _At_ 8.30 _punctually_, DANDY DICK. AN ORIGINAL FARCE, IN THREE ACTS, BY A. W. PINERO. THE VERY REV. AUGUSTIN JEDD, D.D. MR. JOHN CLAYTON. (Dean of St. Marvell's) SIR TRISTRAM MARDON, Bart MR. EDMUND MAURICE. --th Hussars, MAJOR TARVER { quartered at } MR. F. KERR. MR. DARBEY { Durnstone, near } MR. H. EVERSFIELD. St. Marvell's BLORE (Butler at the Deanery) MR. ARTHUR CECIL. NOAH TOPPING (Constable at MR. W. H. DENNY. St. Marvell's) HATCHAM (Sir Tristram's groom) MR. W. LUGG. GEORGIANA TIDMAN (a Widow, MRS. JOHN WOOD. the Dean's sister) SALOME } the Dean's Daughters { MISS MARIE LEWES. SHEBA } { MISS NORREYS. HANNAH TOPPING (formerly in MISS LAURA LINDEN. Service at the Deanery) ACT I. AT THE DEANERY, ST. MARVELL'S. (Morning.) ACT II. THE SAME PLACE. (Evening.) ACT III.--The Next Day. Scene 1:--\"_The Strong Box,_\" _St. Marvell's. Scene 2.--The Deanery again._ The curtain will be lowered for a few minutes between the two scenes. New Scenery by Mr. T. W. Hall. Preceded, at Eight o'clock, by \"THE NETTLE.\" An Original Comedietta by ERNEST WARREN.\n\n[CHUNK_ID: dd_act01_c0001]\nDANDY DICK. THE FIRST ACT. _The morning-room in the Deanery of St. Marvells, with a large arched opening leading to the library on the right, and a deeply-recessed window opening out to the garden on the left. It is a bright spring morning, and an air of comfort and serenity pervades the place._ _SALOME, a tall, handsome, dark girl, of about three-and-twenty, is sitting with her elbows resting on her knees, staring wildly into vacancy. SHEBA, a fair little girl of about seventeen, wearing short petticoats, shares her despondency, and lies prostrate upon the settee._ SALOME. Oh! oh my! oh my! oh my! SHEBA. [_Sitting upright._] Oh, my gracious goodness, goodness gracious me! [_They both walk about excitedly._ SALOME. There's only one terrible word for it--it's a fix! SHEBA. It's worse than that! It's a scrape! How did you ever get led into it? SALOME. How did _we_ get led into it? Halves, Sheba, please. SHEBA. It was Major Tarver's proposal, and I believe, Salome, that it is to _you_ Major Tarver is paying attention. SALOME. The Fancy Dress Masked Ball at Durnstone is promoted by the Officers of the Hussars. I believe that the young gentleman you have impressed calls himself an officer, though he is merely a lieutenant. SHEBA. [_Indignantly._] Mr. Darbey is _certainly_ an officer--a small officer. How dare you gird at me, Salome? SALOME. Very well, then. When to-night we appear at the Durnstone Athenaeum, unknown to dear Papa, on the arms of Major Tarver and Mr. Darbey, I consider that we shall be equally wicked. Oh, how can we be so wrong? SHEBA. Well, we're not wrong yet. We're only _going_ to be wrong; that's a very different matter. SALOME. That's true. Besides, there's this to remember--we're inexperienced girls and have only dear Papa. But oh, now that the Ball is to-night, I repent, Sheba, I repent! SHEBA. I sha'n't do that till to-morrow. But oh, how I _shall_ repent to-morrow! SALOME. [_Taking an envelope from her pocket, and almost crying._] You'd repent now if you had seen the account for the fancy dresses. SHEBA. Has it come in? SALOME. Yes, the Major enclosed it to me this morning. You know, Sheba, Major Tarver promised to get the dresses made in London, so I gave him our brown paper patterns to send to the _costumier._",
+      "role": "user"
+    }
+  ],
+  "retriever": "vector",
+  "validated_output": {
+    "answer": "The play 'Dandy Dick' was performed at the Court Theatre.",
+    "citations": [
+      "dd_prod_c0001"
+    ],
+    "insufficient_evidence": false
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which states that NOAH TOPPING is the husband of HANNAH, implying a marital relationship.\",\"statement\":\"Noah Topping and Hannah are married.\"}]}",
+  "prompt_sha256": "13465d9a36d19990f89b28447e7cd9220c1847380ace468e02c34992f2df12be",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Noah Topping and Hannah are married.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that NOAH TOPPING is the husband of HANNAH, implying a marital relationship.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681078,
+    "id": "d44693af-35b4-4b9f-a3c0-5ade62284aee",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 74,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 83,
+      "prompt_tokens": 851,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 925
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1628.794586,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 74,
+          "prompt_tokens": 851,
+          "total_tokens": 925
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 74,
+      "prompt_tokens": 851,
+      "total_tokens": 925
+    }
+  },
+  "request_fingerprint": "e5e7acc17e5a22cb4777e246a76afc316d137fb846a0a49b668839aa2e3154a8"
+}

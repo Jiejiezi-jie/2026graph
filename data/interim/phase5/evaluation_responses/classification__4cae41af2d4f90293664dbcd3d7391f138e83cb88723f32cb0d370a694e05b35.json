@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which states that Hannah provides meals for The Dean during The Dean's time in custody. The answer adds the surname 'Topping' but the core information matches.\",\"statement\":\"Hannah Topping provides meals for The Dean during his time in custody.\"}]}",
+  "prompt_sha256": "4cae41af2d4f90293664dbcd3d7391f138e83cb88723f32cb0d370a694e05b35",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Hannah Topping provides meals for The Dean during his time in custody.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that Hannah provides meals for The Dean during The Dean's time in custody. The answer adds the surname 'Topping' but the core information matches.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681354,
+    "id": "cd344d6d-5b50-41db-a607-4302c4c9f738",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 90,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 86,
+      "prompt_tokens": 854,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 944
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2218.444715,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 90,
+          "prompt_tokens": 854,
+          "total_tokens": 944
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 90,
+      "prompt_tokens": 854,
+      "total_tokens": 944
+    }
+  },
+  "request_fingerprint": "635357c57d505ef159af633b5d558b40d54a2f872c1ca45e995f17faed1d5fad"
+}

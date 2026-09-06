@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Georgiana Tidman is the aunt of SHEBA.\", \"Georgiana Tidman is the aunt of SALOME.\"]",
+  "prompt_sha256": "38a97952cb1c5c9e2f90ac7b03bba9b5b913dbd2b8eb8a630d35acff7d59cdc0",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Georgiana Tidman is the aunt of SHEBA.\", \"Georgiana Tidman is the aunt of SALOME.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680628,
+    "id": "c3e15f27-f28a-4b08-9c3c-cb192ff2bb87",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 25,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 122,
+      "prompt_tokens": 250,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 275
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 825.380973,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 25,
+          "prompt_tokens": 250,
+          "total_tokens": 275
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 25,
+      "prompt_tokens": 250,
+      "total_tokens": 275
+    }
+  },
+  "request_fingerprint": "d3854110619e9c12438017031bf3d733db5c9da547697805e1160e79b72bc64e"
+}

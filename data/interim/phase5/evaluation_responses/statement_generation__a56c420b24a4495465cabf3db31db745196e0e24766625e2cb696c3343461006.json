@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"THE DEAN is also known as Gus.\"]",
+  "prompt_sha256": "a56c420b24a4495465cabf3db31db745196e0e24766625e2cb696c3343461006",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"THE DEAN is also known as Gus.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681480,
+    "id": "6f5eed5d-0182-4eeb-85b4-92aa3fe58568",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 15,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 107,
+      "prompt_tokens": 235,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 250
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1391.776216,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 15,
+          "prompt_tokens": 235,
+          "total_tokens": 250
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 15,
+      "prompt_tokens": 235,
+      "total_tokens": 250
+    }
+  },
+  "request_fingerprint": "273cc131ad54a7f80047f256acf015efe38f2c200681e3736748dd42bdc24d69"
+}

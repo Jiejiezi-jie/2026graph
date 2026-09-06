@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"The Dean mentions John Cox.\", \"John Cox is the author of 'The Horse and its Ailments'.\", \"The mention of John Cox is in relation to veterinary remedies in the play.\"]",
+  "prompt_sha256": "ccf54b0cec41c3b37bb68f4c236cc8997566cdb9ab92612166873eb98ec7128d",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"The Dean mentions John Cox.\", \"John Cox is the author of 'The Horse and its Ailments'.\", \"The mention of John Cox is in relation to veterinary remedies in the play.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681194,
+    "id": "15097453-9a1f-4b50-8a8f-b8c499725482",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 41,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 112,
+      "prompt_tokens": 240,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 281
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1550.792182,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 41,
+          "prompt_tokens": 240,
+          "total_tokens": 281
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 41,
+      "prompt_tokens": 240,
+      "total_tokens": 281
+    }
+  },
+  "request_fingerprint": "4fe259c7aca2df2ba0a6839a06228010ece82646b2f23cd8f0e42c3b57e69d4d"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"The Dean sees Darbey.\", \"Darbey glances at Tarver.\", \"Salome accepts Major Tarver.\"]",
+  "prompt_sha256": "9bf459aa501f4dcb51d63fd325c426847a46c184c89e00deafe0a5c63c7ac245",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"The Dean sees Darbey.\", \"Darbey glances at Tarver.\", \"Salome accepts Major Tarver.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681432,
+    "id": "b95b5dbe-a53e-481d-8212-cc17c1249c04",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 26,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 120,
+      "prompt_tokens": 248,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 274
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 754.280952,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 26,
+          "prompt_tokens": 248,
+          "total_tokens": 274
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 26,
+      "prompt_tokens": 248,
+      "total_tokens": 274
+    }
+  },
+  "request_fingerprint": "e756d5d5f66f674133998d28ba53e7a61740750b89325ad7bea86badd2d3e804"
+}

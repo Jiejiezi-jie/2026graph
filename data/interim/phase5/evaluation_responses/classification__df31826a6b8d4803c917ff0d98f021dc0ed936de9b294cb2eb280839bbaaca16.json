@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"This statement is a direct quote from the Dean expressing his apprehension, but it is not directly supported by the ground truth, which only states that he is afraid to face his children at the Deanery without providing the quote.\",\"statement\":\"The Dean says, \\\"How could I face my simple children who have hitherto, not unreasonably, regarded me as faultless?\\\"\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which states that the Dean is afraid to face his children at the Deanery.\",\"statement\":\"The Dean feels apprehensive about facing his children at the Deanery.\"}]}",
+  "prompt_sha256": "df31826a6b8d4803c917ff0d98f021dc0ed936de9b294cb2eb280839bbaaca16",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"The Dean feels apprehensive about facing his children at the Deanery.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that the Dean is afraid to face his children at the Deanery.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"The Dean says, \\\"How could I face my simple children who have hitherto, not unreasonably, regarded me as faultless?\\\"\",\n      \"reason\": \"This statement is a direct quote from the Dean expressing his apprehension, but it is not directly supported by the ground truth, which only states that he is afraid to face his children at the Deanery without providing the quote.\"\n    }\n  ],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681217,
+    "id": "fcb4933d-60ae-4fe9-906f-3716e11e141b",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 162,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 125,
+      "prompt_tokens": 893,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1055
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3734.345598,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 162,
+          "prompt_tokens": 893,
+          "total_tokens": 1055
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 162,
+      "prompt_tokens": 893,
+      "total_tokens": 1055
+    }
+  },
+  "request_fingerprint": "57364e93f0519ac1f4206743eb228b1354af7945262bc143c5531974440eb9c8"
+}

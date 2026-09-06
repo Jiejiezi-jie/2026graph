@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Arthur Cecil managed the Court Theatre during the original production of 'Dandy Dick'.\", \"John Clayton managed the Court Theatre during the original production of 'Dandy Dick'.\"]",
+  "prompt_sha256": "56d820e5053234b1dc81c0127c77c37f21f7fd7eb7e8d571808d898742dba905",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Arthur Cecil managed the Court Theatre during the original production of 'Dandy Dick'.\", \"John Clayton managed the Court Theatre during the original production of 'Dandy Dick'.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681296,
+    "id": "aeb26a2f-6bb6-436c-b7ea-0b3f58ddcab8",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 37,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 111,
+      "prompt_tokens": 239,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 276
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1376.176963,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 37,
+          "prompt_tokens": 239,
+          "total_tokens": 276
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 37,
+      "prompt_tokens": 239,
+      "total_tokens": 276
+    }
+  },
+  "request_fingerprint": "9fe9514e7f29648bf9cf63165bd98c9e753f87a8b3ad7ada47f61037c51b19e3"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Darbey is present with the Dean at the Deanery.\",\n  \"Darbey is present with Salome at the Deanery.\",\n  \"Darbey is present with Sheba at the Deanery.\",\n  \"Darbey is present with Major Tarver at the Deanery.\",\n  \"Darbey is present with the Dean, Salome, Sheba, and Major Tarver in scenes involving the younger generation at the Deanery.\",\n  \"In one scene, Darbey and Tarver are invited to dinner.\",\n  \"In one scene, Darbey and Tarver discuss plans with Salome and Sheba.\",\n  \"In another scene, Darbey sits in an arm-chair.\",\n  \"In another scene, Sheba sits on the arm of the arm-chair.\",\n  \"In another scene, Salome is present.\",\n  \"In another scene, Tarver is present.\"\n]",
+  "prompt_sha256": "ac9bac60933cbf9ddc78b0e5d5294de2c185e4ab57129bb75e46cb3fb9b4042c",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Darbey is present with the Dean at the Deanery.\",\n  \"Darbey is present with Salome at the Deanery.\",\n  \"Darbey is present with Sheba at the Deanery.\",\n  \"Darbey is present with Major Tarver at the Deanery.\",\n  \"Darbey is present with the Dean, Salome, Sheba, and Major Tarver in scenes involving the younger generation at the Deanery.\",\n  \"In one scene, Darbey and Tarver are invited to dinner.\",\n  \"In one scene, Darbey and Tarver discuss plans with Salome and Sheba.\",\n  \"In another scene, Darbey sits in an arm-chair.\",\n  \"In another scene, Sheba sits on the arm of the arm-chair.\",\n  \"In another scene, Salome is present.\",\n  \"In another scene, Tarver is present.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681644,
+    "id": "abb2cc49-5d90-41d5-9554-c815b3b510fb",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 187,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 185,
+      "prompt_tokens": 313,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 500
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2757.01148,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 187,
+          "prompt_tokens": 313,
+          "total_tokens": 500
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 187,
+      "prompt_tokens": 313,
+      "total_tokens": 500
+    }
+  },
+  "request_fingerprint": "bb2ad891483ef3fb151e236a95583ced7373b707b43a731bbc6bf80562305b7d"
+}

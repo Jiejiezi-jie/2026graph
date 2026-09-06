@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"The answer does not mention DARBEY joining SHEBA; instead it mentions Salome Jedd. This statement from the ground truth is missing.\",\"statement\":\"DARBEY joins SHEBA during the course of the play.\"},{\"reason\":\"The answer does not mention DARBEY joining SHEBA in scenes involving youthful excitement; it attributes this to Salome Jedd. This statement from the ground truth is missing.\",\"statement\":\"DARBEY joins SHEBA particularly in scenes involving youthful excitement.\"},{\"reason\":\"The answer does not mention DARBEY joining SHEBA in scenes involving social events; it attributes this to Salome Jedd. This statement from the ground truth is missing.\",\"statement\":\"DARBEY joins SHEBA particularly in scenes involving social events.\"}],\"FP\":[{\"reason\":\"The answer states that Salome Jedd joins Sheba, but the ground truth states that DARBEY joins SHEBA. There is no mention of Salome Jedd in the ground truth, so this is not supported.\",\"statement\":\"Salome Jedd joins Sheba in scenes involving youthful excitement and social events.\"},{\"reason\":\"The ground truth does not mention any specific scenes such as the Fancy Dress Masked Ball at Durnstone. This is additional information not present in the ground truth.\",\"statement\":\"The scenes involving youthful excitement and social events include the Fancy Dress Masked Ball at Durnstone.\"},{\"reason\":\"The ground truth does not mention any specific scenes such as the dinner at the Deanery. This is additional information not present in the ground truth.\",\"statement\":\"The scenes involving youthful excitement and social events include the dinner at the Deanery.\"}],\"TP\":[]}",
+  "prompt_sha256": "22fdfeadefcc1b99d439cf252c368d605d3fb2cc6a50b839a6d5647761468a0c",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [],\n  \"FP\": [\n    {\n      \"statement\": \"Salome Jedd joins Sheba in scenes involving youthful excitement and social events.\",\n      \"reason\": \"The answer states that Salome Jedd joins Sheba, but the ground truth states that DARBEY joins SHEBA. There is no mention of Salome Jedd in the ground truth, so this is not supported.\"\n    },\n    {\n      \"statement\": \"The scenes involving youthful excitement and social events include the Fancy Dress Masked Ball at Durnstone.\",\n      \"reason\": \"The ground truth does not mention any specific scenes such as the Fancy Dress Masked Ball at Durnstone. This is additional information not present in the ground truth.\"\n    },\n    {\n      \"statement\": \"The scenes involving youthful excitement and social events include the dinner at the Deanery.\",\n      \"reason\": \"The ground truth does not mention any specific scenes such as the dinner at the Deanery. This is additional information not present in the ground truth.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"DARBEY joins SHEBA during the course of the play.\",\n      \"reason\": \"The answer does not mention DARBEY joining SHEBA; instead it mentions Salome Jedd. This statement from the ground truth is missing.\"\n    },\n    {\n      \"statement\": \"DARBEY joins SHEBA particularly in scenes involving youthful excitement.\",\n      \"reason\": \"The answer does not mention DARBEY joining SHEBA in scenes involving youthful excitement; it attributes this to Salome Jedd. This statement from the ground truth is missing.\"\n    },\n    {\n      \"statement\": \"DARBEY joins SHEBA particularly in scenes involving social events.\",\n      \"reason\": \"The answer does not mention DARBEY joining SHEBA in scenes involving social events; it attributes this to Salome Jedd. This statement from the ground truth is missing.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681338,
+    "id": "ed0f6e06-ebab-4aef-bfe7-a7eb7a20a365",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 408,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 162,
+      "prompt_tokens": 930,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1338
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4444.943464,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 408,
+          "prompt_tokens": 930,
+          "total_tokens": 1338
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 408,
+      "prompt_tokens": 930,
+      "total_tokens": 1338
+    }
+  },
+  "request_fingerprint": "5b841d8f99de80076c41bc2606a50765c77100e8a47bd3b0d20f23675485b635"
+}

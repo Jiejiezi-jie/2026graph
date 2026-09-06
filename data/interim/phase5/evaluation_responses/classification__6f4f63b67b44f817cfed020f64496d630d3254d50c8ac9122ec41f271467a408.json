@@ -1,0 +1,61 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FN item 1.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FN item 2.\"}],\"FP\":[{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 1.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 2.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 3.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 4.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 5.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 6.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 7.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 8.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 9.\"}],\"TP\":[{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge TP item 1.\"}]}",
+  "prompt_sha256": "6f4f63b67b44f817cfed020f64496d630d3254d50c8ac9122ec41f271467a408",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": 1,\n  \"FP\": 9,\n  \"FN\": 2\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681368,
+    "id": "d0750b89-0788-49a8-9269-37e47d34ae6b",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 23,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 360,
+      "prompt_tokens": 360,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 383
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "error": "official judge categorized item has no TP/FP/FN label",
+        "error_type": "Phase5Error",
+        "status": "failed"
+      },
+      {
+        "attempt": 2,
+        "elapsed_ms": 1448.48486,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 23,
+          "prompt_tokens": 360,
+          "total_tokens": 383
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 23,
+      "prompt_tokens": 360,
+      "total_tokens": 383
+    }
+  },
+  "request_fingerprint": "aa28718f5f4407a7b56219304cf4d67dbcdd49e21aa1fedd31ccae2fb5e9d54b"
+}

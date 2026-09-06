@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Hannah is the former Deanery cook.\",\n  \"Hannah is now the constable's wife.\",\n  \"Hannah is located at the country Police Station in St. Marvells during the events of the play.\",\n  \"The country Police Station in St. Marvells is the interior of a country Police Station.\",\n  \"The country Police Station is a quaint old room with plaster walls.\",\n  \"The country Police Station has oaken beams.\",\n  \"The country Police Station has a gothic mullioned window looking on to the street.\",\n  \"Hannah is engaged in cooking while singing gayly.\"\n]",
+  "prompt_sha256": "54879eadcf3b87edf15c7b95c4ee794e5ff81c7710d559863d6ef855f7cdf821",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Hannah is the former Deanery cook.\",\n  \"Hannah is now the constable's wife.\",\n  \"Hannah is located at the country Police Station in St. Marvells during the events of the play.\",\n  \"The country Police Station in St. Marvells is the interior of a country Police Station.\",\n  \"The country Police Station is a quaint old room with plaster walls.\",\n  \"The country Police Station has oaken beams.\",\n  \"The country Police Station has a gothic mullioned window looking on to the street.\",\n  \"Hannah is engaged in cooking while singing gayly.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681043,
+    "id": "ca822a5d-5876-4fe5-9279-3620c395f1d5",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 129,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 165,
+      "prompt_tokens": 293,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 422
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2263.057682,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 129,
+          "prompt_tokens": 293,
+          "total_tokens": 422
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 129,
+      "prompt_tokens": 293,
+      "total_tokens": 422
+    }
+  },
+  "request_fingerprint": "6184946018f46788d92d3088528fe63f3fa87b72a9dc6d2e3b5f8fa845450469"
+}

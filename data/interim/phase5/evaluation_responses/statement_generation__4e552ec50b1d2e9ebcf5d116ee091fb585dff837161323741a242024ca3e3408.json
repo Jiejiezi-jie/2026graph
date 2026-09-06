@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"THE DEAN and Dr. Jedd are the same person.\", \"Dr. Jedd is the Dean of St. Marvells.\"]",
+  "prompt_sha256": "4e552ec50b1d2e9ebcf5d116ee091fb585dff837161323741a242024ca3e3408",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"THE DEAN and Dr. Jedd are the same person.\", \"Dr. Jedd is the Dean of St. Marvells.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681716,
+    "id": "6973e6d8-b050-4c3d-a73c-4b972166da4d",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 34,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 126,
+      "prompt_tokens": 254,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 288
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1620.951228,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 34,
+          "prompt_tokens": 254,
+          "total_tokens": 288
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 34,
+      "prompt_tokens": 254,
+      "total_tokens": 288
+    }
+  },
+  "request_fingerprint": "78bd3df8044d2025880106f493a8195f5351dd4b21dac434a3d7560152086c64"
+}

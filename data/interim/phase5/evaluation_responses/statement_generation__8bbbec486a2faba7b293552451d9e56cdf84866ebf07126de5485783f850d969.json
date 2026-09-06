@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Arthur W. Pinero wrote the play 'Dandy Dick'.\", \"The play 'Dandy Dick' features comedic and farcical events at the Deanery.\"]",
+  "prompt_sha256": "8bbbec486a2faba7b293552451d9e56cdf84866ebf07126de5485783f850d969",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Arthur W. Pinero wrote the play 'Dandy Dick'.\", \"The play 'Dandy Dick' features comedic and farcical events at the Deanery.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681322,
+    "id": "8e70b3ce-e869-477b-8f37-659afe91840a",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 37,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 110,
+      "prompt_tokens": 238,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 275
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1711.090825,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 37,
+          "prompt_tokens": 238,
+          "total_tokens": 275
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 37,
+      "prompt_tokens": 238,
+      "total_tokens": 275
+    }
+  },
+  "request_fingerprint": "07548ebf11d0652b5afc8d676a4198f996e302f39e369cdec2c1dac38a7b8419"
+}

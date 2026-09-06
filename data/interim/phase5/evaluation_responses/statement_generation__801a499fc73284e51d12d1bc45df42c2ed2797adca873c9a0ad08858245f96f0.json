@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"SALOME is a daughter of the Dean.\",\n  \"SHEBA is a daughter of the Dean.\",\n  \"SALOME and SHEBA plan to secretly attend a Fancy Dress Masked Ball at Durnstone.\",\n  \"Major Tarver is an officer of the Hussars.\",\n  \"Mr. Darbey is an officer of the Hussars.\",\n  \"SALOME and SHEBA plan to attend the Fancy Dress Masked Ball with Major Tarver and Mr. Darbey.\",\n  \"Major Tarver is paying attention to Salome.\",\n  \"Major Tarver arranged for SALOME's fancy dress to be made in London.\",\n  \"Major Tarver arranged for SHEBA's fancy dress to be made in London.\",\n  \"Major Tarver is in a critical condition.\",\n  \"Major Tarver has incurred Salome's displeasure.\",\n  \"Mr. Darbey explains that Major Tarver must propose to Salome.\",\n  \"If Major Tarver proposes to Salome and is accepted, Major Tarver does not have to go to the seaside.\",\n  \"If Major Tarver does not propose to Salome or is not accepted, Major Tarver must go to the seaside.\"\n]",
+  "prompt_sha256": "801a499fc73284e51d12d1bc45df42c2ed2797adca873c9a0ad08858245f96f0",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"SALOME is a daughter of the Dean.\",\n  \"SHEBA is a daughter of the Dean.\",\n  \"SALOME and SHEBA plan to secretly attend a Fancy Dress Masked Ball at Durnstone.\",\n  \"Major Tarver is an officer of the Hussars.\",\n  \"Mr. Darbey is an officer of the Hussars.\",\n  \"SALOME and SHEBA plan to attend the Fancy Dress Masked Ball with Major Tarver and Mr. Darbey.\",\n  \"Major Tarver is paying attention to Salome.\",\n  \"Major Tarver arranged for SALOME's fancy dress to be made in London.\",\n  \"Major Tarver arranged for SHEBA's fancy dress to be made in London.\",\n  \"Major Tarver is in a critical condition.\",\n  \"Major Tarver has incurred Salome's displeasure.\",\n  \"Mr. Darbey explains that Major Tarver must propose to Salome.\",\n  \"If Major Tarver proposes to Salome and is accepted, Major Tarver does not have to go to the seaside.\",\n  \"If Major Tarver does not propose to Salome or is not accepted, Major Tarver must go to the seaside.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681720,
+    "id": "98001395-4c2a-43c3-8462-4a3e0d47f72a",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 251,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 225,
+      "prompt_tokens": 353,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 604
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3519.750668,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 251,
+          "prompt_tokens": 353,
+          "total_tokens": 604
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 251,
+      "prompt_tokens": 353,
+      "total_tokens": 604
+    }
+  },
+  "request_fingerprint": "35e73b38c621fe2bb753bb9ff528f99e75e31f25c64b616fa65115b5e622233f"
+}

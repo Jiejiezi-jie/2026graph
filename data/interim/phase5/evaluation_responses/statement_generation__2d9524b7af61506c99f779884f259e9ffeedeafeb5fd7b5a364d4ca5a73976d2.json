@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Major Tarver joins Sheba during the course of the play.\",\n  \"Mr. Darbey joins Sheba during the course of the play.\",\n  \"Major Tarver joins Sheba particularly in scenes involving youthful excitement.\",\n  \"Mr. Darbey joins Sheba particularly in scenes involving youthful excitement.\",\n  \"Major Tarver joins Sheba particularly in scenes involving social events.\",\n  \"Mr. Darbey joins Sheba particularly in scenes involving social events.\",\n  \"Major Tarver joins Sheba in the Fancy Dress Masked Ball at Durnstone.\",\n  \"Mr. Darbey joins Sheba in the Fancy Dress Masked Ball at Durnstone.\"\n]",
+  "prompt_sha256": "2d9524b7af61506c99f779884f259e9ffeedeafeb5fd7b5a364d4ca5a73976d2",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Major Tarver joins Sheba during the course of the play.\",\n  \"Mr. Darbey joins Sheba during the course of the play.\",\n  \"Major Tarver joins Sheba particularly in scenes involving youthful excitement.\",\n  \"Mr. Darbey joins Sheba particularly in scenes involving youthful excitement.\",\n  \"Major Tarver joins Sheba particularly in scenes involving social events.\",\n  \"Mr. Darbey joins Sheba particularly in scenes involving social events.\",\n  \"Major Tarver joins Sheba in the Fancy Dress Masked Ball at Durnstone.\",\n  \"Mr. Darbey joins Sheba in the Fancy Dress Masked Ball at Durnstone.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681328,
+    "id": "cb03eb7f-3574-4964-8996-15450afdbb50",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 142,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 139,
+      "prompt_tokens": 267,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 409
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2011.347076,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 142,
+          "prompt_tokens": 267,
+          "total_tokens": 409
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 142,
+      "prompt_tokens": 267,
+      "total_tokens": 409
+    }
+  },
+  "request_fingerprint": "f6df621d425d25525c8d410f2a112d02e69330090c80d1f775fed8e59b601f30"
+}

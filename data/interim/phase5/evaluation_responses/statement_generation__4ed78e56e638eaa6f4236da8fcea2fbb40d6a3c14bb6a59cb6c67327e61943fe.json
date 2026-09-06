@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"The multi-hop path from The Dean to Tarver via Darbey and Salome is described.\",\n  \"The Dean is Augustin Jedd.\",\n  \"The Dean opposes Darbey.\",\n  \"Darbey is Nugent Darbey.\",\n  \"Darbey is located at Durnstone.\",\n  \"Tarver is located at Durnstone.\",\n  \"Darbey is located at The Swan Inn.\",\n  \"Tarver is located at The Swan Inn.\",\n  \"Darbey participates in the St. Marvells Spring Meeting.\",\n  \"Tarver participates in the St. Marvells Spring Meeting.\",\n  \"Tarver is romantically involved with Salome Jedd.\",\n  \"The Dean is the parent of Salome Jedd.\"\n]",
+  "prompt_sha256": "4ed78e56e638eaa6f4236da8fcea2fbb40d6a3c14bb6a59cb6c67327e61943fe",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"The multi-hop path from The Dean to Tarver via Darbey and Salome is described.\",\n  \"The Dean is Augustin Jedd.\",\n  \"The Dean opposes Darbey.\",\n  \"Darbey is Nugent Darbey.\",\n  \"Darbey is located at Durnstone.\",\n  \"Tarver is located at Durnstone.\",\n  \"Darbey is located at The Swan Inn.\",\n  \"Tarver is located at The Swan Inn.\",\n  \"Darbey participates in the St. Marvells Spring Meeting.\",\n  \"Tarver participates in the St. Marvells Spring Meeting.\",\n  \"Tarver is romantically involved with Salome Jedd.\",\n  \"The Dean is the parent of Salome Jedd.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681412,
+    "id": "e98b1b11-8fc5-454e-9592-3e24ad3f7f8a",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 159,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 193,
+      "prompt_tokens": 321,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 480
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1924.596487,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 159,
+          "prompt_tokens": 321,
+          "total_tokens": 480
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 159,
+      "prompt_tokens": 321,
+      "total_tokens": 480
+    }
+  },
+  "request_fingerprint": "9f7cb40797baad333ba347d30195f55c0d1d23ceb7bd5bbe6c7d2d92943a41e0"
+}

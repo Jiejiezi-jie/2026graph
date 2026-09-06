@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"THE DEAN puts on the coat.\"]",
+  "prompt_sha256": "f9780f64bbd8934fd06a9ceb0b26b96a8acf0eac2893c01a4f8327fb8cfb6382",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"THE DEAN puts on the coat.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681425,
+    "id": "506f7d3f-c8a8-400f-a772-1117e4de34b1",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 10,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 111,
+      "prompt_tokens": 239,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 249
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1290.42658,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 10,
+          "prompt_tokens": 239,
+          "total_tokens": 249
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 10,
+      "prompt_tokens": 239,
+      "total_tokens": 249
+    }
+  },
+  "request_fingerprint": "2c95f9a7e6a118c28d13c117f8058b7979ee2b6422ff9c20b80b5f1a28473e3f"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Blore is employed by the Dean (Augustin Jedd) at the Deanery.\",\n  \"Blore's professional connection to the Dean is relevant to the actions involving Sheba and Major Tarver.\",\n  \"Blore's actions, such as showing in Major Tarver and Mr. Darbey, are done in Blore's capacity as the Dean's servant.\",\n  \"Blore later uses Blore's knowledge of the Dean's secrets to negotiate remaining in service.\",\n  \"The evidence shows Blore admitting to the Dean that Blore gave the Dean's 'cheerful little offering' to Bonny Betsy.\",\n  \"The evidence shows Blore threatening to reveal the Dean's secrets if dismissed.\",\n  \"Blore's threat to reveal the Dean's secrets ties into the broader deceptions involving Sheba and Major Tarver.\"\n]",
+  "prompt_sha256": "0e4e18fd05a4af0fa3a1da21c895a1810b4c13a33413071b1673b858a3230f14",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Blore is employed by the Dean (Augustin Jedd) at the Deanery.\",\n  \"Blore's professional connection to the Dean is relevant to the actions involving Sheba and Major Tarver.\",\n  \"Blore's actions, such as showing in Major Tarver and Mr. Darbey, are done in Blore's capacity as the Dean's servant.\",\n  \"Blore later uses Blore's knowledge of the Dean's secrets to negotiate remaining in service.\",\n  \"The evidence shows Blore admitting to the Dean that Blore gave the Dean's 'cheerful little offering' to Bonny Betsy.\",\n  \"The evidence shows Blore threatening to reveal the Dean's secrets if dismissed.\",\n  \"Blore's threat to reveal the Dean's secrets ties into the broader deceptions involving Sheba and Major Tarver.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681088,
+    "id": "4e1d07bc-64d6-4d3a-a8ae-d72d35b20637",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 174,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 228,
+      "prompt_tokens": 356,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 530
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2385.163404,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 174,
+          "prompt_tokens": 356,
+          "total_tokens": 530
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 174,
+      "prompt_tokens": 356,
+      "total_tokens": 530
+    }
+  },
+  "request_fingerprint": "9b8bca1e838ca53b8974a1571c1f39159c5a0e426c5f7d0006a729e65f8f2d14"
+}

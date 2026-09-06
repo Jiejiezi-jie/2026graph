@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"The multi-hop path from The Dean to Tarver via Darbey and Salome is described.\",\n  \"The Dean interacts with Darbey and Salome.\",\n  \"The Dean enters and greets Darbey and Salome.\",\n  \"Salome interacts with Tarver.\",\n  \"Darbey interacts with Tarver.\",\n  \"The Dean sees Tarver and Darbey as strangers.\",\n  \"Salome introduces Tarver and Darbey to The Dean.\",\n  \"The Dean invites Tarver and Darbey to dinner.\",\n  \"Salome and Tarver converse about the time the house is quiet.\",\n  \"Darbey comments on Tarver's condition.\",\n  \"The chain is established as The Dean to Darbey and Salome to Tarver.\"\n]",
+  "prompt_sha256": "9f508964856fab2125e1c23a6bba02c8e8ac36a3670f354bb179ebc13689b0ad",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\n  \"The multi-hop path from The Dean to Tarver via Darbey and Salome is described.\",\n  \"The Dean interacts with Darbey and Salome.\",\n  \"The Dean enters and greets Darbey and Salome.\",\n  \"Salome interacts with Tarver.\",\n  \"Darbey interacts with Tarver.\",\n  \"The Dean sees Tarver and Darbey as strangers.\",\n  \"Salome introduces Tarver and Darbey to The Dean.\",\n  \"The Dean invites Tarver and Darbey to dinner.\",\n  \"Salome and Tarver converse about the time the house is quiet.\",\n  \"Darbey comments on Tarver's condition.\",\n  \"The chain is established as The Dean to Darbey and Salome to Tarver.\"\n]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681385,
+    "id": "d5a963fd-62f8-442d-9c4c-1f98b3b660ed",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 166,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 225,
+      "prompt_tokens": 353,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 519
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2586.340666,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 166,
+          "prompt_tokens": 353,
+          "total_tokens": 519
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 166,
+      "prompt_tokens": 353,
+      "total_tokens": 519
+    }
+  },
+  "request_fingerprint": "869a64c6e08f668ac3c5f4812e732a771b2b1ec1be47b48b2dff85ea772b9618"
+}

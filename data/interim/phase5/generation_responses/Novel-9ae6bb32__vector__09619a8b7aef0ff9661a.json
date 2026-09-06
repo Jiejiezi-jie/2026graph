@@ -1,0 +1,84 @@
+{
+  "cache_version": "phase5-generation-cache-v1",
+  "context_chunk_ids": [
+    "dd_act01_c0012",
+    "dd_front_c0001",
+    "dd_prod_c0002",
+    "dd_prod_c0001",
+    "dd_act03s02_c0004"
+  ],
+  "invalid_citations": [],
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "prompt_sha256": "09619a8b7aef0ff9661a30f7535747bcd103bc527719b94e2755c1f2b2f8fa27",
+  "query_id": "Novel-9ae6bb32",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"answer\": \"GEORGIANA is the same person as George Tidd; George Tidd was her racing name.\",\n  \"citations\": [\"dd_act01_c0012\"],\n  \"insufficient_evidence\": false\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680362,
+    "id": "29caf91c-4295-455d-9af0-cb46353d769f",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 51,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2559,
+      "prompt_tokens": 2559,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 2610
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2065.606242,
+        "finish_reason": "stop",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 51,
+          "prompt_tokens": 2559,
+          "total_tokens": 2610
+        }
+      }
+    ],
+    "elapsed_ms": 2065.606242,
+    "token_usage": {
+      "completion_tokens": 51,
+      "prompt_tokens": 2559,
+      "total_tokens": 2610
+    }
+  },
+  "request_fingerprint": "dedeebc8efbf10f8fd296f3a8602e036cc6d96379801a58be53e1a9665d1e400",
+  "request_messages": [
+    {
+      "content": "You are a grounded question-answering system.\n\nAnswer the user's QUESTION using only the supplied EVIDENCE CHUNKS and, when\npresent, GRAPH CONTEXT. Do not use outside knowledge or infer unsupported facts.\nIf the supplied evidence is insufficient, set insufficient_evidence to true and\nset answer exactly to INSUFFICIENT_EVIDENCE.\n\nReturn exactly one JSON object with exactly these fields:\n{\n  \"answer\": \"concise grounded answer or INSUFFICIENT_EVIDENCE\",\n  \"citations\": [\"chunk_id\"],\n  \"insufficient_evidence\": false\n}\n\nEvery citation must be a chunk_id that appears in EVIDENCE CHUNKS. Cite only\nchunks that support the answer. Do not output Markdown, explanations, additional\nkeys, or text outside the JSON object.",
+      "role": "system"
+    },
+    {
+      "content": "QUESTION:\nWhat is the relationship between GEORGIANA and the nickname George Tidd in 'Dandy Dick'?\n\nEVIDENCE CHUNKS:\n[CHUNK_ID: dd_act01_c0012]\nGEORGIANA. I am George Tidd--that was my racing name. Ask after George Tidd at Newmarket--they'll tell you all about me. My colors were crimson and black diamonds. There you are. [_Producing her pocket-handkerchief, which is crimson and black._ THE DEAN. Dear me! Very interesting! Georgiana, my dear. One moment, children. [_The girls go into the Library._ THE DEAN. [_Tapping the handkerchief._] I understand distinctly from your letter that all this is finally abandoned? GEORGIANA. Worse luck! They'll never see my colors at the post again! THE DEAN. And the contemplation of sport generally as a mental distraction----? GEORGIANA. Oh, yes--I dare say you'll manage to wean me from that, too, in time. THE DEAN. In time! Well, but--Georgiana! [_The gate bell is heard again, the girls re-enter._ GEORGIANA. There's a visitor. I'll tootle upstairs and have a groom down. [_To SALOME and SHEBA._] Make the running, girls. At what time do we feed, Augustin? THE DEAN. There is luncheon at one o'clock. GEORGIANA. Right. The air here is so fresh I sha'n't be sorry to get my nose-bag on. [_She stalks out, accompanied by the girls._ THE DEAN. My sister, Georgiana--my widowed sister, Georgiana. Dear me, I am quite disturbed. Surely, surely the serene atmosphere of the Deanery will work a change. It must! It must! If not, what a grave mistake I have made. Good gracious! No, no, I won't think of it! Still, it is a little unfortunate that poor Georgiana should arrive here on the very eve of these terrible races at St. Marvells. _BLORE enters with a card._ THE DEAN. Who is it, Blore? [_Reading the card._] \"Sir Tristram Mardon.\" Dear, dear! Certainly, Blore, certainly. [_BLORE goes out._] Mardon--why, Mardon and I haven't met since Oxford. [_BLORE re-enters, showing in SIR TRISTRAM MARDON, a well-preserved man of about fifty, with a ruddy face and jovial manner, the type of the thorough English sporting gentleman. BLORE goes out._ SIR TRISTRAM. Hullo, Jedd, how are you? THE DEAN. My dear Mardon--are we boys again? SIR TRISTRAM. [_Boisterously._] Of course we are! Boys again! [_He hits THE DEAN violently in the chest._ THE DEAN. [_Breathing heavily--to himself._] I quite forgot how rough Mardon used to be. How it all comes back to me! SIR TRISTRAM. Think I'm changed? THE DEAN. Only in appearance! SIR TRISTRAM. I'm still a bachelor--got terribly jilted by a woman years ago and have run in blinkers ever since. Can't be helped, can it? You're married, aren't you? THE DEAN. [_With dignity._] I have been a widower for fifteen years. SIR TRISTRAM. Oh lor'! awfully sorry--can't be helped though, can it? [_Seizing THE DEAN'S hand and squeezing it._] Forgive me, old chap. THE DEAN. [_Withdrawing his hand with pain._] O-o-oh! SIR TRISTRAM. I've re-opened an old wound--damned stupid of me!\n\n[CHUNK_ID: dd_front_c0001]\nDANDY DICK A PLAY IN THREE ACTS By ARTHUR W. PINERO AUTHOR OF \"SWEET LAVENDER,\" \"THE TIMES,\" \"THE CABINET MINISTER,\" \"LADY BOUNTIFUL,\" ETC. All rights reserved. Performance forbidden, and right of representation reserved. Application for the right of performing this piece must be made to the publishers. BOSTON _WALTER H. BAKER_ Copyright, 1893, by ARTHUR W. PINERO _All rights reserved._\n\n[CHUNK_ID: dd_prod_c0002]\n\"Dandy Dick\" was performed 171 times between the first night and the 22d of July, when, the old theatre being demolished, Mr. Clayton took a temporary lease of Toole's Theatre, and transferred the play thither, where it ran 75 nights more. A company had already been sent out, under the auspices of the Court management, to perform \"Dandy Dick\" in the provinces; but, when the play was withdrawn from the London boards, Mr. Clayton set out himself with a company, and it was during this tour that he died at Liverpool. In America Mr. Daly produced \"Dandy Dick\" with Miss Ada Rehan in Mrs. John Wood's part, but no very great success was achieved; whereas in Australia its reception was so enthusiastic that it ran for quite an unusual time both in Melbourne and Sydney. In the character of the Dean, Mr. G. W. Anson achieved perhaps the greatest of his Australian successes, and Mr. Robert Brough made his mark as the policeman. MALCOLM C. SALAMAK. _December_, 1892.\n\n[CHUNK_ID: dd_prod_c0001]\nINTRODUCTORY NOTE. \"Dandy Dick\" was the third of the farces which Mr. Pinero wrote for the old Court Theatre--a series of plays which, besides giving playgoers a fresh source of laughter, and the English stage a new order of comic play, brought plentiful prosperity to the joint management of Mr. Arthur Cecil and the late Mr. John Clayton. But a kind of melancholy interest attaches to \"Dandy Dick,\" for this play was, as it were, the swan-song of the old theatre and of the Clayton and Cecil partnership; and it was the piece in which Mr. Clayton was acting when death overtook him, to the general grief. The production of \"Dandy Dick\" may be considered as something of a _tour de force_ in its way. \"The Schoolmistress\" was at the end of its successful run, and Mr. Pinero was under contract to supply its successor by a certain date, when Mr. Clayton one day went down to Brighton, where the dramatist was then at work, to hear him read the two completed acts of the new play. To Mr. Clayton's consternation, however, Mr. Pinero announced that he was dissatisfied with his work, and proposed to begin an entirely new play, as he had a more promising idea. But time was pressing, and a successor to \"The Schoolmistress\" was an immediate necessity. However, Mr. Pinero's idea of writing a play round a dean, who, while being a paragon of dignity and decorum, should be driven by an indiscreet act into a most undignified dilemma, appealed to Mr. Clayton, and hastening back to London with the sketches for the requisite scenes, he left Mr. Pinero to set to work at once upon the new scheme. And within a few weeks, indeed by the time the scenery was ready, the new play was completed, the rural constable of a village adjacent to Brighton having suggested the character of Noah Topping. \"Dandy Dick\" was produced at the Court Theatre on January 27th, 1887, and, meeting with a most favorable initial reception, it settled down immediately into a complete success. The following is a copy of the first-night programme:--\n\n[CHUNK_ID: dd_act03s02_c0004]\nGEORGIANA. But we ascertained the road the genial constable was going to follow. He was bound for the edge of the hill, up Pear Tree Lane, to watch the Races. Directly we knew this, Tris and I made for the Hill. Bless your soul, there were hundreds of my old friends there--welshers, pick-pockets, card-sharpers, all the lowest race-course cads in the kingdom. In a minute I was in the middle of 'em, as much at home as a Duchess in a Drawing-room. SIR TRISTRAM. A Queen in a Palace! GEORGIANA. Boadicea among the Druids! \"Do you know me?\" I holloaed out. Instantly there was a cry of \"Blessed if it ain't George Tidd!\" Tears of real joy sprang to my eyes--while I was wiping them away Tris had his pockets emptied and I lost my watch. SIR TRISTRAM. Ah, Jedd, it was a glorious moment! GEORGIANA. Tris made a back, and I stood on it, supported by a correct-card merchant on either side. \"Dear friends,\" I said; \"Brothers! I'm with you once again.\" You should have heard the shouts of honest welcome. Before I could obtain silence my field glasses had gone on their long journey. \"Listen to me,\" I said. \"A very dear relative of mine has been collared for playing the three-card trick on his way down from town.\" There was a groan of sympathy. \"He'll be on the brow of the Hill with a bobby in half-an-hour,\" said I, \"who's for the rescue?\" A dead deep silence followed, broken only by the sweet voice of a young child, saying, \"What'll we get for it?\" \"A pound a-piece,\" said I. There was a roar of assent, and my concluding words, \"and possibly six months,\" were never heard. At that moment Tris' back could stand it no longer, and we came heavily to the ground together. [_Seizing THE DEAN by the hand and dragging him up._] Now you know whose hands have led you back to your own manger. [_Embracing him._] And oh, brother, confess--isn't there something good and noble in true English sport after all? THE DEAN. Every abused institution has its redeeming characteristic. But whence is the money to come to reward these dreadful persons? I cannot reasonably ask my girls to organize a bazaar or concert. GEORGIANA. Concert! I'm a rich woman. THE DEAN. Rich! GEORGIANA. Well, I've cleared fifteen hundred over the Handicap. THE DEAN. [_Recoiling._] No! Then the horse who enjoyed the shelter of the Deanery last night---- SIR TRISTRAM. Dandy Dick! THE DEAN. Won! GEORGIANA. In a common canter! All the rest nowhere, and Bonny Betsy walked in with the policeman. THE DEAN. [_To himself._] Five hundred pounds towards the Spire! Five hundred! Oh, where is Blore with the good news! SIR TRISTRAM. Look at him! Lively as a cricket!",
+      "role": "user"
+    }
+  ],
+  "retriever": "vector",
+  "validated_output": {
+    "answer": "GEORGIANA is the same person as George Tidd; George Tidd was her racing name.",
+    "citations": [
+      "dd_act01_c0012"
+    ],
+    "insufficient_evidence": false
+  }
+}

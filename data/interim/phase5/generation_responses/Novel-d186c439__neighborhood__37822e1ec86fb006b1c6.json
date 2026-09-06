@@ -1,0 +1,84 @@
+{
+  "cache_version": "phase5-generation-cache-v1",
+  "context_chunk_ids": [
+    "dd_prod_c0001",
+    "dd_prod_c0002",
+    "dd_cast_c0001",
+    "dd_front_c0001"
+  ],
+  "invalid_citations": [],
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "prompt_sha256": "37822e1ec86fb006b1c6f014c6e5e9bb4417c14767bd2d59b3823f4ca726fda2",
+  "query_id": "Novel-d186c439",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"answer\": \"The play 'Dandy Dick' was performed at the Royal Court Theatre and later at Toole's Theatre.\",\n  \"citations\": [\"dd_prod_c0001\", \"dd_prod_c0002\"],\n  \"insufficient_evidence\": false\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680485,
+    "id": "a5f85ba8-aa12-4bd4-8b3d-6ce94bde50a0",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 59,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2749,
+      "prompt_tokens": 2749,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 2808
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1901.128203,
+        "finish_reason": "stop",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 59,
+          "prompt_tokens": 2749,
+          "total_tokens": 2808
+        }
+      }
+    ],
+    "elapsed_ms": 1901.128203,
+    "token_usage": {
+      "completion_tokens": 59,
+      "prompt_tokens": 2749,
+      "total_tokens": 2808
+    }
+  },
+  "request_fingerprint": "b042736ac2f84a5040a62d82374134b0237a298aad41ea9c6fd2b63a2afb22ff",
+  "request_messages": [
+    {
+      "content": "You are a grounded question-answering system.\n\nAnswer the user's QUESTION using only the supplied EVIDENCE CHUNKS and, when\npresent, GRAPH CONTEXT. Do not use outside knowledge or infer unsupported facts.\nIf the supplied evidence is insufficient, set insufficient_evidence to true and\nset answer exactly to INSUFFICIENT_EVIDENCE.\n\nReturn exactly one JSON object with exactly these fields:\n{\n  \"answer\": \"concise grounded answer or INSUFFICIENT_EVIDENCE\",\n  \"citations\": [\"chunk_id\"],\n  \"insufficient_evidence\": false\n}\n\nEvery citation must be a chunk_id that appears in EVIDENCE CHUNKS. Cite only\nchunks that support the answer. Do not output Markdown, explanations, additional\nkeys, or text outside the JSON object.",
+      "role": "system"
+    },
+    {
+      "content": "QUESTION:\nAt which venue was the play 'Dandy Dick' performed?\n\nEVIDENCE CHUNKS:\n[CHUNK_ID: dd_prod_c0001]\nINTRODUCTORY NOTE. \"Dandy Dick\" was the third of the farces which Mr. Pinero wrote for the old Court Theatre--a series of plays which, besides giving playgoers a fresh source of laughter, and the English stage a new order of comic play, brought plentiful prosperity to the joint management of Mr. Arthur Cecil and the late Mr. John Clayton. But a kind of melancholy interest attaches to \"Dandy Dick,\" for this play was, as it were, the swan-song of the old theatre and of the Clayton and Cecil partnership; and it was the piece in which Mr. Clayton was acting when death overtook him, to the general grief. The production of \"Dandy Dick\" may be considered as something of a _tour de force_ in its way. \"The Schoolmistress\" was at the end of its successful run, and Mr. Pinero was under contract to supply its successor by a certain date, when Mr. Clayton one day went down to Brighton, where the dramatist was then at work, to hear him read the two completed acts of the new play. To Mr. Clayton's consternation, however, Mr. Pinero announced that he was dissatisfied with his work, and proposed to begin an entirely new play, as he had a more promising idea. But time was pressing, and a successor to \"The Schoolmistress\" was an immediate necessity. However, Mr. Pinero's idea of writing a play round a dean, who, while being a paragon of dignity and decorum, should be driven by an indiscreet act into a most undignified dilemma, appealed to Mr. Clayton, and hastening back to London with the sketches for the requisite scenes, he left Mr. Pinero to set to work at once upon the new scheme. And within a few weeks, indeed by the time the scenery was ready, the new play was completed, the rural constable of a village adjacent to Brighton having suggested the character of Noah Topping. \"Dandy Dick\" was produced at the Court Theatre on January 27th, 1887, and, meeting with a most favorable initial reception, it settled down immediately into a complete success. The following is a copy of the first-night programme:--\n\n[CHUNK_ID: dd_prod_c0002]\n\"Dandy Dick\" was performed 171 times between the first night and the 22d of July, when, the old theatre being demolished, Mr. Clayton took a temporary lease of Toole's Theatre, and transferred the play thither, where it ran 75 nights more. A company had already been sent out, under the auspices of the Court management, to perform \"Dandy Dick\" in the provinces; but, when the play was withdrawn from the London boards, Mr. Clayton set out himself with a company, and it was during this tour that he died at Liverpool. In America Mr. Daly produced \"Dandy Dick\" with Miss Ada Rehan in Mrs. John Wood's part, but no very great success was achieved; whereas in Australia its reception was so enthusiastic that it ran for quite an unusual time both in Melbourne and Sydney. In the character of the Dean, Mr. G. W. Anson achieved perhaps the greatest of his Australian successes, and Mr. Robert Brough made his mark as the policeman. MALCOLM C. SALAMAK. _December_, 1892.\n\n[CHUNK_ID: dd_cast_c0001]\nROYAL COURT THEATRE, SLOANE SQUARE, S.W. _Lessees and Managers:_ Mr. John Clayton and Mr. Arthur Cecil. Programme THIS EVENING, THURSDAY, JANUARY 27, _At_ 8.30 _punctually_, DANDY DICK. AN ORIGINAL FARCE, IN THREE ACTS, BY A. W. PINERO. THE VERY REV. AUGUSTIN JEDD, D.D. MR. JOHN CLAYTON. (Dean of St. Marvell's) SIR TRISTRAM MARDON, Bart MR. EDMUND MAURICE. --th Hussars, MAJOR TARVER { quartered at } MR. F. KERR. MR. DARBEY { Durnstone, near } MR. H. EVERSFIELD. St. Marvell's BLORE (Butler at the Deanery) MR. ARTHUR CECIL. NOAH TOPPING (Constable at MR. W. H. DENNY. St. Marvell's) HATCHAM (Sir Tristram's groom) MR. W. LUGG. GEORGIANA TIDMAN (a Widow, MRS. JOHN WOOD. the Dean's sister) SALOME } the Dean's Daughters { MISS MARIE LEWES. SHEBA } { MISS NORREYS. HANNAH TOPPING (formerly in MISS LAURA LINDEN. Service at the Deanery) ACT I. AT THE DEANERY, ST. MARVELL'S. (Morning.) ACT II. THE SAME PLACE. (Evening.) ACT III.--The Next Day. Scene 1:--\"_The Strong Box,_\" _St. Marvell's. Scene 2.--The Deanery again._ The curtain will be lowered for a few minutes between the two scenes. New Scenery by Mr. T. W. Hall. Preceded, at Eight o'clock, by \"THE NETTLE.\" An Original Comedietta by ERNEST WARREN.\n\n[CHUNK_ID: dd_front_c0001]\nDANDY DICK A PLAY IN THREE ACTS By ARTHUR W. PINERO AUTHOR OF \"SWEET LAVENDER,\" \"THE TIMES,\" \"THE CABINET MINISTER,\" \"LADY BOUNTIFUL,\" ETC. All rights reserved. Performance forbidden, and right of representation reserved. Application for the right of performing this piece must be made to the publishers. BOSTON _WALTER H. BAKER_ Copyright, 1893, by ARTHUR W. PINERO _All rights reserved._\n\nGRAPH CONTEXT (retriever output only):\n{\n  \"linked_entities\": [\n    {\n      \"matched_term\": null,\n      \"method\": \"semantic\",\n      \"name\": \"Royal Court Theatre\",\n      \"node_id\": \"n_royal_court_theatre_b633e12d0239\",\n      \"score\": 0.75710857,\n      \"semantic_score\": 0.75710857,\n      \"type\": \"LOCATION\"\n    },\n    {\n      \"matched_term\": null,\n      \"method\": \"semantic\",\n      \"name\": \"Toole's Theatre\",\n      \"node_id\": \"n_toole_s_theatre_23c757372e96\",\n      \"score\": 0.71988666,\n      \"semantic_score\": 0.71988666,\n      \"type\": \"LOCATION\"\n    },\n    {\n      \"matched_term\": null,\n      \"method\": \"semantic\",\n      \"name\": \"Dandy Dick (play)\",\n      \"node_id\": \"n_dandy_dick_play_3b5ef6517439\",\n      \"score\": 0.67281032,\n      \"semantic_score\": 0.67281032,\n      \"type\": \"CREATIVE_WORK\"\n    },\n    {\n      \"matched_term\": null,\n      \"method\": \"semantic\",\n      \"name\": \"Sydney\",\n      \"node_id\": \"n_sydney_3afa6f61b45a\",\n      \"score\": 0.65936977,\n      \"semantic_score\": 0.65936977,\n      \"type\": \"LOCATION\"\n    }\n  ],\n  \"paths\": [],\n  \"retrieved_edges\": [\n    {\n      \"directed\": true,\n      \"edge_id\": \"e_n_dandy_dick_play_3b5ef65174_4d93e22d48ac53\",\n      \"relation\": \"PERFORMED_AT\",\n      \"source\": \"Dandy Dick (play)\",\n      \"source_id\": \"n_dandy_dick_play_3b5ef6517439\",\n      \"target\": \"Toole's Theatre\",\n      \"target_id\": \"n_toole_s_theatre_23c757372e96\"\n    },\n    {\n      \"directed\": true,\n      \"edge_id\": \"e_n_dandy_dick_play_3b5ef65174_4e42a9b1e07401\",\n      \"relation\": \"PERFORMED_AT\",\n      \"source\": \"Dandy Dick (play)\",\n      \"source_id\": \"n_dandy_dick_play_3b5ef6517439\",\n      \"target\": \"Royal Court Theatre\",\n      \"target_id\": \"n_royal_court_theatre_b633e12d0239\"\n    },\n    {\n      \"directed\": true,\n      \"edge_id\": \"e_n_dandy_dick_play_3b5ef65174_51122df81368eb\",\n      \"relation\": \"AUTHORED_BY\",\n      \"source\": \"Dandy Dick (play)\",\n      \"source_id\": \"n_dandy_dick_play_3b5ef6517439\",\n      \"target\": \"Arthur W. Pinero\",\n      \"target_id\": \"n_arthur_w_pinero_e79bd27a36a1\"\n    },\n    {\n      \"directed\": true,\n      \"edge_id\": \"e_n_toole_s_theatre_23c757372e_4577328176a7b7\",\n      \"relation\": \"MANAGED_BY\",\n      \"source\": \"Toole's Theatre\",\n      \"source_id\": \"n_toole_s_theatre_23c757372e96\",\n      \"target\": \"John Clayton\",\n      \"target_id\": \"n_john_clayton_f6c4f4eddd74\"\n    }\n  ],\n  \"retrieved_nodes\": [\n    {\n      \"distance\": 0,\n      \"name\": \"Royal Court Theatre\",\n      \"node_id\": \"n_royal_court_theatre_b633e12d0239\",\n      \"score\": 0.75710857,\n      \"seed\": true,\n      \"type\": \"LOCATION\"\n    },\n    {\n      \"distance\": 0,\n      \"name\": \"Toole's Theatre\",\n      \"node_id\": \"n_toole_s_theatre_23c757372e96\",\n      \"score\": 0.71988666,\n      \"seed\": true,\n      \"type\": \"LOCATION\"\n    },\n    {\n      \"distance\": 0,\n      \"name\": \"Dandy Dick (play)\",\n      \"node_id\": \"n_dandy_dick_play_3b5ef6517439\",\n      \"score\": 0.67281032,\n      \"seed\": true,\n      \"type\": \"CREATIVE_WORK\"\n    },\n    {\n      \"distance\": 0,\n      \"name\": \"Sydney\",\n      \"node_id\": \"n_sydney_3afa6f61b45a\",\n      \"score\": 0.65936977,\n      \"seed\": true,\n      \"type\": \"LOCATION\"\n    },\n    {\n      \"distance\": 1,\n      \"name\": \"John Clayton\",\n      \"node_id\": \"n_john_clayton_f6c4f4eddd74\",\n      \"score\": 0.61190366,\n      \"seed\": false,\n      \"type\": \"PERSON\"\n    },\n    {\n      \"distance\": 1,\n      \"name\": \"Arthur W. Pinero\",\n      \"node_id\": \"n_arthur_w_pinero_e79bd27a36a1\",\n      \"score\": 0.57188877,\n      \"seed\": false,\n      \"type\": \"PERSON\"\n    }\n  ]\n}",
+      "role": "user"
+    }
+  ],
+  "retriever": "neighborhood",
+  "validated_output": {
+    "answer": "The play 'Dandy Dick' was performed at the Royal Court Theatre and later at Toole's Theatre.",
+    "citations": [
+      "dd_prod_c0001",
+      "dd_prod_c0002"
+    ],
+    "insufficient_evidence": false
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Georgiana wins money at The Races.\"]",
+  "prompt_sha256": "51399dcea7b61789ef4ca8df0907865cd5482b25f51500c19d741236c8f7a7e9",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"Georgiana wins money at The Races.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681025,
+    "id": "c76a0f57-9942-4516-80eb-9c7d9da9f778",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 15,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 98,
+      "prompt_tokens": 226,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 241
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1177.38182,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 15,
+          "prompt_tokens": 226,
+          "total_tokens": 241
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 15,
+      "prompt_tokens": 226,
+      "total_tokens": 241
+    }
+  },
+  "request_fingerprint": "3404c060bca3652eee7f4d3aaa8e385c42865933163709488772ac5916e5195b"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Ada Rehan performed in the play Dandy Dick.\", \"Ada Rehan took on a notable role in an American production of Dandy Dick.\"]",
+  "prompt_sha256": "6177ac58eac683a6c3e266a59227df1b1503ed5001a206789dc09145624ac5cf",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Ada Rehan performed in the play Dandy Dick.\", \"Ada Rehan took on a notable role in an American production of Dandy Dick.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681310,
+    "id": "f2b60499-badb-46a8-9a87-9c203fca2a4c",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 31,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 103,
+      "prompt_tokens": 231,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 262
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1489.632383,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 31,
+          "prompt_tokens": 231,
+          "total_tokens": 262
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 31,
+      "prompt_tokens": 231,
+      "total_tokens": 262
+    }
+  },
+  "request_fingerprint": "c0493913947e9e8a3eb75036e6826902a43d800b333fd8692f1234a588e2af3e"
+}

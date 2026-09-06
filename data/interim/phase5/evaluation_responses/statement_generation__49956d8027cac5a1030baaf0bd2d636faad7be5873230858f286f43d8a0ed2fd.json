@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Georgiana Tidman is seen accompanying Sir Tristram during key scenes regarding the management of Dandy Dick.\",\n  \"Georgiana Tidman and Sir Tristram are partners in owning the horse Dandy Dick.\",\n  \"Georgiana Tidman and Sir Tristram together bring Dandy Dick into the Deanery stables.\",\n  \"Georgiana Tidman and Sir Tristram later confront the Dean about the doping incident.\"\n]",
+  "prompt_sha256": "49956d8027cac5a1030baaf0bd2d636faad7be5873230858f286f43d8a0ed2fd",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Georgiana Tidman is seen accompanying Sir Tristram during key scenes regarding the management of Dandy Dick.\",\n  \"Georgiana Tidman and Sir Tristram are partners in owning the horse Dandy Dick.\",\n  \"Georgiana Tidman and Sir Tristram together bring Dandy Dick into the Deanery stables.\",\n  \"Georgiana Tidman and Sir Tristram later confront the Dean about the doping incident.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681762,
+    "id": "b7e2951c-f877-435c-8364-acc742b1d132",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 90,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 158,
+      "prompt_tokens": 286,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 376
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1714.455623,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 90,
+          "prompt_tokens": 286,
+          "total_tokens": 376
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 90,
+      "prompt_tokens": 286,
+      "total_tokens": 376
+    }
+  },
+  "request_fingerprint": "7ea9f14f3eec4b3922e8351e6111331173a93428d54bad04cef481996bb2563f"
+}

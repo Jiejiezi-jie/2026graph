@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement from the ground truth is not present in the answer.\",\"statement\":\"The Dean sees Darbey.\"},{\"reason\":\"This statement from the ground truth is not present in the answer.\",\"statement\":\"Darbey glances at Tarver.\"},{\"reason\":\"This statement from the ground truth is not present in the answer.\",\"statement\":\"Salome accepts Major Tarver.\"}],\"FP\":[{\"reason\":\"This statement is not directly supported by the ground truth, which only mentions The Dean seeing Darbey and Darbey glancing at Tarver, with no mention of an intrusion or the presence of Salome and Sheba.\",\"statement\":\"Major Tarver and Mr. Darbey intrude upon Salome and Sheba at the Deanery.\"},{\"reason\":\"The ground truth does not mention any explanation about Major Tarver being critically ill.\",\"statement\":\"Mr. Darbey explains that Major Tarver is critically ill.\"},{\"reason\":\"The ground truth does not mention any explanation about Major Tarver needing to propose.\",\"statement\":\"Mr. Darbey explains that Major Tarver must propose to be accepted.\"},{\"reason\":\"The ground truth does not mention Salome and Sheba telling the Dean about proposals.\",\"statement\":\"Salome and Sheba tell the Dean that Major Tarver and Mr. Darbey have proposed for them.\"},{\"reason\":\"The ground truth only states that The Dean sees Darbey, not that he welcomes both Major Tarver and Mr. Darbey.\",\"statement\":\"The Dean welcomes Major Tarver and Mr. Darbey.\"}],\"TP\":[]}",
+  "prompt_sha256": "893fbb6165ef69e5cbff83315ebb44896f8d340d5890f599e217c70296498111",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [],\n  \"FP\": [\n    {\n      \"statement\": \"Major Tarver and Mr. Darbey intrude upon Salome and Sheba at the Deanery.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which only mentions The Dean seeing Darbey and Darbey glancing at Tarver, with no mention of an intrusion or the presence of Salome and Sheba.\"\n    },\n    {\n      \"statement\": \"Mr. Darbey explains that Major Tarver is critically ill.\",\n      \"reason\": \"The ground truth does not mention any explanation about Major Tarver being critically ill.\"\n    },\n    {\n      \"statement\": \"Mr. Darbey explains that Major Tarver must propose to be accepted.\",\n      \"reason\": \"The ground truth does not mention any explanation about Major Tarver needing to propose.\"\n    },\n    {\n      \"statement\": \"Salome and Sheba tell the Dean that Major Tarver and Mr. Darbey have proposed for them.\",\n      \"reason\": \"The ground truth does not mention Salome and Sheba telling the Dean about proposals.\"\n    },\n    {\n      \"statement\": \"The Dean welcomes Major Tarver and Mr. Darbey.\",\n      \"reason\": \"The ground truth only states that The Dean sees Darbey, not that he welcomes both Major Tarver and Mr. Darbey.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"The Dean sees Darbey.\",\n      \"reason\": \"This statement from the ground truth is not present in the answer.\"\n    },\n    {\n      \"statement\": \"Darbey glances at Tarver.\",\n      \"reason\": \"This statement from the ground truth is not present in the answer.\"\n    },\n    {\n      \"statement\": \"Salome accepts Major Tarver.\",\n      \"reason\": \"This statement from the ground truth is not present in the answer.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681433,
+    "id": "f0a135d1-f8b8-4f08-99a7-8d9cacb95d2a",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 404,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 178,
+      "prompt_tokens": 946,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1350
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4784.108515,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 404,
+          "prompt_tokens": 946,
+          "total_tokens": 1350
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 404,
+      "prompt_tokens": 946,
+      "total_tokens": 1350
+    }
+  },
+  "request_fingerprint": "e143773fc96cacea4bcae50217d01ad97ecd4eab97b1437c6f2a40c2e67b9474"
+}

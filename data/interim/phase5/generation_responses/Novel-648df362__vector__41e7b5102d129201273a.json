@@ -1,0 +1,84 @@
+{
+  "cache_version": "phase5-generation-cache-v1",
+  "context_chunk_ids": [
+    "dd_act03s02_c0008",
+    "dd_prod_c0002",
+    "dd_front_c0001",
+    "dd_prod_c0001",
+    "dd_act01_c0014"
+  ],
+  "invalid_citations": [],
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "prompt_sha256": "41e7b5102d129201273afa715bcc68e8ce8b297fa3f448b54120c91b64b9174a",
+  "query_id": "Novel-648df362",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"answer\": \"SIR TRISTRAM is the owner of one-half of Dandy Dick.\",\n  \"citations\": [\"dd_act03s02_c0008\"],\n  \"insufficient_evidence\": false\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680270,
+    "id": "7f945fe5-fede-47c1-989e-66bc3200058a",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 48,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2610,
+      "prompt_tokens": 2610,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 2658
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1390.071567,
+        "finish_reason": "stop",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 48,
+          "prompt_tokens": 2610,
+          "total_tokens": 2658
+        }
+      }
+    ],
+    "elapsed_ms": 1390.071567,
+    "token_usage": {
+      "completion_tokens": 48,
+      "prompt_tokens": 2610,
+      "total_tokens": 2658
+    }
+  },
+  "request_fingerprint": "385678895acb09dea2356ce882e776ed25205f87e46e5066d0549da461f41ea4",
+  "request_messages": [
+    {
+      "content": "You are a grounded question-answering system.\n\nAnswer the user's QUESTION using only the supplied EVIDENCE CHUNKS and, when\npresent, GRAPH CONTEXT. Do not use outside knowledge or infer unsupported facts.\nIf the supplied evidence is insufficient, set insufficient_evidence to true and\nset answer exactly to INSUFFICIENT_EVIDENCE.\n\nReturn exactly one JSON object with exactly these fields:\n{\n  \"answer\": \"concise grounded answer or INSUFFICIENT_EVIDENCE\",\n  \"citations\": [\"chunk_id\"],\n  \"insufficient_evidence\": false\n}\n\nEvery citation must be a chunk_id that appears in EVIDENCE CHUNKS. Cite only\nchunks that support the answer. Do not output Markdown, explanations, additional\nkeys, or text outside the JSON object.",
+      "role": "system"
+    },
+    {
+      "content": "QUESTION:\nWhat is SIR TRISTRAM's ownership status regarding Dandy Dick?\n\nEVIDENCE CHUNKS:\n[CHUNK_ID: dd_act03s02_c0008]\nSIR TRISTRAM. As the owner of one-half of Dandy Dick, I denounce you! GEORGIANA. As the owner of the other half, _I_ denounce you! THE DEAN. You! _SHEBA and SALOME enter, and remain standing in the recess, listening._ SIR TRISTRAM. The chief ingredient of your infernal preparation is known. THE DEAN. It contains nothing that I would not cheerfully administer to my own children. GEORGIANA. [_In horror._] Oh! SIR TRISTRAM. I believe you. [_Pointing to the paper._] Strychnine! Sixteen grains! SALOME _and_ SHEBA. [_Clinging to each other terrified._] Oh! THE DEAN. Strychnine! Summon my devoted servant Blore, in whose presence the innocuous mixture was compounded. [_GEORGIANA rings the bell. The girls hide behind the window curtains._] This analysis is simply the pardonable result of over-enthusiasm on the part of our local chemist. GEORGIANA. You're a disgrace to the pretty little police station where you slept last night! [_BLORE enters and stands unnoticed._ THE DEAN. I will prove that in the Deanery Stables the common laws of hospitality have never been transgressed. Give me the bowl! [_GEORGIANA hands THE DEAN the basin from the table._] A simple remedy for a chill. GEORGIANA _and_ SIR TRISTRAM. Strychnine--sixteen grains! THE DEAN. I, myself, am suffering from the exposure of last night. [_Taking the remaining bolus and opening his mouth._] Observe me! BLORE. [_Rushing forward, snatching the basin from THE DEAN and sinking on to his knees._] No, no! Don't, don't! You wouldn't 'ang the holdest servant in the Deanery. THE DEAN. Blore! BLORE. I did it! I 'ad a honest fancy for Bonny Betsy, and I wanted this gentleman's 'orse out of the way. And while you was mixing the dose with the best ecclesiastical intentions, I hintroduced a foreign element. THE DEAN. [_Pulling BLORE up by his coat collar._] Viper! BLORE. Oh sir, it was hall for the sake of the Dean. SIR TRISTRAM. The Dean? BLORE. The dear Dean had only Fifty Pounds to spare for sporting purposes, and I thought a gentleman of 'is 'igh standing ought to have a certainty. SIR TRISTRAM. Jedd! GEORGIANA. Augustin! THE DEAN. I can conceal it no longer--I--I instructed this unworthy creature to back Dandy Dick on behalf of the Restoration Fund. SIR TRISTRAM. [_Shaking BLORE._] And didn't you do it? BLORE. No. THE DEAN. Why not? In the name of that tottering Spire, why not? BLORE. Oh, sir, thinking as you'd given some of the mixture to Dandy I put your cheerful little offering on to Bonny Betsy. [_SALOME and SHEBA disappear._ THE DEAN. Oh! [_To BLORE._] I could have pardoned everything but this last act of disobedience. You are unworthy of the Deanery. Leave it for some ordinary household.\n\n[CHUNK_ID: dd_prod_c0002]\n\"Dandy Dick\" was performed 171 times between the first night and the 22d of July, when, the old theatre being demolished, Mr. Clayton took a temporary lease of Toole's Theatre, and transferred the play thither, where it ran 75 nights more. A company had already been sent out, under the auspices of the Court management, to perform \"Dandy Dick\" in the provinces; but, when the play was withdrawn from the London boards, Mr. Clayton set out himself with a company, and it was during this tour that he died at Liverpool. In America Mr. Daly produced \"Dandy Dick\" with Miss Ada Rehan in Mrs. John Wood's part, but no very great success was achieved; whereas in Australia its reception was so enthusiastic that it ran for quite an unusual time both in Melbourne and Sydney. In the character of the Dean, Mr. G. W. Anson achieved perhaps the greatest of his Australian successes, and Mr. Robert Brough made his mark as the policeman. MALCOLM C. SALAMAK. _December_, 1892.\n\n[CHUNK_ID: dd_front_c0001]\nDANDY DICK A PLAY IN THREE ACTS By ARTHUR W. PINERO AUTHOR OF \"SWEET LAVENDER,\" \"THE TIMES,\" \"THE CABINET MINISTER,\" \"LADY BOUNTIFUL,\" ETC. All rights reserved. Performance forbidden, and right of representation reserved. Application for the right of performing this piece must be made to the publishers. BOSTON _WALTER H. BAKER_ Copyright, 1893, by ARTHUR W. PINERO _All rights reserved._\n\n[CHUNK_ID: dd_prod_c0001]\nINTRODUCTORY NOTE. \"Dandy Dick\" was the third of the farces which Mr. Pinero wrote for the old Court Theatre--a series of plays which, besides giving playgoers a fresh source of laughter, and the English stage a new order of comic play, brought plentiful prosperity to the joint management of Mr. Arthur Cecil and the late Mr. John Clayton. But a kind of melancholy interest attaches to \"Dandy Dick,\" for this play was, as it were, the swan-song of the old theatre and of the Clayton and Cecil partnership; and it was the piece in which Mr. Clayton was acting when death overtook him, to the general grief. The production of \"Dandy Dick\" may be considered as something of a _tour de force_ in its way. \"The Schoolmistress\" was at the end of its successful run, and Mr. Pinero was under contract to supply its successor by a certain date, when Mr. Clayton one day went down to Brighton, where the dramatist was then at work, to hear him read the two completed acts of the new play. To Mr. Clayton's consternation, however, Mr. Pinero announced that he was dissatisfied with his work, and proposed to begin an entirely new play, as he had a more promising idea. But time was pressing, and a successor to \"The Schoolmistress\" was an immediate necessity. However, Mr. Pinero's idea of writing a play round a dean, who, while being a paragon of dignity and decorum, should be driven by an indiscreet act into a most undignified dilemma, appealed to Mr. Clayton, and hastening back to London with the sketches for the requisite scenes, he left Mr. Pinero to set to work at once upon the new scheme. And within a few weeks, indeed by the time the scenery was ready, the new play was completed, the rural constable of a village adjacent to Brighton having suggested the character of Noah Topping. \"Dandy Dick\" was produced at the Court Theatre on January 27th, 1887, and, meeting with a most favorable initial reception, it settled down immediately into a complete success. The following is a copy of the first-night programme:--\n\n[CHUNK_ID: dd_act01_c0014]\nSIR TRISTRAM. Don't name it. My horse and I are over the way at \"The Swan.\" Come and look at Dandy Dick! THE DEAN. Mardon, you don't understand. My position in St. Marvells---- SIR TRISTRAM. Oh, I see, Jedd. I beg your pardon. You mean that the colors you ride in don't show up well on the hill yonder or in the stable of the \"Swan\" Inn. THE DEAN. You must remember---- SIR TRISTRAM. I remember that in your young days you made the heaviest book on the Derby of any of our fellows. THE DEAN. I always lost, Mardon; indeed, I always lost! SIR TRISTRAM. I remember that you once matched a mare of your own against another of Lord Beckslade's for fifty pounds! THE DEAN. Yes, but she wasn't in it, Mardon--I mean she was dreadfully beaten. SIR TRISTRAM. [_Shaking his head sorrowfully._] Oh Jedd, Jedd--other times, other manners. Good-bye, old boy. THE DEAN. You're not--you're not offended, Mardon? SIR TRISTRAM. [_Taking THE DEAN'S hand._] Offended! No--only sorry, Dean, damned sorry, to see a promising lad come to an end like this. [_GEORGIANA enters with SALOME on one side of her and SHEBA on the other--all three laughing and chatting, apparently the best of friends._] By Jove! No! what--Tidd? GEORGIANA. Hullo, Mardon! [_They shake hands warmly._ SIR TRISTRAM. Of all places in the world, to find \"Mr. Tidd!\" [_Roaring with laughter._] Ho! ho! ho! GEORGIANA. [_Laughing._] Ha! ha! SIR TRISTRAM. Why, Dean, you've been chaffing me, have you? THE DEAN. No! SIR TRISTRAM. Yes, you have--you've been roasting your old friend! THE DEAN. [_With dignity._] Mardon! SIR TRISTRAM. Tidd is a pal of yours, eh? Ho! ho! GEORGIANA. Ha! ha! THE DEAN. Sir Tristram Mardon, Mrs. Tidman is my sister. SIR TRISTRAM. Your sister? GEORGIANA. Yes, I've been running a bit dark, Mardon, but that stout, well-seasoned animal over there and this skittish creature come of the same stock and were foaled in the same stable. [_Pointing to SALOME and SHEBA._] There are a couple of yearlings here, you don't know. My nieces--Salome and Sheba. SIR TRISTRAM. [_Bowing._] How do you do? [_Heartily taking GEORGIANA'S hand again._] Well, I don't care whose sister you are, but I'm jolly glad to see you, George, my boy. GEORGIANA. Gracious, Tris, don't squeeze my hand so! THE DEAN. [_In horror._] Salome, Sheba, children! I must speak to you. Excuse me, Mardon. [_To himself._] Oh, what shall I do with my widowed sister? [_He goes into the garden._ SHEBA. [_To SALOME._] That's like pa, just as we were getting interested. SALOME. We'll come back in a minute. [_They go out by the window._ SIR TRISTRAM. Lord! How odd! You know your brother and I were at Oxford together, George?",
+      "role": "user"
+    }
+  ],
+  "retriever": "vector",
+  "validated_output": {
+    "answer": "SIR TRISTRAM is the owner of one-half of Dandy Dick.",
+    "citations": [
+      "dd_act03s02_c0008"
+    ],
+    "insufficient_evidence": false
+  }
+}

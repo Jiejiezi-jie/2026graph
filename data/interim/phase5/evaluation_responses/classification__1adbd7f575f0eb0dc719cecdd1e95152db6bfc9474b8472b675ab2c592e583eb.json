@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"Not mentioned in ground truth; no statement about visiting the Deanery.\",\"statement\":\"Mr. Darbey and Major Tarver visit the Deanery.\"},{\"reason\":\"Not mentioned in ground truth; no statement about name mistake.\",\"statement\":\"The Dean initially mistakes Mr. Darbey's name as 'Mr. Garvey'.\"},{\"reason\":\"Not mentioned in ground truth; no statement about correction.\",\"statement\":\"Sheba corrects The Dean.\"},{\"reason\":\"Not mentioned in ground truth; no statement about exact words.\",\"statement\":\"Sheba says 'Mr. Darbey!'.\"},{\"reason\":\"Not mentioned in ground truth; no statement about acknowledgment.\",\"statement\":\"The Dean acknowledges Mr. Darbey as 'Darbey!'.\"},{\"reason\":\"Not mentioned in ground truth; no statement about dinner invitation.\",\"statement\":\"The Dean invites Mr. Darbey and Major Tarver to dinner.\"}],\"TP\":[{\"reason\":\"Directly supported by ground truth statement 'Mr. Darbey is an officer of the Hussars.'\",\"statement\":\"Mr. Darbey is an officer of the Hussars.\"},{\"reason\":\"Directly supported by ground truth statement 'The Dean sees Mr. Darbey.'\",\"statement\":\"Mr. Darbey is seen by The Dean.\"},{\"reason\":\"Directly supported by ground truth statement 'Sheba speaks to Mr. Darbey.'\",\"statement\":\"Mr. Darbey is spoken to by Sheba.\"}]}",
+  "prompt_sha256": "1adbd7f575f0eb0dc719cecdd1e95152db6bfc9474b8472b675ab2c592e583eb",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Mr. Darbey is an officer of the Hussars.\",\n      \"reason\": \"Directly supported by ground truth statement 'Mr. Darbey is an officer of the Hussars.'\"\n    },\n    {\n      \"statement\": \"Mr. Darbey is seen by The Dean.\",\n      \"reason\": \"Directly supported by ground truth statement 'The Dean sees Mr. Darbey.'\"\n    },\n    {\n      \"statement\": \"Mr. Darbey is spoken to by Sheba.\",\n      \"reason\": \"Directly supported by ground truth statement 'Sheba speaks to Mr. Darbey.'\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Mr. Darbey and Major Tarver visit the Deanery.\",\n      \"reason\": \"Not mentioned in ground truth; no statement about visiting the Deanery.\"\n    },\n    {\n      \"statement\": \"The Dean initially mistakes Mr. Darbey's name as 'Mr. Garvey'.\",\n      \"reason\": \"Not mentioned in ground truth; no statement about name mistake.\"\n    },\n    {\n      \"statement\": \"Sheba corrects The Dean.\",\n      \"reason\": \"Not mentioned in ground truth; no statement about correction.\"\n    },\n    {\n      \"statement\": \"Sheba says 'Mr. Darbey!'.\",\n      \"reason\": \"Not mentioned in ground truth; no statement about exact words.\"\n    },\n    {\n      \"statement\": \"The Dean acknowledges Mr. Darbey as 'Darbey!'.\",\n      \"reason\": \"Not mentioned in ground truth; no statement about acknowledgment.\"\n    },\n    {\n      \"statement\": \"The Dean invites Mr. Darbey and Major Tarver to dinner.\",\n      \"reason\": \"Not mentioned in ground truth; no statement about dinner invitation.\"\n    }\n  ],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681598,
+    "id": "4dda20ab-b7e5-41c0-ae63-1b7259bf24cb",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 395,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 236,
+      "prompt_tokens": 1004,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1399
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4261.527392,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 395,
+          "prompt_tokens": 1004,
+          "total_tokens": 1399
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 395,
+      "prompt_tokens": 1004,
+      "total_tokens": 1399
+    }
+  },
+  "request_fingerprint": "bb43775172665cb756cc3a5a531d7f95562c474d6ea82aba34ae9bc8780a5e8f"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"The interactions reveal a complex relationship between Hannah and The Dean.\",\n  \"Hannah was formerly a servant at the Deanery.\",\n  \"Hannah shows deep loyalty and affection for The Dean.\",\n  \"Hannah calls The Dean 'Master' and 'Dean dear.'\",\n  \"Hannah devises a plan to help The Dean escape arrest.\",\n  \"The Dean is initially stern.\",\n  \"The Dean is concerned with his dignity.\",\n  \"The Dean gradually accepts Hannah's help.\",\n  \"The Dean shows a mix of exasperation and reliance on Hannah.\",\n  \"The dialogue between Hannah and The Dean is marked by familiarity.\",\n  \"The dialogue between Hannah and The Dean is marked by emotional outbursts.\",\n  \"The dialogue between Hannah and The Dean is marked by a shared secret.\",\n  \"The familiarity, emotional outbursts, and shared secret indicate a bond that transcends the former master-servant roles of Hannah and The Dean.\"\n]",
+  "prompt_sha256": "e5bbf7fd5276c7d5896b431671a76bd2f2569a2ae5f6f607f8d40536a438bb68",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"The interactions reveal a complex relationship between Hannah and The Dean.\",\n  \"Hannah was formerly a servant at the Deanery.\",\n  \"Hannah shows deep loyalty and affection for The Dean.\",\n  \"Hannah calls The Dean 'Master' and 'Dean dear.'\",\n  \"Hannah devises a plan to help The Dean escape arrest.\",\n  \"The Dean is initially stern.\",\n  \"The Dean is concerned with his dignity.\",\n  \"The Dean gradually accepts Hannah's help.\",\n  \"The Dean shows a mix of exasperation and reliance on Hannah.\",\n  \"The dialogue between Hannah and The Dean is marked by familiarity.\",\n  \"The dialogue between Hannah and The Dean is marked by emotional outbursts.\",\n  \"The dialogue between Hannah and The Dean is marked by a shared secret.\",\n  \"The familiarity, emotional outbursts, and shared secret indicate a bond that transcends the former master-servant roles of Hannah and The Dean.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681783,
+    "id": "b05e9103-4ffb-4051-ad98-10c56a098f25",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 192,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 206,
+      "prompt_tokens": 334,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 526
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2884.979225,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 192,
+          "prompt_tokens": 334,
+          "total_tokens": 526
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 192,
+      "prompt_tokens": 334,
+      "total_tokens": 526
+    }
+  },
+  "request_fingerprint": "436c03fbce21ecc590a5fc79a845f2822fc889575aa6f599a20bd4a043d9b4db"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement from the ground truth is not present in the answer; the answer incorrectly attributes the devotion to Salome or Sheba.\",\"statement\":\"Nugent Darbey expresses extreme devotion to SHEBA during the unfolding events.\"},{\"reason\":\"This statement from the ground truth is not present in the answer; the answer does not mention Nugent Darbey's willingness to die for SHEBA.\",\"statement\":\"Nugent Darbey would die for SHEBA.\"}],\"FP\":[{\"reason\":\"This statement attributes extreme devotion to Salome, but the ground truth attributes it to Nugent Darbey, so it is not directly supported.\",\"statement\":\"Salome expresses extreme devotion to SHEBA during the unfolding events.\"},{\"reason\":\"This statement attributes extreme devotion to Sheba herself, which is not supported by the ground truth; the ground truth attributes devotion to Nugent Darbey.\",\"statement\":\"Sheba expresses extreme devotion to SHEBA during the unfolding events.\"},{\"reason\":\"This statement identifies Salome as the character with extreme devotion, but the ground truth identifies Nugent Darbey, so it is not directly supported.\",\"statement\":\"The character who expresses extreme devotion to SHEBA is Salome.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth which indicates Nugent Darbey's extreme devotion to SHEBA, and 'clings to Sheba' is an expression of such devotion.\",\"statement\":\"Salome clings to Sheba.\"},{\"reason\":\"This statement is directly supported by the ground truth which indicates Nugent Darbey's extreme devotion to SHEBA, and addressing Sheba as 'dear' is an expression of such devotion.\",\"statement\":\"Salome says 'Sheba, dear'.\"},{\"reason\":\"This statement is directly supported by the ground truth which indicates Nugent Darbey's extreme devotion to SHEBA, and the quote expresses devotion by willing possessions to Sheba.\",\"statement\":\"Salome says 'If I should pine and ultimately die of this suspense I want you to have my workbox.'\"}]}",
+  "prompt_sha256": "776aacdf1f321e7bdf2906a7886d83135890f54e6a9dc542a39856b9d0f6eccd",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Salome clings to Sheba.\",\n      \"reason\": \"This statement is directly supported by the ground truth which indicates Nugent Darbey's extreme devotion to SHEBA, and 'clings to Sheba' is an expression of such devotion.\"\n    },\n    {\n      \"statement\": \"Salome says 'Sheba, dear'.\",\n      \"reason\": \"This statement is directly supported by the ground truth which indicates Nugent Darbey's extreme devotion to SHEBA, and addressing Sheba as 'dear' is an expression of such devotion.\"\n    },\n    {\n      \"statement\": \"Salome says 'If I should pine and ultimately die of this suspense I want you to have my workbox.'\",\n      \"reason\": \"This statement is directly supported by the ground truth which indicates Nugent Darbey's extreme devotion to SHEBA, and the quote expresses devotion by willing possessions to Sheba.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Salome expresses extreme devotion to SHEBA during the unfolding events.\",\n      \"reason\": \"This statement attributes extreme devotion to Salome, but the ground truth attributes it to Nugent Darbey, so it is not directly supported.\"\n    },\n    {\n      \"statement\": \"Sheba expresses extreme devotion to SHEBA during the unfolding events.\",\n      \"reason\": \"This statement attributes extreme devotion to Sheba herself, which is not supported by the ground truth; the ground truth attributes devotion to Nugent Darbey.\"\n    },\n    {\n      \"statement\": \"The character who expresses extreme devotion to SHEBA is Salome.\",\n      \"reason\": \"This statement identifies Salome as the character with extreme devotion, but the ground truth identifies Nugent Darbey, so it is not directly supported.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"Nugent Darbey expresses extreme devotion to SHEBA during the unfolding events.\",\n      \"reason\": \"This statement from the ground truth is not present in the answer; the answer incorrectly attributes the devotion to Salome or Sheba.\"\n    },\n    {\n      \"statement\": \"Nugent Darbey would die for SHEBA.\",\n      \"reason\": \"This statement from the ground truth is not present in the answer; the answer does not mention Nugent Darbey's willingness to die for SHEBA.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681704,
+    "id": "abf5cf0b-4e40-4620-878b-d5f49125c3d7",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 504,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 172,
+      "prompt_tokens": 940,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1444
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 6153.055172,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 504,
+          "prompt_tokens": 940,
+          "total_tokens": 1444
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 504,
+      "prompt_tokens": 940,
+      "total_tokens": 1444
+    }
+  },
+  "request_fingerprint": "d4a182645e20fdd8e8ef22ed61bce184f5a6a54825e879368c3334fc6f42620e"
+}

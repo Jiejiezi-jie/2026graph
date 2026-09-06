@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This is directly supported by the ground truth statements 'Georgiana Tidman uses the nickname George Tidd.' and 'George Tidd is Georgiana Tidman.'\",\"statement\":\"Georgiana Tidman's nickname is 'George Tidd'.\"},{\"reason\":\"This is supported by the ground truth statement 'Georgiana Tidman spoke to Sir Tristram.' combined with the fact that she uses the nickname George Tidd, implying the association.\",\"statement\":\"Georgiana Tidman's nickname 'George Tidd' becomes associated with Sir Tristram.\"},{\"reason\":\"This is supported by the ground truth statement 'Georgiana Tidman spoke to Sir Tristram.' and the fact that she uses the nickname George Tidd, implying recognition.\",\"statement\":\"Sir Tristram recognizes Georgiana Tidman as 'Mr. Tidd' upon Georgiana Tidman's entrance.\"},{\"reason\":\"This is supported by the ground truth statement 'Georgiana Tidman uses the nickname George Tidd.' and the fact that she spoke to Sir Tristram, implying she explained the nickname.\",\"statement\":\"Georgiana Tidman explains that 'George Tidd' was Georgiana Tidman's racing name.\"}]}",
+  "prompt_sha256": "a28f897fd340f17e21b6b9075fbcfb1d787897d52ea9ade465e58785dd37d7c5",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Georgiana Tidman's nickname is 'George Tidd'.\",\n      \"reason\": \"This is directly supported by the ground truth statements 'Georgiana Tidman uses the nickname George Tidd.' and 'George Tidd is Georgiana Tidman.'\"\n    },\n    {\n      \"statement\": \"Georgiana Tidman's nickname 'George Tidd' becomes associated with Sir Tristram.\",\n      \"reason\": \"This is supported by the ground truth statement 'Georgiana Tidman spoke to Sir Tristram.' combined with the fact that she uses the nickname George Tidd, implying the association.\"\n    },\n    {\n      \"statement\": \"Sir Tristram recognizes Georgiana Tidman as 'Mr. Tidd' upon Georgiana Tidman's entrance.\",\n      \"reason\": \"This is supported by the ground truth statement 'Georgiana Tidman spoke to Sir Tristram.' and the fact that she uses the nickname George Tidd, implying recognition.\"\n    },\n    {\n      \"statement\": \"Georgiana Tidman explains that 'George Tidd' was Georgiana Tidman's racing name.\",\n      \"reason\": \"This is supported by the ground truth statement 'Georgiana Tidman uses the nickname George Tidd.' and the fact that she spoke to Sir Tristram, implying she explained the nickname.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681238,
+    "id": "c7e4191d-56fa-4309-b928-06278d61f269",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 294,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 175,
+      "prompt_tokens": 943,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1237
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3732.295451,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 294,
+          "prompt_tokens": 943,
+          "total_tokens": 1237
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 294,
+      "prompt_tokens": 943,
+      "total_tokens": 1237
+    }
+  },
+  "request_fingerprint": "6bf1f68fbc16460f7de13de966565229837b3c3feb403c46e75563d6ea786e74"
+}

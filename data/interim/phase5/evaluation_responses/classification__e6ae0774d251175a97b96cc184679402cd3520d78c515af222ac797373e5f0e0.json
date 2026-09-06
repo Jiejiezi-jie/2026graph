@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"The answer does not mention Nugent Darbey as the one expressing devotion.\",\"statement\":\"Nugent Darbey expresses extreme devotion to SHEBA during the unfolding events.\"},{\"reason\":\"This statement is not present in the answer.\",\"statement\":\"Nugent Darbey would die for SHEBA.\"}],\"FP\":[{\"reason\":\"The answer incorrectly attributes the devotion to SHEBA herself, whereas the ground truth states that Nugent Darbey expresses extreme devotion to SHEBA.\",\"statement\":\"SHEBA expresses extreme devotion to SHEBA during the unfolding events.\"}],\"TP\":[]}",
+  "prompt_sha256": "e6ae0774d251175a97b96cc184679402cd3520d78c515af222ac797373e5f0e0",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [],\n  \"FP\": [\n    {\n      \"statement\": \"SHEBA expresses extreme devotion to SHEBA during the unfolding events.\",\n      \"reason\": \"The answer incorrectly attributes the devotion to SHEBA herself, whereas the ground truth states that Nugent Darbey expresses extreme devotion to SHEBA.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"Nugent Darbey expresses extreme devotion to SHEBA during the unfolding events.\",\n      \"reason\": \"The answer does not mention Nugent Darbey as the one expressing devotion.\"\n    },\n    {\n      \"statement\": \"Nugent Darbey would die for SHEBA.\",\n      \"reason\": \"This statement is not present in the answer.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681696,
+    "id": "8176b7c2-05da-4ce5-a330-d4dcffa1733c",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 160,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 101,
+      "prompt_tokens": 869,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1029
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2423.925978,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 160,
+          "prompt_tokens": 869,
+          "total_tokens": 1029
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 160,
+      "prompt_tokens": 869,
+      "total_tokens": 1029
+    }
+  },
+  "request_fingerprint": "1492086eb66d351f0e95475487abc4bc29f2fee66ed7a6579855b69904187283"
+}

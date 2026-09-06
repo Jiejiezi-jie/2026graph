@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement is not explicitly present in the answer; the answer only mentions the nickname 'Mr. Tidd' but does not state that Georgiana Tidman uses the nickname George Tidd.\",\"statement\":\"Georgiana Tidman uses the nickname George Tidd.\"},{\"reason\":\"This statement is not explicitly present in the answer; the answer does not clarify that George Tidd is the same person as Georgiana Tidman.\",\"statement\":\"George Tidd is Georgiana Tidman.\"}],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which indicates that Georgiana Tidman (who uses the nickname George Tidd) spoke to Sir Tristram, thereby associating the nickname with him through their interaction.\",\"statement\":\"Georgiana Tidman's nickname becomes associated with Sir Tristram through their interaction.\"},{\"reason\":\"This statement is supported by the ground truth that Georgiana Tidman uses the nickname George Tidd and that she spoke to Sir Tristram, implying recognition of her by that nickname.\",\"statement\":\"Sir Tristram recognizes Georgiana Tidman as 'Mr. Tidd' upon Georgiana Tidman's entrance.\"},{\"reason\":\"This statement is supported by the ground truth that Georgiana Tidman spoke to Sir Tristram, and the response is part of their interaction.\",\"statement\":\"Georgiana Tidman responds by calling Sir Tristram 'Mardon'.\"},{\"reason\":\"This statement is supported by the ground truth that Georgiana Tidman spoke to Sir Tristram, and a warm handshake is a plausible part of their interaction.\",\"statement\":\"Georgiana Tidman and Sir Tristram shake hands warmly.\"}]}",
+  "prompt_sha256": "efd831ac6ec7ca34d2b5e3fb1dd01142f8756c6ec17edc4df44542c9884ea37a",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Georgiana Tidman's nickname becomes associated with Sir Tristram through their interaction.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which indicates that Georgiana Tidman (who uses the nickname George Tidd) spoke to Sir Tristram, thereby associating the nickname with him through their interaction.\"\n    },\n    {\n      \"statement\": \"Sir Tristram recognizes Georgiana Tidman as 'Mr. Tidd' upon Georgiana Tidman's entrance.\",\n      \"reason\": \"This statement is supported by the ground truth that Georgiana Tidman uses the nickname George Tidd and that she spoke to Sir Tristram, implying recognition of her by that nickname.\"\n    },\n    {\n      \"statement\": \"Georgiana Tidman responds by calling Sir Tristram 'Mardon'.\",\n      \"reason\": \"This statement is supported by the ground truth that Georgiana Tidman spoke to Sir Tristram, and the response is part of their interaction.\"\n    },\n    {\n      \"statement\": \"Georgiana Tidman and Sir Tristram shake hands warmly.\",\n      \"reason\": \"This statement is supported by the ground truth that Georgiana Tidman spoke to Sir Tristram, and a warm handshake is a plausible part of their interaction.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": [\n    {\n      \"statement\": \"Georgiana Tidman uses the nickname George Tidd.\",\n      \"reason\": \"This statement is not explicitly present in the answer; the answer only mentions the nickname 'Mr. Tidd' but does not state that Georgiana Tidman uses the nickname George Tidd.\"\n    },\n    {\n      \"statement\": \"George Tidd is Georgiana Tidman.\",\n      \"reason\": \"This statement is not explicitly present in the answer; the answer does not clarify that George Tidd is the same person as Georgiana Tidman.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681244,
+    "id": "64afa9ae-b7e9-41f8-8f43-ab2bf3acd771",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 404,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 169,
+      "prompt_tokens": 937,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1341
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4276.626445,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 404,
+          "prompt_tokens": 937,
+          "total_tokens": 1341
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 404,
+      "prompt_tokens": 937,
+      "total_tokens": 1341
+    }
+  },
+  "request_fingerprint": "70feb3f7e5ada293becc2218538a7c6ef8a71830d9d5ee871f3cf4e23566e70e"
+}

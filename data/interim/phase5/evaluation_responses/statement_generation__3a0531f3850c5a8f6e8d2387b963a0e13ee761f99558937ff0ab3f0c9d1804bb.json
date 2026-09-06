@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Mr. John Clayton was responsible for managing the Court Theatre during the original production of 'Dandy Dick'.\", \"Mr. Arthur Cecil was responsible for managing the Court Theatre during the original production of 'Dandy Dick'.\"]",
+  "prompt_sha256": "3a0531f3850c5a8f6e8d2387b963a0e13ee761f99558937ff0ab3f0c9d1804bb",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"Mr. John Clayton was responsible for managing the Court Theatre during the original production of 'Dandy Dick'.\", \"Mr. Arthur Cecil was responsible for managing the Court Theatre during the original production of 'Dandy Dick'.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681299,
+    "id": "815f172f-0430-418e-8acd-6be3c2c824f0",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 51,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 111,
+      "prompt_tokens": 239,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 290
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1624.179618,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 51,
+          "prompt_tokens": 239,
+          "total_tokens": 290
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 51,
+      "prompt_tokens": 239,
+      "total_tokens": 290
+    }
+  },
+  "request_fingerprint": "1809543765dd7f44414d159de0aa569fe4593c964260e23138034f94bef3f3d9"
+}

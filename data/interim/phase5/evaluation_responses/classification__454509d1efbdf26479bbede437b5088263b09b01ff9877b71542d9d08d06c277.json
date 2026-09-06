@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Hannah (Mrs. Topping) recognizes The Dean during The Dean's imprisonment in the police station.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Hannah recognizes The Dean during The Dean's imprisonment in the police station.'\"\n    },\n    {\n      \"statement\": \"Hannah (Mrs. Topping) identifies The Dean despite The Dean's disguise.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Hannah identifies The Dean despite The Dean's disguise.'\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": [\n    {\n      \"statement\": \"Hannah is the character who recognizes The Dean.\",\n      \"reason\": \"This general statement is not explicitly present in the answer, though the answer does specify Hannah (Mrs. Topping) in the context of recognizing The Dean.\"\n    }\n  ]\n}",
+  "prompt_sha256": "454509d1efbdf26479bbede437b5088263b09b01ff9877b71542d9d08d06c277",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Hannah (Mrs. Topping) recognizes The Dean during The Dean's imprisonment in the police station.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Hannah recognizes The Dean during The Dean's imprisonment in the police station.'\"\n    },\n    {\n      \"statement\": \"Hannah (Mrs. Topping) identifies The Dean despite The Dean's disguise.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Hannah identifies The Dean despite The Dean's disguise.'\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": [\n    {\n      \"statement\": \"Hannah is the character who recognizes The Dean.\",\n      \"reason\": \"This general statement is not explicitly present in the answer, though the answer does specify Hannah (Mrs. Topping) in the context of recognizing The Dean.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680610,
+    "id": "6de082ad-853c-4f60-a760-1c4fc1637f07",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 192,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 911,
+      "prompt_tokens": 911,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 1103
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2579.298742,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 192,
+          "prompt_tokens": 911,
+          "total_tokens": 1103
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 192,
+      "prompt_tokens": 911,
+      "total_tokens": 1103
+    }
+  },
+  "request_fingerprint": "870735ee7dd8734ad3f83838e866c17a4122787e030dc65312082c466fbf8e35"
+}

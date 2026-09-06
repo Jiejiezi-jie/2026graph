@@ -1,0 +1,84 @@
+{
+  "cache_version": "phase5-generation-cache-v1",
+  "context_chunk_ids": [
+    "dd_prod_c0002",
+    "dd_front_c0001",
+    "dd_prod_c0001",
+    "dd_act02_c0001",
+    "dd_act03s01_c0001"
+  ],
+  "invalid_citations": [],
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "prompt_sha256": "8158708c6998f403667303f5af4f7ac39041d8ecf6fdb20ee87e81a57a8afb3e",
+  "query_id": "Novel-6b4b11a7",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"answer\": \"Dandy Dick\",\n  \"citations\": [\"dd_prod_c0002\"],\n  \"insufficient_evidence\": false\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680277,
+    "id": "7b46d37c-4247-4091-b875-02da07269d41",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 33,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2327,
+      "prompt_tokens": 2327,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 2360
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3128.391522,
+        "finish_reason": "stop",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 33,
+          "prompt_tokens": 2327,
+          "total_tokens": 2360
+        }
+      }
+    ],
+    "elapsed_ms": 3128.391522,
+    "token_usage": {
+      "completion_tokens": 33,
+      "prompt_tokens": 2327,
+      "total_tokens": 2360
+    }
+  },
+  "request_fingerprint": "d460e0f6102ad773a5fefe7d6511c776777d1bce1b95d5c80ac22226a1142d7b",
+  "request_messages": [
+    {
+      "content": "You are a grounded question-answering system.\n\nAnswer the user's QUESTION using only the supplied EVIDENCE CHUNKS and, when\npresent, GRAPH CONTEXT. Do not use outside knowledge or infer unsupported facts.\nIf the supplied evidence is insufficient, set insufficient_evidence to true and\nset answer exactly to INSUFFICIENT_EVIDENCE.\n\nReturn exactly one JSON object with exactly these fields:\n{\n  \"answer\": \"concise grounded answer or INSUFFICIENT_EVIDENCE\",\n  \"citations\": [\"chunk_id\"],\n  \"insufficient_evidence\": false\n}\n\nEvery citation must be a chunk_id that appears in EVIDENCE CHUNKS. Cite only\nchunks that support the answer. Do not output Markdown, explanations, additional\nkeys, or text outside the JSON object.",
+      "role": "system"
+    },
+    {
+      "content": "QUESTION:\nIn which play did Ada Rehan perform, taking on a notable role in an American production?\n\nEVIDENCE CHUNKS:\n[CHUNK_ID: dd_prod_c0002]\n\"Dandy Dick\" was performed 171 times between the first night and the 22d of July, when, the old theatre being demolished, Mr. Clayton took a temporary lease of Toole's Theatre, and transferred the play thither, where it ran 75 nights more. A company had already been sent out, under the auspices of the Court management, to perform \"Dandy Dick\" in the provinces; but, when the play was withdrawn from the London boards, Mr. Clayton set out himself with a company, and it was during this tour that he died at Liverpool. In America Mr. Daly produced \"Dandy Dick\" with Miss Ada Rehan in Mrs. John Wood's part, but no very great success was achieved; whereas in Australia its reception was so enthusiastic that it ran for quite an unusual time both in Melbourne and Sydney. In the character of the Dean, Mr. G. W. Anson achieved perhaps the greatest of his Australian successes, and Mr. Robert Brough made his mark as the policeman. MALCOLM C. SALAMAK. _December_, 1892.\n\n[CHUNK_ID: dd_front_c0001]\nDANDY DICK A PLAY IN THREE ACTS By ARTHUR W. PINERO AUTHOR OF \"SWEET LAVENDER,\" \"THE TIMES,\" \"THE CABINET MINISTER,\" \"LADY BOUNTIFUL,\" ETC. All rights reserved. Performance forbidden, and right of representation reserved. Application for the right of performing this piece must be made to the publishers. BOSTON _WALTER H. BAKER_ Copyright, 1893, by ARTHUR W. PINERO _All rights reserved._\n\n[CHUNK_ID: dd_prod_c0001]\nINTRODUCTORY NOTE. \"Dandy Dick\" was the third of the farces which Mr. Pinero wrote for the old Court Theatre--a series of plays which, besides giving playgoers a fresh source of laughter, and the English stage a new order of comic play, brought plentiful prosperity to the joint management of Mr. Arthur Cecil and the late Mr. John Clayton. But a kind of melancholy interest attaches to \"Dandy Dick,\" for this play was, as it were, the swan-song of the old theatre and of the Clayton and Cecil partnership; and it was the piece in which Mr. Clayton was acting when death overtook him, to the general grief. The production of \"Dandy Dick\" may be considered as something of a _tour de force_ in its way. \"The Schoolmistress\" was at the end of its successful run, and Mr. Pinero was under contract to supply its successor by a certain date, when Mr. Clayton one day went down to Brighton, where the dramatist was then at work, to hear him read the two completed acts of the new play. To Mr. Clayton's consternation, however, Mr. Pinero announced that he was dissatisfied with his work, and proposed to begin an entirely new play, as he had a more promising idea. But time was pressing, and a successor to \"The Schoolmistress\" was an immediate necessity. However, Mr. Pinero's idea of writing a play round a dean, who, while being a paragon of dignity and decorum, should be driven by an indiscreet act into a most undignified dilemma, appealed to Mr. Clayton, and hastening back to London with the sketches for the requisite scenes, he left Mr. Pinero to set to work at once upon the new scheme. And within a few weeks, indeed by the time the scenery was ready, the new play was completed, the rural constable of a village adjacent to Brighton having suggested the character of Noah Topping. \"Dandy Dick\" was produced at the Court Theatre on January 27th, 1887, and, meeting with a most favorable initial reception, it settled down immediately into a complete success. The following is a copy of the first-night programme:--\n\n[CHUNK_ID: dd_act02_c0001]\nTHE SECOND ACT. The morning-room at the Deanery, with the fire and the lamps lighted. It is after dinner. SHEBA is playing the piano, SALOME lolling upon the settee, and GEORGIANA pouring out tea. They are in evening dress. GEORGIANA. Sugar, Sally? I call you Sally, Salome--the evening's too short for your name. SALOME. All right, Aunt George--two lumps, please. GEORGIANA. [_To SHEBA._] Little 'un? SHEBA. Two lumps and one in the saucer, to eat. GEORGIANA. Quite a relief to shake off the gentlemen, isn't it? SALOME. Do you think so, Aunt? SHEBA. Oh, _I_ don't think so. GEORGIANA. H'm! Now I understand why my foot was always in the way under the dinner-table. [_She holds out two cups, which the girls take from her._ SALOME. I thought the dinner was an overwhelming success. SHEBA. All our dinners are at the Deanery. GEORGIANA. Awfully jolly. Mutton was overdone. SALOME. That's our new cook's one failing. GEORGIANA. But the potatoes weren't--they rattled. SHEBA. Cook never can manage potatoes. GEORGIANA. What was wrong with the custards? SALOME. Well, it was Cook's first attempt at custards. GEORGIANA. However, they served one useful end. Now we _know_ the chimney wants sweeping. SALOME. But it was a frightfully jolly dinner--take it all round. SHEBA. Yes, take it all round. One has to take things all round. GEORGIANA. What made us all so sad and silent--taking us all round? SHEBA. Dear Papa was as lively as an owl with neuralgia. GEORGIANA. Major Tarver isn't a conversational cracker. SALOME. Gerald Tarver has no liver--to speak of. GEORGIANA. He might have spoken about his lungs or something, to cheer us up. SHEBA. I fancy Mr. Darbey was about to make a witty remark once. GEORGIANA. Yes, and then the servant handed him a dish and he shied at it. So we lost that. SALOME. Still, we ought to congratulate ourselves upon--upon a---- SHEBA. Upon a--upon a---- GEORGIANA. Upon a frightfully jolly dinner. [_Taking her betting book from her pocket._] Excuse me, girls. I've some figures to work out. If Dandy Dick hasn't fed better at the \"Swan\" than we have at the Deanery, he won't be in the first three. [_Reckoning._] Let me see. SALOME. [_To SHEBA._] All's settled, Sheba, isn't it? SHEBA. [_To SALOME._] Yes--everything. Directly the house is silent we let ourselves out at the front door.\n\n[CHUNK_ID: dd_act03s01_c0001]\nTHE THIRD ACT. The first scene is the interior of a country Police Station, a quaint old room with plaster walls, oaken beams, and a gothic mullioned window looking on to the street. A massive door, with a small sliding wicket and an iron grating, opens to a prisoner's cell. The room is partly furnished as a kitchen, partly as a police station, a copy of the Police Regulations and other official documents and implements hanging on the wall. It is the morning after the events of the previous act. _HANNAH, a buxom, fresh-looking young woman, in a print gown, has been engaged in cooking while singing gayly._ HANNAH. [_Opening a door and calling with a slight dialect._] Noah darling! NOAH. [_From another room--in a rough, country voice._] Yaas! HANNAH. You'll have your dinner before you drive your prisoner over to Durnstone, won't ye, darling? NOAH. Yaas! HANNAH. [_Closing the door._] Yaas! Noah's in a nice temper to-day over summat. Ah well, I suppose all public characters is liable to irritation. [_There is a knock at the outer door. HANNAH opening it, sees BLORE with a troubled look on his face._] Well I never! Mr. Blore from the Deanery! Come in! You might knock me down with a----! BLORE. [_Entering and shaking hands mournfully._] How do you do, Mrs. Topping? HANNAH. And how is the dear Dean, bless him; the sweetest soul in the world? BLORE. [_To himself._] Good gracious! She doesn't know of hour misfortune. [_To HANNAH._] I--I 'aven't seen him this morning! HANNAH. Well, this is real kind of you, calling on an old friend, Edward. When I think that I were cook at the Deanery seven years, and that since I left you, to get wedded, not a soul of you has been nigh me, it do seem hard. BLORE. Well, you see, 'Annah, the kitchen took humbrage at your marryin' a policeman at Durnstone. It was regarded as a messyliance. HANNAH. Well, now Mr. Topping's got the appointment of Head Constable at St. Marvells, what's that regarded as? BLORE. A rise on the scales, 'Annah, a decided rise--but still you've honly been a week in St. Marvells and you've got to fight your way hup. HANNAH. I think I'm as hup as ever I'm like to be.",
+      "role": "user"
+    }
+  ],
+  "retriever": "vector",
+  "validated_output": {
+    "answer": "Dandy Dick",
+    "citations": [
+      "dd_prod_c0002"
+    ],
+    "insufficient_evidence": false
+  }
+}

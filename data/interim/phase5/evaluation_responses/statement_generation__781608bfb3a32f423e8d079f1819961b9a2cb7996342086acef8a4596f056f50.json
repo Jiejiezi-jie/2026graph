@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"SALOME enters the scene with GEORGIANA.\", \"SALOME and GEORGIANA arrive at the Deanery together.\", \"SALOME and GEORGIANA have a close association.\"]",
+  "prompt_sha256": "781608bfb3a32f423e8d079f1819961b9a2cb7996342086acef8a4596f056f50",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"SALOME enters the scene with GEORGIANA.\", \"SALOME and GEORGIANA arrive at the Deanery together.\", \"SALOME and GEORGIANA have a close association.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681059,
+    "id": "2c8da3a2-4757-423e-af1d-47a3e6120372",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 44,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 112,
+      "prompt_tokens": 240,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 284
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1532.500731,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 44,
+          "prompt_tokens": 240,
+          "total_tokens": 284
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 44,
+      "prompt_tokens": 240,
+      "total_tokens": 284
+    }
+  },
+  "request_fingerprint": "4d47e09b2075fb0326bc27242d884b4c835c0ce3bb2526d71b6ea669ec1717f0"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"The Dean is afraid to face his children at the Deanery.\"]",
+  "prompt_sha256": "6b38879f9bd5d33e2d89f8eaf50d6a6d42b9abc82309ff86b596047f2534da2c",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"The Dean is afraid to face his children at the Deanery.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681211,
+    "id": "8295fec5-7381-422f-9405-ca93f82182d5",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 15,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 118,
+      "prompt_tokens": 246,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 261
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1081.385682,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 15,
+          "prompt_tokens": 246,
+          "total_tokens": 261
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 15,
+      "prompt_tokens": 246,
+      "total_tokens": 261
+    }
+  },
+  "request_fingerprint": "e6e44e4dc10d678991d99d33c892d2ecfb100bf6ff32cdd605e552fd9a3caeee"
+}

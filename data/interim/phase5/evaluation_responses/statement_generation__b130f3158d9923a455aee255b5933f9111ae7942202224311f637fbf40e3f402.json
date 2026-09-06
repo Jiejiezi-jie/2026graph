@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"THE DEAN recalls being a promising youth at college.\",\n  \"THE DEAN recalls walking in the old streets at Oxford.\",\n  \"THE DEAN recalls avoiding the shops where THE DEAN owed youthful bills.\",\n  \"THE DEAN recalls seeing the broad meadows.\",\n  \"THE DEAN recalls seeing the tall Spire of the college.\"\n]",
+  "prompt_sha256": "b130f3158d9923a455aee255b5933f9111ae7942202224311f637fbf40e3f402",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"THE DEAN recalls being a promising youth at college.\",\n  \"THE DEAN recalls walking in the old streets at Oxford.\",\n  \"THE DEAN recalls avoiding the shops where THE DEAN owed youthful bills.\",\n  \"THE DEAN recalls seeing the broad meadows.\",\n  \"THE DEAN recalls seeing the tall Spire of the college.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681248,
+    "id": "2f8a86df-2dfb-4e3c-9a5d-5a5b3c5241c4",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 72,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 149,
+      "prompt_tokens": 277,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 349
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1339.402967,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 72,
+          "prompt_tokens": 277,
+          "total_tokens": 349
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 72,
+      "prompt_tokens": 277,
+      "total_tokens": 349
+    }
+  },
+  "request_fingerprint": "1d1da2d0a22f3bade9a404ae74767549c43f5a4a69f0c0f9af918d028b80f711"
+}

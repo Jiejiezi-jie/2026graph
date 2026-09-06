@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth which states that GEORGIANA is the character who falls against SIR TRISTRAM.\",\"statement\":\"Georgiana is the character that falls against SIR TRISTRAM.\"},{\"reason\":\"This statement is directly supported by the ground truth which states that GEORGIANA falling against SIR TRISTRAM reflects a moment of vulnerability and connection during the play.\",\"statement\":\"Georgiana falling against SIR TRISTRAM reflects a moment of vulnerability and connection during the play.\"}]}",
+  "prompt_sha256": "840f504fa1d4d955b55b91e2e88b185eb4c1541a138548b6251fa81a566de3fd",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Georgiana is the character that falls against SIR TRISTRAM.\",\n      \"reason\": \"This statement is directly supported by the ground truth which states that GEORGIANA is the character who falls against SIR TRISTRAM.\"\n    },\n    {\n      \"statement\": \"Georgiana falling against SIR TRISTRAM reflects a moment of vulnerability and connection during the play.\",\n      \"reason\": \"This statement is directly supported by the ground truth which states that GEORGIANA falling against SIR TRISTRAM reflects a moment of vulnerability and connection during the play.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681564,
+    "id": "8fb81f21-c60d-41a1-bc11-f6145fa2ffa0",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 143,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 142,
+      "prompt_tokens": 910,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1053
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2047.048751,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 143,
+          "prompt_tokens": 910,
+          "total_tokens": 1053
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 143,
+      "prompt_tokens": 910,
+      "total_tokens": 1053
+    }
+  },
+  "request_fingerprint": "e28f90ca0655fcbf9f41b79ec5d26abc9077727c1b586d88491957a5e7f37929"
+}

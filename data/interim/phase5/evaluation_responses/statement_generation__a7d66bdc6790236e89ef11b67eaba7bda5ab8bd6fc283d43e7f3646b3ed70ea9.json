@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"THE DEAN is also known as Augustin.\", \"THE DEAN is also known as Gus.\"]",
+  "prompt_sha256": "a7d66bdc6790236e89ef11b67eaba7bda5ab8bd6fc283d43e7f3646b3ed70ea9",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"THE DEAN is also known as Augustin.\", \"THE DEAN is also known as Gus.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681205,
+    "id": "82b296b1-cd38-4e52-b42e-001502504dfe",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 26,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 125,
+      "prompt_tokens": 253,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 279
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1615.302236,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 26,
+          "prompt_tokens": 253,
+          "total_tokens": 279
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 26,
+      "prompt_tokens": 253,
+      "total_tokens": 279
+    }
+  },
+  "request_fingerprint": "4f4dcf587ebf0090ac7574861256f47933556dfddb0ffd20cbf5bb9c192471f7"
+}

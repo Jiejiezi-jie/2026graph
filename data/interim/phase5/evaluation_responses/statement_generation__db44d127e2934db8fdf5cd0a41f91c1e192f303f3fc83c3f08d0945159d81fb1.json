@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Major Tarver becomes accepted by Salome after Major Tarver proposes to Salome.\",\n  \"Major Tarver's proposal occurs after The Dean returns.\",\n  \"The Dean gives his consent to Major Tarver's proposal.\",\n  \"The sequence begins with The Dean entering.\",\n  \"The Dean invites Major Tarver and Mr. Darbey inside.\",\n  \"Salome and Major Tarver go into the Library together.\",\n  \"Later, Salome and Major Tarver stand in the archway.\",\n  \"Salome and Major Tarver standing in the archway indicates their union.\"\n]",
+  "prompt_sha256": "db44d127e2934db8fdf5cd0a41f91c1e192f303f3fc83c3f08d0945159d81fb1",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\n  \"Major Tarver becomes accepted by Salome after Major Tarver proposes to Salome.\",\n  \"Major Tarver's proposal occurs after The Dean returns.\",\n  \"The Dean gives his consent to Major Tarver's proposal.\",\n  \"The sequence begins with The Dean entering.\",\n  \"The Dean invites Major Tarver and Mr. Darbey inside.\",\n  \"Salome and Major Tarver go into the Library together.\",\n  \"Later, Salome and Major Tarver stand in the archway.\",\n  \"Salome and Major Tarver standing in the archway indicates their union.\"\n]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681437,
+    "id": "409ed65a-6548-480b-b59e-e5ee2e33e2eb",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 125,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 173,
+      "prompt_tokens": 301,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 426
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2168.116353,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 125,
+          "prompt_tokens": 301,
+          "total_tokens": 426
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 125,
+      "prompt_tokens": 301,
+      "total_tokens": 426
+    }
+  },
+  "request_fingerprint": "9b08d1d6d4713ff92ed2ef312c6796df52328c4b81768335337986b3077df45c"
+}

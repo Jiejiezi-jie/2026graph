@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"SALOME reflects upon Aunt Georgiana in relation to family dynamics and guidance in the play.\"]",
+  "prompt_sha256": "2ad178f00ed2fd5260a4865689a126f712b71e608f40a8df93f905868171db3e",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"SALOME reflects upon Aunt Georgiana in relation to family dynamics and guidance in the play.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681668,
+    "id": "c55d212e-c6ed-41c4-b523-2a4dd2c8d6fe",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 21,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 105,
+      "prompt_tokens": 233,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 254
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1205.540606,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 21,
+          "prompt_tokens": 233,
+          "total_tokens": 254
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 21,
+      "prompt_tokens": 233,
+      "total_tokens": 254
+    }
+  },
+  "request_fingerprint": "87b08094e01b45430239316c93d81060293bf68be4de17352d3398e372ccb6ca"
+}

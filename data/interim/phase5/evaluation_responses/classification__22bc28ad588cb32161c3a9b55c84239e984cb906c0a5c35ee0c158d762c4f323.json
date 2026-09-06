@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement from the ground truth is not explicitly present in the answer. The answer only mentions interaction, not seeing.\",\"statement\":\"THE DEAN sees Mr. Darbey.\"}],\"FP\":[{\"reason\":\"The ground truth does not mention Major Tarver.\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Major Tarver.\"},{\"reason\":\"The ground truth does not mention Salome.\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Salome.\"},{\"reason\":\"The ground truth does not mention Sheba.\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Sheba.\"},{\"reason\":\"The ground truth does not mention Noah Topping.\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Noah Topping.\"},{\"reason\":\"The ground truth does not mention Hannah Topping.\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Hannah Topping.\"},{\"reason\":\"The ground truth does not mention Sir Tristram Mardon.\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Sir Tristram Mardon.\"},{\"reason\":\"The ground truth does not mention Georgiana.\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Georgiana.\"},{\"reason\":\"The ground truth does not mention Hatcham.\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Hatcham.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth which states that THE DEAN interacts with Mr. Darbey during social calls at the Deanery.\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Mr. Darbey.\"}]}",
+  "prompt_sha256": "22bc28ad588cb32161c3a9b55c84239e984cb906c0a5c35ee0c158d762c4f323",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Mr. Darbey.\",\n      \"reason\": \"This statement is directly supported by the ground truth which states that THE DEAN interacts with Mr. Darbey during social calls at the Deanery.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Major Tarver.\",\n      \"reason\": \"The ground truth does not mention Major Tarver.\"\n    },\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Salome.\",\n      \"reason\": \"The ground truth does not mention Salome.\"\n    },\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Sheba.\",\n      \"reason\": \"The ground truth does not mention Sheba.\"\n    },\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Noah Topping.\",\n      \"reason\": \"The ground truth does not mention Noah Topping.\"\n    },\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Hannah Topping.\",\n      \"reason\": \"The ground truth does not mention Hannah Topping.\"\n    },\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Sir Tristram Mardon.\",\n      \"reason\": \"The ground truth does not mention Sir Tristram Mardon.\"\n    },\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Georgiana.\",\n      \"reason\": \"The ground truth does not mention Georgiana.\"\n    },\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Hatcham.\",\n      \"reason\": \"The ground truth does not mention Hatcham.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"THE DEAN sees Mr. Darbey.\",\n      \"reason\": \"This statement from the ground truth is not explicitly present in the answer. The answer only mentions interaction, not seeing.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681552,
+    "id": "7e27b226-cd1d-4f5b-8392-95d71cb4bc29",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 461,
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 123,
+      "prompt_tokens": 1019,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "total_tokens": 1480
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4617.197154,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 461,
+          "prompt_tokens": 1019,
+          "total_tokens": 1480
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 461,
+      "prompt_tokens": 1019,
+      "total_tokens": 1480
+    }
+  },
+  "request_fingerprint": "e6e4882c3c5a61a00cb2ef2ac8af00602cb77ade3de34b320f968c2765529093"
+}

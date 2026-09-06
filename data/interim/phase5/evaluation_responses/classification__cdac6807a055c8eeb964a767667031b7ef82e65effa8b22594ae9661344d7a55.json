@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\n  \"TP\": [\n    {\n      \"statement\": \"In the narrative of 'Dandy Dick', THE DEAN is known by the other name Augustin Jedd.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that THE DEAN is also known as Augustin Jedd.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+  "prompt_sha256": "cdac6807a055c8eeb964a767667031b7ef82e65effa8b22594ae9661344d7a55",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"In the narrative of 'Dandy Dick', THE DEAN is known by the other name Augustin Jedd.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that THE DEAN is also known as Augustin Jedd.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680627,
+    "id": "5fe16179-53cd-4f64-93e3-34d4523c4db1",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 81,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 107,
+      "prompt_tokens": 875,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 956
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1964.667584,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 81,
+          "prompt_tokens": 875,
+          "total_tokens": 956
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 81,
+      "prompt_tokens": 875,
+      "total_tokens": 956
+    }
+  },
+  "request_fingerprint": "ba359cd8a0d02750ba769d67107fd1e43c0e2295ebf67bb7614c726a9b62548d"
+}

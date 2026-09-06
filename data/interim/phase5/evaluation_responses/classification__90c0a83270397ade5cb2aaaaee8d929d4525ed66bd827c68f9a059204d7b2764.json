@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement is present in the ground truth but not in the answer.\",\"statement\":\"Sheba hushes Blore.\"}],\"FP\":[{\"reason\":\"This statement is not directly supported by any ground truth statement. The ground truth mentions that Sheba hushes Blore, but does not explicitly state that the link is through the family relationship.\",\"statement\":\"Blore's employment is linked to The Dean and Sheba's actions through the family relationship.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth statement 'Blore works for The Dean.'\",\"statement\":\"Blore is employed by The Dean (Augustin Jedd).\"},{\"reason\":\"This statement is directly supported by the ground truth statement 'The Dean is the father of Sheba.'\",\"statement\":\"The Dean (Augustin Jedd) is the parent of Sheba.\"}]}",
+  "prompt_sha256": "90c0a83270397ade5cb2aaaaee8d929d4525ed66bd827c68f9a059204d7b2764",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Blore is employed by The Dean (Augustin Jedd).\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Blore works for The Dean.'\"\n    },\n    {\n      \"statement\": \"The Dean (Augustin Jedd) is the parent of Sheba.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'The Dean is the father of Sheba.'\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Blore's employment is linked to The Dean and Sheba's actions through the family relationship.\",\n      \"reason\": \"This statement is not directly supported by any ground truth statement. The ground truth mentions that Sheba hushes Blore, but does not explicitly state that the link is through the family relationship.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"Sheba hushes Blore.\",\n      \"reason\": \"This statement is present in the ground truth but not in the answer.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681382,
+    "id": "668e6c69-08c2-4d00-a4f8-ef934de8918c",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 226,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 140,
+      "prompt_tokens": 908,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1134
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3161.895118,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 226,
+          "prompt_tokens": 908,
+          "total_tokens": 1134
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 226,
+      "prompt_tokens": 908,
+      "total_tokens": 1134
+    }
+  },
+  "request_fingerprint": "54e9d06fa4122c51f9a9a5a999c9367bd3c4e10a843ca18c8648600c70f215f2"
+}

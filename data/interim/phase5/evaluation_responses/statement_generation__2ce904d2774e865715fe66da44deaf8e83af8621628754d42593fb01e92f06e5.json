@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Georgiana Tidman uses the nickname George Tidd.\", \"George Tidd is Georgiana Tidman.\", \"Georgiana Tidman speaks to Sir Tristram.\"]",
+  "prompt_sha256": "2ce904d2774e865715fe66da44deaf8e83af8621628754d42593fb01e92f06e5",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"Georgiana Tidman uses the nickname George Tidd.\", \"George Tidd is Georgiana Tidman.\", \"Georgiana Tidman speaks to Sir Tristram.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681571,
+    "id": "65bc16e8-cec7-4b8a-a560-e03cb89ac7ed",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 39,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 128,
+      "prompt_tokens": 256,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 295
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1276.775677,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 39,
+          "prompt_tokens": 256,
+          "total_tokens": 295
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 39,
+      "prompt_tokens": 256,
+      "total_tokens": 295
+    }
+  },
+  "request_fingerprint": "e7b7ee72ad90d767dc0e00d6c4ad3baf969636ed9796310f4ebdc78b80b38b60"
+}

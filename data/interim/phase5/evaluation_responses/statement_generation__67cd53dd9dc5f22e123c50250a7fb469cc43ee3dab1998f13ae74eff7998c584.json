@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Georgiana Tidman introduces herself as 'George Tidd.'\",\n  \"'George Tidd' is Georgiana Tidman's racing name.\",\n  \"Georgiana Tidman asks to be known by the name 'George Tidd' at Newmarket.\",\n  \"In the context of Salome, Georgiana Tidman tells Salome and Sheba to 'make the running' as Georgiana Tidman leaves.\",\n  \"Georgiana Tidman telling Salome and Sheba to 'make the running' indicates Georgiana Tidman's horse-racing background.\",\n  \"Georgiana Tidman telling Salome and Sheba to 'make the running' indicates Georgiana Tidman's interactions with Salome and Sheba.\"\n]",
+  "prompt_sha256": "67cd53dd9dc5f22e123c50250a7fb469cc43ee3dab1998f13ae74eff7998c584",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Georgiana Tidman introduces herself as 'George Tidd.'\",\n  \"'George Tidd' is Georgiana Tidman's racing name.\",\n  \"Georgiana Tidman asks to be known by the name 'George Tidd' at Newmarket.\",\n  \"In the context of Salome, Georgiana Tidman tells Salome and Sheba to 'make the running' as Georgiana Tidman leaves.\",\n  \"Georgiana Tidman telling Salome and Sheba to 'make the running' indicates Georgiana Tidman's horse-racing background.\",\n  \"Georgiana Tidman telling Salome and Sheba to 'make the running' indicates Georgiana Tidman's interactions with Salome and Sheba.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681831,
+    "id": "f8d09e03-1967-413b-9d3e-1fdb25ba8fa0",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 147,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 169,
+      "prompt_tokens": 297,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 444
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2558.346137,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 147,
+          "prompt_tokens": 297,
+          "total_tokens": 444
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 147,
+      "prompt_tokens": 297,
+      "total_tokens": 444
+    }
+  },
+  "request_fingerprint": "35a073dececf82b52152ad32730e4fb0bf553f83b591c16ace60d292581a0577"
+}

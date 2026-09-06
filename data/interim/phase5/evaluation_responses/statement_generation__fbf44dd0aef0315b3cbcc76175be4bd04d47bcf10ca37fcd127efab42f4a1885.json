@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"SIR TRISTRAM proposes to GEORGIANA in the play.\", \"SIR TRISTRAM's proposal initiates a romantic subplot amid the comedic events.\"]",
+  "prompt_sha256": "fbf44dd0aef0315b3cbcc76175be4bd04d47bcf10ca37fcd127efab42f4a1885",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"SIR TRISTRAM proposes to GEORGIANA in the play.\", \"SIR TRISTRAM's proposal initiates a romantic subplot amid the comedic events.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681066,
+    "id": "7963d440-dc6a-4b5e-99a0-2efda4be1c75",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 36,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 114,
+      "prompt_tokens": 242,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 278
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1464.789098,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 36,
+          "prompt_tokens": 242,
+          "total_tokens": 278
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 36,
+      "prompt_tokens": 242,
+      "total_tokens": 278
+    }
+  },
+  "request_fingerprint": "c9cbb79d8618a35b1d81caa55e450436e5cff24401a2041780145957d54af27c"
+}

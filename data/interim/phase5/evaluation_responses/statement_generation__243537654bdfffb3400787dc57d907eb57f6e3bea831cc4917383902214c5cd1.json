@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"THE DEAN (Augustin Jedd) is connected to the character Gus through the horse Dandy Dick.\",\n  \"In the play, Gus is not directly mentioned in the provided evidence.\",\n  \"The connection is that THE DEAN's sister, Georgiana, secretly owns half of Dandy Dick.\",\n  \"Sir Tristram Mardon, who is a friend of THE DEAN, owns the other half of Dandy Dick.\",\n  \"The horse Dandy Dick is central to the plot.\",\n  \"THE DEAN becomes involved in a dilemma related to the horse Dandy Dick.\"\n]",
+  "prompt_sha256": "243537654bdfffb3400787dc57d907eb57f6e3bea831cc4917383902214c5cd1",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"THE DEAN (Augustin Jedd) is connected to the character Gus through the horse Dandy Dick.\",\n  \"In the play, Gus is not directly mentioned in the provided evidence.\",\n  \"The connection is that THE DEAN's sister, Georgiana, secretly owns half of Dandy Dick.\",\n  \"Sir Tristram Mardon, who is a friend of THE DEAN, owns the other half of Dandy Dick.\",\n  \"The horse Dandy Dick is central to the plot.\",\n  \"THE DEAN becomes involved in a dilemma related to the horse Dandy Dick.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681486,
+    "id": "e0883d3a-41da-4e4d-b6cc-a6dc77fe4428",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 123,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 199,
+      "prompt_tokens": 327,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 450
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2054.490499,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 123,
+          "prompt_tokens": 327,
+          "total_tokens": 450
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 123,
+      "prompt_tokens": 327,
+      "total_tokens": 450
+    }
+  },
+  "request_fingerprint": "b1e6f651c7e666a98afecd649c1bfdd56bba447aab9d6544b1c7ed5ffc6428cb"
+}

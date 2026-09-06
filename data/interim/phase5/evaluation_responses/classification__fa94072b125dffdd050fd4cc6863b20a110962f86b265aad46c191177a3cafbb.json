@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth statement 'SIR TRISTRAM proposes to GEORGIANA in the play.'\",\"statement\":\"Sir Tristram Mardon proposes to Georgiana in the play.\"},{\"reason\":\"This statement is directly supported by the ground truth statement 'SIR TRISTRAM's proposal initiates a romantic subplot amid the comedic events.'\",\"statement\":\"Sir Tristram Mardon's proposal initiates a romantic subplot amid the comedic events.\"}]}",
+  "prompt_sha256": "fa94072b125dffdd050fd4cc6863b20a110962f86b265aad46c191177a3cafbb",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Sir Tristram Mardon proposes to Georgiana in the play.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'SIR TRISTRAM proposes to GEORGIANA in the play.'\"\n    },\n    {\n      \"statement\": \"Sir Tristram Mardon's proposal initiates a romantic subplot amid the comedic events.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'SIR TRISTRAM's proposal initiates a romantic subplot amid the comedic events.'\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681068,
+    "id": "756bf51d-6584-4d69-b5fb-e227b05af507",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 137,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 134,
+      "prompt_tokens": 902,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1039
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2126.098724,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 137,
+          "prompt_tokens": 902,
+          "total_tokens": 1039
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 137,
+      "prompt_tokens": 902,
+      "total_tokens": 1039
+    }
+  },
+  "request_fingerprint": "e866afe690da0a2d1779d23434627d4f7f68813859a41c6bef30de96bd04d94f"
+}

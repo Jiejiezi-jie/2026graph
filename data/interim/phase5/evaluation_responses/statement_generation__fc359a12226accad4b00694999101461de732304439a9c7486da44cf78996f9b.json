@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"THE DEAN remembers the old half-forgotten time at Oxford.\"]",
+  "prompt_sha256": "fc359a12226accad4b00694999101461de732304439a9c7486da44cf78996f9b",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"THE DEAN remembers the old half-forgotten time at Oxford.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681249,
+    "id": "4cc6ba5b-e937-4f2f-a9f3-798c7bb4baa6",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 20,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 121,
+      "prompt_tokens": 249,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 269
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1095.769936,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 20,
+          "prompt_tokens": 249,
+          "total_tokens": 269
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 20,
+      "prompt_tokens": 249,
+      "total_tokens": 269
+    }
+  },
+  "request_fingerprint": "a955f1fa168701758289950d605827fbaf29ec7d656f3997b5018cdbad26522b"
+}

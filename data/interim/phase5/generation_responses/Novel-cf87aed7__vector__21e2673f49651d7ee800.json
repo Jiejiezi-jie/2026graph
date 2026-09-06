@@ -1,0 +1,85 @@
+{
+  "cache_version": "phase5-generation-cache-v1",
+  "context_chunk_ids": [
+    "dd_act01_c0010",
+    "dd_act02_c0017",
+    "dd_act03s02_c0001",
+    "dd_act01_c0001",
+    "dd_act01_c0011"
+  ],
+  "invalid_citations": [],
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "prompt_sha256": "21e2673f49651d7ee80098582beaec02f6c97bdce35829ab4bc70947298c44c5",
+  "query_id": "Novel-cf87aed7",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"answer\": \"SALOME reflects upon her father, the Dean, in relation to family dynamics and guidance in the play. She refers to him as 'Poor Papa' and 'Poor dear Papa' and expresses concern about his absence and anxiety over his return, indicating her reliance on him as her only parental figure.\",\n  \"citations\": [\"dd_act03s02_c0001\", \"dd_act01_c0001\"],\n  \"insufficient_evidence\": false\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680475,
+    "id": "61b0ac69-75fc-4197-a7c1-49681bb90c85",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 101,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 3686,
+      "prompt_tokens": 3686,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 3787
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2804.60289,
+        "finish_reason": "stop",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 101,
+          "prompt_tokens": 3686,
+          "total_tokens": 3787
+        }
+      }
+    ],
+    "elapsed_ms": 2804.60289,
+    "token_usage": {
+      "completion_tokens": 101,
+      "prompt_tokens": 3686,
+      "total_tokens": 3787
+    }
+  },
+  "request_fingerprint": "ed457b0931517574eeff94987f798c43a53c449df396492d60d1492eea33dde4",
+  "request_messages": [
+    {
+      "content": "You are a grounded question-answering system.\n\nAnswer the user's QUESTION using only the supplied EVIDENCE CHUNKS and, when\npresent, GRAPH CONTEXT. Do not use outside knowledge or infer unsupported facts.\nIf the supplied evidence is insufficient, set insufficient_evidence to true and\nset answer exactly to INSUFFICIENT_EVIDENCE.\n\nReturn exactly one JSON object with exactly these fields:\n{\n  \"answer\": \"concise grounded answer or INSUFFICIENT_EVIDENCE\",\n  \"citations\": [\"chunk_id\"],\n  \"insufficient_evidence\": false\n}\n\nEvery citation must be a chunk_id that appears in EVIDENCE CHUNKS. Cite only\nchunks that support the answer. Do not output Markdown, explanations, additional\nkeys, or text outside the JSON object.",
+      "role": "system"
+    },
+    {
+      "content": "QUESTION:\nWhom does SALOME reflect upon in relation to family dynamics and guidance in the play?\n\nEVIDENCE CHUNKS:\n[CHUNK_ID: dd_act01_c0010]\nSALOME. How awful it all sounds! THE DEAN. Left a widow, you would think it natural that Georgiana Tidman would have flown to her brother, himself a widower. Not at all. Maddened, I hope, by grief, she continued the career of her misguided husband, and for years, to use her own terrible words, she was \"the Daisy of the Turf.\" SHEBA. What's that? THE DEAN. I don't know, toy-child. But at length retribution came. Ill luck fell upon her--her horses, stock, everything, came to the hammer. That was my hour. \"Come to me,\" I wrote, \"my children yearn for you.\" SHEBA _and_ SALOME. [_With wry faces._] Oh! THE DEAN. \"At the Deanery of St. Marvells, with the cares of a household, and a stable which contains only a thirteen-year-old pony, you may obtain rest and forgetfulness.\" And she is coming! SHEBA _and_ SALOME. When? Oh! when? THE DEAN. She merely says, \"Soon.\" SHEBA _and_ SALOME. [_Stamping with vexation._] Ugh! THE DEAN. Salome, Sheba, you will, I fear, find her a sad broken creature, a weary fragment, a wave-tossed derelict. Let it be your patient endeavor to win back a flickering smile to the wan features of this chastened widow. _BLORE enters with a telegram._ BLORE. A telegram, sir! [_THE DEAN opens telegram._ SHEBA. No Aunt Tidman flickers a smile at me! SALOME. I wouldn't be in her shoes for something! SHEBA. Salt in her bed, Salome! SALOME. Yes, and the peg out of the rattling window! [_They grip hands earnestly._ THE DEAN. Good gracious! Bless me! Girls, your Aunt Georgiana slept at the \"Wheatsheaf,\" at Durnstone, last night, and is coming on this morning! SALOME _and_ SHEBA. To-day! THE DEAN. Blore, tell Willis to get the chaise out. [_BLORE hurries out._ THE DEAN. Salome, child, you and I will drive into Durnstone--we may be in time to bring your Aunt over. My hat, Sheba! Quick! [_The clang of the gate bell is heard in the distance._] The bell! [_Looking out of window._] No--yes--it can't be! [_Speaking in an altered voice._] Children! I wonder if this is your Aunt Georgiana? [_BLORE appears with a half-frightened, surprised look._ BLORE. Mrs. Tidman. _GEORGIANA TIDMAN enters. She is a jovial, noisy woman, very \"horsey\" in manners and appearance, and dressed in pronounced masculine style, with billy cock hat and coaching coat. The girls cling to each other; THE DEAN recoils._ GEORGIANA. Well, Gus, my boy, how are you? THE DEAN. [_Shocked._] Georgiana! GEORGIANA. [_Patting THE DEAN'S cheeks._] You're putting on too much flesh, Augustin; they should give you a ten-miler daily in a blanket. THE DEAN. [_With dignity._] My dear sister! GEORGIANA. Are these your two-year-olds? [_To SALOME._] Kiss your Aunt! [_She kisses SALOME with a good hearty smack._] [_To SHEBA._] Kiss your Aunt! [_She embraces SHEBA, then stands between the two girls and surveys them critically, touching them alternately with the end of her cane._] Lord bless you both! What names do you run under?\n\n[CHUNK_ID: dd_act02_c0017]\nSALOME _and_ SHEBA. Aunt! GEORGIANA. You bad girls! SALOME. [_Weeping._] No, Aunt, no! SHEBA. Not bad. Aunt--trustful and confiding. GEORGIANA. [_Advancing to TARVER._] How dare you encourage these two simple children to enjoy themselves! How dare you take them out--without their Aunt! Do you think _I_ can't keep a thing quiet? SHEBA. They didn't even ask Papa's permission! SALOME. Poor Papa! SHEBA. Poor, dear Papa! GEORGIANA. [_Shaking TARVER._] I'm speaking to you--Field-Marshal. TARVER. Madam, you are addressing an invalid. DARBEY. We shall be happy to receive your representative in the morning. At present we are on duty. TARVER. On heavy duty. DARBEY. Guarding the ruins of the \"Swan\" Inn. You mustn't distract our attention. GEORGIANA. Guarding the ruins of the \"Swan,\" are you? [_Calling._] Tris! Sir Tristram! [_SIR TRISTRAM appears._] Tris, I'm a feeble woman, but I hope I've a keen sense of right and wrong. Run these outsiders into the road, and let them guard their own ruins. [_SALOME and SHEBA shriek, and throw themselves at the feet of TARVER and DARBEY. clinging to their legs._ SALOME. No, no. Spare him! SHEBA. You shall not harm a hair of their heads. [_SIR TRISTRAM twists TARVER'S wig round so that it covers his face. The gate bell is heard ringing violently._ GEORGIANA, SALOME _and_ SHEBA. What's that? SALOME. It will wake Papa! SHEBA. Stop the bell! [_GEORGIANA runs to the door and opens it._ SALOME. [_To TARVER and DARBEY._] Fly! [_TARVER and DARBEY disappear through the curtains at the window._ SHEBA. [_Falling into SALOME'S arms._] We have saved them! GEORGIANA. Oh, Tris, your man from the stable! SIR TRISTRAM. Hatcham! GEORGIANA. [_Calling._] Hatcham! [_HATCHAM, carrying the basin with the bolus, runs in breathlessly--followed by BLORE._ HATCHAM. Oh, Sir Tristram! GEORGIANA _and_ SIR TRISTRAM. What is it? HATCHAM. The villain that set fire to the \"Swan,\" sir--in the hact of administering a dose to the 'orse! GEORGIANA. Nobbling our Dandy? SIR TRISTRAM. Where is the scoundrel? HATCHAM. Topping the constable's collared him, Sir--he's taken him in a cart to the lock-up! GEORGIANA _and_ SIR TRISTRAM. Oh! BLORE. [_In agony._] They've got the Dean! END OF THE SECOND ACT.\n\n[CHUNK_ID: dd_act03s02_c0001]\n_The second scene is the Morning Room at the Deanery again._ _SALOME and SHEBA are sitting there gloomily._ SALOME. Poor Papa! SHEBA. Poor dear Papa! SALOME. He must return very soon--he must! SHEBA. He must! In the meantime it is such a comfort to feel that we have no cause for self-reproach. SALOME. But the anxiety is terribly wearing. SHEBA. Nothing is so weakening, Salome. SALOME. Sheba, dear. SHEBA. [_Clinging to SALOME._] If I should pine and ultimately die of this suspense I want you to have my workbox. SALOME. [_Shaking her head and sadly turning away._] Thank you, dear, but if Papa is not home for afternoon tea you will outlive me. [_Turning towards the window as MAJOR TARVER and MR. DARBEY appear outside._ DARBEY. [_Outside._] Miss Jedd! Miss Jedd! SALOME. Sheba! Here are Gerald Tarver and Mr. Darbey! SHEBA. Oh, the presumption! Open the window and dare them to enter! [_SALOME unfastens the window._ DARBEY. [_Outside._] Thank you. Don't be shocked when you see Tarver. _TARVER and DARBEY enter, dressed for the Races, but DARBEY is supporting TARVER, who looks extremely weakly._ TARVER. Pardon this informal method of presenting ourselves. SALOME. You do well, gentlemen, to intrude upon two feeble women at a moment of sorrow. SHEBA. One step further, and I shall ask Major Tarver, who is nearest the bell, to ring for help. [_TARVER sinks into a chair._ DARBEY. [_Standing by the side of TARVER._] There now. The fact is. Miss Jedd, that Tarver is in an exceedingly critical condition. Feeling that he has incurred your displeasure he has failed even in the struggle to gain the race-course. I have taken him to Dr. Middleton and I explained that Major Tarver loved with a passion [_looking at SHEBA_] second only to my own. SALOME. [_Sitting comfortably on the settee._] Oh, we cannot listen to you, Mr. Darbey. SHEBA. Go on, sir, if you can. [_The two girls exchange looks._ DARBEY. The Doctor made a searching examination of the Major's tongue and diagnosed that, unless the Major at once proposed to the lady in question and was accepted, three weeks or a month at the seaside would be absolutely imperative. Shall I continue? SALOME. Oh, certainly. I am helpless. SHEBA. We are curious to see to what lengths you will go.\n\n[CHUNK_ID: dd_act01_c0001]\nDANDY DICK. THE FIRST ACT. _The morning-room in the Deanery of St. Marvells, with a large arched opening leading to the library on the right, and a deeply-recessed window opening out to the garden on the left. It is a bright spring morning, and an air of comfort and serenity pervades the place._ _SALOME, a tall, handsome, dark girl, of about three-and-twenty, is sitting with her elbows resting on her knees, staring wildly into vacancy. SHEBA, a fair little girl of about seventeen, wearing short petticoats, shares her despondency, and lies prostrate upon the settee._ SALOME. Oh! oh my! oh my! oh my! SHEBA. [_Sitting upright._] Oh, my gracious goodness, goodness gracious me! [_They both walk about excitedly._ SALOME. There's only one terrible word for it--it's a fix! SHEBA. It's worse than that! It's a scrape! How did you ever get led into it? SALOME. How did _we_ get led into it? Halves, Sheba, please. SHEBA. It was Major Tarver's proposal, and I believe, Salome, that it is to _you_ Major Tarver is paying attention. SALOME. The Fancy Dress Masked Ball at Durnstone is promoted by the Officers of the Hussars. I believe that the young gentleman you have impressed calls himself an officer, though he is merely a lieutenant. SHEBA. [_Indignantly._] Mr. Darbey is _certainly_ an officer--a small officer. How dare you gird at me, Salome? SALOME. Very well, then. When to-night we appear at the Durnstone Athenaeum, unknown to dear Papa, on the arms of Major Tarver and Mr. Darbey, I consider that we shall be equally wicked. Oh, how can we be so wrong? SHEBA. Well, we're not wrong yet. We're only _going_ to be wrong; that's a very different matter. SALOME. That's true. Besides, there's this to remember--we're inexperienced girls and have only dear Papa. But oh, now that the Ball is to-night, I repent, Sheba, I repent! SHEBA. I sha'n't do that till to-morrow. But oh, how I _shall_ repent to-morrow! SALOME. [_Taking an envelope from her pocket, and almost crying._] You'd repent now if you had seen the account for the fancy dresses. SHEBA. Has it come in? SALOME. Yes, the Major enclosed it to me this morning. You know, Sheba, Major Tarver promised to get the dresses made in London, so I gave him our brown paper patterns to send to the _costumier._\n\n[CHUNK_ID: dd_act01_c0011]\nTHE DEAN. [_With dignity._] My dear sister! GEORGIANA. Are these your two-year-olds? [_To SALOME._] Kiss your Aunt! [_She kisses SALOME with a good hearty smack._] [_To SHEBA._] Kiss your Aunt! [_She embraces SHEBA, then stands between the two girls and surveys them critically, touching them alternately with the end of her cane._] Lord bless you both! What names do you run under? SALOME. I--I am Salome. SHEBA. I am Sheba. GEORGIANA. [_Looking at SHEBA._] Why, little 'un, your stable companion could give you a stone and then get her nose in front! THE DEAN. [_Who has been impatiently fuming._] Georgiana, I fear these poor innocents don't follow your well-intentioned but inappropriate illustrations. GEORGIANA. Oh, we'll soon wake 'em up. Well, Augustin, my boy, it's nearly twenty years since you and I munched our corn together. THE DEAN. Our estrangement has been painfully prolonged. GEORGIANA. Since then we've both run many races, though we've never met in the same events. The world has ridden us both pretty hard at times, Gus, hasn't it? We've been punished and pulled and led down pretty often, but here we are [_tapping him sharply in the chest with her cane_] sound in the wind yet. You're doing well, Gus, and they say you're going up the hill neck-and-neck with your Bishop. I've dropped out of it--the mares don't last, Gus--and it's good and kind of you to give me a dry stable and a clean litter, and to keep me out of the shafts of a \"Shrewsbury and Talbot.\" SHEBA. [_In a whisper to SALOME._] Salome, I don't quite understand her--but I like Aunt. SALOME. So do I. But she's not my idea of a weary fragment or a chastened widow. THE DEAN. My dear Georgiana, I rejoice that you meet me in this affectionate spirit, and when--pardon me--when you have a little caught the _tone_ of the Deanery---- GEORGIANA. Oh, I'll catch it; if I don't the Deanery will a little catch _my_ tone--the same thing. [_SHEBA laughs._ THE DEAN. [_Reprovingly._] Toy-child! GEORGIANA. Trust George Tidd for setting things quite square in a palace or a puddle. THE DEAN. George Tidd! Who is George Tidd? GEORGIANA. I am George Tidd--that was my racing name. Ask after George Tidd at Newmarket--they'll tell you all about me. My colors were crimson and black diamonds. There you are. [_Producing her pocket-handkerchief, which is crimson and black._ THE DEAN. Dear me! Very interesting! Georgiana, my dear. One moment, children. [_The girls go into the Library._ THE DEAN. [_Tapping the handkerchief._] I understand distinctly from your letter that all this is finally abandoned? GEORGIANA. Worse luck! They'll never see my colors at the post again!",
+      "role": "user"
+    }
+  ],
+  "retriever": "vector",
+  "validated_output": {
+    "answer": "SALOME reflects upon her father, the Dean, in relation to family dynamics and guidance in the play. She refers to him as 'Poor Papa' and 'Poor dear Papa' and expresses concern about his absence and anxiety over his return, indicating her reliance on him as her only parental figure.",
+    "citations": [
+      "dd_act03s02_c0001",
+      "dd_act01_c0001"
+    ],
+    "insufficient_evidence": false
+  }
+}

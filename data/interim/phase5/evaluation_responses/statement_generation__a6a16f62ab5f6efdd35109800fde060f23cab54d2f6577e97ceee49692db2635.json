@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"THE DEAN is Dr. Jedd.\",\n  \"In the play, Sir Tristram addresses THE DEAN as 'Jedd'.\",\n  \"Sir Tristram says, 'Oh Jedd, Jedd--and these are what you call Principles!'\"\n]",
+  "prompt_sha256": "a6a16f62ab5f6efdd35109800fde060f23cab54d2f6577e97ceee49692db2635",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"THE DEAN is Dr. Jedd.\",\n  \"In the play, Sir Tristram addresses THE DEAN as 'Jedd'.\",\n  \"Sir Tristram says, 'Oh Jedd, Jedd--and these are what you call Principles!'\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681710,
+    "id": "114a4e28-e25b-4866-a83e-eec053ea6c77",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 58,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 146,
+      "prompt_tokens": 274,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 332
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1818.252099,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 58,
+          "prompt_tokens": 274,
+          "total_tokens": 332
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 58,
+      "prompt_tokens": 274,
+      "total_tokens": 332
+    }
+  },
+  "request_fingerprint": "ec40e395aa5cf74017bd137b9b75c892a771125e5624a5646e0a6d4b6b54cbf4"
+}

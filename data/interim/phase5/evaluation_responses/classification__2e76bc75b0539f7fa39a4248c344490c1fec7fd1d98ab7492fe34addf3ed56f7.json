@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth which states that John Clayton managed the Court Theatre during the original production of 'Dandy Dick'.\",\"statement\":\"Mr. John Clayton was a joint manager responsible for managing the Court Theatre during the original production of 'Dandy Dick'.\"},{\"reason\":\"This statement is directly supported by the ground truth which states that Arthur Cecil managed the Court Theatre during the original production of 'Dandy Dick'.\",\"statement\":\"Mr. Arthur Cecil was a joint manager responsible for managing the Court Theatre during the original production of 'Dandy Dick'.\"}]}",
+  "prompt_sha256": "2e76bc75b0539f7fa39a4248c344490c1fec7fd1d98ab7492fe34addf3ed56f7",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Mr. John Clayton was a joint manager responsible for managing the Court Theatre during the original production of 'Dandy Dick'.\",\n      \"reason\": \"This statement is directly supported by the ground truth which states that John Clayton managed the Court Theatre during the original production of 'Dandy Dick'.\"\n    },\n    {\n      \"statement\": \"Mr. Arthur Cecil was a joint manager responsible for managing the Court Theatre during the original production of 'Dandy Dick'.\",\n      \"reason\": \"This statement is directly supported by the ground truth which states that Arthur Cecil managed the Court Theatre during the original production of 'Dandy Dick'.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681297,
+    "id": "3135ca45-ba86-4d54-a079-d18b6c33fe3a",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 155,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 151,
+      "prompt_tokens": 919,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1074
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2047.721206,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 155,
+          "prompt_tokens": 919,
+          "total_tokens": 1074
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 155,
+      "prompt_tokens": 919,
+      "total_tokens": 1074
+    }
+  },
+  "request_fingerprint": "68da0389eb75616594b65cd1a25e0842e047aac98414ca80ac106006f9d75af8"
+}

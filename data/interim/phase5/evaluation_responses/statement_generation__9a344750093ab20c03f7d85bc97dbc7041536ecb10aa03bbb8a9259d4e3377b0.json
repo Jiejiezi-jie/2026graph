@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Salome reflects upon her father, the Dean (Augustin Jedd), in relation to family dynamics and guidance.\",\n  \"Salome reflects upon her sister Sheba in relation to family dynamics and guidance.\",\n  \"Salome expresses concern for her father's well-being.\",\n  \"Salome relies on her sister for mutual support.\"\n]",
+  "prompt_sha256": "9a344750093ab20c03f7d85bc97dbc7041536ecb10aa03bbb8a9259d4e3377b0",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\n  \"Salome reflects upon her father, the Dean (Augustin Jedd), in relation to family dynamics and guidance.\",\n  \"Salome reflects upon her sister Sheba in relation to family dynamics and guidance.\",\n  \"Salome expresses concern for her father's well-being.\",\n  \"Salome relies on her sister for mutual support.\"\n]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681680,
+    "id": "3fc522f3-b4cb-4bd3-b783-2e8a42b3295d",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 74,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 144,
+      "prompt_tokens": 272,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 346
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2082.56808,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 74,
+          "prompt_tokens": 272,
+          "total_tokens": 346
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 74,
+      "prompt_tokens": 272,
+      "total_tokens": 346
+    }
+  },
+  "request_fingerprint": "a8eeb1d21d565ad5de9dce1b7e9ee4a4f64b53dac630214feb4b37449a366b1b"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Hannah is the former Deanery cook.\", \"Hannah is now the constable's wife.\", \"Hannah is located at St. Marvells during the events of the play.\"]",
+  "prompt_sha256": "feaa30c9d7332d45006f3786b1afec2c54d9e50e4320d65ee1bdd6fe0c26824f",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Hannah is the former Deanery cook.\", \"Hannah is now the constable's wife.\", \"Hannah is located at St. Marvells during the events of the play.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681046,
+    "id": "a9b3124d-5bb8-41f1-b989-5c9f1299a64a",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 110,
+      "prompt_tokens": 238,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 278
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1624.695919,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 40,
+          "prompt_tokens": 238,
+          "total_tokens": 278
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 238,
+      "total_tokens": 278
+    }
+  },
+  "request_fingerprint": "6335cd0657fe777a539545777e8b42f84a9cc6cbf5fbf5b2ad1bf48f010255af"
+}

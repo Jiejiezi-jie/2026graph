@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which states that Hannah provides meals for The Dean during his time in custody. The answer adds the detail that Hannah's former name is Hannah Evans, but the core fact is the same.\",\"statement\":\"Hannah Topping (formerly Hannah Evans) provides meals for The Dean during his time in custody.\"}]}",
+  "prompt_sha256": "30a79595270e121ea0a3139636fd50a1f3db03394c64b4a15c982c67afe845ac",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Hannah Topping (formerly Hannah Evans) provides meals for The Dean during his time in custody.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that Hannah provides meals for The Dean during his time in custody. The answer adds the detail that Hannah's former name is Hannah Evans, but the core fact is the same.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681350,
+    "id": "4912a24c-fbed-4b82-9d64-5aef61891820",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 100,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 91,
+      "prompt_tokens": 859,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 959
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2260.799156,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 100,
+          "prompt_tokens": 859,
+          "total_tokens": 959
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 100,
+      "prompt_tokens": 859,
+      "total_tokens": 959
+    }
+  },
+  "request_fingerprint": "fd570b974521b34bbae0e7b4a922bb506b8840d47df27c581c9e06614f2542aa"
+}

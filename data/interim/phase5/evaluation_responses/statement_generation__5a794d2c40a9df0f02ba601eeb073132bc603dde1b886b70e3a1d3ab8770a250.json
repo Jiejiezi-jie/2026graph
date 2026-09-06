@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Mr. Darbey is an officer of the Hussars.\",\n  \"Mr. Darbey's status as an officer of the Hussars brings Mr. Darbey into contact with The Dean and Sheba.\",\n  \"The Dean sees Mr. Darbey when Mr. Darbey and Major Tarver visit the Deanery to inquire about The Dean's cold.\",\n  \"Sheba speaks to Mr. Darbey during the visit when Mr. Darbey and Major Tarver visit the Deanery to inquire about The Dean's cold.\",\n  \"Sheba speaks to Mr. Darbey later when Mr. Darbey proposes to Sheba.\"\n]",
+  "prompt_sha256": "5a794d2c40a9df0f02ba601eeb073132bc603dde1b886b70e3a1d3ab8770a250",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Mr. Darbey is an officer of the Hussars.\",\n  \"Mr. Darbey's status as an officer of the Hussars brings Mr. Darbey into contact with The Dean and Sheba.\",\n  \"The Dean sees Mr. Darbey when Mr. Darbey and Major Tarver visit the Deanery to inquire about The Dean's cold.\",\n  \"Sheba speaks to Mr. Darbey during the visit when Mr. Darbey and Major Tarver visit the Deanery to inquire about The Dean's cold.\",\n  \"Sheba speaks to Mr. Darbey later when Mr. Darbey proposes to Sheba.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681602,
+    "id": "c9f7eca6-8787-465b-8347-4cba785bae91",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 139,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 182,
+      "prompt_tokens": 310,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 449
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2120.526095,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 139,
+          "prompt_tokens": 310,
+          "total_tokens": 449
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 139,
+      "prompt_tokens": 310,
+      "total_tokens": 449
+    }
+  },
+  "request_fingerprint": "770ca2366cfdfec35ba9b533b5963595315dfbed70c49d18b3fa3ce9d2b911ba"
+}

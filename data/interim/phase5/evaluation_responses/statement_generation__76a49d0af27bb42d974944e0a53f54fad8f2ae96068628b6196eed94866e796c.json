@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"During social calls at the Deanery, THE DEAN interacts with Major Tarver.\", \"During social calls at the Deanery, THE DEAN interacts with Mr. Darbey.\", \"During social calls at the Deanery, THE DEAN interacts with Salome.\", \"During social calls at the Deanery, THE DEAN interacts with Sheba.\", \"During social calls at the Deanery, THE DEAN interacts with Noah Topping.\", \"During social calls at the Deanery, THE DEAN interacts with Hannah Topping.\", \"During social calls at the Deanery, THE DEAN interacts with Sir Tristram Mardon.\", \"During social calls at the Deanery, THE DEAN interacts with Georgiana.\", \"During social calls at the Deanery, THE DEAN interacts with Hatcham.\"]",
+  "prompt_sha256": "76a49d0af27bb42d974944e0a53f54fad8f2ae96068628b6196eed94866e796c",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"During social calls at the Deanery, THE DEAN interacts with Major Tarver.\", \"During social calls at the Deanery, THE DEAN interacts with Mr. Darbey.\", \"During social calls at the Deanery, THE DEAN interacts with Salome.\", \"During social calls at the Deanery, THE DEAN interacts with Sheba.\", \"During social calls at the Deanery, THE DEAN interacts with Noah Topping.\", \"During social calls at the Deanery, THE DEAN interacts with Hannah Topping.\", \"During social calls at the Deanery, THE DEAN interacts with Sir Tristram Mardon.\", \"During social calls at the Deanery, THE DEAN interacts with Georgiana.\", \"During social calls at the Deanery, THE DEAN interacts with Hatcham.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681549,
+    "id": "b83bfd60-efbf-42cc-a244-5f9f6e36d401",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 169,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 19,
+      "prompt_tokens": 275,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "total_tokens": 444
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2094.430288,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 169,
+          "prompt_tokens": 275,
+          "total_tokens": 444
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 169,
+      "prompt_tokens": 275,
+      "total_tokens": 444
+    }
+  },
+  "request_fingerprint": "d448534570e4828eacc8c9877061702d82de8971e6f2fe8ec988fc8548fcd5f9"
+}

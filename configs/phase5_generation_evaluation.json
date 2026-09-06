@@ -1,0 +1,87 @@
+{
+  "schema_version": "phase5-v1",
+  "random_seed": 42,
+  "inputs": {
+    "train_questions": {
+      "path": "data/processed/phase1/train_questions.jsonl",
+      "sha256": "84b25f68b6658c11c92af381f684e14efb09444d28e34475671bcf468c697332",
+      "expected_count": 62
+    },
+    "chunks": {
+      "path": "data/processed/phase2/chunks.jsonl",
+      "sha256": "a081ba0f863a37e71fae17a8c7b42f2aa46019e8d62ca1d98e818e4988811427",
+      "expected_count": 62
+    },
+    "retrieval_results": {
+      "path": "data/processed/phase4/train_retrieval_results.jsonl",
+      "sha256": "71b69cb61a302129d0891431646f93e40620b8c33337cd2f2ccda0845be231f1",
+      "expected_count": 186
+    }
+  },
+  "retrievers": [
+    "vector",
+    "neighborhood",
+    "path"
+  ],
+  "max_context_chunks": 5,
+  "expected_effective_generation_calls": 176,
+  "generation": {
+    "system_prompt": "prompts/phase5_answer_generation.txt",
+    "temperature": 0,
+    "thinking": "disabled",
+    "max_retries": 2,
+    "max_tokens": 512,
+    "timeout_seconds": 180,
+    "retry_backoff_seconds": 2,
+    "response_format": "json_object"
+  },
+  "evaluation": {
+    "answer_correctness_implementation": "graphrag_bench_official",
+    "benchmark_directory": "data/external/GraphRAG-Benchmark",
+    "factuality_weight": 0.75,
+    "semantic_weight": 0.25,
+    "factuality_beta": 1.0,
+    "evidence_token_recall_threshold": 0.8,
+    "judge_max_retries": 2,
+    "embedding": {
+      "model_name": "BAAI/bge-small-en-v1.5",
+      "model_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+      "local_model_path": "/home/user/wangyuhan/models/bge-small-en-v1.5",
+      "weights_file": "model.safetensors",
+      "weights_sha256": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad",
+      "query_prefix": "Represent this sentence for searching relevant passages: ",
+      "document_prefix": "",
+      "pooling": "cls",
+      "normalize": true,
+      "max_length": 512,
+      "batch_size": 32,
+      "device": "cpu"
+    }
+  },
+  "labeling": {
+    "answer_correctness_threshold": 0.75,
+    "evidence_coverage_threshold": 0.5,
+    "difficulty_order": {
+      "vector": 0,
+      "neighborhood": 1,
+      "path": 2
+    },
+    "minimum_class_count_warning": 5,
+    "minimum_class_rate_warning": 0.1
+  },
+  "cache": {
+    "generation_responses": "data/interim/phase5/generation_responses",
+    "evaluation_responses": "data/interim/phase5/evaluation_responses",
+    "generation_run_audit": "data/interim/phase5/generation_run_audit.json",
+    "evaluation_run_audit": "data/interim/phase5/evaluation_run_audit.json"
+  },
+  "outputs": {
+    "directory": "data/processed/phase5",
+    "train_answers": "train_answers.jsonl",
+    "method_scores": "train_method_scores.jsonl",
+    "router_labels": "train_router_labels.jsonl",
+    "method_summary": "method_summary.json",
+    "manifest": "phase5_manifest.json",
+    "report": "reports/phase5_generation_and_labels.md"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"SHEBA won money at The Races.\", \"SHEBA's involvement in the excitement of the St. Marvells races was highlighted.\"]",
+  "prompt_sha256": "ff6832084ea4e4b5e2613c4943cb96dc46bf293d3753b51df0cb7bcd7ea99eca",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"SHEBA won money at The Races.\", \"SHEBA's involvement in the excitement of the St. Marvells races was highlighted.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681742,
+    "id": "913fdf6c-bfbf-4822-9e73-b87299658dd8",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 32,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 116,
+      "prompt_tokens": 244,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 276
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1353.15756,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 32,
+          "prompt_tokens": 244,
+          "total_tokens": 276
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 32,
+      "prompt_tokens": 244,
+      "total_tokens": 276
+    }
+  },
+  "request_fingerprint": "bd99803cb640065a725e8c57ad5e01cb1204e62aed23d4b74cfabda9011af957"
+}

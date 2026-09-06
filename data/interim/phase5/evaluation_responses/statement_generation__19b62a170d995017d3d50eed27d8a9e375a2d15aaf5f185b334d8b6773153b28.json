@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Nugent Darbey expresses extreme devotion to SHEBA during the unfolding events.\", \"Nugent Darbey would die for SHEBA.\"]",
+  "prompt_sha256": "19b62a170d995017d3d50eed27d8a9e375a2d15aaf5f185b334d8b6773153b28",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"Nugent Darbey expresses extreme devotion to SHEBA during the unfolding events.\", \"Nugent Darbey would die for SHEBA.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681695,
+    "id": "80800115-a3e5-4b04-b753-775d2609c9c2",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 36,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 104,
+      "prompt_tokens": 232,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 268
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1432.531153,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 36,
+          "prompt_tokens": 232,
+          "total_tokens": 268
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 36,
+      "prompt_tokens": 232,
+      "total_tokens": 268
+    }
+  },
+  "request_fingerprint": "f0d567af6e5024b9e31cc535385fdbd5bf8d5bc2f1295722c39b3b4b3eb77c52"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth which states that the original production was staged at Court Theatre.\",\"statement\":\"The original production of 'Dandy Dick' was staged at the Court Theatre.\"},{\"reason\":\"This statement is directly supported by the ground truth which states that the staging at Court Theatre marked the debut performance.\",\"statement\":\"The original production of 'Dandy Dick' marked its debut performance at the Court Theatre.\"}]}",
+  "prompt_sha256": "ce2cb03bc6853fdab74372b5524af76375452d558a601d6636d88fbf056cada1",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"The original production of 'Dandy Dick' was staged at the Court Theatre.\",\n      \"reason\": \"This statement is directly supported by the ground truth which states that the original production was staged at Court Theatre.\"\n    },\n    {\n      \"statement\": \"The original production of 'Dandy Dick' marked its debut performance at the Court Theatre.\",\n      \"reason\": \"This statement is directly supported by the ground truth which states that the staging at Court Theatre marked the debut performance.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681780,
+    "id": "8e0af3a2-88a3-4d01-b339-fc1083bfd107",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 124,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 131,
+      "prompt_tokens": 899,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1023
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2591.81753,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 124,
+          "prompt_tokens": 899,
+          "total_tokens": 1023
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 124,
+      "prompt_tokens": 899,
+      "total_tokens": 1023
+    }
+  },
+  "request_fingerprint": "97a823e8863ff7f27a341e4733c3903a3d26880218a1902adc4487e950d88d02"
+}

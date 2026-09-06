@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Salome and Sheba are sisters.\",\n  \"Salome and Sheba plan to attend a fancy dress masked ball with Major Tarver and Mr. Darbey.\",\n  \"Salome and Sheba plan to attend the fancy dress masked ball without their father's knowledge.\",\n  \"Major Tarver is romantically interested in Salome.\",\n  \"Major Tarver arranged for the costumes of Salome and Sheba to be made in London.\"\n]",
+  "prompt_sha256": "784682caebd9ead5815b75e3c1aedb7fb7840a13cbd4095475c82781b5fc1b19",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Salome and Sheba are sisters.\",\n  \"Salome and Sheba plan to attend a fancy dress masked ball with Major Tarver and Mr. Darbey.\",\n  \"Salome and Sheba plan to attend the fancy dress masked ball without their father's knowledge.\",\n  \"Major Tarver is romantically interested in Salome.\",\n  \"Major Tarver arranged for the costumes of Salome and Sheba to be made in London.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681730,
+    "id": "670432de-16e6-4958-b51d-6401b76f320c",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 93,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 164,
+      "prompt_tokens": 292,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 385
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1719.17079,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 93,
+          "prompt_tokens": 292,
+          "total_tokens": 385
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 93,
+      "prompt_tokens": 292,
+      "total_tokens": 385
+    }
+  },
+  "request_fingerprint": "4eb2ff61fed4c09d40f268c2b285130357c740f61f07986e92ac6a5f3b26dd8c"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"THE DEAN subscribed to the Restoration Fund.\"]",
+  "prompt_sha256": "d4a69715bc0354e2e634827eb8478e9d1678cc81352516ce93536bcb1eb66d55",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"THE DEAN subscribed to the Restoration Fund.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681506,
+    "id": "9818f8d4-1702-40c5-8eca-7143557c7df4",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 100,
+      "prompt_tokens": 228,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 239
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1411.464432,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 11,
+          "prompt_tokens": 228,
+          "total_tokens": 239
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 228,
+      "total_tokens": 239
+    }
+  },
+  "request_fingerprint": "fcb6999b5b721af62ab423688ecba64954a50d751880b7471eb82d86b222d588"
+}

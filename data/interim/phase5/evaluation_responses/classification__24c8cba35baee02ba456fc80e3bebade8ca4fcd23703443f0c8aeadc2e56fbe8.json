@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which states that Ada Rehan performed in Dandy Dick and that she took on a notable role in an American production of Dandy Dick.\",\"statement\":\"Ada Rehan performed in \\\"Dandy Dick\\\" in an American production.\"},{\"reason\":\"This statement is supported by the ground truth, which mentions that Ada Rehan took on a notable role in an American production of Dandy Dick. The specific role of Mrs. John Wood is not contradicted and is a reasonable elaboration of the notable role.\",\"statement\":\"Ada Rehan took on Mrs. John Wood's part in \\\"Dandy Dick\\\".\"}]}",
+  "prompt_sha256": "24c8cba35baee02ba456fc80e3bebade8ca4fcd23703443f0c8aeadc2e56fbe8",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Ada Rehan performed in \\\"Dandy Dick\\\" in an American production.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that Ada Rehan performed in Dandy Dick and that she took on a notable role in an American production of Dandy Dick.\"\n    },\n    {\n      \"statement\": \"Ada Rehan took on Mrs. John Wood's part in \\\"Dandy Dick\\\".\",\n      \"reason\": \"This statement is supported by the ground truth, which mentions that Ada Rehan took on a notable role in an American production of Dandy Dick. The specific role of Mrs. John Wood is not contradicted and is a reasonable elaboration of the notable role.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681317,
+    "id": "effcd6b6-8e13-4c14-a729-58a60b94c2d5",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 169,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 124,
+      "prompt_tokens": 892,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1061
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2469.408358,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 169,
+          "prompt_tokens": 892,
+          "total_tokens": 1061
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 169,
+      "prompt_tokens": 892,
+      "total_tokens": 1061
+    }
+  },
+  "request_fingerprint": "ad9d82603c8e050700ce3efd3e55a2c6dc65b565bb660c1b0977b72505e1154a"
+}

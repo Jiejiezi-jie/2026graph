@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Georgiana is seen accompanying Sir Tristram during the story's key scenes.\", \"The key scenes particularly regard the management of Dandy Dick.\"]",
+  "prompt_sha256": "182c6b78605a4bf615f9edb0c7c770545b1660939ba2f4c24e32e459256a5450",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Georgiana is seen accompanying Sir Tristram during the story's key scenes.\", \"The key scenes particularly regard the management of Dandy Dick.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681755,
+    "id": "14ebe76c-8537-44d0-874e-bfbbaf1d5161",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 31,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 118,
+      "prompt_tokens": 246,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 277
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1321.559375,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 31,
+          "prompt_tokens": 246,
+          "total_tokens": 277
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 31,
+      "prompt_tokens": 246,
+      "total_tokens": 277
+    }
+  },
+  "request_fingerprint": "d863617ea1a60f67196e2a6b36434528d3f4c2ea78795f722b12e7aebec17d38"
+}

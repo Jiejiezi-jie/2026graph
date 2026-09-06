@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"John Clayton performed as an actor in a leading role in the play \\\"Dandy Dick\\\".\"]",
+  "prompt_sha256": "bb207e9cb2cb5aac6fb87a2a641d6cd84376dbb627951c05c3a416c52e93a4d8",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"John Clayton performed as an actor in a leading role in the play \\\"Dandy Dick\\\".\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680635,
+    "id": "ec80df63-c70d-4d2e-a8fc-99b1c25d8dd1",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 21,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 113,
+      "prompt_tokens": 241,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 262
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1115.018071,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 21,
+          "prompt_tokens": 241,
+          "total_tokens": 262
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 21,
+      "prompt_tokens": 241,
+      "total_tokens": 262
+    }
+  },
+  "request_fingerprint": "0086132b4c82dee1863eb36caeaf6abd20651fe9a21a2c34a5925bd9b92a22ee"
+}

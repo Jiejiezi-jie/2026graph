@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Noah Topping and Hannah are married.\"]",
+  "prompt_sha256": "acf578ee18e5023adb59cdd371d5c1f5e71d00e6559ad485ae2ee9cc7934f5eb",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Noah Topping and Hannah are married.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681076,
+    "id": "06fbf7ed-2dff-4bfe-bacf-448e14d391f9",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 103,
+      "prompt_tokens": 231,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 242
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1655.194864,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 11,
+          "prompt_tokens": 231,
+          "total_tokens": 242
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 231,
+      "total_tokens": 242
+    }
+  },
+  "request_fingerprint": "4d8c9f10e0321526217212021cd48a9f538e443141f5403e5f271a4a43b2db87"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"NOAH TOPPING and HANNAH are husband and wife.\", \"Noah is a police constable.\", \"Hannah is Noah's newly married wife.\", \"Noah and Hannah have been wed for eight weeks.\"]",
+  "prompt_sha256": "235415d3878188acf29058f8d8bbab53a85dddc585ec0c9ed0e84c29420ca639",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"NOAH TOPPING and HANNAH are husband and wife.\", \"Noah is a police constable.\", \"Hannah is Noah's newly married wife.\", \"Noah and Hannah have been wed for eight weeks.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681070,
+    "id": "dc34efc1-d89a-41bc-9913-77356ba8072b",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 52,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 133,
+      "prompt_tokens": 261,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 313
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1506.002169,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 52,
+          "prompt_tokens": 261,
+          "total_tokens": 313
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 52,
+      "prompt_tokens": 261,
+      "total_tokens": 313
+    }
+  },
+  "request_fingerprint": "34779c207c7eda952c5ad8ecdf04b90f609a6f8aec099eb509b8bafffa0f51ef"
+}

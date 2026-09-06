@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which states that the play 'Dandy Dick' was written by Arthur W. Pinero.\",\"statement\":\"Arthur W. Pinero was the author of the play 'Dandy Dick'.\"}]}",
+  "prompt_sha256": "49d02182eee89bb875516c083e4e4cffd6635ef2e9650c3607e5e62932bfb84f",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Arthur W. Pinero was the author of the play 'Dandy Dick'.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that the play 'Dandy Dick' was written by Arthur W. Pinero.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681041,
+    "id": "573f0bc1-e004-49c6-9fab-9df716f91dfe",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 79,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 90,
+      "prompt_tokens": 858,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 937
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1784.207984,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 79,
+          "prompt_tokens": 858,
+          "total_tokens": 937
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 79,
+      "prompt_tokens": 858,
+      "total_tokens": 937
+    }
+  },
+  "request_fingerprint": "578fe6521c351b506b2250f6b00b44f8e7be911eeb00fc2027797add57c76684"
+}

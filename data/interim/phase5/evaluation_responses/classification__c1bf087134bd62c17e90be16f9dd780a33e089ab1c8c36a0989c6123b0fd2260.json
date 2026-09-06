@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This relationship is stated in the ground truth but not mentioned in the answer.\",\"statement\":\"The Dean is the father of Sheba.\"}],\"FP\":[{\"reason\":\"This statement asserts relevance but is not directly supported by the ground truth, which only states facts without explicitly linking the connection to the actions involving Sheba and Major Tarver.\",\"statement\":\"Blore's professional connection to the Dean is relevant to the actions involving Sheba and Major Tarver.\"},{\"reason\":\"The ground truth does not mention any secrets or negotiation; this is an unsupported claim.\",\"statement\":\"Blore later uses Blore's knowledge of the Dean's secrets to negotiate remaining in service.\"},{\"reason\":\"The ground truth does not mention any offering or Bonny Betsy; this is not supported.\",\"statement\":\"The evidence shows Blore admitting to the Dean that Blore gave the Dean's 'cheerful little offering' to Bonny Betsy.\"},{\"reason\":\"The ground truth does not mention any threats or secrets; this is not supported.\",\"statement\":\"The evidence shows Blore threatening to reveal the Dean's secrets if dismissed.\"},{\"reason\":\"The ground truth does not mention any threats, secrets, or deceptions; this is not supported.\",\"statement\":\"Blore's threat to reveal the Dean's secrets ties into the broader deceptions involving Sheba and Major Tarver.\"}],\"TP\":[{\"reason\":\"This is directly supported by the ground truth statement 'Blore works for The Dean.'\",\"statement\":\"Blore is employed by the Dean (Augustin Jedd) at the Deanery.\"},{\"reason\":\"The ground truth states 'Blore is told to show Major Tarver,' which supports that Blore's action of showing Major Tarver is done as part of his service to the Dean.\",\"statement\":\"Blore's actions, such as showing in Major Tarver and Mr. Darbey, are done in Blore's capacity as the Dean's servant.\"}]}",
+  "prompt_sha256": "c1bf087134bd62c17e90be16f9dd780a33e089ab1c8c36a0989c6123b0fd2260",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Blore is employed by the Dean (Augustin Jedd) at the Deanery.\",\n      \"reason\": \"This is directly supported by the ground truth statement 'Blore works for The Dean.'\"\n    },\n    {\n      \"statement\": \"Blore's actions, such as showing in Major Tarver and Mr. Darbey, are done in Blore's capacity as the Dean's servant.\",\n      \"reason\": \"The ground truth states 'Blore is told to show Major Tarver,' which supports that Blore's action of showing Major Tarver is done as part of his service to the Dean.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Blore's professional connection to the Dean is relevant to the actions involving Sheba and Major Tarver.\",\n      \"reason\": \"This statement asserts relevance but is not directly supported by the ground truth, which only states facts without explicitly linking the connection to the actions involving Sheba and Major Tarver.\"\n    },\n    {\n      \"statement\": \"Blore later uses Blore's knowledge of the Dean's secrets to negotiate remaining in service.\",\n      \"reason\": \"The ground truth does not mention any secrets or negotiation; this is an unsupported claim.\"\n    },\n    {\n      \"statement\": \"The evidence shows Blore admitting to the Dean that Blore gave the Dean's 'cheerful little offering' to Bonny Betsy.\",\n      \"reason\": \"The ground truth does not mention any offering or Bonny Betsy; this is not supported.\"\n    },\n    {\n      \"statement\": \"The evidence shows Blore threatening to reveal the Dean's secrets if dismissed.\",\n      \"reason\": \"The ground truth does not mention any threats or secrets; this is not supported.\"\n    },\n    {\n      \"statement\": \"Blore's threat to reveal the Dean's secrets ties into the broader deceptions involving Sheba and Major Tarver.\",\n      \"reason\": \"The ground truth does not mention any threats, secrets, or deceptions; this is not supported.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"The Dean is the father of Sheba.\",\n      \"reason\": \"This relationship is stated in the ground truth but not mentioned in the answer.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681092,
+    "id": "bee9fc08-4b15-4ad7-a248-a7c91ba3b1ec",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 480,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 259,
+      "prompt_tokens": 1027,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1507
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 5854.867224,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 480,
+          "prompt_tokens": 1027,
+          "total_tokens": 1507
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 480,
+      "prompt_tokens": 1027,
+      "total_tokens": 1507
+    }
+  },
+  "request_fingerprint": "cbc3f6b533526c60413799530b134fe59bcef92cfeb4db4e39c2478286cad04f"
+}

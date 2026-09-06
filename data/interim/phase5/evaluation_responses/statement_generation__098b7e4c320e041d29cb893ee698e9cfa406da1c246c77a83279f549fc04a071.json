@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Hannah Topping is the character that recognizes The Dean during The Dean's imprisonment in the police station.\", \"Hannah Topping identifies The Dean despite The Dean's disguise.\"]",
+  "prompt_sha256": "098b7e4c320e041d29cb893ee698e9cfa406da1c246c77a83279f549fc04a071",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Hannah Topping is the character that recognizes The Dean during The Dean's imprisonment in the police station.\", \"Hannah Topping identifies The Dean despite The Dean's disguise.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680617,
+    "id": "776b9211-d74c-4324-b3ab-0fe730ec80a9",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 37,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 106,
+      "prompt_tokens": 234,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 271
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1219.21803,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 37,
+          "prompt_tokens": 234,
+          "total_tokens": 271
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 37,
+      "prompt_tokens": 234,
+      "total_tokens": 271
+    }
+  },
+  "request_fingerprint": "f70c94c532aa70092d46ca739fd871e5c59bef238dc51d75a6686aa97ce4f919"
+}

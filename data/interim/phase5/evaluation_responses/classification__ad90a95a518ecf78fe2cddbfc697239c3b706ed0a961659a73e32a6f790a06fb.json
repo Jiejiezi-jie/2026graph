@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which states the same action.\",\"statement\":\"THE DEAN places the medicine chest on the table.\"}]}",
+  "prompt_sha256": "ad90a95a518ecf78fe2cddbfc697239c3b706ed0a961659a73e32a6f790a06fb",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"THE DEAN places the medicine chest on the table.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states the same action.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681320,
+    "id": "1f543a7f-de3c-47ab-999a-f85076505583",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 60,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 90,
+      "prompt_tokens": 858,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 918
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1937.947742,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 60,
+          "prompt_tokens": 858,
+          "total_tokens": 918
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 60,
+      "prompt_tokens": 858,
+      "total_tokens": 918
+    }
+  },
+  "request_fingerprint": "20547132590824bbaca54be16c6199fcb432ff5eae88916af5872c91e08edf4e"
+}

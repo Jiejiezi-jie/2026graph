@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Salome reflects upon her father, the Dean (Augustin Jedd), in relation to family dynamics and guidance.\",\n  \"Salome reflects upon her sister Sheba in relation to family dynamics and guidance.\",\n  \"Salome expresses concern for 'poor Papa'.\",\n  \"Salome relies on her sister Sheba.\",\n  \"Salome and her sister Sheba share anxiety.\",\n  \"Salome and her sister Sheba provide mutual support to each other.\"\n]",
+  "prompt_sha256": "58ca32926525d6f3c3892d3f96e05b7184fdbd51c81e1dbaa5550314711ac931",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Salome reflects upon her father, the Dean (Augustin Jedd), in relation to family dynamics and guidance.\",\n  \"Salome reflects upon her sister Sheba in relation to family dynamics and guidance.\",\n  \"Salome expresses concern for 'poor Papa'.\",\n  \"Salome relies on her sister Sheba.\",\n  \"Salome and her sister Sheba share anxiety.\",\n  \"Salome and her sister Sheba provide mutual support to each other.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681673,
+    "id": "3f793843-57cd-42c5-8365-876e7275f276",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 96,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 150,
+      "prompt_tokens": 278,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 374
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2139.881553,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 96,
+          "prompt_tokens": 278,
+          "total_tokens": 374
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 96,
+      "prompt_tokens": 278,
+      "total_tokens": 374
+    }
+  },
+  "request_fingerprint": "6e2f09fa5dfbf3d7e6b71eae6f6d1ad73cbc7ade4f12afc7ab898e068b9fefe5"
+}

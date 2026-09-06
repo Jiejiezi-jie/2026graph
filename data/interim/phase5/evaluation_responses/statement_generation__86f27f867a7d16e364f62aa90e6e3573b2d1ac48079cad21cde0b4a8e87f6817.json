@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"The Dean is the father of Sheba.\"]",
+  "prompt_sha256": "86f27f867a7d16e364f62aa90e6e3573b2d1ac48079cad21cde0b4a8e87f6817",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"The Dean is the father of Sheba.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681566,
+    "id": "aee9434f-86a1-4286-90d9-b07e0b7a2951",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 112,
+      "prompt_tokens": 240,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 251
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1179.471258,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 11,
+          "prompt_tokens": 240,
+          "total_tokens": 251
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 240,
+      "total_tokens": 251
+    }
+  },
+  "request_fingerprint": "b37b5520b9130a7b2bea3cc3e8d29b0099517941e2d634b63fac67ee8bb45844"
+}

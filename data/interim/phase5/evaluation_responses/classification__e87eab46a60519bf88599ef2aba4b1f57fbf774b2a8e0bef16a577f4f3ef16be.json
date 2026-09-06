@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"This statement is not directly supported by the ground truth, which only mentions that Salome is with Major Tarver and that Salome is Sheba's sister. No mention of a fancy dress masked ball or Mr. Darbey.\",\"statement\":\"Salome and Sheba plan to attend a fancy dress masked ball with Major Tarver and Mr. Darbey.\"},{\"reason\":\"This statement is not directly supported by the ground truth, which does not mention any plans to attend a ball or secrecy from their father.\",\"statement\":\"Salome and Sheba plan to attend the fancy dress masked ball without their father's knowledge.\"},{\"reason\":\"This statement is not directly supported by the ground truth, which does not mention costumes or London.\",\"statement\":\"Major Tarver arranged for the costumes of Salome and Sheba to be made in London.\"}],\"TP\":[{\"reason\":\"This is directly supported by the ground truth statement 'SALOME is the sister of SHEBA.'\",\"statement\":\"Salome and Sheba are sisters.\"},{\"reason\":\"This is inferred from the ground truth statement 'SALOME is with MAJOR TARVER,' which suggests a romantic connection.\",\"statement\":\"Major Tarver is romantically interested in Salome.\"}]}",
+  "prompt_sha256": "e87eab46a60519bf88599ef2aba4b1f57fbf774b2a8e0bef16a577f4f3ef16be",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Salome and Sheba are sisters.\",\n      \"reason\": \"This is directly supported by the ground truth statement 'SALOME is the sister of SHEBA.'\"\n    },\n    {\n      \"statement\": \"Major Tarver is romantically interested in Salome.\",\n      \"reason\": \"This is inferred from the ground truth statement 'SALOME is with MAJOR TARVER,' which suggests a romantic connection.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Salome and Sheba plan to attend a fancy dress masked ball with Major Tarver and Mr. Darbey.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which only mentions that Salome is with Major Tarver and that Salome is Sheba's sister. No mention of a fancy dress masked ball or Mr. Darbey.\"\n    },\n    {\n      \"statement\": \"Salome and Sheba plan to attend the fancy dress masked ball without their father's knowledge.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which does not mention any plans to attend a ball or secrecy from their father.\"\n    },\n    {\n      \"statement\": \"Major Tarver arranged for the costumes of Salome and Sheba to be made in London.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which does not mention costumes or London.\"\n    }\n  ],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681732,
+    "id": "5dd4c6d0-0ce1-40a1-9069-f36e40e9c5fd",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 313,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 180,
+      "prompt_tokens": 948,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1261
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3878.324937,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 313,
+          "prompt_tokens": 948,
+          "total_tokens": 1261
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 313,
+      "prompt_tokens": 948,
+      "total_tokens": 1261
+    }
+  },
+  "request_fingerprint": "62e4c83b420335b08f7435b1c8541351db0eae3fe33f696421fcf98d1f93dc9a"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Hannah provides meals for The Dean during The Dean's time in custody.\"]",
+  "prompt_sha256": "6d6cd6003ab4fdeac52151b10a62a53bee86960098e637a164ceba5335192d09",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Hannah provides meals for The Dean during The Dean's time in custody.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681349,
+    "id": "a86f6971-e256-4e65-b545-ae740956b0cc",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 17,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 99,
+      "prompt_tokens": 227,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 244
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1083.914557,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 17,
+          "prompt_tokens": 227,
+          "total_tokens": 244
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 17,
+      "prompt_tokens": 227,
+      "total_tokens": 244
+    }
+  },
+  "request_fingerprint": "2be5d3e071643a3cdea8a4418e82e9d98311ac8faab40c08be724d39f4c652d8"
+}

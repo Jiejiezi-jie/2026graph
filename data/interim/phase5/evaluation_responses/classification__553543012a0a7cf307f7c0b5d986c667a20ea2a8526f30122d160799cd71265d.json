@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement from the ground truth is not explicitly present in the answer. The answer only mentions interaction, not seeing.\",\"statement\":\"THE DEAN sees Mr. Darbey.\"}],\"FP\":[{\"reason\":\"There is no mention of Major Tarver in the ground truth statements.\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Major Tarver.\"},{\"reason\":\"There is no mention of Salome in the ground truth statements.\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Salome.\"},{\"reason\":\"There is no mention of Sheba in the ground truth statements.\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Sheba.\"},{\"reason\":\"There is no mention of Noah Topping in the ground truth statements.\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Noah Topping.\"},{\"reason\":\"There is no mention of Hannah Topping in the ground truth statements.\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Hannah Topping.\"},{\"reason\":\"There is no mention of Sir Tristram in the ground truth statements.\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Sir Tristram.\"},{\"reason\":\"There is no mention of Georgiana in the ground truth statements.\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Georgiana.\"},{\"reason\":\"There is no mention of Hatcham in the ground truth statements.\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Hatcham.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth statement 'THE DEAN interacts with Mr. Darbey during social calls at the Deanery.'\",\"statement\":\"During social calls at the Deanery, THE DEAN interacts with Mr. Darbey.\"}]}",
+  "prompt_sha256": "553543012a0a7cf307f7c0b5d986c667a20ea2a8526f30122d160799cd71265d",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Mr. Darbey.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'THE DEAN interacts with Mr. Darbey during social calls at the Deanery.'\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Major Tarver.\",\n      \"reason\": \"There is no mention of Major Tarver in the ground truth statements.\"\n    },\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Salome.\",\n      \"reason\": \"There is no mention of Salome in the ground truth statements.\"\n    },\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Sheba.\",\n      \"reason\": \"There is no mention of Sheba in the ground truth statements.\"\n    },\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Noah Topping.\",\n      \"reason\": \"There is no mention of Noah Topping in the ground truth statements.\"\n    },\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Hannah Topping.\",\n      \"reason\": \"There is no mention of Hannah Topping in the ground truth statements.\"\n    },\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Sir Tristram.\",\n      \"reason\": \"There is no mention of Sir Tristram in the ground truth statements.\"\n    },\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Georgiana.\",\n      \"reason\": \"There is no mention of Georgiana in the ground truth statements.\"\n    },\n    {\n      \"statement\": \"During social calls at the Deanery, THE DEAN interacts with Hatcham.\",\n      \"reason\": \"There is no mention of Hatcham in the ground truth statements.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"THE DEAN sees Mr. Darbey.\",\n      \"reason\": \"This statement from the ground truth is not explicitly present in the answer. The answer only mentions interaction, not seeing.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681545,
+    "id": "ae8958f3-ada3-4010-af6c-de880061e8be",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 489,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 249,
+      "prompt_tokens": 1017,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1506
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4774.797954,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 489,
+          "prompt_tokens": 1017,
+          "total_tokens": 1506
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 489,
+      "prompt_tokens": 1017,
+      "total_tokens": 1506
+    }
+  },
+  "request_fingerprint": "3b440f8e0f8b610c2268cb892b3ee280389f4cf487ec8b9cd2ce23d71635e523"
+}

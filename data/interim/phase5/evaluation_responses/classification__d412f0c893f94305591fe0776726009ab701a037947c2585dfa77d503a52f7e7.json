@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which states that THE DEAN is also known as Augustin.\",\"statement\":\"The connection is that Georgiana calls the Dean 'Augustin' (or 'Angustin').\"},{\"reason\":\"This statement is directly supported by the ground truth, which states that THE DEAN is also known as Augustin.\",\"statement\":\"Georgiana calling the Dean 'Augustin' (or 'Angustin') indicates that Augustin is the Dean's first name.\"}]}",
+  "prompt_sha256": "d412f0c893f94305591fe0776726009ab701a037947c2585dfa77d503a52f7e7",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"The connection is that Georgiana calls the Dean 'Augustin' (or 'Angustin').\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that THE DEAN is also known as Augustin.\"\n    },\n    {\n      \"statement\": \"Georgiana calling the Dean 'Augustin' (or 'Angustin') indicates that Augustin is the Dean's first name.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that THE DEAN is also known as Augustin.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681275,
+    "id": "e39c15f8-9f45-41aa-b55a-0a61af397df3",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 139,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 121,
+      "prompt_tokens": 889,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1028
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2157.889415,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 139,
+          "prompt_tokens": 889,
+          "total_tokens": 1028
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 139,
+      "prompt_tokens": 889,
+      "total_tokens": 1028
+    }
+  },
+  "request_fingerprint": "084167626445c0e59c6b30af372b8eee47fc0c3566af74024fb130c7203cb551"
+}

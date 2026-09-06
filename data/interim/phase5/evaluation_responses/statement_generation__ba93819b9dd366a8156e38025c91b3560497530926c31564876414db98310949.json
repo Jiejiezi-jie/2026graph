@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Augustin is the first name of THE DEAN.\", \"THE DEAN's full name is Augustin Jedd.\"]",
+  "prompt_sha256": "ba93819b9dd366a8156e38025c91b3560497530926c31564876414db98310949",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"Augustin is the first name of THE DEAN.\", \"THE DEAN's full name is Augustin Jedd.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681278,
+    "id": "6cc28321-e947-40cd-98c1-223a688f61a7",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 30,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 115,
+      "prompt_tokens": 243,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 273
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1415.03839,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 30,
+          "prompt_tokens": 243,
+          "total_tokens": 273
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 30,
+      "prompt_tokens": 243,
+      "total_tokens": 273
+    }
+  },
+  "request_fingerprint": "d9c64fcf052b08a5b944325f53d1ef53cb721bc5be76cc866b2016037820a5ac"
+}

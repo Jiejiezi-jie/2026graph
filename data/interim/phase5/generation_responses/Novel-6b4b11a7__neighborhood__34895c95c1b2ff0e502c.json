@@ -1,0 +1,84 @@
+{
+  "cache_version": "phase5-generation-cache-v1",
+  "context_chunk_ids": [
+    "dd_prod_c0002",
+    "dd_cast_c0001",
+    "dd_act02_c0001",
+    "dd_act02_c0004",
+    "dd_act01_c0010"
+  ],
+  "invalid_citations": [],
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "prompt_sha256": "34895c95c1b2ff0e502c347a06e7517903ddd83214e7a9294c4192d2ee7e12a9",
+  "query_id": "Novel-6b4b11a7",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"answer\": \"Ada Rehan performed in \\\"Dandy Dick\\\" in an American production, taking on Mrs. John Wood's part.\",\n  \"citations\": [\"dd_prod_c0002\"],\n  \"insufficient_evidence\": false\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680280,
+    "id": "0fc229f4-c69c-427c-baf4-a3a8de656022",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 53,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 3692,
+      "prompt_tokens": 3692,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 3745
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1799.469414,
+        "finish_reason": "stop",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 53,
+          "prompt_tokens": 3692,
+          "total_tokens": 3745
+        }
+      }
+    ],
+    "elapsed_ms": 1799.469414,
+    "token_usage": {
+      "completion_tokens": 53,
+      "prompt_tokens": 3692,
+      "total_tokens": 3745
+    }
+  },
+  "request_fingerprint": "dfe8fa4cbccb4a3dba14fb32f4f6351b08a913c9a2cf2ffe74fc2e58514c886c",
+  "request_messages": [
+    {
+      "content": "You are a grounded question-answering system.\n\nAnswer the user's QUESTION using only the supplied EVIDENCE CHUNKS and, when\npresent, GRAPH CONTEXT. Do not use outside knowledge or infer unsupported facts.\nIf the supplied evidence is insufficient, set insufficient_evidence to true and\nset answer exactly to INSUFFICIENT_EVIDENCE.\n\nReturn exactly one JSON object with exactly these fields:\n{\n  \"answer\": \"concise grounded answer or INSUFFICIENT_EVIDENCE\",\n  \"citations\": [\"chunk_id\"],\n  \"insufficient_evidence\": false\n}\n\nEvery citation must be a chunk_id that appears in EVIDENCE CHUNKS. Cite only\nchunks that support the answer. Do not output Markdown, explanations, additional\nkeys, or text outside the JSON object.",
+      "role": "system"
+    },
+    {
+      "content": "QUESTION:\nIn which play did Ada Rehan perform, taking on a notable role in an American production?\n\nEVIDENCE CHUNKS:\n[CHUNK_ID: dd_prod_c0002]\n\"Dandy Dick\" was performed 171 times between the first night and the 22d of July, when, the old theatre being demolished, Mr. Clayton took a temporary lease of Toole's Theatre, and transferred the play thither, where it ran 75 nights more. A company had already been sent out, under the auspices of the Court management, to perform \"Dandy Dick\" in the provinces; but, when the play was withdrawn from the London boards, Mr. Clayton set out himself with a company, and it was during this tour that he died at Liverpool. In America Mr. Daly produced \"Dandy Dick\" with Miss Ada Rehan in Mrs. John Wood's part, but no very great success was achieved; whereas in Australia its reception was so enthusiastic that it ran for quite an unusual time both in Melbourne and Sydney. In the character of the Dean, Mr. G. W. Anson achieved perhaps the greatest of his Australian successes, and Mr. Robert Brough made his mark as the policeman. MALCOLM C. SALAMAK. _December_, 1892.\n\n[CHUNK_ID: dd_cast_c0001]\nROYAL COURT THEATRE, SLOANE SQUARE, S.W. _Lessees and Managers:_ Mr. John Clayton and Mr. Arthur Cecil. Programme THIS EVENING, THURSDAY, JANUARY 27, _At_ 8.30 _punctually_, DANDY DICK. AN ORIGINAL FARCE, IN THREE ACTS, BY A. W. PINERO. THE VERY REV. AUGUSTIN JEDD, D.D. MR. JOHN CLAYTON. (Dean of St. Marvell's) SIR TRISTRAM MARDON, Bart MR. EDMUND MAURICE. --th Hussars, MAJOR TARVER { quartered at } MR. F. KERR. MR. DARBEY { Durnstone, near } MR. H. EVERSFIELD. St. Marvell's BLORE (Butler at the Deanery) MR. ARTHUR CECIL. NOAH TOPPING (Constable at MR. W. H. DENNY. St. Marvell's) HATCHAM (Sir Tristram's groom) MR. W. LUGG. GEORGIANA TIDMAN (a Widow, MRS. JOHN WOOD. the Dean's sister) SALOME } the Dean's Daughters { MISS MARIE LEWES. SHEBA } { MISS NORREYS. HANNAH TOPPING (formerly in MISS LAURA LINDEN. Service at the Deanery) ACT I. AT THE DEANERY, ST. MARVELL'S. (Morning.) ACT II. THE SAME PLACE. (Evening.) ACT III.--The Next Day. Scene 1:--\"_The Strong Box,_\" _St. Marvell's. Scene 2.--The Deanery again._ The curtain will be lowered for a few minutes between the two scenes. New Scenery by Mr. T. W. Hall. Preceded, at Eight o'clock, by \"THE NETTLE.\" An Original Comedietta by ERNEST WARREN.\n\n[CHUNK_ID: dd_act02_c0001]\nTHE SECOND ACT. The morning-room at the Deanery, with the fire and the lamps lighted. It is after dinner. SHEBA is playing the piano, SALOME lolling upon the settee, and GEORGIANA pouring out tea. They are in evening dress. GEORGIANA. Sugar, Sally? I call you Sally, Salome--the evening's too short for your name. SALOME. All right, Aunt George--two lumps, please. GEORGIANA. [_To SHEBA._] Little 'un? SHEBA. Two lumps and one in the saucer, to eat. GEORGIANA. Quite a relief to shake off the gentlemen, isn't it? SALOME. Do you think so, Aunt? SHEBA. Oh, _I_ don't think so. GEORGIANA. H'm! Now I understand why my foot was always in the way under the dinner-table. [_She holds out two cups, which the girls take from her._ SALOME. I thought the dinner was an overwhelming success. SHEBA. All our dinners are at the Deanery. GEORGIANA. Awfully jolly. Mutton was overdone. SALOME. That's our new cook's one failing. GEORGIANA. But the potatoes weren't--they rattled. SHEBA. Cook never can manage potatoes. GEORGIANA. What was wrong with the custards? SALOME. Well, it was Cook's first attempt at custards. GEORGIANA. However, they served one useful end. Now we _know_ the chimney wants sweeping. SALOME. But it was a frightfully jolly dinner--take it all round. SHEBA. Yes, take it all round. One has to take things all round. GEORGIANA. What made us all so sad and silent--taking us all round? SHEBA. Dear Papa was as lively as an owl with neuralgia. GEORGIANA. Major Tarver isn't a conversational cracker. SALOME. Gerald Tarver has no liver--to speak of. GEORGIANA. He might have spoken about his lungs or something, to cheer us up. SHEBA. I fancy Mr. Darbey was about to make a witty remark once. GEORGIANA. Yes, and then the servant handed him a dish and he shied at it. So we lost that. SALOME. Still, we ought to congratulate ourselves upon--upon a---- SHEBA. Upon a--upon a---- GEORGIANA. Upon a frightfully jolly dinner. [_Taking her betting book from her pocket._] Excuse me, girls. I've some figures to work out. If Dandy Dick hasn't fed better at the \"Swan\" than we have at the Deanery, he won't be in the first three. [_Reckoning._] Let me see. SALOME. [_To SHEBA._] All's settled, Sheba, isn't it? SHEBA. [_To SALOME._] Yes--everything. Directly the house is silent we let ourselves out at the front door.\n\n[CHUNK_ID: dd_act02_c0004]\nDARBEY. My mother says that my bowing is something like Joachim's, and she ought to know. SHEBA. Why? DARBEY. Oh, because she's heard Joachim. [_DARBEY plays and SHEBA accompanies him. SALOME sits beside TARVER._ GEORGIANA. [_To herself._] Well, after all, George, my boy, you're not stabled in such a bad box! Here is a regular pure, simple, English Evening at Home! THE DEAN. [_Mumbling to himself._] A thousand pounds to the Restoration Fund and all those bills to settle--oh dear! oh dear! What shall I do? SALOME. [_To herself._] I hope my ball-dress will drive all the other women mad! TARVER. [_To himself--glaring at DARBEY._] I feel I should like to garrote him with his bass string. GEORGIANA. [_Frowning at her betting book._] I think I shall hedge a bit over the Crumbleigh Stakes. DARBEY. [_As he plays, glancing at TARVER._] I wonder how old Tarver's Chest C likes a holiday. SHEBA. [_As she plays._] We must get Pa to bed early. Dear Papa's always so dreadfully in the way. GEORGIANA. [_Looking around._] No--there's nothing like it in any other country. A regular, pure, simple, English Evening at Home! _BLORE enters quickly, cutting \"The Times\" with a paper-knife as he enters._ BLORE. The paper's just arrived. [_The music stops abruptly--all the ladies glare at BLORE and hush him down._ GEORGIANA, SALOME, _and_ SHEBA. Sssssh! THE DEAN. [_Taking the paper from BLORE._] This is my fault--there may be something in \"The Times\" of special interest to me. Thank you, Blore. [_BLORE goes out._ TARVER. Ha, ha, ha! spoilt his pianissimo! THE DEAN. [_Scanning the paper._] Oh, I can't believe it! GEORGIANA. What's the matter? SALOME _and_ SHEBA. Papa! TARVER _and_ DARBEY. The Dean! THE DEAN. Children! Georgiana! Friends! My munificent offer has produced the desired result. SALOME _and_ SHEBA. Oh! THE DEAN. Seven wealthy people, including three brewers, have come forward with a thousand pounds apiece in aid of the restoration of the Minster Spire! SALOME _and_ SHEBA. [_Horrified._] Ah! GEORGIANA. That means a cool thousand out of your pocket, Gus. THE DEAN. Yes. [_Reading._] \"The anxiety to which The Dean of St. Marvells has so long been a victim will now doubtless be relieved.\" [_With his hand to his head._] I suppose I shall feel the relief to-morrow. GEORGIANA. What's wrong with the Spire? Nobody sleeps in it? THE DEAN. It _is_ a little out of repair--but hardly sufficiently so to warrant the presumptuous interference of three brewers. Excuse me, I think I'll enjoy the fresh air for a moment. [_He goes to the window and draws back the curtains--a bright red glare is seen in the sky._] Bless me! Look there!\n\n[CHUNK_ID: dd_act01_c0010]\nSALOME. How awful it all sounds! THE DEAN. Left a widow, you would think it natural that Georgiana Tidman would have flown to her brother, himself a widower. Not at all. Maddened, I hope, by grief, she continued the career of her misguided husband, and for years, to use her own terrible words, she was \"the Daisy of the Turf.\" SHEBA. What's that? THE DEAN. I don't know, toy-child. But at length retribution came. Ill luck fell upon her--her horses, stock, everything, came to the hammer. That was my hour. \"Come to me,\" I wrote, \"my children yearn for you.\" SHEBA _and_ SALOME. [_With wry faces._] Oh! THE DEAN. \"At the Deanery of St. Marvells, with the cares of a household, and a stable which contains only a thirteen-year-old pony, you may obtain rest and forgetfulness.\" And she is coming! SHEBA _and_ SALOME. When? Oh! when? THE DEAN. She merely says, \"Soon.\" SHEBA _and_ SALOME. [_Stamping with vexation._] Ugh! THE DEAN. Salome, Sheba, you will, I fear, find her a sad broken creature, a weary fragment, a wave-tossed derelict. Let it be your patient endeavor to win back a flickering smile to the wan features of this chastened widow. _BLORE enters with a telegram._ BLORE. A telegram, sir! [_THE DEAN opens telegram._ SHEBA. No Aunt Tidman flickers a smile at me! SALOME. I wouldn't be in her shoes for something! SHEBA. Salt in her bed, Salome! SALOME. Yes, and the peg out of the rattling window! [_They grip hands earnestly._ THE DEAN. Good gracious! Bless me! Girls, your Aunt Georgiana slept at the \"Wheatsheaf,\" at Durnstone, last night, and is coming on this morning! SALOME _and_ SHEBA. To-day! THE DEAN. Blore, tell Willis to get the chaise out. [_BLORE hurries out._ THE DEAN. Salome, child, you and I will drive into Durnstone--we may be in time to bring your Aunt over. My hat, Sheba! Quick! [_The clang of the gate bell is heard in the distance._] The bell! [_Looking out of window._] No--yes--it can't be! [_Speaking in an altered voice._] Children! I wonder if this is your Aunt Georgiana? [_BLORE appears with a half-frightened, surprised look._ BLORE. Mrs. Tidman. _GEORGIANA TIDMAN enters. She is a jovial, noisy woman, very \"horsey\" in manners and appearance, and dressed in pronounced masculine style, with billy cock hat and coaching coat. The girls cling to each other; THE DEAN recoils._ GEORGIANA. Well, Gus, my boy, how are you? THE DEAN. [_Shocked._] Georgiana! GEORGIANA. [_Patting THE DEAN'S cheeks._] You're putting on too much flesh, Augustin; they should give you a ten-miler daily in a blanket. THE DEAN. [_With dignity._] My dear sister! GEORGIANA. Are these your two-year-olds? [_To SALOME._] Kiss your Aunt! [_She kisses SALOME with a good hearty smack._] [_To SHEBA._] Kiss your Aunt! [_She embraces SHEBA, then stands between the two girls and surveys them critically, touching them alternately with the end of her cane._] Lord bless you both! What names do you run under?\n\nGRAPH CONTEXT (retriever output only):\n{\n  \"linked_entities\": [\n    {\n      \"matched_term\": null,\n      \"method\": \"semantic\",\n      \"name\": \"Miss Ada Rehan\",\n      \"node_id\": \"n_miss_ada_rehan_ca8ecb2b8f21\",\n      \"score\": 0.67935604,\n      \"semantic_score\": 0.67935604,\n      \"type\": \"PERSON\"\n    },\n    {\n      \"matched_term\": null,\n      \"method\": \"semantic\",\n      \"name\": \"Mrs. John Wood\",\n      \"node_id\": \"n_mrs_john_wood_a24aa24beffd\",\n      \"score\": 0.59177643,\n      \"semantic_score\": 0.59177643,\n      \"type\": \"PERSON\"\n    }\n  ],\n  \"paths\": [],\n  \"retrieved_edges\": [\n    {\n      \"directed\": true,\n      \"edge_id\": \"e_n_georgiana_tidman_9a9719259_e13340b3c5101a\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"source\": \"Georgiana Tidman\",\n      \"source_id\": \"n_georgiana_tidman_9a9719259216\",\n      \"target\": \"Mrs. John Wood\",\n      \"target_id\": \"n_mrs_john_wood_a24aa24beffd\"\n    }\n  ],\n  \"retrieved_nodes\": [\n    {\n      \"distance\": 0,\n      \"name\": \"Miss Ada Rehan\",\n      \"node_id\": \"n_miss_ada_rehan_ca8ecb2b8f21\",\n      \"score\": 0.67935604,\n      \"seed\": true,\n      \"type\": \"PERSON\"\n    },\n    {\n      \"distance\": 0,\n      \"name\": \"Mrs. John Wood\",\n      \"node_id\": \"n_mrs_john_wood_a24aa24beffd\",\n      \"score\": 0.59177643,\n      \"seed\": true,\n      \"type\": \"PERSON\"\n    },\n    {\n      \"distance\": 1,\n      \"name\": \"Georgiana Tidman\",\n      \"node_id\": \"n_georgiana_tidman_9a9719259216\",\n      \"score\": 0.50300997,\n      \"seed\": false,\n      \"type\": \"CHARACTER\"\n    }\n  ]\n}",
+      "role": "user"
+    }
+  ],
+  "retriever": "neighborhood",
+  "validated_output": {
+    "answer": "Ada Rehan performed in \"Dandy Dick\" in an American production, taking on Mrs. John Wood's part.",
+    "citations": [
+      "dd_prod_c0002"
+    ],
+    "insufficient_evidence": false
+  }
+}

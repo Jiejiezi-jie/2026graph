@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Arthur Cecil and John Clayton were joint lessees of the Royal Court Theatre.\",\n  \"Arthur Cecil and John Clayton were joint managers of the Royal Court Theatre.\",\n  \"Arthur Cecil and John Clayton were partners in the management that produced 'Dandy Dick'.\"\n]",
+  "prompt_sha256": "4231c657b5c02fd5ea5b17048a43a288984224a7010b451ceb87bcb617db9db8",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Arthur Cecil and John Clayton were joint lessees of the Royal Court Theatre.\",\n  \"Arthur Cecil and John Clayton were joint managers of the Royal Court Theatre.\",\n  \"Arthur Cecil and John Clayton were partners in the management that produced 'Dandy Dick'.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681622,
+    "id": "f9000975-4492-4fa4-977d-d45fed440388",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 55,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 139,
+      "prompt_tokens": 267,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 322
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1454.108454,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 55,
+          "prompt_tokens": 267,
+          "total_tokens": 322
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 55,
+      "prompt_tokens": 267,
+      "total_tokens": 322
+    }
+  },
+  "request_fingerprint": "4c221c20011351d3f640f5d5c27effb5398a39105d49cf551d62717c7b385270"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Hannah Topping (formerly Hannah Evans) is the character that recognizes The Dean during his imprisonment in the police station.\",\n      \"reason\": \"This statement is directly supported by the ground truth statements that Hannah recognizes The Dean during his imprisonment in the police station.\"\n    },\n    {\n      \"statement\": \"Hannah Topping identifies The Dean despite his disguise.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement that Hannah identifies The Dean despite The Dean's disguise.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+  "prompt_sha256": "8cd39154731203c64aaebe08b66bb11ac9c8805095187edb2670701403bcbc35",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Hannah Topping (formerly Hannah Evans) is the character that recognizes The Dean during his imprisonment in the police station.\",\n      \"reason\": \"This statement is directly supported by the ground truth statements that Hannah recognizes The Dean during his imprisonment in the police station.\"\n    },\n    {\n      \"statement\": \"Hannah Topping identifies The Dean despite his disguise.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement that Hannah identifies The Dean despite The Dean's disguise.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680614,
+    "id": "28df0efe-b50d-4721-88c5-42e4514113ac",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 126,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 908,
+      "prompt_tokens": 908,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 1034
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2813.230035,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 126,
+          "prompt_tokens": 908,
+          "total_tokens": 1034
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 126,
+      "prompt_tokens": 908,
+      "total_tokens": 1034
+    }
+  },
+  "request_fingerprint": "488d95f8254ed748bc8afd55ae9f9822c22115b808d9d0158a77b6129835ced3"
+}

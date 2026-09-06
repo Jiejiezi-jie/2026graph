@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Blore is employed by The Dean (Augustin Jedd) at the Deanery.\",\n  \"Blore's professional connection to The Dean is relevant.\",\n  \"Blore's actions are intertwined with The Dean's own secret betting activities.\",\n  \"Blore's actions include poisoning Dandy Dick.\",\n  \"Blore's actions include placing bets.\",\n  \"The Dean is involved in the horse race.\",\n  \"The Dean attempts to influence the outcome of the horse race.\",\n  \"The Dean's involvement in the horse race creates a situation.\",\n  \"The Dean's attempts to influence the outcome create a situation.\",\n  \"Blore's actions directly affect The Dean's interests.\",\n  \"Blore's professional connection to The Dean leads to a mutual cover-up.\",\n  \"Blore fears exposure of Blore's gambling.\",\n  \"The Dean fears exposure of The Dean's gambling.\",\n  \"The actions involving Sheba and Major Tarver are part of the broader comedic entanglement.\",\n  \"Sheba is The Dean's daughter.\",\n  \"Salome is The Dean's daughter.\",\n  \"Major Tarver is romantically interested in Salome.\",\n  \"Blore's professional role gives Blore leverage.\",\n  \"Blore's knowledge of The Dean's secrets gives Blore leverage.\",\n  \"Blore uses the leverage to remain in service.\",\n  \"Blore's professional role contributes to the chaotic events at the Deanery.\",\n  \"Blore's knowledge of The Dean's secrets contributes to the chaotic events at the Deanery.\",\n  \"The dynamic of Blore's leverage contributes to the chaotic events at the Deanery.\",\n  \"The chaotic events at the Deanery include the proposals to Sheba.\",\n  \"The chaotic events at the Deanery include the proposals to Salome.\"\n]",
+  "prompt_sha256": "d7dca63ff856fc56757e611645334762b27d8d6ef694d6b458435859279af762",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\n  \"Blore is employed by The Dean (Augustin Jedd) at the Deanery.\",\n  \"Blore's professional connection to The Dean is relevant.\",\n  \"Blore's actions are intertwined with The Dean's own secret betting activities.\",\n  \"Blore's actions include poisoning Dandy Dick.\",\n  \"Blore's actions include placing bets.\",\n  \"The Dean is involved in the horse race.\",\n  \"The Dean attempts to influence the outcome of the horse race.\",\n  \"The Dean's involvement in the horse race creates a situation.\",\n  \"The Dean's attempts to influence the outcome create a situation.\",\n  \"Blore's actions directly affect The Dean's interests.\",\n  \"Blore's professional connection to The Dean leads to a mutual cover-up.\",\n  \"Blore fears exposure of Blore's gambling.\",\n  \"The Dean fears exposure of The Dean's gambling.\",\n  \"The actions involving Sheba and Major Tarver are part of the broader comedic entanglement.\",\n  \"Sheba is The Dean's daughter.\",\n  \"Salome is The Dean's daughter.\",\n  \"Major Tarver is romantically interested in Salome.\",\n  \"Blore's professional role gives Blore leverage.\",\n  \"Blore's knowledge of The Dean's secrets gives Blore leverage.\",\n  \"Blore uses the leverage to remain in service.\",\n  \"Blore's professional role contributes to the chaotic events at the Deanery.\",\n  \"Blore's knowledge of The Dean's secrets contributes to the chaotic events at the Deanery.\",\n  \"The dynamic of Blore's leverage contributes to the chaotic events at the Deanery.\",\n  \"The chaotic events at the Deanery include the proposals to Sheba.\",\n  \"The chaotic events at the Deanery include the proposals to Salome.\"\n]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681098,
+    "id": "cf1e9064-76b5-4180-b385-7749b6d3b8c3",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 367,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 290,
+      "prompt_tokens": 418,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 785
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4673.43135,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 367,
+          "prompt_tokens": 418,
+          "total_tokens": 785
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 367,
+      "prompt_tokens": 418,
+      "total_tokens": 785
+    }
+  },
+  "request_fingerprint": "95cfb2bdb0e446fbba5f6327914b71a2748bde672d2ad848664b838348f1c3a0"
+}

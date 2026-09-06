@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"The Dean is the father of Sheba.\", \"Sheba hushes The Dean.\", \"Blore shows in Major Tarver.\"]",
+  "prompt_sha256": "231c5e3bf0e653538f7305bccbaabec833b5bbffdce76e63cd3582ca53a3f717",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"The Dean is the father of Sheba.\", \"Sheba hushes The Dean.\", \"Blore shows in Major Tarver.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681530,
+    "id": "c69005df-3bd1-4bce-8785-d3bf8c6fc189",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 32,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 126,
+      "prompt_tokens": 254,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 286
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1689.012455,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 32,
+          "prompt_tokens": 254,
+          "total_tokens": 286
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 32,
+      "prompt_tokens": 254,
+      "total_tokens": 286
+    }
+  },
+  "request_fingerprint": "09e8f29fdbb298409f018a3ad0bd49cb636379fc8ad38a01ed43eb35e088d41a"
+}

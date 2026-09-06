@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"The ground truth states Salome enters with Georgiana, but the answer does not mention Salome; it incorrectly mentions Sir Tristram Mardon.\",\"statement\":\"SALOME enters the scene with GEORGIANA.\"},{\"reason\":\"The ground truth states Salome and Georgiana arrive at the Deanery together, but the answer does not mention Salome; it incorrectly mentions Sir Tristram Mardon.\",\"statement\":\"SALOME and GEORGIANA arrive at the Deanery together.\"},{\"reason\":\"The ground truth states Salome and Georgiana have a close association, but the answer does not mention Salome; it incorrectly mentions Sir Tristram Mardon.\",\"statement\":\"SALOME and GEORGIANA have a close association.\"}],\"FP\":[{\"reason\":\"The answer states Sir Tristram Mardon enters with Georgiana, but the ground truth states Salome enters with Georgiana. The person is different, so this is not supported.\",\"statement\":\"Sir Tristram Mardon enters the scene together with Georgiana.\"},{\"reason\":\"The answer states Sir Tristram Mardon and Georgiana arrive at the Deanery, but the ground truth states Salome and Georgiana arrive at the Deanery together. The person is different, so this is not supported.\",\"statement\":\"Sir Tristram Mardon and Georgiana arrive at the Deanery.\"},{\"reason\":\"The answer states Sir Tristram Mardon and Georgiana have a close association, but the ground truth states Salome and Georgiana have a close association. The person is different, so this is not supported.\",\"statement\":\"Sir Tristram Mardon and Georgiana have a close association.\"}],\"TP\":[]}",
+  "prompt_sha256": "07675048b65bb7ed17035f889e8fcbc9bfa3ec0341c77b4a3a89273437648fd5",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [],\n  \"FP\": [\n    {\n      \"statement\": \"Sir Tristram Mardon enters the scene together with Georgiana.\",\n      \"reason\": \"The answer states Sir Tristram Mardon enters with Georgiana, but the ground truth states Salome enters with Georgiana. The person is different, so this is not supported.\"\n    },\n    {\n      \"statement\": \"Sir Tristram Mardon and Georgiana arrive at the Deanery.\",\n      \"reason\": \"The answer states Sir Tristram Mardon and Georgiana arrive at the Deanery, but the ground truth states Salome and Georgiana arrive at the Deanery together. The person is different, so this is not supported.\"\n    },\n    {\n      \"statement\": \"Sir Tristram Mardon and Georgiana have a close association.\",\n      \"reason\": \"The answer states Sir Tristram Mardon and Georgiana have a close association, but the ground truth states Salome and Georgiana have a close association. The person is different, so this is not supported.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"SALOME enters the scene with GEORGIANA.\",\n      \"reason\": \"The ground truth states Salome enters with Georgiana, but the answer does not mention Salome; it incorrectly mentions Sir Tristram Mardon.\"\n    },\n    {\n      \"statement\": \"SALOME and GEORGIANA arrive at the Deanery together.\",\n      \"reason\": \"The ground truth states Salome and Georgiana arrive at the Deanery together, but the answer does not mention Salome; it incorrectly mentions Sir Tristram Mardon.\"\n    },\n    {\n      \"statement\": \"SALOME and GEORGIANA have a close association.\",\n      \"reason\": \"The ground truth states Salome and Georgiana have a close association, but the answer does not mention Salome; it incorrectly mentions Sir Tristram Mardon.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681060,
+    "id": "eb57bee0-7bdf-46ed-801a-7968e4a54d48",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 412,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 154,
+      "prompt_tokens": 922,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1334
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4475.110232,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 412,
+          "prompt_tokens": 922,
+          "total_tokens": 1334
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 412,
+      "prompt_tokens": 922,
+      "total_tokens": 1334
+    }
+  },
+  "request_fingerprint": "e68034f819172ef70ef7c7223af0a1fb9fbf6f380feed82189cd89e96ca3aa10"
+}

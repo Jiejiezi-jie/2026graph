@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"In the narrative of 'Dandy Dick', THE DEAN is known by the other name Augustin.\"]",
+  "prompt_sha256": "80d28ee9c826d354ab527e5727182f3e42e2fc3e07e05788e2f217d4ad08c2d9",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"In the narrative of 'Dandy Dick', THE DEAN is known by the other name Augustin.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680621,
+    "id": "56abe369-574c-4b6d-9fd2-62f47d279c34",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 23,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 102,
+      "prompt_tokens": 230,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 253
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1068.407431,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 23,
+          "prompt_tokens": 230,
+          "total_tokens": 253
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 23,
+      "prompt_tokens": 230,
+      "total_tokens": 253
+    }
+  },
+  "request_fingerprint": "02101bfd418975ba5d8a083e1a8284e2c10f84cdb82b7966370895ec11bad013"
+}

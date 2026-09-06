@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Georgiana Tidman's nickname becomes associated with Sir Tristram through their shared racing background.\",\n  \"Georgiana Tidman's nickname becomes associated with Sir Tristram through their personal history.\",\n  \"Georgiana reveals that Georgiana's racing name was George Tidd.\",\n  \"Sir Tristram recognizes Georgiana as 'Mr. Tidd' when Sir Tristram and Georgiana meet at the Deanery.\",\n  \"Sir Tristram recalls Sir Tristram's and Georgiana's past connection from Oxford.\",\n  \"Sir Tristram recalls Sir Tristram's and Georgiana's past connection from the racing world.\"\n]",
+  "prompt_sha256": "2570b4ae5825db9fa086d607bc57f03277e32c137b510787157425ce15bf638f",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Georgiana Tidman's nickname becomes associated with Sir Tristram through their shared racing background.\",\n  \"Georgiana Tidman's nickname becomes associated with Sir Tristram through their personal history.\",\n  \"Georgiana reveals that Georgiana's racing name was George Tidd.\",\n  \"Sir Tristram recognizes Georgiana as 'Mr. Tidd' when Sir Tristram and Georgiana meet at the Deanery.\",\n  \"Sir Tristram recalls Sir Tristram's and Georgiana's past connection from Oxford.\",\n  \"Sir Tristram recalls Sir Tristram's and Georgiana's past connection from the racing world.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681224,
+    "id": "b9c452ce-35bf-4678-b9f8-6a67ad8439ed",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 133,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 167,
+      "prompt_tokens": 295,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 428
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2228.229161,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 133,
+          "prompt_tokens": 295,
+          "total_tokens": 428
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 133,
+      "prompt_tokens": 295,
+      "total_tokens": 428
+    }
+  },
+  "request_fingerprint": "5afbdb7709bf70c3202394a948aceecda02bee10043afb91680f1be10da342c2"
+}

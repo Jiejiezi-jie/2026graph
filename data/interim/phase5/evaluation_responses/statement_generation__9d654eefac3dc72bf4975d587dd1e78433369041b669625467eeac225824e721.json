@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Sir Tristram Mardon proposes to Georgiana in the play.\", \"Sir Tristram Mardon's proposal initiates a romantic subplot amid the comedic events.\"]",
+  "prompt_sha256": "9d654eefac3dc72bf4975d587dd1e78433369041b669625467eeac225824e721",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Sir Tristram Mardon proposes to Georgiana in the play.\", \"Sir Tristram Mardon's proposal initiates a romantic subplot amid the comedic events.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681065,
+    "id": "3eb91ea9-077e-4229-9d81-bd74e826828b",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 36,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 109,
+      "prompt_tokens": 237,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 273
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1416.613133,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 36,
+          "prompt_tokens": 237,
+          "total_tokens": 273
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 36,
+      "prompt_tokens": 237,
+      "total_tokens": 273
+    }
+  },
+  "request_fingerprint": "1b0868a7602216484254e088f24b9509d0bd4929a20ebe1ca8805892543da03d"
+}

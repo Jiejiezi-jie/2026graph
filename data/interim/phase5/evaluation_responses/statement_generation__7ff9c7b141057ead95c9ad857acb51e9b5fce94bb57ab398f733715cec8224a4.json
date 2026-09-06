@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"George Tidd is the racing name of Georgiana Tidman.\", \"Georgiana Tidman is the Dean's sister.\"]",
+  "prompt_sha256": "7ff9c7b141057ead95c9ad857acb51e9b5fce94bb57ab398f733715cec8224a4",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"George Tidd is the racing name of Georgiana Tidman.\", \"Georgiana Tidman is the Dean's sister.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681498,
+    "id": "b8901d76-7c24-4700-a2f2-6bb164b0e2a1",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 30,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 119,
+      "prompt_tokens": 247,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 277
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1717.375668,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 30,
+          "prompt_tokens": 247,
+          "total_tokens": 277
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 30,
+      "prompt_tokens": 247,
+      "total_tokens": 277
+    }
+  },
+  "request_fingerprint": "627f4652e9876a3b0c0a6acfd6a947a22e5892f60e15a179b414f7170289cb26"
+}

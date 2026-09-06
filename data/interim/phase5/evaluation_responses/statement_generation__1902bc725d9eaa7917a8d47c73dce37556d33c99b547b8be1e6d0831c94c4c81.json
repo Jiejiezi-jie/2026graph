@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Blore is employed at the Deanery.\",\n  \"Blore discovers The Dean's secret betting on the horse Dandy Dick.\",\n  \"Blore discovers The Dean's own poisoning of Dandy Dick.\",\n  \"The Dean poisons Dandy Dick to ensure The Dean's own horse Bonny-Betsy wins.\",\n  \"The Dean is burdened by bills.\",\n  \"The Dean refuses Sheba and Salome's request for money.\",\n  \"The Dean's refusal of Sheba and Salome's request for money leads to Sheba and Salome's actions.\",\n  \"The Dean's financial distress from bills causes The Dean to refuse Sheba's request for money.\",\n  \"Blore is aware of The Dean's betting.\",\n  \"Blore poisons Dandy Dick to secure Blore's own bet on Bonny-Betsy.\"\n]",
+  "prompt_sha256": "1902bc725d9eaa7917a8d47c73dce37556d33c99b547b8be1e6d0831c94c4c81",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Blore is employed at the Deanery.\",\n  \"Blore discovers The Dean's secret betting on the horse Dandy Dick.\",\n  \"Blore discovers The Dean's own poisoning of Dandy Dick.\",\n  \"The Dean poisons Dandy Dick to ensure The Dean's own horse Bonny-Betsy wins.\",\n  \"The Dean is burdened by bills.\",\n  \"The Dean refuses Sheba and Salome's request for money.\",\n  \"The Dean's refusal of Sheba and Salome's request for money leads to Sheba and Salome's actions.\",\n  \"The Dean's financial distress from bills causes The Dean to refuse Sheba's request for money.\",\n  \"Blore is aware of The Dean's betting.\",\n  \"Blore poisons Dandy Dick to secure Blore's own bet on Bonny-Betsy.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681356,
+    "id": "46a705cf-5711-44a5-8e87-597c9ef71b3c",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 175,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 215,
+      "prompt_tokens": 343,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 518
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2370.492984,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 175,
+          "prompt_tokens": 343,
+          "total_tokens": 518
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 175,
+      "prompt_tokens": 343,
+      "total_tokens": 518
+    }
+  },
+  "request_fingerprint": "c2895b3bbcd816b59da14bc971a5f5834072b80fa93dfa6757d150c37b8c4961"
+}

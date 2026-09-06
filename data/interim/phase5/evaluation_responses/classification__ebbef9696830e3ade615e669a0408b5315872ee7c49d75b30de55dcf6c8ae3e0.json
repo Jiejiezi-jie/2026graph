@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"The ground truth only mentions that they were partners, not specifically that they were joint lessees.\",\"statement\":\"Arthur Cecil and John Clayton were joint lessees of the Royal Court Theatre.\"},{\"reason\":\"The ground truth does not specify that they were joint managers; it only states that they were partners.\",\"statement\":\"Arthur Cecil and John Clayton were joint managers of the Royal Court Theatre.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth which states that Arthur Cecil is the partner of John Clayton, implying a partnership in management.\",\"statement\":\"Arthur Cecil and John Clayton were partners in the management that produced 'Dandy Dick'.\"}]}",
+  "prompt_sha256": "ebbef9696830e3ade615e669a0408b5315872ee7c49d75b30de55dcf6c8ae3e0",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Arthur Cecil and John Clayton were partners in the management that produced 'Dandy Dick'.\",\n      \"reason\": \"This statement is directly supported by the ground truth which states that Arthur Cecil is the partner of John Clayton, implying a partnership in management.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Arthur Cecil and John Clayton were joint lessees of the Royal Court Theatre.\",\n      \"reason\": \"The ground truth only mentions that they were partners, not specifically that they were joint lessees.\"\n    },\n    {\n      \"statement\": \"Arthur Cecil and John Clayton were joint managers of the Royal Court Theatre.\",\n      \"reason\": \"The ground truth does not specify that they were joint managers; it only states that they were partners.\"\n    }\n  ],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681625,
+    "id": "f3617b79-efd2-4b22-9081-80d747ed4239",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 176,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 132,
+      "prompt_tokens": 900,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1076
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2232.412204,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 176,
+          "prompt_tokens": 900,
+          "total_tokens": 1076
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 176,
+      "prompt_tokens": 900,
+      "total_tokens": 1076
+    }
+  },
+  "request_fingerprint": "b7af9466515c2ec95aa90cda2d1afd18fd1d60af3e5774bf673aff96300e63fb"
+}

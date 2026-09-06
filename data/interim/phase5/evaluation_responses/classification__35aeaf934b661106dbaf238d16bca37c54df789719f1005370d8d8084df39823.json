@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"This statement includes a condition (that seven other donors come forward with the same amount) which is not mentioned in the ground truth. The ground truth only states that THE DEAN subscribed, without any conditions.\",\"statement\":\"THE DEAN (Dr. Jedd) has subscribed one thousand pounds to the Restoration Fund on condition that seven other donors come forward with the same amount.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which states that THE DEAN subscribed to the Restoration Fund. The additional detail of the amount (one thousand pounds) is not contradicted by the ground truth.\",\"statement\":\"THE DEAN (Dr. Jedd) has subscribed one thousand pounds to the Restoration Fund.\"}]}",
+  "prompt_sha256": "35aeaf934b661106dbaf238d16bca37c54df789719f1005370d8d8084df39823",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"THE DEAN (Dr. Jedd) has subscribed one thousand pounds to the Restoration Fund.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that THE DEAN subscribed to the Restoration Fund. The additional detail of the amount (one thousand pounds) is not contradicted by the ground truth.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"THE DEAN (Dr. Jedd) has subscribed one thousand pounds to the Restoration Fund on condition that seven other donors come forward with the same amount.\",\n      \"reason\": \"This statement includes a condition (that seven other donors come forward with the same amount) which is not mentioned in the ground truth. The ground truth only states that THE DEAN subscribed, without any conditions.\"\n    }\n  ],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681511,
+    "id": "54d29cf7-a9fb-4d09-8e1a-ace93601d541",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 182,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 115,
+      "prompt_tokens": 883,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1065
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2603.664882,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 182,
+          "prompt_tokens": 883,
+          "total_tokens": 1065
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 182,
+      "prompt_tokens": 883,
+      "total_tokens": 1065
+    }
+  },
+  "request_fingerprint": "12cbe4b61ad85ea039154d5f18aba62e2d4fa864ccbdc14459bf4f601a51c67a"
+}

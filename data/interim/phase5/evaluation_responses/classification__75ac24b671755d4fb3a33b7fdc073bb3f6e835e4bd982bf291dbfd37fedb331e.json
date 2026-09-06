@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement from the ground truth is not present in the answer.\",\"statement\":\"SALOME reflects upon Aunt Georgiana in relation to family dynamics and guidance in the play.\"}],\"FP\":[{\"reason\":\"The ground truth states that Salome reflects upon Aunt Georgiana, not her father.\",\"statement\":\"Salome reflects upon her father, the Dean (Augustin Jedd), in relation to family dynamics and guidance.\"},{\"reason\":\"The ground truth states that Salome reflects upon Aunt Georgiana, not her sister.\",\"statement\":\"Salome reflects upon her sister Sheba in relation to family dynamics and guidance.\"},{\"reason\":\"This statement is not directly supported by the ground truth, which only mentions reflection upon Aunt Georgiana.\",\"statement\":\"Salome expresses concern for her father's well-being.\"},{\"reason\":\"This statement is not directly supported by the ground truth, which only mentions reflection upon Aunt Georgiana.\",\"statement\":\"Salome relies on her sister for mutual support.\"}],\"TP\":[]}",
+  "prompt_sha256": "75ac24b671755d4fb3a33b7fdc073bb3f6e835e4bd982bf291dbfd37fedb331e",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [],\n  \"FP\": [\n    {\n      \"statement\": \"Salome reflects upon her father, the Dean (Augustin Jedd), in relation to family dynamics and guidance.\",\n      \"reason\": \"The ground truth states that Salome reflects upon Aunt Georgiana, not her father.\"\n    },\n    {\n      \"statement\": \"Salome reflects upon her sister Sheba in relation to family dynamics and guidance.\",\n      \"reason\": \"The ground truth states that Salome reflects upon Aunt Georgiana, not her sister.\"\n    },\n    {\n      \"statement\": \"Salome expresses concern for her father's well-being.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which only mentions reflection upon Aunt Georgiana.\"\n    },\n    {\n      \"statement\": \"Salome relies on her sister for mutual support.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which only mentions reflection upon Aunt Georgiana.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"SALOME reflects upon Aunt Georgiana in relation to family dynamics and guidance in the play.\",\n      \"reason\": \"This statement from the ground truth is not present in the answer.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681682,
+    "id": "a4f08f32-ff73-4637-9523-a142746ef411",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 257,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 144,
+      "prompt_tokens": 912,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1169
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2706.449158,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 257,
+          "prompt_tokens": 912,
+          "total_tokens": 1169
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 257,
+      "prompt_tokens": 912,
+      "total_tokens": 1169
+    }
+  },
+  "request_fingerprint": "879dd637d4982d2c1d5ae64cbf702f7dd1ada81bb053a19b8af309dc9ec13c83"
+}

@@ -1,0 +1,84 @@
+{
+  "cache_version": "phase5-generation-cache-v1",
+  "context_chunk_ids": [
+    "dd_act01_c0012",
+    "dd_act01_c0009",
+    "dd_act03s02_c0004",
+    "dd_act01_c0017",
+    "dd_act01_c0016"
+  ],
+  "invalid_citations": [],
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "prompt_sha256": "82e970746f21c8a3813aae016b6ec5028c576efb39fa7bc161dfe3dc479f27e0",
+  "query_id": "Novel-1043deff",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"answer\": \"Georgiana wins money at The Races.\",\n  \"citations\": [\"dd_act03s02_c0004\"],\n  \"insufficient_evidence\": false\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680155,
+    "id": "94938ce0-c59d-4a8c-9360-51a9d56a324a",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 41,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 3728,
+      "prompt_tokens": 3728,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 3769
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2163.438704,
+        "finish_reason": "stop",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 41,
+          "prompt_tokens": 3728,
+          "total_tokens": 3769
+        }
+      }
+    ],
+    "elapsed_ms": 2163.438704,
+    "token_usage": {
+      "completion_tokens": 41,
+      "prompt_tokens": 3728,
+      "total_tokens": 3769
+    }
+  },
+  "request_fingerprint": "ccfbb75677f7139ba84b516ec707b01afb7c5d6517cea603dc3c80550a494c0b",
+  "request_messages": [
+    {
+      "content": "You are a grounded question-answering system.\n\nAnswer the user's QUESTION using only the supplied EVIDENCE CHUNKS and, when\npresent, GRAPH CONTEXT. Do not use outside knowledge or infer unsupported facts.\nIf the supplied evidence is insufficient, set insufficient_evidence to true and\nset answer exactly to INSUFFICIENT_EVIDENCE.\n\nReturn exactly one JSON object with exactly these fields:\n{\n  \"answer\": \"concise grounded answer or INSUFFICIENT_EVIDENCE\",\n  \"citations\": [\"chunk_id\"],\n  \"insufficient_evidence\": false\n}\n\nEvery citation must be a chunk_id that appears in EVIDENCE CHUNKS. Cite only\nchunks that support the answer. Do not output Markdown, explanations, additional\nkeys, or text outside the JSON object.",
+      "role": "system"
+    },
+    {
+      "content": "QUESTION:\nWhich character wins money at The Races?\n\nEVIDENCE CHUNKS:\n[CHUNK_ID: dd_act01_c0012]\nGEORGIANA. I am George Tidd--that was my racing name. Ask after George Tidd at Newmarket--they'll tell you all about me. My colors were crimson and black diamonds. There you are. [_Producing her pocket-handkerchief, which is crimson and black._ THE DEAN. Dear me! Very interesting! Georgiana, my dear. One moment, children. [_The girls go into the Library._ THE DEAN. [_Tapping the handkerchief._] I understand distinctly from your letter that all this is finally abandoned? GEORGIANA. Worse luck! They'll never see my colors at the post again! THE DEAN. And the contemplation of sport generally as a mental distraction----? GEORGIANA. Oh, yes--I dare say you'll manage to wean me from that, too, in time. THE DEAN. In time! Well, but--Georgiana! [_The gate bell is heard again, the girls re-enter._ GEORGIANA. There's a visitor. I'll tootle upstairs and have a groom down. [_To SALOME and SHEBA._] Make the running, girls. At what time do we feed, Augustin? THE DEAN. There is luncheon at one o'clock. GEORGIANA. Right. The air here is so fresh I sha'n't be sorry to get my nose-bag on. [_She stalks out, accompanied by the girls._ THE DEAN. My sister, Georgiana--my widowed sister, Georgiana. Dear me, I am quite disturbed. Surely, surely the serene atmosphere of the Deanery will work a change. It must! It must! If not, what a grave mistake I have made. Good gracious! No, no, I won't think of it! Still, it is a little unfortunate that poor Georgiana should arrive here on the very eve of these terrible races at St. Marvells. _BLORE enters with a card._ THE DEAN. Who is it, Blore? [_Reading the card._] \"Sir Tristram Mardon.\" Dear, dear! Certainly, Blore, certainly. [_BLORE goes out._] Mardon--why, Mardon and I haven't met since Oxford. [_BLORE re-enters, showing in SIR TRISTRAM MARDON, a well-preserved man of about fifty, with a ruddy face and jovial manner, the type of the thorough English sporting gentleman. BLORE goes out._ SIR TRISTRAM. Hullo, Jedd, how are you? THE DEAN. My dear Mardon--are we boys again? SIR TRISTRAM. [_Boisterously._] Of course we are! Boys again! [_He hits THE DEAN violently in the chest._ THE DEAN. [_Breathing heavily--to himself._] I quite forgot how rough Mardon used to be. How it all comes back to me! SIR TRISTRAM. Think I'm changed? THE DEAN. Only in appearance! SIR TRISTRAM. I'm still a bachelor--got terribly jilted by a woman years ago and have run in blinkers ever since. Can't be helped, can it? You're married, aren't you? THE DEAN. [_With dignity._] I have been a widower for fifteen years. SIR TRISTRAM. Oh lor'! awfully sorry--can't be helped though, can it? [_Seizing THE DEAN'S hand and squeezing it._] Forgive me, old chap. THE DEAN. [_Withdrawing his hand with pain._] O-o-oh! SIR TRISTRAM. I've re-opened an old wound--damned stupid of me!\n\n[CHUNK_ID: dd_act01_c0009]\nTHE DEAN. [_Opening letters._] Oh, Blore! This note from Mr. Hodder, the Secretary of \"The Sport and Relaxation Repression Guild,\" reminds me that to-morrow is the first day of the Races--the St. Marvells Spring Meeting, as it is called. BLORE. Hindeed, sir--fancy that! And I not know it! THE DEAN. All our servants may not resemble you, Blore. Pray remind them in the kitchen and the stable of the rule of the house---- BLORE. No servant allowed to leave the Deanery, on hany pretence, while the Races is on. THE DEAN. [_Kindly._] While the races _are_ on--thank you, Blore. [_Opens his second letter._ BLORE. Thank _you,_ sir. [_To himself._] Oh, if the Dean only knew the good thing I could put him on to for the Durnstone Handicap! [_He goes out._ THE DEAN. Children! Salome! Sheba! Here is good news! SALOME. [_Running to him._] Good news! SHEBA. What is it? THE DEAN. Your Aunt! SHEBA. Left us some money? THE DEAN. Your Aunt is coming to live with us. SHEBA. To what? SALOME. To live with us! What Aunt? THE DEAN. My dear widowed sister, Georgiana Tidman. SALOME. What's she like? SHEBA. We don't want her. THE DEAN. Good gracious! Georgiana and I reconciled after all these years! She will help us to keep the expenses down. SALOME. Keep the expenses down! THE DEAN. [_Embracing his daughters._] A second mother to my girls. She will implant the precepts of retrenchment if their father cannot! SALOME. But, Papa, who is Aunt what's-her-name? SHEBA. Who is she? THE DEAN. My dears--a mournful, miserable history! [_With his head bent he walks to a chair, and holds out his hands to the girls, who go to him and kneel at his feet._] When you were infants your Aunt Georgiana married an individual whose existence I felt it my sad duty never to recognize. SALOME. A bad man? THE DEAN. He died ten years ago, and, therefore, we will say a misguided man. He was a person who bred horses to run in races for amusement combined with profit. He was also what is called a Gentleman Jockey, and it was your aunt's wifely boast that if ever he vexed her she could take a stone off his weight in half an hour. In due course his neck was dislocated. SHEBA. By Aunt? THE DEAN. Hush, child, no! You will be little wiser when I tell you he came a cropper! SALOME. How awful it all sounds! THE DEAN. Left a widow, you would think it natural that Georgiana Tidman would have flown to her brother, himself a widower. Not at all. Maddened, I hope, by grief, she continued the career of her misguided husband, and for years, to use her own terrible words, she was \"the Daisy of the Turf.\"\n\n[CHUNK_ID: dd_act03s02_c0004]\nGEORGIANA. But we ascertained the road the genial constable was going to follow. He was bound for the edge of the hill, up Pear Tree Lane, to watch the Races. Directly we knew this, Tris and I made for the Hill. Bless your soul, there were hundreds of my old friends there--welshers, pick-pockets, card-sharpers, all the lowest race-course cads in the kingdom. In a minute I was in the middle of 'em, as much at home as a Duchess in a Drawing-room. SIR TRISTRAM. A Queen in a Palace! GEORGIANA. Boadicea among the Druids! \"Do you know me?\" I holloaed out. Instantly there was a cry of \"Blessed if it ain't George Tidd!\" Tears of real joy sprang to my eyes--while I was wiping them away Tris had his pockets emptied and I lost my watch. SIR TRISTRAM. Ah, Jedd, it was a glorious moment! GEORGIANA. Tris made a back, and I stood on it, supported by a correct-card merchant on either side. \"Dear friends,\" I said; \"Brothers! I'm with you once again.\" You should have heard the shouts of honest welcome. Before I could obtain silence my field glasses had gone on their long journey. \"Listen to me,\" I said. \"A very dear relative of mine has been collared for playing the three-card trick on his way down from town.\" There was a groan of sympathy. \"He'll be on the brow of the Hill with a bobby in half-an-hour,\" said I, \"who's for the rescue?\" A dead deep silence followed, broken only by the sweet voice of a young child, saying, \"What'll we get for it?\" \"A pound a-piece,\" said I. There was a roar of assent, and my concluding words, \"and possibly six months,\" were never heard. At that moment Tris' back could stand it no longer, and we came heavily to the ground together. [_Seizing THE DEAN by the hand and dragging him up._] Now you know whose hands have led you back to your own manger. [_Embracing him._] And oh, brother, confess--isn't there something good and noble in true English sport after all? THE DEAN. Every abused institution has its redeeming characteristic. But whence is the money to come to reward these dreadful persons? I cannot reasonably ask my girls to organize a bazaar or concert. GEORGIANA. Concert! I'm a rich woman. THE DEAN. Rich! GEORGIANA. Well, I've cleared fifteen hundred over the Handicap. THE DEAN. [_Recoiling._] No! Then the horse who enjoyed the shelter of the Deanery last night---- SIR TRISTRAM. Dandy Dick! THE DEAN. Won! GEORGIANA. In a common canter! All the rest nowhere, and Bonny Betsy walked in with the policeman. THE DEAN. [_To himself._] Five hundred pounds towards the Spire! Five hundred! Oh, where is Blore with the good news! SIR TRISTRAM. Look at him! Lively as a cricket!\n\n[CHUNK_ID: dd_act01_c0017]\nSHEBA. Oh, I'm so glad. Because Salome and I are weary fragments too--we're everything awful but chastened widows. We owe forty pounds unknown to Pa! SALOME. Forty pounds, nineteen. GEORGIANA. Why, you ought to be ashamed of yourselves, you girls! SHEBA. We are! SALOME. We are! GEORGIANA. To cry and go on like this about forty pounds! SHEBA. But we've only got fifteen and threepence of our own in the world! And, oh, Aunt, you know something about the Races, don't you? GEORGIANA. Eh? SHEBA. If you do, help two poor creatures to win forty pounds, nineteen. Aunt Georgiana, what's \"Dandy Dick\" you were talking to that gentleman about? GEORGIANA. Child! Dandy Dick's a horse. SHEBA. We thought so. Then let Dandy Dick win _us_ some money. GEORGIANA. No, no! I won't hear of it! SHEBA. Oh, do, do! SALOME. Oh, do, do, do! GEORGIANA. Go away--I won't. I say decidedly, I will not! SHEBA. Oh, do, do! SALOME. Do! Do, and we'll love you for ever and ever, Aunt Georgiana. GEORGIANA. You will! [_She embraces them heartily._] Bless your little innocent faces! Do you want to win forty pounds? SALOME _and_ SHEBA. Yes, yes! GEORGIANA. Do you want to win _fifty_ pounds? SHEBA and SALOME. Oh, yes, yes! GEORGIANA. [_Taking her betting book from her pocket._] Very well, then, put your very petticoats on Dandy Dick! [_The girls stand clutching their skirts, frightened._ SALOME. Oh! SHEBA. Oh! END OF THE FIRST ACT.\n\n[CHUNK_ID: dd_act01_c0016]\nGEORGIANA. Yes, directly I saw Dandy Dick marched out before the auctioneer I asked John Fielder to help me, and he did, like a Briton. For I can't live without horseflesh, if it's only a piece of cat's meat on a skewer. But when I condescended to keep company with the Canons and the Bishop here I promised Augustin that I wouldn't own anything on four legs, so John sold you half of Dick, and I can swear I don't own a horse--and I don't--not a whole one. But half a horse is better than no bread, Tris--and we're partners. SIR TRISTRAM. [_Roaring with laughter._] Ho! ho! ha! ha! ha! GEORGIANA. What are you laughing at, man? SIR TRISTRAM. Oh, the Dean! the Dean! _SALOME and SHEBA enter unperceived._ SIR TRISTRAM. [_Still laughing._] I--ho! ho!--I beg your pardon, George--ha! ha! Well, now you know he's fit, of course, you're going to back Dandy Dick for the Durnstone Handicap. GEORGIANA. Back him! For every penny I've got in the world. That isn't much, but if I'm not a richer woman by a thousand pounds to-morrow night I shall have had a bad day. SALOME. Oh, Sheba! [_The girls come towards the Library._ GEORGIANA. [_Discovering them._] Hush! [_To the girls._] Hallo! SHEBA. It's only us, Aunt. [_The girls go into the Library._ SIR TRISTRAM. I'll be off. GEORGIANA. Keep your eye on the old horse, Tristram. SIR TRISTRAM. Don't fear. Good-morning, George! GEORGIANA. Good-morning, partner! [_SIR TRISTRAM bursts out laughing again, she joining in the laughter._] Oh, do be quiet! SIR TRISTRAM. Ho! ho! ho! Ha! ha! Oh, say good-bye for me to the Dean! [_She gives him a push and he goes out._ _SHEBA and SALOME immediately re-enter from the Library._ SHEBA. Aunt--dear Aunt---- GEORGIANA. Well, girls? SHEBA. Aunt--Salome has something to say to you. SALOME. No, it's Sheba. GEORGIANA. Why, you're shivering all over. [_Catching hold of SHEBA._] Hallo, little 'un! SHEBA. Aunt--dear Aunt Georgiana--we heard you say something about a thousand pounds. GEORGIANA. You've been listening? SHEBA. No--we only merely heard. And, oh, Aunt, a thousand pounds is such a lot, and we poor girls want such a little. GEORGIANA. Money? SHEBA. Yes. Salome has rather got into debt. GEORGIANA. My gracious! SALOME. I haven't, any more than you have, Sheba. SHEBA. Well, I'm in debt too, but I only meant to beg for Salome; but now I ask for both of us. Oh, Aunt Tidman, papa has told us that you have known troubles. GEORGIANA. So I have--heaps of them. SHEBA. Oh, I'm so glad. Because Salome and I are weary fragments too--we're everything awful but chastened widows. We owe forty pounds unknown to Pa! SALOME. Forty pounds, nineteen. GEORGIANA. Why, you ought to be ashamed of yourselves, you girls! SHEBA. We are! SALOME. We are! GEORGIANA. To cry and go on like this about forty pounds! SHEBA. But we've only got fifteen and threepence of our own in the world! And, oh, Aunt, you know something about the Races, don't you?",
+      "role": "user"
+    }
+  ],
+  "retriever": "vector",
+  "validated_output": {
+    "answer": "Georgiana wins money at The Races.",
+    "citations": [
+      "dd_act03s02_c0004"
+    ],
+    "insufficient_evidence": false
+  }
+}

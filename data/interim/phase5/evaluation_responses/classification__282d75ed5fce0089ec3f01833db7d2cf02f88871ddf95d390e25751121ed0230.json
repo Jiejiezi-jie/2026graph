@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement from the ground truth is not present in the answer.\",\"statement\":\"SALOME reflects upon Aunt Georgiana in relation to family dynamics and guidance in the play.\"}],\"FP\":[{\"reason\":\"The ground truth states that SALOME reflects upon Aunt Georgiana, not her father, so this statement is not supported.\",\"statement\":\"SALOME reflects upon her father, the Dean, in relation to family dynamics and guidance in the play.\"},{\"reason\":\"The ground truth does not mention any reference to 'Poor Papa'.\",\"statement\":\"SALOME refers to her father as 'Poor Papa'.\"},{\"reason\":\"The ground truth does not mention any reference to 'Poor dear Papa'.\",\"statement\":\"SALOME refers to her father as 'Poor dear Papa'.\"},{\"reason\":\"The ground truth does not mention any concern about her father's absence.\",\"statement\":\"SALOME expresses concern about her father's absence.\"},{\"reason\":\"The ground truth does not mention any anxiety over her father's return.\",\"statement\":\"SALOME expresses anxiety over her father's return.\"},{\"reason\":\"The ground truth does not mention reliance on her father as a parental figure.\",\"statement\":\"SALOME's concern and anxiety indicate her reliance on her father as her only parental figure.\"}],\"TP\":[]}",
+  "prompt_sha256": "282d75ed5fce0089ec3f01833db7d2cf02f88871ddf95d390e25751121ed0230",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [],\n  \"FP\": [\n    {\n      \"statement\": \"SALOME reflects upon her father, the Dean, in relation to family dynamics and guidance in the play.\",\n      \"reason\": \"The ground truth states that SALOME reflects upon Aunt Georgiana, not her father, so this statement is not supported.\"\n    },\n    {\n      \"statement\": \"SALOME refers to her father as 'Poor Papa'.\",\n      \"reason\": \"The ground truth does not mention any reference to 'Poor Papa'.\"\n    },\n    {\n      \"statement\": \"SALOME refers to her father as 'Poor dear Papa'.\",\n      \"reason\": \"The ground truth does not mention any reference to 'Poor dear Papa'.\"\n    },\n    {\n      \"statement\": \"SALOME expresses concern about her father's absence.\",\n      \"reason\": \"The ground truth does not mention any concern about her father's absence.\"\n    },\n    {\n      \"statement\": \"SALOME expresses anxiety over her father's return.\",\n      \"reason\": \"The ground truth does not mention any anxiety over her father's return.\"\n    },\n    {\n      \"statement\": \"SALOME's concern and anxiety indicate her reliance on her father as her only parental figure.\",\n      \"reason\": \"The ground truth does not mention reliance on her father as a parental figure.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"SALOME reflects upon Aunt Georgiana in relation to family dynamics and guidance in the play.\",\n      \"reason\": \"This statement from the ground truth is not present in the answer.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681669,
+    "id": "2a76447f-5b9e-4caf-8af2-ffd61979e2d0",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 337,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 176,
+      "prompt_tokens": 944,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1281
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4060.158231,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 337,
+          "prompt_tokens": 944,
+          "total_tokens": 1281
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 337,
+      "prompt_tokens": 944,
+      "total_tokens": 1281
+    }
+  },
+  "request_fingerprint": "230fb5b0627301048b3d68580cce4b9d030b240d8a53747e1b03e216d0145ed5"
+}

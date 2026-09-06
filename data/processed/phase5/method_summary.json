@@ -1,0 +1,67 @@
+{
+  "label_distribution": {
+    "neighborhood": 23,
+    "path": 14,
+    "vector": 25
+  },
+  "method_score_count": 186,
+  "methods": {
+    "neighborhood": {
+      "acceptable_count": 20,
+      "acceptable_rate": 0.32258065,
+      "count": 62,
+      "insufficient_or_failed_count": 4,
+      "invalid_citation_count": 0,
+      "mean_answer_correctness": 0.64303514,
+      "mean_completion_tokens": 71.6613,
+      "mean_context_character_count": 24055.6613,
+      "mean_evidence_coverage": 0.62768817,
+      "mean_generation_latency_ms": 2564.624635,
+      "mean_prompt_tokens": 8065.3226,
+      "mean_retrieval_latency_ms": 2.370357,
+      "mean_total_tokens": 8136.9839,
+      "total_tokens": 504493,
+      "win_count": 23
+    },
+    "path": {
+      "acceptable_count": 13,
+      "acceptable_rate": 0.20967742,
+      "count": 62,
+      "insufficient_or_failed_count": 19,
+      "invalid_citation_count": 0,
+      "mean_answer_correctness": 0.47008205,
+      "mean_completion_tokens": 63.5323,
+      "mean_context_character_count": 27457.7581,
+      "mean_evidence_coverage": 0.52284946,
+      "mean_generation_latency_ms": 2195.672883,
+      "mean_prompt_tokens": 9773.4194,
+      "mean_retrieval_latency_ms": 3.628392,
+      "mean_total_tokens": 9836.9516,
+      "total_tokens": 609891,
+      "win_count": 14
+    },
+    "vector": {
+      "acceptable_count": 13,
+      "acceptable_rate": 0.20967742,
+      "count": 62,
+      "insufficient_or_failed_count": 13,
+      "invalid_citation_count": 0,
+      "mean_answer_correctness": 0.50903872,
+      "mean_completion_tokens": 70.4194,
+      "mean_context_character_count": 11416.5484,
+      "mean_evidence_coverage": 0.5766129,
+      "mean_generation_latency_ms": 2372.735485,
+      "mean_prompt_tokens": 3417.6452,
+      "mean_retrieval_latency_ms": 0.046849,
+      "mean_total_tokens": 3488.0645,
+      "total_tokens": 216260,
+      "win_count": 25
+    }
+  },
+  "question_count": 62,
+  "schema_version": "phase5-v1",
+  "selection_modes": {
+    "acceptable": 23,
+    "best_available": 39
+  }
+}

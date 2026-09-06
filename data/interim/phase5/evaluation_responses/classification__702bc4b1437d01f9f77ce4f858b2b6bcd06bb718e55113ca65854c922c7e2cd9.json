@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This direct identity connection is not present in the answer.\",\"statement\":\"THE DEAN is also known as Gus.\"}],\"FP\":[{\"reason\":\"The ground truth states that THE DEAN is also known as Gus, indicating a direct identity connection, not through the horse.\",\"statement\":\"THE DEAN (Augustin Jedd) is connected to the character Gus in 'Dandy Dick' through the horse Dandy Dick.\"},{\"reason\":\"The ground truth identifies Gus as another name for THE DEAN, not the horse.\",\"statement\":\"Gus is the horse's nickname.\"},{\"reason\":\"This statement is not supported by the ground truth, which only mentions the identity of THE DEAN as Gus.\",\"statement\":\"THE DEAN becomes involved with the horse when THE DEAN administers a remedy to the horse.\"},{\"reason\":\"This statement is not supported by the ground truth, which does not mention any arrest or remedy.\",\"statement\":\"THE DEAN's administering a remedy to the horse leads to THE DEAN's arrest.\"}],\"TP\":[]}",
+  "prompt_sha256": "702bc4b1437d01f9f77ce4f858b2b6bcd06bb718e55113ca65854c922c7e2cd9",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [],\n  \"FP\": [\n    {\n      \"statement\": \"THE DEAN (Augustin Jedd) is connected to the character Gus in 'Dandy Dick' through the horse Dandy Dick.\",\n      \"reason\": \"The ground truth states that THE DEAN is also known as Gus, indicating a direct identity connection, not through the horse.\"\n    },\n    {\n      \"statement\": \"Gus is the horse's nickname.\",\n      \"reason\": \"The ground truth identifies Gus as another name for THE DEAN, not the horse.\"\n    },\n    {\n      \"statement\": \"THE DEAN becomes involved with the horse when THE DEAN administers a remedy to the horse.\",\n      \"reason\": \"This statement is not supported by the ground truth, which only mentions the identity of THE DEAN as Gus.\"\n    },\n    {\n      \"statement\": \"THE DEAN's administering a remedy to the horse leads to THE DEAN's arrest.\",\n      \"reason\": \"This statement is not supported by the ground truth, which does not mention any arrest or remedy.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"THE DEAN is also known as Gus.\",\n      \"reason\": \"This direct identity connection is not present in the answer.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681482,
+    "id": "c46672cd-a50f-481b-ab4c-19b20af38859",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 268,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 149,
+      "prompt_tokens": 917,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1185
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4815.582765,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 268,
+          "prompt_tokens": 917,
+          "total_tokens": 1185
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 268,
+      "prompt_tokens": 917,
+      "total_tokens": 1185
+    }
+  },
+  "request_fingerprint": "5876b92b165883c05e672d0a82fc9714d6dba751cf766c9706d4e6b823cf1bd9"
+}

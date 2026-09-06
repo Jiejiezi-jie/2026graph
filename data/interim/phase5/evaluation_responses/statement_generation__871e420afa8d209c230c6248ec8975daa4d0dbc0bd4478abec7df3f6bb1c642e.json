@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Georgiana Tidman's nickname becomes associated with Sir Tristram through their interaction.\",\n  \"Sir Tristram recognizes Georgiana Tidman as 'Mr. Tidd' upon Georgiana Tidman's entrance.\",\n  \"Georgiana Tidman responds by calling Sir Tristram 'Mardon'.\",\n  \"Georgiana Tidman and Sir Tristram shake hands warmly.\"\n]",
+  "prompt_sha256": "871e420afa8d209c230c6248ec8975daa4d0dbc0bd4478abec7df3f6bb1c642e",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\n  \"Georgiana Tidman's nickname becomes associated with Sir Tristram through their interaction.\",\n  \"Sir Tristram recognizes Georgiana Tidman as 'Mr. Tidd' upon Georgiana Tidman's entrance.\",\n  \"Georgiana Tidman responds by calling Sir Tristram 'Mardon'.\",\n  \"Georgiana Tidman and Sir Tristram shake hands warmly.\"\n]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681242,
+    "id": "7c2955dc-99d7-4173-97c1-44fe079478c4",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 84,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 149,
+      "prompt_tokens": 277,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 361
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1482.812547,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 84,
+          "prompt_tokens": 277,
+          "total_tokens": 361
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 84,
+      "prompt_tokens": 277,
+      "total_tokens": 361
+    }
+  },
+  "request_fingerprint": "0d2cfd9cc3a2f11e8ec3967943cfb83a7e3fc7751f36d317d2058916b2f8e928"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement from the ground truth is not present in the answer.\",\"statement\":\"THE DEAN puts on the coat.\"}],\"FP\":[{\"reason\":\"This statement contradicts the ground truth, which indicates that THE DEAN does prepare by putting on a coat.\",\"statement\":\"THE DEAN does not prepare for a visit to the stable.\"},{\"reason\":\"This statement is not supported by the ground truth, which only mentions THE DEAN putting on a coat.\",\"statement\":\"THE DEAN is taken to the stable by Noah Topping.\"},{\"reason\":\"This statement is not supported by the ground truth, which only mentions THE DEAN putting on a coat.\",\"statement\":\"Hannah gives THE DEAN a key to unlock handcuffs.\"},{\"reason\":\"This statement is not supported by the ground truth, which only mentions THE DEAN putting on a coat.\",\"statement\":\"Hannah gives THE DEAN a whistle to signal the horse to bolt.\"},{\"reason\":\"This statement is not supported by the ground truth, which only mentions THE DEAN putting on a coat.\",\"statement\":\"THE DEAN can escape by using the whistle to signal the horse to bolt.\"}],\"TP\":[]}",
+  "prompt_sha256": "563ec5d927a45adfec2192cb491d997fb2f1beb47d82939d06543fea054fbca9",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [],\n  \"FP\": [\n    {\n      \"statement\": \"THE DEAN does not prepare for a visit to the stable.\",\n      \"reason\": \"This statement contradicts the ground truth, which indicates that THE DEAN does prepare by putting on a coat.\"\n    },\n    {\n      \"statement\": \"THE DEAN is taken to the stable by Noah Topping.\",\n      \"reason\": \"This statement is not supported by the ground truth, which only mentions THE DEAN putting on a coat.\"\n    },\n    {\n      \"statement\": \"Hannah gives THE DEAN a key to unlock handcuffs.\",\n      \"reason\": \"This statement is not supported by the ground truth, which only mentions THE DEAN putting on a coat.\"\n    },\n    {\n      \"statement\": \"Hannah gives THE DEAN a whistle to signal the horse to bolt.\",\n      \"reason\": \"This statement is not supported by the ground truth, which only mentions THE DEAN putting on a coat.\"\n    },\n    {\n      \"statement\": \"THE DEAN can escape by using the whistle to signal the horse to bolt.\",\n      \"reason\": \"This statement is not supported by the ground truth, which only mentions THE DEAN putting on a coat.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"THE DEAN puts on the coat.\",\n      \"reason\": \"This statement from the ground truth is not present in the answer.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681426,
+    "id": "622566aa-9695-4120-b35a-3b870a561145",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 302,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 150,
+      "prompt_tokens": 918,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1220
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3358.07075,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 302,
+          "prompt_tokens": 918,
+          "total_tokens": 1220
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 302,
+      "prompt_tokens": 918,
+      "total_tokens": 1220
+    }
+  },
+  "request_fingerprint": "75c61160d00e2a4d4926eb20074f7a4703231f578109707d247d66edf20ca08b"
+}

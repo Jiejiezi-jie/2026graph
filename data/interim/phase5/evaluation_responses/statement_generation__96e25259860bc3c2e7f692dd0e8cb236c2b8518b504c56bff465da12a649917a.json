@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"W. H. Denny performed as an actor in the play Dandy Dick.\", \"W. H. Denny contributed to the comic success of the play Dandy Dick.\"]",
+  "prompt_sha256": "96e25259860bc3c2e7f692dd0e8cb236c2b8518b504c56bff465da12a649917a",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"W. H. Denny performed as an actor in the play Dandy Dick.\", \"W. H. Denny contributed to the comic success of the play Dandy Dick.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681521,
+    "id": "bb6e0d86-bfc6-4e08-8527-1d0c28f0da73",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 38,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 105,
+      "prompt_tokens": 233,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 271
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1341.825284,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 38,
+          "prompt_tokens": 233,
+          "total_tokens": 271
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 38,
+      "prompt_tokens": 233,
+      "total_tokens": 271
+    }
+  },
+  "request_fingerprint": "23078e626ad2851f3fbf0628e6a008faf188cd87cf0808aba1550f447fa7aec5"
+}

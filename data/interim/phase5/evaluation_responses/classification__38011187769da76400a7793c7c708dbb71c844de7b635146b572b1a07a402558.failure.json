@@ -1,0 +1,114 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "error": "official judge categorized item has no TP/FP/FN label",
+      "error_type": "Phase5Error",
+      "status": "failed"
+    },
+    {
+      "attempt": 2,
+      "error": "official judge categorized item has no TP/FP/FN label",
+      "error_type": "Phase5Error",
+      "status": "failed"
+    },
+    {
+      "attempt": 3,
+      "error": "official judge categorized item has no TP/FP/FN label",
+      "error_type": "Phase5Error",
+      "status": "failed"
+    }
+  ],
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "outcome": "failure",
+  "prompt_sha256": "38011187769da76400a7793c7c708dbb71c844de7b635146b572b1a07a402558",
+  "raw_responses": [
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Augustin is the Dean of St. Marvells.\",\n      \"reason\": \"The ground truth states 'Augustin is also known as The Dean,' which directly supports that Augustin holds the title of Dean, though the specific location 'St. Marvells' is not mentioned in the ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is the father of Sheba.\",\n      \"reason\": \"The ground truth explicitly states 'The Dean is father of Sheba,' and since Augustin is The Dean, this statement is directly supported.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Augustin is the brother of Georgiana.\",\n      \"reason\": \"No statement in the ground truth mentions Georgiana or any sibling relationship involving Augustin.\"\n    },\n    {\n      \"statement\": \"Augustin is the father of Salome.\",\n      \"reason\": \"The ground truth only mentions Sheba as the daughter of The Dean; Salome is not mentioned.\"\n    },\n    {\n      \"statement\": \"Augustin is a friend of Sir Tristram Mardon.\",\n      \"reason\": \"The ground truth does not describe any friendship between Augustin and Sir Tristram; it only mentions an incident involving Sir Tristram and The Dean.\"\n    },\n    {\n      \"statement\": \"Augustin is the head of the Deanery household.\",\n      \"reason\": \"While Augustin is The Dean, the ground truth does not explicitly state that he is the head of the Deanery household.\"\n    },\n    {\n      \"statement\": \"Sir Tristram and Sir Tristram's horse Dandy Dick are brought to the Deanery household.\",\n      \"reason\": \"The ground truth mentions Sir Tristram pulling a horse's nose-bag over The Dean, but it does not state that Sir Tristram and his horse were brought to the Deanery household.\"\n    },\n    {\n      \"statement\": \"Augustin is concerned about Augustin's reputation.\",\n      \"reason\": \"The ground truth does not mention any concern about reputation.\"\n    },\n    {\n      \"statement\": \"Augustin is concerned about the impact of the horse's presence on Augustin's position.\",\n      \"reason\": \"The ground truth does not mention any concern about the horse's presence or its impact on Augustin's position.\"\n    },\n    {\n      \"statement\": \"Augustin is involved in the subsequent scandal over the horse's doping.\",\n",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1788680965,
+      "id": "c00be4ce-5aa7-4fcd-a5db-e689904ab19b",
+      "model": "deepseek-v4-pro",
+      "object": "chat.completion",
+      "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+      "usage": {
+        "completion_tokens": 512,
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 167,
+        "prompt_tokens": 1063,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "total_tokens": 1575
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Augustin is the Dean of St. Marvells.\",\n      \"reason\": \"The ground truth states 'Augustin is also known as The Dean,' which directly supports that Augustin holds the title of Dean, though the specific location 'St. Marvells' is not mentioned in the ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is the father of Sheba.\",\n      \"reason\": \"The ground truth explicitly states 'The Dean is father of Sheba,' and since Augustin is The Dean, this statement is directly supported.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Augustin is the brother of Georgiana.\",\n      \"reason\": \"No statement in the ground truth mentions Georgiana or any sibling relationship involving Augustin.\"\n    },\n    {\n      \"statement\": \"Augustin is the father of Salome.\",\n      \"reason\": \"The ground truth only mentions Sheba as The Dean's child; Salome is not mentioned.\"\n    },\n    {\n      \"statement\": \"Augustin is a friend of Sir Tristram Mardon.\",\n      \"reason\": \"The ground truth does not describe any friendship between Augustin and Sir Tristram; it only mentions an incident involving Sir Tristram and The Dean.\"\n    },\n    {\n      \"statement\": \"Augustin is the head of the Deanery household.\",\n      \"reason\": \"While Augustin is The Dean, the ground truth does not explicitly state that he is the head of the household; this is an inference not directly supported.\"\n    },\n    {\n      \"statement\": \"Sir Tristram and Sir Tristram's horse Dandy Dick are brought to the Deanery household.\",\n      \"reason\": \"The ground truth mentions an incident where Sir Tristram pulled the horse's nose-bag over The Dean, but it does not state that Sir Tristram and the horse were brought to the Deanery household.\"\n    },\n    {\n      \"statement\": \"Augustin is concerned about Augustin's reputation.\",\n      \"reason\": \"The ground truth does not mention any concern about reputation.\"\n    },\n    {\n      \"statement\": \"Augustin is concerned about the impact of the horse's presence on Augustin's position.\",\n      \"reason\": \"The ground truth does not mention any concern about the horse's presence or its impact on Augustin's position.\"\n    },\n    {\n      \"statement\": \"Augustin is involved in the",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1788680973,
+      "id": "5c42e5de-e53d-4194-8a52-3b0ac623271a",
+      "model": "deepseek-v4-pro",
+      "object": "chat.completion",
+      "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+      "usage": {
+        "completion_tokens": 512,
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 39,
+        "prompt_tokens": 1063,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "total_tokens": 1575
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Augustin is the Dean of St. Marvells.\",\n      \"reason\": \"The ground truth states 'Augustin is also known as The Dean,' which directly supports that Augustin holds the title of Dean, though the specific location 'St. Marvells' is not mentioned in the ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is the father of Sheba.\",\n      \"reason\": \"The ground truth explicitly states 'The Dean is father of Sheba,' and since Augustin is The Dean, this statement is directly supported.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Augustin is the brother of Georgiana.\",\n      \"reason\": \"No statement in the ground truth mentions Georgiana or any sibling relationship involving Augustin.\"\n    },\n    {\n      \"statement\": \"Augustin is the father of Salome.\",\n      \"reason\": \"The ground truth only mentions Sheba as The Dean's child; Salome is not mentioned.\"\n    },\n    {\n      \"statement\": \"Augustin is a friend of Sir Tristram Mardon.\",\n      \"reason\": \"The ground truth does not describe any friendship between Augustin and Sir Tristram.\"\n    },\n    {\n      \"statement\": \"Augustin is the head of the Deanery household.\",\n      \"reason\": \"While Augustin is The Dean, the ground truth does not explicitly state that he is the head of the Deanery household.\"\n    },\n    {\n      \"statement\": \"Sir Tristram and Sir Tristram's horse Dandy Dick are brought to the Deanery household.\",\n      \"reason\": \"The ground truth mentions Sir Tristram pulling a nose-bag over The Dean, but it does not state that Sir Tristram and his horse were brought to the Deanery household.\"\n    },\n    {\n      \"statement\": \"Augustin is concerned about Augustin's reputation.\",\n      \"reason\": \"The ground truth does not mention any concern about reputation.\"\n    },\n    {\n      \"statement\": \"Augustin is concerned about the impact of the horse's presence on Augustin's position.\",\n      \"reason\": \"The ground truth does not mention any concern about the horse's presence or its impact on Augustin's position.\"\n    },\n    {\n      \"statement\": \"Augustin is involved in the subsequent scandal over the horse's doping.\",\n      \"reason\": \"The ground truth does not mention any scandal or doping.\"\n   ",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1788680983,
+      "id": "c869192f-a345-4e9e-8245-ca82dfd4569e",
+      "model": "deepseek-v4-pro",
+      "object": "chat.completion",
+      "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+      "usage": {
+        "completion_tokens": 512,
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 39,
+        "prompt_tokens": 1063,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "total_tokens": 1575
+      }
+    }
+  ],
+  "request_fingerprint": "9090d4e6fde809f4f3b61a722c1d626e41a1044708bc1f6baeffc6e5bfb85fab"
+}

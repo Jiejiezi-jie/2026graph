@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Sir Tristram Mardon owns one-half of Dandy Dick.\"]",
+  "prompt_sha256": "0c6b2867de159a3a32d3bb3d1456b46e8bc4c4d9f3953282d8aeb95d8a727f6c",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Sir Tristram Mardon owns one-half of Dandy Dick.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681307,
+    "id": "c0bb6ac9-9b90-48ac-b4f6-eb3aeb131b1b",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 16,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 108,
+      "prompt_tokens": 236,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 252
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1314.823865,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 16,
+          "prompt_tokens": 236,
+          "total_tokens": 252
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 16,
+      "prompt_tokens": 236,
+      "total_tokens": 252
+    }
+  },
+  "request_fingerprint": "207f3148304f4b8309753af6f1636af73f99143e5b4d195b4bdad326e8419122"
+}

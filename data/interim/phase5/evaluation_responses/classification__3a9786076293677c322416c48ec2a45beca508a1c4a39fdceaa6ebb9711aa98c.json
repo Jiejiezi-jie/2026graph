@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement clarifies the identity of George Tidd as Georgiana Tidman, which is not explicitly stated in the answer.\",\"statement\":\"George Tidd is Georgiana Tidman.\"}],\"FP\":[{\"reason\":\"The ground truth specifies the nickname as 'George Tidd', not just 'George'.\",\"statement\":\"Georgiana Tidman uses the nickname \\\"George\\\" in her interactions with Sir Tristram.\"},{\"reason\":\"The ground truth specifies the nickname as 'George Tidd', not 'Mr. Tidd'.\",\"statement\":\"Georgiana Tidman uses the nickname \\\"Mr. Tidd\\\" in her interactions with Sir Tristram.\"},{\"reason\":\"The ground truth specifies the nickname as 'George Tidd', not just 'Tidd'.\",\"statement\":\"Georgiana Tidman uses the nickname \\\"Tidd\\\" in her interactions with Sir Tristram.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth which states that Georgiana Tidman uses the nickname George Tidd and that she speaks to Sir Tristram.\",\"statement\":\"Georgiana Tidman uses the nickname \\\"George Tidd\\\" in her interactions with Sir Tristram.\"}]}",
+  "prompt_sha256": "3a9786076293677c322416c48ec2a45beca508a1c4a39fdceaa6ebb9711aa98c",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Georgiana Tidman uses the nickname \\\"George Tidd\\\" in her interactions with Sir Tristram.\",\n      \"reason\": \"This statement is directly supported by the ground truth which states that Georgiana Tidman uses the nickname George Tidd and that she speaks to Sir Tristram.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Georgiana Tidman uses the nickname \\\"George\\\" in her interactions with Sir Tristram.\",\n      \"reason\": \"The ground truth specifies the nickname as 'George Tidd', not just 'George'.\"\n    },\n    {\n      \"statement\": \"Georgiana Tidman uses the nickname \\\"Mr. Tidd\\\" in her interactions with Sir Tristram.\",\n      \"reason\": \"The ground truth specifies the nickname as 'George Tidd', not 'Mr. Tidd'.\"\n    },\n    {\n      \"statement\": \"Georgiana Tidman uses the nickname \\\"Tidd\\\" in her interactions with Sir Tristram.\",\n      \"reason\": \"The ground truth specifies the nickname as 'George Tidd', not just 'Tidd'.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"George Tidd is Georgiana Tidman.\",\n      \"reason\": \"This statement clarifies the identity of George Tidd as Georgiana Tidman, which is not explicitly stated in the answer.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681573,
+    "id": "24f7d015-1f34-4f7b-ab7b-281cd2c836bb",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 297,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 180,
+      "prompt_tokens": 948,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1245
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3772.720542,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 297,
+          "prompt_tokens": 948,
+          "total_tokens": 1245
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 297,
+      "prompt_tokens": 948,
+      "total_tokens": 1245
+    }
+  },
+  "request_fingerprint": "9b64fe865e5bd259a94e8df0d33d9b636a870662db5b08ab895db4ff4fa6ab69"
+}

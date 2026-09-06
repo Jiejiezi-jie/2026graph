@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which states that Arthur W. Pinero wrote the play 'Dandy Dick'.\",\"statement\":\"Arthur W. Pinero wrote the play 'Dandy Dick'.\"},{\"reason\":\"This statement is directly supported by the ground truth, which states that the play 'Dandy Dick' features comedic and farcical events at the Deanery.\",\"statement\":\"The play 'Dandy Dick' features comedic and farcical events at the Deanery.\"}]}",
+  "prompt_sha256": "d0a2abf5afa6cd801cbd974c11eadd78223519fd80d89e6595e8542c4349b51c",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Arthur W. Pinero wrote the play 'Dandy Dick'.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that Arthur W. Pinero wrote the play 'Dandy Dick'.\"\n    },\n    {\n      \"statement\": \"The play 'Dandy Dick' features comedic and farcical events at the Deanery.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that the play 'Dandy Dick' features comedic and farcical events at the Deanery.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681326,
+    "id": "1d0c41e6-1deb-41d4-ae5c-260dc519dac5",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 141,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 138,
+      "prompt_tokens": 906,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1047
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1956.028441,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 141,
+          "prompt_tokens": 906,
+          "total_tokens": 1047
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 141,
+      "prompt_tokens": 906,
+      "total_tokens": 1047
+    }
+  },
+  "request_fingerprint": "43c8a2e321d0f4023fdf34ac5db0645d71026acbde1e13c5bd8f15d3d7afe87b"
+}

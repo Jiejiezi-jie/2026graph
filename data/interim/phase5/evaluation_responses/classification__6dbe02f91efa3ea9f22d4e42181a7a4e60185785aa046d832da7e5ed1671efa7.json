@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"This statement is not directly supported by any ground truth statement. The ground truth does not explicitly state that his status as an officer is the reason for the contact.\",\"statement\":\"Mr. Darbey's status as an officer of the Hussars brings Mr. Darbey into contact with The Dean and Sheba.\"},{\"reason\":\"This statement is not supported by the ground truth. The ground truth only states that Sheba speaks to Mr. Darbey, but does not mention a proposal or a later conversation.\",\"statement\":\"Sheba speaks to Mr. Darbey later when Mr. Darbey proposes to Sheba.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth statement 'Mr. Darbey is an officer of the Hussars.'\",\"statement\":\"Mr. Darbey is an officer of the Hussars.\"},{\"reason\":\"This statement is supported by the ground truth statement 'The Dean sees Mr. Darbey.' The additional details about the visit are not contradicted by the ground truth and are consistent with the event.\",\"statement\":\"The Dean sees Mr. Darbey when Mr. Darbey and Major Tarver visit the Deanery to inquire about The Dean's cold.\"},{\"reason\":\"This statement is supported by the ground truth statement 'Sheba speaks to Mr. Darbey.' The additional details about the visit are not contradicted by the ground truth and are consistent with the event.\",\"statement\":\"Sheba speaks to Mr. Darbey during the visit when Mr. Darbey and Major Tarver visit the Deanery to inquire about The Dean's cold.\"}]}",
+  "prompt_sha256": "6dbe02f91efa3ea9f22d4e42181a7a4e60185785aa046d832da7e5ed1671efa7",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Mr. Darbey is an officer of the Hussars.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Mr. Darbey is an officer of the Hussars.'\"\n    },\n    {\n      \"statement\": \"The Dean sees Mr. Darbey when Mr. Darbey and Major Tarver visit the Deanery to inquire about The Dean's cold.\",\n      \"reason\": \"This statement is supported by the ground truth statement 'The Dean sees Mr. Darbey.' The additional details about the visit are not contradicted by the ground truth and are consistent with the event.\"\n    },\n    {\n      \"statement\": \"Sheba speaks to Mr. Darbey during the visit when Mr. Darbey and Major Tarver visit the Deanery to inquire about The Dean's cold.\",\n      \"reason\": \"This statement is supported by the ground truth statement 'Sheba speaks to Mr. Darbey.' The additional details about the visit are not contradicted by the ground truth and are consistent with the event.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Mr. Darbey's status as an officer of the Hussars brings Mr. Darbey into contact with The Dean and Sheba.\",\n      \"reason\": \"This statement is not directly supported by any ground truth statement. The ground truth does not explicitly state that his status as an officer is the reason for the contact.\"\n    },\n    {\n      \"statement\": \"Sheba speaks to Mr. Darbey later when Mr. Darbey proposes to Sheba.\",\n      \"reason\": \"This statement is not supported by the ground truth. The ground truth only states that Sheba speaks to Mr. Darbey, but does not mention a proposal or a later conversation.\"\n    }\n  ],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681605,
+    "id": "33e02635-81e4-4377-96d6-8ac2ed79c5a2",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 393,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 240,
+      "prompt_tokens": 1008,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1401
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4692.522915,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 393,
+          "prompt_tokens": 1008,
+          "total_tokens": 1401
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 393,
+      "prompt_tokens": 1008,
+      "total_tokens": 1401
+    }
+  },
+  "request_fingerprint": "b1ef48e2998e04c2aeca47b1e929841cc4508c548434b23527c239571c9a5da8"
+}

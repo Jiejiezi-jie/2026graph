@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"W. H. Denny performed in the play Dandy Dick.\", \"W. H. Denny took on the role of Noah Topping in the play Dandy Dick.\"]",
+  "prompt_sha256": "f9423293b1bdf21ef90d90be5ff80536968ca4ce6375936c93eff812b4f51d59",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"W. H. Denny performed in the play Dandy Dick.\", \"W. H. Denny took on the role of Noah Topping in the play Dandy Dick.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681284,
+    "id": "9a8a03b0-3b95-4fb3-8f9e-9faa8450711c",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 38,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 120,
+      "prompt_tokens": 248,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 286
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1313.264797,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 38,
+          "prompt_tokens": 248,
+          "total_tokens": 286
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 38,
+      "prompt_tokens": 248,
+      "total_tokens": 286
+    }
+  },
+  "request_fingerprint": "fdc290609775e4e835d708dd0ef4dd59550ddbf383cb0c8464fa1be62c2133f3"
+}

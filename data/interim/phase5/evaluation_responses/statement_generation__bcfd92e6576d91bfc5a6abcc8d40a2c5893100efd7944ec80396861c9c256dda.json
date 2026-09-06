@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"SHEBA won money at the St. Marvells races.\", \"SHEBA won money by betting on Dandy Dick.\", \"SHEBA's Aunt Georgiana encouraged SHEBA to bet on Dandy Dick.\"]",
+  "prompt_sha256": "bcfd92e6576d91bfc5a6abcc8d40a2c5893100efd7944ec80396861c9c256dda",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"SHEBA won money at the St. Marvells races.\", \"SHEBA won money by betting on Dandy Dick.\", \"SHEBA's Aunt Georgiana encouraged SHEBA to bet on Dandy Dick.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681748,
+    "id": "220418ef-9433-4709-8d6f-d4a5fbc51e25",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 47,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 134,
+      "prompt_tokens": 262,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 309
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1475.092427,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 47,
+          "prompt_tokens": 262,
+          "total_tokens": 309
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 47,
+      "prompt_tokens": 262,
+      "total_tokens": 309
+    }
+  },
+  "request_fingerprint": "bfff824826726c90eae1cfbfe5b48cc79fb19be8ff1cd14820d598ba706aa0f8"
+}

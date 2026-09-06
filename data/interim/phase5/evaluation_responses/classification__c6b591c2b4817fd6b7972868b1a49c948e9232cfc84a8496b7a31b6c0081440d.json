@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Hannah Topping is the character that recognizes The Dean during The Dean's imprisonment in the police station.\",\n      \"reason\": \"This statement is directly supported by the ground truth statements 'Hannah is the character who recognizes The Dean' and 'Hannah recognizes The Dean during The Dean's imprisonment in the police station.'\"\n    },\n    {\n      \"statement\": \"Hannah Topping identifies The Dean despite The Dean's disguise.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Hannah identifies The Dean despite The Dean's disguise.'\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+  "prompt_sha256": "c6b591c2b4817fd6b7972868b1a49c948e9232cfc84a8496b7a31b6c0081440d",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Hannah Topping is the character that recognizes The Dean during The Dean's imprisonment in the police station.\",\n      \"reason\": \"This statement is directly supported by the ground truth statements 'Hannah is the character who recognizes The Dean' and 'Hannah recognizes The Dean during The Dean's imprisonment in the police station.'\"\n    },\n    {\n      \"statement\": \"Hannah Topping identifies The Dean despite The Dean's disguise.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Hannah identifies The Dean despite The Dean's disguise.'\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680618,
+    "id": "807430ef-909d-4c3f-9570-d623fece3cf9",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 143,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 139,
+      "prompt_tokens": 907,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1050
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2212.898137,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 143,
+          "prompt_tokens": 907,
+          "total_tokens": 1050
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 143,
+      "prompt_tokens": 907,
+      "total_tokens": 1050
+    }
+  },
+  "request_fingerprint": "3f11088860a038d169d7607ae1ebc06c871954001fa8864a02604b36599acc37"
+}

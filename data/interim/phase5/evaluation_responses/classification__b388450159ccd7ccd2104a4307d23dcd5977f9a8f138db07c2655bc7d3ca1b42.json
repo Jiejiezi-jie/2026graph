@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"This statement describes the setting as the interior of a country Police Station, which is not mentioned in the ground truth. The ground truth only states that Hannah is located at St. Marvells, without specifying the exact place.\",\"statement\":\"The country Police Station in St. Marvells is the interior of a country Police Station.\"},{\"reason\":\"This statement provides a detailed description of the Police Station's interior, which is not present in the ground truth.\",\"statement\":\"The country Police Station is a quaint old room with plaster walls.\"},{\"reason\":\"This statement adds a specific architectural detail about the Police Station that is not mentioned in the ground truth.\",\"statement\":\"The country Police Station has oaken beams.\"},{\"reason\":\"This statement describes a specific feature of the Police Station that is not supported by the ground truth.\",\"statement\":\"The country Police Station has a gothic mullioned window looking on to the street.\"},{\"reason\":\"This statement describes Hannah's activity, which is not mentioned in the ground truth. The ground truth only states her identity and location.\",\"statement\":\"Hannah is engaged in cooking while singing gayly.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth statement 'Hannah is the former Deanery cook.'\",\"statement\":\"Hannah is the former Deanery cook.\"},{\"reason\":\"This statement is directly supported by the ground truth statement 'Hannah is now the constable's wife.'\",\"statement\":\"Hannah is now the constable's wife.\"},{\"reason\":\"This statement is partially supported by the ground truth statement 'Hannah is located at St. Marvells during the events of the play.' The answer adds the specific location 'the country Police Station', which is not mentioned in the ground truth, but the core location 'St. Marvells' is supported.\",\"statement\":\"Hannah is located at the country Police Station in St. Marvells during the events of the play.\"}]}",
+  "prompt_sha256": "b388450159ccd7ccd2104a4307d23dcd5977f9a8f138db07c2655bc7d3ca1b42",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Hannah is the former Deanery cook.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Hannah is the former Deanery cook.'\"\n    },\n    {\n      \"statement\": \"Hannah is now the constable's wife.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Hannah is now the constable's wife.'\"\n    },\n    {\n      \"statement\": \"Hannah is located at the country Police Station in St. Marvells during the events of the play.\",\n      \"reason\": \"This statement is partially supported by the ground truth statement 'Hannah is located at St. Marvells during the events of the play.' The answer adds the specific location 'the country Police Station', which is not mentioned in the ground truth, but the core location 'St. Marvells' is supported.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"The country Police Station in St. Marvells is the interior of a country Police Station.\",\n      \"reason\": \"This statement describes the setting as the interior of a country Police Station, which is not mentioned in the ground truth. The ground truth only states that Hannah is located at St. Marvells, without specifying the exact place.\"\n    },\n    {\n      \"statement\": \"The country Police Station is a quaint old room with plaster walls.\",\n      \"reason\": \"This statement provides a detailed description of the Police Station's interior, which is not present in the ground truth.\"\n    },\n    {\n      \"statement\": \"The country Police Station has oaken beams.\",\n      \"reason\": \"This statement adds a specific architectural detail about the Police Station that is not mentioned in the ground truth.\"\n    },\n    {\n      \"statement\": \"The country Police Station has a gothic mullioned window looking on to the street.\",\n      \"reason\": \"This statement describes a specific feature of the Police Station that is not supported by the ground truth.\"\n    },\n    {\n      \"statement\": \"Hannah is engaged in cooking while singing gayly.\",\n      \"reason\": \"This statement describes Hannah's activity, which is not mentioned in the ground truth. The ground truth only states her identity and location.\"\n    }\n  ],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681047,
+    "id": "089001ed-9e6c-4949-9c97-b882c1715ea2",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 482,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 224,
+      "prompt_tokens": 992,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1474
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 5502.36451,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 482,
+          "prompt_tokens": 992,
+          "total_tokens": 1474
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 482,
+      "prompt_tokens": 992,
+      "total_tokens": 1474
+    }
+  },
+  "request_fingerprint": "4005a1103f7d7cd8de2898e466e2566a492a220c06c6e59dccb8b9e9cf9cb947"
+}

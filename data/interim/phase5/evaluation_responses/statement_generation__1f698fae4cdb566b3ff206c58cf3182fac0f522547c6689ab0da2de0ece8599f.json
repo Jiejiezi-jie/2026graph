@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Georgiana (Mrs. Tidman) is seen accompanying Sir Tristram during key scenes regarding the management of Dandy Dick.\",\n  \"Georgiana and Sir Tristram go out together to bring Dandy Dick into the Deanery stables.\",\n  \"Georgiana clutches Sir Tristram's arm.\",\n  \"Georgiana whispers to Sir Tristram about the Dean being the villain who dosed Dandy Dick.\"\n]",
+  "prompt_sha256": "1f698fae4cdb566b3ff206c58cf3182fac0f522547c6689ab0da2de0ece8599f",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\n  \"Georgiana (Mrs. Tidman) is seen accompanying Sir Tristram during key scenes regarding the management of Dandy Dick.\",\n  \"Georgiana and Sir Tristram go out together to bring Dandy Dick into the Deanery stables.\",\n  \"Georgiana clutches Sir Tristram's arm.\",\n  \"Georgiana whispers to Sir Tristram about the Dean being the villain who dosed Dandy Dick.\"\n]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681769,
+    "id": "42474495-86f1-4ac5-98f6-196f054bebcf",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 94,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 51,
+      "prompt_tokens": 307,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "total_tokens": 401
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1845.631064,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 94,
+          "prompt_tokens": 307,
+          "total_tokens": 401
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 94,
+      "prompt_tokens": 307,
+      "total_tokens": 401
+    }
+  },
+  "request_fingerprint": "2543bd669124e6ab4265ab48ccda63bb8d4423f203bd7c408feda7ab345edb1c"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Georgiana Tidman reveals that 'George Tidd' was her racing name.\",\n  \"Georgiana Tidman tells others to ask after George Tidd at Newmarket.\",\n  \"Later, Georgiana Tidman encounters race-course acquaintances.\",\n  \"The race-course acquaintances recognize Georgiana Tidman.\",\n  \"The race-course acquaintances cry 'Blessed if it ain't George Tidd!'\"\n]",
+  "prompt_sha256": "1166cf4386024c7e49793ce1fef66925a78b7de29c68f7107db27640bacfba58",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Georgiana Tidman reveals that 'George Tidd' was her racing name.\",\n  \"Georgiana Tidman tells others to ask after George Tidd at Newmarket.\",\n  \"Later, Georgiana Tidman encounters race-course acquaintances.\",\n  \"The race-course acquaintances recognize Georgiana Tidman.\",\n  \"The race-course acquaintances cry 'Blessed if it ain't George Tidd!'\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681825,
+    "id": "ac2776b5-01eb-4e92-b80a-ba2ebd486615",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 82,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 162,
+      "prompt_tokens": 290,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 372
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1439.028931,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 82,
+          "prompt_tokens": 290,
+          "total_tokens": 372
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 82,
+      "prompt_tokens": 290,
+      "total_tokens": 372
+    }
+  },
+  "request_fingerprint": "b65df45ac5865d25bf5388a4e8a9454fc2114bc27f432d60235b4f8c6b983c90"
+}

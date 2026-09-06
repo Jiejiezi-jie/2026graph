@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Hannah Topping (formerly Hannah Evans) provides meals for The Dean during his time in custody.\"]",
+  "prompt_sha256": "19f25be9caeb6faa9db9e69477b0f4b1cdbfe8fb9fe1ff86fc6ffd5f810c056b",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"Hannah Topping (formerly Hannah Evans) provides meals for The Dean during his time in custody.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681348,
+    "id": "0719cc49-e3da-44a2-9401-11892cd9e0af",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 26,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 111,
+      "prompt_tokens": 239,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 265
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1054.39089,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 26,
+          "prompt_tokens": 239,
+          "total_tokens": 265
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 26,
+      "prompt_tokens": 239,
+      "total_tokens": 265
+    }
+  },
+  "request_fingerprint": "e5062b5d17aaff08f2e367d8951ae74acaade4508b1e4f0a43a19a8ce6d0c050"
+}

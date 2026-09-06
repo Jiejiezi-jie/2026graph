@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"The Dean mentions John Cox, the author of 'The Horse and its Ailments', in relation to veterinary remedies in the play.\",\n  \"The Dean refers to the book when the Dean decides to administer a Bolus to the horse.\",\n  \"Later the Dean tells Sir Tristram to remember the little volume and its humane author, John Cox.\"\n]",
+  "prompt_sha256": "f59afcc0a9fcd801ebe976cd073d56d772d663cd682c14b96f05b87245057109",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"The Dean mentions John Cox, the author of 'The Horse and its Ailments', in relation to veterinary remedies in the play.\",\n  \"The Dean refers to the book when the Dean decides to administer a Bolus to the horse.\",\n  \"Later the Dean tells Sir Tristram to remember the little volume and its humane author, John Cox.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681193,
+    "id": "80a2a0e3-461f-4b70-8339-34c3c918e97f",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 75,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 171,
+      "prompt_tokens": 299,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 374
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1130.551183,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 75,
+          "prompt_tokens": 299,
+          "total_tokens": 374
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 75,
+      "prompt_tokens": 299,
+      "total_tokens": 374
+    }
+  },
+  "request_fingerprint": "07c5e9a5e87852a4c3abe100e3f5395b3e3cd13b33e8e0d4e2b4078a1c0154c0"
+}

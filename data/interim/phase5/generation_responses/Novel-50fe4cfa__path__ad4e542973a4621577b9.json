@@ -1,0 +1,83 @@
+{
+  "cache_version": "phase5-generation-cache-v1",
+  "context_chunk_ids": [
+    "dd_prod_c0002",
+    "dd_prod_c0001",
+    "dd_cast_c0001",
+    "dd_front_c0001"
+  ],
+  "invalid_citations": [],
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "prompt_sha256": "ad4e542973a4621577b93a436ec20b3775fa94f374bf79f5d47684d1f89d5489",
+  "query_id": "Novel-50fe4cfa",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"answer\": \"Mr. John Clayton and Mr. Arthur Cecil\",\n  \"citations\": [\"dd_cast_c0001\"],\n  \"insufficient_evidence\": false\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680269,
+    "id": "80b2c94c-e788-400f-94e7-4690f0dd39c7",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 38,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 2687,
+      "prompt_tokens": 4095,
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      },
+      "total_tokens": 4133
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1559.516345,
+        "finish_reason": "stop",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 38,
+          "prompt_tokens": 4095,
+          "total_tokens": 4133
+        }
+      }
+    ],
+    "elapsed_ms": 1559.516345,
+    "token_usage": {
+      "completion_tokens": 38,
+      "prompt_tokens": 4095,
+      "total_tokens": 4133
+    }
+  },
+  "request_fingerprint": "88726dd2ff0ea82aa64aa7507834bae63bac193e371bfea1c45aba3a860fa8db",
+  "request_messages": [
+    {
+      "content": "You are a grounded question-answering system.\n\nAnswer the user's QUESTION using only the supplied EVIDENCE CHUNKS and, when\npresent, GRAPH CONTEXT. Do not use outside knowledge or infer unsupported facts.\nIf the supplied evidence is insufficient, set insufficient_evidence to true and\nset answer exactly to INSUFFICIENT_EVIDENCE.\n\nReturn exactly one JSON object with exactly these fields:\n{\n  \"answer\": \"concise grounded answer or INSUFFICIENT_EVIDENCE\",\n  \"citations\": [\"chunk_id\"],\n  \"insufficient_evidence\": false\n}\n\nEvery citation must be a chunk_id that appears in EVIDENCE CHUNKS. Cite only\nchunks that support the answer. Do not output Markdown, explanations, additional\nkeys, or text outside the JSON object.",
+      "role": "system"
+    },
+    {
+      "content": "QUESTION:\nDuring the original production of 'Dandy Dick', who were the individuals responsible for managing the Court Theatre?\n\nEVIDENCE CHUNKS:\n[CHUNK_ID: dd_prod_c0002]\n\"Dandy Dick\" was performed 171 times between the first night and the 22d of July, when, the old theatre being demolished, Mr. Clayton took a temporary lease of Toole's Theatre, and transferred the play thither, where it ran 75 nights more. A company had already been sent out, under the auspices of the Court management, to perform \"Dandy Dick\" in the provinces; but, when the play was withdrawn from the London boards, Mr. Clayton set out himself with a company, and it was during this tour that he died at Liverpool. In America Mr. Daly produced \"Dandy Dick\" with Miss Ada Rehan in Mrs. John Wood's part, but no very great success was achieved; whereas in Australia its reception was so enthusiastic that it ran for quite an unusual time both in Melbourne and Sydney. In the character of the Dean, Mr. G. W. Anson achieved perhaps the greatest of his Australian successes, and Mr. Robert Brough made his mark as the policeman. MALCOLM C. SALAMAK. _December_, 1892.\n\n[CHUNK_ID: dd_prod_c0001]\nINTRODUCTORY NOTE. \"Dandy Dick\" was the third of the farces which Mr. Pinero wrote for the old Court Theatre--a series of plays which, besides giving playgoers a fresh source of laughter, and the English stage a new order of comic play, brought plentiful prosperity to the joint management of Mr. Arthur Cecil and the late Mr. John Clayton. But a kind of melancholy interest attaches to \"Dandy Dick,\" for this play was, as it were, the swan-song of the old theatre and of the Clayton and Cecil partnership; and it was the piece in which Mr. Clayton was acting when death overtook him, to the general grief. The production of \"Dandy Dick\" may be considered as something of a _tour de force_ in its way. \"The Schoolmistress\" was at the end of its successful run, and Mr. Pinero was under contract to supply its successor by a certain date, when Mr. Clayton one day went down to Brighton, where the dramatist was then at work, to hear him read the two completed acts of the new play. To Mr. Clayton's consternation, however, Mr. Pinero announced that he was dissatisfied with his work, and proposed to begin an entirely new play, as he had a more promising idea. But time was pressing, and a successor to \"The Schoolmistress\" was an immediate necessity. However, Mr. Pinero's idea of writing a play round a dean, who, while being a paragon of dignity and decorum, should be driven by an indiscreet act into a most undignified dilemma, appealed to Mr. Clayton, and hastening back to London with the sketches for the requisite scenes, he left Mr. Pinero to set to work at once upon the new scheme. And within a few weeks, indeed by the time the scenery was ready, the new play was completed, the rural constable of a village adjacent to Brighton having suggested the character of Noah Topping. \"Dandy Dick\" was produced at the Court Theatre on January 27th, 1887, and, meeting with a most favorable initial reception, it settled down immediately into a complete success. The following is a copy of the first-night programme:--\n\n[CHUNK_ID: dd_cast_c0001]\nROYAL COURT THEATRE, SLOANE SQUARE, S.W. _Lessees and Managers:_ Mr. John Clayton and Mr. Arthur Cecil. Programme THIS EVENING, THURSDAY, JANUARY 27, _At_ 8.30 _punctually_, DANDY DICK. AN ORIGINAL FARCE, IN THREE ACTS, BY A. W. PINERO. THE VERY REV. AUGUSTIN JEDD, D.D. MR. JOHN CLAYTON. (Dean of St. Marvell's) SIR TRISTRAM MARDON, Bart MR. EDMUND MAURICE. --th Hussars, MAJOR TARVER { quartered at } MR. F. KERR. MR. DARBEY { Durnstone, near } MR. H. EVERSFIELD. St. Marvell's BLORE (Butler at the Deanery) MR. ARTHUR CECIL. NOAH TOPPING (Constable at MR. W. H. DENNY. St. Marvell's) HATCHAM (Sir Tristram's groom) MR. W. LUGG. GEORGIANA TIDMAN (a Widow, MRS. JOHN WOOD. the Dean's sister) SALOME } the Dean's Daughters { MISS MARIE LEWES. SHEBA } { MISS NORREYS. HANNAH TOPPING (formerly in MISS LAURA LINDEN. Service at the Deanery) ACT I. AT THE DEANERY, ST. MARVELL'S. (Morning.) ACT II. THE SAME PLACE. (Evening.) ACT III.--The Next Day. Scene 1:--\"_The Strong Box,_\" _St. Marvell's. Scene 2.--The Deanery again._ The curtain will be lowered for a few minutes between the two scenes. New Scenery by Mr. T. W. Hall. Preceded, at Eight o'clock, by \"THE NETTLE.\" An Original Comedietta by ERNEST WARREN.\n\n[CHUNK_ID: dd_front_c0001]\nDANDY DICK A PLAY IN THREE ACTS By ARTHUR W. PINERO AUTHOR OF \"SWEET LAVENDER,\" \"THE TIMES,\" \"THE CABINET MINISTER,\" \"LADY BOUNTIFUL,\" ETC. All rights reserved. Performance forbidden, and right of representation reserved. Application for the right of performing this piece must be made to the publishers. BOSTON _WALTER H. BAKER_ Copyright, 1893, by ARTHUR W. PINERO _All rights reserved._\n\nGRAPH CONTEXT (retriever output only):\n{\n  \"linked_entities\": [\n    {\n      \"matched_term\": null,\n      \"method\": \"semantic\",\n      \"name\": \"John Clayton\",\n      \"node_id\": \"n_john_clayton_f6c4f4eddd74\",\n      \"score\": 0.73642051,\n      \"semantic_score\": 0.73642051,\n      \"type\": \"PERSON\"\n    },\n    {\n      \"matched_term\": null,\n      \"method\": \"semantic\",\n      \"name\": \"Royal Court Theatre\",\n      \"node_id\": \"n_royal_court_theatre_b633e12d0239\",\n      \"score\": 0.71974647,\n      \"semantic_score\": 0.71974647,\n      \"type\": \"LOCATION\"\n    },\n    {\n      \"matched_term\": null,\n      \"method\": \"semantic\",\n      \"name\": \"Dandy Dick (play)\",\n      \"node_id\": \"n_dandy_dick_play_3b5ef6517439\",\n      \"score\": 0.68831354,\n      \"semantic_score\": 0.68831354,\n      \"type\": \"CREATIVE_WORK\"\n    },\n    {\n      \"matched_term\": null,\n      \"method\": \"semantic\",\n      \"name\": \"Toole's Theatre\",\n      \"node_id\": \"n_toole_s_theatre_23c757372e96\",\n      \"score\": 0.65545762,\n      \"semantic_score\": 0.65545762,\n      \"type\": \"LOCATION\"\n    }\n  ],\n  \"paths\": [\n    {\n      \"edge_ids\": [\n        \"e_n_dandy_dick_play_3b5ef65174_4e42a9b1e07401\"\n      ],\n      \"endpoint_score\": 0.70403001,\n      \"evidence_chunk_ids\": [\n        \"dd_cast_c0001\",\n        \"dd_front_c0001\",\n        \"dd_prod_c0001\",\n        \"dd_prod_c0002\"\n      ],\n      \"hops\": 1,\n      \"node_ids\": [\n        \"n_royal_court_theatre_b633e12d0239\",\n        \"n_dandy_dick_play_3b5ef6517439\"\n      ],\n      \"path_id\": \"p_38661742991d782f\",\n      \"relations\": [\n        \"PERFORMED_AT\"\n      ],\n      \"score\": 0.76162827,\n      \"source_id\": \"n_royal_court_theatre_b633e12d0239\",\n      \"target_id\": \"n_dandy_dick_play_3b5ef6517439\"\n    },\n    {\n      \"edge_ids\": [\n        \"e_n_toole_s_theatre_23c757372e_4577328176a7b7\"\n      ],\n      \"endpoint_score\": 0.69593906,\n      \"evidence_chunk_ids\": [\n        \"dd_cast_c0001\",\n        \"dd_prod_c0001\",\n        \"dd_prod_c0002\"\n      ],\n      \"hops\": 1,\n      \"node_ids\": [\n        \"n_john_clayton_f6c4f4eddd74\",\n        \"n_toole_s_theatre_23c757372e96\"\n      ],\n      \"path_id\": \"p_5c223bbafa40dccf\",\n      \"relations\": [\n        \"MANAGED_BY\"\n      ],\n      \"score\": 0.75798734,\n      \"source_id\": \"n_john_clayton_f6c4f4eddd74\",\n      \"target_id\": \"n_toole_s_theatre_23c757372e96\"\n    },\n    {\n      \"edge_ids\": [\n        \"e_n_dandy_dick_play_3b5ef65174_4d93e22d48ac53\"\n      ],\n      \"endpoint_score\": 0.67188558,\n      \"evidence_chunk_ids\": [\n        \"dd_cast_c0001\",\n        \"dd_front_c0001\",\n        \"dd_prod_c0001\",\n        \"dd_prod_c0002\"\n      ],\n      \"hops\": 1,\n      \"node_ids\": [\n        \"n_dandy_dick_play_3b5ef6517439\",\n        \"n_toole_s_theatre_23c757372e96\"\n      ],\n      \"path_id\": \"p_da630d3a1d862b04\",\n      \"relations\": [\n        \"PERFORMED_AT\"\n      ],\n      \"score\": 0.74716328,\n      \"source_id\": \"n_dandy_dick_play_3b5ef6517439\",\n      \"target_id\": \"n_toole_s_theatre_23c757372e96\"\n    },\n    {\n      \"edge_ids\": [\n        \"e_n_toole_s_theatre_23c757372e_4577328176a7b7\",\n        \"e_n_dandy_dick_play_3b5ef65174_4d93e22d48ac53\"\n      ],\n      \"endpoint_score\": 0.71236703,\n      \"evidence_chunk_ids\": [\n        \"dd_cast_c0001\",\n        \"dd_front_c0001\",\n        \"dd_prod_c0001\",\n        \"dd_prod_c0002\"\n      ],\n      \"hops\": 2,\n      \"node_ids\": [\n        \"n_john_clayton_f6c4f4eddd74\",\n        \"n_toole_s_theatre_23c757372e96\",\n        \"n_dandy_dick_play_3b5ef6517439\"\n      ],\n      \"path_id\": \"p_6712d9e6c23fff5d\",\n      \"relations\": [\n        \"MANAGED_BY\",\n        \"PERFORMED_AT\"\n      ],\n      \"score\": 0.66537993,\n      \"source_id\": \"n_john_clayton_f6c4f4eddd74\",\n      \"target_id\": \"n_dandy_dick_play_3b5ef6517439\"\n    },\n    {\n      \"edge_ids\": [\n        \"e_n_dandy_dick_play_3b5ef65174_4e42a9b1e07401\",\n        \"e_n_dandy_dick_play_3b5ef65174_4d93e22d48ac53\"\n      ],\n      \"endpoint_score\": 0.68760204,\n      \"evidence_chunk_ids\": [\n        \"dd_cast_c0001\",\n        \"dd_front_c0001\",\n        \"dd_prod_c0001\",\n        \"dd_prod_c0002\"\n      ],\n      \"hops\": 2,\n      \"node_ids\": [\n        \"n_royal_court_theatre_b633e12d0239\",\n        \"n_dandy_dick_play_3b5ef6517439\",\n        \"n_toole_s_theatre_23c757372e96\"\n      ],\n      \"path_id\": \"p_431a6c7cb1b9fae6\",\n      \"relations\": [\n        \"PERFORMED_AT\",\n        \"PERFORMED_AT\"\n      ],\n      \"score\": 0.65423569,\n      \"source_id\": \"n_royal_court_theatre_b633e12d0239\",\n      \"target_id\": \"n_toole_s_theatre_23c757372e96\"\n    },\n    {\n      \"edge_ids\": [\n        \"e_n_toole_s_theatre_23c757372e_4577328176a7b7\",\n        \"e_n_dandy_dick_play_3b5ef65174_4d93e22d48ac53\",\n        \"e_n_dandy_dick_play_3b5ef65174_4e42a9b1e07401\"\n      ],\n      \"endpoint_score\": 0.72808349,\n      \"evidence_chunk_ids\": [\n        \"dd_cast_c0001\",\n        \"dd_front_c0001\",\n        \"dd_prod_c0001\",\n        \"dd_prod_c0002\"\n      ],\n      \"hops\": 3,\n      \"node_ids\": [\n        \"n_john_clayton_f6c4f4eddd74\",\n        \"n_toole_s_theatre_23c757372e96\",\n        \"n_dandy_dick_play_3b5ef6517439\",\n        \"n_royal_court_theatre_b633e12d0239\"\n      ],\n      \"path_id\": \"p_5faea2995cce4dc1\",\n      \"relations\": [\n        \"MANAGED_BY\",\n        \"PERFORMED_AT\",\n        \"PERFORMED_AT\"\n      ],\n      \"score\": 0.639119,\n      \"source_id\": \"n_john_clayton_f6c4f4eddd74\",\n      \"target_id\": \"n_royal_court_theatre_b633e12d0239\"\n    }\n  ],\n  \"retrieved_edges\": [\n    {\n      \"directed\": true,\n      \"edge_id\": \"e_n_dandy_dick_play_3b5ef65174_4d93e22d48ac53\",\n      \"relation\": \"PERFORMED_AT\",\n      \"source\": \"Dandy Dick (play)\",\n      \"source_id\": \"n_dandy_dick_play_3b5ef6517439\",\n      \"target\": \"Toole's Theatre\",\n      \"target_id\": \"n_toole_s_theatre_23c757372e96\"\n    },\n    {\n      \"directed\": true,\n      \"edge_id\": \"e_n_dandy_dick_play_3b5ef65174_4e42a9b1e07401\",\n      \"relation\": \"PERFORMED_AT\",\n      \"source\": \"Dandy Dick (play)\",\n      \"source_id\": \"n_dandy_dick_play_3b5ef6517439\",\n      \"target\": \"Royal Court Theatre\",\n      \"target_id\": \"n_royal_court_theatre_b633e12d0239\"\n    },\n    {\n      \"directed\": true,\n      \"edge_id\": \"e_n_toole_s_theatre_23c757372e_4577328176a7b7\",\n      \"relation\": \"MANAGED_BY\",\n      \"source\": \"Toole's Theatre\",\n      \"source_id\": \"n_toole_s_theatre_23c757372e96\",\n      \"target\": \"John Clayton\",\n      \"target_id\": \"n_john_clayton_f6c4f4eddd74\"\n    }\n  ],\n  \"retrieved_nodes\": [\n    {\n      \"link_score\": 0.68831354,\n      \"linked\": true,\n      \"name\": \"Dandy Dick (play)\",\n      \"node_id\": \"n_dandy_dick_play_3b5ef6517439\",\n      \"type\": \"CREATIVE_WORK\"\n    },\n    {\n      \"link_score\": 0.73642051,\n      \"linked\": true,\n      \"name\": \"John Clayton\",\n      \"node_id\": \"n_john_clayton_f6c4f4eddd74\",\n      \"type\": \"PERSON\"\n    },\n    {\n      \"link_score\": 0.71974647,\n      \"linked\": true,\n      \"name\": \"Royal Court Theatre\",\n      \"node_id\": \"n_royal_court_theatre_b633e12d0239\",\n      \"type\": \"LOCATION\"\n    },\n    {\n      \"link_score\": 0.65545762,\n      \"linked\": true,\n      \"name\": \"Toole's Theatre\",\n      \"node_id\": \"n_toole_s_theatre_23c757372e96\",\n      \"type\": \"LOCATION\"\n    }\n  ]\n}",
+      "role": "user"
+    }
+  ],
+  "retriever": "path",
+  "validated_output": {
+    "answer": "Mr. John Clayton and Mr. Arthur Cecil",
+    "citations": [
+      "dd_cast_c0001"
+    ],
+    "insufficient_evidence": false
+  }
+}

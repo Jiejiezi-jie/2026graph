@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Sir Tristram pulled the horse's nose-bag over The Dean.\", \"Augustin is also known as The Dean.\", \"The Dean is father of Sheba.\"]",
+  "prompt_sha256": "650ef1a55334f6ac4c5aba4df7731287563a0c9503b17c66725649de4cb02624",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"Sir Tristram pulled the horse's nose-bag over The Dean.\", \"Augustin is also known as The Dean.\", \"The Dean is father of Sheba.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680641,
+    "id": "44e24e07-898e-4526-a783-73aeefc74b62",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 132,
+      "prompt_tokens": 260,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 300
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1306.989459,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 40,
+          "prompt_tokens": 260,
+          "total_tokens": 300
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 260,
+      "total_tokens": 300
+    }
+  },
+  "request_fingerprint": "fd07c294359a8d57ee3dcca07a1ded1a4e2dbea53d47e95884edd4b7e9cc8dc3"
+}

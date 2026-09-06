@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"The answer does not explicitly mention that SHEBA's involvement in the excitement of the races was highlighted, even though it implies her participation.\",\"statement\":\"SHEBA's involvement in the excitement of the St. Marvells races was highlighted.\"}],\"FP\":[{\"reason\":\"This statement adds specific details about the horse and the race type that are not mentioned in the ground truth.\",\"statement\":\"SHEBA won money specifically through the horse Dandy Dick winning the Handicap.\"},{\"reason\":\"This statement includes a specific amount and a quote from Georgiana, which are not present in the ground truth.\",\"statement\":\"Georgiana stated that SHEBA cleared fifteen hundred over the Handicap.\"},{\"reason\":\"This statement introduces the Dean's realization and the specific horse and race, which are not mentioned in the ground truth.\",\"statement\":\"The Dean realized that Dandy Dick won the Handicap.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth which states that SHEBA won money at The Races, and the context indicates that the races are the St. Marvells races.\",\"statement\":\"SHEBA won money at the St. Marvells races.\"}]}",
+  "prompt_sha256": "41bdcc0c71d357ae6d95fc373a5b9234546f0cfa19be3721359475263e89e70c",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"SHEBA won money at the St. Marvells races.\",\n      \"reason\": \"This statement is directly supported by the ground truth which states that SHEBA won money at The Races, and the context indicates that the races are the St. Marvells races.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"SHEBA won money specifically through the horse Dandy Dick winning the Handicap.\",\n      \"reason\": \"This statement adds specific details about the horse and the race type that are not mentioned in the ground truth.\"\n    },\n    {\n      \"statement\": \"Georgiana stated that SHEBA cleared fifteen hundred over the Handicap.\",\n      \"reason\": \"This statement includes a specific amount and a quote from Georgiana, which are not present in the ground truth.\"\n    },\n    {\n      \"statement\": \"The Dean realized that Dandy Dick won the Handicap.\",\n      \"reason\": \"This statement introduces the Dean's realization and the specific horse and race, which are not mentioned in the ground truth.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"SHEBA's involvement in the excitement of the St. Marvells races was highlighted.\",\n      \"reason\": \"The answer does not explicitly mention that SHEBA's involvement in the excitement of the races was highlighted, even though it implies her participation.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681744,
+    "id": "09ba51ec-84af-4351-8ad3-72eb5ed769a7",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 302,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 164,
+      "prompt_tokens": 932,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1234
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4459.397557,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 302,
+          "prompt_tokens": 932,
+          "total_tokens": 1234
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 302,
+      "prompt_tokens": 932,
+      "total_tokens": 1234
+    }
+  },
+  "request_fingerprint": "9b58298e51804628ef723cddf206674df1070f71bb371a9391defa31b050527a"
+}

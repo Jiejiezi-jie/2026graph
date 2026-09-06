@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement is not present in the answer.\",\"statement\":\"Salome is the niece of Georgiana Tidman.\"}],\"FP\":[],\"TP\":[{\"reason\":\"This is directly supported by the ground truth that Georgiana Tidman uses the nickname George Tidd.\",\"statement\":\"Georgiana Tidman reveals that 'George Tidd' was her racing name.\"},{\"reason\":\"This is directly supported by the ground truth that Georgiana Tidman uses the nickname George Tidd.\",\"statement\":\"Georgiana Tidman tells others to ask after George Tidd at Newmarket.\"},{\"reason\":\"This is directly supported by the ground truth that Georgiana Tidman uses the nickname George Tidd.\",\"statement\":\"Later, Georgiana Tidman encounters race-course acquaintances.\"},{\"reason\":\"This is directly supported by the ground truth that George Tidd was Georgiana Tidman.\",\"statement\":\"The race-course acquaintances recognize Georgiana Tidman.\"},{\"reason\":\"This is directly supported by the ground truth that George Tidd was Georgiana Tidman.\",\"statement\":\"The race-course acquaintances cry 'Blessed if it ain't George Tidd!'\"}]}",
+  "prompt_sha256": "9c4c379277cf7ce0d49cc90483c43d4caec58a587de29f95b255d509d97e95d8",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Georgiana Tidman reveals that 'George Tidd' was her racing name.\",\n      \"reason\": \"This is directly supported by the ground truth that Georgiana Tidman uses the nickname George Tidd.\"\n    },\n    {\n      \"statement\": \"Georgiana Tidman tells others to ask after George Tidd at Newmarket.\",\n      \"reason\": \"This is directly supported by the ground truth that Georgiana Tidman uses the nickname George Tidd.\"\n    },\n    {\n      \"statement\": \"Later, Georgiana Tidman encounters race-course acquaintances.\",\n      \"reason\": \"This is directly supported by the ground truth that Georgiana Tidman uses the nickname George Tidd.\"\n    },\n    {\n      \"statement\": \"The race-course acquaintances recognize Georgiana Tidman.\",\n      \"reason\": \"This is directly supported by the ground truth that George Tidd was Georgiana Tidman.\"\n    },\n    {\n      \"statement\": \"The race-course acquaintances cry 'Blessed if it ain't George Tidd!'\",\n      \"reason\": \"This is directly supported by the ground truth that George Tidd was Georgiana Tidman.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": [\n    {\n      \"statement\": \"Salome is the niece of Georgiana Tidman.\",\n      \"reason\": \"This statement is not present in the answer.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681828,
+    "id": "b8f37075-b19c-4b60-ab6b-594d80a91c84",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 291,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 175,
+      "prompt_tokens": 943,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1234
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3322.709905,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 291,
+          "prompt_tokens": 943,
+          "total_tokens": 1234
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 291,
+      "prompt_tokens": 943,
+      "total_tokens": 1234
+    }
+  },
+  "request_fingerprint": "e957b382c21904d81609a4d1e79a0390248af1d6b557a74a735ffd1339adccfb"
+}

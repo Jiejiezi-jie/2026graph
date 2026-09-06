@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Mr. Darbey is an officer of the Hussars.\",\n  \"Mr. Darbey is seen by The Dean.\",\n  \"Mr. Darbey is spoken to by Sheba.\",\n  \"Mr. Darbey and Major Tarver visit the Deanery.\",\n  \"The Dean initially mistakes Mr. Darbey's name as 'Mr. Garvey'.\",\n  \"Sheba corrects The Dean.\",\n  \"Sheba says 'Mr. Darbey!'.\",\n  \"The Dean acknowledges Mr. Darbey as 'Darbey!'.\",\n  \"The Dean invites Mr. Darbey and Major Tarver to dinner.\"\n]",
+  "prompt_sha256": "8b7fe1578d801488829849f1cf8ee49f5b934ccce963166cec2008059b6f1634",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\n  \"Mr. Darbey is an officer of the Hussars.\",\n  \"Mr. Darbey is seen by The Dean.\",\n  \"Mr. Darbey is spoken to by Sheba.\",\n  \"Mr. Darbey and Major Tarver visit the Deanery.\",\n  \"The Dean initially mistakes Mr. Darbey's name as 'Mr. Garvey'.\",\n  \"Sheba corrects The Dean.\",\n  \"Sheba says 'Mr. Darbey!'.\",\n  \"The Dean acknowledges Mr. Darbey as 'Darbey!'.\",\n  \"The Dean invites Mr. Darbey and Major Tarver to dinner.\"\n]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681595,
+    "id": "9df48e32-ecfe-48a0-b6d9-e289170ba1a3",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 141,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 196,
+      "prompt_tokens": 324,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 465
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2028.310797,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 141,
+          "prompt_tokens": 324,
+          "total_tokens": 465
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 141,
+      "prompt_tokens": 324,
+      "total_tokens": 465
+    }
+  },
+  "request_fingerprint": "06d9d53b15b9c11dee97ab37f32810826a8876535c8dc55cd18cd369b133821c"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"In the narrative of 'Dandy Dick', THE DEAN is also known as Augustin Jedd.\"]",
+  "prompt_sha256": "99f36be9028be22ecc4c4627c32a561b368aad9f8f64204a70ed89ea041fd991",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"In the narrative of 'Dandy Dick', THE DEAN is also known as Augustin Jedd.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680622,
+    "id": "39485b1e-2536-4fc7-bc42-d722360a0da0",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 23,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 111,
+      "prompt_tokens": 239,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 262
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1183.033359,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 23,
+          "prompt_tokens": 239,
+          "total_tokens": 262
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 23,
+      "prompt_tokens": 239,
+      "total_tokens": 262
+    }
+  },
+  "request_fingerprint": "b616a87a63bd3fab947166e2d96e3cea1e2bbf931d2abf2a6034fb1cecce981e"
+}

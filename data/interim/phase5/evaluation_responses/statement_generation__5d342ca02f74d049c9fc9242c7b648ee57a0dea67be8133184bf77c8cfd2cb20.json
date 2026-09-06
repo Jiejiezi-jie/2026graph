@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"The Dean is also referred to as 'Jedd' by Sir Tristram.\",\n  \"The Dean is also referred to as 'Angustin' by Georgiana.\",\n  \"'Angustin' is a variant of Augustin.\"\n]",
+  "prompt_sha256": "5d342ca02f74d049c9fc9242c7b648ee57a0dea67be8133184bf77c8cfd2cb20",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"The Dean is also referred to as 'Jedd' by Sir Tristram.\",\n  \"The Dean is also referred to as 'Angustin' by Georgiana.\",\n  \"'Angustin' is a variant of Augustin.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681203,
+    "id": "ba2017c1-27a7-42fc-b9cf-9d35a4947783",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 50,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 145,
+      "prompt_tokens": 273,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 323
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1738.4597,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 50,
+          "prompt_tokens": 273,
+          "total_tokens": 323
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 50,
+      "prompt_tokens": 273,
+      "total_tokens": 323
+    }
+  },
+  "request_fingerprint": "fd8789b447b40443e2caa532770aa3db26df1b2c7d225e363e45accbcb05b4a1"
+}

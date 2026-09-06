@@ -332,26 +332,37 @@ class Phase4ArtifactTests(unittest.TestCase):
         self.assertFalse(manifest["answer_generation_performed"])
 
     def test_full_diagnostics_repeat_except_timing(self) -> None:
+        rewritten_paths = [
+            self.results_path,
+            self.diagnostics_path,
+            self.manifest_path,
+            ROOT / "reports" / "phase4_retrievers.md",
+        ]
+        snapshots = {path: path.read_bytes() for path in rewritten_paths}
         before_results = strip_timing_fields(self.load_results())
         before_diagnostics = strip_timing_fields(
             json.loads(self.diagnostics_path.read_text(encoding="utf-8"))
         )
-        completed = subprocess.run(
-            [sys.executable, str(ROOT / "scripts" / "run_retrieval_diagnostics.py")],
-            cwd=ROOT,
-            text=True,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            timeout=180,
-            check=False,
-        )
-        self.assertEqual(completed.returncode, 0, completed.stderr)
-        after_results = strip_timing_fields(self.load_results())
-        after_diagnostics = strip_timing_fields(
-            json.loads(self.diagnostics_path.read_text(encoding="utf-8"))
-        )
-        self.assertEqual(before_results, after_results)
-        self.assertEqual(before_diagnostics, after_diagnostics)
+        try:
+            completed = subprocess.run(
+                [sys.executable, str(ROOT / "scripts" / "run_retrieval_diagnostics.py")],
+                cwd=ROOT,
+                text=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                timeout=180,
+                check=False,
+            )
+            self.assertEqual(completed.returncode, 0, completed.stderr)
+            after_results = strip_timing_fields(self.load_results())
+            after_diagnostics = strip_timing_fields(
+                json.loads(self.diagnostics_path.read_text(encoding="utf-8"))
+            )
+            self.assertEqual(before_results, after_results)
+            self.assertEqual(before_diagnostics, after_diagnostics)
+        finally:
+            for path, payload in snapshots.items():
+                path.write_bytes(payload)
 
 
 if __name__ == "__main__":

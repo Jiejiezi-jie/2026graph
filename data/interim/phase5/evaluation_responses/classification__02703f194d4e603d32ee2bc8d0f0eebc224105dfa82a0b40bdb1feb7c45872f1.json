@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This relationship is mentioned in the ground truth but not present in the answer statements.\",\"statement\":\"Salome is the niece of Georgiana Tidman.\"}],\"FP\":[],\"TP\":[{\"reason\":\"This is directly supported by the ground truth that Georgiana Tidman uses the nickname George Tidd.\",\"statement\":\"Georgiana Tidman introduces herself as 'George Tidd.'\"},{\"reason\":\"The ground truth states that George Tidd was Georgiana Tidman, implying it was her name in the racing context.\",\"statement\":\"'George Tidd' is Georgiana Tidman's racing name.\"},{\"reason\":\"This is a specific instance of her using the nickname, which is supported by the ground truth that she uses the nickname George Tidd.\",\"statement\":\"Georgiana Tidman tells Salome and Sheba to ask after George Tidd at Newmarket.\"},{\"reason\":\"The ground truth indicates that George Tidd was Georgiana Tidman, and the context of horse-racing is implied by the nickname's usage.\",\"statement\":\"Georgiana Tidman uses the nickname 'George Tidd' to assert her identity in the horse-racing world.\"},{\"reason\":\"This is supported by the ground truth that George Tidd was Georgiana Tidman, and the action of rallying old racing acquaintances is consistent with her identity as George Tidd.\",\"statement\":\"Later, Georgiana Tidman rallies her old racing acquaintances to rescue the Dean.\"},{\"reason\":\"This is directly supported by the ground truth that George Tidd was Georgiana Tidman, implying recognition by that name.\",\"statement\":\"Georgiana Tidman's old racing acquaintances recognize her as 'George Tidd.'\"}]}",
+  "prompt_sha256": "02703f194d4e603d32ee2bc8d0f0eebc224105dfa82a0b40bdb1feb7c45872f1",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Georgiana Tidman introduces herself as 'George Tidd.'\",\n      \"reason\": \"This is directly supported by the ground truth that Georgiana Tidman uses the nickname George Tidd.\"\n    },\n    {\n      \"statement\": \"'George Tidd' is Georgiana Tidman's racing name.\",\n      \"reason\": \"The ground truth states that George Tidd was Georgiana Tidman, implying it was her name in the racing context.\"\n    },\n    {\n      \"statement\": \"Georgiana Tidman tells Salome and Sheba to ask after George Tidd at Newmarket.\",\n      \"reason\": \"This is a specific instance of her using the nickname, which is supported by the ground truth that she uses the nickname George Tidd.\"\n    },\n    {\n      \"statement\": \"Georgiana Tidman uses the nickname 'George Tidd' to assert her identity in the horse-racing world.\",\n      \"reason\": \"The ground truth indicates that George Tidd was Georgiana Tidman, and the context of horse-racing is implied by the nickname's usage.\"\n    },\n    {\n      \"statement\": \"Later, Georgiana Tidman rallies her old racing acquaintances to rescue the Dean.\",\n      \"reason\": \"This is supported by the ground truth that George Tidd was Georgiana Tidman, and the action of rallying old racing acquaintances is consistent with her identity as George Tidd.\"\n    },\n    {\n      \"statement\": \"Georgiana Tidman's old racing acquaintances recognize her as 'George Tidd.'\",\n      \"reason\": \"This is directly supported by the ground truth that George Tidd was Georgiana Tidman, implying recognition by that name.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": [\n    {\n      \"statement\": \"Salome is the niece of Georgiana Tidman.\",\n      \"reason\": \"This relationship is mentioned in the ground truth but not present in the answer statements.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681845,
+    "id": "efdbd14c-fb04-4ed3-be61-7285360301db",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 408,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 208,
+      "prompt_tokens": 976,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1384
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 5089.942316,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 408,
+          "prompt_tokens": 976,
+          "total_tokens": 1384
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 408,
+      "prompt_tokens": 976,
+      "total_tokens": 1384
+    }
+  },
+  "request_fingerprint": "2f970431ac9297ecb1c79192fd50cc02e5c09d55e973761b7ecc09f667dd36bc"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Salome expresses extreme devotion to SHEBA during the unfolding events.\",\n  \"Sheba expresses extreme devotion to SHEBA during the unfolding events.\",\n  \"The character who expresses extreme devotion to SHEBA is Salome.\",\n  \"Salome clings to Sheba.\",\n  \"Salome says 'Sheba, dear'.\",\n  \"Salome says 'If I should pine and ultimately die of this suspense I want you to have my workbox.'\"\n]",
+  "prompt_sha256": "4a7cfc4d369497d4a967c85f4545f01fe76d1cfe8eca705332ff33dfbf373678",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Salome expresses extreme devotion to SHEBA during the unfolding events.\",\n  \"Sheba expresses extreme devotion to SHEBA during the unfolding events.\",\n  \"The character who expresses extreme devotion to SHEBA is Salome.\",\n  \"Salome clings to Sheba.\",\n  \"Salome says 'Sheba, dear'.\",\n  \"Salome says 'If I should pine and ultimately die of this suspense I want you to have my workbox.'\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681702,
+    "id": "1d4e2b65-f6ac-4ba7-8c4f-9f96df7aaf5d",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 95,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 156,
+      "prompt_tokens": 284,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 379
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1889.212432,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 95,
+          "prompt_tokens": 284,
+          "total_tokens": 379
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 95,
+      "prompt_tokens": 284,
+      "total_tokens": 379
+    }
+  },
+  "request_fingerprint": "8828bdcd1912f8e9cde6917dfe7ff98c8ec9419b3e135636eca89d58dd15978f"
+}

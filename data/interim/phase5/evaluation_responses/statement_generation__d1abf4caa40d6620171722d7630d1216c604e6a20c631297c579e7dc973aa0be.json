@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"The residence of The Dean in the play is The Deanery of St. Marvells.\", \"The Deanery of St. Marvells serves as the main setting for much of the action in the play.\"]",
+  "prompt_sha256": "d1abf4caa40d6620171722d7630d1216c604e6a20c631297c579e7dc973aa0be",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"The residence of The Dean in the play is The Deanery of St. Marvells.\", \"The Deanery of St. Marvells serves as the main setting for much of the action in the play.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681638,
+    "id": "7aed75a6-9d1e-44ed-9c5b-48ecea962112",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 45,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 111,
+      "prompt_tokens": 239,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 284
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1648.248972,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 45,
+          "prompt_tokens": 239,
+          "total_tokens": 284
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 45,
+      "prompt_tokens": 239,
+      "total_tokens": 284
+    }
+  },
+  "request_fingerprint": "5da235ee677b9b8503b3a60dc1c259d5e0d87beee2350b92089d491c2e606d0e"
+}

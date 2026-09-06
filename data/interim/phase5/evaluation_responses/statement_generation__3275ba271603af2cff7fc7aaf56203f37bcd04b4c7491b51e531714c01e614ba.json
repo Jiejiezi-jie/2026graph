@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Augustin is the Dean.\",\n  \"Augustin is the brother of Georgiana.\",\n  \"Augustin is the father of Salome.\",\n  \"Augustin is the father of Sheba.\",\n  \"Augustin is the head of the Deanery household.\",\n  \"Augustin is scandalized by Sir Tristram's horse being brought into the Deanery stables.\",\n  \"Augustin is pressured by Georgiana to bet on the horse.\",\n  \"Augustin is later accused of poisoning the horse.\",\n  \"Augustin is arrested by Noah.\",\n  \"Augustin is referred to as 'the missing man'.\",\n  \"Augustin's return is awaited.\"\n]",
+  "prompt_sha256": "3275ba271603af2cff7fc7aaf56203f37bcd04b4c7491b51e531714c01e614ba",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Augustin is the Dean.\",\n  \"Augustin is the brother of Georgiana.\",\n  \"Augustin is the father of Salome.\",\n  \"Augustin is the father of Sheba.\",\n  \"Augustin is the head of the Deanery household.\",\n  \"Augustin is scandalized by Sir Tristram's horse being brought into the Deanery stables.\",\n  \"Augustin is pressured by Georgiana to bet on the horse.\",\n  \"Augustin is later accused of poisoning the horse.\",\n  \"Augustin is arrested by Noah.\",\n  \"Augustin is referred to as 'the missing man'.\",\n  \"Augustin's return is awaited.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680639,
+    "id": "0dadfc65-679a-4782-baad-c48ad1d8c40b",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 138,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 222,
+      "prompt_tokens": 350,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 488
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1962.93944,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 138,
+          "prompt_tokens": 350,
+          "total_tokens": 488
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 138,
+      "prompt_tokens": 350,
+      "total_tokens": 488
+    }
+  },
+  "request_fingerprint": "0b375278bc22b170ca537111049906142356bbbf89b098ecbbb8b04bf1386a53"
+}

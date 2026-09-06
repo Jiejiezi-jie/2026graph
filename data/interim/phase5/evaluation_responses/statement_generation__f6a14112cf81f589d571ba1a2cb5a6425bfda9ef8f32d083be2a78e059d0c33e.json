@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"The novel reveals the relationship between Hannah and The Dean as one of former employer and servant.\",\n  \"The relationship between Hannah and The Dean is now complicated by The Dean's arrest.\",\n  \"The relationship between Hannah and The Dean is now complicated by Hannah's conflicted loyalty.\",\n  \"Hannah worked for The Dean for seven years.\",\n  \"Hannah still calls The Dean 'Master'.\",\n  \"Hannah is emotionally attached to The Dean.\",\n  \"Hannah is now married to Noah Topping.\",\n  \"Noah Topping is the constable who arrested The Dean.\",\n  \"Their interactions show Hannah torn between her duty to her husband and her lingering affection for The Dean.\",\n  \"Their interactions show Hannah torn between her duty to her husband and her sense of obligation to The Dean.\",\n  \"Hannah tries to help The Dean escape.\",\n  \"Hannah gives The Dean a key.\",\n  \"Hannah gives The Dean a whistle.\",\n  \"Hannah plans to deceive Noah Topping.\",\n  \"The Dean is initially stern.\",\n  \"The Dean shows a mix of gratitude and moral conflict.\",\n  \"The dialogue reveals a deep bond rooted in their past relationship.\",\n  \"The bond between Hannah and The Dean is strained.\"\n]",
+  "prompt_sha256": "f6a14112cf81f589d571ba1a2cb5a6425bfda9ef8f32d083be2a78e059d0c33e",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\n  \"The novel reveals the relationship between Hannah and The Dean as one of former employer and servant.\",\n  \"The relationship between Hannah and The Dean is now complicated by The Dean's arrest.\",\n  \"The relationship between Hannah and The Dean is now complicated by Hannah's conflicted loyalty.\",\n  \"Hannah worked for The Dean for seven years.\",\n  \"Hannah still calls The Dean 'Master'.\",\n  \"Hannah is emotionally attached to The Dean.\",\n  \"Hannah is now married to Noah Topping.\",\n  \"Noah Topping is the constable who arrested The Dean.\",\n  \"Their interactions show Hannah torn between her duty to her husband and her lingering affection for The Dean.\",\n  \"Their interactions show Hannah torn between her duty to her husband and her sense of obligation to The Dean.\",\n  \"Hannah tries to help The Dean escape.\",\n  \"Hannah gives The Dean a key.\",\n  \"Hannah gives The Dean a whistle.\",\n  \"Hannah plans to deceive Noah Topping.\",\n  \"The Dean is initially stern.\",\n  \"The Dean shows a mix of gratitude and moral conflict.\",\n  \"The dialogue reveals a deep bond rooted in their past relationship.\",\n  \"The bond between Hannah and The Dean is strained.\"\n]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681812,
+    "id": "df989d49-0f77-4b3f-a4a4-d5683817ee08",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 257,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 251,
+      "prompt_tokens": 379,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 636
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3079.141678,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 257,
+          "prompt_tokens": 379,
+          "total_tokens": 636
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 257,
+      "prompt_tokens": 379,
+      "total_tokens": 636
+    }
+  },
+  "request_fingerprint": "8d15adbf6120acfd9f066b0b3b4a93b93c78adeccbf9c4ac04379d08f3c57756"
+}

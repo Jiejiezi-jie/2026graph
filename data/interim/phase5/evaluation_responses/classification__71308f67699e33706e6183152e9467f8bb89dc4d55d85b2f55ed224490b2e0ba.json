@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Augustin is the Dean.\",\n      \"reason\": \"Directly supported by ground truth statement 'Augustin is also known as The Dean.'\"\n    },\n    {\n      \"statement\": \"Augustin is the father of Sheba.\",\n      \"reason\": \"Directly supported by ground truth statement 'The Dean is father of Sheba.' and 'Augustin is also known as The Dean.'\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Augustin is the brother of Georgiana.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is the father of Salome.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is the head of the Deanery household.\",\n      \"reason\": \"Not directly stated in ground truth, though implied by being the Dean, but not explicitly supported.\"\n    },\n    {\n      \"statement\": \"Augustin is scandalized by Sir Tristram's horse being brought into the Deanery stables.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is pressured by Georgiana to bet on the horse.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is later accused of poisoning the horse.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is arrested by Noah.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is referred to as 'the missing man'.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin's return is awaited.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"Sir Tristram pulled the horse's nose-bag over The Dean.\",\n      \"reason\": \"This event is in ground truth but not present in answer.\"\n    }\n  ]\n}",
+  "prompt_sha256": "71308f67699e33706e6183152e9467f8bb89dc4d55d85b2f55ed224490b2e0ba",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Augustin is the Dean.\",\n      \"reason\": \"Directly supported by ground truth statement 'Augustin is also known as The Dean.'\"\n    },\n    {\n      \"statement\": \"Augustin is the father of Sheba.\",\n      \"reason\": \"Directly supported by ground truth statement 'The Dean is father of Sheba.' and 'Augustin is also known as The Dean.'\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Augustin is the brother of Georgiana.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is the father of Salome.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is the head of the Deanery household.\",\n      \"reason\": \"Not directly stated in ground truth, though implied by being the Dean, but not explicitly supported.\"\n    },\n    {\n      \"statement\": \"Augustin is scandalized by Sir Tristram's horse being brought into the Deanery stables.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is pressured by Georgiana to bet on the horse.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is later accused of poisoning the horse.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is arrested by Noah.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is referred to as 'the missing man'.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin's return is awaited.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"Sir Tristram pulled the horse's nose-bag over The Dean.\",\n      \"reason\": \"This event is in ground truth but not present in answer.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680642,
+    "id": "6c1df70c-a18a-41b4-9acd-b56404c2f4fb",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 445,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 223,
+      "prompt_tokens": 991,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1436
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4882.694804,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 445,
+          "prompt_tokens": 991,
+          "total_tokens": 1436
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 445,
+      "prompt_tokens": 991,
+      "total_tokens": 1436
+    }
+  },
+  "request_fingerprint": "ec39aad2284ea2303f908bd6e9f9d72ee845d74d25a74be3e2dc71513de85c4b"
+}

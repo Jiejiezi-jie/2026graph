@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Georgiana Tidman is the aunt of Salome.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Georgiana Tidman is the aunt of SALOME.'\"\n    },\n    {\n      \"statement\": \"Georgiana Tidman is the aunt of Sheba.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Georgiana Tidman is the aunt of SHEBA.'\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+  "prompt_sha256": "dbd8b8e1fb863eae70bfd4696d97ea9a696c11be8a765708605ec23cebd73054",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Georgiana Tidman is the aunt of Salome.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Georgiana Tidman is the aunt of SALOME.'\"\n    },\n    {\n      \"statement\": \"Georgiana Tidman is the aunt of Sheba.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Georgiana Tidman is the aunt of SHEBA.'\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680633,
+    "id": "e00b2236-338a-4c2e-9433-f49b61de0dcd",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 115,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 118,
+      "prompt_tokens": 886,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1001
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1792.595706,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 115,
+          "prompt_tokens": 886,
+          "total_tokens": 1001
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 115,
+      "prompt_tokens": 886,
+      "total_tokens": 1001
+    }
+  },
+  "request_fingerprint": "0622edadaed8b281cc7317d68fb401843802b535c727c62852f971dad258b3c9"
+}

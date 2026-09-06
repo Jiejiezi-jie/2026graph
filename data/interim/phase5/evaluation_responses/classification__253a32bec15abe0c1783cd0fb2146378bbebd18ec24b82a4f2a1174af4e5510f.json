@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"The ground truth states that Sheba won money, but the answer does not mention Sheba; it incorrectly attributes the win to Georgiana.\",\"statement\":\"Sheba won money at The Races.\"}],\"FP\":[{\"reason\":\"The answer states that Georgiana wins money, but the ground truth states that Sheba won money. There is no support for Georgiana winning; it is a different character.\",\"statement\":\"Georgiana wins money at The Races.\"}],\"TP\":[]}",
+  "prompt_sha256": "253a32bec15abe0c1783cd0fb2146378bbebd18ec24b82a4f2a1174af4e5510f",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [],\n  \"FP\": [\n    {\n      \"statement\": \"Georgiana wins money at The Races.\",\n      \"reason\": \"The answer states that Georgiana wins money, but the ground truth states that Sheba won money. There is no support for Georgiana winning; it is a different character.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"Sheba won money at The Races.\",\n      \"reason\": \"The ground truth states that Sheba won money, but the answer does not mention Sheba; it incorrectly attributes the win to Georgiana.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681027,
+    "id": "e28197c0-03fe-4fb9-b930-2ecf5b9e8b5d",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 130,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 71,
+      "prompt_tokens": 839,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 969
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2232.51273,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 130,
+          "prompt_tokens": 839,
+          "total_tokens": 969
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 130,
+      "prompt_tokens": 839,
+      "total_tokens": 969
+    }
+  },
+  "request_fingerprint": "dda0cb60b30517943c22e85774c097fd3c467c865d222164b54b3bf19c5601cd"
+}

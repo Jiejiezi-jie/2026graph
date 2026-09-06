@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth statement 'Ada Rehan performed in Dandy Dick.'\",\"statement\":\"Ada Rehan performed in the play Dandy Dick.\"},{\"reason\":\"This statement is directly supported by the ground truth statement 'Ada Rehan took on a notable role in an American production of Dandy Dick.'\",\"statement\":\"Ada Rehan took on a notable role in an American production of Dandy Dick.\"}]}",
+  "prompt_sha256": "3362954e236183a700db5e9d3e42d15daa26e79a146b1f7824b3ee5e68203295",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Ada Rehan performed in the play Dandy Dick.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Ada Rehan performed in Dandy Dick.'\"\n    },\n    {\n      \"statement\": \"Ada Rehan took on a notable role in an American production of Dandy Dick.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Ada Rehan took on a notable role in an American production of Dandy Dick.'\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681313,
+    "id": "727352e3-1060-4088-9d28-97cd722740a2",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 125,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 119,
+      "prompt_tokens": 887,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1012
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1978.666419,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 125,
+          "prompt_tokens": 887,
+          "total_tokens": 1012
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 125,
+      "prompt_tokens": 887,
+      "total_tokens": 1012
+    }
+  },
+  "request_fingerprint": "4d492b7fc6b0605883841e5ccd305d3020790d1671a708cb3b88631fa3420ff6"
+}

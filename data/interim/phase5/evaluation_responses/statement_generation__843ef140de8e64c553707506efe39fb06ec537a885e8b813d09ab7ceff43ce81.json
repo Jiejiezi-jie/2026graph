@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"SHEBA won money at the St. Marvells races.\",\n  \"SHEBA won money specifically through the horse Dandy Dick winning the Handicap.\",\n  \"Georgiana stated that SHEBA cleared fifteen hundred over the Handicap.\",\n  \"The Dean realized that Dandy Dick won the Handicap.\"\n]",
+  "prompt_sha256": "843ef140de8e64c553707506efe39fb06ec537a885e8b813d09ab7ceff43ce81",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"SHEBA won money at the St. Marvells races.\",\n  \"SHEBA won money specifically through the horse Dandy Dick winning the Handicap.\",\n  \"Georgiana stated that SHEBA cleared fifteen hundred over the Handicap.\",\n  \"The Dean realized that Dandy Dick won the Handicap.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681741,
+    "id": "9b4e1a53-9abf-4cfa-9bc7-cbae2818ab13",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 70,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 161,
+      "prompt_tokens": 289,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 359
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1476.627838,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 70,
+          "prompt_tokens": 289,
+          "total_tokens": 359
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 70,
+      "prompt_tokens": 289,
+      "total_tokens": 359
+    }
+  },
+  "request_fingerprint": "94c1a0e1748ae3833adf142e0243740f34e08ac6e1388e88e375054fe95a3491"
+}

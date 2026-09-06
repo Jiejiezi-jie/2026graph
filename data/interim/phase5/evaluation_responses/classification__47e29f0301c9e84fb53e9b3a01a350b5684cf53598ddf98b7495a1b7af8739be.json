@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[]}",
+  "prompt_sha256": "47e29f0301c9e84fb53e9b3a01a350b5684cf53598ddf98b7495a1b7af8739be",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [],\n  \"FP\": [\n    {\n      \"statement\": \"SALOME is a daughter of the Dean.\",\n      \"reason\": \"The ground truth does not mention the Dean or any parental relationship.\"\n    },\n    {\n      \"statement\": \"SHEBA is a daughter of the Dean.\",\n      \"reason\": \"The ground truth does not mention the Dean or any parental relationship.\"\n    },\n    {\n      \"statement\": \"SALOME and SHEBA plan to secretly attend a Fancy Dress Masked Ball at Durnstone.\",\n      \"reason\": \"The ground truth does not mention any plans to attend a ball.\"\n    },\n    {\n      \"statement\": \"Major Tarver is an officer of the Hussars.\",\n      \"reason\": \"The ground truth does not mention Major Tarver's military affiliation.\"\n    },\n    {\n      \"statement\": \"Mr. Darbey is an officer of the Hussars.\",\n      \"reason\": \"The ground truth does not mention Mr. Darbey at all.\"\n    },\n    {\n      \"statement\": \"SALOME and SHEBA plan to attend the Fancy Dress Masked Ball with Major Tarver and Mr. Darbey.\",\n      \"reason\": \"The ground truth does not mention any plans to attend a ball or Mr. Darbey.\"\n    },\n    {\n      \"statement\": \"Major Tarver is paying attention to Salome.\",\n      \"reason\": \"The ground truth only states that SALOME is with MAJOR TARVER, but does not specify that he is paying attention to her.\"\n    },\n    {\n      \"statement\": \"Major Tarver arranged for SALOME's fancy dress to be made in London.\",\n      \"reason\": \"The ground truth does not mention any arrangements for fancy dress.\"\n    },\n    {\n      \"statement\": \"Major Tarver arranged for SHEBA's fancy dress to be made in London.\",\n      \"reason\": \"The ground truth does not mention any arrangements for fancy dress.\"\n    },\n    {\n      \"statement\": \"Major Tarver is in a critical condition.\",\n      \"reason\": \"The ground truth does not mention Major Tarver's health condition.\"\n    },\n    {\n      \"statement\": \"Major Tarver has incurred Salome's displeasure.\",\n      \"reason\": \"The ground truth does not mention Salome's feelings towards Major Tarver.\"\n    },\n    {\n      \"statement\": \"Mr. Darbey explains that Major Tarver must propose to Salome.\",\n      \"reason",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681725,
+    "id": "e1a03943-c525-437f-8189-ad42e10143f7",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 512,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 329,
+      "prompt_tokens": 1097,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1609
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 5480.625651,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 512,
+          "prompt_tokens": 1097,
+          "total_tokens": 1609
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 512,
+      "prompt_tokens": 1097,
+      "total_tokens": 1609
+    }
+  },
+  "request_fingerprint": "ecc46e4cb8fc5a670d026c76692663f26add02f75e5b5173737a5400dd6f7b08"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"The connection is that Georgiana calls the Dean 'Augustin' (or 'Angustin').\", \"Georgiana calling the Dean 'Augustin' (or 'Angustin') indicates that Augustin is the Dean's first name.\"]",
+  "prompt_sha256": "19f76dabadf16c5b36cb247f7ca3e65ad5a2f531ed2629993258319cbff5ffb6",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"The connection is that Georgiana calls the Dean 'Augustin' (or 'Angustin').\", \"Georgiana calling the Dean 'Augustin' (or 'Angustin') indicates that Augustin is the Dean's first name.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681273,
+    "id": "825f89dc-55fa-41af-a13f-ef7e8668c3bf",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 53,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 129,
+      "prompt_tokens": 257,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 310
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1450.583055,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 53,
+          "prompt_tokens": 257,
+          "total_tokens": 310
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 53,
+      "prompt_tokens": 257,
+      "total_tokens": 310
+    }
+  },
+  "request_fingerprint": "0fbc9f8332a5f568f8a5a0036df5f8567f0eaded582ddf47adff8f087f86b2ae"
+}

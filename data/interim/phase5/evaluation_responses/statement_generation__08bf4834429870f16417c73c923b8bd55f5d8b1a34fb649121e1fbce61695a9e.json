@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"The relationship between Hannah and The Dean is revealed through their interactions.\",\n  \"The relationship between Hannah and The Dean is one of former servant and master.\",\n  \"The relationship between Hannah and The Dean is now complicated by The Dean's arrest.\",\n  \"The relationship between Hannah and The Dean is now complicated by Hannah's loyalty.\",\n  \"Hannah worked at the Deanery for seven years.\",\n  \"Hannah still calls The Dean 'Master'.\",\n  \"Hannah is emotionally attached to The Dean.\",\n  \"Hannah flings herself upon The Dean.\",\n  \"Hannah cries.\",\n  \"The Dean maintains a stern, formal distance from Hannah.\",\n  \"The Dean addresses Hannah as 'Mrs. Topping'.\",\n  \"The Dean puts Hannah from him.\",\n  \"The Dean attempts to assert authority.\",\n  \"Hannah's devotion leads Hannah to devise a plan to help The Dean escape.\",\n  \"Hannah's plan shows Hannah's deep loyalty.\",\n  \"The Dean struggles with The Dean's dignity.\",\n  \"The Dean struggles with The Dean's conscience.\",\n  \"The Dean ultimately accepts Hannah's help.\",\n  \"The Dean expresses horror at Hannah's methods.\"\n]",
+  "prompt_sha256": "08bf4834429870f16417c73c923b8bd55f5d8b1a34fb649121e1fbce61695a9e",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"The relationship between Hannah and The Dean is revealed through their interactions.\",\n  \"The relationship between Hannah and The Dean is one of former servant and master.\",\n  \"The relationship between Hannah and The Dean is now complicated by The Dean's arrest.\",\n  \"The relationship between Hannah and The Dean is now complicated by Hannah's loyalty.\",\n  \"Hannah worked at the Deanery for seven years.\",\n  \"Hannah still calls The Dean 'Master'.\",\n  \"Hannah is emotionally attached to The Dean.\",\n  \"Hannah flings herself upon The Dean.\",\n  \"Hannah cries.\",\n  \"The Dean maintains a stern, formal distance from Hannah.\",\n  \"The Dean addresses Hannah as 'Mrs. Topping'.\",\n  \"The Dean puts Hannah from him.\",\n  \"The Dean attempts to assert authority.\",\n  \"Hannah's devotion leads Hannah to devise a plan to help The Dean escape.\",\n  \"Hannah's plan shows Hannah's deep loyalty.\",\n  \"The Dean struggles with The Dean's dignity.\",\n  \"The Dean struggles with The Dean's conscience.\",\n  \"The Dean ultimately accepts Hannah's help.\",\n  \"The Dean expresses horror at Hannah's methods.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681798,
+    "id": "c40af153-35b0-4ba4-aa02-f5949514d089",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 240,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 238,
+      "prompt_tokens": 366,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 606
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3573.122598,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 240,
+          "prompt_tokens": 366,
+          "total_tokens": 606
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 240,
+      "prompt_tokens": 366,
+      "total_tokens": 606
+    }
+  },
+  "request_fingerprint": "06fbd25b305cfec5be469d88da73489aa31ea15f7ae2bb598594753afbf7956f"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement from the ground truth is not explicitly present in the answer; the answer mentions winning money but does not explicitly highlight the excitement or involvement.\",\"statement\":\"SHEBA's involvement in the excitement of the St. Marvells races was highlighted.\"}],\"FP\":[{\"reason\":\"This statement is not directly supported by the ground truth; the ground truth does not mention Dandy Dick or betting.\",\"statement\":\"SHEBA won money by betting on Dandy Dick.\"},{\"reason\":\"This statement is not directly supported by the ground truth; the ground truth does not mention Aunt Georgiana or any encouragement to bet.\",\"statement\":\"SHEBA's Aunt Georgiana encouraged SHEBA to bet on Dandy Dick.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth which mentions SHEBA won money at The Races and highlights her involvement in the St. Marvells races.\",\"statement\":\"SHEBA won money at the St. Marvells races.\"}]}",
+  "prompt_sha256": "eca329279e2161fa9b86716e56fdbcd84863a1e45a4ecb7760318171ae51605c",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"SHEBA won money at the St. Marvells races.\",\n      \"reason\": \"This statement is directly supported by the ground truth which mentions SHEBA won money at The Races and highlights her involvement in the St. Marvells races.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"SHEBA won money by betting on Dandy Dick.\",\n      \"reason\": \"This statement is not directly supported by the ground truth; the ground truth does not mention Dandy Dick or betting.\"\n    },\n    {\n      \"statement\": \"SHEBA's Aunt Georgiana encouraged SHEBA to bet on Dandy Dick.\",\n      \"reason\": \"This statement is not directly supported by the ground truth; the ground truth does not mention Aunt Georgiana or any encouragement to bet.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"SHEBA's involvement in the excitement of the St. Marvells races was highlighted.\",\n      \"reason\": \"This statement from the ground truth is not explicitly present in the answer; the answer mentions winning money but does not explicitly highlight the excitement or involvement.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681750,
+    "id": "4ca6b47f-071c-4da5-9730-11b5ed14a5c2",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 251,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 146,
+      "prompt_tokens": 914,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1165
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3279.134076,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 251,
+          "prompt_tokens": 914,
+          "total_tokens": 1165
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 251,
+      "prompt_tokens": 914,
+      "total_tokens": 1165
+    }
+  },
+  "request_fingerprint": "6a713e78ac738e93f912c694e716e557183992b31dae5a1526fbe4731b82fadf"
+}

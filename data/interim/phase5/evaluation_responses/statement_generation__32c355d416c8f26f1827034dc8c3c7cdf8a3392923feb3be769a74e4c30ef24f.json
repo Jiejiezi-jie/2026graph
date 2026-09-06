@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"The title of the play authored by Ernest Warren that is performed as a comedietta before 'Dandy Dick' is 'The Nettle'.\"]",
+  "prompt_sha256": "32c355d416c8f26f1827034dc8c3c7cdf8a3392923feb3be769a74e4c30ef24f",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"The title of the play authored by Ernest Warren that is performed as a comedietta before 'Dandy Dick' is 'The Nettle'.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681180,
+    "id": "bf12f588-19d8-46e7-9122-06880863adf8",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 32,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 110,
+      "prompt_tokens": 238,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 270
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1270.226383,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 32,
+          "prompt_tokens": 238,
+          "total_tokens": 270
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 32,
+      "prompt_tokens": 238,
+      "total_tokens": 270
+    }
+  },
+  "request_fingerprint": "38cfe0339f97e2a6d5f282a300a4d5930937fcfc42d52228006e48ce8b25ea37"
+}

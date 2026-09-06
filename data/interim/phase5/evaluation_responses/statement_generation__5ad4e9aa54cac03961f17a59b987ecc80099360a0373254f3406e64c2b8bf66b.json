@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Augustin is the Dean of St. Marvells.\",\n  \"Augustin is the brother of Georgiana.\",\n  \"Augustin is the father of Salome.\",\n  \"Augustin is the father of Sheba.\",\n  \"Augustin is a friend of Sir Tristram Mardon.\",\n  \"Augustin is the head of the Deanery household.\",\n  \"Sir Tristram and Sir Tristram's horse Dandy Dick are brought to the Deanery household.\",\n  \"Augustin is concerned about Augustin's reputation.\",\n  \"Augustin is concerned about the impact of the horse's presence on Augustin's position.\",\n  \"Augustin is involved in the subsequent scandal over the horse's doping.\"\n]",
+  "prompt_sha256": "5ad4e9aa54cac03961f17a59b987ecc80099360a0373254f3406e64c2b8bf66b",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Augustin is the Dean of St. Marvells.\",\n  \"Augustin is the brother of Georgiana.\",\n  \"Augustin is the father of Salome.\",\n  \"Augustin is the father of Sheba.\",\n  \"Augustin is a friend of Sir Tristram Mardon.\",\n  \"Augustin is the head of the Deanery household.\",\n  \"Sir Tristram and Sir Tristram's horse Dandy Dick are brought to the Deanery household.\",\n  \"Augustin is concerned about Augustin's reputation.\",\n  \"Augustin is concerned about the impact of the horse's presence on Augustin's position.\",\n  \"Augustin is involved in the subsequent scandal over the horse's doping.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680655,
+    "id": "b66c7182-4479-4aea-9699-63ae3cce83ae",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 149,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 211,
+      "prompt_tokens": 339,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 488
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2095.574367,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 149,
+          "prompt_tokens": 339,
+          "total_tokens": 488
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 149,
+      "prompt_tokens": 339,
+      "total_tokens": 488
+    }
+  },
+  "request_fingerprint": "b0c4b494a706864b4f3eead6be0182215e07be97b486ef1461d4d5f98250ef26"
+}

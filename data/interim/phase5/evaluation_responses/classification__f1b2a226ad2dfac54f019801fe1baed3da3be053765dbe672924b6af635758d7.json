@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement from the ground truth is not explicitly present in the answer. The answer provides specific details about the Dean's recollections, but does not directly state the general memory of the old half-forgotten time at Oxford.\",\"statement\":\"THE DEAN remembers the old half-forgotten time at Oxford.\"}],\"FP\":[],\"TP\":[{\"reason\":\"This statement is not directly supported by the ground truth, which only mentions remembering the old half-forgotten time at Oxford, without specifying details about being a promising youth.\",\"statement\":\"THE DEAN recalls being a promising youth at college.\"},{\"reason\":\"This statement is not directly supported by the ground truth, which only mentions remembering the old half-forgotten time at Oxford, without specifying details about walking in old streets.\",\"statement\":\"THE DEAN recalls walking in the old streets at Oxford.\"},{\"reason\":\"This statement is not directly supported by the ground truth, which only mentions remembering the old half-forgotten time at Oxford, without specifying details about avoiding shops or owing bills.\",\"statement\":\"THE DEAN recalls avoiding shops where THE DEAN owed youthful bills.\"},{\"reason\":\"This statement is not directly supported by the ground truth, which only mentions remembering the old half-forgotten time at Oxford, without specifying details about seeing broad meadows.\",\"statement\":\"THE DEAN recalls seeing the broad meadows.\"},{\"reason\":\"This statement is not directly supported by the ground truth, which only mentions remembering the old half-forgotten time at Oxford, without specifying details about seeing the tall Spire.\",\"statement\":\"THE DEAN recalls seeing the tall Spire of the college.\"},{\"reason\":\"This statement is not directly supported by the ground truth, which only mentions remembering the old half-forgotten time at Oxford, without specifying details about reflecting on life being made up of Bills and Spires.\",\"statement\":\"THE DEAN reflects that THE DEAN's whole life seems made up of Bills and Spires.\"}]}",
+  "prompt_sha256": "f1b2a226ad2dfac54f019801fe1baed3da3be053765dbe672924b6af635758d7",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"THE DEAN recalls being a promising youth at college.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which only mentions remembering the old half-forgotten time at Oxford, without specifying details about being a promising youth.\"\n    },\n    {\n      \"statement\": \"THE DEAN recalls walking in the old streets at Oxford.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which only mentions remembering the old half-forgotten time at Oxford, without specifying details about walking in old streets.\"\n    },\n    {\n      \"statement\": \"THE DEAN recalls avoiding shops where THE DEAN owed youthful bills.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which only mentions remembering the old half-forgotten time at Oxford, without specifying details about avoiding shops or owing bills.\"\n    },\n    {\n      \"statement\": \"THE DEAN recalls seeing the broad meadows.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which only mentions remembering the old half-forgotten time at Oxford, without specifying details about seeing broad meadows.\"\n    },\n    {\n      \"statement\": \"THE DEAN recalls seeing the tall Spire of the college.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which only mentions remembering the old half-forgotten time at Oxford, without specifying details about seeing the tall Spire.\"\n    },\n    {\n      \"statement\": \"THE DEAN reflects that THE DEAN's whole life seems made up of Bills and Spires.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which only mentions remembering the old half-forgotten time at Oxford, without specifying details about reflecting on life being made up of Bills and Spires.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": [\n    {\n      \"statement\": \"THE DEAN remembers the old half-forgotten time at Oxford.\",\n      \"reason\": \"This statement from the ground truth is not explicitly present in the answer. The answer provides specific details about the Dean's recollections, but does not directly state the general memory of the old half-forgotten time at Oxford.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681261,
+    "id": "3518491c-7738-47fd-827a-bc99869bbd31",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 469,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 170,
+      "prompt_tokens": 938,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1407
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4788.827559,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 469,
+          "prompt_tokens": 938,
+          "total_tokens": 1407
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 469,
+      "prompt_tokens": 938,
+      "total_tokens": 1407
+    }
+  },
+  "request_fingerprint": "e2016d8ac6b6107c5f8588fd87b72bc6dab93277357bd4636e06aeb09865ad65"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth statement 'W. H. Denny performed as an actor in the play Dandy Dick.'\",\"statement\":\"W. H. Denny performed as an actor in the play \\\"Dandy Dick.\\\"\"},{\"reason\":\"This statement is directly supported by the ground truth statement 'W. H. Denny contributed to the comic success of the play Dandy Dick.'\",\"statement\":\"W. H. Denny's performance contributed to the comic success of the play \\\"Dandy Dick.\\\"\"}]}",
+  "prompt_sha256": "ac4ee538f41a3d4f83177182a13db072f80c2f0347fbc1456ff3f170e7ad7a2c",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"W. H. Denny performed as an actor in the play \\\"Dandy Dick.\\\"\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'W. H. Denny performed as an actor in the play Dandy Dick.'\"\n    },\n    {\n      \"statement\": \"W. H. Denny's performance contributed to the comic success of the play \\\"Dandy Dick.\\\"\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'W. H. Denny contributed to the comic success of the play Dandy Dick.'\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681527,
+    "id": "21311749-2a54-4b4e-b604-46f37493a7c6",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 149,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 144,
+      "prompt_tokens": 912,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1061
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1642.422149,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 149,
+          "prompt_tokens": 912,
+          "total_tokens": 1061
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 149,
+      "prompt_tokens": 912,
+      "total_tokens": 1061
+    }
+  },
+  "request_fingerprint": "2a881ceeeb52dcd8384d07f5b646840b72256134e7e7a3dca6bc9435d8d6507c"
+}

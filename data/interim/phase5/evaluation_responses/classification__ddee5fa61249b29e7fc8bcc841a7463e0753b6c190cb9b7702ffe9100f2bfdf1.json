@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"The answer does not correctly state that the Dean is known as Augustin; it uses 'Angustin' instead.\",\"statement\":\"THE DEAN is also known as Augustin.\"},{\"reason\":\"The answer does not mention that the Dean is known as Gus.\",\"statement\":\"THE DEAN is also known as Gus.\"}],\"FP\":[{\"reason\":\"The ground truth only mentions Augustin and Gus as other names for the Dean, not 'Jedd'.\",\"statement\":\"The Dean is also referred to as 'Jedd' by Sir Tristram.\"},{\"reason\":\"The ground truth mentions Augustin, but 'Angustin' is a misspelling and not directly supported.\",\"statement\":\"The Dean is also referred to as 'Angustin' by Georgiana.\"},{\"reason\":\"The ground truth does not mention any variant of Augustin; it only states Augustin and Gus.\",\"statement\":\"'Angustin' is a variant of Augustin.\"}],\"TP\":[]}",
+  "prompt_sha256": "ddee5fa61249b29e7fc8bcc841a7463e0753b6c190cb9b7702ffe9100f2bfdf1",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [],\n  \"FP\": [\n    {\n      \"statement\": \"The Dean is also referred to as 'Jedd' by Sir Tristram.\",\n      \"reason\": \"The ground truth only mentions Augustin and Gus as other names for the Dean, not 'Jedd'.\"\n    },\n    {\n      \"statement\": \"The Dean is also referred to as 'Angustin' by Georgiana.\",\n      \"reason\": \"The ground truth mentions Augustin, but 'Angustin' is a misspelling and not directly supported.\"\n    },\n    {\n      \"statement\": \"'Angustin' is a variant of Augustin.\",\n      \"reason\": \"The ground truth does not mention any variant of Augustin; it only states Augustin and Gus.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"THE DEAN is also known as Augustin.\",\n      \"reason\": \"The answer does not correctly state that the Dean is known as Augustin; it uses 'Angustin' instead.\"\n    },\n    {\n      \"statement\": \"THE DEAN is also known as Gus.\",\n      \"reason\": \"The answer does not mention that the Dean is known as Gus.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681206,
+    "id": "70d0cc58-3440-40ef-87d4-80b4915c03fe",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 252,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 141,
+      "prompt_tokens": 909,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1161
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3352.052595,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 252,
+          "prompt_tokens": 909,
+          "total_tokens": 1161
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 252,
+      "prompt_tokens": 909,
+      "total_tokens": 1161
+    }
+  },
+  "request_fingerprint": "2a7aaacff7ccca1051b2930a746bc9f19c9214906bf32dea7b2ae0ca6481e48d"
+}

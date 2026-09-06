@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement from the ground truth is not present in the answer.\",\"statement\":\"Nugent Darbey expresses extreme devotion to SHEBA during the unfolding events.\"},{\"reason\":\"This statement from the ground truth is not present in the answer.\",\"statement\":\"Nugent Darbey would die for SHEBA.\"}],\"FP\":[{\"reason\":\"The answer attributes extreme devotion to Salome Jedd, but the ground truth states that Nugent Darbey expresses extreme devotion to SHEBA. Therefore, this statement is not supported by the ground truth.\",\"statement\":\"Salome Jedd expresses extreme devotion to SHEBA during the unfolding events.\"}],\"TP\":[]}",
+  "prompt_sha256": "e83a3e0543d562107700a328381d41aa548920ff9c1e582d727383f77863841f",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [],\n  \"FP\": [\n    {\n      \"statement\": \"Salome Jedd expresses extreme devotion to SHEBA during the unfolding events.\",\n      \"reason\": \"The answer attributes extreme devotion to Salome Jedd, but the ground truth states that Nugent Darbey expresses extreme devotion to SHEBA. Therefore, this statement is not supported by the ground truth.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"Nugent Darbey expresses extreme devotion to SHEBA during the unfolding events.\",\n      \"reason\": \"This statement from the ground truth is not present in the answer.\"\n    },\n    {\n      \"statement\": \"Nugent Darbey would die for SHEBA.\",\n      \"reason\": \"This statement from the ground truth is not present in the answer.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681700,
+    "id": "41e4b1d3-48f4-4d6f-b79c-77258d399bb1",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 174,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 102,
+      "prompt_tokens": 870,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1044
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2526.835738,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 174,
+          "prompt_tokens": 870,
+          "total_tokens": 1044
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 174,
+      "prompt_tokens": 870,
+      "total_tokens": 1044
+    }
+  },
+  "request_fingerprint": "7c83df29197ffac7c49e5d01ebeec3bc9873dfad1772cf33643e749efa22f7e8"
+}

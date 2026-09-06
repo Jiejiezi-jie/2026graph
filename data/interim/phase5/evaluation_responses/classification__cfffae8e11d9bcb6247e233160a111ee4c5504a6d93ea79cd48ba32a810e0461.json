@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"This statement is not supported by the ground truth, which only mentions the marital relationship and does not provide any information about Noah's occupation.\",\"statement\":\"Noah is a police constable.\"},{\"reason\":\"This statement is not supported by the ground truth, which does not specify the duration of the marriage.\",\"statement\":\"Noah and Hannah have been wed for eight weeks.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which states that NOAH TOPPING is the husband of HANNAH.\",\"statement\":\"NOAH TOPPING and HANNAH are husband and wife.\"},{\"reason\":\"This statement is supported by the ground truth, as it implies the marital relationship, and the term 'newly married' is an additional detail not contradicted by the ground truth.\",\"statement\":\"Hannah is Noah's newly married wife.\"}]}",
+  "prompt_sha256": "cfffae8e11d9bcb6247e233160a111ee4c5504a6d93ea79cd48ba32a810e0461",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"NOAH TOPPING and HANNAH are husband and wife.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that NOAH TOPPING is the husband of HANNAH.\"\n    },\n    {\n      \"statement\": \"Hannah is Noah's newly married wife.\",\n      \"reason\": \"This statement is supported by the ground truth, as it implies the marital relationship, and the term 'newly married' is an additional detail not contradicted by the ground truth.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Noah is a police constable.\",\n      \"reason\": \"This statement is not supported by the ground truth, which only mentions the marital relationship and does not provide any information about Noah's occupation.\"\n    },\n    {\n      \"statement\": \"Noah and Hannah have been wed for eight weeks.\",\n      \"reason\": \"This statement is not supported by the ground truth, which does not specify the duration of the marriage.\"\n    }\n  ],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681073,
+    "id": "a7ec3e45-199e-4e48-bf21-3f554ff4ffd0",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 230,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 120,
+      "prompt_tokens": 888,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1118
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3234.768881,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 230,
+          "prompt_tokens": 888,
+          "total_tokens": 1118
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 230,
+      "prompt_tokens": 888,
+      "total_tokens": 1118
+    }
+  },
+  "request_fingerprint": "5f780e6e397d8fe02e615706d44f77d1ee07fff5c4be122f337dbcfc06e1ae2a"
+}

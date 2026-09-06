@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"The Dean feels apprehensive about facing his children at the Deanery.\", \"The Dean feels apprehensive about facing his children in the streets of St. Marvells.\", \"The Dean's dignity would be seriously impaired.\"]",
+  "prompt_sha256": "5397b4d5921391f39dc79f8cc4f372350ec13cbdf3077a18067c9473863b921e",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"The Dean feels apprehensive about facing his children at the Deanery.\", \"The Dean feels apprehensive about facing his children in the streets of St. Marvells.\", \"The Dean's dignity would be seriously impaired.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681220,
+    "id": "241d25bb-a218-49b6-9864-3d3d13f023cf",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 50,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 138,
+      "prompt_tokens": 266,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 316
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1620.364786,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 50,
+          "prompt_tokens": 266,
+          "total_tokens": 316
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 50,
+      "prompt_tokens": 266,
+      "total_tokens": 316
+    }
+  },
+  "request_fingerprint": "33761461668d40232a1f4f35bb92edb70441eba67d3079a3b99b0a1e13f89cf1"
+}

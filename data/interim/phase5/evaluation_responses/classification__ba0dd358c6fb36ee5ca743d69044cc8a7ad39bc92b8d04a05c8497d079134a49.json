@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\n  \"TP\": [\n    {\n      \"statement\": \"In the narrative of 'Dandy Dick', THE DEAN is known by the other name Augustin.\",\n      \"reason\": \"The answer correctly identifies 'Augustin' as another name for THE DEAN, which is directly supported by the ground truth stating that THE DEAN is also known as Augustin Jedd.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": [\n    {\n      \"statement\": \"In the narrative of 'Dandy Dick', THE DEAN is also known as Augustin Jedd.\",\n      \"reason\": \"The ground truth provides the full name 'Augustin Jedd', but the answer only mentions 'Augustin', omitting the surname 'Jedd'.\"\n    }\n  ]\n}",
+  "prompt_sha256": "ba0dd358c6fb36ee5ca743d69044cc8a7ad39bc92b8d04a05c8497d079134a49",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"In the narrative of 'Dandy Dick', THE DEAN is known by the other name Augustin.\",\n      \"reason\": \"The answer correctly identifies 'Augustin' as another name for THE DEAN, which is directly supported by the ground truth stating that THE DEAN is also known as Augustin Jedd.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": [\n    {\n      \"statement\": \"In the narrative of 'Dandy Dick', THE DEAN is also known as Augustin Jedd.\",\n      \"reason\": \"The ground truth provides the full name 'Augustin Jedd', but the answer only mentions 'Augustin', omitting the surname 'Jedd'.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680623,
+    "id": "f44f19ab-0161-4d96-84db-4d8ffbcb62f3",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 160,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 105,
+      "prompt_tokens": 873,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1033
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2188.519979,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 160,
+          "prompt_tokens": 873,
+          "total_tokens": 1033
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 160,
+      "prompt_tokens": 873,
+      "total_tokens": 1033
+    }
+  },
+  "request_fingerprint": "4769ddcf32c0e143d6dd73af8b3aa5167172b18dc3df43da9a22eee6135471b9"
+}

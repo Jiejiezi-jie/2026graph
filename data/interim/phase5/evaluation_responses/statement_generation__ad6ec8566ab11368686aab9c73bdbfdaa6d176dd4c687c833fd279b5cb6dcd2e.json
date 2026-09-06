@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"The Dean feels apprehensive about facing his children at the Deanery.\", \"The Dean asks how he could face his simple children.\", \"The Dean's children regarded the Dean as faultless.\"]",
+  "prompt_sha256": "ad6ec8566ab11368686aab9c73bdbfdaa6d176dd4c687c833fd279b5cb6dcd2e",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"The Dean feels apprehensive about facing his children at the Deanery.\", \"The Dean asks how he could face his simple children.\", \"The Dean's children regarded the Dean as faultless.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681210,
+    "id": "c2f0229d-9c73-429a-aa14-5527421e9f4e",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 44,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 136,
+      "prompt_tokens": 264,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 308
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1600.760663,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 44,
+          "prompt_tokens": 264,
+          "total_tokens": 308
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 44,
+      "prompt_tokens": 264,
+      "total_tokens": 308
+    }
+  },
+  "request_fingerprint": "ae11e2da90385a0dd5b012754d3735ac1f079b93a1ab146c960e997fba5068f3"
+}

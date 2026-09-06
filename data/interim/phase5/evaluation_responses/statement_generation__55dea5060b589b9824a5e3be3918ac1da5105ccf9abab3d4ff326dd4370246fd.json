@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Salome Jedd joins Sheba in scenes involving youthful excitement and social events.\",\n  \"The scenes involving youthful excitement and social events include the Fancy Dress Masked Ball at Durnstone.\",\n  \"The scenes involving youthful excitement and social events include the dinner at the Deanery.\"\n]",
+  "prompt_sha256": "55dea5060b589b9824a5e3be3918ac1da5105ccf9abab3d4ff326dd4370246fd",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Salome Jedd joins Sheba in scenes involving youthful excitement and social events.\",\n  \"The scenes involving youthful excitement and social events include the Fancy Dress Masked Ball at Durnstone.\",\n  \"The scenes involving youthful excitement and social events include the dinner at the Deanery.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681336,
+    "id": "cd33faa5-a253-4832-919c-d7173b1efb1d",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 61,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 139,
+      "prompt_tokens": 267,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 328
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1936.121879,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 61,
+          "prompt_tokens": 267,
+          "total_tokens": 328
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 61,
+      "prompt_tokens": 267,
+      "total_tokens": 328
+    }
+  },
+  "request_fingerprint": "58baa4cae427831fb91348743d164bae325c0f85132dbbdad89ced0ac41f2751"
+}

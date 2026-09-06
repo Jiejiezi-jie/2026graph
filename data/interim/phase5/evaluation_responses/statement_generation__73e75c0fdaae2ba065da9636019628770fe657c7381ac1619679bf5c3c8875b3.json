@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"John Clayton and Arthur Cecil were the joint lessees and managers of the Royal Court Theatre.\",\n  \"'Dandy Dick' was produced at the Royal Court Theatre.\",\n  \"John Clayton and Arthur Cecil commissioned the play 'Dandy Dick' from Arthur W. Pinero.\",\n  \"'Dandy Dick' was a successor to 'The Schoolmistress.'\",\n  \"John Clayton played the Dean in the original production of 'Dandy Dick.'\",\n  \"Arthur Cecil played Blore in the original production of 'Dandy Dick.'\",\n  \"'Dandy Dick' was the last play of the partnership between John Clayton and Arthur Cecil.\",\n  \"John Clayton died while touring with 'Dandy Dick.'\"\n]",
+  "prompt_sha256": "73e75c0fdaae2ba065da9636019628770fe657c7381ac1619679bf5c3c8875b3",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"John Clayton and Arthur Cecil were the joint lessees and managers of the Royal Court Theatre.\",\n  \"'Dandy Dick' was produced at the Royal Court Theatre.\",\n  \"John Clayton and Arthur Cecil commissioned the play 'Dandy Dick' from Arthur W. Pinero.\",\n  \"'Dandy Dick' was a successor to 'The Schoolmistress.'\",\n  \"John Clayton played the Dean in the original production of 'Dandy Dick.'\",\n  \"Arthur Cecil played Blore in the original production of 'Dandy Dick.'\",\n  \"'Dandy Dick' was the last play of the partnership between John Clayton and Arthur Cecil.\",\n  \"John Clayton died while touring with 'Dandy Dick.'\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681445,
+    "id": "dfe98774-2ece-4d65-a64b-458ceb58931c",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 145,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 186,
+      "prompt_tokens": 314,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 459
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2846.145561,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 145,
+          "prompt_tokens": 314,
+          "total_tokens": 459
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 145,
+      "prompt_tokens": 314,
+      "total_tokens": 459
+    }
+  },
+  "request_fingerprint": "90a0e6ca9ada6a63646a70bfef11d595da04c8f183715ef8b88720ddb3f1f4f6"
+}

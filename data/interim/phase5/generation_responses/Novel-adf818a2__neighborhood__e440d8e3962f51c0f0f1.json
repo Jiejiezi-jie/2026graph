@@ -1,0 +1,85 @@
+{
+  "cache_version": "phase5-generation-cache-v1",
+  "context_chunk_ids": [
+    "dd_cast_c0001",
+    "dd_prod_c0001",
+    "dd_act03s01_c0002",
+    "dd_act03s01_c0001",
+    "dd_act03s01_c0009"
+  ],
+  "invalid_citations": [],
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "prompt_sha256": "e440d8e3962f51c0f0f152d8f0f9fac1eec3adc736ad4d2a434f3e1774bb0b5d",
+  "query_id": "Novel-adf818a2",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"answer\": \"W. H. Denny performed as an actor in the play \\\"Dandy Dick,\\\" contributing to its comic success.\",\n  \"citations\": [\"dd_cast_c0001\", \"dd_prod_c0001\"],\n  \"insufficient_evidence\": false\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680379,
+    "id": "cf6c8651-c048-4cfa-a979-af1068241516",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 61,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 3738,
+      "prompt_tokens": 3738,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 3799
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3487.589488,
+        "finish_reason": "stop",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 61,
+          "prompt_tokens": 3738,
+          "total_tokens": 3799
+        }
+      }
+    ],
+    "elapsed_ms": 3487.589488,
+    "token_usage": {
+      "completion_tokens": 61,
+      "prompt_tokens": 3738,
+      "total_tokens": 3799
+    }
+  },
+  "request_fingerprint": "b6473514fbc23f6466a65875fe6a1b4d38f2d1bb479653e1004d21a683940817",
+  "request_messages": [
+    {
+      "content": "You are a grounded question-answering system.\n\nAnswer the user's QUESTION using only the supplied EVIDENCE CHUNKS and, when\npresent, GRAPH CONTEXT. Do not use outside knowledge or infer unsupported facts.\nIf the supplied evidence is insufficient, set insufficient_evidence to true and\nset answer exactly to INSUFFICIENT_EVIDENCE.\n\nReturn exactly one JSON object with exactly these fields:\n{\n  \"answer\": \"concise grounded answer or INSUFFICIENT_EVIDENCE\",\n  \"citations\": [\"chunk_id\"],\n  \"insufficient_evidence\": false\n}\n\nEvery citation must be a chunk_id that appears in EVIDENCE CHUNKS. Cite only\nchunks that support the answer. Do not output Markdown, explanations, additional\nkeys, or text outside the JSON object.",
+      "role": "system"
+    },
+    {
+      "content": "QUESTION:\nIn which play did W. H. Denny perform as an actor, contributing to its comic success?\n\nEVIDENCE CHUNKS:\n[CHUNK_ID: dd_cast_c0001]\nROYAL COURT THEATRE, SLOANE SQUARE, S.W. _Lessees and Managers:_ Mr. John Clayton and Mr. Arthur Cecil. Programme THIS EVENING, THURSDAY, JANUARY 27, _At_ 8.30 _punctually_, DANDY DICK. AN ORIGINAL FARCE, IN THREE ACTS, BY A. W. PINERO. THE VERY REV. AUGUSTIN JEDD, D.D. MR. JOHN CLAYTON. (Dean of St. Marvell's) SIR TRISTRAM MARDON, Bart MR. EDMUND MAURICE. --th Hussars, MAJOR TARVER { quartered at } MR. F. KERR. MR. DARBEY { Durnstone, near } MR. H. EVERSFIELD. St. Marvell's BLORE (Butler at the Deanery) MR. ARTHUR CECIL. NOAH TOPPING (Constable at MR. W. H. DENNY. St. Marvell's) HATCHAM (Sir Tristram's groom) MR. W. LUGG. GEORGIANA TIDMAN (a Widow, MRS. JOHN WOOD. the Dean's sister) SALOME } the Dean's Daughters { MISS MARIE LEWES. SHEBA } { MISS NORREYS. HANNAH TOPPING (formerly in MISS LAURA LINDEN. Service at the Deanery) ACT I. AT THE DEANERY, ST. MARVELL'S. (Morning.) ACT II. THE SAME PLACE. (Evening.) ACT III.--The Next Day. Scene 1:--\"_The Strong Box,_\" _St. Marvell's. Scene 2.--The Deanery again._ The curtain will be lowered for a few minutes between the two scenes. New Scenery by Mr. T. W. Hall. Preceded, at Eight o'clock, by \"THE NETTLE.\" An Original Comedietta by ERNEST WARREN.\n\n[CHUNK_ID: dd_prod_c0001]\nINTRODUCTORY NOTE. \"Dandy Dick\" was the third of the farces which Mr. Pinero wrote for the old Court Theatre--a series of plays which, besides giving playgoers a fresh source of laughter, and the English stage a new order of comic play, brought plentiful prosperity to the joint management of Mr. Arthur Cecil and the late Mr. John Clayton. But a kind of melancholy interest attaches to \"Dandy Dick,\" for this play was, as it were, the swan-song of the old theatre and of the Clayton and Cecil partnership; and it was the piece in which Mr. Clayton was acting when death overtook him, to the general grief. The production of \"Dandy Dick\" may be considered as something of a _tour de force_ in its way. \"The Schoolmistress\" was at the end of its successful run, and Mr. Pinero was under contract to supply its successor by a certain date, when Mr. Clayton one day went down to Brighton, where the dramatist was then at work, to hear him read the two completed acts of the new play. To Mr. Clayton's consternation, however, Mr. Pinero announced that he was dissatisfied with his work, and proposed to begin an entirely new play, as he had a more promising idea. But time was pressing, and a successor to \"The Schoolmistress\" was an immediate necessity. However, Mr. Pinero's idea of writing a play round a dean, who, while being a paragon of dignity and decorum, should be driven by an indiscreet act into a most undignified dilemma, appealed to Mr. Clayton, and hastening back to London with the sketches for the requisite scenes, he left Mr. Pinero to set to work at once upon the new scheme. And within a few weeks, indeed by the time the scenery was ready, the new play was completed, the rural constable of a village adjacent to Brighton having suggested the character of Noah Topping. \"Dandy Dick\" was produced at the Court Theatre on January 27th, 1887, and, meeting with a most favorable initial reception, it settled down immediately into a complete success. The following is a copy of the first-night programme:--\n\n[CHUNK_ID: dd_act03s01_c0002]\nBLORE. Well, you see, 'Annah, the kitchen took humbrage at your marryin' a policeman at Durnstone. It was regarded as a messyliance. HANNAH. Well, now Mr. Topping's got the appointment of Head Constable at St. Marvells, what's that regarded as? BLORE. A rise on the scales, 'Annah, a decided rise--but still you've honly been a week in St. Marvells and you've got to fight your way hup. HANNAH. I think I'm as hup as ever I'm like to be. BLORE. 'Owever, Jane and Sarah and Willis the stable boy 'ave hunbent so far as to hask me to leave their cards, knowin' I was a callin'. [_He produces from an old leather pocket-book three very dirty pieces of paste-board, which he gives to HANNAH._ HANNAH. [_Taking them in her apron with pride._] Thank 'em kindly. When's their evening? BLORE. We receive on Toosdays, at the side gate. And 'ow are you, my dear? [_Kissing her cheek._ HANNAH. Don't, Edward Blore! BLORE. Don't! When you was Miss Hevans there wasn't these social barriers, 'Annah! HANNAH. Shut up! Noah's jealous of the very apron-strings what go round my waist. I'm not so free and 'andy with my kisses now, I can tell you. BLORE. Then \"what is friendship but a name!\" But Mr. Topping isn't indoors now, surely! HANNAH. [_Nodding her head._] Um--um! BLORE. Why, he took a man up last night! HANNAH. What of it? BLORE. Why, I thought that when hany harrest was made in St. Marvells, the prisoner was lodged here honly for the night and that the 'ead Constable 'ad to drive 'im over to Durnstone Police Station the first thing in the morning. HANNAH. That's the rule, but Noah's behindhand to-day, and ain't going into Durnstone till after dinner. BLORE. Then the prisoner is now hon the premises! HANNAH. Yes, he's in our cell. BLORE. Ah! And where is the hapartment in question? HANNAH. The cell? That's it! BLORE. [_Looking round in horror._] Oh! HANNAH. The \"Strong-box\" they call it in St. Marvells. BLORE. Oh, my goodness, honly fancy! [_Whimpering to himself._] And 'im accustomed to his shavin' water at h'eight and my kindly hand to button his gaiters. Oh, here's a warnin'! HANNAH. Whatever is the matter with you, Edward? BLORE. 'Annah, 'Annah, my dear, it's this very prisoner what I 'ave called on you respectin'. HANNAH. Oh, then the honor ain't a compliment to me, after all, Mr. Blore? BLORE. I'm killing two birds with one stone, my dear. HANNAH. [_Throwing the cards into BLORE'S hat._] You can take them back to the Deanery with Mrs. Topping's comps. BLORE. [_Shaking the cards out of his hat and replacing them in his pocket-book._] I will leave them hon you again to-morrow, 'Annah. But, 'Annah deary, do you know that this hunfortunate man was took in our stables last night.\n\n[CHUNK_ID: dd_act03s01_c0001]\nTHE THIRD ACT. The first scene is the interior of a country Police Station, a quaint old room with plaster walls, oaken beams, and a gothic mullioned window looking on to the street. A massive door, with a small sliding wicket and an iron grating, opens to a prisoner's cell. The room is partly furnished as a kitchen, partly as a police station, a copy of the Police Regulations and other official documents and implements hanging on the wall. It is the morning after the events of the previous act. _HANNAH, a buxom, fresh-looking young woman, in a print gown, has been engaged in cooking while singing gayly._ HANNAH. [_Opening a door and calling with a slight dialect._] Noah darling! NOAH. [_From another room--in a rough, country voice._] Yaas! HANNAH. You'll have your dinner before you drive your prisoner over to Durnstone, won't ye, darling? NOAH. Yaas! HANNAH. [_Closing the door._] Yaas! Noah's in a nice temper to-day over summat. Ah well, I suppose all public characters is liable to irritation. [_There is a knock at the outer door. HANNAH opening it, sees BLORE with a troubled look on his face._] Well I never! Mr. Blore from the Deanery! Come in! You might knock me down with a----! BLORE. [_Entering and shaking hands mournfully._] How do you do, Mrs. Topping? HANNAH. And how is the dear Dean, bless him; the sweetest soul in the world? BLORE. [_To himself._] Good gracious! She doesn't know of hour misfortune. [_To HANNAH._] I--I 'aven't seen him this morning! HANNAH. Well, this is real kind of you, calling on an old friend, Edward. When I think that I were cook at the Deanery seven years, and that since I left you, to get wedded, not a soul of you has been nigh me, it do seem hard. BLORE. Well, you see, 'Annah, the kitchen took humbrage at your marryin' a policeman at Durnstone. It was regarded as a messyliance. HANNAH. Well, now Mr. Topping's got the appointment of Head Constable at St. Marvells, what's that regarded as? BLORE. A rise on the scales, 'Annah, a decided rise--but still you've honly been a week in St. Marvells and you've got to fight your way hup. HANNAH. I think I'm as hup as ever I'm like to be.\n\n[CHUNK_ID: dd_act03s01_c0009]\nNOAH. She's gettin' me a lot o' nice noo friends since we coom to St. Marvells. HANNAH. Noahry! I made this gentleman's acquaintance through the wicket, in a casual way. NOAH. Ay. Cooks and railins--cooks and railins! I might a guessed my wedded life 'ud a coom to this. HANNAH. He spoke to me just as a strange gentleman ought to speak to a lady! Didn't you, sir--didn't you? THE DEAN. Hannah, do not let us even under these circumstances prevaricate; such is not quite the case! [_NOAH advances savagely to THE DEAN. There is a knocking at the door.--NOAH restrains himself and faces THE DEAN._ NOAH. Noa, this is neither the toime nor pla-ace, wi' people at the door and dinner on t' table, to spill a strange man's blood. THE DEAN. I trust that your self-respect as an officer of the law will avert anything so unseemly. NOAH. Ay. That's it! You've touched me on my point o' pride. There ain't another police-station in all Durnstone conducted more strict and rigid nor what mian is, and it shall so continue. You and me is a goin' to set out for Durnstone, and when the charges now standin' agen you is entered, it's I, Noah Topping, what'll hadd another! [_There is another knock at the door._ HANNAH. Noah! NOAH. The charge of allynating the affections o' my wife, 'Annah! THE DEAN. [_Horrified._] No, no! NOAH. Ay, and worse--the embezzlin' o' my mid-day meal prepared by her 'ands. [_Points into the cell._] Go in; you 'ave five minutes more in the 'ome you 'ave ruined and laid waste. THE DEAN. [_Going to the door and turning to NOAH._] You will at least receive my earnest assurance that this worthy woman is extremely innocent? NOAH. Hinnocent? [_Points to the joint on the table._] Look theer! [_THE DEAN, much overcome, disappears through the cell door, which NOAH closes and locks. The knock at the door is repeated. To HANNAH, pointing to the outer door._] Hunlock that door! HANNAH. [_Weeping._] Oh, Noahry, you'll never be popular in St. Marvells. NOAH. Hunlock that door! [_HANNAH unlocks the door, and admits GEORGIANA and SIR TRISTRAM, both dressed for the race-course._ GEORGIANA. Dear me! Is this the Police-Station? HANNAH. Yes, lady. Take a chair, lady, near the fire. [_To SIR TRISTRAM._] Sit down, sir. GEORGIANA. This is my first visit to a police-station, my good woman; I hope it will be the last. HANNAH. Oh, don't say that, ma'am. We're honly hauxilliary 'ere, ma'am--the Bench sets at Durnstone. GEORGIANA. I must say you try to make everybody feel at home. [_HANNAH curtseys._ SIR TRISTRAM. It's beautifully Arcadian. GEORGIANA. [_To HANNAH._] Perhaps this is only a police-station for the young?\n\nGRAPH CONTEXT (retriever output only):\n{\n  \"linked_entities\": [\n    {\n      \"matched_term\": \"W. H. Denny\",\n      \"method\": \"canonical\",\n      \"name\": \"W. H. Denny\",\n      \"node_id\": \"n_w_h_denny_f85246c544af\",\n      \"score\": 1.0,\n      \"semantic_score\": 0.68194103,\n      \"type\": \"PERSON\"\n    }\n  ],\n  \"paths\": [],\n  \"retrieved_edges\": [\n    {\n      \"directed\": true,\n      \"edge_id\": \"e_n_noah_topping_717d5331d0ac_5239ed17e3f613\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"source\": \"Noah Topping\",\n      \"source_id\": \"n_noah_topping_717d5331d0ac\",\n      \"target\": \"W. H. Denny\",\n      \"target_id\": \"n_w_h_denny_f85246c544af\"\n    }\n  ],\n  \"retrieved_nodes\": [\n    {\n      \"distance\": 0,\n      \"name\": \"W. H. Denny\",\n      \"node_id\": \"n_w_h_denny_f85246c544af\",\n      \"score\": 1.0,\n      \"seed\": true,\n      \"type\": \"PERSON\"\n    },\n    {\n      \"distance\": 1,\n      \"name\": \"Noah Topping\",\n      \"node_id\": \"n_noah_topping_717d5331d0ac\",\n      \"score\": 0.85,\n      \"seed\": false,\n      \"type\": \"CHARACTER\"\n    }\n  ]\n}",
+      "role": "user"
+    }
+  ],
+  "retriever": "neighborhood",
+  "validated_output": {
+    "answer": "W. H. Denny performed as an actor in the play \"Dandy Dick,\" contributing to its comic success.",
+    "citations": [
+      "dd_cast_c0001",
+      "dd_prod_c0001"
+    ],
+    "insufficient_evidence": false
+  }
+}

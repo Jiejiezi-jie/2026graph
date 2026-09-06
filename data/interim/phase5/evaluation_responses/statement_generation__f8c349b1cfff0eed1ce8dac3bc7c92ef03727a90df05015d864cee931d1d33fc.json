@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Georgiana Tidman's nickname is 'George Tidd'.\",\n  \"Georgiana Tidman's nickname 'George Tidd' becomes associated with Sir Tristram.\",\n  \"Sir Tristram recognizes Georgiana Tidman as 'Mr. Tidd' upon Georgiana Tidman's entrance.\",\n  \"Georgiana Tidman explains that 'George Tidd' was Georgiana Tidman's racing name.\"\n]",
+  "prompt_sha256": "f8c349b1cfff0eed1ce8dac3bc7c92ef03727a90df05015d864cee931d1d33fc",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Georgiana Tidman's nickname is 'George Tidd'.\",\n  \"Georgiana Tidman's nickname 'George Tidd' becomes associated with Sir Tristram.\",\n  \"Sir Tristram recognizes Georgiana Tidman as 'Mr. Tidd' upon Georgiana Tidman's entrance.\",\n  \"Georgiana Tidman explains that 'George Tidd' was Georgiana Tidman's racing name.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681237,
+    "id": "5ce58068-13a7-43c1-a7a3-bb302dc02e70",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 86,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 149,
+      "prompt_tokens": 277,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 363
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1705.160341,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 86,
+          "prompt_tokens": 277,
+          "total_tokens": 363
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 86,
+      "prompt_tokens": 277,
+      "total_tokens": 363
+    }
+  },
+  "request_fingerprint": "e518d8629110e3030bfdb221ab85d6416049b9aeee5bd2b2c3c8785cae62b65e"
+}

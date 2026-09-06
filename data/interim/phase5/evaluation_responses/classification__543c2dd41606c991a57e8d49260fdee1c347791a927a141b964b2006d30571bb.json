@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement is not present in the answer.\",\"statement\":\"The Dean sees Darbey.\"},{\"reason\":\"This statement is not present in the answer.\",\"statement\":\"Darbey glances at Tarver.\"}],\"FP\":[{\"reason\":\"This statement is not directly supported by any ground truth statement. The ground truth does not mention The Dean returning or the timing of the proposal.\",\"statement\":\"Major Tarver's proposal occurs after The Dean returns.\"},{\"reason\":\"This statement is not directly supported by any ground truth statement. The ground truth does not mention The Dean giving consent.\",\"statement\":\"The Dean gives his consent to Major Tarver's proposal.\"},{\"reason\":\"This statement is not directly supported by any ground truth statement. The ground truth does not mention The Dean entering.\",\"statement\":\"The sequence begins with The Dean entering.\"},{\"reason\":\"This statement is not directly supported by any ground truth statement. The ground truth does not mention The Dean inviting anyone inside.\",\"statement\":\"The Dean invites Major Tarver and Mr. Darbey inside.\"},{\"reason\":\"This statement is not directly supported by any ground truth statement. The ground truth does not mention the Library.\",\"statement\":\"Salome and Major Tarver go into the Library together.\"},{\"reason\":\"This statement is not directly supported by any ground truth statement. The ground truth does not mention the archway.\",\"statement\":\"Later, Salome and Major Tarver stand in the archway.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth statement 'Salome accepts Major Tarver.'\",\"statement\":\"Major Tarver becomes accepted by Salome after Major Tarver proposes to Salome.\"},{\"reason\":\"This statement is supported by the ground truth statement 'Salome accepts Major Tarver,' as the archway scene symbolizes their union.\",\"statement\":\"Salome and Major Tarver standing in the archway indicates their union.\"}]}",
+  "prompt_sha256": "543c2dd41606c991a57e8d49260fdee1c347791a927a141b964b2006d30571bb",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Major Tarver becomes accepted by Salome after Major Tarver proposes to Salome.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Salome accepts Major Tarver.'\"\n    },\n    {\n      \"statement\": \"Salome and Major Tarver standing in the archway indicates their union.\",\n      \"reason\": \"This statement is supported by the ground truth statement 'Salome accepts Major Tarver,' as the archway scene symbolizes their union.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Major Tarver's proposal occurs after The Dean returns.\",\n      \"reason\": \"This statement is not directly supported by any ground truth statement. The ground truth does not mention The Dean returning or the timing of the proposal.\"\n    },\n    {\n      \"statement\": \"The Dean gives his consent to Major Tarver's proposal.\",\n      \"reason\": \"This statement is not directly supported by any ground truth statement. The ground truth does not mention The Dean giving consent.\"\n    },\n    {\n      \"statement\": \"The sequence begins with The Dean entering.\",\n      \"reason\": \"This statement is not directly supported by any ground truth statement. The ground truth does not mention The Dean entering.\"\n    },\n    {\n      \"statement\": \"The Dean invites Major Tarver and Mr. Darbey inside.\",\n      \"reason\": \"This statement is not directly supported by any ground truth statement. The ground truth does not mention The Dean inviting anyone inside.\"\n    },\n    {\n      \"statement\": \"Salome and Major Tarver go into the Library together.\",\n      \"reason\": \"This statement is not directly supported by any ground truth statement. The ground truth does not mention the Library.\"\n    },\n    {\n      \"statement\": \"Later, Salome and Major Tarver stand in the archway.\",\n      \"reason\": \"This statement is not directly supported by any ground truth statement. The ground truth does not mention the archway.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"The Dean sees Darbey.\",\n      \"reason\": \"This statement is not present in the answer.\"\n    },\n    {\n      \"statement\": \"Darbey glances at Tarver.\",\n      \"reason\": \"This statement is not present in the answer.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681440,
+    "id": "a0eb4a04-fed1-4ec6-896a-535176efa9c3",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 484,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 196,
+      "prompt_tokens": 964,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1448
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4825.972108,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 484,
+          "prompt_tokens": 964,
+          "total_tokens": 1448
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 484,
+      "prompt_tokens": 964,
+      "total_tokens": 1448
+    }
+  },
+  "request_fingerprint": "a16556be135f0dd237c62b6e81a1a62437f0ad61aa78801b906e83d80b0b5b66"
+}

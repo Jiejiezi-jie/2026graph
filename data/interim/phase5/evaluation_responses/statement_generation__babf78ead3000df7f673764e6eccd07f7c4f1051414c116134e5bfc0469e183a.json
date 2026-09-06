@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"THE DEAN does not prepare for a visit to the stable.\",\n  \"THE DEAN is taken to the stable by Noah Topping.\",\n  \"Hannah gives THE DEAN a key to unlock handcuffs.\",\n  \"Hannah gives THE DEAN a whistle to signal the horse to bolt.\",\n  \"THE DEAN can escape by using the whistle to signal the horse to bolt.\"\n]",
+  "prompt_sha256": "babf78ead3000df7f673764e6eccd07f7c4f1051414c116134e5bfc0469e183a",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\n  \"THE DEAN does not prepare for a visit to the stable.\",\n  \"THE DEAN is taken to the stable by Noah Topping.\",\n  \"Hannah gives THE DEAN a key to unlock handcuffs.\",\n  \"Hannah gives THE DEAN a whistle to signal the horse to bolt.\",\n  \"THE DEAN can escape by using the whistle to signal the horse to bolt.\"\n]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681423,
+    "id": "afb525b3-c1cf-4dfb-b25e-02f1d47a870d",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 87,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 154,
+      "prompt_tokens": 282,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 369
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1689.43545,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 87,
+          "prompt_tokens": 282,
+          "total_tokens": 369
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 87,
+      "prompt_tokens": 282,
+      "total_tokens": 369
+    }
+  },
+  "request_fingerprint": "92f310d6e76206884ed72153fc1281137563e857f8c867650cddf05d67909bea"
+}

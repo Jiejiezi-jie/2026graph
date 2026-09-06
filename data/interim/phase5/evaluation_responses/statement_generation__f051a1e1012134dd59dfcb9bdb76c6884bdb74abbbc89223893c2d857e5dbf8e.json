@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"THE DEAN interacts with Mr. Darbey during social calls at the Deanery.\", \"THE DEAN sees Mr. Darbey.\"]",
+  "prompt_sha256": "f051a1e1012134dd59dfcb9bdb76c6884bdb74abbbc89223893c2d857e5dbf8e",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"THE DEAN interacts with Mr. Darbey during social calls at the Deanery.\", \"THE DEAN sees Mr. Darbey.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681543,
+    "id": "67a24afc-b1ee-4a25-9b2e-15f6e21f4a46",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 35,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 105,
+      "prompt_tokens": 233,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 268
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1209.918335,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 35,
+          "prompt_tokens": 233,
+          "total_tokens": 268
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 35,
+      "prompt_tokens": 233,
+      "total_tokens": 268
+    }
+  },
+  "request_fingerprint": "2c62117b7a59e5e412f6022d30b304b3fb0f7e8d446878cdf0f8580552a9ef10"
+}

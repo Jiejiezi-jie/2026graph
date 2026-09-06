@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement is not explicitly present in the answer; the answer provides specific recollections but does not include the general statement of remembering the old half-forgotten time.\",\"statement\":\"THE DEAN remembers the old half-forgotten time at Oxford.\"}],\"FP\":[{\"reason\":\"This statement is not directly supported by the ground truth, which only mentions remembering the old time at Oxford without specifying being a promising youth.\",\"statement\":\"THE DEAN recalls being a promising youth at college.\"},{\"reason\":\"This statement is not directly supported by the ground truth, which does not mention avoiding shops or owing bills.\",\"statement\":\"THE DEAN recalls avoiding the shops where THE DEAN owed youthful bills.\"},{\"reason\":\"This statement is not directly supported by the ground truth, which does not mention bills or spires as components of life.\",\"statement\":\"THE DEAN reflects that THE DEAN's whole life seems made up of Bills and Spires.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which mentions THE DEAN remembering the old half-forgotten time at Oxford, implying recollection of specific places like old streets.\",\"statement\":\"THE DEAN recalls walking in the old streets at Oxford.\"},{\"reason\":\"This statement is directly supported by the ground truth, as remembering the old time at Oxford includes recalling its landscapes such as broad meadows.\",\"statement\":\"THE DEAN recalls seeing the broad meadows.\"},{\"reason\":\"This statement is directly supported by the ground truth, as the old time at Oxford would include iconic structures like the college spire.\",\"statement\":\"THE DEAN recalls seeing the tall Spire of the college.\"}]}",
+  "prompt_sha256": "7329e07c3482eac52232d730176c62a5466fca139a3650739eacb020e6d0a425",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"THE DEAN recalls walking in the old streets at Oxford.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which mentions THE DEAN remembering the old half-forgotten time at Oxford, implying recollection of specific places like old streets.\"\n    },\n    {\n      \"statement\": \"THE DEAN recalls seeing the broad meadows.\",\n      \"reason\": \"This statement is directly supported by the ground truth, as remembering the old time at Oxford includes recalling its landscapes such as broad meadows.\"\n    },\n    {\n      \"statement\": \"THE DEAN recalls seeing the tall Spire of the college.\",\n      \"reason\": \"This statement is directly supported by the ground truth, as the old time at Oxford would include iconic structures like the college spire.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"THE DEAN recalls being a promising youth at college.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which only mentions remembering the old time at Oxford without specifying being a promising youth.\"\n    },\n    {\n      \"statement\": \"THE DEAN recalls avoiding the shops where THE DEAN owed youthful bills.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which does not mention avoiding shops or owing bills.\"\n    },\n    {\n      \"statement\": \"THE DEAN reflects that THE DEAN's whole life seems made up of Bills and Spires.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which does not mention bills or spires as components of life.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"THE DEAN remembers the old half-forgotten time at Oxford.\",\n      \"reason\": \"This statement is not explicitly present in the answer; the answer provides specific recollections but does not include the general statement of remembering the old half-forgotten time.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681267,
+    "id": "146ce005-5c4c-4997-bdc2-d899dffeda4c",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 406,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 171,
+      "prompt_tokens": 939,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1345
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 5584.103361,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 406,
+          "prompt_tokens": 939,
+          "total_tokens": 1345
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 406,
+      "prompt_tokens": 939,
+      "total_tokens": 1345
+    }
+  },
+  "request_fingerprint": "73c805eea0ffb453bcf339106a1966b3b08e64785e64e249284e2cfe1fa60c7f"
+}

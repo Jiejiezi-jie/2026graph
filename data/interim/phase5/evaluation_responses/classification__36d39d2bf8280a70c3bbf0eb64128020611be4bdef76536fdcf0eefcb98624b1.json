@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Augustin (the Dean) is the father of Sheba.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'The Dean is father of Sheba.'\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Augustin (the Dean) is the brother of Georgiana.\",\n      \"reason\": \"This relationship is not mentioned in the ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin (the Dean) is the father of Salome.\",\n      \"reason\": \"The ground truth only mentions Sheba as his daughter, not Salome.\"\n    },\n    {\n      \"statement\": \"Augustin is involved in the events with Sir Tristram and the Dean's family as the head of the Deanery.\",\n      \"reason\": \"The ground truth does not mention his role as head of the Deanery or his involvement in events.\"\n    },\n    {\n      \"statement\": \"Augustin opposes the presence of Sir Tristram's horse Dandy Dick.\",\n      \"reason\": \"The ground truth does not mention any opposition to the horse.\"\n    },\n    {\n      \"statement\": \"Augustin opposes the influence of his sister Georgiana.\",\n      \"reason\": \"The ground truth does not mention Georgiana or any opposition to her influence.\"\n    },\n    {\n      \"statement\": \"Augustin deals with the consequences of his own actions.\",\n      \"reason\": \"The ground truth does not mention any consequences of his actions.\"\n    },\n    {\n      \"statement\": \"Augustin is arrested by Noah Topping.\",\n      \"reason\": \"The ground truth does not mention any arrest or Noah Topping.\"\n    },\n    {\n      \"statement\": \"Augustin is accused of poisoning the horse.\",\n      \"reason\": \"The ground truth does not mention any accusation of poisoning.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"Sir Tristram pulled the horse's nose-bag over The Dean.\",\n      \"reason\": \"This event is in the ground truth but not mentioned in the answer.\"\n    },\n    {\n      \"statement\": \"Augustin is also known as The Dean.\",\n      \"reason\": \"The answer does not explicitly state that Augustin is also known as The Dean, though it uses 'Augustin (the Dean)' in some statements. However, the ground truth statement is not directly present as a standalone statement in the answer.\"\n    }\n  ]\n}",
+  "prompt_sha256": "36d39d2bf8280a70c3bbf0eb64128020611be4bdef76536fdcf0eefcb98624b1",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Augustin (the Dean) is the father of Sheba.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'The Dean is father of Sheba.'\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Augustin (the Dean) is the brother of Georgiana.\",\n      \"reason\": \"This relationship is not mentioned in the ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin (the Dean) is the father of Salome.\",\n      \"reason\": \"The ground truth only mentions Sheba as his daughter, not Salome.\"\n    },\n    {\n      \"statement\": \"Augustin is involved in the events with Sir Tristram and the Dean's family as the head of the Deanery.\",\n      \"reason\": \"The ground truth does not mention his role as head of the Deanery or his involvement in events.\"\n    },\n    {\n      \"statement\": \"Augustin opposes the presence of Sir Tristram's horse Dandy Dick.\",\n      \"reason\": \"The ground truth does not mention any opposition to the horse.\"\n    },\n    {\n      \"statement\": \"Augustin opposes the influence of his sister Georgiana.\",\n      \"reason\": \"The ground truth does not mention Georgiana or any opposition to her influence.\"\n    },\n    {\n      \"statement\": \"Augustin deals with the consequences of his own actions.\",\n      \"reason\": \"The ground truth does not mention any consequences of his actions.\"\n    },\n    {\n      \"statement\": \"Augustin is arrested by Noah Topping.\",\n      \"reason\": \"The ground truth does not mention any arrest or Noah Topping.\"\n    },\n    {\n      \"statement\": \"Augustin is accused of poisoning the horse.\",\n      \"reason\": \"The ground truth does not mention any accusation of poisoning.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"Sir Tristram pulled the horse's nose-bag over The Dean.\",\n      \"reason\": \"This event is in the ground truth but not mentioned in the answer.\"\n    },\n    {\n      \"statement\": \"Augustin is also known as The Dean.\",\n      \"reason\": \"The answer does not explicitly state that Augustin is also known as The Dean, though it uses 'Augustin (the Dean)' in some statements. However, the ground truth statement is not directly present as a standalone statement in the answer.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680650,
+    "id": "304a7819-2603-411c-aefa-9f6ef6984c85",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 511,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 227,
+      "prompt_tokens": 995,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1506
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 5416.320045,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 511,
+          "prompt_tokens": 995,
+          "total_tokens": 1506
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 511,
+      "prompt_tokens": 995,
+      "total_tokens": 1506
+    }
+  },
+  "request_fingerprint": "ece141821b79649f9173356a84a8efaf78045ff6d1628b9fc41c99d05d36dbde"
+}

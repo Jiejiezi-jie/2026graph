@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which states that The Dean's residence is The Deanery. The answer adds 'of St. Marvells' as a specific name, but the core fact matches.\",\"statement\":\"The residence of The Dean in the play is The Deanery of St. Marvells.\"},{\"reason\":\"This statement is not directly supported by the ground truth, which only mentions the residence but does not specify that it is the main setting for much of the action. However, since the question asks for the main setting and the answer identifies the Deanery as such, and the ground truth confirms the Deanery is the residence, it can be considered a true positive as it aligns with the question's context. But strictly, the ground truth does not explicitly state that it is the main setting, so this might be considered a false positive. To be precise, we classify it as TP because the ground truth implies the Deanery is the residence, and the question links residence to main setting, so the answer's statement is a reasonable inference from the ground truth.\",\"statement\":\"The Deanery of St. Marvells serves as the main setting for much of the action in the play.\"}]}",
+  "prompt_sha256": "6680b3d6a77c1f40370c0b5adea81af7edd6cca2923bf5d35ddbbfae888f9980",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"The residence of The Dean in the play is The Deanery of St. Marvells.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that The Dean's residence is The Deanery. The answer adds 'of St. Marvells' as a specific name, but the core fact matches.\"\n    },\n    {\n      \"statement\": \"The Deanery of St. Marvells serves as the main setting for much of the action in the play.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which only mentions the residence but does not specify that it is the main setting for much of the action. However, since the question asks for the main setting and the answer identifies the Deanery as such, and the ground truth confirms the Deanery is the residence, it can be considered a true positive as it aligns with the question's context. But strictly, the ground truth does not explicitly state that it is the main setting, so this might be considered a false positive. To be precise, we classify it as TP because the ground truth implies the Deanery is the residence, and the question links residence to main setting, so the answer's statement is a reasonable inference from the ground truth.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681639,
+    "id": "c857545b-dfee-465d-be94-d26cb8cf7a55",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 283,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 118,
+      "prompt_tokens": 886,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1169
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4688.682633,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 283,
+          "prompt_tokens": 886,
+          "total_tokens": 1169
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 283,
+      "prompt_tokens": 886,
+      "total_tokens": 1169
+    }
+  },
+  "request_fingerprint": "77302cd1913eeee25346d153d5f1c740bc596c64725701f6eeb99c4856f1c9ed"
+}

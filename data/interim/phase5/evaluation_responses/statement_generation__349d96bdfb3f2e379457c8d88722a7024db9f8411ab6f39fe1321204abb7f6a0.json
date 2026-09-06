@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Georgiana Tidman uses the nickname \\\"Tris\\\" in her interactions with Sir Tristram.\",\n  \"Georgiana Tidman uses the nickname \\\"George\\\" in her interactions with Sir Tristram.\",\n  \"Georgiana Tidman uses the nickname \\\"George, my boy\\\" in her interactions with Sir Tristram.\"\n]",
+  "prompt_sha256": "349d96bdfb3f2e379457c8d88722a7024db9f8411ab6f39fe1321204abb7f6a0",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\n  \"Georgiana Tidman uses the nickname \\\"Tris\\\" in her interactions with Sir Tristram.\",\n  \"Georgiana Tidman uses the nickname \\\"George\\\" in her interactions with Sir Tristram.\",\n  \"Georgiana Tidman uses the nickname \\\"George, my boy\\\" in her interactions with Sir Tristram.\"\n]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681576,
+    "id": "4acc9891-458c-4826-83f4-1b8d800ef13a",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 73,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 130,
+      "prompt_tokens": 258,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 331
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1513.87192,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 73,
+          "prompt_tokens": 258,
+          "total_tokens": 331
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 73,
+      "prompt_tokens": 258,
+      "total_tokens": 331
+    }
+  },
+  "request_fingerprint": "7f00cf64d81e418402e7de92b3ee41c4f344c01949707a0556b8b44fef66b558"
+}

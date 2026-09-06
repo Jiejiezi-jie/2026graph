@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"SHEBA is present with DARBEY during the narrative.\"]",
+  "prompt_sha256": "a5b491dede624f9db27433a4cb71de57b5a70954939467bee65b7ca386e1f05b",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"SHEBA is present with DARBEY during the narrative.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681647,
+    "id": "e06f75c9-5ff3-446f-8823-81ddc1da7e5f",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 16,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 117,
+      "prompt_tokens": 245,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 261
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1551.254883,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 16,
+          "prompt_tokens": 245,
+          "total_tokens": 261
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 16,
+      "prompt_tokens": 245,
+      "total_tokens": 261
+    }
+  },
+  "request_fingerprint": "c097bf7d969762c60a2d1859df693cc648e304d8a88bc5f97a6a073d47fb7082"
+}

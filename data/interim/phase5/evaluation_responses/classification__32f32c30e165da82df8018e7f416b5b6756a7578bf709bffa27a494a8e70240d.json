@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"This statement is not directly supported by the ground truth, which only mentions that THE DEAN is also known as Dr. Jedd, without specifying how Sir Tristram addresses him.\",\"statement\":\"In the play, Sir Tristram addresses THE DEAN as 'Jedd'.\"},{\"reason\":\"This statement is not directly supported by the ground truth, which does not include any dialogue or specific quotes from Sir Tristram.\",\"statement\":\"Sir Tristram says, 'Oh Jedd, Jedd--and these are what you call Principles!'\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth which states that THE DEAN is also known as Dr. Jedd.\",\"statement\":\"THE DEAN is Dr. Jedd.\"}]}",
+  "prompt_sha256": "32f32c30e165da82df8018e7f416b5b6756a7578bf709bffa27a494a8e70240d",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"THE DEAN is Dr. Jedd.\",\n      \"reason\": \"This statement is directly supported by the ground truth which states that THE DEAN is also known as Dr. Jedd.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"In the play, Sir Tristram addresses THE DEAN as 'Jedd'.\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which only mentions that THE DEAN is also known as Dr. Jedd, without specifying how Sir Tristram addresses him.\"\n    },\n    {\n      \"statement\": \"Sir Tristram says, 'Oh Jedd, Jedd--and these are what you call Principles!'\",\n      \"reason\": \"This statement is not directly supported by the ground truth, which does not include any dialogue or specific quotes from Sir Tristram.\"\n    }\n  ],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681713,
+    "id": "5f3c85e6-d683-4d83-be05-1ecff5b58745",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 200,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 127,
+      "prompt_tokens": 895,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1095
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2707.015845,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 200,
+          "prompt_tokens": 895,
+          "total_tokens": 1095
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 200,
+      "prompt_tokens": 895,
+      "total_tokens": 1095
+    }
+  },
+  "request_fingerprint": "4e345ed7619ed571721d4c693e505a0518aa84f9903ed41bf25bf6322c5161d8"
+}

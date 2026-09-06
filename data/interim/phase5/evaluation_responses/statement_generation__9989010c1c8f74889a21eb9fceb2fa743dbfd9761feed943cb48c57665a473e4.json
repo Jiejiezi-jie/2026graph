@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Blore is employed by The Dean (Augustin Jedd) at the Deanery.\",\n  \"The Dean is burdened by bills.\",\n  \"Blore tempts The Dean to bet on the horse Dandy Dick.\",\n  \"Blore poisons Dandy Dick.\",\n  \"Blore poisons Dandy Dick to ensure Blore's own bet on Bonny-Betsy.\",\n  \"The Dean's daughters are Sheba and Salome.\",\n  \"Sheba and Salome ask The Dean for money.\",\n  \"The Dean refuses to give Sheba and Salome money.\",\n  \"The Dean cites Sheba and Salome's extravagant bills as the reason for refusing to give money.\",\n  \"The Dean discovers a bill for costumes from a masked ball.\",\n  \"The bill for costumes from a masked ball implicates Sheba and Salome.\",\n  \"The Dean sends Sheba and Salome to their rooms.\"\n]",
+  "prompt_sha256": "9989010c1c8f74889a21eb9fceb2fa743dbfd9761feed943cb48c57665a473e4",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Blore is employed by The Dean (Augustin Jedd) at the Deanery.\",\n  \"The Dean is burdened by bills.\",\n  \"Blore tempts The Dean to bet on the horse Dandy Dick.\",\n  \"Blore poisons Dandy Dick.\",\n  \"Blore poisons Dandy Dick to ensure Blore's own bet on Bonny-Betsy.\",\n  \"The Dean's daughters are Sheba and Salome.\",\n  \"Sheba and Salome ask The Dean for money.\",\n  \"The Dean refuses to give Sheba and Salome money.\",\n  \"The Dean cites Sheba and Salome's extravagant bills as the reason for refusing to give money.\",\n  \"The Dean discovers a bill for costumes from a masked ball.\",\n  \"The bill for costumes from a masked ball implicates Sheba and Salome.\",\n  \"The Dean sends Sheba and Salome to their rooms.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681369,
+    "id": "d06b42c0-74e5-431f-af25-6450e043bee0",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 190,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 218,
+      "prompt_tokens": 346,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 536
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2952.342349,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 190,
+          "prompt_tokens": 346,
+          "total_tokens": 536
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 190,
+      "prompt_tokens": 346,
+      "total_tokens": 536
+    }
+  },
+  "request_fingerprint": "2f9fb81cd89f050787948d52a3445a02d19c58f4c857c600d0c78f1e8ba4f573"
+}

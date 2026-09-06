@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"The ground truth states that Arthur Cecil is the partner of John Clayton, which implies a professional partnership. Being joint lessees is a specific form of partnership, so this statement is directly supported.\",\"statement\":\"Arthur Cecil and John Clayton were joint lessees of the Royal Court Theatre.\"},{\"reason\":\"Similarly, being joint managers is another specific form of partnership, and the ground truth's statement that Arthur Cecil is the partner of John Clayton supports this.\",\"statement\":\"Arthur Cecil and John Clayton were joint managers of the Royal Court Theatre.\"}]}",
+  "prompt_sha256": "06a1be31f8a0297d6ad8eae5cb20111d97f26893af924565673ce84522881d96",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Arthur Cecil and John Clayton were joint lessees of the Royal Court Theatre.\",\n      \"reason\": \"The ground truth states that Arthur Cecil is the partner of John Clayton, which implies a professional partnership. Being joint lessees is a specific form of partnership, so this statement is directly supported.\"\n    },\n    {\n      \"statement\": \"Arthur Cecil and John Clayton were joint managers of the Royal Court Theatre.\",\n      \"reason\": \"Similarly, being joint managers is another specific form of partnership, and the ground truth's statement that Arthur Cecil is the partner of John Clayton supports this.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681629,
+    "id": "5d0dbd10-36cd-4855-9736-1fe4a47c2de9",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 144,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 113,
+      "prompt_tokens": 881,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1025
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3104.863427,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 144,
+          "prompt_tokens": 881,
+          "total_tokens": 1025
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 144,
+      "prompt_tokens": 881,
+      "total_tokens": 1025
+    }
+  },
+  "request_fingerprint": "3502b9774cc819e0c6024ad52686ed9fc0e36a2e5905e603bd09c1a0202e2237"
+}

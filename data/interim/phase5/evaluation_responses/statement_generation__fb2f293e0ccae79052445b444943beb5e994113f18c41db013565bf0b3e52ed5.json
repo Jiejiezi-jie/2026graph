@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Blore is employed by The Dean (Augustin Jedd).\",\n  \"The Dean (Augustin Jedd) is the parent of Sheba.\",\n  \"Blore's employment is linked to The Dean and Sheba's actions through the family relationship.\"\n]",
+  "prompt_sha256": "fb2f293e0ccae79052445b444943beb5e994113f18c41db013565bf0b3e52ed5",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Blore is employed by The Dean (Augustin Jedd).\",\n  \"The Dean (Augustin Jedd) is the parent of Sheba.\",\n  \"Blore's employment is linked to The Dean and Sheba's actions through the family relationship.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681380,
+    "id": "4d9dc531-33e0-44d5-aa41-839def960694",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 56,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 142,
+      "prompt_tokens": 270,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 326
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1579.36449,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 56,
+          "prompt_tokens": 270,
+          "total_tokens": 326
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 56,
+      "prompt_tokens": 270,
+      "total_tokens": 326
+    }
+  },
+  "request_fingerprint": "4ab6f4c62517008bbe4108ed03851b5abb953c12c254ae715186de1783f30457"
+}

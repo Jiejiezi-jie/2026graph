@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"SALOME is with MAJOR TARVER.\", \"SALOME is the sister of SHEBA.\"]",
+  "prompt_sha256": "2a50e6bceaf5051661204b6bdbe3188c33f1579d5958637446d5adc0f96380f0",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"SALOME is with MAJOR TARVER.\", \"SALOME is the sister of SHEBA.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681723,
+    "id": "e211a822-e14e-4cb7-946e-66ebd7574053",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 25,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 126,
+      "prompt_tokens": 254,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 279
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1227.851233,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 25,
+          "prompt_tokens": 254,
+          "total_tokens": 279
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 25,
+      "prompt_tokens": 254,
+      "total_tokens": 279
+    }
+  },
+  "request_fingerprint": "290f4607581d2169e5bdfbec7287cd28232769cbf04e953f4cc284dcca5c779d"
+}

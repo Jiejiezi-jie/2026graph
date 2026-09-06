@@ -97,6 +97,37 @@ python -m unittest tests.test_knowledge_graph -v
 [`reports/phase4_retrievers.md`](reports/phase4_retrievers.md)。本阶段不生成答案、
 不评价答案正确率，也不训练路由分类器。
 
+## Novel 训练答案评估与伪标签阶段
+
+阶段 5 只读取阶段 4 已冻结的 186 条训练检索结果。三个方法使用相同的
+OpenAI 兼容模型、temperature=0、关闭 thinking、相同系统 Prompt 和最多 5 个
+Chunk；Path 的 10 条失败结果直接记为证据不足，不调用 LLM。生成完成后才加载
+训练标准答案和证据，使用 GraphRAG-Bench 官方 Answer Correctness 与确定性证据
+覆盖率构建每题唯一伪标签。本阶段不访问测试集、不重跑检索器、不训练分类器。
+
+首次在线运行：
+
+```bash
+export LLM_API_KEY='...'
+export LLM_BASE_URL='https://api.deepseek.com'
+export LLM_MODEL='deepseek-v4-pro'
+
+python scripts/generate_train_answers.py
+python scripts/evaluate_and_build_labels.py
+```
+
+有效缓存齐全后，两步都可零调用离线重建：
+
+```bash
+python scripts/generate_train_answers.py --offline
+python scripts/evaluate_and_build_labels.py --offline
+python -m unittest tests.test_phase5_pipeline -v
+```
+
+结果位于 `data/processed/phase5/`，原始生成与官方评审响应缓存位于
+`data/interim/phase5/`，完整统计与限制见
+[`reports/phase5_generation_and_labels.md`](reports/phase5_generation_and_labels.md)。
+
 本项目把 Adaptive-RAG 的核心协议迁移到三个异构检索后端：
 
 1. `vector`：直接文本向量检索；

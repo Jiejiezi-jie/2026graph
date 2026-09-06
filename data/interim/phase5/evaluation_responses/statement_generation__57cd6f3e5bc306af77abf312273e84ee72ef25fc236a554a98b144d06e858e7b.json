@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Major Tarver and Mr. Darbey intrude upon Salome and Sheba at the Deanery.\",\n  \"Mr. Darbey explains that Major Tarver is critically ill.\",\n  \"Mr. Darbey explains that Major Tarver must propose to be accepted.\",\n  \"Salome and Sheba tell the Dean that Major Tarver and Mr. Darbey have proposed for them.\",\n  \"The Dean welcomes Major Tarver and Mr. Darbey.\"\n]",
+  "prompt_sha256": "57cd6f3e5bc306af77abf312273e84ee72ef25fc236a554a98b144d06e858e7b",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\n  \"Major Tarver and Mr. Darbey intrude upon Salome and Sheba at the Deanery.\",\n  \"Mr. Darbey explains that Major Tarver is critically ill.\",\n  \"Mr. Darbey explains that Major Tarver must propose to be accepted.\",\n  \"Salome and Sheba tell the Dean that Major Tarver and Mr. Darbey have proposed for them.\",\n  \"The Dean welcomes Major Tarver and Mr. Darbey.\"\n]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681430,
+    "id": "5036cf43-94e2-4a9a-834b-e5ca9daad520",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 104,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 173,
+      "prompt_tokens": 301,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 405
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2096.022703,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 104,
+          "prompt_tokens": 301,
+          "total_tokens": 405
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 104,
+      "prompt_tokens": 301,
+      "total_tokens": 405
+    }
+  },
+  "request_fingerprint": "135b4a96ab5a5b514786827afbc3b2ce679fe6ca712e1b1941fb7cbcdc2f53f8"
+}

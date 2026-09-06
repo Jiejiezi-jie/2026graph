@@ -1,0 +1,61 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 1.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 2.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 3.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 4.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 5.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 6.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 7.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 8.\"}],\"TP\":[{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge TP item 1.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge TP item 2.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge TP item 3.\"}]}",
+  "prompt_sha256": "1cf5027e789c43cd12deb310c154b62b70dd600edcdcf18341947c90180b9607",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": 3,\n  \"FP\": 8,\n  \"FN\": 0\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681476,
+    "id": "ed46fc12-c9cc-48b6-a55d-41c035af2cfc",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 23,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 391,
+      "prompt_tokens": 391,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 414
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "error": "official judge classification schema is invalid",
+        "error_type": "Phase5Error",
+        "status": "failed"
+      },
+      {
+        "attempt": 2,
+        "elapsed_ms": 1529.103315,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 23,
+          "prompt_tokens": 391,
+          "total_tokens": 414
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 23,
+      "prompt_tokens": 391,
+      "total_tokens": 414
+    }
+  },
+  "request_fingerprint": "553152871902502b11e6c5bdaf160283813fa45fd645e8bfe34374daab6b4e21"
+}

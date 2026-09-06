@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Blore is employed by The Dean.\",\n  \"Blore is involved in the household routine.\",\n  \"Blore accompanies The Dean on The Dean's rounds at half-past nine.\",\n  \"Blore's relationship with The Dean influences Blore's role with Major Tarver.\",\n  \"Tarver and Salome plan their secret meeting based on the timing of The Dean's rounds.\",\n  \"Tarver and Salome plan their secret meeting based on the timing of Blore's rounds.\",\n  \"Blore's duties affect Major Tarver's ability to interact with the household.\"\n]",
+  "prompt_sha256": "a4002343126f8e743b591ef7f7dc883ac4e6b0fa1db3a32b8edddcc7e8f0788a",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Blore is employed by The Dean.\",\n  \"Blore is involved in the household routine.\",\n  \"Blore accompanies The Dean on The Dean's rounds at half-past nine.\",\n  \"Blore's relationship with The Dean influences Blore's role with Major Tarver.\",\n  \"Tarver and Salome plan their secret meeting based on the timing of The Dean's rounds.\",\n  \"Tarver and Salome plan their secret meeting based on the timing of Blore's rounds.\",\n  \"Blore's duties affect Major Tarver's ability to interact with the household.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681079,
+    "id": "ff0bef57-5b32-4aa9-9b58-9cadee7c4b2e",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 120,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 181,
+      "prompt_tokens": 309,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 429
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1785.972174,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 120,
+          "prompt_tokens": 309,
+          "total_tokens": 429
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 120,
+      "prompt_tokens": 309,
+      "total_tokens": 429
+    }
+  },
+  "request_fingerprint": "9855561f87fe5c71e964e57f8ad52e22c69df630cf02cb5d269c82130a05e9ca"
+}

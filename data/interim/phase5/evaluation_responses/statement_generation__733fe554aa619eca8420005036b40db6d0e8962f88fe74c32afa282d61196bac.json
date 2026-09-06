@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"The multi-hop path from The Dean to Tarver via Darbey and Salome is described.\",\n  \"The Dean is Augustin Jedd.\",\n  \"Augustin Jedd is the father of Salome Jedd.\",\n  \"Salome Jedd is romantically involved with Major Tarver.\",\n  \"Major Tarver is associated with Nugent Darbey.\",\n  \"Major Tarver and Nugent Darbey are both located at Durnstone.\",\n  \"Major Tarver and Nugent Darbey are both located at The Swan Inn.\",\n  \"Major Tarver and Nugent Darbey participate together in the St. Marvells Spring Meeting.\"\n]",
+  "prompt_sha256": "733fe554aa619eca8420005036b40db6d0e8962f88fe74c32afa282d61196bac",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"The multi-hop path from The Dean to Tarver via Darbey and Salome is described.\",\n  \"The Dean is Augustin Jedd.\",\n  \"Augustin Jedd is the father of Salome Jedd.\",\n  \"Salome Jedd is romantically involved with Major Tarver.\",\n  \"Major Tarver is associated with Nugent Darbey.\",\n  \"Major Tarver and Nugent Darbey are both located at Durnstone.\",\n  \"Major Tarver and Nugent Darbey are both located at The Swan Inn.\",\n  \"Major Tarver and Nugent Darbey participate together in the St. Marvells Spring Meeting.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681398,
+    "id": "7d7323a9-23e3-4283-b432-11e3fba6e015",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 139,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 187,
+      "prompt_tokens": 315,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 454
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2637.12153,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 139,
+          "prompt_tokens": 315,
+          "total_tokens": 454
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 139,
+      "prompt_tokens": 315,
+      "total_tokens": 454
+    }
+  },
+  "request_fingerprint": "e9bc7b6ed42bb29d366a873d27850a2529d5c0c9cb0df8aace1a92b5eade9bba"
+}

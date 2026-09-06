@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"Not mentioned in ground truth; no information about their father.\",\"statement\":\"Salome and Sheba are daughters of the Dean.\"},{\"reason\":\"Not mentioned in ground truth.\",\"statement\":\"Salome and Sheba plan to attend a fancy dress ball.\"},{\"reason\":\"Not mentioned in ground truth; ground truth only says Salome is with Major Tarver, not about attending a ball.\",\"statement\":\"Salome plans to attend the fancy dress ball with Major Tarver.\"},{\"reason\":\"Not mentioned in ground truth.\",\"statement\":\"Sheba plans to attend the fancy dress ball with Mr. Darbey.\"},{\"reason\":\"Not mentioned in ground truth.\",\"statement\":\"Salome and Sheba plan to attend the fancy dress ball without their father's knowledge.\"}],\"TP\":[{\"reason\":\"Directly supported by ground truth statement 'SALOME is the sister of SHEBA.'\",\"statement\":\"Salome and Sheba are sisters.\"},{\"reason\":\"Supported by ground truth statement 'SALOME is with MAJOR TARVER.', which implies a romantic connection.\",\"statement\":\"Major Tarver is romantically interested in Salome.\"}]}",
+  "prompt_sha256": "8ca0ced2d410090c821263fee505744a08a84ae06c864dc02ab2cc9d53bc2c84",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Salome and Sheba are sisters.\",\n      \"reason\": \"Directly supported by ground truth statement 'SALOME is the sister of SHEBA.'\"\n    },\n    {\n      \"statement\": \"Major Tarver is romantically interested in Salome.\",\n      \"reason\": \"Supported by ground truth statement 'SALOME is with MAJOR TARVER.', which implies a romantic connection.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Salome and Sheba are daughters of the Dean.\",\n      \"reason\": \"Not mentioned in ground truth; no information about their father.\"\n    },\n    {\n      \"statement\": \"Salome and Sheba plan to attend a fancy dress ball.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    },\n    {\n      \"statement\": \"Salome plans to attend the fancy dress ball with Major Tarver.\",\n      \"reason\": \"Not mentioned in ground truth; ground truth only says Salome is with Major Tarver, not about attending a ball.\"\n    },\n    {\n      \"statement\": \"Sheba plans to attend the fancy dress ball with Mr. Darbey.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    },\n    {\n      \"statement\": \"Salome and Sheba plan to attend the fancy dress ball without their father's knowledge.\",\n      \"reason\": \"Not mentioned in ground truth.\"\n    }\n  ],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681737,
+    "id": "0eda46e0-cefa-4491-80cc-7e19620103c1",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 307,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 192,
+      "prompt_tokens": 960,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1267
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3491.228841,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 307,
+          "prompt_tokens": 960,
+          "total_tokens": 1267
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 307,
+      "prompt_tokens": 960,
+      "total_tokens": 1267
+    }
+  },
+  "request_fingerprint": "f40e7a363c2aba3275088459e4ba70b51c7c743fdd392579c2aa76e650974cbe"
+}

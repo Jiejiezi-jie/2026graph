@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth statement 'The Dean mentions John Cox.'\",\"statement\":\"The Dean mentions John Cox.\"},{\"reason\":\"This statement is directly supported by the ground truth statement 'John Cox is the author of 'The Horse and its Ailments'.'\",\"statement\":\"John Cox is the author of 'The Horse and its Ailments'.\"},{\"reason\":\"This statement is directly supported by the ground truth statement 'The mention of John Cox is in relation to veterinary remedies in the play.'\",\"statement\":\"The Dean mentions John Cox in relation to veterinary remedies in the play.\"}]}",
+  "prompt_sha256": "20fd0e0b5ed5993fa13bec7c4fa5470c78ae0c43f89f4f67b8b33cafa2a84a2d",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"The Dean mentions John Cox.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'The Dean mentions John Cox.'\"\n    },\n    {\n      \"statement\": \"John Cox is the author of 'The Horse and its Ailments'.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'John Cox is the author of 'The Horse and its Ailments'.'\"\n    },\n    {\n      \"statement\": \"The Dean mentions John Cox in relation to veterinary remedies in the play.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'The mention of John Cox is in relation to veterinary remedies in the play.'\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681201,
+    "id": "4bcaf966-fc60-4206-a4b3-e2521cc3e50a",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 170,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 147,
+      "prompt_tokens": 915,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1085
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2054.291572,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 170,
+          "prompt_tokens": 915,
+          "total_tokens": 1085
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 170,
+      "prompt_tokens": 915,
+      "total_tokens": 1085
+    }
+  },
+  "request_fingerprint": "c73f2f3003846a5d2a9e50252aa7e52b7d986113c4099795f62e470d51437022"
+}

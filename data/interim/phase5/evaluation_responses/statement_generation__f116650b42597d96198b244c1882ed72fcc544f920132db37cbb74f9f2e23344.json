@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"GEORGIANA is the character who falls against SIR TRISTRAM.\", \"GEORGIANA falling against SIR TRISTRAM reflects a moment of vulnerability and connection during the play.\"]",
+  "prompt_sha256": "f116650b42597d96198b244c1882ed72fcc544f920132db37cbb74f9f2e23344",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"GEORGIANA is the character who falls against SIR TRISTRAM.\", \"GEORGIANA falling against SIR TRISTRAM reflects a moment of vulnerability and connection during the play.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681562,
+    "id": "5b8d2fbd-0259-455f-a0e2-c46a8bb7bf6d",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 41,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 120,
+      "prompt_tokens": 248,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 289
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1635.443346,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 41,
+          "prompt_tokens": 248,
+          "total_tokens": 289
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 41,
+      "prompt_tokens": 248,
+      "total_tokens": 289
+    }
+  },
+  "request_fingerprint": "9ca1182a59db926cec56894202404ddfb66e93b034f670e83cd8087c2000b6e5"
+}

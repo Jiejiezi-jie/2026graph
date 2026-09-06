@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"THE DEAN places the medicine chest on the table.\"]",
+  "prompt_sha256": "63f60e17f722f13c86c3681311a80dcc5ade6b35c3d9467fca188ace1295a6bf",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"THE DEAN places the medicine chest on the table.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681319,
+    "id": "a158d53d-4119-484b-ada0-6b22f8ed8865",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 17,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 115,
+      "prompt_tokens": 243,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 260
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1178.950481,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 17,
+          "prompt_tokens": 243,
+          "total_tokens": 260
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 17,
+      "prompt_tokens": 243,
+      "total_tokens": 260
+    }
+  },
+  "request_fingerprint": "63f6517d1a190d118914257be05e126d265ee0278d12a837087b30d6e37f39ff"
+}

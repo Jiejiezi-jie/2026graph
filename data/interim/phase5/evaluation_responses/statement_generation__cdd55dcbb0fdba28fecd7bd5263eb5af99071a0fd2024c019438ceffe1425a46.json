@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"DARBEY joins SHEBA during the course of the play.\", \"DARBEY joins SHEBA particularly in scenes involving youthful excitement.\", \"DARBEY joins SHEBA particularly in scenes involving social events.\"]",
+  "prompt_sha256": "cdd55dcbb0fdba28fecd7bd5263eb5af99071a0fd2024c019438ceffe1425a46",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"DARBEY joins SHEBA during the course of the play.\", \"DARBEY joins SHEBA particularly in scenes involving youthful excitement.\", \"DARBEY joins SHEBA particularly in scenes involving social events.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681330,
+    "id": "f2fccb1c-6310-4766-bae0-17a2a6b171cb",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 47,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 110,
+      "prompt_tokens": 238,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 285
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1426.704419,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 47,
+          "prompt_tokens": 238,
+          "total_tokens": 285
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 47,
+      "prompt_tokens": 238,
+      "total_tokens": 285
+    }
+  },
+  "request_fingerprint": "7d24139b39f71651cf21ee207ce112c5c7b866ad69a41c773f8214af903a2f2e"
+}

@@ -1,0 +1,84 @@
+{
+  "cache_version": "phase5-generation-cache-v1",
+  "context_chunk_ids": [
+    "dd_prod_c0002",
+    "dd_prod_c0001",
+    "dd_cast_c0001",
+    "dd_front_c0001",
+    "dd_act03s02_c0008"
+  ],
+  "invalid_citations": [],
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "prompt_sha256": "bc5974403c3f6f031ce1aa952847b9f72337042ad5ef3c80117bfa5beeb95e5b",
+  "query_id": "Novel-50fe4cfa",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"answer\": \"Mr. John Clayton and Mr. Arthur Cecil\",\n  \"citations\": [\"dd_cast_c0001\"],\n  \"insufficient_evidence\": false\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680266,
+    "id": "74be6723-b58b-4c95-9b75-fa3d9624e9cf",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 38,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 3793,
+      "prompt_tokens": 3793,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 3831
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2969.449021,
+        "finish_reason": "stop",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 38,
+          "prompt_tokens": 3793,
+          "total_tokens": 3831
+        }
+      }
+    ],
+    "elapsed_ms": 2969.449021,
+    "token_usage": {
+      "completion_tokens": 38,
+      "prompt_tokens": 3793,
+      "total_tokens": 3831
+    }
+  },
+  "request_fingerprint": "c616d9e0521db3b39b626984307c1d8bc145fc108ff2d3a49251401b665e6379",
+  "request_messages": [
+    {
+      "content": "You are a grounded question-answering system.\n\nAnswer the user's QUESTION using only the supplied EVIDENCE CHUNKS and, when\npresent, GRAPH CONTEXT. Do not use outside knowledge or infer unsupported facts.\nIf the supplied evidence is insufficient, set insufficient_evidence to true and\nset answer exactly to INSUFFICIENT_EVIDENCE.\n\nReturn exactly one JSON object with exactly these fields:\n{\n  \"answer\": \"concise grounded answer or INSUFFICIENT_EVIDENCE\",\n  \"citations\": [\"chunk_id\"],\n  \"insufficient_evidence\": false\n}\n\nEvery citation must be a chunk_id that appears in EVIDENCE CHUNKS. Cite only\nchunks that support the answer. Do not output Markdown, explanations, additional\nkeys, or text outside the JSON object.",
+      "role": "system"
+    },
+    {
+      "content": "QUESTION:\nDuring the original production of 'Dandy Dick', who were the individuals responsible for managing the Court Theatre?\n\nEVIDENCE CHUNKS:\n[CHUNK_ID: dd_prod_c0002]\n\"Dandy Dick\" was performed 171 times between the first night and the 22d of July, when, the old theatre being demolished, Mr. Clayton took a temporary lease of Toole's Theatre, and transferred the play thither, where it ran 75 nights more. A company had already been sent out, under the auspices of the Court management, to perform \"Dandy Dick\" in the provinces; but, when the play was withdrawn from the London boards, Mr. Clayton set out himself with a company, and it was during this tour that he died at Liverpool. In America Mr. Daly produced \"Dandy Dick\" with Miss Ada Rehan in Mrs. John Wood's part, but no very great success was achieved; whereas in Australia its reception was so enthusiastic that it ran for quite an unusual time both in Melbourne and Sydney. In the character of the Dean, Mr. G. W. Anson achieved perhaps the greatest of his Australian successes, and Mr. Robert Brough made his mark as the policeman. MALCOLM C. SALAMAK. _December_, 1892.\n\n[CHUNK_ID: dd_prod_c0001]\nINTRODUCTORY NOTE. \"Dandy Dick\" was the third of the farces which Mr. Pinero wrote for the old Court Theatre--a series of plays which, besides giving playgoers a fresh source of laughter, and the English stage a new order of comic play, brought plentiful prosperity to the joint management of Mr. Arthur Cecil and the late Mr. John Clayton. But a kind of melancholy interest attaches to \"Dandy Dick,\" for this play was, as it were, the swan-song of the old theatre and of the Clayton and Cecil partnership; and it was the piece in which Mr. Clayton was acting when death overtook him, to the general grief. The production of \"Dandy Dick\" may be considered as something of a _tour de force_ in its way. \"The Schoolmistress\" was at the end of its successful run, and Mr. Pinero was under contract to supply its successor by a certain date, when Mr. Clayton one day went down to Brighton, where the dramatist was then at work, to hear him read the two completed acts of the new play. To Mr. Clayton's consternation, however, Mr. Pinero announced that he was dissatisfied with his work, and proposed to begin an entirely new play, as he had a more promising idea. But time was pressing, and a successor to \"The Schoolmistress\" was an immediate necessity. However, Mr. Pinero's idea of writing a play round a dean, who, while being a paragon of dignity and decorum, should be driven by an indiscreet act into a most undignified dilemma, appealed to Mr. Clayton, and hastening back to London with the sketches for the requisite scenes, he left Mr. Pinero to set to work at once upon the new scheme. And within a few weeks, indeed by the time the scenery was ready, the new play was completed, the rural constable of a village adjacent to Brighton having suggested the character of Noah Topping. \"Dandy Dick\" was produced at the Court Theatre on January 27th, 1887, and, meeting with a most favorable initial reception, it settled down immediately into a complete success. The following is a copy of the first-night programme:--\n\n[CHUNK_ID: dd_cast_c0001]\nROYAL COURT THEATRE, SLOANE SQUARE, S.W. _Lessees and Managers:_ Mr. John Clayton and Mr. Arthur Cecil. Programme THIS EVENING, THURSDAY, JANUARY 27, _At_ 8.30 _punctually_, DANDY DICK. AN ORIGINAL FARCE, IN THREE ACTS, BY A. W. PINERO. THE VERY REV. AUGUSTIN JEDD, D.D. MR. JOHN CLAYTON. (Dean of St. Marvell's) SIR TRISTRAM MARDON, Bart MR. EDMUND MAURICE. --th Hussars, MAJOR TARVER { quartered at } MR. F. KERR. MR. DARBEY { Durnstone, near } MR. H. EVERSFIELD. St. Marvell's BLORE (Butler at the Deanery) MR. ARTHUR CECIL. NOAH TOPPING (Constable at MR. W. H. DENNY. St. Marvell's) HATCHAM (Sir Tristram's groom) MR. W. LUGG. GEORGIANA TIDMAN (a Widow, MRS. JOHN WOOD. the Dean's sister) SALOME } the Dean's Daughters { MISS MARIE LEWES. SHEBA } { MISS NORREYS. HANNAH TOPPING (formerly in MISS LAURA LINDEN. Service at the Deanery) ACT I. AT THE DEANERY, ST. MARVELL'S. (Morning.) ACT II. THE SAME PLACE. (Evening.) ACT III.--The Next Day. Scene 1:--\"_The Strong Box,_\" _St. Marvell's. Scene 2.--The Deanery again._ The curtain will be lowered for a few minutes between the two scenes. New Scenery by Mr. T. W. Hall. Preceded, at Eight o'clock, by \"THE NETTLE.\" An Original Comedietta by ERNEST WARREN.\n\n[CHUNK_ID: dd_front_c0001]\nDANDY DICK A PLAY IN THREE ACTS By ARTHUR W. PINERO AUTHOR OF \"SWEET LAVENDER,\" \"THE TIMES,\" \"THE CABINET MINISTER,\" \"LADY BOUNTIFUL,\" ETC. All rights reserved. Performance forbidden, and right of representation reserved. Application for the right of performing this piece must be made to the publishers. BOSTON _WALTER H. BAKER_ Copyright, 1893, by ARTHUR W. PINERO _All rights reserved._\n\n[CHUNK_ID: dd_act03s02_c0008]\nSIR TRISTRAM. As the owner of one-half of Dandy Dick, I denounce you! GEORGIANA. As the owner of the other half, _I_ denounce you! THE DEAN. You! _SHEBA and SALOME enter, and remain standing in the recess, listening._ SIR TRISTRAM. The chief ingredient of your infernal preparation is known. THE DEAN. It contains nothing that I would not cheerfully administer to my own children. GEORGIANA. [_In horror._] Oh! SIR TRISTRAM. I believe you. [_Pointing to the paper._] Strychnine! Sixteen grains! SALOME _and_ SHEBA. [_Clinging to each other terrified._] Oh! THE DEAN. Strychnine! Summon my devoted servant Blore, in whose presence the innocuous mixture was compounded. [_GEORGIANA rings the bell. The girls hide behind the window curtains._] This analysis is simply the pardonable result of over-enthusiasm on the part of our local chemist. GEORGIANA. You're a disgrace to the pretty little police station where you slept last night! [_BLORE enters and stands unnoticed._ THE DEAN. I will prove that in the Deanery Stables the common laws of hospitality have never been transgressed. Give me the bowl! [_GEORGIANA hands THE DEAN the basin from the table._] A simple remedy for a chill. GEORGIANA _and_ SIR TRISTRAM. Strychnine--sixteen grains! THE DEAN. I, myself, am suffering from the exposure of last night. [_Taking the remaining bolus and opening his mouth._] Observe me! BLORE. [_Rushing forward, snatching the basin from THE DEAN and sinking on to his knees._] No, no! Don't, don't! You wouldn't 'ang the holdest servant in the Deanery. THE DEAN. Blore! BLORE. I did it! I 'ad a honest fancy for Bonny Betsy, and I wanted this gentleman's 'orse out of the way. And while you was mixing the dose with the best ecclesiastical intentions, I hintroduced a foreign element. THE DEAN. [_Pulling BLORE up by his coat collar._] Viper! BLORE. Oh sir, it was hall for the sake of the Dean. SIR TRISTRAM. The Dean? BLORE. The dear Dean had only Fifty Pounds to spare for sporting purposes, and I thought a gentleman of 'is 'igh standing ought to have a certainty. SIR TRISTRAM. Jedd! GEORGIANA. Augustin! THE DEAN. I can conceal it no longer--I--I instructed this unworthy creature to back Dandy Dick on behalf of the Restoration Fund. SIR TRISTRAM. [_Shaking BLORE._] And didn't you do it? BLORE. No. THE DEAN. Why not? In the name of that tottering Spire, why not? BLORE. Oh, sir, thinking as you'd given some of the mixture to Dandy I put your cheerful little offering on to Bonny Betsy. [_SALOME and SHEBA disappear._ THE DEAN. Oh! [_To BLORE._] I could have pardoned everything but this last act of disobedience. You are unworthy of the Deanery. Leave it for some ordinary household.\n\nGRAPH CONTEXT (retriever output only):\n{\n  \"linked_entities\": [\n    {\n      \"matched_term\": null,\n      \"method\": \"semantic\",\n      \"name\": \"John Clayton\",\n      \"node_id\": \"n_john_clayton_f6c4f4eddd74\",\n      \"score\": 0.73642051,\n      \"semantic_score\": 0.73642051,\n      \"type\": \"PERSON\"\n    },\n    {\n      \"matched_term\": null,\n      \"method\": \"semantic\",\n      \"name\": \"Royal Court Theatre\",\n      \"node_id\": \"n_royal_court_theatre_b633e12d0239\",\n      \"score\": 0.71974647,\n      \"semantic_score\": 0.71974647,\n      \"type\": \"LOCATION\"\n    },\n    {\n      \"matched_term\": null,\n      \"method\": \"semantic\",\n      \"name\": \"Dandy Dick (play)\",\n      \"node_id\": \"n_dandy_dick_play_3b5ef6517439\",\n      \"score\": 0.68831354,\n      \"semantic_score\": 0.68831354,\n      \"type\": \"CREATIVE_WORK\"\n    },\n    {\n      \"matched_term\": null,\n      \"method\": \"semantic\",\n      \"name\": \"Toole's Theatre\",\n      \"node_id\": \"n_toole_s_theatre_23c757372e96\",\n      \"score\": 0.65545762,\n      \"semantic_score\": 0.65545762,\n      \"type\": \"LOCATION\"\n    }\n  ],\n  \"paths\": [],\n  \"retrieved_edges\": [\n    {\n      \"directed\": true,\n      \"edge_id\": \"e_n_augustin_jedd_6215e882c99f_cd8cdac9cb2532\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"source\": \"Augustin Jedd\",\n      \"source_id\": \"n_augustin_jedd_6215e882c99f\",\n      \"target\": \"John Clayton\",\n      \"target_id\": \"n_john_clayton_f6c4f4eddd74\"\n    },\n    {\n      \"directed\": true,\n      \"edge_id\": \"e_n_dandy_dick_play_3b5ef65174_4d93e22d48ac53\",\n      \"relation\": \"PERFORMED_AT\",\n      \"source\": \"Dandy Dick (play)\",\n      \"source_id\": \"n_dandy_dick_play_3b5ef6517439\",\n      \"target\": \"Toole's Theatre\",\n      \"target_id\": \"n_toole_s_theatre_23c757372e96\"\n    },\n    {\n      \"directed\": true,\n      \"edge_id\": \"e_n_dandy_dick_play_3b5ef65174_4e42a9b1e07401\",\n      \"relation\": \"PERFORMED_AT\",\n      \"source\": \"Dandy Dick (play)\",\n      \"source_id\": \"n_dandy_dick_play_3b5ef6517439\",\n      \"target\": \"Royal Court Theatre\",\n      \"target_id\": \"n_royal_court_theatre_b633e12d0239\"\n    },\n    {\n      \"directed\": true,\n      \"edge_id\": \"e_n_dandy_dick_play_3b5ef65174_51122df81368eb\",\n      \"relation\": \"AUTHORED_BY\",\n      \"source\": \"Dandy Dick (play)\",\n      \"source_id\": \"n_dandy_dick_play_3b5ef6517439\",\n      \"target\": \"Arthur W. Pinero\",\n      \"target_id\": \"n_arthur_w_pinero_e79bd27a36a1\"\n    },\n    {\n      \"directed\": true,\n      \"edge_id\": \"e_n_john_clayton_f6c4f4eddd74_a8686295673c5f\",\n      \"relation\": \"LOCATED_AT\",\n      \"source\": \"John Clayton\",\n      \"source_id\": \"n_john_clayton_f6c4f4eddd74\",\n      \"target\": \"Liverpool\",\n      \"target_id\": \"n_liverpool_3c3c910ad78f\"\n    },\n    {\n      \"directed\": true,\n      \"edge_id\": \"e_n_toole_s_theatre_23c757372e_4577328176a7b7\",\n      \"relation\": \"MANAGED_BY\",\n      \"source\": \"Toole's Theatre\",\n      \"source_id\": \"n_toole_s_theatre_23c757372e96\",\n      \"target\": \"John Clayton\",\n      \"target_id\": \"n_john_clayton_f6c4f4eddd74\"\n    }\n  ],\n  \"retrieved_nodes\": [\n    {\n      \"distance\": 0,\n      \"name\": \"John Clayton\",\n      \"node_id\": \"n_john_clayton_f6c4f4eddd74\",\n      \"score\": 0.73642051,\n      \"seed\": true,\n      \"type\": \"PERSON\"\n    },\n    {\n      \"distance\": 0,\n      \"name\": \"Royal Court Theatre\",\n      \"node_id\": \"n_royal_court_theatre_b633e12d0239\",\n      \"score\": 0.71974647,\n      \"seed\": true,\n      \"type\": \"LOCATION\"\n    },\n    {\n      \"distance\": 0,\n      \"name\": \"Dandy Dick (play)\",\n      \"node_id\": \"n_dandy_dick_play_3b5ef6517439\",\n      \"score\": 0.68831354,\n      \"seed\": true,\n      \"type\": \"CREATIVE_WORK\"\n    },\n    {\n      \"distance\": 0,\n      \"name\": \"Toole's Theatre\",\n      \"node_id\": \"n_toole_s_theatre_23c757372e96\",\n      \"score\": 0.65545762,\n      \"seed\": true,\n      \"type\": \"LOCATION\"\n    },\n    {\n      \"distance\": 1,\n      \"name\": \"Augustin Jedd\",\n      \"node_id\": \"n_augustin_jedd_6215e882c99f\",\n      \"score\": 0.62595743,\n      \"seed\": false,\n      \"type\": \"CHARACTER\"\n    },\n    {\n      \"distance\": 1,\n      \"name\": \"Liverpool\",\n      \"node_id\": \"n_liverpool_3c3c910ad78f\",\n      \"score\": 0.62595743,\n      \"seed\": false,\n      \"type\": \"LOCATION\"\n    },\n    {\n      \"distance\": 1,\n      \"name\": \"Arthur W. Pinero\",\n      \"node_id\": \"n_arthur_w_pinero_e79bd27a36a1\",\n      \"score\": 0.58506651,\n      \"seed\": false,\n      \"type\": \"PERSON\"\n    }\n  ]\n}",
+      "role": "user"
+    }
+  ],
+  "retriever": "neighborhood",
+  "validated_output": {
+    "answer": "Mr. John Clayton and Mr. Arthur Cecil",
+    "citations": [
+      "dd_cast_c0001"
+    ],
+    "insufficient_evidence": false
+  }
+}

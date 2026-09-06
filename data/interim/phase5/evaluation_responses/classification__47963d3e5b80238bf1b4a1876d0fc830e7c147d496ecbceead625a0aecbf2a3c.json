@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FN item 1.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FN item 2.\"}],\"FP\":[{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 1.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 2.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 3.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 4.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 5.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 6.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 7.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 8.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 9.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 10.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 11.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 12.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 13.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 14.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 15.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 16.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 17.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 18.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 19.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 20.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 21.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 22.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 23.\"},{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge FP item 24.\"}],\"TP\":[{\"reason\":\"Judge returned only the category count.\",\"statement\":\"Judge TP item 1.\"}]}",
+  "prompt_sha256": "47963d3e5b80238bf1b4a1876d0fc830e7c147d496ecbceead625a0aecbf2a3c",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": 1,\n  \"FP\": 24,\n  \"FN\": 2\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681179,
+    "id": "478f0e7c-19a3-4020-a517-5ea0ccb5ce82",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 23,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 538,
+      "prompt_tokens": 538,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 561
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1290.121653,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 23,
+          "prompt_tokens": 538,
+          "total_tokens": 561
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 23,
+      "prompt_tokens": 538,
+      "total_tokens": 561
+    }
+  },
+  "request_fingerprint": "c17e6d79a68e89452860524f36f6a7c76df0307070b5707655ec68405939c438"
+}

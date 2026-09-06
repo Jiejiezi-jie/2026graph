@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"Ground truth statement not present in answer statements.\",\"statement\":\"Sir Tristram pulled the horse's nose-bag over The Dean.\"}],\"FP\":[{\"reason\":\"Not supported by ground truth.\",\"statement\":\"Augustin is the brother of Georgiana.\"},{\"reason\":\"Not supported by ground truth.\",\"statement\":\"Augustin is the father of Salome.\"},{\"reason\":\"Not supported by ground truth.\",\"statement\":\"Augustin is a friend of Sir Tristram Mardon.\"},{\"reason\":\"Not supported by ground truth.\",\"statement\":\"Augustin is the head of the Deanery household.\"},{\"reason\":\"Not supported by ground truth.\",\"statement\":\"Sir Tristram and Sir Tristram's horse Dandy Dick are brought to the Deanery household.\"},{\"reason\":\"Not supported by ground truth.\",\"statement\":\"Augustin is concerned about Augustin's reputation.\"},{\"reason\":\"Not supported by ground truth.\",\"statement\":\"Augustin is concerned about the impact of the horse's presence on Augustin's position.\"},{\"reason\":\"Not supported by ground truth.\",\"statement\":\"Augustin is involved in the subsequent scandal over the horse's doping.\"}],\"TP\":[{\"reason\":\"Matches ground truth that Augustin is also known as The Dean.\",\"statement\":\"Augustin is the Dean of St. Marvells.\"},{\"reason\":\"Matches ground truth that The Dean is father of Sheba.\",\"statement\":\"Augustin is the father of Sheba.\"}]}",
+  "prompt_sha256": "38011187769da76400a7793c7c708dbb71c844de7b635146b572b1a07a402558",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Augustin is the Dean of St. Marvells.\",\n      \"reason\": \"Matches ground truth that Augustin is also known as The Dean.\"\n    },\n    {\n      \"statement\": \"Augustin is the father of Sheba.\",\n      \"reason\": \"Matches ground truth that The Dean is father of Sheba.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Augustin is the brother of Georgiana.\",\n      \"reason\": \"Not supported by ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is the father of Salome.\",\n      \"reason\": \"Not supported by ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is a friend of Sir Tristram Mardon.\",\n      \"reason\": \"Not supported by ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is the head of the Deanery household.\",\n      \"reason\": \"Not supported by ground truth.\"\n    },\n    {\n      \"statement\": \"Sir Tristram and Sir Tristram's horse Dandy Dick are brought to the Deanery household.\",\n      \"reason\": \"Not supported by ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is concerned about Augustin's reputation.\",\n      \"reason\": \"Not supported by ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is concerned about the impact of the horse's presence on Augustin's position.\",\n      \"reason\": \"Not supported by ground truth.\"\n    },\n    {\n      \"statement\": \"Augustin is involved in the subsequent scandal over the horse's doping.\",\n      \"reason\": \"Not supported by ground truth.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"Sir Tristram pulled the horse's nose-bag over The Dean.\",\n      \"reason\": \"Ground truth statement not present in answer statements.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681020,
+    "id": "6e3b26ee-86d2-438d-b51a-a6240c748fd3",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 401,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 334,
+      "prompt_tokens": 334,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 735
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4285.98511,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 401,
+          "prompt_tokens": 334,
+          "total_tokens": 735
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 401,
+      "prompt_tokens": 334,
+      "total_tokens": 735
+    }
+  },
+  "request_fingerprint": "9090d4e6fde809f4f3b61a722c1d626e41a1044708bc1f6baeffc6e5bfb85fab"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"THE DEAN has subscribed one thousand pounds to the Restoration Fund.\", \"THE DEAN's subscription is on condition that seven other donors each contribute one thousand pounds.\"]",
+  "prompt_sha256": "f441cc3f96463d12ccff5f85cc31ca0441ae4af84964a8bc444560a8cc91da69",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"THE DEAN has subscribed one thousand pounds to the Restoration Fund.\", \"THE DEAN's subscription is on condition that seven other donors each contribute one thousand pounds.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681505,
+    "id": "1435f75e-0d39-40f7-aac9-9c8d2c97e2e7",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 38,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 116,
+      "prompt_tokens": 244,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 282
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1411.576044,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 38,
+          "prompt_tokens": 244,
+          "total_tokens": 282
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 38,
+      "prompt_tokens": 244,
+      "total_tokens": 282
+    }
+  },
+  "request_fingerprint": "9b99f5e9439ac33b528c598e223601130b9307c8b8d76ffddb3d6d636875160a"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth which states that SIR TRISTRAM owns half of Dandy Dick.\",\"statement\":\"SIR TRISTRAM is the owner of one-half of Dandy Dick.\"}]}",
+  "prompt_sha256": "37c6b0a95c270b1bc758233ce3bc5914c85c3929fda3c1f96a50d098b6e857f4",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"SIR TRISTRAM is the owner of one-half of Dandy Dick.\",\n      \"reason\": \"This statement is directly supported by the ground truth which states that SIR TRISTRAM owns half of Dandy Dick.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681305,
+    "id": "b7aa862d-1f01-43f8-b2ad-2ad9c62952b5",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 73,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 87,
+      "prompt_tokens": 855,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 928
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1484.250986,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 73,
+          "prompt_tokens": 855,
+          "total_tokens": 928
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 73,
+      "prompt_tokens": 855,
+      "total_tokens": 928
+    }
+  },
+  "request_fingerprint": "73a2c6f80dfdb14295896f1211193e9e38d5055da3970fe94f3ec2c8f8f23ecc"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Georgiana Tidman is the aunt of SHEBA.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which explicitly states that Georgiana Tidman is the aunt of SHEBA.\"\n    },\n    {\n      \"statement\": \"Georgiana Tidman is the aunt of SALOME.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which explicitly states that Georgiana Tidman is the aunt of SALOME.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+  "prompt_sha256": "703e507f31755b37922447c667c2cee411dfe7f734ed1fd428fc30a0e1d31072",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Georgiana Tidman is the aunt of SHEBA.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which explicitly states that Georgiana Tidman is the aunt of SHEBA.\"\n    },\n    {\n      \"statement\": \"Georgiana Tidman is the aunt of SALOME.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which explicitly states that Georgiana Tidman is the aunt of SALOME.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680630,
+    "id": "d8c3a56a-b5ed-4458-a4fc-770aae201c25",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 119,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 118,
+      "prompt_tokens": 886,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1005
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1545.516421,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 119,
+          "prompt_tokens": 886,
+          "total_tokens": 1005
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 119,
+      "prompt_tokens": 886,
+      "total_tokens": 1005
+    }
+  },
+  "request_fingerprint": "c880e74bc47f43764397e9fd1194ff5244d5d89f3901803735c328f577ddbe4c"
+}

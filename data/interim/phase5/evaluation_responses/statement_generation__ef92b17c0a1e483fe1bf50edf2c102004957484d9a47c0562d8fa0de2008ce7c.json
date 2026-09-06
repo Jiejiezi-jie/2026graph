@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"GEORGIANA is the same person as George Tidd.\", \"George Tidd was GEORGIANA's racing name.\"]",
+  "prompt_sha256": "ef92b17c0a1e483fe1bf50edf2c102004957484d9a47c0562d8fa0de2008ce7c",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\"GEORGIANA is the same person as George Tidd.\", \"George Tidd was GEORGIANA's racing name.\"]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681492,
+    "id": "f9a714b1-0557-466c-a388-e23e448961d4",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 32,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 122,
+      "prompt_tokens": 250,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 282
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1391.137916,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 32,
+          "prompt_tokens": 250,
+          "total_tokens": 282
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 32,
+      "prompt_tokens": 250,
+      "total_tokens": 282
+    }
+  },
+  "request_fingerprint": "6b56f468f48476252920e0262b68763d2e325b569a6d14d7587b9626d8c96b42"
+}

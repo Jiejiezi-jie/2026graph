@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"John Clayton and Arthur Cecil were the joint managers of the Court Theatre.\",\n  \"'Dandy Dick' was produced at the Court Theatre.\",\n  \"John Clayton and Arthur Cecil commissioned the play 'Dandy Dick' from Arthur W. Pinero.\",\n  \"John Clayton was involved in the development of 'Dandy Dick'.\",\n  \"John Clayton heard Arthur W. Pinero read the first two acts of 'Dandy Dick'.\",\n  \"John Clayton encouraged the new idea for 'Dandy Dick'.\",\n  \"John Clayton acted in 'Dandy Dick' as the Dean.\",\n  \"Arthur Cecil acted in 'Dandy Dick' as Blore.\",\n  \"The production of 'Dandy Dick' was part of John Clayton and Arthur Cecil's management.\",\n  \"John Clayton later transferred 'Dandy Dick' to Toole's Theatre.\",\n  \"John Clayton toured with 'Dandy Dick' until John Clayton's death.\"\n]",
+  "prompt_sha256": "afa8026658904ae72c982351b909862cd9db68e7a4ec410295c2c5a60adb6cff",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\n  \"John Clayton and Arthur Cecil were the joint managers of the Court Theatre.\",\n  \"'Dandy Dick' was produced at the Court Theatre.\",\n  \"John Clayton and Arthur Cecil commissioned the play 'Dandy Dick' from Arthur W. Pinero.\",\n  \"John Clayton was involved in the development of 'Dandy Dick'.\",\n  \"John Clayton heard Arthur W. Pinero read the first two acts of 'Dandy Dick'.\",\n  \"John Clayton encouraged the new idea for 'Dandy Dick'.\",\n  \"John Clayton acted in 'Dandy Dick' as the Dean.\",\n  \"Arthur Cecil acted in 'Dandy Dick' as Blore.\",\n  \"The production of 'Dandy Dick' was part of John Clayton and Arthur Cecil's management.\",\n  \"John Clayton later transferred 'Dandy Dick' to Toole's Theatre.\",\n  \"John Clayton toured with 'Dandy Dick' until John Clayton's death.\"\n]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681464,
+    "id": "27cec8be-f731-41a0-8e37-868162633c79",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 195,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 208,
+      "prompt_tokens": 336,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 531
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3000.359207,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 195,
+          "prompt_tokens": 336,
+          "total_tokens": 531
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 195,
+      "prompt_tokens": 336,
+      "total_tokens": 531
+    }
+  },
+  "request_fingerprint": "eeb47f0b0c8123fa4b5f43d46b74ac7c29ff862e2a18230437a8d05ab9608b5d"
+}

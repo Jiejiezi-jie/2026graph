@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth which states that THE DEAN is also known as Augustin, implying Augustin is a name for THE DEAN.\",\"statement\":\"Augustin is the first name of THE DEAN.\"},{\"reason\":\"This statement is partially supported by the ground truth which confirms Augustin as a name for THE DEAN, but the ground truth does not mention the surname Jedd. However, since the statement includes the correct first name Augustin, it is considered a true positive for the connection between THE DEAN and Augustin.\",\"statement\":\"THE DEAN's full name is Augustin Jedd.\"}]}",
+  "prompt_sha256": "0cc94393294f32edd2d240618829b13a3a6f8301091ed6b9e3f88806f1f5cc20",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Augustin is the first name of THE DEAN.\",\n      \"reason\": \"This statement is directly supported by the ground truth which states that THE DEAN is also known as Augustin, implying Augustin is a name for THE DEAN.\"\n    },\n    {\n      \"statement\": \"THE DEAN's full name is Augustin Jedd.\",\n      \"reason\": \"This statement is partially supported by the ground truth which confirms Augustin as a name for THE DEAN, but the ground truth does not mention the surname Jedd. However, since the statement includes the correct first name Augustin, it is considered a true positive for the connection between THE DEAN and Augustin.\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681279,
+    "id": "9118a6f5-8900-4e4b-b786-5d70e1282206",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 166,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 98,
+      "prompt_tokens": 866,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1032
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2989.557568,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 166,
+          "prompt_tokens": 866,
+          "total_tokens": 1032
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 166,
+      "prompt_tokens": 866,
+      "total_tokens": 1032
+    }
+  },
+  "request_fingerprint": "3aeb888a14d3460aa0a4bf9a2a56194228c7057ff3f6433bbfcc0eda28811543"
+}

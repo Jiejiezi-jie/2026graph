@@ -1,0 +1,85 @@
+{
+  "cache_version": "phase5-generation-cache-v1",
+  "context_chunk_ids": [
+    "dd_act01_c0012",
+    "dd_act01_c0010",
+    "dd_act02_c0017",
+    "dd_act03s02_c0004",
+    "dd_act01_c0002"
+  ],
+  "invalid_citations": [],
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "prompt_sha256": "103465fe670c3003d4375e4f4aafd6ca3452a4b70e5b6fc5c2e1dc8d75d551d7",
+  "query_id": "Novel-fcce94b3",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"answer\": \"Georgiana Tidman reveals that 'George Tidd' was her racing name, and she tells others to ask after George Tidd at Newmarket. Later, when she encounters race-course acquaintances, they recognize her with the cry 'Blessed if it ain't George Tidd!'\",\n  \"citations\": [\"dd_act01_c0012\", \"dd_act03s02_c0004\"],\n  \"insufficient_evidence\": false\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680558,
+    "id": "df93f00e-9d21-4533-bb93-f7896d2fad49",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 98,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 3987,
+      "prompt_tokens": 3987,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 4085
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2680.504248,
+        "finish_reason": "stop",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 98,
+          "prompt_tokens": 3987,
+          "total_tokens": 4085
+        }
+      }
+    ],
+    "elapsed_ms": 2680.504248,
+    "token_usage": {
+      "completion_tokens": 98,
+      "prompt_tokens": 3987,
+      "total_tokens": 4085
+    }
+  },
+  "request_fingerprint": "0f95587f485ca009466976e0f3428672f85b1da3295769e412f6c6e4178f985f",
+  "request_messages": [
+    {
+      "content": "You are a grounded question-answering system.\n\nAnswer the user's QUESTION using only the supplied EVIDENCE CHUNKS and, when\npresent, GRAPH CONTEXT. Do not use outside knowledge or infer unsupported facts.\nIf the supplied evidence is insufficient, set insufficient_evidence to true and\nset answer exactly to INSUFFICIENT_EVIDENCE.\n\nReturn exactly one JSON object with exactly these fields:\n{\n  \"answer\": \"concise grounded answer or INSUFFICIENT_EVIDENCE\",\n  \"citations\": [\"chunk_id\"],\n  \"insufficient_evidence\": false\n}\n\nEvery citation must be a chunk_id that appears in EVIDENCE CHUNKS. Cite only\nchunks that support the answer. Do not output Markdown, explanations, additional\nkeys, or text outside the JSON object.",
+      "role": "system"
+    },
+    {
+      "content": "QUESTION:\nHow is the nickname 'George Tidd' associated with Georgiana Tidman and her interactions in the context of Salome?\n\nEVIDENCE CHUNKS:\n[CHUNK_ID: dd_act01_c0012]\nGEORGIANA. I am George Tidd--that was my racing name. Ask after George Tidd at Newmarket--they'll tell you all about me. My colors were crimson and black diamonds. There you are. [_Producing her pocket-handkerchief, which is crimson and black._ THE DEAN. Dear me! Very interesting! Georgiana, my dear. One moment, children. [_The girls go into the Library._ THE DEAN. [_Tapping the handkerchief._] I understand distinctly from your letter that all this is finally abandoned? GEORGIANA. Worse luck! They'll never see my colors at the post again! THE DEAN. And the contemplation of sport generally as a mental distraction----? GEORGIANA. Oh, yes--I dare say you'll manage to wean me from that, too, in time. THE DEAN. In time! Well, but--Georgiana! [_The gate bell is heard again, the girls re-enter._ GEORGIANA. There's a visitor. I'll tootle upstairs and have a groom down. [_To SALOME and SHEBA._] Make the running, girls. At what time do we feed, Augustin? THE DEAN. There is luncheon at one o'clock. GEORGIANA. Right. The air here is so fresh I sha'n't be sorry to get my nose-bag on. [_She stalks out, accompanied by the girls._ THE DEAN. My sister, Georgiana--my widowed sister, Georgiana. Dear me, I am quite disturbed. Surely, surely the serene atmosphere of the Deanery will work a change. It must! It must! If not, what a grave mistake I have made. Good gracious! No, no, I won't think of it! Still, it is a little unfortunate that poor Georgiana should arrive here on the very eve of these terrible races at St. Marvells. _BLORE enters with a card._ THE DEAN. Who is it, Blore? [_Reading the card._] \"Sir Tristram Mardon.\" Dear, dear! Certainly, Blore, certainly. [_BLORE goes out._] Mardon--why, Mardon and I haven't met since Oxford. [_BLORE re-enters, showing in SIR TRISTRAM MARDON, a well-preserved man of about fifty, with a ruddy face and jovial manner, the type of the thorough English sporting gentleman. BLORE goes out._ SIR TRISTRAM. Hullo, Jedd, how are you? THE DEAN. My dear Mardon--are we boys again? SIR TRISTRAM. [_Boisterously._] Of course we are! Boys again! [_He hits THE DEAN violently in the chest._ THE DEAN. [_Breathing heavily--to himself._] I quite forgot how rough Mardon used to be. How it all comes back to me! SIR TRISTRAM. Think I'm changed? THE DEAN. Only in appearance! SIR TRISTRAM. I'm still a bachelor--got terribly jilted by a woman years ago and have run in blinkers ever since. Can't be helped, can it? You're married, aren't you? THE DEAN. [_With dignity._] I have been a widower for fifteen years. SIR TRISTRAM. Oh lor'! awfully sorry--can't be helped though, can it? [_Seizing THE DEAN'S hand and squeezing it._] Forgive me, old chap. THE DEAN. [_Withdrawing his hand with pain._] O-o-oh! SIR TRISTRAM. I've re-opened an old wound--damned stupid of me!\n\n[CHUNK_ID: dd_act01_c0010]\nSALOME. How awful it all sounds! THE DEAN. Left a widow, you would think it natural that Georgiana Tidman would have flown to her brother, himself a widower. Not at all. Maddened, I hope, by grief, she continued the career of her misguided husband, and for years, to use her own terrible words, she was \"the Daisy of the Turf.\" SHEBA. What's that? THE DEAN. I don't know, toy-child. But at length retribution came. Ill luck fell upon her--her horses, stock, everything, came to the hammer. That was my hour. \"Come to me,\" I wrote, \"my children yearn for you.\" SHEBA _and_ SALOME. [_With wry faces._] Oh! THE DEAN. \"At the Deanery of St. Marvells, with the cares of a household, and a stable which contains only a thirteen-year-old pony, you may obtain rest and forgetfulness.\" And she is coming! SHEBA _and_ SALOME. When? Oh! when? THE DEAN. She merely says, \"Soon.\" SHEBA _and_ SALOME. [_Stamping with vexation._] Ugh! THE DEAN. Salome, Sheba, you will, I fear, find her a sad broken creature, a weary fragment, a wave-tossed derelict. Let it be your patient endeavor to win back a flickering smile to the wan features of this chastened widow. _BLORE enters with a telegram._ BLORE. A telegram, sir! [_THE DEAN opens telegram._ SHEBA. No Aunt Tidman flickers a smile at me! SALOME. I wouldn't be in her shoes for something! SHEBA. Salt in her bed, Salome! SALOME. Yes, and the peg out of the rattling window! [_They grip hands earnestly._ THE DEAN. Good gracious! Bless me! Girls, your Aunt Georgiana slept at the \"Wheatsheaf,\" at Durnstone, last night, and is coming on this morning! SALOME _and_ SHEBA. To-day! THE DEAN. Blore, tell Willis to get the chaise out. [_BLORE hurries out._ THE DEAN. Salome, child, you and I will drive into Durnstone--we may be in time to bring your Aunt over. My hat, Sheba! Quick! [_The clang of the gate bell is heard in the distance._] The bell! [_Looking out of window._] No--yes--it can't be! [_Speaking in an altered voice._] Children! I wonder if this is your Aunt Georgiana? [_BLORE appears with a half-frightened, surprised look._ BLORE. Mrs. Tidman. _GEORGIANA TIDMAN enters. She is a jovial, noisy woman, very \"horsey\" in manners and appearance, and dressed in pronounced masculine style, with billy cock hat and coaching coat. The girls cling to each other; THE DEAN recoils._ GEORGIANA. Well, Gus, my boy, how are you? THE DEAN. [_Shocked._] Georgiana! GEORGIANA. [_Patting THE DEAN'S cheeks._] You're putting on too much flesh, Augustin; they should give you a ten-miler daily in a blanket. THE DEAN. [_With dignity._] My dear sister! GEORGIANA. Are these your two-year-olds? [_To SALOME._] Kiss your Aunt! [_She kisses SALOME with a good hearty smack._] [_To SHEBA._] Kiss your Aunt! [_She embraces SHEBA, then stands between the two girls and surveys them critically, touching them alternately with the end of her cane._] Lord bless you both! What names do you run under?\n\n[CHUNK_ID: dd_act02_c0017]\nSALOME _and_ SHEBA. Aunt! GEORGIANA. You bad girls! SALOME. [_Weeping._] No, Aunt, no! SHEBA. Not bad. Aunt--trustful and confiding. GEORGIANA. [_Advancing to TARVER._] How dare you encourage these two simple children to enjoy themselves! How dare you take them out--without their Aunt! Do you think _I_ can't keep a thing quiet? SHEBA. They didn't even ask Papa's permission! SALOME. Poor Papa! SHEBA. Poor, dear Papa! GEORGIANA. [_Shaking TARVER._] I'm speaking to you--Field-Marshal. TARVER. Madam, you are addressing an invalid. DARBEY. We shall be happy to receive your representative in the morning. At present we are on duty. TARVER. On heavy duty. DARBEY. Guarding the ruins of the \"Swan\" Inn. You mustn't distract our attention. GEORGIANA. Guarding the ruins of the \"Swan,\" are you? [_Calling._] Tris! Sir Tristram! [_SIR TRISTRAM appears._] Tris, I'm a feeble woman, but I hope I've a keen sense of right and wrong. Run these outsiders into the road, and let them guard their own ruins. [_SALOME and SHEBA shriek, and throw themselves at the feet of TARVER and DARBEY. clinging to their legs._ SALOME. No, no. Spare him! SHEBA. You shall not harm a hair of their heads. [_SIR TRISTRAM twists TARVER'S wig round so that it covers his face. The gate bell is heard ringing violently._ GEORGIANA, SALOME _and_ SHEBA. What's that? SALOME. It will wake Papa! SHEBA. Stop the bell! [_GEORGIANA runs to the door and opens it._ SALOME. [_To TARVER and DARBEY._] Fly! [_TARVER and DARBEY disappear through the curtains at the window._ SHEBA. [_Falling into SALOME'S arms._] We have saved them! GEORGIANA. Oh, Tris, your man from the stable! SIR TRISTRAM. Hatcham! GEORGIANA. [_Calling._] Hatcham! [_HATCHAM, carrying the basin with the bolus, runs in breathlessly--followed by BLORE._ HATCHAM. Oh, Sir Tristram! GEORGIANA _and_ SIR TRISTRAM. What is it? HATCHAM. The villain that set fire to the \"Swan,\" sir--in the hact of administering a dose to the 'orse! GEORGIANA. Nobbling our Dandy? SIR TRISTRAM. Where is the scoundrel? HATCHAM. Topping the constable's collared him, Sir--he's taken him in a cart to the lock-up! GEORGIANA _and_ SIR TRISTRAM. Oh! BLORE. [_In agony._] They've got the Dean! END OF THE SECOND ACT.\n\n[CHUNK_ID: dd_act03s02_c0004]\nGEORGIANA. But we ascertained the road the genial constable was going to follow. He was bound for the edge of the hill, up Pear Tree Lane, to watch the Races. Directly we knew this, Tris and I made for the Hill. Bless your soul, there were hundreds of my old friends there--welshers, pick-pockets, card-sharpers, all the lowest race-course cads in the kingdom. In a minute I was in the middle of 'em, as much at home as a Duchess in a Drawing-room. SIR TRISTRAM. A Queen in a Palace! GEORGIANA. Boadicea among the Druids! \"Do you know me?\" I holloaed out. Instantly there was a cry of \"Blessed if it ain't George Tidd!\" Tears of real joy sprang to my eyes--while I was wiping them away Tris had his pockets emptied and I lost my watch. SIR TRISTRAM. Ah, Jedd, it was a glorious moment! GEORGIANA. Tris made a back, and I stood on it, supported by a correct-card merchant on either side. \"Dear friends,\" I said; \"Brothers! I'm with you once again.\" You should have heard the shouts of honest welcome. Before I could obtain silence my field glasses had gone on their long journey. \"Listen to me,\" I said. \"A very dear relative of mine has been collared for playing the three-card trick on his way down from town.\" There was a groan of sympathy. \"He'll be on the brow of the Hill with a bobby in half-an-hour,\" said I, \"who's for the rescue?\" A dead deep silence followed, broken only by the sweet voice of a young child, saying, \"What'll we get for it?\" \"A pound a-piece,\" said I. There was a roar of assent, and my concluding words, \"and possibly six months,\" were never heard. At that moment Tris' back could stand it no longer, and we came heavily to the ground together. [_Seizing THE DEAN by the hand and dragging him up._] Now you know whose hands have led you back to your own manger. [_Embracing him._] And oh, brother, confess--isn't there something good and noble in true English sport after all? THE DEAN. Every abused institution has its redeeming characteristic. But whence is the money to come to reward these dreadful persons? I cannot reasonably ask my girls to organize a bazaar or concert. GEORGIANA. Concert! I'm a rich woman. THE DEAN. Rich! GEORGIANA. Well, I've cleared fifteen hundred over the Handicap. THE DEAN. [_Recoiling._] No! Then the horse who enjoyed the shelter of the Deanery last night---- SIR TRISTRAM. Dandy Dick! THE DEAN. Won! GEORGIANA. In a common canter! All the rest nowhere, and Bonny Betsy walked in with the policeman. THE DEAN. [_To himself._] Five hundred pounds towards the Spire! Five hundred! Oh, where is Blore with the good news! SIR TRISTRAM. Look at him! Lively as a cricket!\n\n[CHUNK_ID: dd_act01_c0002]\nSALOME. [_Taking an envelope from her pocket, and almost crying._] You'd repent now if you had seen the account for the fancy dresses. SHEBA. Has it come in? SALOME. Yes, the Major enclosed it to me this morning. You know, Sheba, Major Tarver promised to get the dresses made in London, so I gave him our brown paper patterns to send to the _costumier._ SHEBA. [_Shocked._] Oh, Salome, do you think he quizzed them? SALOME. No; I sealed them up and marked outside \"To be opened only by a lady.\" SHEBA. That's all right. I hate the plan of myself in brown paper. SALOME. Well, of course Major Tarver begged to be allowed to pay for the dresses, and I said I couldn't dream of permitting it, and then he said he should be most unhappy if he didn't, and, just as I thought he was going to have his own way, [_bursting into tears_] he cheered up and said he'd yield to a lady. [_Taking a large account from the envelope._] And oh! he's yielded. SHEBA. Read it! Don't spare me! SALOME. [_Reading._] \"Debtor to Lewis Isaacs, _Costumier_ to the Queen, Bow Street. One gown--period French Revolution, 1798--Fifteen guineas!\" SHEBA. [_Sinking on her knees, clutching the table._] Oh! SALOME. \"Trimmings, linings, buttons, frillings--Seven guineas!\" SHEBA. [_Hysterically._] Yah! SALOME. That's mine! SHEBA. [_Putting her fingers into her ears._] Now for mine, oooh! SALOME. [_Reading._] \"One skirt and bodice--flower girl--period uncertain--Ten guineas.\" SHEBA. Less than yours! What a shame! SALOME. \"Trimmings, linings, buttons, frillings--Five guineas! Extras, Two guineas. Total, Forty pounds, nineteen. Ladies' own brown paper patterns mislaid. Terms, Cash!\" [_They throw themselves into each other's arms._ SALOME. Oh, Sheba! SHEBA. Salome! Are there forty pounds in the wide world? SALOME. My heart weighs twenty. What shall we do? SHEBA. If we were only a few years older I should suggest that we wrote nice notes to Papa and committed suicide. SALOME. Brought up as we have been, that's out of the question! SHEBA. Then let us be brave women and wear the dresses! SALOME. Of course we'll do that, but--the bill! SHEBA. We must get dear Papa in a good humor and coax him to make us a present of money. He knows we haven't been charitable in the town for ever so long. SALOME. Poor dear Papa! He hasn't paid our proper dressmaker's bill yet, and I'm sure he's pressed for money. SHEBA. But we can't help that when _we're_ pressed for money--poor dear Papa! SALOME. Suppose poor Papa refuses to give us a present? SHEBA. Then we must play the piano when he's at work on his Concordance--poor dear Papa! SALOME. However, don't let us wrong poor Papa in advance. Let us try to think how nice we shall look.",
+      "role": "user"
+    }
+  ],
+  "retriever": "vector",
+  "validated_output": {
+    "answer": "Georgiana Tidman reveals that 'George Tidd' was her racing name, and she tells others to ask after George Tidd at Newmarket. Later, when she encounters race-course acquaintances, they recognize her with the cry 'Blessed if it ain't George Tidd!'",
+    "citations": [
+      "dd_act01_c0012",
+      "dd_act03s02_c0004"
+    ],
+    "insufficient_evidence": false
+  }
+}

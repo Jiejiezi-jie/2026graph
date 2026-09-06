@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"The play 'Dandy Dick' was performed at the Court Theatre.\"]",
+  "prompt_sha256": "d27f001ad4837a9c1caaa60cb43a7605cb879bf1148bc282ab1c0321a9a5bcad",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"The play 'Dandy Dick' was performed at the Court Theatre.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681685,
+    "id": "80a68ca3-ca37-435d-9d0b-6a7b2e6a8e2b",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 16,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 107,
+      "prompt_tokens": 235,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 251
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1492.416677,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 16,
+          "prompt_tokens": 235,
+          "total_tokens": 251
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 16,
+      "prompt_tokens": 235,
+      "total_tokens": 251
+    }
+  },
+  "request_fingerprint": "d55927597e6c8702a48da2c97200ae8ac5501a83cb708fda2333a88f0aff34ad"
+}

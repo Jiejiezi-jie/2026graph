@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"This statement adds specific information about Dr. Jedd being the Dean of St. Marvells, which is not mentioned in the ground truth.\",\"statement\":\"Dr. Jedd is the Dean of St. Marvells.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth which states that THE DEAN is also known as Dr. Jedd, indicating they are the same person.\",\"statement\":\"THE DEAN and Dr. Jedd are the same person.\"}]}",
+  "prompt_sha256": "0d05e81c07766e3b42c3e2980914f96e3c9b1f39058adac1d85f4438075461ef",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"THE DEAN and Dr. Jedd are the same person.\",\n      \"reason\": \"This statement is directly supported by the ground truth which states that THE DEAN is also known as Dr. Jedd, indicating they are the same person.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Dr. Jedd is the Dean of St. Marvells.\",\n      \"reason\": \"This statement adds specific information about Dr. Jedd being the Dean of St. Marvells, which is not mentioned in the ground truth.\"\n    }\n  ],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681718,
+    "id": "83053ecf-f749-4920-b89f-072149026fc5",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 136,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 104,
+      "prompt_tokens": 872,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1008
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2189.169966,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 136,
+          "prompt_tokens": 872,
+          "total_tokens": 1008
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 136,
+      "prompt_tokens": 872,
+      "total_tokens": 1008
+    }
+  },
+  "request_fingerprint": "e58b5ba64d1361ff84b42d57f61ac728fdf8271f88904c4c040fad071efc08d0"
+}

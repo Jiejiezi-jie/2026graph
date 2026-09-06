@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Hannah (Mrs. Topping) recognizes The Dean during The Dean's imprisonment in the police station.\",\n  \"Hannah (Mrs. Topping) identifies The Dean despite The Dean's disguise.\"\n]",
+  "prompt_sha256": "a8f5088921aaeb54a107dc433027362609026fa6ac8f09851ee3be5051a1c11e",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Hannah (Mrs. Topping) recognizes The Dean during The Dean's imprisonment in the police station.\",\n  \"Hannah (Mrs. Topping) identifies The Dean despite The Dean's disguise.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680607,
+    "id": "e3b1f22c-eef3-4df9-8939-4c3a8871a8a3",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 44,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 254,
+      "prompt_tokens": 254,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 298
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2281.731139,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 44,
+          "prompt_tokens": 254,
+          "total_tokens": 298
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 44,
+      "prompt_tokens": 254,
+      "total_tokens": 298
+    }
+  },
+  "request_fingerprint": "a24d8258c4099cfa22b6f1e643bd60ced8a7379502cf46571c1395193144b308"
+}

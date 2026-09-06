@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement is in the ground truth but not present in the answer.\",\"statement\":\"Arthur W. Pinero was under contract to John Clayton.\"},{\"reason\":\"This statement is in the ground truth but not present in the answer.\",\"statement\":\"John Clayton was a partner of Arthur Cecil.\"}],\"FP\":[{\"reason\":\"The ground truth does not mention that they were joint managers of the Royal Court Theatre; it only states that John Clayton was a partner of Arthur Cecil.\",\"statement\":\"John Clayton and Arthur Cecil were the joint managers of the Royal Court Theatre.\"},{\"reason\":\"The ground truth does not mention the Royal Court Theatre or where the play was produced.\",\"statement\":\"'Dandy Dick' was produced at the Royal Court Theatre.\"},{\"reason\":\"The ground truth does not mention John Clayton acting in the play or the role of the Dean.\",\"statement\":\"John Clayton acted in the play 'Dandy Dick' as the Dean.\"},{\"reason\":\"The ground truth does not mention Arthur Cecil acting in the play or the role of Blore.\",\"statement\":\"Arthur Cecil acted in the play 'Dandy Dick' as Blore.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth statement 'Dandy Dick was written by Arthur W. Pinero.'\",\"statement\":\"The play 'Dandy Dick' was written by Arthur W. Pinero.\"}]}",
+  "prompt_sha256": "d3ab763dfd670b88e9f883d835868c2cd6124b4cb481d2cf864ec465c7e68e16",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"The play 'Dandy Dick' was written by Arthur W. Pinero.\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'Dandy Dick was written by Arthur W. Pinero.'\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"John Clayton and Arthur Cecil were the joint managers of the Royal Court Theatre.\",\n      \"reason\": \"The ground truth does not mention that they were joint managers of the Royal Court Theatre; it only states that John Clayton was a partner of Arthur Cecil.\"\n    },\n    {\n      \"statement\": \"'Dandy Dick' was produced at the Royal Court Theatre.\",\n      \"reason\": \"The ground truth does not mention the Royal Court Theatre or where the play was produced.\"\n    },\n    {\n      \"statement\": \"John Clayton acted in the play 'Dandy Dick' as the Dean.\",\n      \"reason\": \"The ground truth does not mention John Clayton acting in the play or the role of the Dean.\"\n    },\n    {\n      \"statement\": \"Arthur Cecil acted in the play 'Dandy Dick' as Blore.\",\n      \"reason\": \"The ground truth does not mention Arthur Cecil acting in the play or the role of Blore.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"Arthur W. Pinero was under contract to John Clayton.\",\n      \"reason\": \"This statement is in the ground truth but not present in the answer.\"\n    },\n    {\n      \"statement\": \"John Clayton was a partner of Arthur Cecil.\",\n      \"reason\": \"This statement is in the ground truth but not present in the answer.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681460,
+    "id": "cdcb93cf-8c6a-4cc7-a526-c5708aff4bca",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 352,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 183,
+      "prompt_tokens": 951,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1303
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 4268.247159,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 352,
+          "prompt_tokens": 951,
+          "total_tokens": 1303
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 352,
+      "prompt_tokens": 951,
+      "total_tokens": 1303
+    }
+  },
+  "request_fingerprint": "06c0e50030420171363d8d685edf3f3e3ebd6bc663a8c009e3e6b591957fbe72"
+}

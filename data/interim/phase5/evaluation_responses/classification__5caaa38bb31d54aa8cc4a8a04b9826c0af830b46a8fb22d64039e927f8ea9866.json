@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"This statement is partially covered by the answer's first statement, but the answer adds 'regarding the management of Dandy Dick' which is a separate ground truth statement. The ground truth statement as a whole is not fully captured in a single answer statement, so it is considered a false negative.\",\"statement\":\"Georgiana is seen accompanying Sir Tristram during the story's key scenes.\"},{\"reason\":\"This statement is not explicitly stated as a separate statement in the answer; it is only implied within the first answer statement. Since the ground truth has it as a distinct statement, it is considered a false negative.\",\"statement\":\"The key scenes particularly regard the management of Dandy Dick.\"}],\"FP\":[{\"reason\":\"This specific action is not mentioned in the ground truth; the ground truth only states that Georgiana accompanies Sir Tristram during key scenes regarding the management of Dandy Dick, without specifying this particular activity.\",\"statement\":\"Georgiana and Sir Tristram go out together to bring Dandy Dick into the Deanery stables.\"},{\"reason\":\"This physical detail is not present in the ground truth, which does not describe any physical contact between Georgiana and Sir Tristram.\",\"statement\":\"Georgiana clutches Sir Tristram's arm.\"},{\"reason\":\"This statement includes specific dialogue and accusation not found in the ground truth; the ground truth only mentions that Georgiana accompanies Sir Tristram during key scenes regarding the management of Dandy Dick, without any mention of whispering or the Dean being a villain.\",\"statement\":\"Georgiana whispers to Sir Tristram about the Dean being the villain who dosed Dandy Dick.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth, which states that Georgiana is seen accompanying Sir Tristram during key scenes regarding the management of Dandy Dick.\",\"statement\":\"Georgiana (Mrs. Tidman) is seen accompanying Sir Tristram during key scenes regarding the management of Dandy Dick.\"}]}",
+  "prompt_sha256": "5caaa38bb31d54aa8cc4a8a04b9826c0af830b46a8fb22d64039e927f8ea9866",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Georgiana (Mrs. Tidman) is seen accompanying Sir Tristram during key scenes regarding the management of Dandy Dick.\",\n      \"reason\": \"This statement is directly supported by the ground truth, which states that Georgiana is seen accompanying Sir Tristram during key scenes regarding the management of Dandy Dick.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Georgiana and Sir Tristram go out together to bring Dandy Dick into the Deanery stables.\",\n      \"reason\": \"This specific action is not mentioned in the ground truth; the ground truth only states that Georgiana accompanies Sir Tristram during key scenes regarding the management of Dandy Dick, without specifying this particular activity.\"\n    },\n    {\n      \"statement\": \"Georgiana clutches Sir Tristram's arm.\",\n      \"reason\": \"This physical detail is not present in the ground truth, which does not describe any physical contact between Georgiana and Sir Tristram.\"\n    },\n    {\n      \"statement\": \"Georgiana whispers to Sir Tristram about the Dean being the villain who dosed Dandy Dick.\",\n      \"reason\": \"This statement includes specific dialogue and accusation not found in the ground truth; the ground truth only mentions that Georgiana accompanies Sir Tristram during key scenes regarding the management of Dandy Dick, without any mention of whispering or the Dean being a villain.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"Georgiana is seen accompanying Sir Tristram during the story's key scenes.\",\n      \"reason\": \"This statement is partially covered by the answer's first statement, but the answer adds 'regarding the management of Dandy Dick' which is a separate ground truth statement. The ground truth statement as a whole is not fully captured in a single answer statement, so it is considered a false negative.\"\n    },\n    {\n      \"statement\": \"The key scenes particularly regard the management of Dandy Dick.\",\n      \"reason\": \"This statement is not explicitly stated as a separate statement in the answer; it is only implied within the first answer statement. Since the ground truth has it as a distinct statement, it is considered a false negative.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681771,
+    "id": "8a7e7407-36ea-4729-91dc-258f6103ee50",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 467,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 181,
+      "prompt_tokens": 949,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1416
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 6262.994561,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 467,
+          "prompt_tokens": 949,
+          "total_tokens": 1416
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 467,
+      "prompt_tokens": 949,
+      "total_tokens": 1416
+    }
+  },
+  "request_fingerprint": "4dc1dc2270d1184eda9eadd2a94441ffcb7a1981b9037c6bf149b4f08a8c93ca"
+}

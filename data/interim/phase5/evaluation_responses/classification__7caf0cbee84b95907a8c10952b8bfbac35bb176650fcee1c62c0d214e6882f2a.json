@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth statement 'W. H. Denny performed in the play Dandy Dick.'\",\"statement\":\"W. H. Denny performed as an actor in the play \\\"Dandy Dick\\\".\"},{\"reason\":\"This statement is directly supported by the ground truth statement 'W. H. Denny took on the role of Noah Topping in the play Dandy Dick.'\",\"statement\":\"W. H. Denny took on the role of Noah Topping in the play \\\"Dandy Dick\\\".\"}]}",
+  "prompt_sha256": "7caf0cbee84b95907a8c10952b8bfbac35bb176650fcee1c62c0d214e6882f2a",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"W. H. Denny performed as an actor in the play \\\"Dandy Dick\\\".\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'W. H. Denny performed in the play Dandy Dick.'\"\n    },\n    {\n      \"statement\": \"W. H. Denny took on the role of Noah Topping in the play \\\"Dandy Dick\\\".\",\n      \"reason\": \"This statement is directly supported by the ground truth statement 'W. H. Denny took on the role of Noah Topping in the play Dandy Dick.'\"\n    }\n  ],\n  \"FP\": [],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681289,
+    "id": "90c19df5-2a74-4ac1-a1a7-62d0866e031c",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 148,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 148,
+      "prompt_tokens": 916,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1064
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2112.119847,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 148,
+          "prompt_tokens": 916,
+          "total_tokens": 1064
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 148,
+      "prompt_tokens": 916,
+      "total_tokens": 1064
+    }
+  },
+  "request_fingerprint": "2ddb4629b48774917da64bd1eab12f1dfddd70c6e0077ae9c6dc0c08ce3b9b59"
+}

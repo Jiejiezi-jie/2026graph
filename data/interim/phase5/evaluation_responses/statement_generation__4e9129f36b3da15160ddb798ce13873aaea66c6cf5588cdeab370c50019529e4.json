@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"Georgiana (Mrs. Tidman) is seen accompanying Sir Tristram during key scenes regarding the management of Dandy Dick.\",\n  \"Georgiana suggests bringing Dandy Dick into the Deanery stables.\",\n  \"Georgiana goes out with Sir Tristram to bring Dandy Dick into the Deanery stables.\",\n  \"Georgiana clutches Sir Tristram's arm at the police station.\",\n  \"Georgiana discusses the situation with Sir Tristram at the police station.\"\n]",
+  "prompt_sha256": "4e9129f36b3da15160ddb798ce13873aaea66c6cf5588cdeab370c50019529e4",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\n  \"Georgiana (Mrs. Tidman) is seen accompanying Sir Tristram during key scenes regarding the management of Dandy Dick.\",\n  \"Georgiana suggests bringing Dandy Dick into the Deanery stables.\",\n  \"Georgiana goes out with Sir Tristram to bring Dandy Dick into the Deanery stables.\",\n  \"Georgiana clutches Sir Tristram's arm at the police station.\",\n  \"Georgiana discusses the situation with Sir Tristram at the police station.\"\n]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681753,
+    "id": "1e5b7e43-cb25-424d-b375-99f1037b7d80",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 103,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 176,
+      "prompt_tokens": 304,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 407
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1815.044879,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 103,
+          "prompt_tokens": 304,
+          "total_tokens": 407
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 103,
+      "prompt_tokens": 304,
+      "total_tokens": 407
+    }
+  },
+  "request_fingerprint": "480f6f70f4f7a5c011ab9bcb25798d66dcd40de53b563f82f2da30e6c3379664"
+}

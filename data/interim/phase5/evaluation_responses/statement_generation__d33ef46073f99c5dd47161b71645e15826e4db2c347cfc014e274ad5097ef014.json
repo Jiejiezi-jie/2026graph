@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"John Clayton and Arthur Cecil were the joint managers of the Royal Court Theatre.\",\n  \"'Dandy Dick' was produced at the Royal Court Theatre.\",\n  \"John Clayton acted in the play 'Dandy Dick' as the Dean.\",\n  \"Arthur Cecil acted in the play 'Dandy Dick' as Blore.\",\n  \"The play 'Dandy Dick' was written by Arthur W. Pinero.\"\n]",
+  "prompt_sha256": "d33ef46073f99c5dd47161b71645e15826e4db2c347cfc014e274ad5097ef014",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\n  \"John Clayton and Arthur Cecil were the joint managers of the Royal Court Theatre.\",\n  \"'Dandy Dick' was produced at the Royal Court Theatre.\",\n  \"John Clayton acted in the play 'Dandy Dick' as the Dean.\",\n  \"Arthur Cecil acted in the play 'Dandy Dick' as Blore.\",\n  \"The play 'Dandy Dick' was written by Arthur W. Pinero.\"\n]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681458,
+    "id": "c3b33967-b02a-420b-8280-fe20015368e1",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 89,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 161,
+      "prompt_tokens": 289,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 378
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1646.417255,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 89,
+          "prompt_tokens": 289,
+          "total_tokens": 378
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 89,
+      "prompt_tokens": 289,
+      "total_tokens": 378
+    }
+  },
+  "request_fingerprint": "58cf3c97471eba798de013d456f51f6989fcecdf88e76e903ef5a8d4a2543717"
+}

@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Arthur Cecil is the partner of John Clayton.\"]",
+  "prompt_sha256": "6192afb7b19b6a6d564db702badc0ee868309ee7834aa6fab2aa26640f637967",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Arthur Cecil is the partner of John Clayton.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681624,
+    "id": "b2b1a0f8-51d1-460d-ad71-faa2e94099d2",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 119,
+      "prompt_tokens": 247,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 258
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1226.261203,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 11,
+          "prompt_tokens": 247,
+          "total_tokens": 258
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 247,
+      "total_tokens": 258
+    }
+  },
+  "request_fingerprint": "5b6165579b71476e1264499f79a7f2149cbf93418a84ecf59d3b07738117d4b2"
+}

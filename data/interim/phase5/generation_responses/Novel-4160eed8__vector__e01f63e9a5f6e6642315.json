@@ -1,0 +1,84 @@
+{
+  "cache_version": "phase5-generation-cache-v1",
+  "context_chunk_ids": [
+    "dd_cast_c0001",
+    "dd_act03s01_c0002",
+    "dd_act03s01_c0013",
+    "dd_act03s01_c0007",
+    "dd_act03s02_c0010"
+  ],
+  "invalid_citations": [],
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "prompt_sha256": "e01f63e9a5f6e66423151342c5e356cfb18496479ca0dfdd1c277e5ee486d58b",
+  "query_id": "Novel-4160eed8",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"answer\": \"Noah Topping\",\n  \"citations\": [\"dd_cast_c0001\"],\n  \"insufficient_evidence\": false\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680216,
+    "id": "072c011a-8679-491c-8282-34d2b6b12e5b",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 33,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 3929,
+      "prompt_tokens": 3929,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 3962
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1811.511149,
+        "finish_reason": "stop",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 33,
+          "prompt_tokens": 3929,
+          "total_tokens": 3962
+        }
+      }
+    ],
+    "elapsed_ms": 1811.511149,
+    "token_usage": {
+      "completion_tokens": 33,
+      "prompt_tokens": 3929,
+      "total_tokens": 3962
+    }
+  },
+  "request_fingerprint": "08c3e6cdc739b5a306e9157ca417b29a403707e0cf447e8113e13a1d59b72516",
+  "request_messages": [
+    {
+      "content": "You are a grounded question-answering system.\n\nAnswer the user's QUESTION using only the supplied EVIDENCE CHUNKS and, when\npresent, GRAPH CONTEXT. Do not use outside knowledge or infer unsupported facts.\nIf the supplied evidence is insufficient, set insufficient_evidence to true and\nset answer exactly to INSUFFICIENT_EVIDENCE.\n\nReturn exactly one JSON object with exactly these fields:\n{\n  \"answer\": \"concise grounded answer or INSUFFICIENT_EVIDENCE\",\n  \"citations\": [\"chunk_id\"],\n  \"insufficient_evidence\": false\n}\n\nEvery citation must be a chunk_id that appears in EVIDENCE CHUNKS. Cite only\nchunks that support the answer. Do not output Markdown, explanations, additional\nkeys, or text outside the JSON object.",
+      "role": "system"
+    },
+    {
+      "content": "QUESTION:\nWhich character performs his duties as a constable at St. Marvells during the confusion involving THE DEAN?\n\nEVIDENCE CHUNKS:\n[CHUNK_ID: dd_cast_c0001]\nROYAL COURT THEATRE, SLOANE SQUARE, S.W. _Lessees and Managers:_ Mr. John Clayton and Mr. Arthur Cecil. Programme THIS EVENING, THURSDAY, JANUARY 27, _At_ 8.30 _punctually_, DANDY DICK. AN ORIGINAL FARCE, IN THREE ACTS, BY A. W. PINERO. THE VERY REV. AUGUSTIN JEDD, D.D. MR. JOHN CLAYTON. (Dean of St. Marvell's) SIR TRISTRAM MARDON, Bart MR. EDMUND MAURICE. --th Hussars, MAJOR TARVER { quartered at } MR. F. KERR. MR. DARBEY { Durnstone, near } MR. H. EVERSFIELD. St. Marvell's BLORE (Butler at the Deanery) MR. ARTHUR CECIL. NOAH TOPPING (Constable at MR. W. H. DENNY. St. Marvell's) HATCHAM (Sir Tristram's groom) MR. W. LUGG. GEORGIANA TIDMAN (a Widow, MRS. JOHN WOOD. the Dean's sister) SALOME } the Dean's Daughters { MISS MARIE LEWES. SHEBA } { MISS NORREYS. HANNAH TOPPING (formerly in MISS LAURA LINDEN. Service at the Deanery) ACT I. AT THE DEANERY, ST. MARVELL'S. (Morning.) ACT II. THE SAME PLACE. (Evening.) ACT III.--The Next Day. Scene 1:--\"_The Strong Box,_\" _St. Marvell's. Scene 2.--The Deanery again._ The curtain will be lowered for a few minutes between the two scenes. New Scenery by Mr. T. W. Hall. Preceded, at Eight o'clock, by \"THE NETTLE.\" An Original Comedietta by ERNEST WARREN.\n\n[CHUNK_ID: dd_act03s01_c0002]\nBLORE. Well, you see, 'Annah, the kitchen took humbrage at your marryin' a policeman at Durnstone. It was regarded as a messyliance. HANNAH. Well, now Mr. Topping's got the appointment of Head Constable at St. Marvells, what's that regarded as? BLORE. A rise on the scales, 'Annah, a decided rise--but still you've honly been a week in St. Marvells and you've got to fight your way hup. HANNAH. I think I'm as hup as ever I'm like to be. BLORE. 'Owever, Jane and Sarah and Willis the stable boy 'ave hunbent so far as to hask me to leave their cards, knowin' I was a callin'. [_He produces from an old leather pocket-book three very dirty pieces of paste-board, which he gives to HANNAH._ HANNAH. [_Taking them in her apron with pride._] Thank 'em kindly. When's their evening? BLORE. We receive on Toosdays, at the side gate. And 'ow are you, my dear? [_Kissing her cheek._ HANNAH. Don't, Edward Blore! BLORE. Don't! When you was Miss Hevans there wasn't these social barriers, 'Annah! HANNAH. Shut up! Noah's jealous of the very apron-strings what go round my waist. I'm not so free and 'andy with my kisses now, I can tell you. BLORE. Then \"what is friendship but a name!\" But Mr. Topping isn't indoors now, surely! HANNAH. [_Nodding her head._] Um--um! BLORE. Why, he took a man up last night! HANNAH. What of it? BLORE. Why, I thought that when hany harrest was made in St. Marvells, the prisoner was lodged here honly for the night and that the 'ead Constable 'ad to drive 'im over to Durnstone Police Station the first thing in the morning. HANNAH. That's the rule, but Noah's behindhand to-day, and ain't going into Durnstone till after dinner. BLORE. Then the prisoner is now hon the premises! HANNAH. Yes, he's in our cell. BLORE. Ah! And where is the hapartment in question? HANNAH. The cell? That's it! BLORE. [_Looking round in horror._] Oh! HANNAH. The \"Strong-box\" they call it in St. Marvells. BLORE. Oh, my goodness, honly fancy! [_Whimpering to himself._] And 'im accustomed to his shavin' water at h'eight and my kindly hand to button his gaiters. Oh, here's a warnin'! HANNAH. Whatever is the matter with you, Edward? BLORE. 'Annah, 'Annah, my dear, it's this very prisoner what I 'ave called on you respectin'. HANNAH. Oh, then the honor ain't a compliment to me, after all, Mr. Blore? BLORE. I'm killing two birds with one stone, my dear. HANNAH. [_Throwing the cards into BLORE'S hat._] You can take them back to the Deanery with Mrs. Topping's comps. BLORE. [_Shaking the cards out of his hat and replacing them in his pocket-book._] I will leave them hon you again to-morrow, 'Annah. But, 'Annah deary, do you know that this hunfortunate man was took in our stables last night.\n\n[CHUNK_ID: dd_act03s01_c0013]\nTHE DEAN. I was discovered administering to a suffering beast a simple remedy for chills. I am an unfortunate creature. Do with me what you will. GEORGIANA. The analysis hasn't come home from the chemist's yet. Is this the truth? THE DEAN. Yes. SIR TRISTRAM. [_To NOAH._] Release this man. NOAH. Release him! He was found trespassin' in the stables of the la-ate De-an, who has committed sooicide. THE DEAN. Oh! I---- SIR TRISTRAM, GEORGIANA _and_ HANNAH. Hush! NOAH. The Diseased De-an is the honly man wot can withdraw one charge---- THE DEAN. I--listen! SIR TRISTRAM, GEORGIANA _and_ HANNAH. Hush! NOAH. And I'm the honly man wot can withdraw the other. SIR TRISTRAM. You? Get out! GEORGIANA. Get out! NOAH. I charge this person unknown with allynating the affections o' my wife while I was puttin' my 'orse to. And I'm goin' to drive him over to Durnstone with the hevidence. HANNAH. Oh lady, lady, it's appearances what is against us. NOAH. [_Through the opening of the door._] Woa! Steady there! Get back! GEORGIANA. [_Whispering to THE DEAN._] I am disappointed in you, Angustin. Have you got this wretched woman's whistle? THE DEAN. Yes. SIR TRISTRAM. [_Softly to THE DEAN._] Oh Jedd, Jedd--and these are what you call Principles! Have you got the key of your handcuffs? THE DEAN. Yes. NOAH. [_Appearing in the doorway._] Time's oop. Coom on! THE DEAN. May I say a few parting words in the home I have apparently wrecked? NOAH. Say' em and 'a done. THE DEAN. In setting out upon a journey, the termination of which is problematical, I desire to attest that this erring constable is the husband of a wife from whom it is impossible to withhold respect, if not admiration. NOAH. You 'ear' im! THE DEAN. As for my wretched self, the confession of my weaknesses must be reserved for another time--another place. [_To GEORGIANA._] To you, whose privilege it is to shelter in the sanctity of the Deanery, I give this earnest admonition. Within an hour from this terrible moment, let the fire be lighted in the drawing-room--let the missing man's warm bath be waiting for its master--a change of linen prepared. Withhold your judgments. Wait. NOAH. This is none of your business. Coom on. THE DEAN. I am ready! [_NOAH takes him by the arm and leads him out._ GEORGIANA. Oh, what am I to think of my brother? HANNAH. [_Kneeling at GEORGIANA'S feet._] Think! That he's the beautifullest, sweetest man in all Durnshire! GEORGIANA. Woman! HANNAH. It's I and my whistle and Nick the fire-brigade horse what'll bring him back to the Deanery safe and unharmed. Not a soul but we three'll ever know of his misfortune. [_Listening._] Hark! They're off! NOAH. [_Outside._] Get up, now! Get-oop, old girl! HANNAH. [_With a cry._] Ah! [_Rushing to the door and looking out._] He's done for! GEORGIANA _and_ SIR TRISTRAM. Done for! HANNAH. The Dean can whistle himself blue! Noah's put Kitty in the cart, and left Old Nick at home! THE END OF THE FIRST SCENE.\n\n[CHUNK_ID: dd_act03s01_c0007]\nHANNAH. Master, is what you've told me your only chance of getting off unknown? THE DEAN. It is the sole remaining chance of averting a calamity of almost national importance. HANNAH. Then you're as done as that joint in my oven! THE DEAN. Woman! HANNAH. The Superintendent at Durnstone--John Ruggles--also the two Inspectors, Whitaker and Parker---- THE DEAN. Well! HANNAH. Them and their wives and families are chapel folk! THE DEAN. [_Aghast._] No! HANNAH. Yes. [_THE DEAN totters across to a chair, into which he sinks with his head upon the table._] Master! Listen! THE DEAN. It's all over! It's all over! HANNAH. No, no--Listen! I was well fed and kept seven years at the Deanery--I've been wed to Noah Topping eight weeks--that's six years and ten months' lovin' duty doo to you and yours before I owe nothing to my darling Noah. Master dear, you shan't be took to Durnstone! THE DEAN. Silence! Hannah Topping, formerly Evans, it is my duty to inform you that your reasoning does more credit to your heart than to your head. HANNAH. I can't help that. The Devil's always in a woman's heart because it's the warmest place to get to! [_Taking a small key from the table drawer._] Here, take that! [_Pushing the key into the pocket of his coat._] When you once get free from my darling Noah that key unlocks your handcuffs! THE DEAN. Handcuffs! HANNAH. How are you to get free, that's the question now, isn't it? I'll tell you. My Noah drives you over to Durnstone with old Nick in the cart. THE DEAN. Old Nick! HANNAH. That's the horse. Now Nick was formerly in the Durnstone Fire Brigade, and when he 'ears the familiar signal of a double whistle you can't hold him in. There's the whistle. [_Putting it into THE DEAN'S pocket._] Directly you turn into Pear Tree Lane, blow once and you'll see Noah with his nose in the air, pullin' fit to wrench his 'ands off. Jump out--roll clear of the wheel--keep cool and 'opeful and blow again. Before you can get the mud out of your eyes Noah and the horse and cart will be well into Durnstone, and may Providence restore a young 'usband safe to his doatin' wife! THE DEAN. Hannah! How dare you! [_Recoiling horror-stricken._ HANNAH. [_Crying._] Oh--ooh--ooh! THE DEAN. Is this the fruit of your seven years' constant cookery at the Deanery? HANNAH. Oh dear! I wouldn't have done it, only this is your first offence! THE DEAN. My first offence, oh! HANNAH. You're not too old; I want to give you another start in life! THE DEAN. Another start! Woman, do you think I've no conscience? Do you think I don't realize the enormity of the--of the difficulties in alighting from a vehicle in rapid motion?\n\n[CHUNK_ID: dd_act03s02_c0010]\nTHE DEAN. [_Outside._] Come in, Major Tarver--come in, Mr. Darbey! NOAH. That's his voice! _THE DEAN enters, followed by SALOME, TARVER, SHEBA and DARBEY._ NOAH. [_Confronting THE DEAN._] My man. HANNAH. No, no, Noahry! GEORGIANA. You're speaking to Dr. Jedd, the Dean of St. Marvells. NOAH. I'm speaking to the man I took last night--the culprit as 'as allynated the affections of my wife. SIR TRISTRAM. Wait--one moment! [_Going out at the window._ [_SALOME and TARVER go into the Library and sit at the writing-table. DARBEY sits in an arm-chair with SHEBA on the arm._ THE DEAN. [_Mildly._] Do not let us chide a man who is conscientious even in error. [_Looking at HANNAH._] I think I see Hannah Evans, once an excellent cook under this very roof. HANNAH. I'm Mrs. Topping now, sir--bride o' the constable. And oh, do forgive him--he's a mass o' ignorance. NOAH. Coom away! [_HANNAH returns to NOAH. as SIR TRISTRAM re-enters with HATCHAM._ SIR TRISTRAM. [_To HATCHAM._] Hatcham--[_pointing to THE DEAN_]--Is that the man you and the Constable secured in the stable last night? HATCHAM. That, sir! Bless your 'art, sir, that's the Dean 'imself. SIR TRISTRAM. That'll do. HATCHAM. [_To NOAH._] Why, our man was a short, thin individual! [_HATCHAM goes out at the window._ THE DEAN. [_To NOAH._] I trust you are perfectly satisfied. NOAH. [_Wiping his brow and looking puzzled._] I'm doon. THE DEAN. Don't trouble further. I withdraw unreservedly any charge against this unknown person found on my premises last night. I attribute to him the most innocent intentions. Hannah, you and your worthy husband will stay and dine in my kitchen. Good afternoon. NOAH. Is it a 'ot dinner? THE DEAN. Hot--with ale. NOAH. [_Turning angrily to HANNAH._] Now then, you don't know a real gentleman when you see one. Why don't 'ee thank the Dean warmly? HANNAH. [_Kissing THE DEAN'S hands with a curtsey._] Thank you, sir. THE DEAN. [_Benignly._] Go--go. I take a kindly interest in you both. [_They back out, bowing and curtseying._ GEORGIANA. Well, Gus, you're out of all your troubles. Are you happy? THE DEAN. Happy! My family influence gone forever--my dignity crushed out of all recognition--the genial summer of the Deanery frosted by the winter of Deceit. GEORGIANA. Ah, Gus, when once you lay the whip about the withers of the horse called Deception he takes the bit between his teeth, and only the devil can stop him--and he'd rather not. Shall I tell you who has been riding the horse hardest? THE DEAN. Who? GEORGIANA. The Dean. THE DEAN. Georgiana! I'm surprised at you. [_SHEBA sits at the piano and plays a bright air softly--DARBEY standing behind her--SALOME and TARVER stand in the archway._",
+      "role": "user"
+    }
+  ],
+  "retriever": "vector",
+  "validated_output": {
+    "answer": "Noah Topping",
+    "citations": [
+      "dd_cast_c0001"
+    ],
+    "insufficient_evidence": false
+  }
+}

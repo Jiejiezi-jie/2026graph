@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\"Georgiana Tidman uses the nickname \\\"George\\\" in her interactions with Sir Tristram.\", \"Georgiana Tidman uses the nickname \\\"George Tidd\\\" in her interactions with Sir Tristram.\", \"Georgiana Tidman uses the nickname \\\"Mr. Tidd\\\" in her interactions with Sir Tristram.\", \"Georgiana Tidman uses the nickname \\\"Tidd\\\" in her interactions with Sir Tristram.\"]",
+  "prompt_sha256": "cc1d5bcbc32b850e2f1fab37c83ae1ebfa8f4e9e8b3f267f0c8b4a5792000194",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "[\"Georgiana Tidman uses the nickname \\\"George\\\" in her interactions with Sir Tristram.\", \"Georgiana Tidman uses the nickname \\\"George Tidd\\\" in her interactions with Sir Tristram.\", \"Georgiana Tidman uses the nickname \\\"Mr. Tidd\\\" in her interactions with Sir Tristram.\", \"Georgiana Tidman uses the nickname \\\"Tidd\\\" in her interactions with Sir Tristram.\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681569,
+    "id": "8cc69a63-c5fd-46fa-a0ca-a41f0fce87b1",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 87,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 133,
+      "prompt_tokens": 261,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 348
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2038.762318,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 87,
+          "prompt_tokens": 261,
+          "total_tokens": 348
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 87,
+      "prompt_tokens": 261,
+      "total_tokens": 348
+    }
+  },
+  "request_fingerprint": "3a2fda4792e24164db82a51e519c70509a70cfb3d2b56175d96eec7ddbee4b7e"
+}

@@ -1,0 +1,85 @@
+{
+  "cache_version": "phase5-generation-cache-v1",
+  "context_chunk_ids": [
+    "dd_act01_c0001",
+    "dd_act03s02_c0001",
+    "dd_front_c0001",
+    "dd_act01_c0003",
+    "dd_act01_c0005"
+  ],
+  "invalid_citations": [],
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "prompt_sha256": "58bddc74391a2691b4f23107492c3698f0437b402a4a24333e0478a66e9e05bc",
+  "query_id": "Novel-e8957bed",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"answer\": \"SALOME and SHEBA are the daughters of the Dean. They plan to secretly attend a Fancy Dress Masked Ball at Durnstone with Major Tarver and Mr. Darbey, officers of the Hussars. Major Tarver is paying attention to Salome, and he arranged for their fancy dresses to be made in London. Later, Major Tarver is in a critical condition because he has incurred Salome's displeasure, and Mr. Darbey explains that unless the Major proposes to the lady in question and is accepted, he must go to the seaside.\",\n  \"citations\": [\"dd_act01_c0001\", \"dd_act03s02_c0001\"],\n  \"insufficient_evidence\": false\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788680505,
+    "id": "c2a41b41-6ee2-4dcf-ba58-5cc973a3e586",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 159,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 3211,
+      "prompt_tokens": 3211,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 3370
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3516.681314,
+        "finish_reason": "stop",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 159,
+          "prompt_tokens": 3211,
+          "total_tokens": 3370
+        }
+      }
+    ],
+    "elapsed_ms": 3516.681314,
+    "token_usage": {
+      "completion_tokens": 159,
+      "prompt_tokens": 3211,
+      "total_tokens": 3370
+    }
+  },
+  "request_fingerprint": "1900c54b086de1672ee178c6175738d7cecf2232e2ca3dde3c004c8f8f2773ac",
+  "request_messages": [
+    {
+      "content": "You are a grounded question-answering system.\n\nAnswer the user's QUESTION using only the supplied EVIDENCE CHUNKS and, when\npresent, GRAPH CONTEXT. Do not use outside knowledge or infer unsupported facts.\nIf the supplied evidence is insufficient, set insufficient_evidence to true and\nset answer exactly to INSUFFICIENT_EVIDENCE.\n\nReturn exactly one JSON object with exactly these fields:\n{\n  \"answer\": \"concise grounded answer or INSUFFICIENT_EVIDENCE\",\n  \"citations\": [\"chunk_id\"],\n  \"insufficient_evidence\": false\n}\n\nEvery citation must be a chunk_id that appears in EVIDENCE CHUNKS. Cite only\nchunks that support the answer. Do not output Markdown, explanations, additional\nkeys, or text outside the JSON object.",
+      "role": "system"
+    },
+    {
+      "content": "QUESTION:\nIn the plot of 'Dandy Dick', what is the connection between SALOME, MAJOR TARVER, and SHEBA?\n\nEVIDENCE CHUNKS:\n[CHUNK_ID: dd_act01_c0001]\nDANDY DICK. THE FIRST ACT. _The morning-room in the Deanery of St. Marvells, with a large arched opening leading to the library on the right, and a deeply-recessed window opening out to the garden on the left. It is a bright spring morning, and an air of comfort and serenity pervades the place._ _SALOME, a tall, handsome, dark girl, of about three-and-twenty, is sitting with her elbows resting on her knees, staring wildly into vacancy. SHEBA, a fair little girl of about seventeen, wearing short petticoats, shares her despondency, and lies prostrate upon the settee._ SALOME. Oh! oh my! oh my! oh my! SHEBA. [_Sitting upright._] Oh, my gracious goodness, goodness gracious me! [_They both walk about excitedly._ SALOME. There's only one terrible word for it--it's a fix! SHEBA. It's worse than that! It's a scrape! How did you ever get led into it? SALOME. How did _we_ get led into it? Halves, Sheba, please. SHEBA. It was Major Tarver's proposal, and I believe, Salome, that it is to _you_ Major Tarver is paying attention. SALOME. The Fancy Dress Masked Ball at Durnstone is promoted by the Officers of the Hussars. I believe that the young gentleman you have impressed calls himself an officer, though he is merely a lieutenant. SHEBA. [_Indignantly._] Mr. Darbey is _certainly_ an officer--a small officer. How dare you gird at me, Salome? SALOME. Very well, then. When to-night we appear at the Durnstone Athenaeum, unknown to dear Papa, on the arms of Major Tarver and Mr. Darbey, I consider that we shall be equally wicked. Oh, how can we be so wrong? SHEBA. Well, we're not wrong yet. We're only _going_ to be wrong; that's a very different matter. SALOME. That's true. Besides, there's this to remember--we're inexperienced girls and have only dear Papa. But oh, now that the Ball is to-night, I repent, Sheba, I repent! SHEBA. I sha'n't do that till to-morrow. But oh, how I _shall_ repent to-morrow! SALOME. [_Taking an envelope from her pocket, and almost crying._] You'd repent now if you had seen the account for the fancy dresses. SHEBA. Has it come in? SALOME. Yes, the Major enclosed it to me this morning. You know, Sheba, Major Tarver promised to get the dresses made in London, so I gave him our brown paper patterns to send to the _costumier._\n\n[CHUNK_ID: dd_act03s02_c0001]\n_The second scene is the Morning Room at the Deanery again._ _SALOME and SHEBA are sitting there gloomily._ SALOME. Poor Papa! SHEBA. Poor dear Papa! SALOME. He must return very soon--he must! SHEBA. He must! In the meantime it is such a comfort to feel that we have no cause for self-reproach. SALOME. But the anxiety is terribly wearing. SHEBA. Nothing is so weakening, Salome. SALOME. Sheba, dear. SHEBA. [_Clinging to SALOME._] If I should pine and ultimately die of this suspense I want you to have my workbox. SALOME. [_Shaking her head and sadly turning away._] Thank you, dear, but if Papa is not home for afternoon tea you will outlive me. [_Turning towards the window as MAJOR TARVER and MR. DARBEY appear outside._ DARBEY. [_Outside._] Miss Jedd! Miss Jedd! SALOME. Sheba! Here are Gerald Tarver and Mr. Darbey! SHEBA. Oh, the presumption! Open the window and dare them to enter! [_SALOME unfastens the window._ DARBEY. [_Outside._] Thank you. Don't be shocked when you see Tarver. _TARVER and DARBEY enter, dressed for the Races, but DARBEY is supporting TARVER, who looks extremely weakly._ TARVER. Pardon this informal method of presenting ourselves. SALOME. You do well, gentlemen, to intrude upon two feeble women at a moment of sorrow. SHEBA. One step further, and I shall ask Major Tarver, who is nearest the bell, to ring for help. [_TARVER sinks into a chair._ DARBEY. [_Standing by the side of TARVER._] There now. The fact is. Miss Jedd, that Tarver is in an exceedingly critical condition. Feeling that he has incurred your displeasure he has failed even in the struggle to gain the race-course. I have taken him to Dr. Middleton and I explained that Major Tarver loved with a passion [_looking at SHEBA_] second only to my own. SALOME. [_Sitting comfortably on the settee._] Oh, we cannot listen to you, Mr. Darbey. SHEBA. Go on, sir, if you can. [_The two girls exchange looks._ DARBEY. The Doctor made a searching examination of the Major's tongue and diagnosed that, unless the Major at once proposed to the lady in question and was accepted, three weeks or a month at the seaside would be absolutely imperative. Shall I continue? SALOME. Oh, certainly. I am helpless. SHEBA. We are curious to see to what lengths you will go.\n\n[CHUNK_ID: dd_front_c0001]\nDANDY DICK A PLAY IN THREE ACTS By ARTHUR W. PINERO AUTHOR OF \"SWEET LAVENDER,\" \"THE TIMES,\" \"THE CABINET MINISTER,\" \"LADY BOUNTIFUL,\" ETC. All rights reserved. Performance forbidden, and right of representation reserved. Application for the right of performing this piece must be made to the publishers. BOSTON _WALTER H. BAKER_ Copyright, 1893, by ARTHUR W. PINERO _All rights reserved._\n\n[CHUNK_ID: dd_act01_c0003]\nSALOME. Poor dear Papa! He hasn't paid our proper dressmaker's bill yet, and I'm sure he's pressed for money. SHEBA. But we can't help that when _we're_ pressed for money--poor dear Papa! SALOME. Suppose poor Papa refuses to give us a present? SHEBA. Then we must play the piano when he's at work on his Concordance--poor dear Papa! SALOME. However, don't let us wrong poor Papa in advance. Let us try to think how nice we shall look. SHEBA. Oh yes--sha'n't I! SALOME. Oh, I shall! And as for stealing out of the house with Major Tarver when poor dear Papa has gone to bed, why, Gerald Tarver would die for me! SHEBA. So would Nugent Darbey for me; besides I'm not old enough to know better. SALOME. You're not so very much younger than I, Sheba! SHEBA. Indeed, Salome! Then why do you keep me in short skirts? SALOME. Why! you cruel girl! You know I can't lengthen you till I'm married! [_BLORE, the butler, a venerable-looking person, with rather a clerical suggestion about his dress, enters by the window._ BLORE. [_Benignly._] The two soldier gentlemen have just rode hup, Miss Salome. [_The girls clutch each other's hands._ SALOME. You mean Major Tarver? SHEBA. And Mr. Darbey. They have called to inquire after poor Papa. SALOME. Poor Papa! BLORE. Shall I show them hin, Miss Sheba? SHEBA. Yes, Blore, dear, and hang your h's on the hat-stand. [BLORE _laughs sweetly at SHEBA and shakes his fingers at her playfully._ BLORE. [_Vindictively, behind their backs._] 'Ussies! [_He goes out._ SALOME. Am I all right, Sheba? SHEBA. Yes. Am I? SALOME. Yes. [_Looking out at window._] Here they are! How well Gerald Tarver dismounts! Oh! SHEBA. He left his liver in India, didn't he? SALOME. No--only part of it. SHEBA. Well--part of it. SALOME. And that he gave to his Queen, brave fellow! SHEBA. [_Seating herself in an artificial attitude._] Where shall we be--here? SALOME. [_Running to the piano._] All right; you be admiring my voice! SHEBA. Oh, I dare say! SALOME. Here they are, and we're doing nothing! SHEBA. Let's run away and then come in unconsciously. SALOME. Yes--unconsciously. [_They run off through the Library. BLORE shows in MAJOR TARVER and MR. DARBEY, who are both in regimentals. MAJOR TARVER is a middle-aged, tall, angular officer, with a thin face, yellow complexion, and red eyes. He is alternately in a state of great excitement and depression. MR. DARBEY is a mere boy, but with a pompous, patronizing manner._ DARBEY. The Dean's out of the way, eh! BLORE. Yes, sir, he his. TARVER. Eh? How is the Dean? Never mind--perhaps Miss Jedd is at home? BLORE. Yes, sir, she his. TARVER. It would be discourteous to run away without asking Miss Jedd after her father.\n\n[CHUNK_ID: dd_act01_c0005]\nSALOME. Major Tarver! [_She leads him to a chair into which he sinks in a ghastly state. DARBEY strolls in from the Library with SHEBA._ DARBEY. [_To SHEBA._] Your remarks about the army are extremely complimentary. On behalf of the army I thank you. We fellows are not a bad sort, take us all round. SHEBA. There's a grand future before you, isn't there? DARBEY. Well, I suppose there is if I go on as I'm going now. TARVER. [_To SALOME._] Thanks, the attack has passed. Now about to-night; at what time is the house entirely quiet? SALOME. Poor dear Papa goes round with Blore at half-past nine--after that all is rest and peacefulness. TARVER. Then if we're here with the closed carriage at ten--! [_They go together into the library._ DARBEY. [_To SHEBA._] Some of us army men can slave too. Tarver's queer livah has thrown all the arrangements for the Fancy Ball on my shoulders. [_SALOME and TARVER re-enter._] Look at him--that's when he's enjoying life! TARVER. [_Laughing convulsively._] Ha! ha! ha! ho! he! he! Good, eh, Miss Jedd? SALOME. But suppose dear Papa should hear us crunching down the gravel path! TARVER. Oh! [_He sinks on to the settee with a vacant stare, his arms hanging helplessly._ DARBEY. [_To SHEBA._] There--now his career is a burden to him! SHEBA. Oh! SALOME. Would you like a glass of water, Major Tarver? TARVER. [_Taking SALOME'S hand._] Thank you, dear Miss Jedd, with the least suggestion of cayenne pepper in it. SHEBA. [_Looking out at window._] Oh, Salome! Papa! Papa! TARVER. The Dean? DARBEY. The Dean! [_They all collect themselves in a fluster. The two girls go to meet their father, who enters at the window with his head bowed and his hands behind his back, in deep thought. THE DEAN is a portly man of about fifty, with a dignified demeanor, a suave voice and persuasive manner, and a noble brow surmounted by silver-gray hair. BLORE follows THE DEAN, carrying some books, a small bunch of flowers, and an umbrella._ SALOME. [_Tenderly._] Papa! SHEBA. Papsey! [_THE DEAN rouses himself, discovers his children and removes his hat._ THE DEAN. [_To SALOME._] Salome! [_To SHEBA._] My toy-child! [_He draws the girls to him and embraces them, then sees TARVER and DARBEY._] Dear me! Strangers! TARVER _and_ Darbey. [_Coughing uncomfortably._] H'm! SALOME. [_Reproachfully, taking his hat from him._] Papa! Major Tarver and Mr. Darbey have ridden over from Durnstone to ask how your cold is. [_SHEBA takes the gold-rimmed pince-nez which hangs upon THE DEAN'S waistcoat and places it before his eyes._ THE DEAN. Dear me! Major! Mr. Garvey. SHEBA. Mr. Darbey! THE DEAN. Darbey! How good of you! [_With his girls still embracing him he extends a hand to each of the men._] My cold is better. [_BLORE goes out through the Library._] Major--Mr. Garvey--these inquiries strike me as being so kind that I insist--no, no, I _beg_ that you will share our simple dinner with us to-night at six o'clock!",
+      "role": "user"
+    }
+  ],
+  "retriever": "vector",
+  "validated_output": {
+    "answer": "SALOME and SHEBA are the daughters of the Dean. They plan to secretly attend a Fancy Dress Masked Ball at Durnstone with Major Tarver and Mr. Darbey, officers of the Hussars. Major Tarver is paying attention to Salome, and he arranged for their fancy dresses to be made in London. Later, Major Tarver is in a critical condition because he has incurred Salome's displeasure, and Mr. Darbey explains that unless the Major proposes to the lady in question and is accepted, he must go to the seaside.",
+    "citations": [
+      "dd_act01_c0001",
+      "dd_act03s02_c0001"
+    ],
+    "insufficient_evidence": false
+  }
+}

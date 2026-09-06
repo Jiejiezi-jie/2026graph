@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[{\"reason\":\"The answer does not mention the full nickname 'George Tidd'; it only mentions 'George' and other nicknames.\",\"statement\":\"Georgiana Tidman uses the nickname George Tidd.\"},{\"reason\":\"The answer does not explicitly state that George Tidd is Georgiana Tidman.\",\"statement\":\"George Tidd is Georgiana Tidman.\"},{\"reason\":\"The answer implies interaction but does not explicitly state that she speaks to Sir Tristram.\",\"statement\":\"Georgiana Tidman speaks to Sir Tristram.\"}],\"FP\":[{\"reason\":\"The ground truth does not mention the nickname 'Tris'; it only mentions 'George Tidd'.\",\"statement\":\"Georgiana Tidman uses the nickname \\\"Tris\\\" in her interactions with Sir Tristram.\"},{\"reason\":\"The ground truth does not mention the phrase 'George, my boy'; it only mentions 'George Tidd'.\",\"statement\":\"Georgiana Tidman uses the nickname \\\"George, my boy\\\" in her interactions with Sir Tristram.\"}],\"TP\":[{\"reason\":\"The ground truth states that Georgiana Tidman uses the nickname George Tidd, and since George Tidd is Georgiana Tidman, the use of 'George' is directly supported.\",\"statement\":\"Georgiana Tidman uses the nickname \\\"George\\\" in her interactions with Sir Tristram.\"}]}",
+  "prompt_sha256": "1cbdac2a0c1ed07aeefeb29ee2ffc5472feddc210172950d15ed937ae75ba428",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Georgiana Tidman uses the nickname \\\"George\\\" in her interactions with Sir Tristram.\",\n      \"reason\": \"The ground truth states that Georgiana Tidman uses the nickname George Tidd, and since George Tidd is Georgiana Tidman, the use of 'George' is directly supported.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Georgiana Tidman uses the nickname \\\"Tris\\\" in her interactions with Sir Tristram.\",\n      \"reason\": \"The ground truth does not mention the nickname 'Tris'; it only mentions 'George Tidd'.\"\n    },\n    {\n      \"statement\": \"Georgiana Tidman uses the nickname \\\"George, my boy\\\" in her interactions with Sir Tristram.\",\n      \"reason\": \"The ground truth does not mention the phrase 'George, my boy'; it only mentions 'George Tidd'.\"\n    }\n  ],\n  \"FN\": [\n    {\n      \"statement\": \"Georgiana Tidman uses the nickname George Tidd.\",\n      \"reason\": \"The answer does not mention the full nickname 'George Tidd'; it only mentions 'George' and other nicknames.\"\n    },\n    {\n      \"statement\": \"George Tidd is Georgiana Tidman.\",\n      \"reason\": \"The answer does not explicitly state that George Tidd is Georgiana Tidman.\"\n    },\n    {\n      \"statement\": \"Georgiana Tidman speaks to Sir Tristram.\",\n      \"reason\": \"The answer implies interaction but does not explicitly state that she speaks to Sir Tristram.\"\n    }\n  ]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681578,
+    "id": "f4b16f87-d3f2-4429-b64e-b64f20706f16",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 338,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 158,
+      "prompt_tokens": 926,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1264
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 3857.233961,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 338,
+          "prompt_tokens": 926,
+          "total_tokens": 1264
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 338,
+      "prompt_tokens": 926,
+      "total_tokens": 1264
+    }
+  },
+  "request_fingerprint": "672cafd58f01f97c35937c62c29d6b947b9a0b6678422f58412e783281a1b68b"
+}

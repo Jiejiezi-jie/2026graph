@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "statement_generation",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "[\n  \"The Dean sees Mr. Darbey.\",\n  \"Mr. Darbey is an officer of the Hussars.\",\n  \"Sheba speaks to Mr. Darbey.\"\n]",
+  "prompt_sha256": "e5f747774c470cb9742f23981205dc28b994d726423d34f4ed0fd77492a9c879",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n[\n  \"The Dean sees Mr. Darbey.\",\n  \"Mr. Darbey is an officer of the Hussars.\",\n  \"Sheba speaks to Mr. Darbey.\"\n]\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681597,
+    "id": "1c229c50-b707-4c59-a6ad-ed40cb803684",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 44,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 141,
+      "prompt_tokens": 269,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 313
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 1145.126531,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 44,
+          "prompt_tokens": 269,
+          "total_tokens": 313
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 44,
+      "prompt_tokens": 269,
+      "total_tokens": 313
+    }
+  },
+  "request_fingerprint": "9caf962857a595f57026aa2783be598d1a7ba877b9b4ce8ebf15aa6792de1a81"
+}

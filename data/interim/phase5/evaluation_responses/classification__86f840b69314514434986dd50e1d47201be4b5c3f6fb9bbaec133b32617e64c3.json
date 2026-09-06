@@ -1,0 +1,55 @@
+{
+  "cache_version": "phase5-evaluation-cache-v1",
+  "kind": "classification",
+  "model": "deepseek-v4-pro",
+  "normalized_content": "{\"FN\":[],\"FP\":[{\"reason\":\"The ground truth only mentions Sheba winning money, not Salome.\",\"statement\":\"Salome wins money at The Races.\"},{\"reason\":\"The ground truth does not specify the amount won, nor does it mention Salome winning money.\",\"statement\":\"Salome and Sheba Jedd win fifty pounds at the Races.\"}],\"TP\":[{\"reason\":\"This statement is directly supported by the ground truth which states that Sheba won money at The Races.\",\"statement\":\"Sheba Jedd wins money at The Races.\"}]}",
+  "prompt_sha256": "86f840b69314514434986dd50e1d47201be4b5c3f6fb9bbaec133b32617e64c3",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"TP\": [\n    {\n      \"statement\": \"Sheba Jedd wins money at The Races.\",\n      \"reason\": \"This statement is directly supported by the ground truth which states that Sheba won money at The Races.\"\n    }\n  ],\n  \"FP\": [\n    {\n      \"statement\": \"Salome wins money at The Races.\",\n      \"reason\": \"The ground truth only mentions Sheba winning money, not Salome.\"\n    },\n    {\n      \"statement\": \"Salome and Sheba Jedd win fifty pounds at the Races.\",\n      \"reason\": \"The ground truth does not specify the amount won, nor does it mention Salome winning money.\"\n    }\n  ],\n  \"FN\": []\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788681031,
+    "id": "51aef755-b20f-4f63-a4c1-3a5483883b4e",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 152,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 99,
+      "prompt_tokens": 867,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 1019
+    }
+  },
+  "request_audit": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_ms": 2530.25812,
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 152,
+          "prompt_tokens": 867,
+          "total_tokens": 1019
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 152,
+      "prompt_tokens": 867,
+      "total_tokens": 1019
+    }
+  },
+  "request_fingerprint": "3d1f1b45b39a4e73aba8e84e5f4f0383f0f91c6ea36bc896abc83b9f4eeae676"
+}
