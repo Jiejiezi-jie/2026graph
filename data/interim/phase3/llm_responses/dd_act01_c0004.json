@@ -1,0 +1,195 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act01_c0004",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "292b240aaee43f3322c38610aa6078e22a1b975bde39b41f60b73d1f59fcadb9",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A young woman, sister of Sheba, who is startled by the visitors and concerned about Major Tarver's health.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A young woman, sister of Salome, who interacts with Mr. Darbey and is involved in the costume arrangements.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"MAJOR TARVER\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A middle-aged, tall, angular officer with a thin face, yellow complexion, and red eyes, who suffers from alternating excitement and depression.\",\n      \"aliases\": [\n        \"TARVER\"\n      ]\n    },\n    {\n      \"name\": \"MR. DARBEY\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A young officer with a pompous, patronizing manner, who is a visitor.\",\n      \"aliases\": [\n        \"DARBEY\"\n      ]\n    },\n    {\n      \"name\": \"BLORE\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A servant who shows in visitors and is dismissed by Salome.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Miss Jedd\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A title used by Major Tarver to address Salome, and also appears on a hamper label as Secretary of the Cast-off Clothing Distribution League.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Cast-off Clothing Distribution League\",\n      \"type\": \"ORGANIZATION\",\n      \"description\": \"An organization for which Miss Jedd is Secretary, as indicated on a hamper label.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Dean\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"The father of Miss Jedd, who is out of the way according to Blore.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Salome has her arm round her sister's waist, indicating they are sisters.\",\n      \"evidence_quote\": \"SALOME has her arm round her sister's waist\",\n      \"source_chunk_id\": \"dd_act01_c0004\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"SHEBA\",\n      \"target\": \"SALOME\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Sheba is Salome's sister, as Salome has her arm round her sister's waist.\",\n      \"evidence_quote\": \"SALOME has her arm round her sister's waist\",\n      \"source_chunk_id\": \"dd_act01_c0004\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"MAJOR TARVER\",\n      \"target\": \"SALOME\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Major Tarver takes Salome's hand eagerly and they converse about his health and the costumes.\",\n      \"evidence_quote\": \"Taking SALOME'S hand eagerly\",\n      \"source_chunk_id\": \"dd_act01_c0004\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"MR. DARBEY\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Mr. Darbey and Sheba stroll together into the Library and converse about the army.\",\n      \"evidence_quote\": \"DARBEY and SHEBA stroll together into the Library\",\n      \"source_chunk_id\": \"dd_act01_c0004\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"MAJOR TARVER\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Blore shows in Major Tarver and Mr. Darbey.\",\n      \"evidence_quote\": \"BLORE shows in MAJOR TARVER and MR. DARBEY\",\n      \"source_chunk_id\": \"dd_act01_c0004\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"MR. DARBEY\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Blore shows in Major Tarver and Mr. Darbey.\",\n      \"evidence_quote\": \"BLORE shows in MAJOR TARVER and MR. DARBEY\",\n      \"source_chunk_id\": \"dd_act01_c0004\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Miss Jedd\",\n      \"target\": \"Cast-off Clothing Distribution League\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Miss Jedd is the Secretary of the Cast-off Clothing Distribution League, as indicated on the hamper label.\",\n      \"evidence_quote\": \"labeled \\\"Miss Jedd, Secretary, Cast-off Clothing Distribution League.\\\"\",\n      \"source_chunk_id\": \"dd_act01_c0004\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"the Dean\",\n      \"target\": \"Miss Jedd\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Major Tarver asks after Miss Jedd's father, the Dean, indicating the Dean is her father.\",\n      \"evidence_quote\": \"asking Miss Jedd after her father\",\n      \"source_chunk_id\": \"dd_act01_c0004\",\n      \"confidence\": 0.9\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674251,
+    "id": "5edfe1c2-82f8-4c83-a1c9-1aeb9589764b",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1295,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1021,
+      "prompt_tokens": 1661,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2956
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 12.177317,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T05:57:31.232587+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1295,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 1021,
+          "prompt_tokens": 1661,
+          "total_tokens": 2956
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1295,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1021,
+      "prompt_tokens": 1661,
+      "total_tokens": 2956
+    },
+    "total_elapsed_seconds": 12.177317
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A young woman, sister of Sheba, who is startled by the visitors and concerned about Major Tarver's health.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A young woman, sister of Salome, who interacts with Mr. Darbey and is involved in the costume arrangements.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "TARVER"
+        ],
+        "description": "A middle-aged, tall, angular officer with a thin face, yellow complexion, and red eyes, who suffers from alternating excitement and depression.",
+        "name": "MAJOR TARVER",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "DARBEY"
+        ],
+        "description": "A young officer with a pompous, patronizing manner, who is a visitor.",
+        "name": "MR. DARBEY",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A servant who shows in visitors and is dismissed by Salome.",
+        "name": "BLORE",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A title used by Major Tarver to address Salome, and also appears on a hamper label as Secretary of the Cast-off Clothing Distribution League.",
+        "name": "Miss Jedd",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "An organization for which Miss Jedd is Secretary, as indicated on a hamper label.",
+        "name": "Cast-off Clothing Distribution League",
+        "type": "ORGANIZATION"
+      },
+      {
+        "aliases": [],
+        "description": "The father of Miss Jedd, who is out of the way according to Blore.",
+        "name": "the Dean",
+        "type": "CHARACTER"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "Salome has her arm round her sister's waist, indicating they are sisters.",
+        "evidence_quote": "SALOME has her arm round her sister's waist",
+        "relation": "SIBLING_OF",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act01_c0004",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Sheba is Salome's sister, as Salome has her arm round her sister's waist.",
+        "evidence_quote": "SALOME has her arm round her sister's waist",
+        "relation": "SIBLING_OF",
+        "source": "SHEBA",
+        "source_chunk_id": "dd_act01_c0004",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Major Tarver takes Salome's hand eagerly and they converse about his health and the costumes.",
+        "evidence_quote": "Taking SALOME'S hand eagerly",
+        "relation": "INTERACTS_WITH",
+        "source": "MAJOR TARVER",
+        "source_chunk_id": "dd_act01_c0004",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Mr. Darbey and Sheba stroll together into the Library and converse about the army.",
+        "evidence_quote": "DARBEY and SHEBA stroll together into the Library",
+        "relation": "INTERACTS_WITH",
+        "source": "MR. DARBEY",
+        "source_chunk_id": "dd_act01_c0004",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Blore shows in Major Tarver and Mr. Darbey.",
+        "evidence_quote": "BLORE shows in MAJOR TARVER and MR. DARBEY",
+        "relation": "INTERACTS_WITH",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act01_c0004",
+        "target": "MAJOR TARVER"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Blore shows in Major Tarver and Mr. Darbey.",
+        "evidence_quote": "BLORE shows in MAJOR TARVER and MR. DARBEY",
+        "relation": "INTERACTS_WITH",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act01_c0004",
+        "target": "MR. DARBEY"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Miss Jedd is the Secretary of the Cast-off Clothing Distribution League, as indicated on the hamper label.",
+        "evidence_quote": "labeled \"Miss Jedd, Secretary, Cast-off Clothing Distribution League.\"",
+        "relation": "EMPLOYED_BY",
+        "source": "Miss Jedd",
+        "source_chunk_id": "dd_act01_c0004",
+        "target": "Cast-off Clothing Distribution League"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Major Tarver asks after Miss Jedd's father, the Dean, indicating the Dean is her father.",
+        "evidence_quote": "asking Miss Jedd after her father",
+        "relation": "PARENT_OF",
+        "source": "the Dean",
+        "source_chunk_id": "dd_act01_c0004",
+        "target": "Miss Jedd"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

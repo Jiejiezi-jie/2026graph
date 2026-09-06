@@ -1,0 +1,228 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act03s02_c0004",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "ace9e3d0482769bbf99db2044d67bf54d7691c190d3f6f47624a835d6d657979",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play who recounts rescuing the Dean and winning money on the horse race.\",\n      \"aliases\": [\"George Tidd\", \"Jedd\"]\n    },\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play who assists Georgiana in the rescue.\",\n      \"aliases\": [\"Tris\"]\n    },\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play who is rescued and is concerned about funding the reward.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse that won the race.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Bonny Betsy\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse that walked in with the policeman.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Pear Tree Lane\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A road mentioned as the route the constable was going to follow.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Hill\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A location where the race is watched and where the rescue takes place.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Deanery\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The place where Dandy Dick was sheltered last night.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Spire\",\n      \"type\": \"OBJECT\",\n      \"description\": \"A structure towards which the Dean plans to contribute five hundred pounds.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Blore\",\n      \"type\": \"PERSON\",\n      \"description\": \"A person the Dean asks about regarding the good news.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"SIR TRISTRAM\",\n      \"relation\": \"HELPS\",\n      \"description\": \"Georgiana and Sir Tristram work together to rescue the Dean.\",\n      \"evidence_quote\": \"Tris and I made for the Hill.\",\n      \"source_chunk_id\": \"dd_act03s02_c0004\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"HELPS\",\n      \"description\": \"Georgiana leads the rescue of the Dean.\",\n      \"evidence_quote\": \"Now you know whose hands have led you back to your own manger.\",\n      \"source_chunk_id\": \"dd_act03s02_c0004\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"HELPS\",\n      \"description\": \"Sir Tristram assists in the rescue of the Dean.\",\n      \"evidence_quote\": \"Tris made a back, and I stood on it\",\n      \"source_chunk_id\": \"dd_act03s02_c0004\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Georgiana won money on Dandy Dick, implying she bet on or owned the horse.\",\n      \"evidence_quote\": \"I've cleared fifteen hundred over the Handicap.\",\n      \"source_chunk_id\": \"dd_act03s02_c0004\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"the Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Dandy Dick was sheltered at the Deanery last night.\",\n      \"evidence_quote\": \"the horse who enjoyed the shelter of the Deanery last night----\",\n      \"source_chunk_id\": \"dd_act03s02_c0004\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"the Hill\",\n      \"relation\": \"PARTICIPATES_IN\",\n      \"description\": \"Dandy Dick won the race at the Hill.\",\n      \"evidence_quote\": \"Dandy Dick! ... Won!\",\n      \"source_chunk_id\": \"dd_act03s02_c0004\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Bonny Betsy\",\n      \"target\": \"the Hill\",\n      \"relation\": \"PARTICIPATES_IN\",\n      \"description\": \"Bonny Betsy participated in the race at the Hill.\",\n      \"evidence_quote\": \"Bonny Betsy walked in with the policeman.\",\n      \"source_chunk_id\": \"dd_act03s02_c0004\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"the Spire\",\n      \"relation\": \"OWNS\",\n      \"description\": \"The Dean plans to contribute money towards the Spire.\",\n      \"evidence_quote\": \"Five hundred pounds towards the Spire!\",\n      \"source_chunk_id\": \"dd_act03s02_c0004\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"the Hill\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Georgiana went to the Hill to rescue the Dean.\",\n      \"evidence_quote\": \"Tris and I made for the Hill.\",\n      \"source_chunk_id\": \"dd_act03s02_c0004\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"the Hill\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Sir Tristram went to the Hill with Georgiana.\",\n      \"evidence_quote\": \"Tris and I made for the Hill.\",\n      \"source_chunk_id\": \"dd_act03s02_c0004\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"Pear Tree Lane\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Georgiana mentions the constable was bound for Pear Tree Lane.\",\n      \"evidence_quote\": \"He was bound for the edge of the hill, up Pear Tree Lane, to watch the Races.\",\n      \"source_chunk_id\": \"dd_act03s02_c0004\",\n      \"confidence\": 0.7\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674797,
+    "id": "75ee776c-00ac-4eef-a2f6-78ccf12a1762",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1529,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 883,
+      "prompt_tokens": 1523,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 3052
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 14.718652,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:06:35.973592+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1529,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 883,
+          "prompt_tokens": 1523,
+          "total_tokens": 3052
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1529,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 883,
+      "prompt_tokens": 1523,
+      "total_tokens": 3052
+    },
+    "total_elapsed_seconds": 14.718652
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [
+          "George Tidd",
+          "Jedd"
+        ],
+        "description": "A character in the play who recounts rescuing the Dean and winning money on the horse race.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Tris"
+        ],
+        "description": "A character in the play who assists Georgiana in the rescue.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character in the play who is rescued and is concerned about funding the reward.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A horse that won the race.",
+        "name": "Dandy Dick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "A horse that walked in with the policeman.",
+        "name": "Bonny Betsy",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "A road mentioned as the route the constable was going to follow.",
+        "name": "Pear Tree Lane",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A location where the race is watched and where the rescue takes place.",
+        "name": "the Hill",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "The place where Dandy Dick was sheltered last night.",
+        "name": "the Deanery",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A structure towards which the Dean plans to contribute five hundred pounds.",
+        "name": "the Spire",
+        "type": "OBJECT"
+      },
+      {
+        "aliases": [],
+        "description": "A person the Dean asks about regarding the good news.",
+        "name": "Blore",
+        "type": "PERSON"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Georgiana and Sir Tristram work together to rescue the Dean.",
+        "evidence_quote": "Tris and I made for the Hill.",
+        "relation": "HELPS",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s02_c0004",
+        "target": "SIR TRISTRAM"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Georgiana leads the rescue of the Dean.",
+        "evidence_quote": "Now you know whose hands have led you back to your own manger.",
+        "relation": "HELPS",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s02_c0004",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Sir Tristram assists in the rescue of the Dean.",
+        "evidence_quote": "Tris made a back, and I stood on it",
+        "relation": "HELPS",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act03s02_c0004",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Georgiana won money on Dandy Dick, implying she bet on or owned the horse.",
+        "evidence_quote": "I've cleared fifteen hundred over the Handicap.",
+        "relation": "OWNS",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s02_c0004",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Dandy Dick was sheltered at the Deanery last night.",
+        "evidence_quote": "the horse who enjoyed the shelter of the Deanery last night----",
+        "relation": "LOCATED_AT",
+        "source": "Dandy Dick",
+        "source_chunk_id": "dd_act03s02_c0004",
+        "target": "the Deanery"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Bonny Betsy participated in the race at the Hill.",
+        "evidence_quote": "Bonny Betsy walked in with the policeman.",
+        "relation": "PARTICIPATES_IN",
+        "source": "Bonny Betsy",
+        "source_chunk_id": "dd_act03s02_c0004",
+        "target": "the Hill"
+      },
+      {
+        "confidence": 0.8,
+        "description": "The Dean plans to contribute money towards the Spire.",
+        "evidence_quote": "Five hundred pounds towards the Spire!",
+        "relation": "OWNS",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s02_c0004",
+        "target": "the Spire"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Georgiana went to the Hill to rescue the Dean.",
+        "evidence_quote": "Tris and I made for the Hill.",
+        "relation": "LOCATED_AT",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s02_c0004",
+        "target": "the Hill"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Sir Tristram went to the Hill with Georgiana.",
+        "evidence_quote": "Tris and I made for the Hill.",
+        "relation": "LOCATED_AT",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act03s02_c0004",
+        "target": "the Hill"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Georgiana mentions the constable was bound for Pear Tree Lane.",
+        "evidence_quote": "He was bound for the edge of the hill, up Pear Tree Lane, to watch the Races.",
+        "relation": "LOCATED_AT",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s02_c0004",
+        "target": "Pear Tree Lane"
+      }
+    ]
+  },
+  "validation_warnings": [
+    "relation[5]_evidence_mismatch"
+  ]
+}

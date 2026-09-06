@@ -1,0 +1,148 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act03s02_c0002",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "cbc0fbf9083b5ba33b0474bbdf43711e5bbc8cbe16c64d157222569879b2d415",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"DARBEY\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who tells a story about the Doctor's examination of the Major and later proposes to Sheba.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who is proposed to by Major Tarver and is concerned about her father being out all night.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who is proposed to by Darbey and asks for time to consider.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"TARVER\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who proposes to Salome and is accepted.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Doctor\",\n      \"type\": \"PERSON\",\n      \"description\": \"A doctor who examined the Major's tongue and diagnosed that he must propose or go to the seaside.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Major\",\n      \"type\": \"PERSON\",\n      \"description\": \"The Major whose tongue was examined by the Doctor.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Dean\",\n      \"type\": \"PERSON\",\n      \"description\": \"The Dean, father of Salome, who has been out all night.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Aunt Georgiana\",\n      \"type\": \"PERSON\",\n      \"description\": \"Aunt Georgiana, who is seen arriving at the window.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"TARVER\",\n      \"target\": \"SALOME\",\n      \"relation\": \"ROMANTIC_WITH\",\n      \"description\": \"Tarver proposes to Salome and she accepts.\",\n      \"evidence_quote\": \"TARVER. Salome--I have loved you distractedly for upwards of eight weeks.\",\n      \"source_chunk_id\": \"dd_act03s02_c0002\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"DARBEY\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"ROMANTIC_WITH\",\n      \"description\": \"Darbey proposes to Sheba and she asks for time to consider.\",\n      \"evidence_quote\": \"DARBEY. Pardon me, Sheba--but what is your age?\",\n      \"source_chunk_id\": \"dd_act03s02_c0002\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Doctor\",\n      \"target\": \"Major\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"The Doctor examined the Major's tongue.\",\n      \"evidence_quote\": \"The Doctor made a searching examination of the Major's tongue\",\n      \"source_chunk_id\": \"dd_act03s02_c0002\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"Dean\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Salome refers to the Dean as her father.\",\n      \"evidence_quote\": \"SALOME. Papa has been out all night.\",\n      \"source_chunk_id\": \"dd_act03s02_c0002\",\n      \"confidence\": 0.95\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674776,
+    "id": "561375cc-9ef5-47c9-83d4-a1afadf778eb",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 789,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 928,
+      "prompt_tokens": 1568,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2357
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 8.216487,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:06:16.537235+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 789,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 928,
+          "prompt_tokens": 1568,
+          "total_tokens": 2357
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 789,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 928,
+      "prompt_tokens": 1568,
+      "total_tokens": 2357
+    },
+    "total_elapsed_seconds": 8.216487
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A character who tells a story about the Doctor's examination of the Major and later proposes to Sheba.",
+        "name": "DARBEY",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who is proposed to by Major Tarver and is concerned about her father being out all night.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who is proposed to by Darbey and asks for time to consider.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who proposes to Salome and is accepted.",
+        "name": "TARVER",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A doctor who examined the Major's tongue and diagnosed that he must propose or go to the seaside.",
+        "name": "Doctor",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "The Major whose tongue was examined by the Doctor.",
+        "name": "Major",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "The Dean, father of Salome, who has been out all night.",
+        "name": "Dean",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Aunt Georgiana, who is seen arriving at the window.",
+        "name": "Aunt Georgiana",
+        "type": "PERSON"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Darbey proposes to Sheba and she asks for time to consider.",
+        "evidence_quote": "DARBEY. Pardon me, Sheba--but what is your age?",
+        "relation": "ROMANTIC_WITH",
+        "source": "DARBEY",
+        "source_chunk_id": "dd_act03s02_c0002",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Doctor examined the Major's tongue.",
+        "evidence_quote": "The Doctor made a searching examination of the Major's tongue",
+        "relation": "INTERACTS_WITH",
+        "source": "Doctor",
+        "source_chunk_id": "dd_act03s02_c0002",
+        "target": "Major"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Salome refers to the Dean as her father.",
+        "evidence_quote": "SALOME. Papa has been out all night.",
+        "relation": "PARENT_OF",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act03s02_c0002",
+        "target": "Dean"
+      }
+    ]
+  },
+  "validation_warnings": [
+    "relation[0]_evidence_mismatch"
+  ]
+}

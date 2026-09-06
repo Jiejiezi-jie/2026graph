@@ -1,0 +1,247 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act01_c0015",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "d8bf988992de3b2d12d48135f0f1b428a660366f9ccdd65ebd48b1c1d714ff02",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, referred to as 'pa' by Sheba and Salome, and as 'Augustin' by Georgiana.\",\n      \"aliases\": [\"Augustin\"]\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, daughter of the Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, daughter of the Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, referred to as 'Tris' by Georgiana.\",\n      \"aliases\": [\"Tris\"]\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, referred to as 'George' by Sir Tristram.\",\n      \"aliases\": [\"George\"]\n    },\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse that runs for the Durnstone Handicap.\",\n      \"aliases\": [\"Dandy\", \"Dick\"]\n    },\n    {\n      \"name\": \"John Fielder\",\n      \"type\": \"PERSON\",\n      \"description\": \"A trainer who bought half of Dandy Dick at Georgiana's sale.\",\n      \"aliases\": [\"John\"]\n    },\n    {\n      \"name\": \"the Canons\",\n      \"type\": \"ORGANIZATION\",\n      \"description\": \"A group associated with the Dean, mentioned as being at the hill.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Bishop\",\n      \"type\": \"PERSON\",\n      \"description\": \"A bishop associated with the Dean, mentioned as mixing salad.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Swan\",\n      \"type\": \"LOCATION\",\n      \"description\": \"An inn where Sir Tristram is staying.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Durnstone Handicap\",\n      \"type\": \"EVENT\",\n      \"description\": \"A horse race in which Dandy Dick runs.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Sheba refers to the Dean as 'pa'.\",\n      \"evidence_quote\": \"That's like pa\",\n      \"source_chunk_id\": \"dd_act01_c0015\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"SALOME\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Salome is addressed as one of the Dean's children.\",\n      \"evidence_quote\": \"Salome, Sheba, children!\",\n      \"source_chunk_id\": \"dd_act01_c0015\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"GEORGIANA\",\n      \"relation\": \"FRIEND_OF\",\n      \"description\": \"Sir Tristram and Georgiana are on familiar terms, calling each other 'Tris' and 'George'.\",\n      \"evidence_quote\": \"Were you, Tris!\",\n      \"source_chunk_id\": \"dd_act01_c0015\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"FRIEND_OF\",\n      \"description\": \"Sir Tristram says he and the Dean were at Oxford together.\",\n      \"evidence_quote\": \"You know your brother and I were at Oxford together, George?\",\n      \"source_chunk_id\": \"dd_act01_c0015\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Georgiana is the Dean's sister, as indicated by Sir Tristram's reference to 'your brother'.\",\n      \"evidence_quote\": \"You know your brother and I were at Oxford together, George?\",\n      \"source_chunk_id\": \"dd_act01_c0015\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"the Swan\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Sir Tristram is staying at the Swan.\",\n      \"evidence_quote\": \"The fact is I'm fixed at the \\\"Swan\\\"\",\n      \"source_chunk_id\": \"dd_act01_c0015\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Sir Tristram owns a half share of Dandy Dick.\",\n      \"evidence_quote\": \"I've only a half share.\",\n      \"source_chunk_id\": \"dd_act01_c0015\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"John Fielder\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"John Fielder owns the other half share of Dandy Dick.\",\n      \"evidence_quote\": \"The other half belongs to John.\",\n      \"source_chunk_id\": \"dd_act01_c0015\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Georgiana claims to own half of Dandy Dick, having arranged for John Fielder to buy it for her.\",\n      \"evidence_quote\": \"it belongs to _me!_\",\n      \"source_chunk_id\": \"dd_act01_c0015\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"Durnstone Handicap\",\n      \"relation\": \"PARTICIPATES_IN\",\n      \"description\": \"Dandy Dick runs in the Durnstone Handicap.\",\n      \"evidence_quote\": \"he runs for the Durnstone Handicap to-morrow.\",\n      \"source_chunk_id\": \"dd_act01_c0015\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"John Fielder\",\n      \"target\": \"GEORGIANA\",\n      \"relation\": \"HELPS\",\n      \"description\": \"John Fielder helped Georgiana buy Dandy Dick.\",\n      \"evidence_quote\": \"I asked John Fielder to help me, and he did, like a Briton.\",\n      \"source_chunk_id\": \"dd_act01_c0015\",\n      \"confidence\": 0.9\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674367,
+    "id": "9a00cd69-f8de-4024-a016-f906cae213ba",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1605,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 949,
+      "prompt_tokens": 1589,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 3194
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 14.251851,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T05:59:27.247351+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1605,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 949,
+          "prompt_tokens": 1589,
+          "total_tokens": 3194
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1605,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 949,
+      "prompt_tokens": 1589,
+      "total_tokens": 3194
+    },
+    "total_elapsed_seconds": 14.251851
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [
+          "Augustin"
+        ],
+        "description": "A character in the play, referred to as 'pa' by Sheba and Salome, and as 'Augustin' by Georgiana.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character in the play, daughter of the Dean.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character in the play, daughter of the Dean.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Tris"
+        ],
+        "description": "A character in the play, referred to as 'Tris' by Georgiana.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "George"
+        ],
+        "description": "A character in the play, referred to as 'George' by Sir Tristram.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Dandy",
+          "Dick"
+        ],
+        "description": "A horse that runs for the Durnstone Handicap.",
+        "name": "Dandy Dick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [
+          "John"
+        ],
+        "description": "A trainer who bought half of Dandy Dick at Georgiana's sale.",
+        "name": "John Fielder",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "A group associated with the Dean, mentioned as being at the hill.",
+        "name": "the Canons",
+        "type": "ORGANIZATION"
+      },
+      {
+        "aliases": [],
+        "description": "A bishop associated with the Dean, mentioned as mixing salad.",
+        "name": "the Bishop",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "An inn where Sir Tristram is staying.",
+        "name": "the Swan",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A horse race in which Dandy Dick runs.",
+        "name": "Durnstone Handicap",
+        "type": "EVENT"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Sheba refers to the Dean as 'pa'.",
+        "evidence_quote": "That's like pa",
+        "relation": "PARENT_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0015",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Salome is addressed as one of the Dean's children.",
+        "evidence_quote": "Salome, Sheba, children!",
+        "relation": "PARENT_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0015",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Sir Tristram and Georgiana are on familiar terms, calling each other 'Tris' and 'George'.",
+        "evidence_quote": "Were you, Tris!",
+        "relation": "FRIEND_OF",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act01_c0015",
+        "target": "GEORGIANA"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Sir Tristram says he and the Dean were at Oxford together.",
+        "evidence_quote": "You know your brother and I were at Oxford together, George?",
+        "relation": "FRIEND_OF",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act01_c0015",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Georgiana is the Dean's sister, as indicated by Sir Tristram's reference to 'your brother'.",
+        "evidence_quote": "You know your brother and I were at Oxford together, George?",
+        "relation": "SIBLING_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act01_c0015",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Sir Tristram is staying at the Swan.",
+        "evidence_quote": "The fact is I'm fixed at the \"Swan\"",
+        "relation": "LOCATED_AT",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act01_c0015",
+        "target": "the Swan"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Sir Tristram owns a half share of Dandy Dick.",
+        "evidence_quote": "I've only a half share.",
+        "relation": "OWNS",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act01_c0015",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.9,
+        "description": "John Fielder owns the other half share of Dandy Dick.",
+        "evidence_quote": "The other half belongs to John.",
+        "relation": "OWNS",
+        "source": "John Fielder",
+        "source_chunk_id": "dd_act01_c0015",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Georgiana claims to own half of Dandy Dick, having arranged for John Fielder to buy it for her.",
+        "evidence_quote": "it belongs to _me!_",
+        "relation": "OWNS",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act01_c0015",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Dandy Dick runs in the Durnstone Handicap.",
+        "evidence_quote": "he runs for the Durnstone Handicap to-morrow.",
+        "relation": "PARTICIPATES_IN",
+        "source": "Dandy Dick",
+        "source_chunk_id": "dd_act01_c0015",
+        "target": "Durnstone Handicap"
+      },
+      {
+        "confidence": 0.9,
+        "description": "John Fielder helped Georgiana buy Dandy Dick.",
+        "evidence_quote": "I asked John Fielder to help me, and he did, like a Briton.",
+        "relation": "HELPS",
+        "source": "John Fielder",
+        "source_chunk_id": "dd_act01_c0015",
+        "target": "GEORGIANA"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

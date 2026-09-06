@@ -1,0 +1,224 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act01_c0001",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "ac52e194cbeb638a0ab4b88d170b4f65c6a876aa1330fbfe90a76cc069ad670b",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"Salome\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A tall, handsome, dark girl of about three-and-twenty, sister of Sheba, daughter of the Dean of St. Marvells.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Sheba\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A fair little girl of about seventeen, sister of Salome, daughter of the Dean of St. Marvells.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Major Tarver\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"An officer of the Hussars who proposed the plan to attend the Fancy Dress Masked Ball and is paying attention to Salome.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Mr. Darbey\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A lieutenant in the Hussars, described as a small officer, who is impressed by Sheba.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Durnstone Athenaeum\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The venue where the Fancy Dress Masked Ball is to be held.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Fancy Dress Masked Ball\",\n      \"type\": \"EVENT\",\n      \"description\": \"A ball promoted by the Officers of the Hussars, to be held at the Durnstone Athenaeum tonight.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Deanery of St. Marvells\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The residence of the Dean, where the morning-room is located.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Hussars\",\n      \"type\": \"ORGANIZATION\",\n      \"description\": \"A military regiment whose officers are promoting the Fancy Dress Masked Ball.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"London\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The city where Major Tarver promised to get the dresses made.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"costumier\",\n      \"type\": \"ORGANIZATION\",\n      \"description\": \"The dressmaker to whom the brown paper patterns were sent.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"Salome\",\n      \"target\": \"Sheba\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Salome and Sheba are sisters.\",\n      \"evidence_quote\": \"Halves, Sheba, please.\",\n      \"source_chunk_id\": \"dd_act01_c0001\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Sheba\",\n      \"target\": \"Salome\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Sheba and Salome are sisters.\",\n      \"evidence_quote\": \"Halves, Sheba, please.\",\n      \"source_chunk_id\": \"dd_act01_c0001\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Major Tarver\",\n      \"target\": \"Salome\",\n      \"relation\": \"ROMANTIC_WITH\",\n      \"description\": \"Major Tarver is paying attention to Salome.\",\n      \"evidence_quote\": \"I believe, Salome, that it is to _you_ Major Tarver is paying attention.\",\n      \"source_chunk_id\": \"dd_act01_c0001\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Mr. Darbey\",\n      \"target\": \"Sheba\",\n      \"relation\": \"ROMANTIC_WITH\",\n      \"description\": \"Mr. Darbey is impressed by Sheba.\",\n      \"evidence_quote\": \"I believe that the young gentleman you have impressed calls himself an officer, though he is merely a lieutenant.\",\n      \"source_chunk_id\": \"dd_act01_c0001\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"Fancy Dress Masked Ball\",\n      \"target\": \"Durnstone Athenaeum\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The ball is to be held at the Durnstone Athenaeum.\",\n      \"evidence_quote\": \"When to-night we appear at the Durnstone Athenaeum, unknown to dear Papa, on the arms of Major Tarver and Mr. Darbey\",\n      \"source_chunk_id\": \"dd_act01_c0001\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Hussars\",\n      \"target\": \"Fancy Dress Masked Ball\",\n      \"relation\": \"CAUSES\",\n      \"description\": \"The Officers of the Hussars promoted the ball.\",\n      \"evidence_quote\": \"The Fancy Dress Masked Ball at Durnstone is promoted by the Officers of the Hussars.\",\n      \"source_chunk_id\": \"dd_act01_c0001\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Major Tarver\",\n      \"target\": \"Hussars\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Major Tarver is an officer of the Hussars.\",\n      \"evidence_quote\": \"It was Major Tarver's proposal, and I believe, Salome, that it is to _you_ Major Tarver is paying attention.\",\n      \"source_chunk_id\": \"dd_act01_c0001\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Mr. Darbey\",\n      \"target\": \"Hussars\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Mr. Darbey is a lieutenant in the Hussars.\",\n      \"evidence_quote\": \"I believe that the young gentleman you have impressed calls himself an officer, though he is merely a lieutenant.\",\n      \"source_chunk_id\": \"dd_act01_c0001\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Major Tarver\",\n      \"target\": \"London\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Major Tarver promised to get the dresses made in London.\",\n      \"evidence_quote\": \"Major Tarver promised to get the dresses made in London, so I gave him our brown paper patterns to send to the _costumier._\",\n      \"source_chunk_id\": \"dd_act01_c0001\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"Major Tarver\",\n      \"target\": \"costumier\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Major Tarver sent the brown paper patterns to the costumier.\",\n      \"evidence_quote\": \"so I gave him our brown paper patterns to send to the _costumier._\",\n      \"source_chunk_id\": \"dd_act01_c0001\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"Salome\",\n      \"target\": \"Deanery of St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Salome is in the morning-room of the Deanery.\",\n      \"evidence_quote\": \"_The morning-room in the Deanery of St. Marvells_\",\n      \"source_chunk_id\": \"dd_act01_c0001\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Sheba\",\n      \"target\": \"Deanery of St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Sheba is in the morning-room of the Deanery.\",\n      \"evidence_quote\": \"_The morning-room in the Deanery of St. Marvells_\",\n      \"source_chunk_id\": \"dd_act01_c0001\",\n      \"confidence\": 0.9\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674214,
+    "id": "417e0545-6e5d-437a-85b7-3354c37405e0",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1772,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 787,
+      "prompt_tokens": 1427,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 3199
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 14.397938,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T05:56:54.104122+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1772,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 787,
+          "prompt_tokens": 1427,
+          "total_tokens": 3199
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1772,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 787,
+      "prompt_tokens": 1427,
+      "total_tokens": 3199
+    },
+    "total_elapsed_seconds": 14.397938
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A tall, handsome, dark girl of about three-and-twenty, sister of Sheba, daughter of the Dean of St. Marvells.",
+        "name": "Salome",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A fair little girl of about seventeen, sister of Salome, daughter of the Dean of St. Marvells.",
+        "name": "Sheba",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "An officer of the Hussars who proposed the plan to attend the Fancy Dress Masked Ball and is paying attention to Salome.",
+        "name": "Major Tarver",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A lieutenant in the Hussars, described as a small officer, who is impressed by Sheba.",
+        "name": "Mr. Darbey",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "The venue where the Fancy Dress Masked Ball is to be held.",
+        "name": "Durnstone Athenaeum",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A ball promoted by the Officers of the Hussars, to be held at the Durnstone Athenaeum tonight.",
+        "name": "Fancy Dress Masked Ball",
+        "type": "EVENT"
+      },
+      {
+        "aliases": [],
+        "description": "The residence of the Dean, where the morning-room is located.",
+        "name": "Deanery of St. Marvells",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A military regiment whose officers are promoting the Fancy Dress Masked Ball.",
+        "name": "Hussars",
+        "type": "ORGANIZATION"
+      },
+      {
+        "aliases": [],
+        "description": "The city where Major Tarver promised to get the dresses made.",
+        "name": "London",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "The dressmaker to whom the brown paper patterns were sent.",
+        "name": "costumier",
+        "type": "ORGANIZATION"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Salome and Sheba are sisters.",
+        "evidence_quote": "Halves, Sheba, please.",
+        "relation": "SIBLING_OF",
+        "source": "Salome",
+        "source_chunk_id": "dd_act01_c0001",
+        "target": "Sheba"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Sheba and Salome are sisters.",
+        "evidence_quote": "Halves, Sheba, please.",
+        "relation": "SIBLING_OF",
+        "source": "Sheba",
+        "source_chunk_id": "dd_act01_c0001",
+        "target": "Salome"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Major Tarver is paying attention to Salome.",
+        "evidence_quote": "I believe, Salome, that it is to _you_ Major Tarver is paying attention.",
+        "relation": "ROMANTIC_WITH",
+        "source": "Major Tarver",
+        "source_chunk_id": "dd_act01_c0001",
+        "target": "Salome"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Mr. Darbey is impressed by Sheba.",
+        "evidence_quote": "I believe that the young gentleman you have impressed calls himself an officer, though he is merely a lieutenant.",
+        "relation": "ROMANTIC_WITH",
+        "source": "Mr. Darbey",
+        "source_chunk_id": "dd_act01_c0001",
+        "target": "Sheba"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The ball is to be held at the Durnstone Athenaeum.",
+        "evidence_quote": "When to-night we appear at the Durnstone Athenaeum, unknown to dear Papa, on the arms of Major Tarver and Mr. Darbey",
+        "relation": "LOCATED_AT",
+        "source": "Fancy Dress Masked Ball",
+        "source_chunk_id": "dd_act01_c0001",
+        "target": "Durnstone Athenaeum"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Officers of the Hussars promoted the ball.",
+        "evidence_quote": "The Fancy Dress Masked Ball at Durnstone is promoted by the Officers of the Hussars.",
+        "relation": "CAUSES",
+        "source": "Hussars",
+        "source_chunk_id": "dd_act01_c0001",
+        "target": "Fancy Dress Masked Ball"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Major Tarver is an officer of the Hussars.",
+        "evidence_quote": "It was Major Tarver's proposal, and I believe, Salome, that it is to _you_ Major Tarver is paying attention.",
+        "relation": "EMPLOYED_BY",
+        "source": "Major Tarver",
+        "source_chunk_id": "dd_act01_c0001",
+        "target": "Hussars"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Mr. Darbey is a lieutenant in the Hussars.",
+        "evidence_quote": "I believe that the young gentleman you have impressed calls himself an officer, though he is merely a lieutenant.",
+        "relation": "EMPLOYED_BY",
+        "source": "Mr. Darbey",
+        "source_chunk_id": "dd_act01_c0001",
+        "target": "Hussars"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Major Tarver promised to get the dresses made in London.",
+        "evidence_quote": "Major Tarver promised to get the dresses made in London, so I gave him our brown paper patterns to send to the _costumier._",
+        "relation": "LOCATED_AT",
+        "source": "Major Tarver",
+        "source_chunk_id": "dd_act01_c0001",
+        "target": "London"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Major Tarver sent the brown paper patterns to the costumier.",
+        "evidence_quote": "so I gave him our brown paper patterns to send to the _costumier._",
+        "relation": "INTERACTS_WITH",
+        "source": "Major Tarver",
+        "source_chunk_id": "dd_act01_c0001",
+        "target": "costumier"
+      }
+    ]
+  },
+  "validation_warnings": [
+    "relation[10]_evidence_mismatch",
+    "relation[11]_evidence_mismatch"
+  ]
+}

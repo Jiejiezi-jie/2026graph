@@ -1,0 +1,203 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act02_c0002",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "00af1469a89d536fedd2a31d769c7541ef18abcfb3c9a65cdc8d214941a03ad1",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"Georgiana\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who has a betting book and is working out figures related to Dandy Dick's feeding.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Salome\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who discusses a plan to leave the house at night with Sheba.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Sheba\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who discusses a plan to leave the house at night with Salome.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Darbey\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who enters through the Library, patronizing the Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"The Dean\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who is the father of Salome and Sheba, and has offered a thousand pounds to the Restoration Fund.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Tarver\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A major who enters pale and haggard, suffering from indigestion.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse that Georgiana is betting on, and whose feeding at the 'Swan' is being considered.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"The Swan\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A place where Dandy Dick may have been fed.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"The Deanery\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The place where the characters have dined.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Restoration Fund\",\n      \"type\": \"ORGANIZATION\",\n      \"description\": \"A fund to which the Dean has offered a thousand pounds.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"The Times\",\n      \"type\": \"CREATIVE_WORK\",\n      \"description\": \"A newspaper that the Dean is anxious to receive.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Wellington\",\n      \"type\": \"PERSON\",\n      \"description\": \"A historical figure mentioned by Sheba as an example of someone great at Darbey's age.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Blore\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who enters to remove the tea-tray.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"The Dean\",\n      \"target\": \"Salome\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is the father of Salome.\",\n      \"evidence_quote\": \"THE DEAN. [_To SALOME and SHEBA._] Children, it is useless to battle against it much longer.\",\n      \"source_chunk_id\": \"dd_act02_c0002\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"The Dean\",\n      \"target\": \"Sheba\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is the father of Sheba.\",\n      \"evidence_quote\": \"THE DEAN. [_To SALOME and SHEBA._] Children, it is useless to battle against it much longer.\",\n      \"source_chunk_id\": \"dd_act02_c0002\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"The Dean\",\n      \"target\": \"Restoration Fund\",\n      \"relation\": \"OWNS\",\n      \"description\": \"The Dean has offered a thousand pounds to the Restoration Fund.\",\n      \"evidence_quote\": \"You know I've offered a thousand pounds to our Restoration Fund.\",\n      \"source_chunk_id\": \"dd_act02_c0002\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Georgiana\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Georgiana has a betting book and is working out figures related to Dandy Dick.\",\n      \"evidence_quote\": \"If Dandy Dick hasn't fed better at the \\\"Swan\\\" than we have at the Deanery, he won't be in the first three.\",\n      \"source_chunk_id\": \"dd_act02_c0002\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"The Swan\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Dandy Dick may have been fed at the Swan.\",\n      \"evidence_quote\": \"If Dandy Dick hasn't fed better at the \\\"Swan\\\" than we have at the Deanery, he won't be in the first three.\",\n      \"source_chunk_id\": \"dd_act02_c0002\",\n      \"confidence\": 0.6\n    },\n    {\n      \"source\": \"Tarver\",\n      \"target\": \"Salome\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Tarver and Salome have a conversation about his indigestion and battle readiness.\",\n      \"evidence_quote\": \"SALOME. Major! TARVER. [_With a gasp._] Oh! SALOME. Not well again? TARVER. Indigestion. I'm always like this after dinner.\",\n      \"source_chunk_id\": \"dd_act02_c0002\",\n      \"confidence\": 0.7\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674424,
+    "id": "dac7d740-3eae-4a0e-9cc4-1fabb8473ed3",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1274,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1004,
+      "prompt_tokens": 1644,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2918
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 12.119712,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:00:24.828706+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1274,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 1004,
+          "prompt_tokens": 1644,
+          "total_tokens": 2918
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1274,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1004,
+      "prompt_tokens": 1644,
+      "total_tokens": 2918
+    },
+    "total_elapsed_seconds": 12.119712
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A character who has a betting book and is working out figures related to Dandy Dick's feeding.",
+        "name": "Georgiana",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who discusses a plan to leave the house at night with Sheba.",
+        "name": "Salome",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who discusses a plan to leave the house at night with Salome.",
+        "name": "Sheba",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who enters through the Library, patronizing the Dean.",
+        "name": "Darbey",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who is the father of Salome and Sheba, and has offered a thousand pounds to the Restoration Fund.",
+        "name": "The Dean",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A major who enters pale and haggard, suffering from indigestion.",
+        "name": "Tarver",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A horse that Georgiana is betting on, and whose feeding at the 'Swan' is being considered.",
+        "name": "Dandy Dick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "A place where Dandy Dick may have been fed.",
+        "name": "The Swan",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "The place where the characters have dined.",
+        "name": "The Deanery",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A fund to which the Dean has offered a thousand pounds.",
+        "name": "Restoration Fund",
+        "type": "ORGANIZATION"
+      },
+      {
+        "aliases": [],
+        "description": "A newspaper that the Dean is anxious to receive.",
+        "name": "The Times",
+        "type": "CREATIVE_WORK"
+      },
+      {
+        "aliases": [],
+        "description": "A historical figure mentioned by Sheba as an example of someone great at Darbey's age.",
+        "name": "Wellington",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "A character who enters to remove the tea-tray.",
+        "name": "Blore",
+        "type": "CHARACTER"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "The Dean is the father of Salome.",
+        "evidence_quote": "THE DEAN. [_To SALOME and SHEBA._] Children, it is useless to battle against it much longer.",
+        "relation": "PARENT_OF",
+        "source": "The Dean",
+        "source_chunk_id": "dd_act02_c0002",
+        "target": "Salome"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean is the father of Sheba.",
+        "evidence_quote": "THE DEAN. [_To SALOME and SHEBA._] Children, it is useless to battle against it much longer.",
+        "relation": "PARENT_OF",
+        "source": "The Dean",
+        "source_chunk_id": "dd_act02_c0002",
+        "target": "Sheba"
+      },
+      {
+        "confidence": 0.8,
+        "description": "The Dean has offered a thousand pounds to the Restoration Fund.",
+        "evidence_quote": "You know I've offered a thousand pounds to our Restoration Fund.",
+        "relation": "OWNS",
+        "source": "The Dean",
+        "source_chunk_id": "dd_act02_c0002",
+        "target": "Restoration Fund"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Georgiana has a betting book and is working out figures related to Dandy Dick.",
+        "evidence_quote": "If Dandy Dick hasn't fed better at the \"Swan\" than we have at the Deanery, he won't be in the first three.",
+        "relation": "OWNS",
+        "source": "Georgiana",
+        "source_chunk_id": "dd_act02_c0002",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.6,
+        "description": "Dandy Dick may have been fed at the Swan.",
+        "evidence_quote": "If Dandy Dick hasn't fed better at the \"Swan\" than we have at the Deanery, he won't be in the first three.",
+        "relation": "LOCATED_AT",
+        "source": "Dandy Dick",
+        "source_chunk_id": "dd_act02_c0002",
+        "target": "The Swan"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Tarver and Salome have a conversation about his indigestion and battle readiness.",
+        "evidence_quote": "SALOME. Major! TARVER. [_With a gasp._] Oh! SALOME. Not well again? TARVER. Indigestion. I'm always like this after dinner.",
+        "relation": "INTERACTS_WITH",
+        "source": "Tarver",
+        "source_chunk_id": "dd_act02_c0002",
+        "target": "Salome"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

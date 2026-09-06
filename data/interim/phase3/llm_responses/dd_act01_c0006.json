@@ -1,0 +1,173 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act01_c0006",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "2aeb1d16a73b3f36ea321efa6f553ed56e0d649f9f90c6728b22bb6dfe8011f6",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, father of Salome and Sheba, who invites Tarver and Darbey to dinner and is concerned about bills.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"TARVER\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, addressed as Major, who is invited to dinner and plans to dress as Charles the First.\",\n      \"aliases\": [\"Major\"]\n    },\n    {\n      \"name\": \"DARBEY\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, invited to dinner, who suggests the idea of Charles the Martyr.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Daughter of the Dean, sister of Sheba, who mentions the leg of mutton and admires Tarver's costume idea.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Daughter of the Dean, sister of Salome, who mentions custards and is asked to watch the Dean carve fairly.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Charles the First\",\n      \"type\": \"PERSON\",\n      \"description\": \"Historical figure whose costume Tarver plans to wear.\",\n      \"aliases\": [\"Charles the Martyr\"]\n    },\n    {\n      \"name\": \"Durnstone\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A place where the group plans to go, possibly for an event.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"SALOME\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is Salome's father, as she calls him Papa.\",\n      \"evidence_quote\": \"SALOME. Leg of mutton, Papa!\",\n      \"source_chunk_id\": \"dd_act01_c0006\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is Sheba's father, as she calls him Papsey.\",\n      \"evidence_quote\": \"SHEBA. And custards, Papsey.\",\n      \"source_chunk_id\": \"dd_act01_c0006\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Salome and Sheba are sisters, both daughters of the Dean.\",\n      \"evidence_quote\": \"SALOME. Leg of mutton, Papa! SHEBA. And custards, Papsey.\",\n      \"source_chunk_id\": \"dd_act01_c0006\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"TARVER\",\n      \"target\": \"Charles the First\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"description\": \"Tarver plans to dress as Charles the First.\",\n      \"evidence_quote\": \"It'll take me a long time to look like Charles the First!\",\n      \"source_chunk_id\": \"dd_act01_c0006\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"TARVER\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"The Dean invites Tarver to dinner.\",\n      \"evidence_quote\": \"I _beg_ that you will share our simple dinner with us to-night at six o'clock!\",\n      \"source_chunk_id\": \"dd_act01_c0006\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"DARBEY\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"The Dean invites Darbey to dinner.\",\n      \"evidence_quote\": \"I _beg_ that you will share our simple dinner with us to-night at six o'clock!\",\n      \"source_chunk_id\": \"dd_act01_c0006\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"TARVER\",\n      \"target\": \"Durnstone\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Tarver and Darbey will drive to Durnstone for the event.\",\n      \"evidence_quote\": \"you will both be here, on the spot, ready to take us back to Durnstone?\",\n      \"source_chunk_id\": \"dd_act01_c0006\",\n      \"confidence\": 0.7\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674272,
+    "id": "11b56e1f-e0cf-4034-ab6d-cf606988f479",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1103,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1005,
+      "prompt_tokens": 1645,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2748
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 11.457287,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T05:57:51.353740+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1103,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 1005,
+          "prompt_tokens": 1645,
+          "total_tokens": 2748
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1103,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1005,
+      "prompt_tokens": 1645,
+      "total_tokens": 2748
+    },
+    "total_elapsed_seconds": 11.457287
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A character in the play, father of Salome and Sheba, who invites Tarver and Darbey to dinner and is concerned about bills.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Major"
+        ],
+        "description": "A character in the play, addressed as Major, who is invited to dinner and plans to dress as Charles the First.",
+        "name": "TARVER",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character in the play, invited to dinner, who suggests the idea of Charles the Martyr.",
+        "name": "DARBEY",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Daughter of the Dean, sister of Sheba, who mentions the leg of mutton and admires Tarver's costume idea.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Daughter of the Dean, sister of Salome, who mentions custards and is asked to watch the Dean carve fairly.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Charles the Martyr"
+        ],
+        "description": "Historical figure whose costume Tarver plans to wear.",
+        "name": "Charles the First",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "A place where the group plans to go, possibly for an event.",
+        "name": "Durnstone",
+        "type": "LOCATION"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "The Dean is Salome's father, as she calls him Papa.",
+        "evidence_quote": "SALOME. Leg of mutton, Papa!",
+        "relation": "PARENT_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0006",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.95,
+        "description": "The Dean is Sheba's father, as she calls him Papsey.",
+        "evidence_quote": "SHEBA. And custards, Papsey.",
+        "relation": "PARENT_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0006",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Tarver plans to dress as Charles the First.",
+        "evidence_quote": "It'll take me a long time to look like Charles the First!",
+        "relation": "PORTRAYED_BY",
+        "source": "TARVER",
+        "source_chunk_id": "dd_act01_c0006",
+        "target": "Charles the First"
+      },
+      {
+        "confidence": 0.8,
+        "description": "The Dean invites Tarver to dinner.",
+        "evidence_quote": "I _beg_ that you will share our simple dinner with us to-night at six o'clock!",
+        "relation": "INTERACTS_WITH",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0006",
+        "target": "TARVER"
+      },
+      {
+        "confidence": 0.8,
+        "description": "The Dean invites Darbey to dinner.",
+        "evidence_quote": "I _beg_ that you will share our simple dinner with us to-night at six o'clock!",
+        "relation": "INTERACTS_WITH",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0006",
+        "target": "DARBEY"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Tarver and Darbey will drive to Durnstone for the event.",
+        "evidence_quote": "you will both be here, on the spot, ready to take us back to Durnstone?",
+        "relation": "LOCATED_AT",
+        "source": "TARVER",
+        "source_chunk_id": "dd_act01_c0006",
+        "target": "Durnstone"
+      }
+    ]
+  },
+  "validation_warnings": [
+    "relation[2]_evidence_mismatch"
+  ]
+}

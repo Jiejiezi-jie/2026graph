@@ -1,0 +1,198 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act03s02_c0003",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "556856214262ab0033b536db217606af83b5efbfa171647a154556522a479939",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play who expresses concern about her Papa.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"DARBEY\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who comments on the situation and leaves quickly.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who announces Aunt Georgiana's arrival and decides to follow Mr. Darbey.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Aunt Georgiana, who enters excitedly and helps rescue the Dean.\",\n      \"aliases\": [\"Aunt Georgiana\"]\n    },\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who helps carry the Dean and participates in the rescue.\",\n      \"aliases\": [\"Tris\"]\n    },\n    {\n      \"name\": \"HATCHAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who helps carry the Dean and is sent to cheer outside.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"The Dean, who is rescued and gradually recovers.\",\n      \"aliases\": [\"Gus\", \"Jedd\"]\n    },\n    {\n      \"name\": \"TARVER\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character pulled by Salome to take cuttings in the conservatory.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Salome refers to the Dean as her Papa.\",\n      \"evidence_quote\": \"Condemn my Papa!\",\n      \"source_chunk_id\": \"dd_act03s02_c0003\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Georgiana is referred to as Aunt Georgiana by Sheba, indicating she is the Dean's sister.\",\n      \"evidence_quote\": \"Here's Aunt Georgiana!\",\n      \"source_chunk_id\": \"dd_act03s02_c0003\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"FRIEND_OF\",\n      \"description\": \"Sir Tristram calls the Dean 'old boy' and 'old fellow', indicating friendship.\",\n      \"evidence_quote\": \"How are you, Jedd, old boy?\",\n      \"source_chunk_id\": \"dd_act03s02_c0003\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"HELPS\",\n      \"description\": \"Georgiana helps rescue the Dean.\",\n      \"evidence_quote\": \"A woman who would have been a heroine in any age--Georgiana!\",\n      \"source_chunk_id\": \"dd_act03s02_c0003\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"HELPS\",\n      \"description\": \"Sir Tristram helps carry the Dean and participates in the rescue.\",\n      \"evidence_quote\": \"SIR TRISTRAM and HATCHAM enter by the window carrying THE DEAN.\",\n      \"source_chunk_id\": \"dd_act03s02_c0003\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"HATCHAM\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"HELPS\",\n      \"description\": \"Hatcham helps carry the Dean and is sent to cheer outside.\",\n      \"evidence_quote\": \"SIR TRISTRAM and HATCHAM enter by the window carrying THE DEAN.\",\n      \"source_chunk_id\": \"dd_act03s02_c0003\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"HATCHAM\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Sir Tristram says he will raise Hatcham's wages, indicating Hatcham is his employee.\",\n      \"evidence_quote\": \"That's Hatcham; I'll raise his wages.\",\n      \"source_chunk_id\": \"dd_act03s02_c0003\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"SIR TRISTRAM\",\n      \"relation\": \"FRIEND_OF\",\n      \"description\": \"Georgiana and Sir Tristram work together to rescue the Dean, indicating a close relationship.\",\n      \"evidence_quote\": \"Tris and I made for the Hill.\",\n      \"source_chunk_id\": \"dd_act03s02_c0003\",\n      \"confidence\": 0.7\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674784,
+    "id": "b1f3317b-e987-4732-8c56-d434b3f16e37",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1209,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1037,
+      "prompt_tokens": 1677,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2886
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 11.216619,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:06:24.755292+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1209,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 1037,
+          "prompt_tokens": 1677,
+          "total_tokens": 2886
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1209,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1037,
+      "prompt_tokens": 1677,
+      "total_tokens": 2886
+    },
+    "total_elapsed_seconds": 11.216619
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A character in the play who expresses concern about her Papa.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who comments on the situation and leaves quickly.",
+        "name": "DARBEY",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who announces Aunt Georgiana's arrival and decides to follow Mr. Darbey.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Aunt Georgiana"
+        ],
+        "description": "Aunt Georgiana, who enters excitedly and helps rescue the Dean.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Tris"
+        ],
+        "description": "A character who helps carry the Dean and participates in the rescue.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who helps carry the Dean and is sent to cheer outside.",
+        "name": "HATCHAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Gus",
+          "Jedd"
+        ],
+        "description": "The Dean, who is rescued and gradually recovers.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character pulled by Salome to take cuttings in the conservatory.",
+        "name": "TARVER",
+        "type": "CHARACTER"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Salome refers to the Dean as her Papa.",
+        "evidence_quote": "Condemn my Papa!",
+        "relation": "PARENT_OF",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act03s02_c0003",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Georgiana is referred to as Aunt Georgiana by Sheba, indicating she is the Dean's sister.",
+        "evidence_quote": "Here's Aunt Georgiana!",
+        "relation": "SIBLING_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s02_c0003",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Sir Tristram calls the Dean 'old boy' and 'old fellow', indicating friendship.",
+        "evidence_quote": "How are you, Jedd, old boy?",
+        "relation": "FRIEND_OF",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act03s02_c0003",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Georgiana helps rescue the Dean.",
+        "evidence_quote": "A woman who would have been a heroine in any age--Georgiana!",
+        "relation": "HELPS",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s02_c0003",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Sir Tristram helps carry the Dean and participates in the rescue.",
+        "evidence_quote": "SIR TRISTRAM and HATCHAM enter by the window carrying THE DEAN.",
+        "relation": "HELPS",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act03s02_c0003",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Hatcham helps carry the Dean and is sent to cheer outside.",
+        "evidence_quote": "SIR TRISTRAM and HATCHAM enter by the window carrying THE DEAN.",
+        "relation": "HELPS",
+        "source": "HATCHAM",
+        "source_chunk_id": "dd_act03s02_c0003",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Sir Tristram says he will raise Hatcham's wages, indicating Hatcham is his employee.",
+        "evidence_quote": "That's Hatcham; I'll raise his wages.",
+        "relation": "EMPLOYED_BY",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act03s02_c0003",
+        "target": "HATCHAM"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Georgiana and Sir Tristram work together to rescue the Dean, indicating a close relationship.",
+        "evidence_quote": "Tris and I made for the Hill.",
+        "relation": "FRIEND_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s02_c0003",
+        "target": "SIR TRISTRAM"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

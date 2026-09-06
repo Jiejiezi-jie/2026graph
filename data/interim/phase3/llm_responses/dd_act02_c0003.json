@@ -1,0 +1,176 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act02_c0003",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "498ff74844e2c8d8fabff9543eeb995c6def0a668539599a25566ca1c565fed5",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who has offered a thousand pounds to the Restoration Fund and is anxious for the post to bring today's Times.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who reacts to the Dean's announcement and later reflects on the evening.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"TARVER\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who is excited to sing, has his music in his overcoat pocket, and later discovers his music roll is empty.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who interacts with Tarver and sits beside him.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who mentions Darbey's violin and accompanies him on the piano.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"DARBEY\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who has brought his violin and plays it, accompanied by Sheba.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"BLORE\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A servant who removes the tea-tray and brings the violin-case and music roll.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Restoration Fund\",\n      \"type\": \"ORGANIZATION\",\n      \"description\": \"A fund to which the Dean has offered a thousand pounds.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Times\",\n      \"type\": \"CREATIVE_WORK\",\n      \"description\": \"A newspaper that the Dean is anxious to receive.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Joachim\",\n      \"type\": \"PERSON\",\n      \"description\": \"A violinist whose bowing Darbey's mother compares to Darbey's.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"Restoration Fund\",\n      \"relation\": \"OWNS\",\n      \"description\": \"The Dean has offered a thousand pounds to the Restoration Fund.\",\n      \"evidence_quote\": \"I've offered a thousand pounds to our Restoration Fund.\",\n      \"source_chunk_id\": \"dd_act02_c0003\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"Times\",\n      \"relation\": \"OWNS\",\n      \"description\": \"The Dean is anxious for the post to bring today's Times.\",\n      \"evidence_quote\": \"I'm rather anxious for the post to bring to-day's \\\"Times.\\\"\",\n      \"source_chunk_id\": \"dd_act02_c0003\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"TARVER\",\n      \"target\": \"SALOME\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Tarver speaks to Salome about his excitement and later sits beside her.\",\n      \"evidence_quote\": \"TARVER. [_Jumping up excitedly--to SALOME._] Eh? Oh, certainly--delighted!\",\n      \"source_chunk_id\": \"dd_act02_c0003\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"DARBEY\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Darbey asks Sheba to accompany him and she does.\",\n      \"evidence_quote\": \"DARBEY. [_Tuning his violin._] Will you accompany me? SHEBA. [_Raising her eyes._] To the end of the world.\",\n      \"source_chunk_id\": \"dd_act02_c0003\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"DARBEY\",\n      \"target\": \"Joachim\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Darbey's mother compares his bowing to Joachim's.\",\n      \"evidence_quote\": \"My mother says that my bowing is something like Joachim's, and she ought to know.\",\n      \"source_chunk_id\": \"dd_act02_c0003\",\n      \"confidence\": 0.6\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674437,
+    "id": "04c83fe1-5801-4c17-a7fb-9c644df9de73",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1027,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1005,
+      "prompt_tokens": 1645,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2672
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 9.590776,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:00:36.952125+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1027,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 1005,
+          "prompt_tokens": 1645,
+          "total_tokens": 2672
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1027,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1005,
+      "prompt_tokens": 1645,
+      "total_tokens": 2672
+    },
+    "total_elapsed_seconds": 9.590776
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A character who has offered a thousand pounds to the Restoration Fund and is anxious for the post to bring today's Times.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who reacts to the Dean's announcement and later reflects on the evening.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who is excited to sing, has his music in his overcoat pocket, and later discovers his music roll is empty.",
+        "name": "TARVER",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who interacts with Tarver and sits beside him.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who mentions Darbey's violin and accompanies him on the piano.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who has brought his violin and plays it, accompanied by Sheba.",
+        "name": "DARBEY",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A servant who removes the tea-tray and brings the violin-case and music roll.",
+        "name": "BLORE",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A fund to which the Dean has offered a thousand pounds.",
+        "name": "Restoration Fund",
+        "type": "ORGANIZATION"
+      },
+      {
+        "aliases": [],
+        "description": "A newspaper that the Dean is anxious to receive.",
+        "name": "Times",
+        "type": "CREATIVE_WORK"
+      },
+      {
+        "aliases": [],
+        "description": "A violinist whose bowing Darbey's mother compares to Darbey's.",
+        "name": "Joachim",
+        "type": "PERSON"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "The Dean has offered a thousand pounds to the Restoration Fund.",
+        "evidence_quote": "I've offered a thousand pounds to our Restoration Fund.",
+        "relation": "OWNS",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0003",
+        "target": "Restoration Fund"
+      },
+      {
+        "confidence": 0.8,
+        "description": "The Dean is anxious for the post to bring today's Times.",
+        "evidence_quote": "I'm rather anxious for the post to bring to-day's \"Times.\"",
+        "relation": "OWNS",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0003",
+        "target": "Times"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Tarver speaks to Salome about his excitement and later sits beside her.",
+        "evidence_quote": "TARVER. [_Jumping up excitedly--to SALOME._] Eh? Oh, certainly--delighted!",
+        "relation": "INTERACTS_WITH",
+        "source": "TARVER",
+        "source_chunk_id": "dd_act02_c0003",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Darbey asks Sheba to accompany him and she does.",
+        "evidence_quote": "DARBEY. [_Tuning his violin._] Will you accompany me? SHEBA. [_Raising her eyes._] To the end of the world.",
+        "relation": "INTERACTS_WITH",
+        "source": "DARBEY",
+        "source_chunk_id": "dd_act02_c0003",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.6,
+        "description": "Darbey's mother compares his bowing to Joachim's.",
+        "evidence_quote": "My mother says that my bowing is something like Joachim's, and she ought to know.",
+        "relation": "INTERACTS_WITH",
+        "source": "DARBEY",
+        "source_chunk_id": "dd_act02_c0003",
+        "target": "Joachim"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

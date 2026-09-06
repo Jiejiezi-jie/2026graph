@@ -1,0 +1,240 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act01_c0014",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "59e27c389f431b95f851f42e616aab06cd9ff193eb578717c8788ecf73f2663e",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, referred to as Mardon and Tris, who is a friend of the Dean from Oxford.\",\n      \"aliases\": [\"Mardon\", \"Tris\"]\n    },\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, referred to as Jedd, who is the brother of Georgiana and uncle of Salome and Sheba.\",\n      \"aliases\": [\"Jedd\"]\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, referred to as George and Mrs. Tidman, who is the sister of the Dean and mother of Salome and Sheba.\",\n      \"aliases\": [\"George\", \"Mrs. Tidman\"]\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, niece of the Dean and daughter of Georgiana.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, niece of the Dean and daughter of Georgiana.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse owned by Sir Tristram, located at The Swan Inn.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"The Swan\",\n      \"type\": \"LOCATION\",\n      \"description\": \"An inn where Sir Tristram and his horse are staying.\",\n      \"aliases\": [\"Swan Inn\"]\n    },\n    {\n      \"name\": \"St. Marvells\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A place where the Dean holds a position.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Lord Beckslade\",\n      \"type\": \"PERSON\",\n      \"description\": \"A person mentioned as having a horse matched against the Dean's mare.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Oxford\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A university where Sir Tristram and the Dean were together.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Sir Tristram owns the horse Dandy Dick.\",\n      \"evidence_quote\": \"My horse and I are over the way at \\\"The Swan.\\\" Come and look at Dandy Dick!\",\n      \"source_chunk_id\": \"dd_act01_c0014\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"The Swan\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Sir Tristram is staying at The Swan Inn.\",\n      \"evidence_quote\": \"My horse and I are over the way at \\\"The Swan.\\\"\",\n      \"source_chunk_id\": \"dd_act01_c0014\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"The Swan\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Dandy Dick is located at The Swan Inn.\",\n      \"evidence_quote\": \"My horse and I are over the way at \\\"The Swan.\\\" Come and look at Dandy Dick!\",\n      \"source_chunk_id\": \"dd_act01_c0014\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Dean holds a position in St. Marvells.\",\n      \"evidence_quote\": \"My position in St. Marvells----\",\n      \"source_chunk_id\": \"dd_act01_c0014\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"GEORGIANA\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"The Dean and Georgiana are siblings.\",\n      \"evidence_quote\": \"Sir Tristram Mardon, Mrs. Tidman is my sister.\",\n      \"source_chunk_id\": \"dd_act01_c0014\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"SALOME\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Georgiana is the mother of Salome.\",\n      \"evidence_quote\": \"My nieces--Salome and Sheba.\",\n      \"source_chunk_id\": \"dd_act01_c0014\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Georgiana is the mother of Sheba.\",\n      \"evidence_quote\": \"My nieces--Salome and Sheba.\",\n      \"source_chunk_id\": \"dd_act01_c0014\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"SALOME\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is the uncle of Salome.\",\n      \"evidence_quote\": \"My nieces--Salome and Sheba.\",\n      \"source_chunk_id\": \"dd_act01_c0014\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is the uncle of Sheba.\",\n      \"evidence_quote\": \"My nieces--Salome and Sheba.\",\n      \"source_chunk_id\": \"dd_act01_c0014\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"FRIEND_OF\",\n      \"description\": \"Sir Tristram and the Dean were at Oxford together.\",\n      \"evidence_quote\": \"You know your brother and I were at Oxford together, George?\",\n      \"source_chunk_id\": \"dd_act01_c0014\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"Lord Beckslade\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"The Dean once matched a mare against Lord Beckslade's horse.\",\n      \"evidence_quote\": \"you once matched a mare of your own against another of Lord Beckslade's for fifty pounds!\",\n      \"source_chunk_id\": \"dd_act01_c0014\",\n      \"confidence\": 0.9\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674353,
+    "id": "9ca3ec0d-fe2f-4318-8ef1-df23adbd28e6",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1591,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1003,
+      "prompt_tokens": 1643,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 3234
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 13.577202,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T05:59:13.665790+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1591,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 1003,
+          "prompt_tokens": 1643,
+          "total_tokens": 3234
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1591,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1003,
+      "prompt_tokens": 1643,
+      "total_tokens": 3234
+    },
+    "total_elapsed_seconds": 13.577202
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [
+          "Mardon",
+          "Tris"
+        ],
+        "description": "A character in the play, referred to as Mardon and Tris, who is a friend of the Dean from Oxford.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Jedd"
+        ],
+        "description": "A character in the play, referred to as Jedd, who is the brother of Georgiana and uncle of Salome and Sheba.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "George",
+          "Mrs. Tidman"
+        ],
+        "description": "A character in the play, referred to as George and Mrs. Tidman, who is the sister of the Dean and mother of Salome and Sheba.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character in the play, niece of the Dean and daughter of Georgiana.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character in the play, niece of the Dean and daughter of Georgiana.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A horse owned by Sir Tristram, located at The Swan Inn.",
+        "name": "Dandy Dick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [
+          "Swan Inn"
+        ],
+        "description": "An inn where Sir Tristram and his horse are staying.",
+        "name": "The Swan",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A place where the Dean holds a position.",
+        "name": "St. Marvells",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A person mentioned as having a horse matched against the Dean's mare.",
+        "name": "Lord Beckslade",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "A university where Sir Tristram and the Dean were together.",
+        "name": "Oxford",
+        "type": "LOCATION"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "Sir Tristram owns the horse Dandy Dick.",
+        "evidence_quote": "My horse and I are over the way at \"The Swan.\" Come and look at Dandy Dick!",
+        "relation": "OWNS",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act01_c0014",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Sir Tristram is staying at The Swan Inn.",
+        "evidence_quote": "My horse and I are over the way at \"The Swan.\"",
+        "relation": "LOCATED_AT",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act01_c0014",
+        "target": "The Swan"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Dandy Dick is located at The Swan Inn.",
+        "evidence_quote": "My horse and I are over the way at \"The Swan.\" Come and look at Dandy Dick!",
+        "relation": "LOCATED_AT",
+        "source": "Dandy Dick",
+        "source_chunk_id": "dd_act01_c0014",
+        "target": "The Swan"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean holds a position in St. Marvells.",
+        "evidence_quote": "My position in St. Marvells----",
+        "relation": "LOCATED_AT",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0014",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.95,
+        "description": "The Dean and Georgiana are siblings.",
+        "evidence_quote": "Sir Tristram Mardon, Mrs. Tidman is my sister.",
+        "relation": "SIBLING_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0014",
+        "target": "GEORGIANA"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Georgiana is the mother of Salome.",
+        "evidence_quote": "My nieces--Salome and Sheba.",
+        "relation": "PARENT_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act01_c0014",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Georgiana is the mother of Sheba.",
+        "evidence_quote": "My nieces--Salome and Sheba.",
+        "relation": "PARENT_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act01_c0014",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean is the uncle of Salome.",
+        "evidence_quote": "My nieces--Salome and Sheba.",
+        "relation": "PARENT_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0014",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean is the uncle of Sheba.",
+        "evidence_quote": "My nieces--Salome and Sheba.",
+        "relation": "PARENT_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0014",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Sir Tristram and the Dean were at Oxford together.",
+        "evidence_quote": "You know your brother and I were at Oxford together, George?",
+        "relation": "FRIEND_OF",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act01_c0014",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean once matched a mare against Lord Beckslade's horse.",
+        "evidence_quote": "you once matched a mare of your own against another of Lord Beckslade's for fifty pounds!",
+        "relation": "INTERACTS_WITH",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0014",
+        "target": "Lord Beckslade"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

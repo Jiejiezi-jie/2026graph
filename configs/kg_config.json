@@ -1,0 +1,59 @@
+{
+  "schema_version": "phase3-v1",
+  "temperature": 0,
+  "max_retries": 2,
+  "max_tokens": 4096,
+  "timeout_seconds": 180,
+  "retry_backoff_seconds": 2,
+  "thinking": "disabled",
+  "expected_chunk_count": 62,
+  "minimum_confidence": 0.55,
+  "manual_review_sample_size": 30,
+  "manual_review_seed": 42,
+  "entity_types": [
+    "CHARACTER",
+    "PERSON",
+    "ANIMAL",
+    "LOCATION",
+    "ORGANIZATION",
+    "EVENT",
+    "CREATIVE_WORK",
+    "OBJECT"
+  ],
+  "relation_types": [
+    "PARENT_OF",
+    "SIBLING_OF",
+    "MARRIED_TO",
+    "ROMANTIC_WITH",
+    "FRIEND_OF",
+    "EMPLOYED_BY",
+    "OWNS",
+    "LOCATED_AT",
+    "PARTICIPATES_IN",
+    "INTERACTS_WITH",
+    "HELPS",
+    "ARRESTS",
+    "OPPOSES",
+    "CAUSES",
+    "BEFORE",
+    "AFTER",
+    "AUTHORED_BY",
+    "PORTRAYED_BY",
+    "PERFORMED_AT",
+    "MANAGED_BY",
+    "PRECEDED_BY"
+  ],
+  "symmetric_relations": [
+    "SIBLING_OF",
+    "MARRIED_TO",
+    "ROMANTIC_WITH",
+    "FRIEND_OF",
+    "INTERACTS_WITH"
+  ],
+  "weak_relation_types": [
+    "INTERACTS_WITH"
+  ],
+  "forbidden_entity_names": [
+    "ALL"
+  ]
+}

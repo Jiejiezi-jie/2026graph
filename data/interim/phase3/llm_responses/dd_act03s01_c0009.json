@@ -1,0 +1,180 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act03s01_c0009",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "555989581def33d00019096afdaf1daa7230da5882cebc9fc45c62290db4a00b",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"NOAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A police officer in St. Marvells, married to Hannah, and concerned about his wife's interactions with the Dean.\",\n      \"aliases\": [\"Noah Topping\"]\n    },\n    {\n      \"name\": \"HANNAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Noah's wife, who made the Dean's acquaintance through the wicket and serves him a meal.\",\n      \"aliases\": [\"Noahry\"]\n    },\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A gentleman who has been accused by Noah of alienating Hannah's affections and embezzling his meal.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A lady who visits the police station with Sir Tristram, dressed for the race-course.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A gentleman who visits the police station with Georgiana, dressed for the race-course.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"St. Marvells\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The place where Noah and Hannah live and where the police station is located.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Durnstone\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The location of the police station where Noah works and where the Bench sets.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"HANNAH\",\n      \"relation\": \"MARRIED_TO\",\n      \"description\": \"Noah refers to Hannah as his wife and mentions his wedded life.\",\n      \"evidence_quote\": \"I might a guessed my wedded life 'ud a coom to this.\",\n      \"source_chunk_id\": \"dd_act03s01_c0009\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"OPPOSES\",\n      \"description\": \"Noah accuses the Dean of alienating his wife's affections and embezzling his meal, and intends to take him to Durnstone to face charges.\",\n      \"evidence_quote\": \"The charge of allynating the affections o' my wife, 'Annah!\",\n      \"source_chunk_id\": \"dd_act03s01_c0009\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"Durnstone\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Noah states that he conducts the police station in Durnstone strictly and rigidly.\",\n      \"evidence_quote\": \"There ain't another police-station in all Durnstone conducted more strict and rigid nor what mian is\",\n      \"source_chunk_id\": \"dd_act03s01_c0009\",\n      \"confidence\": 0.85\n    },\n    {\n      \"source\": \"HANNAH\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Hannah made the Dean's acquaintance through the wicket and served him a meal.\",\n      \"evidence_quote\": \"I made this gentleman's acquaintance through the wicket, in a casual way.\",\n      \"source_chunk_id\": \"dd_act03s01_c0009\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"SIR TRISTRAM\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Georgiana and Sir Tristram arrive together at the police station.\",\n      \"evidence_quote\": \"HANNAH unlocks the door, and admits GEORGIANA and SIR TRISTRAM, both dressed for the race-course.\",\n      \"source_chunk_id\": \"dd_act03s01_c0009\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Georgiana visits the police station in St. Marvells.\",\n      \"evidence_quote\": \"Dear me! Is this the Police-Station?\",\n      \"source_chunk_id\": \"dd_act03s01_c0009\",\n      \"confidence\": 0.6\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Sir Tristram visits the police station in St. Marvells.\",\n      \"evidence_quote\": \"HANNAH unlocks the door, and admits GEORGIANA and SIR TRISTRAM\",\n      \"source_chunk_id\": \"dd_act03s01_c0009\",\n      \"confidence\": 0.6\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674713,
+    "id": "8755d6f8-dd7b-41b8-904f-3d23f34684b4",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1160,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 984,
+      "prompt_tokens": 1624,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2784
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 11.598713,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:05:13.684915+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1160,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 984,
+          "prompt_tokens": 1624,
+          "total_tokens": 2784
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1160,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 984,
+      "prompt_tokens": 1624,
+      "total_tokens": 2784
+    },
+    "total_elapsed_seconds": 11.598713
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [
+          "Noah Topping"
+        ],
+        "description": "A police officer in St. Marvells, married to Hannah, and concerned about his wife's interactions with the Dean.",
+        "name": "NOAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Noahry"
+        ],
+        "description": "Noah's wife, who made the Dean's acquaintance through the wicket and serves him a meal.",
+        "name": "HANNAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A gentleman who has been accused by Noah of alienating Hannah's affections and embezzling his meal.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A lady who visits the police station with Sir Tristram, dressed for the race-course.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A gentleman who visits the police station with Georgiana, dressed for the race-course.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "The place where Noah and Hannah live and where the police station is located.",
+        "name": "St. Marvells",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "The location of the police station where Noah works and where the Bench sets.",
+        "name": "Durnstone",
+        "type": "LOCATION"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "Noah refers to Hannah as his wife and mentions his wedded life.",
+        "evidence_quote": "I might a guessed my wedded life 'ud a coom to this.",
+        "relation": "MARRIED_TO",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0009",
+        "target": "HANNAH"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Noah accuses the Dean of alienating his wife's affections and embezzling his meal, and intends to take him to Durnstone to face charges.",
+        "evidence_quote": "The charge of allynating the affections o' my wife, 'Annah!",
+        "relation": "OPPOSES",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0009",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.85,
+        "description": "Noah states that he conducts the police station in Durnstone strictly and rigidly.",
+        "evidence_quote": "There ain't another police-station in all Durnstone conducted more strict and rigid nor what mian is",
+        "relation": "EMPLOYED_BY",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0009",
+        "target": "Durnstone"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Hannah made the Dean's acquaintance through the wicket and served him a meal.",
+        "evidence_quote": "I made this gentleman's acquaintance through the wicket, in a casual way.",
+        "relation": "INTERACTS_WITH",
+        "source": "HANNAH",
+        "source_chunk_id": "dd_act03s01_c0009",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Georgiana and Sir Tristram arrive together at the police station.",
+        "evidence_quote": "HANNAH unlocks the door, and admits GEORGIANA and SIR TRISTRAM, both dressed for the race-course.",
+        "relation": "INTERACTS_WITH",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s01_c0009",
+        "target": "SIR TRISTRAM"
+      },
+      {
+        "confidence": 0.6,
+        "description": "Georgiana visits the police station in St. Marvells.",
+        "evidence_quote": "Dear me! Is this the Police-Station?",
+        "relation": "LOCATED_AT",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s01_c0009",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.6,
+        "description": "Sir Tristram visits the police station in St. Marvells.",
+        "evidence_quote": "HANNAH unlocks the door, and admits GEORGIANA and SIR TRISTRAM",
+        "relation": "LOCATED_AT",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act03s01_c0009",
+        "target": "St. Marvells"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

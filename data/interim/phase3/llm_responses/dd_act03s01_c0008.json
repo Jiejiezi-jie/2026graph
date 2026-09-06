@@ -1,0 +1,202 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act03s01_c0008",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "8fa4cad20c9c6901fcdb6d321910994bb9f440e8570b5b19ec96c57f425bf7de",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"HANNAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A woman who is Noah Topping's wife and cooks for the Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A clergyman who is eating a joint prepared by Hannah.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"NOAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A constable who is Hannah's husband and enters through the window.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Noah Topping\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"The constable husband of Hannah, referred to as Noahry by Hannah.\",\n      \"aliases\": [\"Noahry\"]\n    },\n    {\n      \"name\": \"Hannah Topping\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"The wife of Noah Topping, who cooks for the Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"St. Marvells\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The place where Noah and Hannah have recently come to live.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Deanery\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The residence of the Dean where Hannah cooks.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the joint\",\n      \"type\": \"OBJECT\",\n      \"description\": \"A small joint of meat that Hannah has cooked and the Dean is eating.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"HANNAH\",\n      \"target\": \"NOAH\",\n      \"relation\": \"MARRIED_TO\",\n      \"description\": \"Hannah is Noah's wife.\",\n      \"evidence_quote\": \"my nooly made wife\",\n      \"source_chunk_id\": \"dd_act03s01_c0008\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"HANNAH\",\n      \"relation\": \"MARRIED_TO\",\n      \"description\": \"Noah is Hannah's husband.\",\n      \"evidence_quote\": \"my nooly made wife\",\n      \"source_chunk_id\": \"dd_act03s01_c0008\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"HANNAH\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Hannah works as a cook for the Dean.\",\n      \"evidence_quote\": \"I'll have no more women cooks at the Deanery!\",\n      \"source_chunk_id\": \"dd_act03s01_c0008\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"the joint\",\n      \"relation\": \"OWNS\",\n      \"description\": \"The Dean is eating the joint that Hannah prepared.\",\n      \"evidence_quote\": \"THE DEAN begins to eat.\",\n      \"source_chunk_id\": \"dd_act03s01_c0008\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"HANNAH\",\n      \"target\": \"the joint\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Hannah prepared the joint for the Dean.\",\n      \"evidence_quote\": \"Opening the oven and taking out a small joint in a baking tin\",\n      \"source_chunk_id\": \"dd_act03s01_c0008\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Noah and Hannah have recently come to St. Marvells.\",\n      \"evidence_quote\": \"since we coom to St. Marvells\",\n      \"source_chunk_id\": \"dd_act03s01_c0008\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"HANNAH\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Hannah has recently come to St. Marvells with Noah.\",\n      \"evidence_quote\": \"since we coom to St. Marvells\",\n      \"source_chunk_id\": \"dd_act03s01_c0008\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"the Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Dean lives at the Deanery.\",\n      \"evidence_quote\": \"I'll have no more women cooks at the Deanery!\",\n      \"source_chunk_id\": \"dd_act03s01_c0008\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"OPPOSES\",\n      \"description\": \"Noah objects to the Dean's interaction with Hannah.\",\n      \"evidence_quote\": \"Am I to gather, constable, from your respective attitudes that you object to these little kindnesses extended to me by your worthy wife?\",\n      \"source_chunk_id\": \"dd_act03s01_c0008\",\n      \"confidence\": 0.85\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674702,
+    "id": "a8a8d2df-0835-456d-88d7-c5fe29b9414e",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1225,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 945,
+      "prompt_tokens": 1585,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2810
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 11.459382,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:05:02.221673+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1225,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 945,
+          "prompt_tokens": 1585,
+          "total_tokens": 2810
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1225,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 945,
+      "prompt_tokens": 1585,
+      "total_tokens": 2810
+    },
+    "total_elapsed_seconds": 11.459382
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A woman who is Noah Topping's wife and cooks for the Dean.",
+        "name": "HANNAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A clergyman who is eating a joint prepared by Hannah.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A constable who is Hannah's husband and enters through the window.",
+        "name": "NOAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Noahry"
+        ],
+        "description": "The constable husband of Hannah, referred to as Noahry by Hannah.",
+        "name": "Noah Topping",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "The wife of Noah Topping, who cooks for the Dean.",
+        "name": "Hannah Topping",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "The place where Noah and Hannah have recently come to live.",
+        "name": "St. Marvells",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "The residence of the Dean where Hannah cooks.",
+        "name": "the Deanery",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A small joint of meat that Hannah has cooked and the Dean is eating.",
+        "name": "the joint",
+        "type": "OBJECT"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "Hannah is Noah's wife.",
+        "evidence_quote": "my nooly made wife",
+        "relation": "MARRIED_TO",
+        "source": "HANNAH",
+        "source_chunk_id": "dd_act03s01_c0008",
+        "target": "NOAH"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Noah is Hannah's husband.",
+        "evidence_quote": "my nooly made wife",
+        "relation": "MARRIED_TO",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0008",
+        "target": "HANNAH"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Hannah works as a cook for the Dean.",
+        "evidence_quote": "I'll have no more women cooks at the Deanery!",
+        "relation": "EMPLOYED_BY",
+        "source": "HANNAH",
+        "source_chunk_id": "dd_act03s01_c0008",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.7,
+        "description": "The Dean is eating the joint that Hannah prepared.",
+        "evidence_quote": "THE DEAN begins to eat.",
+        "relation": "OWNS",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s01_c0008",
+        "target": "the joint"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Hannah prepared the joint for the Dean.",
+        "evidence_quote": "Opening the oven and taking out a small joint in a baking tin",
+        "relation": "OWNS",
+        "source": "HANNAH",
+        "source_chunk_id": "dd_act03s01_c0008",
+        "target": "the joint"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Noah and Hannah have recently come to St. Marvells.",
+        "evidence_quote": "since we coom to St. Marvells",
+        "relation": "LOCATED_AT",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0008",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Hannah has recently come to St. Marvells with Noah.",
+        "evidence_quote": "since we coom to St. Marvells",
+        "relation": "LOCATED_AT",
+        "source": "HANNAH",
+        "source_chunk_id": "dd_act03s01_c0008",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.8,
+        "description": "The Dean lives at the Deanery.",
+        "evidence_quote": "I'll have no more women cooks at the Deanery!",
+        "relation": "LOCATED_AT",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s01_c0008",
+        "target": "the Deanery"
+      },
+      {
+        "confidence": 0.85,
+        "description": "Noah objects to the Dean's interaction with Hannah.",
+        "evidence_quote": "Am I to gather, constable, from your respective attitudes that you object to these little kindnesses extended to me by your worthy wife?",
+        "relation": "OPPOSES",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0008",
+        "target": "THE DEAN"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

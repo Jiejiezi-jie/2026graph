@@ -1,0 +1,200 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_prod_c0001",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "529d1c45dc61be7e4fcb1d962e0a6df6673afed0422a8991b80aef7df91f8cfc",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"CREATIVE_WORK\",\n      \"description\": \"A farce written by Mr. Pinero for the old Court Theatre, produced on January 27th, 1887.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Mr. Pinero\",\n      \"type\": \"PERSON\",\n      \"description\": \"The dramatist who wrote Dandy Dick and The Schoolmistress.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Court Theatre\",\n      \"type\": \"ORGANIZATION\",\n      \"description\": \"The old theatre where Dandy Dick was produced.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Mr. Arthur Cecil\",\n      \"type\": \"PERSON\",\n      \"description\": \"Joint manager of the Court Theatre with Mr. John Clayton.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Mr. John Clayton\",\n      \"type\": \"PERSON\",\n      \"description\": \"Joint manager of the Court Theatre with Mr. Arthur Cecil; died while acting in Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"The Schoolmistress\",\n      \"type\": \"CREATIVE_WORK\",\n      \"description\": \"A play by Mr. Pinero that was at the end of its successful run when Dandy Dick was being written.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Brighton\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The place where Mr. Pinero was working on the new play.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Noah Topping\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in Dandy Dick, suggested by a rural constable of a village adjacent to Brighton.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"Mr. Pinero\",\n      \"relation\": \"AUTHORED_BY\",\n      \"description\": \"Mr. Pinero wrote Dandy Dick.\",\n      \"evidence_quote\": \"\\\"Dandy Dick\\\" was the third of the farces which Mr. Pinero wrote for the old Court Theatre\",\n      \"source_chunk_id\": \"dd_prod_c0001\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"Court Theatre\",\n      \"relation\": \"PERFORMED_AT\",\n      \"description\": \"Dandy Dick was produced at the Court Theatre.\",\n      \"evidence_quote\": \"\\\"Dandy Dick\\\" was produced at the Court Theatre on January 27th, 1887\",\n      \"source_chunk_id\": \"dd_prod_c0001\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"Mr. Arthur Cecil\",\n      \"target\": \"Court Theatre\",\n      \"relation\": \"MANAGED_BY\",\n      \"description\": \"Mr. Arthur Cecil was joint manager of the Court Theatre.\",\n      \"evidence_quote\": \"the joint management of Mr. Arthur Cecil and the late Mr. John Clayton\",\n      \"source_chunk_id\": \"dd_prod_c0001\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Mr. John Clayton\",\n      \"target\": \"Court Theatre\",\n      \"relation\": \"MANAGED_BY\",\n      \"description\": \"Mr. John Clayton was joint manager of the Court Theatre.\",\n      \"evidence_quote\": \"the joint management of Mr. Arthur Cecil and the late Mr. John Clayton\",\n      \"source_chunk_id\": \"dd_prod_c0001\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Mr. John Clayton\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"PARTICIPATES_IN\",\n      \"description\": \"Mr. Clayton was acting in Dandy Dick when death overtook him.\",\n      \"evidence_quote\": \"it was the piece in which Mr. Clayton was acting when death overtook him\",\n      \"source_chunk_id\": \"dd_prod_c0001\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"The Schoolmistress\",\n      \"target\": \"Mr. Pinero\",\n      \"relation\": \"AUTHORED_BY\",\n      \"description\": \"Mr. Pinero wrote The Schoolmistress.\",\n      \"evidence_quote\": \"\\\"The Schoolmistress\\\" was at the end of its successful run, and Mr. Pinero was under contract to supply its successor\",\n      \"source_chunk_id\": \"dd_prod_c0001\",\n      \"confidence\": 0.85\n    },\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"The Schoolmistress\",\n      \"relation\": \"PRECEDED_BY\",\n      \"description\": \"Dandy Dick was the successor to The Schoolmistress.\",\n      \"evidence_quote\": \"a successor to \\\"The Schoolmistress\\\" was an immediate necessity\",\n      \"source_chunk_id\": \"dd_prod_c0001\",\n      \"confidence\": 0.85\n    },\n    {\n      \"source\": \"Mr. Pinero\",\n      \"target\": \"Brighton\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Mr. Pinero was working in Brighton when Mr. Clayton visited him.\",\n      \"evidence_quote\": \"Mr. Clayton one day went down to Brighton, where the dramatist was then at work\",\n      \"source_chunk_id\": \"dd_prod_c0001\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Noah Topping\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"PARTICIPATES_IN\",\n      \"description\": \"Noah Topping is a character in Dandy Dick.\",\n      \"evidence_quote\": \"the rural constable of a village adjacent to Brighton having suggested the character of Noah Topping\",\n      \"source_chunk_id\": \"dd_prod_c0001\",\n      \"confidence\": 0.85\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674088,
+    "id": "d0b699dd-2732-4379-bfad-b08fe11f3ffb",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1337,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1273,
+      "prompt_tokens": 1273,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 2610
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 11.573924,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T05:54:48.851991+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1337,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1273,
+          "prompt_tokens": 1273,
+          "total_tokens": 2610
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1337,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1273,
+      "prompt_tokens": 1273,
+      "total_tokens": 2610
+    },
+    "total_elapsed_seconds": 11.573924
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A farce written by Mr. Pinero for the old Court Theatre, produced on January 27th, 1887.",
+        "name": "Dandy Dick",
+        "type": "CREATIVE_WORK"
+      },
+      {
+        "aliases": [],
+        "description": "The dramatist who wrote Dandy Dick and The Schoolmistress.",
+        "name": "Mr. Pinero",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "The old theatre where Dandy Dick was produced.",
+        "name": "Court Theatre",
+        "type": "ORGANIZATION"
+      },
+      {
+        "aliases": [],
+        "description": "Joint manager of the Court Theatre with Mr. John Clayton.",
+        "name": "Mr. Arthur Cecil",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Joint manager of the Court Theatre with Mr. Arthur Cecil; died while acting in Dandy Dick.",
+        "name": "Mr. John Clayton",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "A play by Mr. Pinero that was at the end of its successful run when Dandy Dick was being written.",
+        "name": "The Schoolmistress",
+        "type": "CREATIVE_WORK"
+      },
+      {
+        "aliases": [],
+        "description": "The place where Mr. Pinero was working on the new play.",
+        "name": "Brighton",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A character in Dandy Dick, suggested by a rural constable of a village adjacent to Brighton.",
+        "name": "Noah Topping",
+        "type": "CHARACTER"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "Mr. Pinero wrote Dandy Dick.",
+        "evidence_quote": "\"Dandy Dick\" was the third of the farces which Mr. Pinero wrote for the old Court Theatre",
+        "relation": "AUTHORED_BY",
+        "source": "Dandy Dick",
+        "source_chunk_id": "dd_prod_c0001",
+        "target": "Mr. Pinero"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Dandy Dick was produced at the Court Theatre.",
+        "evidence_quote": "\"Dandy Dick\" was produced at the Court Theatre on January 27th, 1887",
+        "relation": "PERFORMED_AT",
+        "source": "Dandy Dick",
+        "source_chunk_id": "dd_prod_c0001",
+        "target": "Court Theatre"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Mr. Arthur Cecil was joint manager of the Court Theatre.",
+        "evidence_quote": "the joint management of Mr. Arthur Cecil and the late Mr. John Clayton",
+        "relation": "MANAGED_BY",
+        "source": "Mr. Arthur Cecil",
+        "source_chunk_id": "dd_prod_c0001",
+        "target": "Court Theatre"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Mr. John Clayton was joint manager of the Court Theatre.",
+        "evidence_quote": "the joint management of Mr. Arthur Cecil and the late Mr. John Clayton",
+        "relation": "MANAGED_BY",
+        "source": "Mr. John Clayton",
+        "source_chunk_id": "dd_prod_c0001",
+        "target": "Court Theatre"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Mr. Clayton was acting in Dandy Dick when death overtook him.",
+        "evidence_quote": "it was the piece in which Mr. Clayton was acting when death overtook him",
+        "relation": "PARTICIPATES_IN",
+        "source": "Mr. John Clayton",
+        "source_chunk_id": "dd_prod_c0001",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.85,
+        "description": "Mr. Pinero wrote The Schoolmistress.",
+        "evidence_quote": "\"The Schoolmistress\" was at the end of its successful run, and Mr. Pinero was under contract to supply its successor",
+        "relation": "AUTHORED_BY",
+        "source": "The Schoolmistress",
+        "source_chunk_id": "dd_prod_c0001",
+        "target": "Mr. Pinero"
+      },
+      {
+        "confidence": 0.85,
+        "description": "Dandy Dick was the successor to The Schoolmistress.",
+        "evidence_quote": "a successor to \"The Schoolmistress\" was an immediate necessity",
+        "relation": "PRECEDED_BY",
+        "source": "Dandy Dick",
+        "source_chunk_id": "dd_prod_c0001",
+        "target": "The Schoolmistress"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Mr. Pinero was working in Brighton when Mr. Clayton visited him.",
+        "evidence_quote": "Mr. Clayton one day went down to Brighton, where the dramatist was then at work",
+        "relation": "LOCATED_AT",
+        "source": "Mr. Pinero",
+        "source_chunk_id": "dd_prod_c0001",
+        "target": "Brighton"
+      },
+      {
+        "confidence": 0.85,
+        "description": "Noah Topping is a character in Dandy Dick.",
+        "evidence_quote": "the rural constable of a village adjacent to Brighton having suggested the character of Noah Topping",
+        "relation": "PARTICIPATES_IN",
+        "source": "Noah Topping",
+        "source_chunk_id": "dd_prod_c0001",
+        "target": "Dandy Dick"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

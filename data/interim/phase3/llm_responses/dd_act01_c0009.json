@@ -1,0 +1,179 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act01_c0009",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "aac404b9f07f02623274f285928713455e49e3d962fa1aff78d2cd007fdd66b0",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A clergyman and father of Salome and Sheba, brother of Georgiana Tidman.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"BLORE\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A servant at the Deanery.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Daughter of the Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Daughter of the Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Mr. Hodder\",\n      \"type\": \"PERSON\",\n      \"description\": \"Secretary of The Sport and Relaxation Repression Guild.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"The Sport and Relaxation Repression Guild\",\n      \"type\": \"ORGANIZATION\",\n      \"description\": \"An organization whose secretary is Mr. Hodder.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"St. Marvells Spring Meeting\",\n      \"type\": \"EVENT\",\n      \"description\": \"A race meeting starting tomorrow.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Georgiana Tidman\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"The Dean's widowed sister, coming to live with them.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Durnstone Handicap\",\n      \"type\": \"EVENT\",\n      \"description\": \"A horse race mentioned by Blore.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"SALOME\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is the father of Salome.\",\n      \"evidence_quote\": \"A second mother to my girls.\",\n      \"source_chunk_id\": \"dd_act01_c0009\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is the father of Sheba.\",\n      \"evidence_quote\": \"A second mother to my girls.\",\n      \"source_chunk_id\": \"dd_act01_c0009\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"Georgiana Tidman\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"The Dean and Georgiana Tidman are siblings.\",\n      \"evidence_quote\": \"My dear widowed sister, Georgiana Tidman.\",\n      \"source_chunk_id\": \"dd_act01_c0009\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Mr. Hodder\",\n      \"target\": \"The Sport and Relaxation Repression Guild\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Mr. Hodder is the Secretary of The Sport and Relaxation Repression Guild.\",\n      \"evidence_quote\": \"Mr. Hodder, the Secretary of \\\"The Sport and Relaxation Repression Guild,\\\"\",\n      \"source_chunk_id\": \"dd_act01_c0009\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"St. Marvells Spring Meeting\",\n      \"relation\": \"PARTICIPATES_IN\",\n      \"description\": \"The Dean is reminded of the race meeting by a note.\",\n      \"evidence_quote\": \"reminds me that to-morrow is the first day of the Races--the St. Marvells Spring Meeting\",\n      \"source_chunk_id\": \"dd_act01_c0009\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"Durnstone Handicap\",\n      \"relation\": \"PARTICIPATES_IN\",\n      \"description\": \"Blore knows a good tip for the Durnstone Handicap.\",\n      \"evidence_quote\": \"if the Dean only knew the good thing I could put him on to for the Durnstone Handicap!\",\n      \"source_chunk_id\": \"dd_act01_c0009\",\n      \"confidence\": 0.7\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674302,
+    "id": "8686b616-1e0a-4caf-b0d0-e49a7f2ee6f9",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1010,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 891,
+      "prompt_tokens": 1531,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2541
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 10.448508,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T05:58:21.149230+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1010,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 891,
+          "prompt_tokens": 1531,
+          "total_tokens": 2541
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1010,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 891,
+      "prompt_tokens": 1531,
+      "total_tokens": 2541
+    },
+    "total_elapsed_seconds": 10.448508
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A clergyman and father of Salome and Sheba, brother of Georgiana Tidman.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A servant at the Deanery.",
+        "name": "BLORE",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Daughter of the Dean.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Daughter of the Dean.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Secretary of The Sport and Relaxation Repression Guild.",
+        "name": "Mr. Hodder",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "An organization whose secretary is Mr. Hodder.",
+        "name": "The Sport and Relaxation Repression Guild",
+        "type": "ORGANIZATION"
+      },
+      {
+        "aliases": [],
+        "description": "A race meeting starting tomorrow.",
+        "name": "St. Marvells Spring Meeting",
+        "type": "EVENT"
+      },
+      {
+        "aliases": [],
+        "description": "The Dean's widowed sister, coming to live with them.",
+        "name": "Georgiana Tidman",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A horse race mentioned by Blore.",
+        "name": "Durnstone Handicap",
+        "type": "EVENT"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "The Dean is the father of Salome.",
+        "evidence_quote": "A second mother to my girls.",
+        "relation": "PARENT_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0009",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean is the father of Sheba.",
+        "evidence_quote": "A second mother to my girls.",
+        "relation": "PARENT_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0009",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 1.0,
+        "description": "The Dean and Georgiana Tidman are siblings.",
+        "evidence_quote": "My dear widowed sister, Georgiana Tidman.",
+        "relation": "SIBLING_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0009",
+        "target": "Georgiana Tidman"
+      },
+      {
+        "confidence": 1.0,
+        "description": "Mr. Hodder is the Secretary of The Sport and Relaxation Repression Guild.",
+        "evidence_quote": "Mr. Hodder, the Secretary of \"The Sport and Relaxation Repression Guild,\"",
+        "relation": "EMPLOYED_BY",
+        "source": "Mr. Hodder",
+        "source_chunk_id": "dd_act01_c0009",
+        "target": "The Sport and Relaxation Repression Guild"
+      },
+      {
+        "confidence": 0.8,
+        "description": "The Dean is reminded of the race meeting by a note.",
+        "evidence_quote": "reminds me that to-morrow is the first day of the Races--the St. Marvells Spring Meeting",
+        "relation": "PARTICIPATES_IN",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0009",
+        "target": "St. Marvells Spring Meeting"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Blore knows a good tip for the Durnstone Handicap.",
+        "evidence_quote": "if the Dean only knew the good thing I could put him on to for the Durnstone Handicap!",
+        "relation": "PARTICIPATES_IN",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act01_c0009",
+        "target": "Durnstone Handicap"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

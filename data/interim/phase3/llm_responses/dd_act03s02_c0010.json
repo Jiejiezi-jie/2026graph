@@ -1,0 +1,319 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act03s02_c0010",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "fbbecf1d92bc4d5215229f6f642cb29ea13219235f26a667c4c22c44685c5a60",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Dr. Jedd, the Dean of St. Marvells, who was mistaken for a culprit by Noah.\",\n      \"aliases\": [\"Dr. Jedd\", \"the Dean of St. Marvells\"]\n    },\n    {\n      \"name\": \"NOAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A constable who confronts the Dean, believing him to be the man who alienated his wife's affections.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"HANNAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Noah's wife, formerly Hannah Evans, an excellent cook under the Dean's roof.\",\n      \"aliases\": [\"Hannah Evans\", \"Mrs. Topping\"]\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who speaks to the Dean about his troubles and uses a horse metaphor.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who questions Hatcham about the man secured in the stable.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"HATCHAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who confirms that the man secured in the stable was not the Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who enters with the Dean and later goes into the Library.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"TARVER\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who enters with the Dean and later goes into the Library.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who sits on the arm of Darbey's chair and later plays the piano.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"DARBEY\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who sits in an arm-chair with Sheba on the arm and later stands behind Sheba at the piano.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"St. Marvells\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The location of the Deanery where the Dean serves.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Deanery\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The residence of the Dean, mentioned as having a genial summer frosted by deceit.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Library\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A room where Salome and Tarver go to sit at the writing-table.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the stable\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The place where a man was secured last night, as mentioned by Sir Tristram.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the kitchen\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The place where the Dean invites Noah and Hannah to dine.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the piano\",\n      \"type\": \"OBJECT\",\n      \"description\": \"An instrument that Sheba plays softly.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the writing-table\",\n      \"type\": \"OBJECT\",\n      \"description\": \"A table in the Library where Salome and Tarver sit.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the arm-chair\",\n      \"type\": \"OBJECT\",\n      \"description\": \"A chair where Darbey sits with Sheba on the arm.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the window\",\n      \"type\": \"OBJECT\",\n      \"description\": \"An opening through which Sir Tristram and Hatcham exit.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the horse called Deception\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A metaphorical horse mentioned by Georgiana in her speech about deception.\",\n      \"aliases\": [\"Deception\"]\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Dean serves at St. Marvells.\",\n      \"evidence_quote\": \"the Dean of St. Marvells\",\n      \"source_chunk_id\": \"dd_act03s02_c0010\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"the Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Dean is associated with the Deanery, as indicated by the phrase 'the genial summer of the Deanery'.\",\n      \"evidence_quote\": \"the genial summer of the Deanery frosted by the winter of Deceit\",\n      \"source_chunk_id\": \"dd_act03s02_c0010\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"HANNAH\",\n      \"target\": \"NOAH\",\n      \"relation\": \"MARRIED_TO\",\n      \"description\": \"Hannah is Noah's wife, as she says she is Mrs. Topping, bride of the constable.\",\n      \"evidence_quote\": \"I'm Mrs. Topping now, sir--bride o' the constable.\",\n      \"source_chunk_id\": \"dd_act03s02_c0010\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"HANNAH\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Hannah was once an excellent cook under the Dean's roof.\",\n      \"evidence_quote\": \"I think I see Hannah Evans, once an excellent cook under this very roof.\",\n      \"source_chunk_id\": \"dd_act03s02_c0010\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"OPPOSES\",\n      \"description\": \"Noah confronts the Dean, accusing him of alienating his wife's affections.\",\n      \"evidence_quote\": \"I'm speaking to the man I took last night--the culprit as 'as allynated the affections of my wife.\",\n      \"source_chunk_id\": \"dd_act03s02_c0010\",\n      \"confidence\": 0.85\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"HATCHAM\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Sir Tristram questions Hatcham about the man secured in the stable.\",\n      \"evidence_quote\": \"Hatcham--[_pointing to THE DEAN_]--Is that the man you and the Constable secured in the stable last night?\",\n      \"source_chunk_id\": \"dd_act03s02_c0010\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"HATCHAM\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Hatcham identifies the Dean as not being the man secured in the stable.\",\n      \"evidence_quote\": \"Bless your 'art, sir, that's the Dean 'imself.\",\n      \"source_chunk_id\": \"dd_act03s02_c0010\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"NOAH\",\n      \"relation\": \"HELPS\",\n      \"description\": \"The Dean withdraws the charge and invites Noah and Hannah to dine in his kitchen.\",\n      \"evidence_quote\": \"I withdraw unreservedly any charge against this unknown person found on my premises last night. I attribute to him the most innocent intentions. Hannah, you and your worthy husband will stay and dine in my kitchen.\",\n      \"source_chunk_id\": \"dd_act03s02_c0010\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Georgiana speaks to the Dean about his troubles and uses a horse metaphor.\",\n      \"evidence_quote\": \"Well, Gus, you're out of all your troubles. Are you happy?\",\n      \"source_chunk_id\": \"dd_act03s02_c0010\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"the Library\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Salome goes into the Library and sits at the writing-table.\",\n      \"evidence_quote\": \"[_SALOME and TARVER go into the Library and sit at the writing-table._\",\n      \"source_chunk_id\": \"dd_act03s02_c0010\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"TARVER\",\n      \"target\": \"the Library\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Tarver goes into the Library and sits at the writing-table.\",\n      \"evidence_quote\": \"[_SALOME and TARVER go into the Library and sit at the writing-table._\",\n      \"source_chunk_id\": \"dd_act03s02_c0010\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"DARBEY\",\n      \"target\": \"the arm-chair\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Darbey sits in an arm-chair with Sheba on the arm.\",\n      \"evidence_quote\": \"DARBEY sits in an arm-chair with SHEBA on the arm.\",\n      \"source_chunk_id\": \"dd_act03s02_c0010\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SHEBA\",\n      \"target\": \"the piano\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Sheba sits at the piano and plays a bright air softly.\",\n      \"evidence_quote\": \"[_SHEBA sits at the piano and plays a bright air softly--DARBEY standing behind her--SALOME and TARVER stand in the archway._\",\n      \"source_chunk_id\": \"dd_act03s02_c0010\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SHEBA\",\n      \"target\": \"DARBEY\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Sheba sits on the arm of Darbey's chair and later Darbey stands behind her at the piano.\",\n      \"evidence_quote\": \"DARBEY sits in an arm-chair with SHEBA on the arm.\",\n      \"source_chunk_id\": \"dd_act03s02_c0010\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"the horse called Deception\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Georgiana uses the horse called Deception in a metaphor about the Dean riding it hardest.\",\n      \"evidence_quote\": \"when once you lay the whip about the withers of the horse called Deception he takes the bit between his teeth, and only the devil can stop him--and he'd rather not. Shall I tell you who has been riding the horse hardest?\",\n      \"source_chunk_id\": \"dd_act03s02_c0010\",\n      \"confidence\": 0.6\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674880,
+    "id": "566939cd-4113-46ff-b03f-f8e4ace33cc5",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 2679,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1014,
+      "prompt_tokens": 1654,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 4333
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 25.323109,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:07:59.162573+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 2679,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 1014,
+          "prompt_tokens": 1654,
+          "total_tokens": 4333
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 2679,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1014,
+      "prompt_tokens": 1654,
+      "total_tokens": 4333
+    },
+    "total_elapsed_seconds": 25.323109
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [
+          "Dr. Jedd",
+          "the Dean of St. Marvells"
+        ],
+        "description": "Dr. Jedd, the Dean of St. Marvells, who was mistaken for a culprit by Noah.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A constable who confronts the Dean, believing him to be the man who alienated his wife's affections.",
+        "name": "NOAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Hannah Evans",
+          "Mrs. Topping"
+        ],
+        "description": "Noah's wife, formerly Hannah Evans, an excellent cook under the Dean's roof.",
+        "name": "HANNAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who speaks to the Dean about his troubles and uses a horse metaphor.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who questions Hatcham about the man secured in the stable.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who confirms that the man secured in the stable was not the Dean.",
+        "name": "HATCHAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who enters with the Dean and later goes into the Library.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who enters with the Dean and later goes into the Library.",
+        "name": "TARVER",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who sits on the arm of Darbey's chair and later plays the piano.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who sits in an arm-chair with Sheba on the arm and later stands behind Sheba at the piano.",
+        "name": "DARBEY",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "The location of the Deanery where the Dean serves.",
+        "name": "St. Marvells",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "The residence of the Dean, mentioned as having a genial summer frosted by deceit.",
+        "name": "the Deanery",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A room where Salome and Tarver go to sit at the writing-table.",
+        "name": "the Library",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "The place where a man was secured last night, as mentioned by Sir Tristram.",
+        "name": "the stable",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "The place where the Dean invites Noah and Hannah to dine.",
+        "name": "the kitchen",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "An instrument that Sheba plays softly.",
+        "name": "the piano",
+        "type": "OBJECT"
+      },
+      {
+        "aliases": [],
+        "description": "A table in the Library where Salome and Tarver sit.",
+        "name": "the writing-table",
+        "type": "OBJECT"
+      },
+      {
+        "aliases": [],
+        "description": "A chair where Darbey sits with Sheba on the arm.",
+        "name": "the arm-chair",
+        "type": "OBJECT"
+      },
+      {
+        "aliases": [],
+        "description": "An opening through which Sir Tristram and Hatcham exit.",
+        "name": "the window",
+        "type": "OBJECT"
+      },
+      {
+        "aliases": [
+          "Deception"
+        ],
+        "description": "A metaphorical horse mentioned by Georgiana in her speech about deception.",
+        "name": "the horse called Deception",
+        "type": "ANIMAL"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "The Dean serves at St. Marvells.",
+        "evidence_quote": "the Dean of St. Marvells",
+        "relation": "LOCATED_AT",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s02_c0010",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.7,
+        "description": "The Dean is associated with the Deanery, as indicated by the phrase 'the genial summer of the Deanery'.",
+        "evidence_quote": "the genial summer of the Deanery frosted by the winter of Deceit",
+        "relation": "LOCATED_AT",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s02_c0010",
+        "target": "the Deanery"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Hannah is Noah's wife, as she says she is Mrs. Topping, bride of the constable.",
+        "evidence_quote": "I'm Mrs. Topping now, sir--bride o' the constable.",
+        "relation": "MARRIED_TO",
+        "source": "HANNAH",
+        "source_chunk_id": "dd_act03s02_c0010",
+        "target": "NOAH"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Hannah was once an excellent cook under the Dean's roof.",
+        "evidence_quote": "I think I see Hannah Evans, once an excellent cook under this very roof.",
+        "relation": "EMPLOYED_BY",
+        "source": "HANNAH",
+        "source_chunk_id": "dd_act03s02_c0010",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.85,
+        "description": "Noah confronts the Dean, accusing him of alienating his wife's affections.",
+        "evidence_quote": "I'm speaking to the man I took last night--the culprit as 'as allynated the affections of my wife.",
+        "relation": "OPPOSES",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s02_c0010",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Sir Tristram questions Hatcham about the man secured in the stable.",
+        "evidence_quote": "Hatcham--[_pointing to THE DEAN_]--Is that the man you and the Constable secured in the stable last night?",
+        "relation": "INTERACTS_WITH",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act03s02_c0010",
+        "target": "HATCHAM"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Hatcham identifies the Dean as not being the man secured in the stable.",
+        "evidence_quote": "Bless your 'art, sir, that's the Dean 'imself.",
+        "relation": "INTERACTS_WITH",
+        "source": "HATCHAM",
+        "source_chunk_id": "dd_act03s02_c0010",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean withdraws the charge and invites Noah and Hannah to dine in his kitchen.",
+        "evidence_quote": "I withdraw unreservedly any charge against this unknown person found on my premises last night. I attribute to him the most innocent intentions. Hannah, you and your worthy husband will stay and dine in my kitchen.",
+        "relation": "HELPS",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s02_c0010",
+        "target": "NOAH"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Georgiana speaks to the Dean about his troubles and uses a horse metaphor.",
+        "evidence_quote": "Well, Gus, you're out of all your troubles. Are you happy?",
+        "relation": "INTERACTS_WITH",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s02_c0010",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Darbey sits in an arm-chair with Sheba on the arm.",
+        "evidence_quote": "DARBEY sits in an arm-chair with SHEBA on the arm.",
+        "relation": "LOCATED_AT",
+        "source": "DARBEY",
+        "source_chunk_id": "dd_act03s02_c0010",
+        "target": "the arm-chair"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Sheba sits at the piano and plays a bright air softly.",
+        "evidence_quote": "[_SHEBA sits at the piano and plays a bright air softly--DARBEY standing behind her--SALOME and TARVER stand in the archway._",
+        "relation": "LOCATED_AT",
+        "source": "SHEBA",
+        "source_chunk_id": "dd_act03s02_c0010",
+        "target": "the piano"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Sheba sits on the arm of Darbey's chair and later Darbey stands behind her at the piano.",
+        "evidence_quote": "DARBEY sits in an arm-chair with SHEBA on the arm.",
+        "relation": "INTERACTS_WITH",
+        "source": "SHEBA",
+        "source_chunk_id": "dd_act03s02_c0010",
+        "target": "DARBEY"
+      },
+      {
+        "confidence": 0.6,
+        "description": "Georgiana uses the horse called Deception in a metaphor about the Dean riding it hardest.",
+        "evidence_quote": "when once you lay the whip about the withers of the horse called Deception he takes the bit between his teeth, and only the devil can stop him--and he'd rather not. Shall I tell you who has been riding the horse hardest?",
+        "relation": "INTERACTS_WITH",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s02_c0010",
+        "target": "the horse called Deception"
+      }
+    ]
+  },
+  "validation_warnings": [
+    "relation[9]_evidence_mismatch",
+    "relation[10]_evidence_mismatch"
+  ]
+}

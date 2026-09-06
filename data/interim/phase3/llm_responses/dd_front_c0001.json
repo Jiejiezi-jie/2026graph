@@ -1,0 +1,167 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_front_c0001",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "a88da47f16e541ba3a8062801055d613d3ee1de448e08c8717566df43bbddf60",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"CREATIVE_WORK\",\n      \"description\": \"A play in three acts by Arthur W. Pinero.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Arthur W. Pinero\",\n      \"type\": \"PERSON\",\n      \"description\": \"Author of Dandy Dick and other plays.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Sweet Lavender\",\n      \"type\": \"CREATIVE_WORK\",\n      \"description\": \"A play authored by Arthur W. Pinero.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"The Times\",\n      \"type\": \"CREATIVE_WORK\",\n      \"description\": \"A play authored by Arthur W. Pinero.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"The Cabinet Minister\",\n      \"type\": \"CREATIVE_WORK\",\n      \"description\": \"A play authored by Arthur W. Pinero.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Lady Bountiful\",\n      \"type\": \"CREATIVE_WORK\",\n      \"description\": \"A play authored by Arthur W. Pinero.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Walter H. Baker\",\n      \"type\": \"ORGANIZATION\",\n      \"description\": \"Publisher of Dandy Dick.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"Arthur W. Pinero\",\n      \"relation\": \"AUTHORED_BY\",\n      \"description\": \"Arthur W. Pinero is the author of Dandy Dick.\",\n      \"evidence_quote\": \"DANDY DICK A PLAY IN THREE ACTS By ARTHUR W. PINERO\",\n      \"source_chunk_id\": \"dd_front_c0001\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"Sweet Lavender\",\n      \"target\": \"Arthur W. Pinero\",\n      \"relation\": \"AUTHORED_BY\",\n      \"description\": \"Arthur W. Pinero is the author of Sweet Lavender.\",\n      \"evidence_quote\": \"AUTHOR OF \\\"SWEET LAVENDER,\\\"\",\n      \"source_chunk_id\": \"dd_front_c0001\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"The Times\",\n      \"target\": \"Arthur W. Pinero\",\n      \"relation\": \"AUTHORED_BY\",\n      \"description\": \"Arthur W. Pinero is the author of The Times.\",\n      \"evidence_quote\": \"\\\"THE TIMES,\\\"\",\n      \"source_chunk_id\": \"dd_front_c0001\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"The Cabinet Minister\",\n      \"target\": \"Arthur W. Pinero\",\n      \"relation\": \"AUTHORED_BY\",\n      \"description\": \"Arthur W. Pinero is the author of The Cabinet Minister.\",\n      \"evidence_quote\": \"\\\"THE CABINET MINISTER,\\\"\",\n      \"source_chunk_id\": \"dd_front_c0001\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"Lady Bountiful\",\n      \"target\": \"Arthur W. Pinero\",\n      \"relation\": \"AUTHORED_BY\",\n      \"description\": \"Arthur W. Pinero is the author of Lady Bountiful.\",\n      \"evidence_quote\": \"\\\"LADY BOUNTIFUL,\\\"\",\n      \"source_chunk_id\": \"dd_front_c0001\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"Walter H. Baker\",\n      \"relation\": \"MANAGED_BY\",\n      \"description\": \"Walter H. Baker is the publisher of Dandy Dick.\",\n      \"evidence_quote\": \"BOSTON _WALTER H. BAKER_\",\n      \"source_chunk_id\": \"dd_front_c0001\",\n      \"confidence\": 0.9\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674081,
+    "id": "c1e96222-a6ea-4191-8304-5c7b3ebef01e",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 901,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 923,
+      "prompt_tokens": 923,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 1824
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 7.566675,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T05:54:41.282219+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 901,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 923,
+          "prompt_tokens": 923,
+          "total_tokens": 1824
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 901,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 923,
+      "prompt_tokens": 923,
+      "total_tokens": 1824
+    },
+    "total_elapsed_seconds": 7.566675
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A play in three acts by Arthur W. Pinero.",
+        "name": "Dandy Dick",
+        "type": "CREATIVE_WORK"
+      },
+      {
+        "aliases": [],
+        "description": "Author of Dandy Dick and other plays.",
+        "name": "Arthur W. Pinero",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "A play authored by Arthur W. Pinero.",
+        "name": "Sweet Lavender",
+        "type": "CREATIVE_WORK"
+      },
+      {
+        "aliases": [],
+        "description": "A play authored by Arthur W. Pinero.",
+        "name": "The Times",
+        "type": "CREATIVE_WORK"
+      },
+      {
+        "aliases": [],
+        "description": "A play authored by Arthur W. Pinero.",
+        "name": "The Cabinet Minister",
+        "type": "CREATIVE_WORK"
+      },
+      {
+        "aliases": [],
+        "description": "A play authored by Arthur W. Pinero.",
+        "name": "Lady Bountiful",
+        "type": "CREATIVE_WORK"
+      },
+      {
+        "aliases": [],
+        "description": "Publisher of Dandy Dick.",
+        "name": "Walter H. Baker",
+        "type": "ORGANIZATION"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "Arthur W. Pinero is the author of Dandy Dick.",
+        "evidence_quote": "DANDY DICK A PLAY IN THREE ACTS By ARTHUR W. PINERO",
+        "relation": "AUTHORED_BY",
+        "source": "Dandy Dick",
+        "source_chunk_id": "dd_front_c0001",
+        "target": "Arthur W. Pinero"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Arthur W. Pinero is the author of Sweet Lavender.",
+        "evidence_quote": "AUTHOR OF \"SWEET LAVENDER,\"",
+        "relation": "AUTHORED_BY",
+        "source": "Sweet Lavender",
+        "source_chunk_id": "dd_front_c0001",
+        "target": "Arthur W. Pinero"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Arthur W. Pinero is the author of The Times.",
+        "evidence_quote": "\"THE TIMES,\"",
+        "relation": "AUTHORED_BY",
+        "source": "The Times",
+        "source_chunk_id": "dd_front_c0001",
+        "target": "Arthur W. Pinero"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Arthur W. Pinero is the author of The Cabinet Minister.",
+        "evidence_quote": "\"THE CABINET MINISTER,\"",
+        "relation": "AUTHORED_BY",
+        "source": "The Cabinet Minister",
+        "source_chunk_id": "dd_front_c0001",
+        "target": "Arthur W. Pinero"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Arthur W. Pinero is the author of Lady Bountiful.",
+        "evidence_quote": "\"LADY BOUNTIFUL,\"",
+        "relation": "AUTHORED_BY",
+        "source": "Lady Bountiful",
+        "source_chunk_id": "dd_front_c0001",
+        "target": "Arthur W. Pinero"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Walter H. Baker is the publisher of Dandy Dick.",
+        "evidence_quote": "BOSTON _WALTER H. BAKER_",
+        "relation": "MANAGED_BY",
+        "source": "Dandy Dick",
+        "source_chunk_id": "dd_front_c0001",
+        "target": "Walter H. Baker"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

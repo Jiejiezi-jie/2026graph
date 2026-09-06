@@ -1,0 +1,167 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act01_c0002",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "78b73086f681e1d1b778fd3c95e9e26051dc52f6419b739f27be9cb798f18d95",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"Salome\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, sister of Sheba, who receives an account for fancy dresses.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Sheba\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, sister of Salome, who reacts to the dress account.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Major Tarver\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A major who promised to get the dresses made in London and initially offered to pay for them.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Lewis Isaacs\",\n      \"type\": \"PERSON\",\n      \"description\": \"Costumier to the Queen, located in Bow Street, who sent the account for the dresses.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Papa\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Father of Salome and Sheba, whom they plan to coax for money.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the account\",\n      \"type\": \"OBJECT\",\n      \"description\": \"The bill for the fancy dresses, totaling forty pounds nineteen.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the fancy dresses\",\n      \"type\": \"OBJECT\",\n      \"description\": \"Dresses ordered by Salome and Sheba, including a French Revolution gown and a flower girl outfit.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the brown paper patterns\",\n      \"type\": \"OBJECT\",\n      \"description\": \"Patterns given to Major Tarver to send to the costumier, later mislaid.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Concordance\",\n      \"type\": \"OBJECT\",\n      \"description\": \"A work on which Papa is engaged, mentioned as something they might disturb by playing piano.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"Salome\",\n      \"target\": \"Sheba\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Salome and Sheba are sisters.\",\n      \"evidence_quote\": \"They throw themselves into each other's arms. SALOME. Oh, Sheba! SHEBA. Salome!\",\n      \"source_chunk_id\": \"dd_act01_c0002\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Salome\",\n      \"target\": \"Papa\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Papa is the father of Salome and Sheba.\",\n      \"evidence_quote\": \"We must get dear Papa in a good humor and coax him to make us a present of money.\",\n      \"source_chunk_id\": \"dd_act01_c0002\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Sheba\",\n      \"target\": \"Papa\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Papa is the father of Salome and Sheba.\",\n      \"evidence_quote\": \"We must get dear Papa in a good humor and coax him to make us a present of money.\",\n      \"source_chunk_id\": \"dd_act01_c0002\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Major Tarver\",\n      \"target\": \"the fancy dresses\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Major Tarver promised to get the dresses made and initially offered to pay for them.\",\n      \"evidence_quote\": \"Major Tarver promised to get the dresses made in London, so I gave him our brown paper patterns to send to the costumier.\",\n      \"source_chunk_id\": \"dd_act01_c0002\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"Lewis Isaacs\",\n      \"target\": \"the account\",\n      \"relation\": \"AUTHORED_BY\",\n      \"description\": \"Lewis Isaacs sent the account for the dresses.\",\n      \"evidence_quote\": \"Debtor to Lewis Isaacs, Costumier to the Queen, Bow Street.\",\n      \"source_chunk_id\": \"dd_act01_c0002\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"the account\",\n      \"target\": \"the fancy dresses\",\n      \"relation\": \"CAUSES\",\n      \"description\": \"The account is for the fancy dresses.\",\n      \"evidence_quote\": \"You'd repent now if you had seen the account for the fancy dresses.\",\n      \"source_chunk_id\": \"dd_act01_c0002\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Salome\",\n      \"target\": \"the brown paper patterns\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Salome gave the brown paper patterns to Major Tarver.\",\n      \"evidence_quote\": \"I gave him our brown paper patterns to send to the costumier.\",\n      \"source_chunk_id\": \"dd_act01_c0002\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Sheba\",\n      \"target\": \"the brown paper patterns\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Sheba is also an owner of the brown paper patterns, as indicated by 'our'.\",\n      \"evidence_quote\": \"I gave him our brown paper patterns to send to the costumier.\",\n      \"source_chunk_id\": \"dd_act01_c0002\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Papa\",\n      \"target\": \"the Concordance\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Papa is working on the Concordance.\",\n      \"evidence_quote\": \"Then we must play the piano when he's at work on his Concordance--poor dear Papa!\",\n      \"source_chunk_id\": \"dd_act01_c0002\",\n      \"confidence\": 0.7\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674228,
+    "id": "fb184962-fa5f-4561-b9fc-dae0e57091f2",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1354,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 917,
+      "prompt_tokens": 1557,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2911
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 12.703108,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T05:57:08.506368+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1354,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 917,
+          "prompt_tokens": 1557,
+          "total_tokens": 2911
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1354,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 917,
+      "prompt_tokens": 1557,
+      "total_tokens": 2911
+    },
+    "total_elapsed_seconds": 12.703108
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A character in the play, sister of Sheba, who receives an account for fancy dresses.",
+        "name": "Salome",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character in the play, sister of Salome, who reacts to the dress account.",
+        "name": "Sheba",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A major who promised to get the dresses made in London and initially offered to pay for them.",
+        "name": "Major Tarver",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Costumier to the Queen, located in Bow Street, who sent the account for the dresses.",
+        "name": "Lewis Isaacs",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Father of Salome and Sheba, whom they plan to coax for money.",
+        "name": "Papa",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "The bill for the fancy dresses, totaling forty pounds nineteen.",
+        "name": "the account",
+        "type": "OBJECT"
+      },
+      {
+        "aliases": [],
+        "description": "Dresses ordered by Salome and Sheba, including a French Revolution gown and a flower girl outfit.",
+        "name": "the fancy dresses",
+        "type": "OBJECT"
+      },
+      {
+        "aliases": [],
+        "description": "Patterns given to Major Tarver to send to the costumier, later mislaid.",
+        "name": "the brown paper patterns",
+        "type": "OBJECT"
+      },
+      {
+        "aliases": [],
+        "description": "A work on which Papa is engaged, mentioned as something they might disturb by playing piano.",
+        "name": "the Concordance",
+        "type": "OBJECT"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Papa is the father of Salome and Sheba.",
+        "evidence_quote": "We must get dear Papa in a good humor and coax him to make us a present of money.",
+        "relation": "PARENT_OF",
+        "source": "Salome",
+        "source_chunk_id": "dd_act01_c0002",
+        "target": "Papa"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Papa is the father of Salome and Sheba.",
+        "evidence_quote": "We must get dear Papa in a good humor and coax him to make us a present of money.",
+        "relation": "PARENT_OF",
+        "source": "Sheba",
+        "source_chunk_id": "dd_act01_c0002",
+        "target": "Papa"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The account is for the fancy dresses.",
+        "evidence_quote": "You'd repent now if you had seen the account for the fancy dresses.",
+        "relation": "CAUSES",
+        "source": "the account",
+        "source_chunk_id": "dd_act01_c0002",
+        "target": "the fancy dresses"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Papa is working on the Concordance.",
+        "evidence_quote": "Then we must play the piano when he's at work on his Concordance--poor dear Papa!",
+        "relation": "OWNS",
+        "source": "Papa",
+        "source_chunk_id": "dd_act01_c0002",
+        "target": "the Concordance"
+      }
+    ]
+  },
+  "validation_warnings": [
+    "relation[0]_evidence_mismatch",
+    "relation[3]_evidence_mismatch",
+    "relation[4]_evidence_mismatch",
+    "relation[6]_evidence_mismatch",
+    "relation[7]_evidence_mismatch"
+  ]
+}

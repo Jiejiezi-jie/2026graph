@@ -1,0 +1,206 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act01_c0013",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "4b40cd63fd980a0e1dc561bbd0a875da90da31ce098a69c49ddc1748149a3f3c",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A bachelor who was jilted years ago and is in St. Marvells for the races.\",\n      \"aliases\": [\"Mardon\"]\n    },\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A widower of fifteen years, addressed as Jedd and Gus, who holds a position in St. Marvells.\",\n      \"aliases\": [\"Jedd\", \"Gus\"]\n    },\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse owned by Sir Tristram Mardon, entered in the Durnstone Handicap with nine stone two and Tom Gallawood up.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Bonny Betsy\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A bay mare mentioned as a competitor in the Durnstone Handicap.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Tom Gallawood\",\n      \"type\": \"PERSON\",\n      \"description\": \"The jockey riding Dandy Dick in the Durnstone Handicap.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"George Tidd\",\n      \"type\": \"PERSON\",\n      \"description\": \"Referred to as Georgiana Tidman, from whose stable Dandy Dick came after she smashed.\",\n      \"aliases\": [\"Georgiana Tidman\"]\n    },\n    {\n      \"name\": \"The Swan\",\n      \"type\": \"LOCATION\",\n      \"description\": \"An inn where Sir Tristram and his horse are staying, located over the way from the Deanery.\",\n      \"aliases\": [\"Swan Inn\"]\n    },\n    {\n      \"name\": \"Durnstone Handicap\",\n      \"type\": \"EVENT\",\n      \"description\": \"A horse race for which Sir Tristram has entered Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"St. Marvells\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The place where the Dean holds a position and where the races are taking place.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Sir Tristram owns the horse Dandy Dick.\",\n      \"evidence_quote\": \"Sir Tristram Mardon's Dandy Dick, nine stone two, Tom Gallawood up!\",\n      \"source_chunk_id\": \"dd_act01_c0013\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"Durnstone Handicap\",\n      \"relation\": \"PARTICIPATES_IN\",\n      \"description\": \"Dandy Dick is entered in the Durnstone Handicap.\",\n      \"evidence_quote\": \"Sir Tristram Mardon's Dandy Dick, nine stone two, Tom Gallawood up!\",\n      \"source_chunk_id\": \"dd_act01_c0013\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Tom Gallawood\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Tom Gallawood is the jockey riding Dandy Dick in the race.\",\n      \"evidence_quote\": \"Tom Gallawood up!\",\n      \"source_chunk_id\": \"dd_act01_c0013\",\n      \"confidence\": 0.85\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"The Swan\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Sir Tristram is staying at The Swan inn.\",\n      \"evidence_quote\": \"My horse and I are over the way at \\\"The Swan.\\\"\",\n      \"source_chunk_id\": \"dd_act01_c0013\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"The Swan\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Dandy Dick is staying at The Swan inn with Sir Tristram.\",\n      \"evidence_quote\": \"My horse and I are over the way at \\\"The Swan.\\\"\",\n      \"source_chunk_id\": \"dd_act01_c0013\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"George Tidd\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Dandy Dick came out of George Tidd's stable, implying previous ownership or management.\",\n      \"evidence_quote\": \"Dandy came out of her stable after she smashed.\",\n      \"source_chunk_id\": \"dd_act01_c0013\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"FRIEND_OF\",\n      \"description\": \"Sir Tristram and the Dean are old acquaintances, as indicated by their conversation.\",\n      \"evidence_quote\": \"I am of course heartily pleased to revive in this way our old acquaintance.\",\n      \"source_chunk_id\": \"dd_act01_c0013\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Dean holds a position in St. Marvells.\",\n      \"evidence_quote\": \"My position in St. Marvells----\",\n      \"source_chunk_id\": \"dd_act01_c0013\",\n      \"confidence\": 0.85\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674341,
+    "id": "eab00def-4f6c-462b-8f75-36530a353e3f",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1315,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 973,
+      "prompt_tokens": 1613,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2928
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 12.411169,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T05:59:01.250353+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1315,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 973,
+          "prompt_tokens": 1613,
+          "total_tokens": 2928
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1315,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 973,
+      "prompt_tokens": 1613,
+      "total_tokens": 2928
+    },
+    "total_elapsed_seconds": 12.411169
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [
+          "Mardon"
+        ],
+        "description": "A bachelor who was jilted years ago and is in St. Marvells for the races.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Jedd",
+          "Gus"
+        ],
+        "description": "A widower of fifteen years, addressed as Jedd and Gus, who holds a position in St. Marvells.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A horse owned by Sir Tristram Mardon, entered in the Durnstone Handicap with nine stone two and Tom Gallawood up.",
+        "name": "Dandy Dick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "A bay mare mentioned as a competitor in the Durnstone Handicap.",
+        "name": "Bonny Betsy",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "The jockey riding Dandy Dick in the Durnstone Handicap.",
+        "name": "Tom Gallawood",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [
+          "Georgiana Tidman"
+        ],
+        "description": "Referred to as Georgiana Tidman, from whose stable Dandy Dick came after she smashed.",
+        "name": "George Tidd",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [
+          "Swan Inn"
+        ],
+        "description": "An inn where Sir Tristram and his horse are staying, located over the way from the Deanery.",
+        "name": "The Swan",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A horse race for which Sir Tristram has entered Dandy Dick.",
+        "name": "Durnstone Handicap",
+        "type": "EVENT"
+      },
+      {
+        "aliases": [],
+        "description": "The place where the Dean holds a position and where the races are taking place.",
+        "name": "St. Marvells",
+        "type": "LOCATION"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "Sir Tristram owns the horse Dandy Dick.",
+        "evidence_quote": "Sir Tristram Mardon's Dandy Dick, nine stone two, Tom Gallawood up!",
+        "relation": "OWNS",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act01_c0013",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Dandy Dick is entered in the Durnstone Handicap.",
+        "evidence_quote": "Sir Tristram Mardon's Dandy Dick, nine stone two, Tom Gallawood up!",
+        "relation": "PARTICIPATES_IN",
+        "source": "Dandy Dick",
+        "source_chunk_id": "dd_act01_c0013",
+        "target": "Durnstone Handicap"
+      },
+      {
+        "confidence": 0.85,
+        "description": "Tom Gallawood is the jockey riding Dandy Dick in the race.",
+        "evidence_quote": "Tom Gallawood up!",
+        "relation": "INTERACTS_WITH",
+        "source": "Tom Gallawood",
+        "source_chunk_id": "dd_act01_c0013",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Sir Tristram is staying at The Swan inn.",
+        "evidence_quote": "My horse and I are over the way at \"The Swan.\"",
+        "relation": "LOCATED_AT",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act01_c0013",
+        "target": "The Swan"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Dandy Dick is staying at The Swan inn with Sir Tristram.",
+        "evidence_quote": "My horse and I are over the way at \"The Swan.\"",
+        "relation": "LOCATED_AT",
+        "source": "Dandy Dick",
+        "source_chunk_id": "dd_act01_c0013",
+        "target": "The Swan"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Dandy Dick came out of George Tidd's stable, implying previous ownership or management.",
+        "evidence_quote": "Dandy came out of her stable after she smashed.",
+        "relation": "OWNS",
+        "source": "George Tidd",
+        "source_chunk_id": "dd_act01_c0013",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Sir Tristram and the Dean are old acquaintances, as indicated by their conversation.",
+        "evidence_quote": "I am of course heartily pleased to revive in this way our old acquaintance.",
+        "relation": "FRIEND_OF",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act01_c0013",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.85,
+        "description": "The Dean holds a position in St. Marvells.",
+        "evidence_quote": "My position in St. Marvells----",
+        "relation": "LOCATED_AT",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0013",
+        "target": "St. Marvells"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

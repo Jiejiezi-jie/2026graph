@@ -1,0 +1,184 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act02_c0012",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "0795cf5a58225337adfae2eec1561e5d284b4d66ff7179e0939d569d9ff14ec8",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play who is upset and plans to administer a bolus to a horse in his stable.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"BLORE\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play who is leaving in a month and assists the Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse in the Dean's stable that the Dean plans to treat with a bolus.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"The Horse and its Ailments\",\n      \"type\": \"CREATIVE_WORK\",\n      \"description\": \"A book by John Cox, M.R.C.V.S., which the Dean uses to find a remedy for chills.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"John Cox\",\n      \"type\": \"PERSON\",\n      \"description\": \"Author of 'The Horse and its Ailments', with credentials M.R.C.V.S.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Bolus\",\n      \"type\": \"OBJECT\",\n      \"description\": \"A simple remedy for chills mentioned in the book.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Deanery\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The place where the Dean lives and where the stable is located.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Spire\",\n      \"type\": \"OBJECT\",\n      \"description\": \"An object that may be richer by five hundred pounds if the Dean does not call Blore back.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"The Dean refers to Dandy Dick as 'the helpless beast in my stable'.\",\n      \"evidence_quote\": \"The helpless beast in my stable is suffering from a chill.\",\n      \"source_chunk_id\": \"dd_act02_c0012\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"the Bolus\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"The Dean plans to administer the Bolus to Dandy Dick.\",\n      \"evidence_quote\": \"surely it would be advisable to administer this Bolus to the poor animal without delay.\",\n      \"source_chunk_id\": \"dd_act02_c0012\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"The Horse and its Ailments\",\n      \"relation\": \"OWNS\",\n      \"description\": \"The Dean takes the book from the bookshelf and uses it.\",\n      \"evidence_quote\": \"Snatches a book at haphazard from the bookshelf.\",\n      \"source_chunk_id\": \"dd_act02_c0012\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"The Horse and its Ailments\",\n      \"target\": \"John Cox\",\n      \"relation\": \"AUTHORED_BY\",\n      \"description\": \"The book is authored by John Cox, M.R.C.V.S.\",\n      \"evidence_quote\": \"\\\"The Horse and its Ailments, by John Cox, M. R. C. V. S.\\\"\",\n      \"source_chunk_id\": \"dd_act02_c0012\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"BLORE\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"The Dean tells Blore he leaves this day month, implying Blore is employed by the Dean.\",\n      \"evidence_quote\": \"Of course you leave this day month.\",\n      \"source_chunk_id\": \"dd_act02_c0012\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"the Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Dean lives at the Deanery and has a stable there.\",\n      \"evidence_quote\": \"ministering to any guest in the Deanery.\",\n      \"source_chunk_id\": \"dd_act02_c0012\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"the Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Dandy Dick is in the Dean's stable at the Deanery.\",\n      \"evidence_quote\": \"the helpless beast in my stable\",\n      \"source_chunk_id\": \"dd_act02_c0012\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"the Spire\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"The Dean considers that if he does not call Blore back, the Spire may be richer by five hundred pounds.\",\n      \"evidence_quote\": \"If I don't call him back the Spire may be richer to-morrow by five hundred pounds.\",\n      \"source_chunk_id\": \"dd_act02_c0012\",\n      \"confidence\": 0.6\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674549,
+    "id": "770a1957-528f-4255-88e8-c6a309c932c8",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1227,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 872,
+      "prompt_tokens": 1512,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2739
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 11.275857,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:02:29.646903+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1227,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 872,
+          "prompt_tokens": 1512,
+          "total_tokens": 2739
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1227,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 872,
+      "prompt_tokens": 1512,
+      "total_tokens": 2739
+    },
+    "total_elapsed_seconds": 11.275857
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A character in the play who is upset and plans to administer a bolus to a horse in his stable.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character in the play who is leaving in a month and assists the Dean.",
+        "name": "BLORE",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A horse in the Dean's stable that the Dean plans to treat with a bolus.",
+        "name": "Dandy Dick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "A book by John Cox, M.R.C.V.S., which the Dean uses to find a remedy for chills.",
+        "name": "The Horse and its Ailments",
+        "type": "CREATIVE_WORK"
+      },
+      {
+        "aliases": [],
+        "description": "Author of 'The Horse and its Ailments', with credentials M.R.C.V.S.",
+        "name": "John Cox",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "A simple remedy for chills mentioned in the book.",
+        "name": "the Bolus",
+        "type": "OBJECT"
+      },
+      {
+        "aliases": [],
+        "description": "The place where the Dean lives and where the stable is located.",
+        "name": "the Deanery",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "An object that may be richer by five hundred pounds if the Dean does not call Blore back.",
+        "name": "the Spire",
+        "type": "OBJECT"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "The Dean refers to Dandy Dick as 'the helpless beast in my stable'.",
+        "evidence_quote": "The helpless beast in my stable is suffering from a chill.",
+        "relation": "OWNS",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0012",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean plans to administer the Bolus to Dandy Dick.",
+        "evidence_quote": "surely it would be advisable to administer this Bolus to the poor animal without delay.",
+        "relation": "INTERACTS_WITH",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0012",
+        "target": "the Bolus"
+      },
+      {
+        "confidence": 0.8,
+        "description": "The Dean takes the book from the bookshelf and uses it.",
+        "evidence_quote": "Snatches a book at haphazard from the bookshelf.",
+        "relation": "OWNS",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0012",
+        "target": "The Horse and its Ailments"
+      },
+      {
+        "confidence": 1.0,
+        "description": "The book is authored by John Cox, M.R.C.V.S.",
+        "evidence_quote": "\"The Horse and its Ailments, by John Cox, M. R. C. V. S.\"",
+        "relation": "AUTHORED_BY",
+        "source": "The Horse and its Ailments",
+        "source_chunk_id": "dd_act02_c0012",
+        "target": "John Cox"
+      },
+      {
+        "confidence": 0.7,
+        "description": "The Dean tells Blore he leaves this day month, implying Blore is employed by the Dean.",
+        "evidence_quote": "Of course you leave this day month.",
+        "relation": "EMPLOYED_BY",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0012",
+        "target": "BLORE"
+      },
+      {
+        "confidence": 0.8,
+        "description": "The Dean lives at the Deanery and has a stable there.",
+        "evidence_quote": "ministering to any guest in the Deanery.",
+        "relation": "LOCATED_AT",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0012",
+        "target": "the Deanery"
+      },
+      {
+        "confidence": 0.6,
+        "description": "The Dean considers that if he does not call Blore back, the Spire may be richer by five hundred pounds.",
+        "evidence_quote": "If I don't call him back the Spire may be richer to-morrow by five hundred pounds.",
+        "relation": "INTERACTS_WITH",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0012",
+        "target": "the Spire"
+      }
+    ]
+  },
+  "validation_warnings": [
+    "relation[6]_evidence_mismatch"
+  ]
+}

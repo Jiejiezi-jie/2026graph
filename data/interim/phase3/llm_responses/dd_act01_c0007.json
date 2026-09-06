@@ -1,0 +1,119 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act01_c0007",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "7dba4064afdb4ece7d20ea9e66139e7c94fc5ce2adcb5e767a44d288135f3c26",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Daughter of the Dean, sister of Salome.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Father of Sheba and Salome, concerned about bills.\",\n      \"aliases\": [\"Papa\", \"Papsey\"]\n    },\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Daughter of the Dean, sister of Sheba.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is the father of Sheba.\",\n      \"evidence_quote\": \"Papa's alone!\",\n      \"source_chunk_id\": \"dd_act01_c0007\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"SALOME\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is the father of Salome.\",\n      \"evidence_quote\": \"Papa's alone!\",\n      \"source_chunk_id\": \"dd_act01_c0007\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SHEBA\",\n      \"target\": \"SALOME\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Sheba and Salome are sisters.\",\n      \"evidence_quote\": \"They link their hands together and walk as if going out through the Library.\",\n      \"source_chunk_id\": \"dd_act01_c0007\",\n      \"confidence\": 0.8\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674283,
+    "id": "8a65cce9-1a32-4646-bad1-1e545d0e83c0",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 423,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 893,
+      "prompt_tokens": 1533,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 1956
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 4.216831,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T05:58:02.814344+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 423,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 893,
+          "prompt_tokens": 1533,
+          "total_tokens": 1956
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 423,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 893,
+      "prompt_tokens": 1533,
+      "total_tokens": 1956
+    },
+    "total_elapsed_seconds": 4.216831
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "Daughter of the Dean, sister of Salome.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Papa",
+          "Papsey"
+        ],
+        "description": "Father of Sheba and Salome, concerned about bills.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Daughter of the Dean, sister of Sheba.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "The Dean is the father of Sheba.",
+        "evidence_quote": "Papa's alone!",
+        "relation": "PARENT_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0007",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean is the father of Salome.",
+        "evidence_quote": "Papa's alone!",
+        "relation": "PARENT_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act01_c0007",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Sheba and Salome are sisters.",
+        "evidence_quote": "They link their hands together and walk as if going out through the Library.",
+        "relation": "SIBLING_OF",
+        "source": "SHEBA",
+        "source_chunk_id": "dd_act01_c0007",
+        "target": "SALOME"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

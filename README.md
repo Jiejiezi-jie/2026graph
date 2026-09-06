@@ -44,6 +44,59 @@ python -m unittest tests.test_clean_and_chunk -v
 [`reports/phase2_cleaning_and_chunking.md`](reports/phase2_cleaning_and_chunking.md)。
 本阶段不读取问题、答案或证据，也不调用 LLM/Embedding、建图或检索。
 
+## Novel 共享知识图谱阶段
+
+阶段 3 只读取 `data/processed/phase2/chunks.jsonl` 的 62 个正文切块。每个
+chunk 独立调用 OpenAI 兼容接口抽取实体和关系，原始响应按 chunk 缓存；随后
+完成可审计别名归一化、原文引文校验、重复逻辑边合并，并输出 NetworkX
+`MultiDiGraph` 的 JSON 与 GraphML 版本。本阶段不读取问题、答案或监督证据，
+也不实现任何检索器。
+
+在线首次抽取需要通过环境变量提供接口配置；密钥不会写入项目：
+
+```bash
+export LLM_API_KEY='...'
+export LLM_BASE_URL='https://api.deepseek.com'
+export LLM_MODEL='deepseek-v4-pro'
+python scripts/extract_knowledge_graph.py
+```
+
+62 个有效缓存齐全后可完全离线、确定性地重建：
+
+```bash
+python scripts/extract_knowledge_graph.py --offline
+python -m unittest tests.test_knowledge_graph -v
+```
+
+正式图谱位于 `data/processed/phase3/`，抽取缓存位于
+`data/interim/phase3/llm_responses/`，完整统计、人工抽查和数据泄漏声明见
+[`reports/phase3_knowledge_graph.md`](reports/phase3_knowledge_graph.md)。
+
+## Novel 共享检索器阶段
+
+阶段 4 在同一批 62 个 phase2 Chunk 和同一张 phase3 图谱上实现纯向量、
+一跳邻域和最多三跳路径检索。两种图检索分别是 LightRAG Local 与 PathRAG
+风格的课程简化实现，不是上游项目的完整复现；三者共享最多 5 个 Chunk 的证据
+预算，图检索失败时不回退到向量检索。
+
+服务器已有环境可直接复用。实现通过 Transformers + PyTorch 加载固定 revision
+的 `BAAI/bge-small-en-v1.5`，使用 NumPy 余弦排序和 NetworkX 图搜索，不需要另行
+安装 FAISS 或带 CUDA 依赖的 sentence-transformers：
+
+```bash
+/home/user/.miniforge3/envs/qwen_saliency/bin/python \
+  scripts/build_retrieval_indices.py
+/home/user/.miniforge3/envs/qwen_saliency/bin/python \
+  scripts/run_retrieval_diagnostics.py
+/home/user/.miniforge3/envs/qwen_saliency/bin/python \
+  -m unittest tests.test_retrievers -v
+```
+
+逐题结果、覆盖率诊断和清单位于 `data/processed/phase4/`，索引位于
+`data/interim/phase4/`，实现与风险说明见
+[`reports/phase4_retrievers.md`](reports/phase4_retrievers.md)。本阶段不生成答案、
+不评价答案正确率，也不训练路由分类器。
+
 本项目把 Adaptive-RAG 的核心协议迁移到三个异构检索后端：
 
 1. `vector`：直接文本向量检索；

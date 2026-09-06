@@ -1,0 +1,98 @@
+{
+  "answer_generation_performed": false,
+  "config_file": "configs/retrieval_config.json",
+  "config_sha256": "920a48d3b658b8060c6ec34cec67cc91c0515273565bc5bf59023feb41105307",
+  "diagnostics_structural_sha256": "334ab031ff88b1c8fdefe1ed51d9c4f4d01cb11015d43b69e90d0e676072be93",
+  "embedding": {
+    "device": "cpu",
+    "document_prefix": "",
+    "max_length": 512,
+    "model_name": "BAAI/bge-small-en-v1.5",
+    "model_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "networkx_version": "3.6.1",
+    "normalize": true,
+    "numpy_version": "2.4.4",
+    "pooling": "cls",
+    "query_prefix": "Represent this sentence for searching relevant passages: ",
+    "torch_version": "2.6.0+cu124",
+    "transformers_version": "5.13.0.dev0",
+    "vector_dimension": 384,
+    "weights_file": "model.safetensors",
+    "weights_sha256": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad"
+  },
+  "forbidden_supervision_fields_written": [],
+  "generative_llm_calls": 0,
+  "implementation_boundary": "course simplification inspired by LightRAG Local and PathRAG; not a complete reproduction",
+  "index_files": {
+    "chunk_embeddings": {
+      "path": "data/interim/phase4/chunk_embeddings.npy",
+      "sha256": "df1ed9dcd42e5f9446a3de91ab54493bb50f927d4f39f75986d7dd913c9b5ff1"
+    },
+    "entity_embeddings": {
+      "path": "data/interim/phase4/entity_embeddings.npy",
+      "sha256": "dbf8c5d9fe63969189369f6cdc4151ad167f0670ffcde7b8bf2d25ce0e09f1e3"
+    }
+  },
+  "index_metadata_file": "data/interim/phase4/index_metadata.json",
+  "index_metadata_sha256": "cd908118d2d9d8eb1fc1f34aa904f998e256e087cc4e667a77e98ea57ab9e871",
+  "inputs": {
+    "chunk_entity_map": {
+      "path": "data/processed/phase3/chunk_entity_map.json",
+      "sha256": "d17d6d17ffac7af8115957f8c82fafea084f0a9cee5f2cd829bc1e98aa0edb26"
+    },
+    "chunks": {
+      "path": "data/processed/phase2/chunks.jsonl",
+      "sha256": "a081ba0f863a37e71fae17a8c7b42f2aa46019e8d62ca1d98e818e4988811427"
+    },
+    "edges": {
+      "path": "data/processed/phase3/edges.jsonl",
+      "sha256": "8de3b1eb6cb0c8961b3f2feceebbe5408855c8aa0a1a25bc21c43f94c82fd0c4"
+    },
+    "nodes": {
+      "path": "data/processed/phase3/nodes.jsonl",
+      "sha256": "9090f88d9f830532d3f181d7fc6ac41f2e930152df739db2629571d665d63137"
+    },
+    "train_questions": {
+      "path": "data/processed/phase1/train_questions.jsonl",
+      "sha256": "84b25f68b6658c11c92af381f684e14efb09444d28e34475671bcf468c697332"
+    }
+  },
+  "question_count": 62,
+  "question_type_counts": {
+    "Complex Reasoning": 28,
+    "Fact Retrieval": 34
+  },
+  "random_seed": 42,
+  "result_count": 186,
+  "result_structural_sha256": "4e4d66be4b4bd3cbf18b4519e50bf3137d77fa6c7bb68269f78e0392ed50bc5e",
+  "retrieval_parameters": {
+    "entity_similarity_threshold": 0.55,
+    "excluded_path_relations": [
+      "AUTHORED_BY",
+      "PORTRAYED_BY"
+    ],
+    "max_path_hops": 3,
+    "max_paths_per_pair": 3,
+    "max_seed_entities": 4,
+    "neighborhood_hops": 1,
+    "neighborhood_scoring": {
+      "chunk_similarity_weight": 0.4,
+      "entity_weight": 0.6,
+      "hop_decay": 0.85
+    },
+    "path_scoring": {
+      "chunk_similarity_weight": 0.35,
+      "endpoint_weight": 0.45,
+      "length_weight": 0.2
+    },
+    "top_k_chunks": 5
+  },
+  "retriever_result_counts": {
+    "neighborhood": 62,
+    "path": 62,
+    "vector": 62
+  },
+  "schema_version": "phase4-v1",
+  "scope": "coverage-only shared-data retrieval diagnostics",
+  "vector_fallback_for_graph_retrievers": false
+}

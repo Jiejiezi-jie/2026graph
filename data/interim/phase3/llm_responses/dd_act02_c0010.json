@@ -1,0 +1,197 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act02_c0010",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "a929e02b42c653ac8a94e56e02059804d3ea2d47f0329843efe557c2acda9943",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"Georgiana\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"The Dean's sister, who urges him to bet on a horse and mentions Blore's familiarity with racecourses.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"The Dean\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A clergyman who is horrified by Georgiana's proposal and concerned about the state of the Deanery.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Blore\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"The Dean's butler, who is revealed to have been at St. Marvells Races and invests servants' savings.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"St. Marvells Races\",\n      \"type\": \"EVENT\",\n      \"description\": \"A race meeting where Blore was seen by Georgiana last summer.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Tattersall's Ring\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A place at the racecourse where Blore was at home.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"The Deanery\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The residence of the Dean, where the scene takes place.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"The Spire\",\n      \"type\": \"OBJECT\",\n      \"description\": \"A structure that the Dean refers to as his principal creditor.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"George Tidd\",\n      \"type\": \"PERSON\",\n      \"description\": \"The name to be put on a hamper label, as instructed by Georgiana.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Heidsieck\",\n      \"type\": \"OBJECT\",\n      \"description\": \"A brand of champagne to be included in the hamper.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"Georgiana\",\n      \"target\": \"The Dean\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Georgiana is the Dean's sister.\",\n      \"evidence_quote\": \"my own widowed sister\",\n      \"source_chunk_id\": \"dd_act02_c0010\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"Blore\",\n      \"target\": \"The Dean\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Blore is the Dean's butler.\",\n      \"evidence_quote\": \"What was my butler doing at St. Marvells Races?\",\n      \"source_chunk_id\": \"dd_act02_c0010\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"Blore\",\n      \"target\": \"St. Marvells Races\",\n      \"relation\": \"PARTICIPATES_IN\",\n      \"description\": \"Blore attended St. Marvells Races.\",\n      \"evidence_quote\": \"He was quite at home in Tattersall's Ring when I was at St. Marvells last summer.\",\n      \"source_chunk_id\": \"dd_act02_c0010\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Blore\",\n      \"target\": \"Tattersall's Ring\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Blore was at home in Tattersall's Ring.\",\n      \"evidence_quote\": \"He was quite at home in Tattersall's Ring\",\n      \"source_chunk_id\": \"dd_act02_c0010\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"The Dean\",\n      \"target\": \"The Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Dean is at the Deanery.\",\n      \"evidence_quote\": \"What dreadful wave threatens to engulf the Deanery?\",\n      \"source_chunk_id\": \"dd_act02_c0010\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"The Dean\",\n      \"target\": \"The Spire\",\n      \"relation\": \"OWNS\",\n      \"description\": \"The Dean refers to the Spire as his principal creditor, implying ownership or responsibility.\",\n      \"evidence_quote\": \"The Spire! My principal creditor!\",\n      \"source_chunk_id\": \"dd_act02_c0010\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"Georgiana\",\n      \"target\": \"George Tidd\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Georgiana instructs Blore to label a hamper with the name George Tidd.\",\n      \"evidence_quote\": \"label it \\\"George Tidd,\\\"\",\n      \"source_chunk_id\": \"dd_act02_c0010\",\n      \"confidence\": 0.6\n    },\n    {\n      \"source\": \"Georgiana\",\n      \"target\": \"Heidsieck\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Georgiana orders two bottles of Heidsieck to be packed.\",\n      \"evidence_quote\": \"two bottles of Heidsieck\",\n      \"source_chunk_id\": \"dd_act02_c0010\",\n      \"confidence\": 0.6\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674524,
+    "id": "a3eee2d7-b863-4273-bc31-ad2eb760d63c",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1202,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 949,
+      "prompt_tokens": 1589,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2791
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 11.125458,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:02:04.801233+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1202,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 949,
+          "prompt_tokens": 1589,
+          "total_tokens": 2791
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1202,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 949,
+      "prompt_tokens": 1589,
+      "total_tokens": 2791
+    },
+    "total_elapsed_seconds": 11.125458
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "The Dean's sister, who urges him to bet on a horse and mentions Blore's familiarity with racecourses.",
+        "name": "Georgiana",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A clergyman who is horrified by Georgiana's proposal and concerned about the state of the Deanery.",
+        "name": "The Dean",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "The Dean's butler, who is revealed to have been at St. Marvells Races and invests servants' savings.",
+        "name": "Blore",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A race meeting where Blore was seen by Georgiana last summer.",
+        "name": "St. Marvells Races",
+        "type": "EVENT"
+      },
+      {
+        "aliases": [],
+        "description": "A place at the racecourse where Blore was at home.",
+        "name": "Tattersall's Ring",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "The residence of the Dean, where the scene takes place.",
+        "name": "The Deanery",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A structure that the Dean refers to as his principal creditor.",
+        "name": "The Spire",
+        "type": "OBJECT"
+      },
+      {
+        "aliases": [],
+        "description": "The name to be put on a hamper label, as instructed by Georgiana.",
+        "name": "George Tidd",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "A brand of champagne to be included in the hamper.",
+        "name": "Heidsieck",
+        "type": "OBJECT"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "Georgiana is the Dean's sister.",
+        "evidence_quote": "my own widowed sister",
+        "relation": "SIBLING_OF",
+        "source": "Georgiana",
+        "source_chunk_id": "dd_act02_c0010",
+        "target": "The Dean"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Blore is the Dean's butler.",
+        "evidence_quote": "What was my butler doing at St. Marvells Races?",
+        "relation": "EMPLOYED_BY",
+        "source": "Blore",
+        "source_chunk_id": "dd_act02_c0010",
+        "target": "The Dean"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Blore attended St. Marvells Races.",
+        "evidence_quote": "He was quite at home in Tattersall's Ring when I was at St. Marvells last summer.",
+        "relation": "PARTICIPATES_IN",
+        "source": "Blore",
+        "source_chunk_id": "dd_act02_c0010",
+        "target": "St. Marvells Races"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Blore was at home in Tattersall's Ring.",
+        "evidence_quote": "He was quite at home in Tattersall's Ring",
+        "relation": "LOCATED_AT",
+        "source": "Blore",
+        "source_chunk_id": "dd_act02_c0010",
+        "target": "Tattersall's Ring"
+      },
+      {
+        "confidence": 0.8,
+        "description": "The Dean is at the Deanery.",
+        "evidence_quote": "What dreadful wave threatens to engulf the Deanery?",
+        "relation": "LOCATED_AT",
+        "source": "The Dean",
+        "source_chunk_id": "dd_act02_c0010",
+        "target": "The Deanery"
+      },
+      {
+        "confidence": 0.7,
+        "description": "The Dean refers to the Spire as his principal creditor, implying ownership or responsibility.",
+        "evidence_quote": "The Spire! My principal creditor!",
+        "relation": "OWNS",
+        "source": "The Dean",
+        "source_chunk_id": "dd_act02_c0010",
+        "target": "The Spire"
+      },
+      {
+        "confidence": 0.6,
+        "description": "Georgiana instructs Blore to label a hamper with the name George Tidd.",
+        "evidence_quote": "label it \"George Tidd,\"",
+        "relation": "INTERACTS_WITH",
+        "source": "Georgiana",
+        "source_chunk_id": "dd_act02_c0010",
+        "target": "George Tidd"
+      },
+      {
+        "confidence": 0.6,
+        "description": "Georgiana orders two bottles of Heidsieck to be packed.",
+        "evidence_quote": "two bottles of Heidsieck",
+        "relation": "OWNS",
+        "source": "Georgiana",
+        "source_chunk_id": "dd_act02_c0010",
+        "target": "Heidsieck"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

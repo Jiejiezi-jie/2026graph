@@ -1,0 +1,140 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act02_c0014",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "70dc3b55e895e5c8623a6f1a03cf63fc55d0974702d50904140a64a6c8677416",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"BLORE\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A servant who empties a packet of strychnine into a basin and stirs it, saying he has cooked Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who takes the basin and goes to the stable, wearing Sir Tristram's coat and cap.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who enters quietly, smoking and carrying a lighted candle, and later encounters Georgiana.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who enters pale and agitated, carrying an umbrella and a lighted candle, and says she has been dreaming.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse that Blore says he has cooked.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"strychnine\",\n      \"type\": \"OBJECT\",\n      \"description\": \"A substance that Blore empties into a basin.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the stable\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A small stable where the Dean is going to attend to the animal.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"CAUSES\",\n      \"description\": \"Blore empties strychnine into a basin and stirs it, saying he has cooked Dandy Dick.\",\n      \"evidence_quote\": \"I've cooked Dandy Dick! I've cooked Dandy Dick!\",\n      \"source_chunk_id\": \"dd_act02_c0014\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"the stable\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Dean goes through the window curtains, presumably to the stable.\",\n      \"evidence_quote\": \"The thunder rolls as he goes through the window curtains.\",\n      \"source_chunk_id\": \"dd_act02_c0014\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"GEORGIANA\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Sir Tristram encounters Georgiana, who shrieks and then recognizes him.\",\n      \"evidence_quote\": \"GEORGIANA. [_Shrieks with fright._] Ah! SIR TRISTRAM. Hush! GEORGIANA. [_Holding out her umbrella._] Stand where you are or I'll fire! [_Recognizing SIR TRISTRAM._] Tris!\",\n      \"source_chunk_id\": \"dd_act02_c0014\",\n      \"confidence\": 0.8\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674569,
+    "id": "918ddcab-0a1c-4c78-89a8-ecefb51e6af1",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 725,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 978,
+      "prompt_tokens": 1618,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2343
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 7.635549,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:02:48.807467+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 725,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 978,
+          "prompt_tokens": 1618,
+          "total_tokens": 2343
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 725,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 978,
+      "prompt_tokens": 1618,
+      "total_tokens": 2343
+    },
+    "total_elapsed_seconds": 7.635549
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A servant who empties a packet of strychnine into a basin and stirs it, saying he has cooked Dandy Dick.",
+        "name": "BLORE",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who takes the basin and goes to the stable, wearing Sir Tristram's coat and cap.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who enters quietly, smoking and carrying a lighted candle, and later encounters Georgiana.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who enters pale and agitated, carrying an umbrella and a lighted candle, and says she has been dreaming.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A horse that Blore says he has cooked.",
+        "name": "Dandy Dick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "A substance that Blore empties into a basin.",
+        "name": "strychnine",
+        "type": "OBJECT"
+      },
+      {
+        "aliases": [],
+        "description": "A small stable where the Dean is going to attend to the animal.",
+        "name": "the stable",
+        "type": "LOCATION"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Blore empties strychnine into a basin and stirs it, saying he has cooked Dandy Dick.",
+        "evidence_quote": "I've cooked Dandy Dick! I've cooked Dandy Dick!",
+        "relation": "CAUSES",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act02_c0014",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.7,
+        "description": "The Dean goes through the window curtains, presumably to the stable.",
+        "evidence_quote": "The thunder rolls as he goes through the window curtains.",
+        "relation": "LOCATED_AT",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0014",
+        "target": "the stable"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Sir Tristram encounters Georgiana, who shrieks and then recognizes him.",
+        "evidence_quote": "GEORGIANA. [_Shrieks with fright._] Ah! SIR TRISTRAM. Hush! GEORGIANA. [_Holding out her umbrella._] Stand where you are or I'll fire! [_Recognizing SIR TRISTRAM._] Tris!",
+        "relation": "INTERACTS_WITH",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act02_c0014",
+        "target": "GEORGIANA"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

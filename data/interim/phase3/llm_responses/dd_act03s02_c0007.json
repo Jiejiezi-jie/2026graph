@@ -1,0 +1,250 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act03s02_c0007",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "6309c8d1481ed08051eb9c65ee6de71f1ae82b70a9d24a0275e3754248edba57",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Father of Salome and Sheba, brother of Georgiana, and owner of one-half of Dandy Dick.\",\n      \"aliases\": [\"Jedd\"]\n    },\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Daughter of the Dean, sister of Sheba, and niece of Georgiana.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Daughter of the Dean, sister of Salome, and niece of Georgiana.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Friend and future relative of the Dean, and owner of one-half of Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Sister of the Dean, aunt of Salome and Sheba, and owner of the other half of Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"Racehorse owned jointly by the Dean, Sir Tristram, and Georgiana.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Races\",\n      \"type\": \"EVENT\",\n      \"description\": \"Event where Salome and Sheba won fifty pounds.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"SALOME\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is the father of Salome.\",\n      \"evidence_quote\": \"Which of my hitherto trusted daughters was a lady--no, I will say a person--of the period of the French Revolution? [_SHEBA points to SALOME._\",\n      \"source_chunk_id\": \"dd_act03s02_c0007\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is the father of Sheba.\",\n      \"evidence_quote\": \"Which of my hitherto trusted daughters was a lady--no, I will say a person--of the period of the French Revolution? [_SHEBA points to SALOME._\",\n      \"source_chunk_id\": \"dd_act03s02_c0007\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Salome and Sheba are sisters.\",\n      \"evidence_quote\": \"Which of my hitherto trusted daughters was a lady--no, I will say a person--of the period of the French Revolution? [_SHEBA points to SALOME._\",\n      \"source_chunk_id\": \"dd_act03s02_c0007\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"GEORGIANA\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"The Dean and Georgiana are siblings.\",\n      \"evidence_quote\": \"THE DEAN. [_Looking at GEORGIANA._] My sister!\",\n      \"source_chunk_id\": \"dd_act03s02_c0007\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"SALOME\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Georgiana is the aunt of Salome.\",\n      \"evidence_quote\": \"Through the kindness of our Aunt----\",\n      \"source_chunk_id\": \"dd_act03s02_c0007\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Georgiana is the aunt of Sheba.\",\n      \"evidence_quote\": \"Through the kindness of our Aunt----\",\n      \"source_chunk_id\": \"dd_act03s02_c0007\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"The Dean owns one-half of Dandy Dick.\",\n      \"evidence_quote\": \"As the owner of one-half of Dandy Dick, I denounce you!\",\n      \"source_chunk_id\": \"dd_act03s02_c0007\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Sir Tristram owns one-half of Dandy Dick.\",\n      \"evidence_quote\": \"As the owner of one-half of Dandy Dick, I denounce you!\",\n      \"source_chunk_id\": \"dd_act03s02_c0007\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Georgiana owns the other half of Dandy Dick.\",\n      \"evidence_quote\": \"As the owner of the other half, _I_ denounce you!\",\n      \"source_chunk_id\": \"dd_act03s02_c0007\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"the Races\",\n      \"relation\": \"PARTICIPATES_IN\",\n      \"description\": \"Salome participated in the Races and won fifty pounds.\",\n      \"evidence_quote\": \"We have won fifty pounds. THE DEAN. What! SHEBA. At the Races!\",\n      \"source_chunk_id\": \"dd_act03s02_c0007\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SHEBA\",\n      \"target\": \"the Races\",\n      \"relation\": \"PARTICIPATES_IN\",\n      \"description\": \"Sheba participated in the Races and won fifty pounds.\",\n      \"evidence_quote\": \"We have won fifty pounds. THE DEAN. What! SHEBA. At the Races!\",\n      \"source_chunk_id\": \"dd_act03s02_c0007\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"FRIEND_OF\",\n      \"description\": \"Sir Tristram was once a friend of the Dean.\",\n      \"evidence_quote\": \"Jedd, you were once my friend, and you are to be my relative.\",\n      \"source_chunk_id\": \"dd_act03s02_c0007\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"MARRIED_TO\",\n      \"description\": \"Sir Tristram is to become a relative of the Dean, implying a future marriage to Georgiana.\",\n      \"evidence_quote\": \"Jedd, you were once my friend, and you are to be my relative.\",\n      \"source_chunk_id\": \"dd_act03s02_c0007\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"OPPOSES\",\n      \"description\": \"Sir Tristram denounces the Dean as a conspirator.\",\n      \"evidence_quote\": \"But not even our approaching family tie prevents my designating you as one of the most atrocious conspirators known in the history of the Turf.\",\n      \"source_chunk_id\": \"dd_act03s02_c0007\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"OPPOSES\",\n      \"description\": \"Georgiana denounces the Dean as a conspirator.\",\n      \"evidence_quote\": \"As the owner of the other half, _I_ denounce you!\",\n      \"source_chunk_id\": \"dd_act03s02_c0007\",\n      \"confidence\": 0.9\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674836,
+    "id": "f3d30815-93ba-483b-8db6-a26fcb4d6b44",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1937,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 945,
+      "prompt_tokens": 1585,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 3522
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 15.418342,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:07:16.102887+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1937,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 945,
+          "prompt_tokens": 1585,
+          "total_tokens": 3522
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1937,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 945,
+      "prompt_tokens": 1585,
+      "total_tokens": 3522
+    },
+    "total_elapsed_seconds": 15.418342
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [
+          "Jedd"
+        ],
+        "description": "Father of Salome and Sheba, brother of Georgiana, and owner of one-half of Dandy Dick.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Daughter of the Dean, sister of Sheba, and niece of Georgiana.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Daughter of the Dean, sister of Salome, and niece of Georgiana.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Friend and future relative of the Dean, and owner of one-half of Dandy Dick.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Sister of the Dean, aunt of Salome and Sheba, and owner of the other half of Dandy Dick.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Racehorse owned jointly by the Dean, Sir Tristram, and Georgiana.",
+        "name": "Dandy Dick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "Event where Salome and Sheba won fifty pounds.",
+        "name": "the Races",
+        "type": "EVENT"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "The Dean is the father of Salome.",
+        "evidence_quote": "Which of my hitherto trusted daughters was a lady--no, I will say a person--of the period of the French Revolution? [_SHEBA points to SALOME._",
+        "relation": "PARENT_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s02_c0007",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.95,
+        "description": "The Dean is the father of Sheba.",
+        "evidence_quote": "Which of my hitherto trusted daughters was a lady--no, I will say a person--of the period of the French Revolution? [_SHEBA points to SALOME._",
+        "relation": "PARENT_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s02_c0007",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Salome and Sheba are sisters.",
+        "evidence_quote": "Which of my hitherto trusted daughters was a lady--no, I will say a person--of the period of the French Revolution? [_SHEBA points to SALOME._",
+        "relation": "SIBLING_OF",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act03s02_c0007",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.95,
+        "description": "The Dean and Georgiana are siblings.",
+        "evidence_quote": "THE DEAN. [_Looking at GEORGIANA._] My sister!",
+        "relation": "SIBLING_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s02_c0007",
+        "target": "GEORGIANA"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Georgiana is the aunt of Salome.",
+        "evidence_quote": "Through the kindness of our Aunt----",
+        "relation": "PARENT_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s02_c0007",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Georgiana is the aunt of Sheba.",
+        "evidence_quote": "Through the kindness of our Aunt----",
+        "relation": "PARENT_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s02_c0007",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.95,
+        "description": "The Dean owns one-half of Dandy Dick.",
+        "evidence_quote": "As the owner of one-half of Dandy Dick, I denounce you!",
+        "relation": "OWNS",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s02_c0007",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Sir Tristram owns one-half of Dandy Dick.",
+        "evidence_quote": "As the owner of one-half of Dandy Dick, I denounce you!",
+        "relation": "OWNS",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act03s02_c0007",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Georgiana owns the other half of Dandy Dick.",
+        "evidence_quote": "As the owner of the other half, _I_ denounce you!",
+        "relation": "OWNS",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s02_c0007",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Salome participated in the Races and won fifty pounds.",
+        "evidence_quote": "We have won fifty pounds. THE DEAN. What! SHEBA. At the Races!",
+        "relation": "PARTICIPATES_IN",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act03s02_c0007",
+        "target": "the Races"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Sheba participated in the Races and won fifty pounds.",
+        "evidence_quote": "We have won fifty pounds. THE DEAN. What! SHEBA. At the Races!",
+        "relation": "PARTICIPATES_IN",
+        "source": "SHEBA",
+        "source_chunk_id": "dd_act03s02_c0007",
+        "target": "the Races"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Sir Tristram was once a friend of the Dean.",
+        "evidence_quote": "Jedd, you were once my friend, and you are to be my relative.",
+        "relation": "FRIEND_OF",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act03s02_c0007",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Sir Tristram is to become a relative of the Dean, implying a future marriage to Georgiana.",
+        "evidence_quote": "Jedd, you were once my friend, and you are to be my relative.",
+        "relation": "MARRIED_TO",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act03s02_c0007",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Sir Tristram denounces the Dean as a conspirator.",
+        "evidence_quote": "But not even our approaching family tie prevents my designating you as one of the most atrocious conspirators known in the history of the Turf.",
+        "relation": "OPPOSES",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act03s02_c0007",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Georgiana denounces the Dean as a conspirator.",
+        "evidence_quote": "As the owner of the other half, _I_ denounce you!",
+        "relation": "OPPOSES",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s02_c0007",
+        "target": "THE DEAN"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

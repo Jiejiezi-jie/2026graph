@@ -1,0 +1,167 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act03s01_c0011",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "b04f1e9f11edd9fc0f0963b53c871b4a16ddedabc6ab9818132b034bdfc8c38c",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Sister of Augustin Jedd, referred to as Gus's sister.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Friend of Augustin Jedd, referred to as his friend.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"NOAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A person taking down a description of the Dean, described as a shrewd experienced man.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"HANNAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A person who speaks to Georgiana and Sir Tristram.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Augustin Jedd\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"The Very Reverend Augustin Jedd, Dean of St. Marvells, missing person.\",\n      \"aliases\": [\"Gus\", \"the Dean\"]\n    },\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse that was found dosed last night.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"St. Marvells\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The place where Augustin Jedd is Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Durnstone\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The place where the disappearance is to be reported.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"Augustin Jedd\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Georgiana is the sister of Augustin Jedd.\",\n      \"evidence_quote\": \"This is his sister--I am his friend!\",\n      \"source_chunk_id\": \"dd_act03s01_c0011\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"Augustin Jedd\",\n      \"relation\": \"FRIEND_OF\",\n      \"description\": \"Sir Tristram is a friend of Augustin Jedd.\",\n      \"evidence_quote\": \"This is his sister--I am his friend!\",\n      \"source_chunk_id\": \"dd_act03s01_c0011\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"Augustin Jedd\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Augustin Jedd is the Dean of St. Marvells.\",\n      \"evidence_quote\": \"The Very Reverend Augustin Jedd, Dean of St. Marvells.\",\n      \"source_chunk_id\": \"dd_act03s01_c0011\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"Augustin Jedd\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Augustin Jedd is suspected of dosing Dandy Dick.\",\n      \"evidence_quote\": \"Gus is the villain found dosing Dandy Dick last night!\",\n      \"source_chunk_id\": \"dd_act03s01_c0011\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"Augustin Jedd\",\n      \"relation\": \"HELPS\",\n      \"description\": \"Noah is taking down the description of the Dean to report his disappearance.\",\n      \"evidence_quote\": \"all you've got to do is to hold your tongue and take down my description of the Dean, and report his disappearance at Durnstone.\",\n      \"source_chunk_id\": \"dd_act03s01_c0011\",\n      \"confidence\": 0.85\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674735,
+    "id": "58b9e3c6-0c78-4999-9558-431bb849be6e",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 912,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1049,
+      "prompt_tokens": 1689,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2601
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 8.675974,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:05:34.928571+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 912,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 1049,
+          "prompt_tokens": 1689,
+          "total_tokens": 2601
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 912,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1049,
+      "prompt_tokens": 1689,
+      "total_tokens": 2601
+    },
+    "total_elapsed_seconds": 8.675974
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "Sister of Augustin Jedd, referred to as Gus's sister.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Friend of Augustin Jedd, referred to as his friend.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A person taking down a description of the Dean, described as a shrewd experienced man.",
+        "name": "NOAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A person who speaks to Georgiana and Sir Tristram.",
+        "name": "HANNAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Gus",
+          "the Dean"
+        ],
+        "description": "The Very Reverend Augustin Jedd, Dean of St. Marvells, missing person.",
+        "name": "Augustin Jedd",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A horse that was found dosed last night.",
+        "name": "Dandy Dick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "The place where Augustin Jedd is Dean.",
+        "name": "St. Marvells",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "The place where the disappearance is to be reported.",
+        "name": "Durnstone",
+        "type": "LOCATION"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "Georgiana is the sister of Augustin Jedd.",
+        "evidence_quote": "This is his sister--I am his friend!",
+        "relation": "SIBLING_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s01_c0011",
+        "target": "Augustin Jedd"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Sir Tristram is a friend of Augustin Jedd.",
+        "evidence_quote": "This is his sister--I am his friend!",
+        "relation": "FRIEND_OF",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act03s01_c0011",
+        "target": "Augustin Jedd"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Augustin Jedd is the Dean of St. Marvells.",
+        "evidence_quote": "The Very Reverend Augustin Jedd, Dean of St. Marvells.",
+        "relation": "LOCATED_AT",
+        "source": "Augustin Jedd",
+        "source_chunk_id": "dd_act03s01_c0011",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Augustin Jedd is suspected of dosing Dandy Dick.",
+        "evidence_quote": "Gus is the villain found dosing Dandy Dick last night!",
+        "relation": "INTERACTS_WITH",
+        "source": "Augustin Jedd",
+        "source_chunk_id": "dd_act03s01_c0011",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.85,
+        "description": "Noah is taking down the description of the Dean to report his disappearance.",
+        "evidence_quote": "all you've got to do is to hold your tongue and take down my description of the Dean, and report his disappearance at Durnstone.",
+        "relation": "HELPS",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0011",
+        "target": "Augustin Jedd"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

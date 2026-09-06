@@ -1,0 +1,260 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act02_c0016",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "8d9ec5eace0d7b5b3677501ff1da0470912e797eec4b29cb91d368d0ca498cf0",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who takes a candlestick and leaves the room with others to watch.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A young woman in fancy dress, upset about the cancelled ball.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A young woman in fancy dress, upset about the cancelled ball.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"DARBEY\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A man dressed as a Cavalier, one of the two men who arrive.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"TARVER\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A man dressed as a Cavalier, carrying a carriage umbrella.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"The aunt of Salome and Sheba, who scolds them.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Nugent Darbey\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A man mentioned by Sheba, whom she hates.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Gerald Tarver\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A man mentioned by Salome, whose nose is inclined to pink.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"St. Marvells\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A place where the Military were summoned.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Durnstone Athenaeum\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A location where the ball was to be held, with a notice on the front door.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Military\",\n      \"type\": \"ORGANIZATION\",\n      \"description\": \"A group that was summoned to St. Marvells, causing the ball cancellation.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Papa\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"The father of Salome and Sheba, mentioned by Sheba.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"SALOME\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Georgiana is the aunt of Salome, as Salome calls her 'Aunt'.\",\n      \"evidence_quote\": \"SALOME _and_ SHEBA. Aunt!\",\n      \"source_chunk_id\": \"dd_act02_c0016\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Georgiana is the aunt of Sheba, as Sheba calls her 'Aunt'.\",\n      \"evidence_quote\": \"SALOME _and_ SHEBA. Aunt!\",\n      \"source_chunk_id\": \"dd_act02_c0016\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Salome and Sheba are sisters, as they are both nieces of Georgiana and refer to 'Papa'.\",\n      \"evidence_quote\": \"SHEBA. They didn't even ask Papa's permission!\",\n      \"source_chunk_id\": \"dd_act02_c0016\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"Papa\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Salome is the daughter of Papa, as Sheba says 'They didn't even ask Papa's permission'.\",\n      \"evidence_quote\": \"SHEBA. They didn't even ask Papa's permission!\",\n      \"source_chunk_id\": \"dd_act02_c0016\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"SHEBA\",\n      \"target\": \"Papa\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Sheba is the daughter of Papa, as she says 'They didn't even ask Papa's permission'.\",\n      \"evidence_quote\": \"SHEBA. They didn't even ask Papa's permission!\",\n      \"source_chunk_id\": \"dd_act02_c0016\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"DARBEY\",\n      \"target\": \"Nugent Darbey\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"description\": \"DARBEY is the character name used in the play for Nugent Darbey.\",\n      \"evidence_quote\": \"DARBEY. [_Outside._] Miss Jedd--Sheba!\",\n      \"source_chunk_id\": \"dd_act02_c0016\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"TARVER\",\n      \"target\": \"Gerald Tarver\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"description\": \"TARVER is the character name used in the play for Gerald Tarver.\",\n      \"evidence_quote\": \"TARVER. [_Outside._] Pray hear two wretched men! Miss Jedd!\",\n      \"source_chunk_id\": \"dd_act02_c0016\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"DARBEY\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"DARBEY mentions that the Military were summoned to St. Marvells.\",\n      \"evidence_quote\": \"It isn't our fault that the Military were summoned to St. Marvells.\",\n      \"source_chunk_id\": \"dd_act02_c0016\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"TARVER\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"TARVER mentions that the Military were summoned to St. Marvells.\",\n      \"evidence_quote\": \"It isn't our fault that the Military were summoned to St. Marvells.\",\n      \"source_chunk_id\": \"dd_act02_c0016\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"Durnstone Athenaeum\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Salome mentions alighting at the Durnstone Athenaeum.\",\n      \"evidence_quote\": \"We blame officers for subjecting two motherless girls to the shock of alighting at the Durnstone Athenaeum\",\n      \"source_chunk_id\": \"dd_act02_c0016\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SHEBA\",\n      \"target\": \"Durnstone Athenaeum\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Sheba mentions alighting at the Durnstone Athenaeum.\",\n      \"evidence_quote\": \"We blame officers for subjecting two motherless girls to the shock of alighting at the Durnstone Athenaeum\",\n      \"source_chunk_id\": \"dd_act02_c0016\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"DARBEY\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Salome interacts with Darbey during the scene.\",\n      \"evidence_quote\": \"SALOME. We blame gentlemen for inflicting upon us the unspeakable agony of being jeered at by boys.\",\n      \"source_chunk_id\": \"dd_act02_c0016\",\n      \"confidence\": 0.6\n    },\n    {\n      \"source\": \"SHEBA\",\n      \"target\": \"TARVER\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Sheba interacts with Tarver during the scene.\",\n      \"evidence_quote\": \"SHEBA. We blame officers for subjecting two motherless girls to the shock of alighting at the Durnstone Athenaeum\",\n      \"source_chunk_id\": \"dd_act02_c0016\",\n      \"confidence\": 0.6\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674584,
+    "id": "be52f4df-a723-4f52-a4c0-150a45d412cb",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1963,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 954,
+      "prompt_tokens": 1594,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 3557
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 17.149189,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:03:04.440779+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1963,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 954,
+          "prompt_tokens": 1594,
+          "total_tokens": 3557
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1963,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 954,
+      "prompt_tokens": 1594,
+      "total_tokens": 3557
+    },
+    "total_elapsed_seconds": 17.149189
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A character who takes a candlestick and leaves the room with others to watch.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A young woman in fancy dress, upset about the cancelled ball.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A young woman in fancy dress, upset about the cancelled ball.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A man dressed as a Cavalier, one of the two men who arrive.",
+        "name": "DARBEY",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A man dressed as a Cavalier, carrying a carriage umbrella.",
+        "name": "TARVER",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "The aunt of Salome and Sheba, who scolds them.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A man mentioned by Sheba, whom she hates.",
+        "name": "Nugent Darbey",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A man mentioned by Salome, whose nose is inclined to pink.",
+        "name": "Gerald Tarver",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A place where the Military were summoned.",
+        "name": "St. Marvells",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A location where the ball was to be held, with a notice on the front door.",
+        "name": "Durnstone Athenaeum",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A group that was summoned to St. Marvells, causing the ball cancellation.",
+        "name": "Military",
+        "type": "ORGANIZATION"
+      },
+      {
+        "aliases": [],
+        "description": "The father of Salome and Sheba, mentioned by Sheba.",
+        "name": "Papa",
+        "type": "CHARACTER"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Georgiana is the aunt of Salome, as Salome calls her 'Aunt'.",
+        "evidence_quote": "SALOME _and_ SHEBA. Aunt!",
+        "relation": "PARENT_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act02_c0016",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Georgiana is the aunt of Sheba, as Sheba calls her 'Aunt'.",
+        "evidence_quote": "SALOME _and_ SHEBA. Aunt!",
+        "relation": "PARENT_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act02_c0016",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Salome and Sheba are sisters, as they are both nieces of Georgiana and refer to 'Papa'.",
+        "evidence_quote": "SHEBA. They didn't even ask Papa's permission!",
+        "relation": "SIBLING_OF",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act02_c0016",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Salome is the daughter of Papa, as Sheba says 'They didn't even ask Papa's permission'.",
+        "evidence_quote": "SHEBA. They didn't even ask Papa's permission!",
+        "relation": "PARENT_OF",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act02_c0016",
+        "target": "Papa"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Sheba is the daughter of Papa, as she says 'They didn't even ask Papa's permission'.",
+        "evidence_quote": "SHEBA. They didn't even ask Papa's permission!",
+        "relation": "PARENT_OF",
+        "source": "SHEBA",
+        "source_chunk_id": "dd_act02_c0016",
+        "target": "Papa"
+      },
+      {
+        "confidence": 0.7,
+        "description": "DARBEY is the character name used in the play for Nugent Darbey.",
+        "evidence_quote": "DARBEY. [_Outside._] Miss Jedd--Sheba!",
+        "relation": "PORTRAYED_BY",
+        "source": "DARBEY",
+        "source_chunk_id": "dd_act02_c0016",
+        "target": "Nugent Darbey"
+      },
+      {
+        "confidence": 0.7,
+        "description": "TARVER is the character name used in the play for Gerald Tarver.",
+        "evidence_quote": "TARVER. [_Outside._] Pray hear two wretched men! Miss Jedd!",
+        "relation": "PORTRAYED_BY",
+        "source": "TARVER",
+        "source_chunk_id": "dd_act02_c0016",
+        "target": "Gerald Tarver"
+      },
+      {
+        "confidence": 0.9,
+        "description": "DARBEY mentions that the Military were summoned to St. Marvells.",
+        "evidence_quote": "It isn't our fault that the Military were summoned to St. Marvells.",
+        "relation": "LOCATED_AT",
+        "source": "DARBEY",
+        "source_chunk_id": "dd_act02_c0016",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.9,
+        "description": "TARVER mentions that the Military were summoned to St. Marvells.",
+        "evidence_quote": "It isn't our fault that the Military were summoned to St. Marvells.",
+        "relation": "LOCATED_AT",
+        "source": "TARVER",
+        "source_chunk_id": "dd_act02_c0016",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Salome mentions alighting at the Durnstone Athenaeum.",
+        "evidence_quote": "We blame officers for subjecting two motherless girls to the shock of alighting at the Durnstone Athenaeum",
+        "relation": "LOCATED_AT",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act02_c0016",
+        "target": "Durnstone Athenaeum"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Sheba mentions alighting at the Durnstone Athenaeum.",
+        "evidence_quote": "We blame officers for subjecting two motherless girls to the shock of alighting at the Durnstone Athenaeum",
+        "relation": "LOCATED_AT",
+        "source": "SHEBA",
+        "source_chunk_id": "dd_act02_c0016",
+        "target": "Durnstone Athenaeum"
+      },
+      {
+        "confidence": 0.6,
+        "description": "Salome interacts with Darbey during the scene.",
+        "evidence_quote": "SALOME. We blame gentlemen for inflicting upon us the unspeakable agony of being jeered at by boys.",
+        "relation": "INTERACTS_WITH",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act02_c0016",
+        "target": "DARBEY"
+      },
+      {
+        "confidence": 0.6,
+        "description": "Sheba interacts with Tarver during the scene.",
+        "evidence_quote": "SHEBA. We blame officers for subjecting two motherless girls to the shock of alighting at the Durnstone Athenaeum",
+        "relation": "INTERACTS_WITH",
+        "source": "SHEBA",
+        "source_chunk_id": "dd_act02_c0016",
+        "target": "TARVER"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

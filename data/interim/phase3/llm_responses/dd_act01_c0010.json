@@ -1,0 +1,209 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act01_c0010",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "87329beaa9228d7b434ac8d4e784034fa847ca602d72a686ed99502badfaf2a3",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"Georgiana Tidman\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Widow of a misguided husband, formerly known as 'the Daisy of the Turf', sister of the Dean, and aunt to Salome and Sheba.\",\n      \"aliases\": [\"Aunt Georgiana\", \"Mrs. Tidman\", \"Georgiana\"]\n    },\n    {\n      \"name\": \"The Dean\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Brother of Georgiana Tidman, widower, father of Salome and Sheba, and Dean of St. Marvells.\",\n      \"aliases\": [\"Augustin\", \"Gus\"]\n    },\n    {\n      \"name\": \"Salome\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Daughter of the Dean and niece of Georgiana Tidman.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Sheba\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Daughter of the Dean and niece of Georgiana Tidman.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Blore\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Servant who brings a telegram and announces Mrs. Tidman.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"St. Marvells\",\n      \"type\": \"LOCATION\",\n      \"description\": \"Location of the Deanery where the Dean and his daughters live.\",\n      \"aliases\": [\"Deanery of St. Marvells\"]\n    },\n    {\n      \"name\": \"Durnstone\",\n      \"type\": \"LOCATION\",\n      \"description\": \"Town where Georgiana Tidman stayed at the Wheatsheaf inn.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Wheatsheaf\",\n      \"type\": \"LOCATION\",\n      \"description\": \"Inn at Durnstone where Georgiana Tidman slept last night.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Willis\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Servant instructed to get the chaise out.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"The Dean\",\n      \"target\": \"Georgiana Tidman\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"The Dean is Georgiana Tidman's brother.\",\n      \"evidence_quote\": \"Left a widow, you would think it natural that Georgiana Tidman would have flown to her brother, himself a widower.\",\n      \"source_chunk_id\": \"dd_act01_c0010\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"The Dean\",\n      \"target\": \"Salome\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is Salome's father.\",\n      \"evidence_quote\": \"Salome, child, you and I will drive into Durnstone\",\n      \"source_chunk_id\": \"dd_act01_c0010\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"The Dean\",\n      \"target\": \"Sheba\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is Sheba's father.\",\n      \"evidence_quote\": \"My hat, Sheba! Quick!\",\n      \"source_chunk_id\": \"dd_act01_c0010\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Georgiana Tidman\",\n      \"target\": \"Salome\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Georgiana kisses Salome upon arrival.\",\n      \"evidence_quote\": \"Kiss your Aunt! [She kisses SALOME with a good hearty smack.]\",\n      \"source_chunk_id\": \"dd_act01_c0010\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Georgiana Tidman\",\n      \"target\": \"Sheba\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Georgiana embraces Sheba upon arrival.\",\n      \"evidence_quote\": \"Kiss your Aunt! [She embraces SHEBA, then stands between the two girls and surveys them critically]\",\n      \"source_chunk_id\": \"dd_act01_c0010\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Georgiana Tidman\",\n      \"target\": \"Wheatsheaf\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Georgiana Tidman slept at the Wheatsheaf in Durnstone last night.\",\n      \"evidence_quote\": \"your Aunt Georgiana slept at the \\\"Wheatsheaf,\\\" at Durnstone, last night\",\n      \"source_chunk_id\": \"dd_act01_c0010\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"Wheatsheaf\",\n      \"target\": \"Durnstone\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Wheatsheaf is located in Durnstone.\",\n      \"evidence_quote\": \"the \\\"Wheatsheaf,\\\" at Durnstone\",\n      \"source_chunk_id\": \"dd_act01_c0010\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"The Dean\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Dean lives at the Deanery of St. Marvells.\",\n      \"evidence_quote\": \"At the Deanery of St. Marvells, with the cares of a household\",\n      \"source_chunk_id\": \"dd_act01_c0010\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Blore\",\n      \"target\": \"The Dean\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Blore is a servant of the Dean.\",\n      \"evidence_quote\": \"BLORE enters with a telegram.\",\n      \"source_chunk_id\": \"dd_act01_c0010\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"Willis\",\n      \"target\": \"The Dean\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Willis is a servant of the Dean.\",\n      \"evidence_quote\": \"Blore, tell Willis to get the chaise out.\",\n      \"source_chunk_id\": \"dd_act01_c0010\",\n      \"confidence\": 0.7\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674311,
+    "id": "7b7e1899-c4b7-4780-9d6f-7f42e387a7fe",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1458,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1014,
+      "prompt_tokens": 1654,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 3112
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 12.443241,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T05:58:31.601247+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1458,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 1014,
+          "prompt_tokens": 1654,
+          "total_tokens": 3112
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1458,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1014,
+      "prompt_tokens": 1654,
+      "total_tokens": 3112
+    },
+    "total_elapsed_seconds": 12.443241
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [
+          "Aunt Georgiana",
+          "Mrs. Tidman",
+          "Georgiana"
+        ],
+        "description": "Widow of a misguided husband, formerly known as 'the Daisy of the Turf', sister of the Dean, and aunt to Salome and Sheba.",
+        "name": "Georgiana Tidman",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Augustin",
+          "Gus"
+        ],
+        "description": "Brother of Georgiana Tidman, widower, father of Salome and Sheba, and Dean of St. Marvells.",
+        "name": "The Dean",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Daughter of the Dean and niece of Georgiana Tidman.",
+        "name": "Salome",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Daughter of the Dean and niece of Georgiana Tidman.",
+        "name": "Sheba",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Servant who brings a telegram and announces Mrs. Tidman.",
+        "name": "Blore",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Deanery of St. Marvells"
+        ],
+        "description": "Location of the Deanery where the Dean and his daughters live.",
+        "name": "St. Marvells",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "Town where Georgiana Tidman stayed at the Wheatsheaf inn.",
+        "name": "Durnstone",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "Inn at Durnstone where Georgiana Tidman slept last night.",
+        "name": "Wheatsheaf",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "Servant instructed to get the chaise out.",
+        "name": "Willis",
+        "type": "CHARACTER"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "The Dean is Georgiana Tidman's brother.",
+        "evidence_quote": "Left a widow, you would think it natural that Georgiana Tidman would have flown to her brother, himself a widower.",
+        "relation": "SIBLING_OF",
+        "source": "The Dean",
+        "source_chunk_id": "dd_act01_c0010",
+        "target": "Georgiana Tidman"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean is Salome's father.",
+        "evidence_quote": "Salome, child, you and I will drive into Durnstone",
+        "relation": "PARENT_OF",
+        "source": "The Dean",
+        "source_chunk_id": "dd_act01_c0010",
+        "target": "Salome"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean is Sheba's father.",
+        "evidence_quote": "My hat, Sheba! Quick!",
+        "relation": "PARENT_OF",
+        "source": "The Dean",
+        "source_chunk_id": "dd_act01_c0010",
+        "target": "Sheba"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Georgiana Tidman slept at the Wheatsheaf in Durnstone last night.",
+        "evidence_quote": "your Aunt Georgiana slept at the \"Wheatsheaf,\" at Durnstone, last night",
+        "relation": "LOCATED_AT",
+        "source": "Georgiana Tidman",
+        "source_chunk_id": "dd_act01_c0010",
+        "target": "Wheatsheaf"
+      },
+      {
+        "confidence": 0.95,
+        "description": "The Wheatsheaf is located in Durnstone.",
+        "evidence_quote": "the \"Wheatsheaf,\" at Durnstone",
+        "relation": "LOCATED_AT",
+        "source": "Wheatsheaf",
+        "source_chunk_id": "dd_act01_c0010",
+        "target": "Durnstone"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean lives at the Deanery of St. Marvells.",
+        "evidence_quote": "At the Deanery of St. Marvells, with the cares of a household",
+        "relation": "LOCATED_AT",
+        "source": "The Dean",
+        "source_chunk_id": "dd_act01_c0010",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Blore is a servant of the Dean.",
+        "evidence_quote": "BLORE enters with a telegram.",
+        "relation": "EMPLOYED_BY",
+        "source": "Blore",
+        "source_chunk_id": "dd_act01_c0010",
+        "target": "The Dean"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Willis is a servant of the Dean.",
+        "evidence_quote": "Blore, tell Willis to get the chaise out.",
+        "relation": "EMPLOYED_BY",
+        "source": "Willis",
+        "source_chunk_id": "dd_act01_c0010",
+        "target": "The Dean"
+      }
+    ]
+  },
+  "validation_warnings": [
+    "relation[3]_evidence_mismatch",
+    "relation[4]_evidence_mismatch"
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act02_c0001",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "2a31014d39644682e09fd48ba24f9bcf57c7cfffa9e69cf77aca9657ba5c9063",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Aunt of Salome and Sheba, pouring tea after dinner.\",\n      \"aliases\": [\"Aunt George\"]\n    },\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Niece of Georgiana, lolling on the settee.\",\n      \"aliases\": [\"Sally\"]\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Niece of Georgiana, playing the piano.\",\n      \"aliases\": [\"Little 'un\"]\n    },\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse that Georgiana has a betting interest in.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Deanery\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The residence where the dinner takes place.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the \\\"Swan\\\"\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A place where Dandy Dick may have been fed.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Major Tarver\",\n      \"type\": \"PERSON\",\n      \"description\": \"A guest at the dinner, described as not a conversational cracker.\",\n      \"aliases\": [\"Gerald Tarver\"]\n    },\n    {\n      \"name\": \"Mr. Darbey\",\n      \"type\": \"PERSON\",\n      \"description\": \"A guest at the dinner who was about to make a witty remark.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Cook\",\n      \"type\": \"PERSON\",\n      \"description\": \"The new cook at the Deanery, whose cooking is criticized.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Papa\",\n      \"type\": \"PERSON\",\n      \"description\": \"Father of Salome and Sheba, described as lively as an owl with neuralgia.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"SALOME\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Georgiana is Salome's aunt, as Salome calls her 'Aunt George'.\",\n      \"evidence_quote\": \"SALOME. All right, Aunt George--two lumps, please.\",\n      \"source_chunk_id\": \"dd_act02_c0001\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Georgiana is Sheba's aunt, as she calls her 'Little 'un' and Sheba is her niece.\",\n      \"evidence_quote\": \"GEORGIANA. [_To SHEBA._] Little 'un?\",\n      \"source_chunk_id\": \"dd_act02_c0001\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Salome and Sheba are sisters, as they are both nieces of Georgiana and daughters of Papa.\",\n      \"evidence_quote\": \"SALOME. [_To SHEBA._] All's settled, Sheba, isn't it?\",\n      \"source_chunk_id\": \"dd_act02_c0001\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Georgiana has a betting interest in Dandy Dick, as she works out figures for the horse.\",\n      \"evidence_quote\": \"If Dandy Dick hasn't fed better at the \\\"Swan\\\" than we have at the Deanery, he won't be in the first three.\",\n      \"source_chunk_id\": \"dd_act02_c0001\",\n      \"confidence\": 0.6\n    },\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"the \\\"Swan\\\"\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Dandy Dick may have been fed at the 'Swan'.\",\n      \"evidence_quote\": \"If Dandy Dick hasn't fed better at the \\\"Swan\\\" than we have at the Deanery, he won't be in the first three.\",\n      \"source_chunk_id\": \"dd_act02_c0001\",\n      \"confidence\": 0.6\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"the Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Georgiana is at the Deanery, as she is pouring tea there.\",\n      \"evidence_quote\": \"The morning-room at the Deanery, with the fire and the lamps lighted.\",\n      \"source_chunk_id\": \"dd_act02_c0001\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"the Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Salome is at the Deanery, as she is lolling on the settee there.\",\n      \"evidence_quote\": \"SALOME lolling upon the settee\",\n      \"source_chunk_id\": \"dd_act02_c0001\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SHEBA\",\n      \"target\": \"the Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Sheba is at the Deanery, as she is playing the piano there.\",\n      \"evidence_quote\": \"SHEBA is playing the piano\",\n      \"source_chunk_id\": \"dd_act02_c0001\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Major Tarver\",\n      \"target\": \"the Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Major Tarver is at the Deanery for dinner.\",\n      \"evidence_quote\": \"Major Tarver isn't a conversational cracker.\",\n      \"source_chunk_id\": \"dd_act02_c0001\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"Mr. Darbey\",\n      \"target\": \"the Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Mr. Darbey is at the Deanery for dinner.\",\n      \"evidence_quote\": \"I fancy Mr. Darbey was about to make a witty remark once.\",\n      \"source_chunk_id\": \"dd_act02_c0001\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"Cook\",\n      \"target\": \"the Deanery\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Cook is employed at the Deanery, as she is referred to as 'our new cook'.\",\n      \"evidence_quote\": \"That's our new cook's one failing.\",\n      \"source_chunk_id\": \"dd_act02_c0001\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Papa\",\n      \"target\": \"SALOME\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Papa is the father of Salome, as she refers to him as 'Dear Papa'.\",\n      \"evidence_quote\": \"SHEBA. Dear Papa was as lively as an owl with neuralgia.\",\n      \"source_chunk_id\": \"dd_act02_c0001\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Papa\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Papa is the father of Sheba, as she refers to him as 'Dear Papa'.\",\n      \"evidence_quote\": \"SHEBA. Dear Papa was as lively as an owl with neuralgia.\",\n      \"source_chunk_id\": \"dd_act02_c0001\",\n      \"confidence\": 0.8\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674408,
+    "id": "2744ecb3-4bc3-4e06-bb20-05af46073c33",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1838,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 840,
+      "prompt_tokens": 1480,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 3318
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 16.817831,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:00:08.006714+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1838,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 840,
+          "prompt_tokens": 1480,
+          "total_tokens": 3318
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1838,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 840,
+      "prompt_tokens": 1480,
+      "total_tokens": 3318
+    },
+    "total_elapsed_seconds": 16.817831
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [
+          "Aunt George"
+        ],
+        "description": "Aunt of Salome and Sheba, pouring tea after dinner.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Sally"
+        ],
+        "description": "Niece of Georgiana, lolling on the settee.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Little 'un"
+        ],
+        "description": "Niece of Georgiana, playing the piano.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A horse that Georgiana has a betting interest in.",
+        "name": "Dandy Dick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "The residence where the dinner takes place.",
+        "name": "the Deanery",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A place where Dandy Dick may have been fed.",
+        "name": "the \"Swan",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [
+          "Gerald Tarver"
+        ],
+        "description": "A guest at the dinner, described as not a conversational cracker.",
+        "name": "Major Tarver",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "A guest at the dinner who was about to make a witty remark.",
+        "name": "Mr. Darbey",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "The new cook at the Deanery, whose cooking is criticized.",
+        "name": "Cook",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Father of Salome and Sheba, described as lively as an owl with neuralgia.",
+        "name": "Papa",
+        "type": "PERSON"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Georgiana is Salome's aunt, as Salome calls her 'Aunt George'.",
+        "evidence_quote": "SALOME. All right, Aunt George--two lumps, please.",
+        "relation": "PARENT_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act02_c0001",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Georgiana is Sheba's aunt, as she calls her 'Little 'un' and Sheba is her niece.",
+        "evidence_quote": "GEORGIANA. [_To SHEBA._] Little 'un?",
+        "relation": "PARENT_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act02_c0001",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Salome and Sheba are sisters, as they are both nieces of Georgiana and daughters of Papa.",
+        "evidence_quote": "SALOME. [_To SHEBA._] All's settled, Sheba, isn't it?",
+        "relation": "SIBLING_OF",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act02_c0001",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.6,
+        "description": "Georgiana has a betting interest in Dandy Dick, as she works out figures for the horse.",
+        "evidence_quote": "If Dandy Dick hasn't fed better at the \"Swan\" than we have at the Deanery, he won't be in the first three.",
+        "relation": "OWNS",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act02_c0001",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.6,
+        "description": "Dandy Dick may have been fed at the 'Swan'.",
+        "evidence_quote": "If Dandy Dick hasn't fed better at the \"Swan\" than we have at the Deanery, he won't be in the first three.",
+        "relation": "LOCATED_AT",
+        "source": "Dandy Dick",
+        "source_chunk_id": "dd_act02_c0001",
+        "target": "the \"Swan"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Georgiana is at the Deanery, as she is pouring tea there.",
+        "evidence_quote": "The morning-room at the Deanery, with the fire and the lamps lighted.",
+        "relation": "LOCATED_AT",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act02_c0001",
+        "target": "the Deanery"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Salome is at the Deanery, as she is lolling on the settee there.",
+        "evidence_quote": "SALOME lolling upon the settee",
+        "relation": "LOCATED_AT",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act02_c0001",
+        "target": "the Deanery"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Sheba is at the Deanery, as she is playing the piano there.",
+        "evidence_quote": "SHEBA is playing the piano",
+        "relation": "LOCATED_AT",
+        "source": "SHEBA",
+        "source_chunk_id": "dd_act02_c0001",
+        "target": "the Deanery"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Major Tarver is at the Deanery for dinner.",
+        "evidence_quote": "Major Tarver isn't a conversational cracker.",
+        "relation": "LOCATED_AT",
+        "source": "Major Tarver",
+        "source_chunk_id": "dd_act02_c0001",
+        "target": "the Deanery"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Mr. Darbey is at the Deanery for dinner.",
+        "evidence_quote": "I fancy Mr. Darbey was about to make a witty remark once.",
+        "relation": "LOCATED_AT",
+        "source": "Mr. Darbey",
+        "source_chunk_id": "dd_act02_c0001",
+        "target": "the Deanery"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Cook is employed at the Deanery, as she is referred to as 'our new cook'.",
+        "evidence_quote": "That's our new cook's one failing.",
+        "relation": "EMPLOYED_BY",
+        "source": "Cook",
+        "source_chunk_id": "dd_act02_c0001",
+        "target": "the Deanery"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Papa is the father of Salome, as she refers to him as 'Dear Papa'.",
+        "evidence_quote": "SHEBA. Dear Papa was as lively as an owl with neuralgia.",
+        "relation": "PARENT_OF",
+        "source": "Papa",
+        "source_chunk_id": "dd_act02_c0001",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Papa is the father of Sheba, as she refers to him as 'Dear Papa'.",
+        "evidence_quote": "SHEBA. Dear Papa was as lively as an owl with neuralgia.",
+        "relation": "PARENT_OF",
+        "source": "Papa",
+        "source_chunk_id": "dd_act02_c0001",
+        "target": "SHEBA"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

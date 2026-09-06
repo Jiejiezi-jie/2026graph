@@ -1,0 +1,184 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act03s01_c0012",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "e4dab715dc91655057cf4b08b1b52aa5e8d3bf768768460d9303567a89d22166",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Owner of the horse stabled at the Deanery.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Sister of Gus, who is the Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"NOAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Constable who took the man in the Deanery Stables last night.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"HANNAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Woman who arranged for the Dean's escape.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Man in handcuffs, accused of dosing Dandy Dick.\",\n      \"aliases\": [\"Gus\"]\n    },\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"Horse that was dosed last night.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Deanery Stables\",\n      \"type\": \"LOCATION\",\n      \"description\": \"Stables where the man was found trespassing.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Durnstone\",\n      \"type\": \"LOCATION\",\n      \"description\": \"Place where the scoundrel is to be taken.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Sir Tristram is the owner of the horse stabled at the Deanery.\",\n      \"evidence_quote\": \"I am the owner of the horse stabled at the Deanery.\",\n      \"source_chunk_id\": \"dd_act03s01_c0012\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Georgiana is the sister of Gus, the Dean.\",\n      \"evidence_quote\": \"What was my brother's motive in bolusing Dandy last night?\",\n      \"source_chunk_id\": \"dd_act03s01_c0012\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"ARRESTS\",\n      \"description\": \"Noah, the constable, has the Dean in handcuffs.\",\n      \"evidence_quote\": \"NOAH comes out of the cell with THE DEAN, who is in handcuffs.\",\n      \"source_chunk_id\": \"dd_act03s01_c0012\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"The Dean was found dosing Dandy Dick last night.\",\n      \"evidence_quote\": \"Gus is the villain found dosing Dandy Dick last night!\",\n      \"source_chunk_id\": \"dd_act03s01_c0012\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"HANNAH\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"HELPS\",\n      \"description\": \"Hannah arranged for the Dean's escape.\",\n      \"evidence_quote\": \"This good woman has arranged for his escape.\",\n      \"source_chunk_id\": \"dd_act03s01_c0012\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"Deanery Stables\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Dean was found trespassing in the Deanery Stables.\",\n      \"evidence_quote\": \"He was found trespassin' in the stables of the la-ate De-an\",\n      \"source_chunk_id\": \"dd_act03s01_c0012\",\n      \"confidence\": 0.85\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"Durnstone\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Noah's cart is outside ready to take the scoundrel over to Durnstone.\",\n      \"evidence_quote\": \"There's my cart outside ready to take the scoundrel over to Durnstone.\",\n      \"source_chunk_id\": \"dd_act03s01_c0012\",\n      \"confidence\": 0.85\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674743,
+    "id": "66e97d69-60d2-4345-8a38-85188ef21b97",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1076,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 984,
+      "prompt_tokens": 1624,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2700
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 9.402855,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:05:43.607907+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1076,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 984,
+          "prompt_tokens": 1624,
+          "total_tokens": 2700
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1076,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 984,
+      "prompt_tokens": 1624,
+      "total_tokens": 2700
+    },
+    "total_elapsed_seconds": 9.402855
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "Owner of the horse stabled at the Deanery.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Sister of Gus, who is the Dean.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Constable who took the man in the Deanery Stables last night.",
+        "name": "NOAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Woman who arranged for the Dean's escape.",
+        "name": "HANNAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Gus"
+        ],
+        "description": "Man in handcuffs, accused of dosing Dandy Dick.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Horse that was dosed last night.",
+        "name": "Dandy Dick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "Stables where the man was found trespassing.",
+        "name": "Deanery Stables",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "Place where the scoundrel is to be taken.",
+        "name": "Durnstone",
+        "type": "LOCATION"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "Sir Tristram is the owner of the horse stabled at the Deanery.",
+        "evidence_quote": "I am the owner of the horse stabled at the Deanery.",
+        "relation": "OWNS",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act03s01_c0012",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Georgiana is the sister of Gus, the Dean.",
+        "evidence_quote": "What was my brother's motive in bolusing Dandy last night?",
+        "relation": "SIBLING_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s01_c0012",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Noah, the constable, has the Dean in handcuffs.",
+        "evidence_quote": "NOAH comes out of the cell with THE DEAN, who is in handcuffs.",
+        "relation": "ARRESTS",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0012",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean was found dosing Dandy Dick last night.",
+        "evidence_quote": "Gus is the villain found dosing Dandy Dick last night!",
+        "relation": "INTERACTS_WITH",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s01_c0012",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Hannah arranged for the Dean's escape.",
+        "evidence_quote": "This good woman has arranged for his escape.",
+        "relation": "HELPS",
+        "source": "HANNAH",
+        "source_chunk_id": "dd_act03s01_c0012",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.85,
+        "description": "The Dean was found trespassing in the Deanery Stables.",
+        "evidence_quote": "He was found trespassin' in the stables of the la-ate De-an",
+        "relation": "LOCATED_AT",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s01_c0012",
+        "target": "Deanery Stables"
+      },
+      {
+        "confidence": 0.85,
+        "description": "Noah's cart is outside ready to take the scoundrel over to Durnstone.",
+        "evidence_quote": "There's my cart outside ready to take the scoundrel over to Durnstone.",
+        "relation": "LOCATED_AT",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0012",
+        "target": "Durnstone"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

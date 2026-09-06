@@ -1,0 +1,145 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act02_c0013",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "37e4a4dc012d2029a0f0ef97a45077cbe1997dc9b853b86043dba7b0b4daeb7c",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"BLORE\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A servant at the Deanery who is concerned about the Dean's behavior and secretly poisons the pudding intended for Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"The Dean of the Deanery, who is mixing a pudding and reminiscing about his youth.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse in the stable that Blore intends to poison.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Bonny-Betsy\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse that Blore has backed with his savings and hopes will benefit if Dandy Dick is harmed.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Strychnine\",\n      \"type\": \"OBJECT\",\n      \"description\": \"A poison that Blore empties into the basin.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the old black retriever\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A dog that died from poison a month ago.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OPPOSES\",\n      \"description\": \"Blore intends to poison Dandy Dick to remove an obstacle for Bonny-Betsy.\",\n      \"evidence_quote\": \"I've cooked Dandy Dick! I've cooked Dandy Dick!\",\n      \"source_chunk_id\": \"dd_act02_c0013\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"Bonny-Betsy\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Blore has invested his savings in Bonny-Betsy.\",\n      \"evidence_quote\": \"the deservin' 'orse I've trusted with my 'ard-earned savings!\",\n      \"source_chunk_id\": \"dd_act02_c0013\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"Strychnine\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Blore possesses strychnine, which he uses to poison the pudding.\",\n      \"evidence_quote\": \"Strychnine!\",\n      \"source_chunk_id\": \"dd_act02_c0013\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"the old black retriever\",\n      \"relation\": \"CAUSES\",\n      \"description\": \"Blore previously used poison to kill the old black retriever.\",\n      \"evidence_quote\": \"The dog died--the poison's in my pantry\",\n      \"source_chunk_id\": \"dd_act02_c0013\",\n      \"confidence\": 0.6\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"BLORE\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Blore is a servant at the Deanery, employed by the Dean.\",\n      \"evidence_quote\": \"Can I help you any more, Sir?\",\n      \"source_chunk_id\": \"dd_act02_c0013\",\n      \"confidence\": 0.5\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674561,
+    "id": "a7019149-723c-4a23-8217-3d0a212dffa1",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 800,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 802,
+      "prompt_tokens": 1442,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2242
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 7.879289,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:02:40.926543+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 800,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 802,
+          "prompt_tokens": 1442,
+          "total_tokens": 2242
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 800,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 802,
+      "prompt_tokens": 1442,
+      "total_tokens": 2242
+    },
+    "total_elapsed_seconds": 7.879289
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A servant at the Deanery who is concerned about the Dean's behavior and secretly poisons the pudding intended for Dandy Dick.",
+        "name": "BLORE",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "The Dean of the Deanery, who is mixing a pudding and reminiscing about his youth.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A horse in the stable that Blore intends to poison.",
+        "name": "Dandy Dick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "A horse that Blore has backed with his savings and hopes will benefit if Dandy Dick is harmed.",
+        "name": "Bonny-Betsy",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "A poison that Blore empties into the basin.",
+        "name": "Strychnine",
+        "type": "OBJECT"
+      },
+      {
+        "aliases": [],
+        "description": "A dog that died from poison a month ago.",
+        "name": "the old black retriever",
+        "type": "ANIMAL"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Blore intends to poison Dandy Dick to remove an obstacle for Bonny-Betsy.",
+        "evidence_quote": "I've cooked Dandy Dick! I've cooked Dandy Dick!",
+        "relation": "OPPOSES",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act02_c0013",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Blore has invested his savings in Bonny-Betsy.",
+        "evidence_quote": "the deservin' 'orse I've trusted with my 'ard-earned savings!",
+        "relation": "OWNS",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act02_c0013",
+        "target": "Bonny-Betsy"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Blore possesses strychnine, which he uses to poison the pudding.",
+        "evidence_quote": "Strychnine!",
+        "relation": "OWNS",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act02_c0013",
+        "target": "Strychnine"
+      },
+      {
+        "confidence": 0.6,
+        "description": "Blore previously used poison to kill the old black retriever.",
+        "evidence_quote": "The dog died--the poison's in my pantry",
+        "relation": "CAUSES",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act02_c0013",
+        "target": "the old black retriever"
+      }
+    ]
+  },
+  "validation_warnings": [
+    "relation[4]_below_confidence"
+  ]
+}

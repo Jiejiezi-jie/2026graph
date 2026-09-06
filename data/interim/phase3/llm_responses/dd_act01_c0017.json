@@ -1,0 +1,182 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act01_c0017",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "007a10834b0a3e504ff12fc0d7b10c895580ae18205f7a1211ced679f40dd7c5",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A young woman who, along with Salome, owes forty pounds unknown to their father and seeks to win money by betting on Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A young woman who, along with Sheba, owes forty pounds, nineteen shillings unknown to their father and seeks to win money by betting on Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Aunt of Sheba and Salome, who knows about horse racing and initially refuses but then agrees to help them bet on Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse that Georgiana was discussing with a gentleman and on which Sheba and Salome hope to win money.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Pa\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Father of Sheba and Salome, from whom they owe forty pounds unknown.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"SHEBA\",\n      \"target\": \"SALOME\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Sheba and Salome are sisters, as they share the same father (Pa) and are referred to collectively as 'you girls' by their aunt.\",\n      \"evidence_quote\": \"We owe forty pounds unknown to Pa!\",\n      \"source_chunk_id\": \"dd_act01_c0017\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Salome and Sheba are sisters, as they share the same father (Pa) and are referred to collectively as 'you girls' by their aunt.\",\n      \"evidence_quote\": \"We owe forty pounds unknown to Pa!\",\n      \"source_chunk_id\": \"dd_act01_c0017\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Georgiana is the aunt of Sheba, as Sheba addresses her as 'Aunt Georgiana'.\",\n      \"evidence_quote\": \"Aunt Georgiana, what's \\\"Dandy Dick\\\" you were talking to that gentleman about?\",\n      \"source_chunk_id\": \"dd_act01_c0017\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"SALOME\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Georgiana is the aunt of Salome, as Salome addresses her as 'Aunt Georgiana'.\",\n      \"evidence_quote\": \"Do! Do, and we'll love you for ever and ever, Aunt Georgiana.\",\n      \"source_chunk_id\": \"dd_act01_c0017\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"Pa\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Pa is the father of Sheba, as Sheba says 'We owe forty pounds unknown to Pa!'\",\n      \"evidence_quote\": \"We owe forty pounds unknown to Pa!\",\n      \"source_chunk_id\": \"dd_act01_c0017\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"Pa\",\n      \"target\": \"SALOME\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Pa is the father of Salome, as Salome says 'Forty pounds, nineteen.' in response to Sheba's statement about owing Pa.\",\n      \"evidence_quote\": \"We owe forty pounds unknown to Pa!\",\n      \"source_chunk_id\": \"dd_act01_c0017\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"SHEBA\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Sheba asks Georgiana about Dandy Dick and hopes to win money by betting on the horse.\",\n      \"evidence_quote\": \"Then let Dandy Dick win _us_ some money.\",\n      \"source_chunk_id\": \"dd_act01_c0017\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Salome joins Sheba in asking Georgiana to help them bet on Dandy Dick.\",\n      \"evidence_quote\": \"Oh, do, do, do!\",\n      \"source_chunk_id\": \"dd_act01_c0017\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Georgiana knows about Dandy Dick and advises Sheba and Salome to bet on the horse.\",\n      \"evidence_quote\": \"Very well, then, put your very petticoats on Dandy Dick!\",\n      \"source_chunk_id\": \"dd_act01_c0017\",\n      \"confidence\": 0.85\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674396,
+    "id": "66eec302-d189-4a19-8ae1-dbc652a17cb3",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1266,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 614,
+      "prompt_tokens": 1254,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2520
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 11.744057,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T05:59:56.261103+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1266,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 614,
+          "prompt_tokens": 1254,
+          "total_tokens": 2520
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1266,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 614,
+      "prompt_tokens": 1254,
+      "total_tokens": 2520
+    },
+    "total_elapsed_seconds": 11.744057
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A young woman who, along with Salome, owes forty pounds unknown to their father and seeks to win money by betting on Dandy Dick.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A young woman who, along with Sheba, owes forty pounds, nineteen shillings unknown to their father and seeks to win money by betting on Dandy Dick.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Aunt of Sheba and Salome, who knows about horse racing and initially refuses but then agrees to help them bet on Dandy Dick.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A horse that Georgiana was discussing with a gentleman and on which Sheba and Salome hope to win money.",
+        "name": "Dandy Dick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "Father of Sheba and Salome, from whom they owe forty pounds unknown.",
+        "name": "Pa",
+        "type": "CHARACTER"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Sheba and Salome are sisters, as they share the same father (Pa) and are referred to collectively as 'you girls' by their aunt.",
+        "evidence_quote": "We owe forty pounds unknown to Pa!",
+        "relation": "SIBLING_OF",
+        "source": "SHEBA",
+        "source_chunk_id": "dd_act01_c0017",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Salome and Sheba are sisters, as they share the same father (Pa) and are referred to collectively as 'you girls' by their aunt.",
+        "evidence_quote": "We owe forty pounds unknown to Pa!",
+        "relation": "SIBLING_OF",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act01_c0017",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Georgiana is the aunt of Sheba, as Sheba addresses her as 'Aunt Georgiana'.",
+        "evidence_quote": "Aunt Georgiana, what's \"Dandy Dick\" you were talking to that gentleman about?",
+        "relation": "PARENT_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act01_c0017",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Georgiana is the aunt of Salome, as Salome addresses her as 'Aunt Georgiana'.",
+        "evidence_quote": "Do! Do, and we'll love you for ever and ever, Aunt Georgiana.",
+        "relation": "PARENT_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act01_c0017",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Pa is the father of Sheba, as Sheba says 'We owe forty pounds unknown to Pa!'",
+        "evidence_quote": "We owe forty pounds unknown to Pa!",
+        "relation": "PARENT_OF",
+        "source": "Pa",
+        "source_chunk_id": "dd_act01_c0017",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Pa is the father of Salome, as Salome says 'Forty pounds, nineteen.' in response to Sheba's statement about owing Pa.",
+        "evidence_quote": "We owe forty pounds unknown to Pa!",
+        "relation": "PARENT_OF",
+        "source": "Pa",
+        "source_chunk_id": "dd_act01_c0017",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Sheba asks Georgiana about Dandy Dick and hopes to win money by betting on the horse.",
+        "evidence_quote": "Then let Dandy Dick win _us_ some money.",
+        "relation": "INTERACTS_WITH",
+        "source": "SHEBA",
+        "source_chunk_id": "dd_act01_c0017",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Salome joins Sheba in asking Georgiana to help them bet on Dandy Dick.",
+        "evidence_quote": "Oh, do, do, do!",
+        "relation": "INTERACTS_WITH",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act01_c0017",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.85,
+        "description": "Georgiana knows about Dandy Dick and advises Sheba and Salome to bet on the horse.",
+        "evidence_quote": "Very well, then, put your very petticoats on Dandy Dick!",
+        "relation": "INTERACTS_WITH",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act01_c0017",
+        "target": "Dandy Dick"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

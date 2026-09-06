@@ -1,0 +1,233 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act01_c0016",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "23a7e70d9f1ded400457923965b419f3acb5a72875f67e3546da465f34f7e48e",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"Georgiana\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Aunt of Sheba and Salome, referred to as Aunt Georgiana and Aunt Tidman; she is involved with Dandy Dick and the Durnstone Handicap.\",\n      \"aliases\": [\"George\", \"Aunt Georgiana\", \"Aunt Tidman\"]\n    },\n    {\n      \"name\": \"Sir Tristram\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Referred to as Tris and partner; he is involved with Dandy Dick and the Durnstone Handicap.\",\n      \"aliases\": [\"Tris\", \"Tristram\"]\n    },\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse that Georgiana saw marched out before the auctioneer; she and Sir Tristram are partners in owning him.\",\n      \"aliases\": [\"Dick\"]\n    },\n    {\n      \"name\": \"John Fielder\",\n      \"type\": \"PERSON\",\n      \"description\": \"Helped Georgiana by buying half of Dandy Dick for Sir Tristram.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Augustin\",\n      \"type\": \"PERSON\",\n      \"description\": \"Georgiana promised Augustin that she wouldn't own anything on four legs.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Sheba\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Niece of Georgiana, sister of Salome; she and Salome owe forty pounds unknown to their father.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Salome\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Niece of Georgiana, sister of Sheba; she and Sheba owe forty pounds unknown to their father.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"The Dean\",\n      \"type\": \"PERSON\",\n      \"description\": \"Mentioned by Sir Tristram and Georgiana; Sir Tristram asks Georgiana to say good-bye for him to the Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Durnstone Handicap\",\n      \"type\": \"EVENT\",\n      \"description\": \"A horse race that Georgiana plans to back Dandy Dick in.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"Georgiana\",\n      \"target\": \"Sir Tristram\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Georgiana and Sir Tristram are partners in owning Dandy Dick, with each owning half.\",\n      \"evidence_quote\": \"John sold you half of Dick, and I can swear I don't own a horse--and I don't--not a whole one. But half a horse is better than no bread, Tris--and we're partners.\",\n      \"source_chunk_id\": \"dd_act01_c0016\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"Georgiana\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Georgiana owns half of Dandy Dick through partnership with Sir Tristram.\",\n      \"evidence_quote\": \"John sold you half of Dick, and I can swear I don't own a horse--and I don't--not a whole one. But half a horse is better than no bread, Tris--and we're partners.\",\n      \"source_chunk_id\": \"dd_act01_c0016\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Sir Tristram\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Sir Tristram owns half of Dandy Dick through partnership with Georgiana.\",\n      \"evidence_quote\": \"John sold you half of Dick, and I can swear I don't own a horse--and I don't--not a whole one. But half a horse is better than no bread, Tris--and we're partners.\",\n      \"source_chunk_id\": \"dd_act01_c0016\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"John Fielder\",\n      \"target\": \"Georgiana\",\n      \"relation\": \"HELPS\",\n      \"description\": \"John Fielder helped Georgiana by buying half of Dandy Dick for Sir Tristram.\",\n      \"evidence_quote\": \"I asked John Fielder to help me, and he did, like a Briton.\",\n      \"source_chunk_id\": \"dd_act01_c0016\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Georgiana\",\n      \"target\": \"Augustin\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Georgiana promised Augustin that she wouldn't own anything on four legs.\",\n      \"evidence_quote\": \"I promised Augustin that I wouldn't own anything on four legs\",\n      \"source_chunk_id\": \"dd_act01_c0016\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Georgiana\",\n      \"target\": \"Durnstone Handicap\",\n      \"relation\": \"PARTICIPATES_IN\",\n      \"description\": \"Georgiana plans to back Dandy Dick in the Durnstone Handicap.\",\n      \"evidence_quote\": \"you're going to back Dandy Dick for the Durnstone Handicap.\",\n      \"source_chunk_id\": \"dd_act01_c0016\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Sheba\",\n      \"target\": \"Salome\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Sheba and Salome are sisters.\",\n      \"evidence_quote\": \"Salome has rather got into debt.\",\n      \"source_chunk_id\": \"dd_act01_c0016\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"Georgiana\",\n      \"target\": \"Sheba\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Georgiana is the aunt of Sheba.\",\n      \"evidence_quote\": \"Aunt--dear Aunt Georgiana\",\n      \"source_chunk_id\": \"dd_act01_c0016\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Georgiana\",\n      \"target\": \"Salome\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Georgiana is the aunt of Salome.\",\n      \"evidence_quote\": \"Aunt--dear Aunt Georgiana\",\n      \"source_chunk_id\": \"dd_act01_c0016\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Sheba\",\n      \"target\": \"Salome\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Sheba and Salome owe forty pounds unknown to their father.\",\n      \"evidence_quote\": \"We owe forty pounds unknown to Pa!\",\n      \"source_chunk_id\": \"dd_act01_c0016\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Sir Tristram\",\n      \"target\": \"The Dean\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Sir Tristram asks Georgiana to say good-bye for him to the Dean.\",\n      \"evidence_quote\": \"Oh, say good-bye for me to the Dean!\",\n      \"source_chunk_id\": \"dd_act01_c0016\",\n      \"confidence\": 0.7\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674381,
+    "id": "a503f4f6-7ca9-42ff-9db8-a0d3ec3adc42",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1675,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1064,
+      "prompt_tokens": 1704,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 3379
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 14.741981,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T05:59:41.503648+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1675,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 1064,
+          "prompt_tokens": 1704,
+          "total_tokens": 3379
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1675,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1064,
+      "prompt_tokens": 1704,
+      "total_tokens": 3379
+    },
+    "total_elapsed_seconds": 14.741981
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [
+          "George",
+          "Aunt Georgiana",
+          "Aunt Tidman"
+        ],
+        "description": "Aunt of Sheba and Salome, referred to as Aunt Georgiana and Aunt Tidman; she is involved with Dandy Dick and the Durnstone Handicap.",
+        "name": "Georgiana",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Tris",
+          "Tristram"
+        ],
+        "description": "Referred to as Tris and partner; he is involved with Dandy Dick and the Durnstone Handicap.",
+        "name": "Sir Tristram",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Dick"
+        ],
+        "description": "A horse that Georgiana saw marched out before the auctioneer; she and Sir Tristram are partners in owning him.",
+        "name": "Dandy Dick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "Helped Georgiana by buying half of Dandy Dick for Sir Tristram.",
+        "name": "John Fielder",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Georgiana promised Augustin that she wouldn't own anything on four legs.",
+        "name": "Augustin",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Niece of Georgiana, sister of Salome; she and Salome owe forty pounds unknown to their father.",
+        "name": "Sheba",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Niece of Georgiana, sister of Sheba; she and Sheba owe forty pounds unknown to their father.",
+        "name": "Salome",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Mentioned by Sir Tristram and Georgiana; Sir Tristram asks Georgiana to say good-bye for him to the Dean.",
+        "name": "The Dean",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "A horse race that Georgiana plans to back Dandy Dick in.",
+        "name": "Durnstone Handicap",
+        "type": "EVENT"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "Georgiana and Sir Tristram are partners in owning Dandy Dick, with each owning half.",
+        "evidence_quote": "John sold you half of Dick, and I can swear I don't own a horse--and I don't--not a whole one. But half a horse is better than no bread, Tris--and we're partners.",
+        "relation": "OWNS",
+        "source": "Georgiana",
+        "source_chunk_id": "dd_act01_c0016",
+        "target": "Sir Tristram"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Georgiana owns half of Dandy Dick through partnership with Sir Tristram.",
+        "evidence_quote": "John sold you half of Dick, and I can swear I don't own a horse--and I don't--not a whole one. But half a horse is better than no bread, Tris--and we're partners.",
+        "relation": "OWNS",
+        "source": "Georgiana",
+        "source_chunk_id": "dd_act01_c0016",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Sir Tristram owns half of Dandy Dick through partnership with Georgiana.",
+        "evidence_quote": "John sold you half of Dick, and I can swear I don't own a horse--and I don't--not a whole one. But half a horse is better than no bread, Tris--and we're partners.",
+        "relation": "OWNS",
+        "source": "Sir Tristram",
+        "source_chunk_id": "dd_act01_c0016",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.9,
+        "description": "John Fielder helped Georgiana by buying half of Dandy Dick for Sir Tristram.",
+        "evidence_quote": "I asked John Fielder to help me, and he did, like a Briton.",
+        "relation": "HELPS",
+        "source": "John Fielder",
+        "source_chunk_id": "dd_act01_c0016",
+        "target": "Georgiana"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Georgiana promised Augustin that she wouldn't own anything on four legs.",
+        "evidence_quote": "I promised Augustin that I wouldn't own anything on four legs",
+        "relation": "INTERACTS_WITH",
+        "source": "Georgiana",
+        "source_chunk_id": "dd_act01_c0016",
+        "target": "Augustin"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Georgiana plans to back Dandy Dick in the Durnstone Handicap.",
+        "evidence_quote": "you're going to back Dandy Dick for the Durnstone Handicap.",
+        "relation": "PARTICIPATES_IN",
+        "source": "Georgiana",
+        "source_chunk_id": "dd_act01_c0016",
+        "target": "Durnstone Handicap"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Sheba and Salome are sisters.",
+        "evidence_quote": "Salome has rather got into debt.",
+        "relation": "SIBLING_OF",
+        "source": "Sheba",
+        "source_chunk_id": "dd_act01_c0016",
+        "target": "Salome"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Georgiana is the aunt of Sheba.",
+        "evidence_quote": "Aunt--dear Aunt Georgiana",
+        "relation": "PARENT_OF",
+        "source": "Georgiana",
+        "source_chunk_id": "dd_act01_c0016",
+        "target": "Sheba"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Georgiana is the aunt of Salome.",
+        "evidence_quote": "Aunt--dear Aunt Georgiana",
+        "relation": "PARENT_OF",
+        "source": "Georgiana",
+        "source_chunk_id": "dd_act01_c0016",
+        "target": "Salome"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Sheba and Salome owe forty pounds unknown to their father.",
+        "evidence_quote": "We owe forty pounds unknown to Pa!",
+        "relation": "OWNS",
+        "source": "Sheba",
+        "source_chunk_id": "dd_act01_c0016",
+        "target": "Salome"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Sir Tristram asks Georgiana to say good-bye for him to the Dean.",
+        "evidence_quote": "Oh, say good-bye for me to the Dean!",
+        "relation": "INTERACTS_WITH",
+        "source": "Sir Tristram",
+        "source_chunk_id": "dd_act01_c0016",
+        "target": "The Dean"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

@@ -1,0 +1,260 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act03s02_c0009",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "49238b954884db45f8d731859aa1d8d1e767c87e2455f3645e7e740f9adfd0d7",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"The Dean of St. Marvells, father of Salome and Sheba, who gave a mixture to Dandy and was involved in an incident with Noah Topping.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"BLORE\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Servant of the Dean who put the mixture on Bonny Betsy instead of Dandy.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Daughter of the Dean, proposed to by Major Tarver.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Daughter of the Dean, proposed to by Mr. Darbey.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"NOAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Noah Topping, husband of Hannah, who accuses the Dean of being the man who alienated his wife's affections.\",\n      \"aliases\": [\n        \"NOAH TOPPING\"\n      ]\n    },\n    {\n      \"name\": \"HANNAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Wife of Noah Topping, who tries to restrain him.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Present at the Deanery, tells Noah to go away.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Present at the Deanery, tells Noah not to bring domestic affairs there.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Dandy\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"Horse to which the Dean gave some mixture.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Bonny Betsy\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"Horse on which Blore put the mixture intended for Dandy.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Major Tarver\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Gallant gentleman who proposed to Salome.\",\n      \"aliases\": [\n        \"TARVER\"\n      ]\n    },\n    {\n      \"name\": \"Mr. Darbey\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Gallant gentleman who proposed to Sheba.\",\n      \"aliases\": [\n        \"DARBEY\"\n      ]\n    },\n    {\n      \"name\": \"St. Marvells\",\n      \"type\": \"LOCATION\",\n      \"description\": \"Location of the Deanery and the Dean's position.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Deanery\",\n      \"type\": \"LOCATION\",\n      \"description\": \"Residence of the Dean, where the scene takes place.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"Dandy\",\n      \"relation\": \"OWNS\",\n      \"description\": \"The Dean gave some mixture to Dandy, implying ownership or care.\",\n      \"evidence_quote\": \"thinking as you'd given some of the mixture to Dandy\",\n      \"source_chunk_id\": \"dd_act03s02_c0009\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"Bonny Betsy\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Blore put the mixture on Bonny Betsy.\",\n      \"evidence_quote\": \"I put your cheerful little offering on to Bonny Betsy\",\n      \"source_chunk_id\": \"dd_act03s02_c0009\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"BLORE\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Blore is in the Dean's service.\",\n      \"evidence_quote\": \"Remain in my service\",\n      \"source_chunk_id\": \"dd_act03s02_c0009\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"SALOME\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is Salome's father.\",\n      \"evidence_quote\": \"Papa!\",\n      \"source_chunk_id\": \"dd_act03s02_c0009\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is Sheba's father.\",\n      \"evidence_quote\": \"Papa; we have accidentally discovered that you, our parent\",\n      \"source_chunk_id\": \"dd_act03s02_c0009\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Major Tarver\",\n      \"target\": \"SALOME\",\n      \"relation\": \"ROMANTIC_WITH\",\n      \"description\": \"Major Tarver proposed to Salome.\",\n      \"evidence_quote\": \"These two gallant gentlemen have proposed for us.\",\n      \"source_chunk_id\": \"dd_act03s02_c0009\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Mr. Darbey\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"ROMANTIC_WITH\",\n      \"description\": \"Mr. Darbey proposed to Sheba.\",\n      \"evidence_quote\": \"These two gallant gentlemen have proposed for us.\",\n      \"source_chunk_id\": \"dd_act03s02_c0009\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"HANNAH\",\n      \"relation\": \"MARRIED_TO\",\n      \"description\": \"Noah and Hannah are married.\",\n      \"evidence_quote\": \"my nooly made wife\",\n      \"source_chunk_id\": \"dd_act03s02_c0009\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"OPPOSES\",\n      \"description\": \"Noah confronts the Dean, accusing him of being the man who alienated his wife's affections.\",\n      \"evidence_quote\": \"I'm speaking to the man I took last night--the culprit as 'as allynated the affections of my wife.\",\n      \"source_chunk_id\": \"dd_act03s02_c0009\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Dean is the Dean of St. Marvells.\",\n      \"evidence_quote\": \"Dr. Jedd, the Dean of St. Marvells\",\n      \"source_chunk_id\": \"dd_act03s02_c0009\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"the Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Dean resides at the Deanery.\",\n      \"evidence_quote\": \"Is this 'ere the Deanery?\",\n      \"source_chunk_id\": \"dd_act03s02_c0009\",\n      \"confidence\": 0.7\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674863,
+    "id": "7ae4d656-f75a-41e0-a097-80953958459e",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1740,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 966,
+      "prompt_tokens": 1606,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 3346
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 15.35002,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:07:43.808226+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1740,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 966,
+          "prompt_tokens": 1606,
+          "total_tokens": 3346
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1740,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 966,
+      "prompt_tokens": 1606,
+      "total_tokens": 3346
+    },
+    "total_elapsed_seconds": 15.35002
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "The Dean of St. Marvells, father of Salome and Sheba, who gave a mixture to Dandy and was involved in an incident with Noah Topping.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Servant of the Dean who put the mixture on Bonny Betsy instead of Dandy.",
+        "name": "BLORE",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Daughter of the Dean, proposed to by Major Tarver.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Daughter of the Dean, proposed to by Mr. Darbey.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "NOAH TOPPING"
+        ],
+        "description": "Noah Topping, husband of Hannah, who accuses the Dean of being the man who alienated his wife's affections.",
+        "name": "NOAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Wife of Noah Topping, who tries to restrain him.",
+        "name": "HANNAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Present at the Deanery, tells Noah to go away.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Present at the Deanery, tells Noah not to bring domestic affairs there.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Horse to which the Dean gave some mixture.",
+        "name": "Dandy",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "Horse on which Blore put the mixture intended for Dandy.",
+        "name": "Bonny Betsy",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [
+          "TARVER"
+        ],
+        "description": "Gallant gentleman who proposed to Salome.",
+        "name": "Major Tarver",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "DARBEY"
+        ],
+        "description": "Gallant gentleman who proposed to Sheba.",
+        "name": "Mr. Darbey",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Location of the Deanery and the Dean's position.",
+        "name": "St. Marvells",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "Residence of the Dean, where the scene takes place.",
+        "name": "the Deanery",
+        "type": "LOCATION"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.7,
+        "description": "The Dean gave some mixture to Dandy, implying ownership or care.",
+        "evidence_quote": "thinking as you'd given some of the mixture to Dandy",
+        "relation": "OWNS",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s02_c0009",
+        "target": "Dandy"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Blore put the mixture on Bonny Betsy.",
+        "evidence_quote": "I put your cheerful little offering on to Bonny Betsy",
+        "relation": "INTERACTS_WITH",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act03s02_c0009",
+        "target": "Bonny Betsy"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Blore is in the Dean's service.",
+        "evidence_quote": "Remain in my service",
+        "relation": "EMPLOYED_BY",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s02_c0009",
+        "target": "BLORE"
+      },
+      {
+        "confidence": 0.8,
+        "description": "The Dean is Salome's father.",
+        "evidence_quote": "Papa!",
+        "relation": "PARENT_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s02_c0009",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean is Sheba's father.",
+        "evidence_quote": "Papa; we have accidentally discovered that you, our parent",
+        "relation": "PARENT_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s02_c0009",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Major Tarver proposed to Salome.",
+        "evidence_quote": "These two gallant gentlemen have proposed for us.",
+        "relation": "ROMANTIC_WITH",
+        "source": "Major Tarver",
+        "source_chunk_id": "dd_act03s02_c0009",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Mr. Darbey proposed to Sheba.",
+        "evidence_quote": "These two gallant gentlemen have proposed for us.",
+        "relation": "ROMANTIC_WITH",
+        "source": "Mr. Darbey",
+        "source_chunk_id": "dd_act03s02_c0009",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Noah and Hannah are married.",
+        "evidence_quote": "my nooly made wife",
+        "relation": "MARRIED_TO",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s02_c0009",
+        "target": "HANNAH"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Noah confronts the Dean, accusing him of being the man who alienated his wife's affections.",
+        "evidence_quote": "I'm speaking to the man I took last night--the culprit as 'as allynated the affections of my wife.",
+        "relation": "OPPOSES",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s02_c0009",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean is the Dean of St. Marvells.",
+        "evidence_quote": "Dr. Jedd, the Dean of St. Marvells",
+        "relation": "LOCATED_AT",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s02_c0009",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.7,
+        "description": "The Dean resides at the Deanery.",
+        "evidence_quote": "Is this 'ere the Deanery?",
+        "relation": "LOCATED_AT",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s02_c0009",
+        "target": "the Deanery"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

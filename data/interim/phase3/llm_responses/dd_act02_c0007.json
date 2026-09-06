@@ -1,0 +1,197 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act02_c0007",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "d91b56f0ca0505839dc9e9a9f0cc5455a2c43bdff745ad609ed72f69ff6beffd",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play who is upset with Mr. Darbey and later enters with Blore carrying a lantern.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"DARBEY\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who returns to retrieve his violin and leaves with dignity.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who is optimistic about the horse Dandy and interacts with Sir Tristram and Hatcham.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who is concerned about the horse Dandy and discusses the fire with Hatcham.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"HATCHAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A groom who reports on Dandy's feeding and expresses concern about the horse's tail.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Dandy\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse that is being cared for at the Deanery; he is feeding well but has lost his tail.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Blore\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who enters with the Dean carrying a lighted lantern.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Mr. Topping\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A constable who is going to sit up with Hatcham for company.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Deanery\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The location where the Dean lives and where Dandy is being kept.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the \\\"Swan\\\"\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A place where a fire occurred, which Hatcham suspects might not have been an accident.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"DARBEY\",\n      \"relation\": \"OPPOSES\",\n      \"description\": \"The Dean declares he will not see Mr. Darbey if he ever presumes to present himself at the Deanery again.\",\n      \"evidence_quote\": \"if that Mr. Darbey ever again presumes to present himself at the Deanery I will not see him!\",\n      \"source_chunk_id\": \"dd_act02_c0007\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"DARBEY\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Darbey returns for his violin and the Dean runs after him to offer an explanation.\",\n      \"evidence_quote\": \"I've come back for my violin. [...] Hear an explanation, Mr. Darbey!\",\n      \"source_chunk_id\": \"dd_act02_c0007\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"Dandy\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Georgiana kissed Dandy's nose and led him into the Deanery.\",\n      \"evidence_quote\": \"he knew me when I kissed his dear old nose! [...] when I led him in\",\n      \"source_chunk_id\": \"dd_act02_c0007\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"Dandy\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Sir Tristram expresses concern about Dandy's tail and discusses the horse's condition.\",\n      \"evidence_quote\": \"it's such a pity about his tail!\",\n      \"source_chunk_id\": \"dd_act02_c0007\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"HATCHAM\",\n      \"target\": \"Dandy\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Hatcham reports that Dandy is feeding steadily and expresses concern about the horse's tail.\",\n      \"evidence_quote\": \"Dandy is a feedin' as steady as a baby with a bottle.\",\n      \"source_chunk_id\": \"dd_act02_c0007\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"HATCHAM\",\n      \"target\": \"Mr. Topping\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Hatcham has got hold of the constable Mr. Topping, who is going to sit up with him.\",\n      \"evidence_quote\": \"I've got hold of the constable 'ere, Mr. Topping--he's going to sit up with me\",\n      \"source_chunk_id\": \"dd_act02_c0007\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"HATCHAM\",\n      \"target\": \"the \\\"Swan\\\"\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Hatcham refers to a fire at the 'Swan' and suspects it might not have been an accident.\",\n      \"evidence_quote\": \"supposin' the fire at the \\\"Swan\\\" warn't no accident!\",\n      \"source_chunk_id\": \"dd_act02_c0007\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"Dandy\",\n      \"target\": \"the Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Dandy is in the Deanery, as Georgiana says he knows he's in the Deanery.\",\n      \"evidence_quote\": \"He knows he's in the Deanery too.\",\n      \"source_chunk_id\": \"dd_act02_c0007\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"Blore\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"The Dean enters followed by Blore, who carries a lighted lantern.\",\n      \"evidence_quote\": \"THE DEAN enters, followed by BLORE, who carries a lighted lantern.\",\n      \"source_chunk_id\": \"dd_act02_c0007\",\n      \"confidence\": 0.8\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674487,
+    "id": "d71ff9cc-5947-4079-ba73-809af76db2ef",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1491,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1011,
+      "prompt_tokens": 1651,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 3142
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 14.486963,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:01:27.538319+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1491,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 1011,
+          "prompt_tokens": 1651,
+          "total_tokens": 3142
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1491,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1011,
+      "prompt_tokens": 1651,
+      "total_tokens": 3142
+    },
+    "total_elapsed_seconds": 14.486963
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A character in the play who is upset with Mr. Darbey and later enters with Blore carrying a lantern.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who returns to retrieve his violin and leaves with dignity.",
+        "name": "DARBEY",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who is optimistic about the horse Dandy and interacts with Sir Tristram and Hatcham.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who is concerned about the horse Dandy and discusses the fire with Hatcham.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A groom who reports on Dandy's feeding and expresses concern about the horse's tail.",
+        "name": "HATCHAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A horse that is being cared for at the Deanery; he is feeding well but has lost his tail.",
+        "name": "Dandy",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "A character who enters with the Dean carrying a lighted lantern.",
+        "name": "Blore",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A constable who is going to sit up with Hatcham for company.",
+        "name": "Mr. Topping",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "The location where the Dean lives and where Dandy is being kept.",
+        "name": "the Deanery",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A place where a fire occurred, which Hatcham suspects might not have been an accident.",
+        "name": "the \"Swan",
+        "type": "LOCATION"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "The Dean declares he will not see Mr. Darbey if he ever presumes to present himself at the Deanery again.",
+        "evidence_quote": "if that Mr. Darbey ever again presumes to present himself at the Deanery I will not see him!",
+        "relation": "OPPOSES",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0007",
+        "target": "DARBEY"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Sir Tristram expresses concern about Dandy's tail and discusses the horse's condition.",
+        "evidence_quote": "it's such a pity about his tail!",
+        "relation": "INTERACTS_WITH",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act02_c0007",
+        "target": "Dandy"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Hatcham reports that Dandy is feeding steadily and expresses concern about the horse's tail.",
+        "evidence_quote": "Dandy is a feedin' as steady as a baby with a bottle.",
+        "relation": "INTERACTS_WITH",
+        "source": "HATCHAM",
+        "source_chunk_id": "dd_act02_c0007",
+        "target": "Dandy"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Hatcham has got hold of the constable Mr. Topping, who is going to sit up with him.",
+        "evidence_quote": "I've got hold of the constable 'ere, Mr. Topping--he's going to sit up with me",
+        "relation": "INTERACTS_WITH",
+        "source": "HATCHAM",
+        "source_chunk_id": "dd_act02_c0007",
+        "target": "Mr. Topping"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Hatcham refers to a fire at the 'Swan' and suspects it might not have been an accident.",
+        "evidence_quote": "supposin' the fire at the \"Swan\" warn't no accident!",
+        "relation": "LOCATED_AT",
+        "source": "HATCHAM",
+        "source_chunk_id": "dd_act02_c0007",
+        "target": "the \"Swan"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Dandy is in the Deanery, as Georgiana says he knows he's in the Deanery.",
+        "evidence_quote": "He knows he's in the Deanery too.",
+        "relation": "LOCATED_AT",
+        "source": "Dandy",
+        "source_chunk_id": "dd_act02_c0007",
+        "target": "the Deanery"
+      },
+      {
+        "confidence": 0.8,
+        "description": "The Dean enters followed by Blore, who carries a lighted lantern.",
+        "evidence_quote": "THE DEAN enters, followed by BLORE, who carries a lighted lantern.",
+        "relation": "INTERACTS_WITH",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0007",
+        "target": "Blore"
+      }
+    ]
+  },
+  "validation_warnings": [
+    "relation[1]_evidence_mismatch",
+    "relation[2]_evidence_mismatch"
+  ]
+}

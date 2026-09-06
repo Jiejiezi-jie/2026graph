@@ -1,0 +1,257 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act02_c0006",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "34650cbfdbcc858dae4e7228f3caad3e5029581fa53f8c8c45a548238e796bca",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Owner of Dandy Dick, the horse.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Daughter of the Dean; suggests bringing Dandy Dick into the Deanery stables.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Father of Georgiana, Sheba, and Salome; reluctant to house Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"TARVER\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Major Tarver, a guest at the Deanery.\",\n      \"aliases\": [\n        \"Major Tarver\"\n      ]\n    },\n    {\n      \"name\": \"DARBEY\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Mr. Darbey, a guest at the Deanery; invites the Dean to visit.\",\n      \"aliases\": [\n        \"Mr. Darbey\"\n      ]\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Daughter of the Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Daughter of the Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"BLORE\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Servant at the Deanery.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse owned by Sir Tristram Mardon.\",\n      \"aliases\": [\n        \"Dandy\"\n      ]\n    },\n    {\n      \"name\": \"the Swan\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A place from which Dandy Dick is pulled out.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Deanery\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The residence of the Dean and his family.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Deanery Stables\",\n      \"type\": \"LOCATION\",\n      \"description\": \"Stables at the Deanery where Dandy Dick is to be housed.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Library\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A room in the Deanery.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the lane\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A lane near the Deanery where Hatcham runs Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Hatcham\",\n      \"type\": \"PERSON\",\n      \"description\": \"Sir Tristram's man who is running Dandy Dick up and down the lane.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Sir Tristram owns Dandy Dick.\",\n      \"evidence_quote\": \"Sir Tristram Mardon's Dandy Dick\",\n      \"source_chunk_id\": \"dd_act02_c0006\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Georgiana is the daughter of the Dean.\",\n      \"evidence_quote\": \"Georgiana, pray consider _me!_\",\n      \"source_chunk_id\": \"dd_act02_c0006\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"SHEBA\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Sheba is the daughter of the Dean.\",\n      \"evidence_quote\": \"Poor Papa looks worried.\",\n      \"source_chunk_id\": \"dd_act02_c0006\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Salome is the daughter of the Dean.\",\n      \"evidence_quote\": \"Papa, Major Tarver and Mr. Darbey must go.\",\n      \"source_chunk_id\": \"dd_act02_c0006\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"HELPS\",\n      \"description\": \"Georgiana helps bring Dandy Dick into the Deanery stables.\",\n      \"evidence_quote\": \"Bring Dandy Dick into our stables!\",\n      \"source_chunk_id\": \"dd_act02_c0006\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"GEORGIANA\",\n      \"relation\": \"HELPS\",\n      \"description\": \"Sir Tristram and Georgiana work together to move Dandy Dick.\",\n      \"evidence_quote\": \"One partner pulls Dandy out of the Swan--t'other one leads Dandy into the Deanery.\",\n      \"source_chunk_id\": \"dd_act02_c0006\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"the Deanery Stables\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Dandy Dick is to be housed in the Deanery stables.\",\n      \"evidence_quote\": \"Bring Dandy Dick into our stables!\",\n      \"source_chunk_id\": \"dd_act02_c0006\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"DARBEY\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Darbey invites the Dean to visit him.\",\n      \"evidence_quote\": \"come over and see me. We ought to know more of each other.\",\n      \"source_chunk_id\": \"dd_act02_c0006\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"DARBEY\",\n      \"relation\": \"OPPOSES\",\n      \"description\": \"The Dean is angered by Darbey and refuses to see him again.\",\n      \"evidence_quote\": \"if that Mr. Darbey ever again presumes to present himself at the Deanery I will not see him!\",\n      \"source_chunk_id\": \"dd_act02_c0006\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Hatcham\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"HELPS\",\n      \"description\": \"Hatcham is running Dandy Dick to warm him up.\",\n      \"evidence_quote\": \"My man Hatcham is running him up and down the lane here to try to get him warm again.\",\n      \"source_chunk_id\": \"dd_act02_c0006\",\n      \"confidence\": 0.8\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674472,
+    "id": "a563a508-62bf-42b2-a22a-967bf8266485",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1666,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1061,
+      "prompt_tokens": 1701,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 3367
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 15.458891,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:01:12.074841+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1666,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 1061,
+          "prompt_tokens": 1701,
+          "total_tokens": 3367
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1666,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1061,
+      "prompt_tokens": 1701,
+      "total_tokens": 3367
+    },
+    "total_elapsed_seconds": 15.458891
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "Owner of Dandy Dick, the horse.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Daughter of the Dean; suggests bringing Dandy Dick into the Deanery stables.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Father of Georgiana, Sheba, and Salome; reluctant to house Dandy Dick.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Major Tarver"
+        ],
+        "description": "Major Tarver, a guest at the Deanery.",
+        "name": "TARVER",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Mr. Darbey"
+        ],
+        "description": "Mr. Darbey, a guest at the Deanery; invites the Dean to visit.",
+        "name": "DARBEY",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Daughter of the Dean.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Daughter of the Dean.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Servant at the Deanery.",
+        "name": "BLORE",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Dandy"
+        ],
+        "description": "A horse owned by Sir Tristram Mardon.",
+        "name": "Dandy Dick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "A place from which Dandy Dick is pulled out.",
+        "name": "the Swan",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "The residence of the Dean and his family.",
+        "name": "the Deanery",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "Stables at the Deanery where Dandy Dick is to be housed.",
+        "name": "the Deanery Stables",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A room in the Deanery.",
+        "name": "the Library",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A lane near the Deanery where Hatcham runs Dandy Dick.",
+        "name": "the lane",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "Sir Tristram's man who is running Dandy Dick up and down the lane.",
+        "name": "Hatcham",
+        "type": "PERSON"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "Sir Tristram owns Dandy Dick.",
+        "evidence_quote": "Sir Tristram Mardon's Dandy Dick",
+        "relation": "OWNS",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act02_c0006",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Georgiana is the daughter of the Dean.",
+        "evidence_quote": "Georgiana, pray consider _me!_",
+        "relation": "PARENT_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act02_c0006",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Sheba is the daughter of the Dean.",
+        "evidence_quote": "Poor Papa looks worried.",
+        "relation": "PARENT_OF",
+        "source": "SHEBA",
+        "source_chunk_id": "dd_act02_c0006",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Salome is the daughter of the Dean.",
+        "evidence_quote": "Papa, Major Tarver and Mr. Darbey must go.",
+        "relation": "PARENT_OF",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act02_c0006",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Georgiana helps bring Dandy Dick into the Deanery stables.",
+        "evidence_quote": "Bring Dandy Dick into our stables!",
+        "relation": "HELPS",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act02_c0006",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Sir Tristram and Georgiana work together to move Dandy Dick.",
+        "evidence_quote": "One partner pulls Dandy out of the Swan--t'other one leads Dandy into the Deanery.",
+        "relation": "HELPS",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act02_c0006",
+        "target": "GEORGIANA"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Dandy Dick is to be housed in the Deanery stables.",
+        "evidence_quote": "Bring Dandy Dick into our stables!",
+        "relation": "LOCATED_AT",
+        "source": "Dandy Dick",
+        "source_chunk_id": "dd_act02_c0006",
+        "target": "the Deanery Stables"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Darbey invites the Dean to visit him.",
+        "evidence_quote": "come over and see me. We ought to know more of each other.",
+        "relation": "INTERACTS_WITH",
+        "source": "DARBEY",
+        "source_chunk_id": "dd_act02_c0006",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean is angered by Darbey and refuses to see him again.",
+        "evidence_quote": "if that Mr. Darbey ever again presumes to present himself at the Deanery I will not see him!",
+        "relation": "OPPOSES",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0006",
+        "target": "DARBEY"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Hatcham is running Dandy Dick to warm him up.",
+        "evidence_quote": "My man Hatcham is running him up and down the lane here to try to get him warm again.",
+        "relation": "HELPS",
+        "source": "Hatcham",
+        "source_chunk_id": "dd_act02_c0006",
+        "target": "Dandy Dick"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

@@ -1,0 +1,172 @@
+{
+  "groups": {
+    "Complex Reasoning": {
+      "entity_link_success_rate": 1.0,
+      "linked_at_least_two_rate": 1.0,
+      "neighborhood_nonempty_rate": 1.0,
+      "path_failure_reasons": {
+        "disconnected": 3
+      },
+      "path_found_rate": 0.89285714,
+      "query_count": 28,
+      "retrievers": {
+        "neighborhood": {
+          "average_returned_chunks": 5.0,
+          "latency_ms": {
+            "mean": 2.389641,
+            "p50": 2.408405,
+            "p95": 2.83752
+          },
+          "nonempty_rate": 1.0,
+          "status_counts": {
+            "success": 28
+          },
+          "success_rate": 1.0
+        },
+        "path": {
+          "average_returned_chunks": 4.35714286,
+          "latency_ms": {
+            "mean": 3.918199,
+            "p50": 4.056812,
+            "p95": 5.962154
+          },
+          "nonempty_rate": 0.89285714,
+          "status_counts": {
+            "disconnected": 3,
+            "success": 25
+          },
+          "success_rate": 0.89285714
+        },
+        "vector": {
+          "average_returned_chunks": 5.0,
+          "latency_ms": {
+            "mean": 0.046172,
+            "p50": 0.045359,
+            "p95": 0.053556
+          },
+          "nonempty_rate": 1.0,
+          "status_counts": {
+            "success": 28
+          },
+          "success_rate": 1.0
+        }
+      },
+      "same_component_rate": 0.89285714,
+      "same_component_rate_among_multi_entity": 0.89285714
+    },
+    "Fact Retrieval": {
+      "entity_link_success_rate": 1.0,
+      "linked_at_least_two_rate": 0.94117647,
+      "neighborhood_nonempty_rate": 1.0,
+      "path_failure_reasons": {
+        "disconnected": 5,
+        "insufficient_entities": 2
+      },
+      "path_found_rate": 0.79411765,
+      "query_count": 34,
+      "retrievers": {
+        "neighborhood": {
+          "average_returned_chunks": 4.91176471,
+          "latency_ms": {
+            "mean": 2.354476,
+            "p50": 2.405189,
+            "p95": 2.807086
+          },
+          "nonempty_rate": 1.0,
+          "status_counts": {
+            "success": 34
+          },
+          "success_rate": 1.0
+        },
+        "path": {
+          "average_returned_chunks": 3.85294118,
+          "latency_ms": {
+            "mean": 3.389727,
+            "p50": 2.773805,
+            "p95": 6.431994
+          },
+          "nonempty_rate": 0.79411765,
+          "status_counts": {
+            "disconnected": 5,
+            "insufficient_entities": 2,
+            "success": 27
+          },
+          "success_rate": 0.79411765
+        },
+        "vector": {
+          "average_returned_chunks": 5.0,
+          "latency_ms": {
+            "mean": 0.047405,
+            "p50": 0.04601,
+            "p95": 0.052678
+          },
+          "nonempty_rate": 1.0,
+          "status_counts": {
+            "success": 34
+          },
+          "success_rate": 1.0
+        }
+      },
+      "same_component_rate": 0.79411765,
+      "same_component_rate_among_multi_entity": 0.84375
+    },
+    "overall": {
+      "entity_link_success_rate": 1.0,
+      "linked_at_least_two_rate": 0.96774194,
+      "neighborhood_nonempty_rate": 1.0,
+      "path_failure_reasons": {
+        "disconnected": 8,
+        "insufficient_entities": 2
+      },
+      "path_found_rate": 0.83870968,
+      "query_count": 62,
+      "retrievers": {
+        "neighborhood": {
+          "average_returned_chunks": 4.9516129,
+          "latency_ms": {
+            "mean": 2.370357,
+            "p50": 2.405619,
+            "p95": 2.839978
+          },
+          "nonempty_rate": 1.0,
+          "status_counts": {
+            "success": 62
+          },
+          "success_rate": 1.0
+        },
+        "path": {
+          "average_returned_chunks": 4.08064516,
+          "latency_ms": {
+            "mean": 3.628392,
+            "p50": 3.267276,
+            "p95": 6.104331
+          },
+          "nonempty_rate": 0.83870968,
+          "status_counts": {
+            "disconnected": 8,
+            "insufficient_entities": 2,
+            "success": 52
+          },
+          "success_rate": 0.83870968
+        },
+        "vector": {
+          "average_returned_chunks": 5.0,
+          "latency_ms": {
+            "mean": 0.046849,
+            "p50": 0.045882,
+            "p95": 0.054484
+          },
+          "nonempty_rate": 1.0,
+          "status_counts": {
+            "success": 62
+          },
+          "success_rate": 1.0
+        }
+      },
+      "same_component_rate": 0.83870968,
+      "same_component_rate_among_multi_entity": 0.86666667
+    }
+  },
+  "schema_version": "phase4-v1",
+  "scope": "coverage-only; no answer generation or correctness evaluation"
+}

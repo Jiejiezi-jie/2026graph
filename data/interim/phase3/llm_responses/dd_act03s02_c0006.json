@@ -1,0 +1,178 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act03s02_c0006",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "d468a3ba27d5eacebdeebeb621338f473f05173f9f72a60e2a481ba0e0318d87",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Daughter of the Dean, referred to as Papsey by Sheba.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Father of Salome and Sheba, referred to as Papa and Papsey.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Present in the room with Aunt, goes out at the window following Hatcham.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Daughter of the Dean, sister of Sheba.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"HATCHAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Brings the analysis from the chemist to Sir Tristram.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Goes out at the window with Sir Tristram following Hatcham.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Lewis Isaacs\",\n      \"type\": \"PERSON\",\n      \"description\": \"Costumier to the Queen, located in Bow Street.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Durnstone\",\n      \"type\": \"LOCATION\",\n      \"description\": \"Location of a fancy masked ball last night.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Major Tarver\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Sitting on the hot pipes in the conservatory with Salome.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Mr. Darbey\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Mentioned by Sheba as needing a place to go.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is the father of Sheba.\",\n      \"evidence_quote\": \"Papa, Papa!\",\n      \"source_chunk_id\": \"dd_act03s02_c0006\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"SALOME\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"The Dean is the father of Salome.\",\n      \"evidence_quote\": \"Papa, Papa!\",\n      \"source_chunk_id\": \"dd_act03s02_c0006\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SHEBA\",\n      \"target\": \"SALOME\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Sheba and Salome are sisters.\",\n      \"evidence_quote\": \"Which of my hitherto trusted daughters was a lady--no, I will say a person--of the period of the French Revolution?\",\n      \"source_chunk_id\": \"dd_act03s02_c0006\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"GEORGIANA\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Sir Tristram and Georgiana go out together following Hatcham.\",\n      \"evidence_quote\": \"SIR TRISTRAM and GEORGIANA go out at the window, following HATCHAM.\",\n      \"source_chunk_id\": \"dd_act03s02_c0006\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"HATCHAM\",\n      \"target\": \"SIR TRISTRAM\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Hatcham informs Sir Tristram about the analysis.\",\n      \"evidence_quote\": \"Beg pardon, Sir Tristram. SIR TRISTRAM. What is it? HATCHAM. The chemist has just brought the annal_i_sis.\",\n      \"source_chunk_id\": \"dd_act03s02_c0006\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"Lewis Isaacs\",\n      \"target\": \"Durnstone\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Lewis Isaacs is located in Bow Street, not Durnstone. This relation is incorrect.\",\n      \"evidence_quote\": \"Debtor to Lewis Isaacs, Costumier to the Queen, Bow Street\",\n      \"source_chunk_id\": \"dd_act03s02_c0006\",\n      \"confidence\": 0.0\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674825,
+    "id": "10c4f618-808d-4558-b7c7-db5caa794bac",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1104,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 942,
+      "prompt_tokens": 1582,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2686
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 10.444297,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:07:05.655017+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1104,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 942,
+          "prompt_tokens": 1582,
+          "total_tokens": 2686
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1104,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 942,
+      "prompt_tokens": 1582,
+      "total_tokens": 2686
+    },
+    "total_elapsed_seconds": 10.444297
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "Daughter of the Dean, referred to as Papsey by Sheba.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Father of Salome and Sheba, referred to as Papa and Papsey.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Present in the room with Aunt, goes out at the window following Hatcham.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Daughter of the Dean, sister of Sheba.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Brings the analysis from the chemist to Sir Tristram.",
+        "name": "HATCHAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Goes out at the window with Sir Tristram following Hatcham.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Costumier to the Queen, located in Bow Street.",
+        "name": "Lewis Isaacs",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Location of a fancy masked ball last night.",
+        "name": "Durnstone",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "Sitting on the hot pipes in the conservatory with Salome.",
+        "name": "Major Tarver",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Mentioned by Sheba as needing a place to go.",
+        "name": "Mr. Darbey",
+        "type": "CHARACTER"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "The Dean is the father of Sheba.",
+        "evidence_quote": "Papa, Papa!",
+        "relation": "PARENT_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s02_c0006",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean is the father of Salome.",
+        "evidence_quote": "Papa, Papa!",
+        "relation": "PARENT_OF",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s02_c0006",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Sheba and Salome are sisters.",
+        "evidence_quote": "Which of my hitherto trusted daughters was a lady--no, I will say a person--of the period of the French Revolution?",
+        "relation": "SIBLING_OF",
+        "source": "SHEBA",
+        "source_chunk_id": "dd_act03s02_c0006",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Sir Tristram and Georgiana go out together following Hatcham.",
+        "evidence_quote": "SIR TRISTRAM and GEORGIANA go out at the window, following HATCHAM.",
+        "relation": "INTERACTS_WITH",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act03s02_c0006",
+        "target": "GEORGIANA"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Hatcham informs Sir Tristram about the analysis.",
+        "evidence_quote": "Beg pardon, Sir Tristram. SIR TRISTRAM. What is it? HATCHAM. The chemist has just brought the annal_i_sis.",
+        "relation": "INTERACTS_WITH",
+        "source": "HATCHAM",
+        "source_chunk_id": "dd_act03s02_c0006",
+        "target": "SIR TRISTRAM"
+      }
+    ]
+  },
+  "validation_warnings": [
+    "relation[5]_below_confidence"
+  ]
+}

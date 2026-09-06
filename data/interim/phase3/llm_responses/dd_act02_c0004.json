@@ -1,0 +1,212 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act02_c0004",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "fb4f7d843d638495f034c301fe10b60e7437779f4df3a3e1722bfd5f41c1ad58",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"DARBEY\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who plays an instrument and is compared to Joachim by his mother.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who accompanies DARBEY on an instrument and is concerned about her father being in the way.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who comments on the English evening and has a betting book.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who is worried about a thousand pounds to the Restoration Fund and bills, and later reads about seven wealthy people contributing.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who hopes her ball-dress will drive other women mad.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"TARVER\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who glares at DARBEY and wants to garrote him with his bass string.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"BLORE\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who enters with the paper and is hushed by the ladies.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Joachim\",\n      \"type\": \"PERSON\",\n      \"description\": \"A person whose bowing DARBEY's mother has heard.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"The Times\",\n      \"type\": \"CREATIVE_WORK\",\n      \"description\": \"A newspaper that BLORE brings and THE DEAN reads.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Restoration Fund\",\n      \"type\": \"ORGANIZATION\",\n      \"description\": \"A fund to which THE DEAN has pledged a thousand pounds.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Minster Spire\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A spire that is being restored with contributions from seven wealthy people.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Crumbleigh Stakes\",\n      \"type\": \"EVENT\",\n      \"description\": \"A horse race mentioned in GEORGIANA's betting book.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Chest C\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse owned by TARVER, mentioned by DARBEY.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"DARBEY\",\n      \"target\": \"Joachim\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"DARBEY's mother says his bowing is like Joachim's, implying a comparison.\",\n      \"evidence_quote\": \"My mother says that my bowing is something like Joachim's\",\n      \"source_chunk_id\": \"dd_act02_c0004\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"Restoration Fund\",\n      \"relation\": \"OWNS\",\n      \"description\": \"THE DEAN has pledged a thousand pounds to the Restoration Fund.\",\n      \"evidence_quote\": \"A thousand pounds to the Restoration Fund\",\n      \"source_chunk_id\": \"dd_act02_c0004\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"Minster Spire\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"THE DEAN is associated with the Minster Spire restoration.\",\n      \"evidence_quote\": \"in aid of the restoration of the Minster Spire\",\n      \"source_chunk_id\": \"dd_act02_c0004\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"Crumbleigh Stakes\",\n      \"relation\": \"PARTICIPATES_IN\",\n      \"description\": \"GEORGIANA considers hedging her bet on the Crumbleigh Stakes.\",\n      \"evidence_quote\": \"I think I shall hedge a bit over the Crumbleigh Stakes\",\n      \"source_chunk_id\": \"dd_act02_c0004\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"TARVER\",\n      \"target\": \"Chest C\",\n      \"relation\": \"OWNS\",\n      \"description\": \"DARBEY refers to 'old Tarver's Chest C', indicating TARVER owns the horse.\",\n      \"evidence_quote\": \"old Tarver's Chest C\",\n      \"source_chunk_id\": \"dd_act02_c0004\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"The Times\",\n      \"relation\": \"OWNS\",\n      \"description\": \"BLORE brings the paper, which is The Times.\",\n      \"evidence_quote\": \"The paper's just arrived.\",\n      \"source_chunk_id\": \"dd_act02_c0004\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"The Times\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"THE DEAN takes the paper from BLORE and reads it.\",\n      \"evidence_quote\": \"Taking the paper from BLORE\",\n      \"source_chunk_id\": \"dd_act02_c0004\",\n      \"confidence\": 0.9\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674446,
+    "id": "5398468c-8ce5-4f6b-a39c-6b972cbe5e69",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1309,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 958,
+      "prompt_tokens": 1598,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2907
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 13.070628,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:00:46.548116+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1309,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 958,
+          "prompt_tokens": 1598,
+          "total_tokens": 2907
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1309,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 958,
+      "prompt_tokens": 1598,
+      "total_tokens": 2907
+    },
+    "total_elapsed_seconds": 13.070628
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A character who plays an instrument and is compared to Joachim by his mother.",
+        "name": "DARBEY",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who accompanies DARBEY on an instrument and is concerned about her father being in the way.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who comments on the English evening and has a betting book.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who is worried about a thousand pounds to the Restoration Fund and bills, and later reads about seven wealthy people contributing.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who hopes her ball-dress will drive other women mad.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who glares at DARBEY and wants to garrote him with his bass string.",
+        "name": "TARVER",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who enters with the paper and is hushed by the ladies.",
+        "name": "BLORE",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A person whose bowing DARBEY's mother has heard.",
+        "name": "Joachim",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "A newspaper that BLORE brings and THE DEAN reads.",
+        "name": "The Times",
+        "type": "CREATIVE_WORK"
+      },
+      {
+        "aliases": [],
+        "description": "A fund to which THE DEAN has pledged a thousand pounds.",
+        "name": "Restoration Fund",
+        "type": "ORGANIZATION"
+      },
+      {
+        "aliases": [],
+        "description": "A spire that is being restored with contributions from seven wealthy people.",
+        "name": "Minster Spire",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A horse race mentioned in GEORGIANA's betting book.",
+        "name": "Crumbleigh Stakes",
+        "type": "EVENT"
+      },
+      {
+        "aliases": [],
+        "description": "A horse owned by TARVER, mentioned by DARBEY.",
+        "name": "Chest C",
+        "type": "ANIMAL"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.7,
+        "description": "DARBEY's mother says his bowing is like Joachim's, implying a comparison.",
+        "evidence_quote": "My mother says that my bowing is something like Joachim's",
+        "relation": "INTERACTS_WITH",
+        "source": "DARBEY",
+        "source_chunk_id": "dd_act02_c0004",
+        "target": "Joachim"
+      },
+      {
+        "confidence": 0.9,
+        "description": "THE DEAN has pledged a thousand pounds to the Restoration Fund.",
+        "evidence_quote": "A thousand pounds to the Restoration Fund",
+        "relation": "OWNS",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0004",
+        "target": "Restoration Fund"
+      },
+      {
+        "confidence": 0.8,
+        "description": "THE DEAN is associated with the Minster Spire restoration.",
+        "evidence_quote": "in aid of the restoration of the Minster Spire",
+        "relation": "LOCATED_AT",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0004",
+        "target": "Minster Spire"
+      },
+      {
+        "confidence": 0.9,
+        "description": "GEORGIANA considers hedging her bet on the Crumbleigh Stakes.",
+        "evidence_quote": "I think I shall hedge a bit over the Crumbleigh Stakes",
+        "relation": "PARTICIPATES_IN",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act02_c0004",
+        "target": "Crumbleigh Stakes"
+      },
+      {
+        "confidence": 0.9,
+        "description": "DARBEY refers to 'old Tarver's Chest C', indicating TARVER owns the horse.",
+        "evidence_quote": "old Tarver's Chest C",
+        "relation": "OWNS",
+        "source": "TARVER",
+        "source_chunk_id": "dd_act02_c0004",
+        "target": "Chest C"
+      },
+      {
+        "confidence": 0.8,
+        "description": "BLORE brings the paper, which is The Times.",
+        "evidence_quote": "The paper's just arrived.",
+        "relation": "OWNS",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act02_c0004",
+        "target": "The Times"
+      },
+      {
+        "confidence": 0.9,
+        "description": "THE DEAN takes the paper from BLORE and reads it.",
+        "evidence_quote": "Taking the paper from BLORE",
+        "relation": "INTERACTS_WITH",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0004",
+        "target": "The Times"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

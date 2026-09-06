@@ -1,0 +1,418 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_cast_c0001",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "667fb1fe4f2f802faaf16637e8531490a4c86c73cc05df1b314239c05ee6510b",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"CREATIVE_WORK\",\n      \"description\": \"An original farce in three acts by A. W. Pinero, performed at the Royal Court Theatre.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"A. W. Pinero\",\n      \"type\": \"PERSON\",\n      \"description\": \"Author of the play Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Royal Court Theatre\",\n      \"type\": \"LOCATION\",\n      \"description\": \"Theatre located at Sloane Square, S.W., where Dandy Dick is performed.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"John Clayton\",\n      \"type\": \"PERSON\",\n      \"description\": \"Lessee and manager of the Royal Court Theatre; also portrays the Very Rev. Augustin Jedd, D.D.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Arthur Cecil\",\n      \"type\": \"PERSON\",\n      \"description\": \"Lessee and manager of the Royal Court Theatre; also portrays Blore, the butler at the Deanery.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"The Very Rev. Augustin Jedd, D.D.\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Dean of St. Marvell's, portrayed by Mr. John Clayton.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Sir Tristram Mardon, Bart\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A baronet, portrayed by Mr. Edmund Maurice.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Major Tarver\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A major in the --th Hussars, quartered at Durnstone, near St. Marvell's, portrayed by Mr. F. Kerr.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Mr. Darbey\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Quartered at Durnstone, near St. Marvell's, portrayed by Mr. H. Eversfield.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Blore\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Butler at the Deanery, portrayed by Mr. Arthur Cecil.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Noah Topping\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Constable at St. Marvell's, portrayed by Mr. W. H. Denny.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Hatcham\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Sir Tristram's groom, portrayed by Mr. W. Lugg.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Georgiana Tidman\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A widow, the Dean's sister, portrayed by Mrs. John Wood.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Salome\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"One of the Dean's daughters, portrayed by Miss Marie Lewes.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Sheba\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"One of the Dean's daughters, portrayed by Miss Norreys.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Hannah Topping\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Formerly in service at the Deanery, portrayed by Miss Laura Linden.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Edmund Maurice\",\n      \"type\": \"PERSON\",\n      \"description\": \"Actor portraying Sir Tristram Mardon, Bart.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"F. Kerr\",\n      \"type\": \"PERSON\",\n      \"description\": \"Actor portraying Major Tarver.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"H. Eversfield\",\n      \"type\": \"PERSON\",\n      \"description\": \"Actor portraying Mr. Darbey.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"W. H. Denny\",\n      \"type\": \"PERSON\",\n      \"description\": \"Actor portraying Noah Topping.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"W. Lugg\",\n      \"type\": \"PERSON\",\n      \"description\": \"Actor portraying Hatcham.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Mrs. John Wood\",\n      \"type\": \"PERSON\",\n      \"description\": \"Actress portraying Georgiana Tidman.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Miss Marie Lewes\",\n      \"type\": \"PERSON\",\n      \"description\": \"Actress portraying Salome.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Miss Norreys\",\n      \"type\": \"PERSON\",\n      \"description\": \"Actress portraying Sheba.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Miss Laura Linden\",\n      \"type\": \"PERSON\",\n      \"description\": \"Actress portraying Hannah Topping.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"The Nettle\",\n      \"type\": \"CREATIVE_WORK\",\n      \"description\": \"An original comedietta by Ernest Warren, performed before Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Ernest Warren\",\n      \"type\": \"PERSON\",\n      \"description\": \"Author of The Nettle.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"T. W. Hall\",\n      \"type\": \"PERSON\",\n      \"description\": \"Designer of new scenery for the production.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"A. W. Pinero\",\n      \"relation\": \"AUTHORED_BY\",\n      \"description\": \"Dandy Dick is an original farce by A. W. Pinero.\",\n      \"evidence_quote\": \"DANDY DICK. AN ORIGINAL FARCE, IN THREE ACTS, BY A. W. PINERO.\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"Royal Court Theatre\",\n      \"relation\": \"PERFORMED_AT\",\n      \"description\": \"Dandy Dick is performed at the Royal Court Theatre.\",\n      \"evidence_quote\": \"ROYAL COURT THEATRE, SLOANE SQUARE, S.W. ... DANDY DICK.\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Royal Court Theatre\",\n      \"target\": \"John Clayton\",\n      \"relation\": \"MANAGED_BY\",\n      \"description\": \"John Clayton is a lessee and manager of the Royal Court Theatre.\",\n      \"evidence_quote\": \"Lessees and Managers: Mr. John Clayton and Mr. Arthur Cecil.\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Royal Court Theatre\",\n      \"target\": \"Arthur Cecil\",\n      \"relation\": \"MANAGED_BY\",\n      \"description\": \"Arthur Cecil is a lessee and manager of the Royal Court Theatre.\",\n      \"evidence_quote\": \"Lessees and Managers: Mr. John Clayton and Mr. Arthur Cecil.\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"The Very Rev. Augustin Jedd, D.D.\",\n      \"target\": \"John Clayton\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"description\": \"The Very Rev. Augustin Jedd, D.D. is portrayed by Mr. John Clayton.\",\n      \"evidence_quote\": \"THE VERY REV. AUGUSTIN JEDD, D.D. MR. JOHN CLAYTON.\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Sir Tristram Mardon, Bart\",\n      \"target\": \"Edmund Maurice\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"description\": \"Sir Tristram Mardon, Bart is portrayed by Mr. Edmund Maurice.\",\n      \"evidence_quote\": \"SIR TRISTRAM MARDON, Bart MR. EDMUND MAURICE.\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Major Tarver\",\n      \"target\": \"F. Kerr\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"description\": \"Major Tarver is portrayed by Mr. F. Kerr.\",\n      \"evidence_quote\": \"MAJOR TARVER { quartered at } MR. F. KERR.\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Mr. Darbey\",\n      \"target\": \"H. Eversfield\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"description\": \"Mr. Darbey is portrayed by Mr. H. Eversfield.\",\n      \"evidence_quote\": \"MR. DARBEY { Durnstone, near } MR. H. EVERSFIELD.\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Blore\",\n      \"target\": \"Arthur Cecil\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"description\": \"Blore is portrayed by Mr. Arthur Cecil.\",\n      \"evidence_quote\": \"BLORE (Butler at the Deanery) MR. ARTHUR CECIL.\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Noah Topping\",\n      \"target\": \"W. H. Denny\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"description\": \"Noah Topping is portrayed by Mr. W. H. Denny.\",\n      \"evidence_quote\": \"NOAH TOPPING (Constable at MR. W. H. DENNY.\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Hatcham\",\n      \"target\": \"W. Lugg\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"description\": \"Hatcham is portrayed by Mr. W. Lugg.\",\n      \"evidence_quote\": \"HATCHAM (Sir Tristram's groom) MR. W. LUGG.\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Georgiana Tidman\",\n      \"target\": \"Mrs. John Wood\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"description\": \"Georgiana Tidman is portrayed by Mrs. John Wood.\",\n      \"evidence_quote\": \"GEORGIANA TIDMAN (a Widow, MRS. JOHN WOOD.\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Salome\",\n      \"target\": \"Miss Marie Lewes\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"description\": \"Salome is portrayed by Miss Marie Lewes.\",\n      \"evidence_quote\": \"SALOME } the Dean's Daughters { MISS MARIE LEWES.\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Sheba\",\n      \"target\": \"Miss Norreys\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"description\": \"Sheba is portrayed by Miss Norreys.\",\n      \"evidence_quote\": \"SHEBA } { MISS NORREYS.\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Hannah Topping\",\n      \"target\": \"Miss Laura Linden\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"description\": \"Hannah Topping is portrayed by Miss Laura Linden.\",\n      \"evidence_quote\": \"HANNAH TOPPING (formerly in MISS LAURA LINDEN.\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"The Nettle\",\n      \"target\": \"Ernest Warren\",\n      \"relation\": \"AUTHORED_BY\",\n      \"description\": \"The Nettle is an original comedietta by Ernest Warren.\",\n      \"evidence_quote\": \"Preceded, at Eight o'clock, by \\\"THE NETTLE.\\\" An Original Comedietta by ERNEST WARREN.\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"The Nettle\",\n      \"target\": \"Royal Court Theatre\",\n      \"relation\": \"PERFORMED_AT\",\n      \"description\": \"The Nettle is performed at the Royal Court Theatre before Dandy Dick.\",\n      \"evidence_quote\": \"Preceded, at Eight o'clock, by \\\"THE NETTLE.\\\"\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"The Very Rev. Augustin Jedd, D.D.\",\n      \"target\": \"Georgiana Tidman\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Georgiana Tidman is the Dean's sister.\",\n      \"evidence_quote\": \"GEORGIANA TIDMAN (a Widow, the Dean's sister)\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"The Very Rev. Augustin Jedd, D.D.\",\n      \"target\": \"Salome\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Salome is one of the Dean's daughters.\",\n      \"evidence_quote\": \"SALOME } the Dean's Daughters\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"The Very Rev. Augustin Jedd, D.D.\",\n      \"target\": \"Sheba\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Sheba is one of the Dean's daughters.\",\n      \"evidence_quote\": \"SHEBA } the Dean's Daughters\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Hatcham\",\n      \"target\": \"Sir Tristram Mardon, Bart\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Hatcham is Sir Tristram's groom.\",\n      \"evidence_quote\": \"HATCHAM (Sir Tristram's groom)\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Blore\",\n      \"target\": \"The Very Rev. Augustin Jedd, D.D.\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Blore is the butler at the Deanery, which is the Dean's residence.\",\n      \"evidence_quote\": \"BLORE (Butler at the Deanery)\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Noah Topping\",\n      \"target\": \"St. Marvell's\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Noah Topping is a constable at St. Marvell's.\",\n      \"evidence_quote\": \"NOAH TOPPING (Constable at St. Marvell's)\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Major Tarver\",\n      \"target\": \"Durnstone\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Major Tarver is quartered at Durnstone, near St. Marvell's.\",\n      \"evidence_quote\": \"MAJOR TARVER { quartered at } Durnstone, near St. Marvell's\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Mr. Darbey\",\n      \"target\": \"Durnstone\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Mr. Darbey is quartered at Durnstone, near St. Marvell's.\",\n      \"evidence_quote\": \"MR. DARBEY { Durnstone, near } St. Marvell's\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 1.0\n    },\n    {\n      \"source\": \"Hannah Topping\",\n      \"target\": \"The Very Rev. Augustin Jedd, D.D.\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Hannah Topping was formerly in service at the Deanery, which is the Dean's residence.\",\n      \"evidence_quote\": \"HANNAH TOPPING (formerly in Service at the Deanery)\",\n      \"source_chunk_id\": \"dd_cast_c0001\",\n      \"confidence\": 0.9\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674169,
+    "id": "5398ac56-f6ea-4f43-85c7-435abd66536e",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 3976,
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 36,
+      "prompt_tokens": 1316,
+      "prompt_tokens_details": {
+        "cached_tokens": 1280
+      },
+      "total_tokens": 5292
+    }
+  },
+  "request_audit": {
+    "attempt_count": 3,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 30.97081,
+        "error": "模型 content 不是合法 JSON：Unterminated string starting at: line 408 column 7 (char 13510)",
+        "error_type": "Phase3Error",
+        "started_at_utc": "2026-09-06T05:55:00.429821+00:00",
+        "status": "failed"
+      },
+      {
+        "attempt": 2,
+        "elapsed_seconds": 31.647618,
+        "error": "模型 content 不是合法 JSON：Unterminated string starting at: line 403 column 17 (char 13422)",
+        "error_type": "Phase3Error",
+        "started_at_utc": "2026-09-06T05:55:33.400789+00:00",
+        "status": "failed"
+      },
+      {
+        "attempt": 3,
+        "elapsed_seconds": 29.560626,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T05:56:09.048563+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 3976,
+          "prompt_cache_hit_tokens": 1280,
+          "prompt_cache_miss_tokens": 36,
+          "prompt_tokens": 1316,
+          "total_tokens": 5292
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 3976,
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 36,
+      "prompt_tokens": 1316,
+      "total_tokens": 5292
+    },
+    "total_elapsed_seconds": 92.179054
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "An original farce in three acts by A. W. Pinero, performed at the Royal Court Theatre.",
+        "name": "Dandy Dick",
+        "type": "CREATIVE_WORK"
+      },
+      {
+        "aliases": [],
+        "description": "Author of the play Dandy Dick.",
+        "name": "A. W. Pinero",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Theatre located at Sloane Square, S.W., where Dandy Dick is performed.",
+        "name": "Royal Court Theatre",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "Lessee and manager of the Royal Court Theatre; also portrays the Very Rev. Augustin Jedd, D.D.",
+        "name": "John Clayton",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Lessee and manager of the Royal Court Theatre; also portrays Blore, the butler at the Deanery.",
+        "name": "Arthur Cecil",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Dean of St. Marvell's, portrayed by Mr. John Clayton.",
+        "name": "The Very Rev. Augustin Jedd, D.D.",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A baronet, portrayed by Mr. Edmund Maurice.",
+        "name": "Sir Tristram Mardon, Bart",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A major in the --th Hussars, quartered at Durnstone, near St. Marvell's, portrayed by Mr. F. Kerr.",
+        "name": "Major Tarver",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Quartered at Durnstone, near St. Marvell's, portrayed by Mr. H. Eversfield.",
+        "name": "Mr. Darbey",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Butler at the Deanery, portrayed by Mr. Arthur Cecil.",
+        "name": "Blore",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Constable at St. Marvell's, portrayed by Mr. W. H. Denny.",
+        "name": "Noah Topping",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Sir Tristram's groom, portrayed by Mr. W. Lugg.",
+        "name": "Hatcham",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A widow, the Dean's sister, portrayed by Mrs. John Wood.",
+        "name": "Georgiana Tidman",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "One of the Dean's daughters, portrayed by Miss Marie Lewes.",
+        "name": "Salome",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "One of the Dean's daughters, portrayed by Miss Norreys.",
+        "name": "Sheba",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Formerly in service at the Deanery, portrayed by Miss Laura Linden.",
+        "name": "Hannah Topping",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Actor portraying Sir Tristram Mardon, Bart.",
+        "name": "Edmund Maurice",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Actor portraying Major Tarver.",
+        "name": "F. Kerr",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Actor portraying Mr. Darbey.",
+        "name": "H. Eversfield",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Actor portraying Noah Topping.",
+        "name": "W. H. Denny",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Actor portraying Hatcham.",
+        "name": "W. Lugg",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Actress portraying Georgiana Tidman.",
+        "name": "Mrs. John Wood",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Actress portraying Salome.",
+        "name": "Miss Marie Lewes",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Actress portraying Sheba.",
+        "name": "Miss Norreys",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Actress portraying Hannah Topping.",
+        "name": "Miss Laura Linden",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "An original comedietta by Ernest Warren, performed before Dandy Dick.",
+        "name": "The Nettle",
+        "type": "CREATIVE_WORK"
+      },
+      {
+        "aliases": [],
+        "description": "Author of The Nettle.",
+        "name": "Ernest Warren",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "Designer of new scenery for the production.",
+        "name": "T. W. Hall",
+        "type": "PERSON"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 1.0,
+        "description": "Dandy Dick is an original farce by A. W. Pinero.",
+        "evidence_quote": "DANDY DICK. AN ORIGINAL FARCE, IN THREE ACTS, BY A. W. PINERO.",
+        "relation": "AUTHORED_BY",
+        "source": "Dandy Dick",
+        "source_chunk_id": "dd_cast_c0001",
+        "target": "A. W. Pinero"
+      },
+      {
+        "confidence": 1.0,
+        "description": "The Very Rev. Augustin Jedd, D.D. is portrayed by Mr. John Clayton.",
+        "evidence_quote": "THE VERY REV. AUGUSTIN JEDD, D.D. MR. JOHN CLAYTON.",
+        "relation": "PORTRAYED_BY",
+        "source": "The Very Rev. Augustin Jedd, D.D.",
+        "source_chunk_id": "dd_cast_c0001",
+        "target": "John Clayton"
+      },
+      {
+        "confidence": 1.0,
+        "description": "Sir Tristram Mardon, Bart is portrayed by Mr. Edmund Maurice.",
+        "evidence_quote": "SIR TRISTRAM MARDON, Bart MR. EDMUND MAURICE.",
+        "relation": "PORTRAYED_BY",
+        "source": "Sir Tristram Mardon, Bart",
+        "source_chunk_id": "dd_cast_c0001",
+        "target": "Edmund Maurice"
+      },
+      {
+        "confidence": 1.0,
+        "description": "Major Tarver is portrayed by Mr. F. Kerr.",
+        "evidence_quote": "MAJOR TARVER { quartered at } MR. F. KERR.",
+        "relation": "PORTRAYED_BY",
+        "source": "Major Tarver",
+        "source_chunk_id": "dd_cast_c0001",
+        "target": "F. Kerr"
+      },
+      {
+        "confidence": 1.0,
+        "description": "Mr. Darbey is portrayed by Mr. H. Eversfield.",
+        "evidence_quote": "MR. DARBEY { Durnstone, near } MR. H. EVERSFIELD.",
+        "relation": "PORTRAYED_BY",
+        "source": "Mr. Darbey",
+        "source_chunk_id": "dd_cast_c0001",
+        "target": "H. Eversfield"
+      },
+      {
+        "confidence": 1.0,
+        "description": "Blore is portrayed by Mr. Arthur Cecil.",
+        "evidence_quote": "BLORE (Butler at the Deanery) MR. ARTHUR CECIL.",
+        "relation": "PORTRAYED_BY",
+        "source": "Blore",
+        "source_chunk_id": "dd_cast_c0001",
+        "target": "Arthur Cecil"
+      },
+      {
+        "confidence": 1.0,
+        "description": "Noah Topping is portrayed by Mr. W. H. Denny.",
+        "evidence_quote": "NOAH TOPPING (Constable at MR. W. H. DENNY.",
+        "relation": "PORTRAYED_BY",
+        "source": "Noah Topping",
+        "source_chunk_id": "dd_cast_c0001",
+        "target": "W. H. Denny"
+      },
+      {
+        "confidence": 1.0,
+        "description": "Hatcham is portrayed by Mr. W. Lugg.",
+        "evidence_quote": "HATCHAM (Sir Tristram's groom) MR. W. LUGG.",
+        "relation": "PORTRAYED_BY",
+        "source": "Hatcham",
+        "source_chunk_id": "dd_cast_c0001",
+        "target": "W. Lugg"
+      },
+      {
+        "confidence": 1.0,
+        "description": "Georgiana Tidman is portrayed by Mrs. John Wood.",
+        "evidence_quote": "GEORGIANA TIDMAN (a Widow, MRS. JOHN WOOD.",
+        "relation": "PORTRAYED_BY",
+        "source": "Georgiana Tidman",
+        "source_chunk_id": "dd_cast_c0001",
+        "target": "Mrs. John Wood"
+      },
+      {
+        "confidence": 1.0,
+        "description": "Salome is portrayed by Miss Marie Lewes.",
+        "evidence_quote": "SALOME } the Dean's Daughters { MISS MARIE LEWES.",
+        "relation": "PORTRAYED_BY",
+        "source": "Salome",
+        "source_chunk_id": "dd_cast_c0001",
+        "target": "Miss Marie Lewes"
+      },
+      {
+        "confidence": 1.0,
+        "description": "Sheba is portrayed by Miss Norreys.",
+        "evidence_quote": "SHEBA } { MISS NORREYS.",
+        "relation": "PORTRAYED_BY",
+        "source": "Sheba",
+        "source_chunk_id": "dd_cast_c0001",
+        "target": "Miss Norreys"
+      },
+      {
+        "confidence": 1.0,
+        "description": "Hannah Topping is portrayed by Miss Laura Linden.",
+        "evidence_quote": "HANNAH TOPPING (formerly in MISS LAURA LINDEN.",
+        "relation": "PORTRAYED_BY",
+        "source": "Hannah Topping",
+        "source_chunk_id": "dd_cast_c0001",
+        "target": "Miss Laura Linden"
+      },
+      {
+        "confidence": 1.0,
+        "description": "The Nettle is an original comedietta by Ernest Warren.",
+        "evidence_quote": "Preceded, at Eight o'clock, by \"THE NETTLE.\" An Original Comedietta by ERNEST WARREN.",
+        "relation": "AUTHORED_BY",
+        "source": "The Nettle",
+        "source_chunk_id": "dd_cast_c0001",
+        "target": "Ernest Warren"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Nettle is performed at the Royal Court Theatre before Dandy Dick.",
+        "evidence_quote": "Preceded, at Eight o'clock, by \"THE NETTLE.\"",
+        "relation": "PERFORMED_AT",
+        "source": "The Nettle",
+        "source_chunk_id": "dd_cast_c0001",
+        "target": "Royal Court Theatre"
+      },
+      {
+        "confidence": 1.0,
+        "description": "Salome is one of the Dean's daughters.",
+        "evidence_quote": "SALOME } the Dean's Daughters",
+        "relation": "PARENT_OF",
+        "source": "The Very Rev. Augustin Jedd, D.D.",
+        "source_chunk_id": "dd_cast_c0001",
+        "target": "Salome"
+      },
+      {
+        "confidence": 1.0,
+        "description": "Hatcham is Sir Tristram's groom.",
+        "evidence_quote": "HATCHAM (Sir Tristram's groom)",
+        "relation": "EMPLOYED_BY",
+        "source": "Hatcham",
+        "source_chunk_id": "dd_cast_c0001",
+        "target": "Sir Tristram Mardon, Bart"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Blore is the butler at the Deanery, which is the Dean's residence.",
+        "evidence_quote": "BLORE (Butler at the Deanery)",
+        "relation": "EMPLOYED_BY",
+        "source": "Blore",
+        "source_chunk_id": "dd_cast_c0001",
+        "target": "The Very Rev. Augustin Jedd, D.D."
+      }
+    ]
+  },
+  "validation_warnings": [
+    "relation[1]_evidence_mismatch",
+    "relation[2]_evidence_mismatch",
+    "relation[3]_evidence_mismatch",
+    "relation[17]_evidence_mismatch",
+    "relation[19]_evidence_mismatch",
+    "relation[22]_evidence_mismatch",
+    "relation[23]_evidence_mismatch",
+    "relation[24]_evidence_mismatch",
+    "relation[25]_evidence_mismatch"
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "version": "phase3-aliases-v1",
+  "notes": "Only aliases directly supported by Dandy Dick's cast list or dialogue are merged. Character and performer identities remain separate.",
+  "canonical_entities": [
+    {
+      "canonical": "Augustin Jedd",
+      "type": "CHARACTER",
+      "aliases": ["THE DEAN", "The Dean", "Dean", "Augustin", "Gus", "Jedd", "Dr. Jedd", "Papa", "Pa", "Papsey", "poor Papa", "the Dean of St. Marvells", "The Very Rev. Augustin Jedd", "The Very Rev. Augustin Jedd, D.D."]
+    },
+    {
+      "canonical": "Georgiana Tidman",
+      "type": "CHARACTER",
+      "aliases": ["GEORGIANA TIDMAN", "GEORGIANA", "Georgiana", "George", "George Tidd", "Tidd", "Mrs. Tidman", "Aunt Georgiana", "Aunt George", "Aunt Tidman"]
+    },
+    {
+      "canonical": "Sir Tristram Mardon",
+      "type": "CHARACTER",
+      "aliases": ["SIR TRISTRAM MARDON", "SIR TRISTRAM MARDON, Bart", "Sir Tristram Mardon, Bart", "SIR TRISTRAM", "Sir Tristram", "Tristram", "Tris", "Tris Mardon", "Mardon"]
+    },
+    {
+      "canonical": "Salome Jedd",
+      "type": "CHARACTER",
+      "aliases": ["SALOME", "Salome", "Sally", "Miss Salome"]
+    },
+    {
+      "canonical": "Sheba Jedd",
+      "type": "CHARACTER",
+      "aliases": ["SHEBA", "Sheba", "Miss Sheba", "Little 'un"]
+    },
+    {
+      "canonical": "Major Tarver",
+      "type": "CHARACTER",
+      "aliases": ["MAJOR TARVER", "TARVER", "Major Tarver", "Major", "Gerald Tarver"]
+    },
+    {
+      "canonical": "Nugent Darbey",
+      "type": "CHARACTER",
+      "aliases": ["MR. DARBEY", "DARBEY", "Mr. Darbey", "Nugent Darbey"]
+    },
+    {
+      "canonical": "Blore",
+      "type": "CHARACTER",
+      "aliases": ["BLORE", "Blore", "Mr. Blore", "Edward", "Edward Blore"]
+    },
+    {
+      "canonical": "Noah Topping",
+      "type": "CHARACTER",
+      "aliases": ["NOAH TOPPING", "NOAH", "Noah", "Noahry", "Mr. Topping", "the Constable"]
+    },
+    {
+      "canonical": "Hannah Topping",
+      "type": "CHARACTER",
+      "aliases": ["HANNAH TOPPING", "HANNAH", "Hannah", "Annah", "Hannah Evans", "Miss Hevans", "Mrs. Topping"]
+    },
+    {
+      "canonical": "Hatcham",
+      "type": "CHARACTER",
+      "aliases": ["HATCHAM", "Hatcham", "Bob Hatcham"]
+    },
+    {
+      "canonical": "Dandy Dick",
+      "type": "ANIMAL",
+      "aliases": ["Dandy", "Dandy Dick"]
+    },
+    {
+      "canonical": "Dandy Dick (play)",
+      "type": "CREATIVE_WORK",
+      "aliases": ["Dandy Dick", "DANDY DICK"]
+    },
+    {
+      "canonical": "Bonny Betsy",
+      "type": "ANIMAL",
+      "aliases": ["Bonny Betsy", "Bonny-Betsy"]
+    },
+    {
+      "canonical": "Old Nick",
+      "type": "ANIMAL",
+      "aliases": ["Nick", "old Nick", "Old Nick", "Nick the fire-brigade horse", "the horse"]
+    },
+    {
+      "canonical": "The Deanery of St. Marvells",
+      "type": "LOCATION",
+      "aliases": ["Deanery", "the Deanery", "Deanery of St. Marvells", "St. Marvells Deanery"]
+    },
+    {
+      "canonical": "The Swan Inn",
+      "type": "LOCATION",
+      "aliases": ["Swan Inn", "The Swan", "the Swan", "the \"Swan", "The \"Swan\""]
+    },
+    {
+      "canonical": "Durnstone Athenaeum",
+      "type": "LOCATION",
+      "aliases": ["Durnstone Athenaeum", "the Athenaeum", "the Hathanaeum"]
+    },
+    {
+      "canonical": "Royal Court Theatre",
+      "type": "LOCATION",
+      "aliases": ["Royal Court Theatre", "the Royal Court Theatre", "Court Theatre", "the Court Theatre", "old Court Theatre"]
+    },
+    {
+      "canonical": "Toole's Theatre",
+      "type": "LOCATION",
+      "aliases": ["Toole's Theatre", "Tooles Theatre"]
+    },
+    {
+      "canonical": "St. Marvells Spring Meeting",
+      "type": "EVENT",
+      "aliases": ["St. Marvells Spring Meeting", "St. Marvells Races", "the Races"]
+    },
+    {
+      "canonical": "Fancy Dress Masked Ball",
+      "type": "EVENT",
+      "aliases": ["Fancy Dress Masked Ball", "the Ball"]
+    },
+    {
+      "canonical": "The Times",
+      "type": "CREATIVE_WORK",
+      "aliases": ["The Times", "Times"]
+    },
+    {
+      "canonical": "St. Marvells Minster Spire",
+      "type": "OBJECT",
+      "aliases": ["Minster Spire", "Minister Spire", "the Spire"]
+    },
+    {
+      "canonical": "Strong Box",
+      "type": "OBJECT",
+      "aliases": ["Strong-box", "the Strong Box", "the Strong-box"]
+    },
+    {
+      "canonical": "Arthur Cecil",
+      "type": "PERSON",
+      "aliases": ["Arthur Cecil", "Mr. Arthur Cecil"]
+    },
+    {
+      "canonical": "John Clayton",
+      "type": "PERSON",
+      "aliases": ["John Clayton", "Mr. John Clayton", "Mr. Clayton"]
+    },
+    {
+      "canonical": "John Ruggles",
+      "type": "PERSON",
+      "aliases": ["John Ruggles", "Durnstone Superintendent"]
+    },
+    {
+      "canonical": "Dr. Middleton",
+      "type": "PERSON",
+      "aliases": ["Dr. Middleton", "Doctor"]
+    },
+    {
+      "canonical": "Arthur W. Pinero",
+      "type": "PERSON",
+      "aliases": ["ARTHUR W. PINERO", "A. W. PINERO", "Arthur Wing Pinero", "Mr. Pinero"]
+    }
+  ],
+  "blocked_aliases": [
+    {
+      "alias": "prisoner",
+      "reason": "This generic contextual label cannot be globally resolved from the label alone, even though a later scene identifies Augustin Jedd as a detainee.",
+      "candidates": ["Augustin Jedd"]
+    },
+    {
+      "alias": "the ruffian",
+      "reason": "This is a generic contextual label for an unidentified detainee and is not a stable entity name.",
+      "candidates": []
+    },
+    {
+      "alias": "Miss Jedd",
+      "reason": "The surname-and-title reference can denote either Salome Jedd or Sheba Jedd.",
+      "candidates": ["Salome Jedd", "Sheba Jedd"]
+    },
+    {
+      "alias": "the horse called Deception",
+      "reason": "This is an explicit metaphor in Georgiana's speech, not a literal animal entity.",
+      "candidates": []
+    },
+    {
+      "alias": "Deception",
+      "reason": "This is the name of a metaphorical horse in Georgiana's speech, not a literal object or animal.",
+      "candidates": []
+    }
+  ]
+}

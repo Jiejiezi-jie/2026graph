@@ -1,0 +1,222 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act02_c0017",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "531c816281ba8a7f54fb55740ed5cd1dc94011067606b10f5fea514225bcac4c",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A young woman, niece of Georgiana, who pleads for Tarver and Darbey.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A young woman, niece of Georgiana, who pleads for Tarver and Darbey.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Aunt of Salome and Sheba, who confronts Tarver and Darbey.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"TARVER\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A man addressed as Field-Marshal, who is with Darbey at the Swan Inn ruins.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"DARBEY\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A man with Tarver, guarding the ruins of the Swan Inn.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A man called Tris, who twists Tarver's wig and is involved with the stable.\",\n      \"aliases\": [\n        \"Tris\"\n      ]\n    },\n    {\n      \"name\": \"HATCHAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A man from the stable who reports the arrest of the arsonist.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"BLORE\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A person who exclaims that they have got the Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Swan Inn\",\n      \"type\": \"LOCATION\",\n      \"description\": \"An inn whose ruins are being guarded by Tarver and Darbey.\",\n      \"aliases\": [\n        \"the \\\"Swan\\\"\"\n      ]\n    },\n    {\n      \"name\": \"Dandy\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse referred to as 'our Dandy' by Georgiana.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Dean\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A person referred to by Blore as having been taken by the constable.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"SALOME\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Georgiana is the aunt of Salome.\",\n      \"evidence_quote\": \"Aunt!\",\n      \"source_chunk_id\": \"dd_act02_c0017\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Georgiana is the aunt of Sheba.\",\n      \"evidence_quote\": \"Aunt!\",\n      \"source_chunk_id\": \"dd_act02_c0017\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"TARVER\",\n      \"target\": \"DARBEY\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Tarver and Darbey are together guarding the ruins of the Swan Inn.\",\n      \"evidence_quote\": \"We shall be happy to receive your representative in the morning. At present we are on duty.\",\n      \"source_chunk_id\": \"dd_act02_c0017\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"TARVER\",\n      \"target\": \"Swan Inn\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Tarver is guarding the ruins of the Swan Inn.\",\n      \"evidence_quote\": \"Guarding the ruins of the \\\"Swan\\\" Inn.\",\n      \"source_chunk_id\": \"dd_act02_c0017\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"DARBEY\",\n      \"target\": \"Swan Inn\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Darbey is guarding the ruins of the Swan Inn.\",\n      \"evidence_quote\": \"Guarding the ruins of the \\\"Swan\\\" Inn.\",\n      \"source_chunk_id\": \"dd_act02_c0017\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"TARVER\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Sir Tristram twists Tarver's wig round so that it covers his face.\",\n      \"evidence_quote\": \"SIR TRISTRAM twists TARVER'S wig round so that it covers his face.\",\n      \"source_chunk_id\": \"dd_act02_c0017\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"HATCHAM\",\n      \"target\": \"SIR TRISTRAM\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Hatcham is Sir Tristram's man from the stable.\",\n      \"evidence_quote\": \"Oh, Tris, your man from the stable!\",\n      \"source_chunk_id\": \"dd_act02_c0017\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"HATCHAM\",\n      \"target\": \"Dandy\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Hatcham reports that the villain was administering a dose to the horse.\",\n      \"evidence_quote\": \"The villain that set fire to the \\\"Swan,\\\" sir--in the hact of administering a dose to the 'orse!\",\n      \"source_chunk_id\": \"dd_act02_c0017\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"the Dean\",\n      \"target\": \"HATCHAM\",\n      \"relation\": \"ARRESTS\",\n      \"description\": \"The constable has collared the Dean and taken him to the lock-up.\",\n      \"evidence_quote\": \"Topping the constable's collared him, Sir--he's taken him in a cart to the lock-up!\",\n      \"source_chunk_id\": \"dd_act02_c0017\",\n      \"confidence\": 0.7\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674601,
+    "id": "06ca4afb-871b-46e6-9678-69ce251e4860",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1458,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 904,
+      "prompt_tokens": 1544,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 3002
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 13.157539,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:03:21.594628+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1458,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 904,
+          "prompt_tokens": 1544,
+          "total_tokens": 3002
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1458,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 904,
+      "prompt_tokens": 1544,
+      "total_tokens": 3002
+    },
+    "total_elapsed_seconds": 13.157539
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A young woman, niece of Georgiana, who pleads for Tarver and Darbey.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A young woman, niece of Georgiana, who pleads for Tarver and Darbey.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Aunt of Salome and Sheba, who confronts Tarver and Darbey.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A man addressed as Field-Marshal, who is with Darbey at the Swan Inn ruins.",
+        "name": "TARVER",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A man with Tarver, guarding the ruins of the Swan Inn.",
+        "name": "DARBEY",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Tris"
+        ],
+        "description": "A man called Tris, who twists Tarver's wig and is involved with the stable.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A man from the stable who reports the arrest of the arsonist.",
+        "name": "HATCHAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A person who exclaims that they have got the Dean.",
+        "name": "BLORE",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "the \"Swan"
+        ],
+        "description": "An inn whose ruins are being guarded by Tarver and Darbey.",
+        "name": "Swan Inn",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A horse referred to as 'our Dandy' by Georgiana.",
+        "name": "Dandy",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "A person referred to by Blore as having been taken by the constable.",
+        "name": "the Dean",
+        "type": "CHARACTER"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Georgiana is the aunt of Salome.",
+        "evidence_quote": "Aunt!",
+        "relation": "PARENT_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act02_c0017",
+        "target": "SALOME"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Georgiana is the aunt of Sheba.",
+        "evidence_quote": "Aunt!",
+        "relation": "PARENT_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act02_c0017",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Tarver and Darbey are together guarding the ruins of the Swan Inn.",
+        "evidence_quote": "We shall be happy to receive your representative in the morning. At present we are on duty.",
+        "relation": "INTERACTS_WITH",
+        "source": "TARVER",
+        "source_chunk_id": "dd_act02_c0017",
+        "target": "DARBEY"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Tarver is guarding the ruins of the Swan Inn.",
+        "evidence_quote": "Guarding the ruins of the \"Swan\" Inn.",
+        "relation": "LOCATED_AT",
+        "source": "TARVER",
+        "source_chunk_id": "dd_act02_c0017",
+        "target": "Swan Inn"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Darbey is guarding the ruins of the Swan Inn.",
+        "evidence_quote": "Guarding the ruins of the \"Swan\" Inn.",
+        "relation": "LOCATED_AT",
+        "source": "DARBEY",
+        "source_chunk_id": "dd_act02_c0017",
+        "target": "Swan Inn"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Sir Tristram twists Tarver's wig round so that it covers his face.",
+        "evidence_quote": "SIR TRISTRAM twists TARVER'S wig round so that it covers his face.",
+        "relation": "INTERACTS_WITH",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act02_c0017",
+        "target": "TARVER"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Hatcham is Sir Tristram's man from the stable.",
+        "evidence_quote": "Oh, Tris, your man from the stable!",
+        "relation": "EMPLOYED_BY",
+        "source": "HATCHAM",
+        "source_chunk_id": "dd_act02_c0017",
+        "target": "SIR TRISTRAM"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Hatcham reports that the villain was administering a dose to the horse.",
+        "evidence_quote": "The villain that set fire to the \"Swan,\" sir--in the hact of administering a dose to the 'orse!",
+        "relation": "INTERACTS_WITH",
+        "source": "HATCHAM",
+        "source_chunk_id": "dd_act02_c0017",
+        "target": "Dandy"
+      },
+      {
+        "confidence": 0.7,
+        "description": "The constable has collared the Dean and taken him to the lock-up.",
+        "evidence_quote": "Topping the constable's collared him, Sir--he's taken him in a cart to the lock-up!",
+        "relation": "ARRESTS",
+        "source": "the Dean",
+        "source_chunk_id": "dd_act02_c0017",
+        "target": "HATCHAM"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

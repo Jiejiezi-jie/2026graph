@@ -1,0 +1,249 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act03s01_c0002",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "bd8ca3e35becc30024b94e8d6819782e0a02393cc75fb14fec028eeaa65ee97b",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"BLORE\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, referred to as Edward Blore, who is visiting Hannah and has brought cards from servants.\",\n      \"aliases\": [\"Edward Blore\", \"Mr. Blore\"]\n    },\n    {\n      \"name\": \"HANNAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, formerly Miss Hevans, now married to Noah Topping, the Head Constable at St. Marvells.\",\n      \"aliases\": [\"'Annah\", \"Miss Hevans\"]\n    },\n    {\n      \"name\": \"Noah Topping\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Head Constable at St. Marvells, husband of Hannah, referred to as Noah.\",\n      \"aliases\": [\"Noah\", \"Mr. Topping\"]\n    },\n    {\n      \"name\": \"Jane\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A servant at the Deanery who sent her card via Blore.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Sarah\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A servant at the Deanery who sent her card via Blore.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Willis\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"The stable boy at the Deanery who sent his card via Blore.\",\n      \"aliases\": [\"Willis the stable boy\"]\n    },\n    {\n      \"name\": \"Durnstone\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A place where Hannah married a policeman, and where the police station is located.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"St. Marvells\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A place where Noah Topping is Head Constable and where the cell called the Strong-box is located.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Deanery\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The place where Jane, Sarah, and Willis work, and where Blore is from.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Strong-box\",\n      \"type\": \"OBJECT\",\n      \"description\": \"The name given to the cell in St. Marvells where the prisoner is held.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"prisoner\",\n      \"type\": \"PERSON\",\n      \"description\": \"An unfortunate man who was arrested last night and is currently held in the cell at St. Marvells.\",\n      \"aliases\": [\"hunfortunate man\"]\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"HANNAH\",\n      \"target\": \"Noah Topping\",\n      \"relation\": \"MARRIED_TO\",\n      \"description\": \"Hannah is married to Noah Topping, the Head Constable at St. Marvells.\",\n      \"evidence_quote\": \"you've honly been a week in St. Marvells\",\n      \"source_chunk_id\": \"dd_act03s01_c0002\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Noah Topping\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Noah Topping is the Head Constable at St. Marvells.\",\n      \"evidence_quote\": \"Mr. Topping's got the appointment of Head Constable at St. Marvells\",\n      \"source_chunk_id\": \"dd_act03s01_c0002\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"HANNAH\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Hannah has been in St. Marvells for a week.\",\n      \"evidence_quote\": \"you've honly been a week in St. Marvells\",\n      \"source_chunk_id\": \"dd_act03s01_c0002\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"HANNAH\",\n      \"relation\": \"FRIEND_OF\",\n      \"description\": \"Blore and Hannah have a friendly relationship, as he kisses her cheek and they discuss past familiarity.\",\n      \"evidence_quote\": \"When you was Miss Hevans there wasn't these social barriers, 'Annah!\",\n      \"source_chunk_id\": \"dd_act03s01_c0002\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"Jane\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Blore is delivering cards from Jane to Hannah.\",\n      \"evidence_quote\": \"Jane and Sarah and Willis the stable boy 'ave hunbent so far as to hask me to leave their cards\",\n      \"source_chunk_id\": \"dd_act03s01_c0002\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"Sarah\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Blore is delivering cards from Sarah to Hannah.\",\n      \"evidence_quote\": \"Jane and Sarah and Willis the stable boy 'ave hunbent so far as to hask me to leave their cards\",\n      \"source_chunk_id\": \"dd_act03s01_c0002\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"Willis\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Blore is delivering cards from Willis to Hannah.\",\n      \"evidence_quote\": \"Jane and Sarah and Willis the stable boy 'ave hunbent so far as to hask me to leave their cards\",\n      \"source_chunk_id\": \"dd_act03s01_c0002\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"prisoner\",\n      \"target\": \"Strong-box\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The prisoner is currently in the cell called the Strong-box.\",\n      \"evidence_quote\": \"he's in our cell\",\n      \"source_chunk_id\": \"dd_act03s01_c0002\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Noah Topping\",\n      \"target\": \"prisoner\",\n      \"relation\": \"ARRESTS\",\n      \"description\": \"Noah Topping arrested the prisoner last night.\",\n      \"evidence_quote\": \"he took a man up last night!\",\n      \"source_chunk_id\": \"dd_act03s01_c0002\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"prisoner\",\n      \"target\": \"Durnstone\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The prisoner is to be taken to Durnstone Police Station.\",\n      \"evidence_quote\": \"the 'ead Constable 'ad to drive 'im over to Durnstone Police Station the first thing in the morning\",\n      \"source_chunk_id\": \"dd_act03s01_c0002\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"Deanery\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Blore is associated with the Deanery, as he brings cards from servants there.\",\n      \"evidence_quote\": \"You can take them back to the Deanery with Mrs. Topping's comps.\",\n      \"source_chunk_id\": \"dd_act03s01_c0002\",\n      \"confidence\": 0.6\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674625,
+    "id": "d5efbf6a-225d-4a93-93ed-cc8a9c15a418",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1753,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 995,
+      "prompt_tokens": 1635,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 3388
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 15.864573,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:03:45.377944+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1753,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 995,
+          "prompt_tokens": 1635,
+          "total_tokens": 3388
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1753,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 995,
+      "prompt_tokens": 1635,
+      "total_tokens": 3388
+    },
+    "total_elapsed_seconds": 15.864573
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [
+          "Edward Blore",
+          "Mr. Blore"
+        ],
+        "description": "A character in the play, referred to as Edward Blore, who is visiting Hannah and has brought cards from servants.",
+        "name": "BLORE",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Annah",
+          "Miss Hevans"
+        ],
+        "description": "A character in the play, formerly Miss Hevans, now married to Noah Topping, the Head Constable at St. Marvells.",
+        "name": "HANNAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Noah",
+          "Mr. Topping"
+        ],
+        "description": "Head Constable at St. Marvells, husband of Hannah, referred to as Noah.",
+        "name": "Noah Topping",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A servant at the Deanery who sent her card via Blore.",
+        "name": "Jane",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A servant at the Deanery who sent her card via Blore.",
+        "name": "Sarah",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Willis the stable boy"
+        ],
+        "description": "The stable boy at the Deanery who sent his card via Blore.",
+        "name": "Willis",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A place where Hannah married a policeman, and where the police station is located.",
+        "name": "Durnstone",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A place where Noah Topping is Head Constable and where the cell called the Strong-box is located.",
+        "name": "St. Marvells",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "The place where Jane, Sarah, and Willis work, and where Blore is from.",
+        "name": "Deanery",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "The name given to the cell in St. Marvells where the prisoner is held.",
+        "name": "Strong-box",
+        "type": "OBJECT"
+      },
+      {
+        "aliases": [
+          "hunfortunate man"
+        ],
+        "description": "An unfortunate man who was arrested last night and is currently held in the cell at St. Marvells.",
+        "name": "prisoner",
+        "type": "PERSON"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Hannah is married to Noah Topping, the Head Constable at St. Marvells.",
+        "evidence_quote": "you've honly been a week in St. Marvells",
+        "relation": "MARRIED_TO",
+        "source": "HANNAH",
+        "source_chunk_id": "dd_act03s01_c0002",
+        "target": "Noah Topping"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Noah Topping is the Head Constable at St. Marvells.",
+        "evidence_quote": "Mr. Topping's got the appointment of Head Constable at St. Marvells",
+        "relation": "LOCATED_AT",
+        "source": "Noah Topping",
+        "source_chunk_id": "dd_act03s01_c0002",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Hannah has been in St. Marvells for a week.",
+        "evidence_quote": "you've honly been a week in St. Marvells",
+        "relation": "LOCATED_AT",
+        "source": "HANNAH",
+        "source_chunk_id": "dd_act03s01_c0002",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Blore and Hannah have a friendly relationship, as he kisses her cheek and they discuss past familiarity.",
+        "evidence_quote": "When you was Miss Hevans there wasn't these social barriers, 'Annah!",
+        "relation": "FRIEND_OF",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act03s01_c0002",
+        "target": "HANNAH"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Blore is delivering cards from Jane to Hannah.",
+        "evidence_quote": "Jane and Sarah and Willis the stable boy 'ave hunbent so far as to hask me to leave their cards",
+        "relation": "INTERACTS_WITH",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act03s01_c0002",
+        "target": "Jane"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Blore is delivering cards from Sarah to Hannah.",
+        "evidence_quote": "Jane and Sarah and Willis the stable boy 'ave hunbent so far as to hask me to leave their cards",
+        "relation": "INTERACTS_WITH",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act03s01_c0002",
+        "target": "Sarah"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Blore is delivering cards from Willis to Hannah.",
+        "evidence_quote": "Jane and Sarah and Willis the stable boy 'ave hunbent so far as to hask me to leave their cards",
+        "relation": "INTERACTS_WITH",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act03s01_c0002",
+        "target": "Willis"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The prisoner is currently in the cell called the Strong-box.",
+        "evidence_quote": "he's in our cell",
+        "relation": "LOCATED_AT",
+        "source": "prisoner",
+        "source_chunk_id": "dd_act03s01_c0002",
+        "target": "Strong-box"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Noah Topping arrested the prisoner last night.",
+        "evidence_quote": "he took a man up last night!",
+        "relation": "ARRESTS",
+        "source": "Noah Topping",
+        "source_chunk_id": "dd_act03s01_c0002",
+        "target": "prisoner"
+      },
+      {
+        "confidence": 0.8,
+        "description": "The prisoner is to be taken to Durnstone Police Station.",
+        "evidence_quote": "the 'ead Constable 'ad to drive 'im over to Durnstone Police Station the first thing in the morning",
+        "relation": "LOCATED_AT",
+        "source": "prisoner",
+        "source_chunk_id": "dd_act03s01_c0002",
+        "target": "Durnstone"
+      },
+      {
+        "confidence": 0.6,
+        "description": "Blore is associated with the Deanery, as he brings cards from servants there.",
+        "evidence_quote": "You can take them back to the Deanery with Mrs. Topping's comps.",
+        "relation": "EMPLOYED_BY",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act03s01_c0002",
+        "target": "Deanery"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

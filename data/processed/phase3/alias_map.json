@@ -1,0 +1,1181 @@
+{
+  "mappings": [
+    {
+      "alias": "Arthur Cecil",
+      "canonical": "Arthur Cecil",
+      "method": "explicit_override",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Mr. Arthur Cecil",
+      "canonical": "Arthur Cecil",
+      "method": "explicit_override",
+      "type": "PERSON"
+    },
+    {
+      "alias": "A. W. Pinero",
+      "canonical": "Arthur W. Pinero",
+      "method": "explicit_override",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Arthur W. Pinero",
+      "canonical": "Arthur W. Pinero",
+      "method": "explicit_override",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Mr. Pinero",
+      "canonical": "Arthur W. Pinero",
+      "method": "explicit_override",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Augustin",
+      "canonical": "Augustin Jedd",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Augustin Jedd",
+      "canonical": "Augustin Jedd",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Dean",
+      "canonical": "Augustin Jedd",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Dr. Jedd",
+      "canonical": "Augustin Jedd",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Gus",
+      "canonical": "Augustin Jedd",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Jedd",
+      "canonical": "Augustin Jedd",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Pa",
+      "canonical": "Augustin Jedd",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Papa",
+      "canonical": "Augustin Jedd",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Papsey",
+      "canonical": "Augustin Jedd",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "poor Papa",
+      "canonical": "Augustin Jedd",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "THE DEAN",
+      "canonical": "Augustin Jedd",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "the Dean of St. Marvells",
+      "canonical": "Augustin Jedd",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "The Very Rev. Augustin Jedd, D.D.",
+      "canonical": "Augustin Jedd",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "BLORE",
+      "canonical": "Blore",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Edward",
+      "canonical": "Blore",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Edward Blore",
+      "canonical": "Blore",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Mr. Blore",
+      "canonical": "Blore",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Bonny Betsy",
+      "canonical": "Bonny Betsy",
+      "method": "explicit_override",
+      "type": "ANIMAL"
+    },
+    {
+      "alias": "Bonny-Betsy",
+      "canonical": "Bonny Betsy",
+      "method": "explicit_override",
+      "type": "ANIMAL"
+    },
+    {
+      "alias": "Brighton",
+      "canonical": "Brighton",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "Cast-off Clothing Distribution League",
+      "canonical": "Cast-off Clothing Distribution League",
+      "method": "normalized_exact",
+      "type": "ORGANIZATION"
+    },
+    {
+      "alias": "Charles the First",
+      "canonical": "Charles the First",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Chest C",
+      "canonical": "Chest C",
+      "method": "normalized_exact",
+      "type": "ANIMAL"
+    },
+    {
+      "alias": "Cook",
+      "canonical": "Cook",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "costumier",
+      "canonical": "costumier",
+      "method": "normalized_exact",
+      "type": "ORGANIZATION"
+    },
+    {
+      "alias": "Crumbleigh Stakes",
+      "canonical": "Crumbleigh Stakes",
+      "method": "normalized_exact",
+      "type": "EVENT"
+    },
+    {
+      "alias": "Dandy",
+      "canonical": "Dandy Dick",
+      "method": "explicit_override",
+      "type": "ANIMAL"
+    },
+    {
+      "alias": "Dandy Dick",
+      "canonical": "Dandy Dick",
+      "method": "explicit_override",
+      "type": "ANIMAL"
+    },
+    {
+      "alias": "Dandy Dick",
+      "canonical": "Dandy Dick (play)",
+      "method": "explicit_override",
+      "type": "CREATIVE_WORK"
+    },
+    {
+      "alias": "Deanery Stables",
+      "canonical": "Deanery Stables",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "Doctor",
+      "canonical": "Dr. Middleton",
+      "method": "explicit_override",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Dr. Middleton",
+      "canonical": "Dr. Middleton",
+      "method": "explicit_override",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Durnshire",
+      "canonical": "Durnshire",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "Durnstone",
+      "canonical": "Durnstone",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "Durnstone Athenaeum",
+      "canonical": "Durnstone Athenaeum",
+      "method": "explicit_override",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "the Hathanaeum",
+      "canonical": "Durnstone Athenaeum",
+      "method": "explicit_override",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "Durnstone Fire Brigade",
+      "canonical": "Durnstone Fire Brigade",
+      "method": "normalized_exact",
+      "type": "ORGANIZATION"
+    },
+    {
+      "alias": "Durnstone Handicap",
+      "canonical": "Durnstone Handicap",
+      "method": "normalized_exact",
+      "type": "EVENT"
+    },
+    {
+      "alias": "Edmund Maurice",
+      "canonical": "Edmund Maurice",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Ernest Warren",
+      "canonical": "Ernest Warren",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "F. Kerr",
+      "canonical": "F. Kerr",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Fancy Dress Masked Ball",
+      "canonical": "Fancy Dress Masked Ball",
+      "method": "explicit_override",
+      "type": "EVENT"
+    },
+    {
+      "alias": "the Ball",
+      "canonical": "Fancy Dress Masked Ball",
+      "method": "explicit_override",
+      "type": "EVENT"
+    },
+    {
+      "alias": "Aunt George",
+      "canonical": "Georgiana Tidman",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Aunt Georgiana",
+      "canonical": "Georgiana Tidman",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Aunt Tidman",
+      "canonical": "Georgiana Tidman",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "George",
+      "canonical": "Georgiana Tidman",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "George Tidd",
+      "canonical": "Georgiana Tidman",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "GEORGIANA",
+      "canonical": "Georgiana Tidman",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Georgiana Tidman",
+      "canonical": "Georgiana Tidman",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Mrs. Tidman",
+      "canonical": "Georgiana Tidman",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Tidd",
+      "canonical": "Georgiana Tidman",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "H. Eversfield",
+      "canonical": "H. Eversfield",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Annah",
+      "canonical": "Hannah Topping",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "HANNAH",
+      "canonical": "Hannah Topping",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Hannah Evans",
+      "canonical": "Hannah Topping",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Hannah Topping",
+      "canonical": "Hannah Topping",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Miss Hevans",
+      "canonical": "Hannah Topping",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Mrs. Topping",
+      "canonical": "Hannah Topping",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "HATCHAM",
+      "canonical": "Hatcham",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Heidsieck",
+      "canonical": "Heidsieck",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "Hussars",
+      "canonical": "Hussars",
+      "method": "normalized_exact",
+      "type": "ORGANIZATION"
+    },
+    {
+      "alias": "Jane",
+      "canonical": "Jane",
+      "method": "normalized_exact",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Joachim",
+      "canonical": "Joachim",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "John Clayton",
+      "canonical": "John Clayton",
+      "method": "explicit_override",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Mr. Clayton",
+      "canonical": "John Clayton",
+      "method": "explicit_override",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Mr. John Clayton",
+      "canonical": "John Clayton",
+      "method": "explicit_override",
+      "type": "PERSON"
+    },
+    {
+      "alias": "John Cox",
+      "canonical": "John Cox",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "John Fielder",
+      "canonical": "John Fielder",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Durnstone Superintendent",
+      "canonical": "John Ruggles",
+      "method": "explicit_override",
+      "type": "PERSON"
+    },
+    {
+      "alias": "John Ruggles",
+      "canonical": "John Ruggles",
+      "method": "explicit_override",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Kitty",
+      "canonical": "Kitty",
+      "method": "normalized_exact",
+      "type": "ANIMAL"
+    },
+    {
+      "alias": "Lady Bountiful",
+      "canonical": "Lady Bountiful",
+      "method": "normalized_exact",
+      "type": "CREATIVE_WORK"
+    },
+    {
+      "alias": "Lewis Isaacs",
+      "canonical": "Lewis Isaacs",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Liverpool",
+      "canonical": "Liverpool",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "London",
+      "canonical": "London",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "Lord Beckslade",
+      "canonical": "Lord Beckslade",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Gerald Tarver",
+      "canonical": "Major Tarver",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Major",
+      "canonical": "Major Tarver",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Major Tarver",
+      "canonical": "Major Tarver",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "TARVER",
+      "canonical": "Major Tarver",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "MALCOLM C. SALAMAK",
+      "canonical": "MALCOLM C. SALAMAK",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Melbourne",
+      "canonical": "Melbourne",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "Military",
+      "canonical": "Military",
+      "method": "normalized_exact",
+      "type": "ORGANIZATION"
+    },
+    {
+      "alias": "Miss Ada Rehan",
+      "canonical": "Miss Ada Rehan",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Miss Laura Linden",
+      "canonical": "Miss Laura Linden",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Miss Marie Lewes",
+      "canonical": "Miss Marie Lewes",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Miss Norreys",
+      "canonical": "Miss Norreys",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Mr. Daly",
+      "canonical": "Mr. Daly",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Mr. G. W. Anson",
+      "canonical": "Mr. G. W. Anson",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Mr. Hodder",
+      "canonical": "Mr. Hodder",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Mr. Robert Brough",
+      "canonical": "Mr. Robert Brough",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Mrs. John Wood",
+      "canonical": "Mrs. John Wood",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Newmarket",
+      "canonical": "Newmarket",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "Mr. Topping",
+      "canonical": "Noah Topping",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "NOAH",
+      "canonical": "Noah Topping",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "NOAH TOPPING",
+      "canonical": "Noah Topping",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Noahry",
+      "canonical": "Noah Topping",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "the Constable",
+      "canonical": "Noah Topping",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "DARBEY",
+      "canonical": "Nugent Darbey",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Mr. Darbey",
+      "canonical": "Nugent Darbey",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Nugent Darbey",
+      "canonical": "Nugent Darbey",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Nick",
+      "canonical": "Old Nick",
+      "method": "model_alias_then_explicit_override",
+      "type": "ANIMAL"
+    },
+    {
+      "alias": "Nick the fire-brigade horse",
+      "canonical": "Old Nick",
+      "method": "explicit_override",
+      "type": "ANIMAL"
+    },
+    {
+      "alias": "Old Nick",
+      "canonical": "Old Nick",
+      "method": "explicit_override",
+      "type": "ANIMAL"
+    },
+    {
+      "alias": "the horse",
+      "canonical": "Old Nick",
+      "method": "explicit_override",
+      "type": "ANIMAL"
+    },
+    {
+      "alias": "Oxford",
+      "canonical": "Oxford",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "Parker",
+      "canonical": "Parker",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Pear Tree Lane",
+      "canonical": "Pear Tree Lane",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "Restoration Fund",
+      "canonical": "Restoration Fund",
+      "method": "normalized_exact",
+      "type": "ORGANIZATION"
+    },
+    {
+      "alias": "Royal Court Theatre",
+      "canonical": "Royal Court Theatre",
+      "method": "explicit_override",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "Miss Salome",
+      "canonical": "Salome Jedd",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Sally",
+      "canonical": "Salome Jedd",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "SALOME",
+      "canonical": "Salome Jedd",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Sarah",
+      "canonical": "Sarah",
+      "method": "normalized_exact",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Little 'un",
+      "canonical": "Sheba Jedd",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Miss Sheba",
+      "canonical": "Sheba Jedd",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "SHEBA",
+      "canonical": "Sheba Jedd",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Shrewsbury and Talbot",
+      "canonical": "Shrewsbury and Talbot",
+      "method": "normalized_exact",
+      "type": "ORGANIZATION"
+    },
+    {
+      "alias": "Mardon",
+      "canonical": "Sir Tristram Mardon",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "SIR TRISTRAM",
+      "canonical": "Sir Tristram Mardon",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Sir Tristram Mardon",
+      "canonical": "Sir Tristram Mardon",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Sir Tristram Mardon, Bart",
+      "canonical": "Sir Tristram Mardon",
+      "method": "explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Tris",
+      "canonical": "Sir Tristram Mardon",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Tris Mardon",
+      "canonical": "Sir Tristram Mardon",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "Tristram",
+      "canonical": "Sir Tristram Mardon",
+      "method": "model_alias_then_explicit_override",
+      "type": "CHARACTER"
+    },
+    {
+      "alias": "St. Marvells",
+      "canonical": "St. Marvells",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "Minister Spire",
+      "canonical": "St. Marvells Minster Spire",
+      "method": "explicit_override",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "the Spire",
+      "canonical": "St. Marvells Minster Spire",
+      "method": "explicit_override",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "St. Marvells Races",
+      "canonical": "St. Marvells Spring Meeting",
+      "method": "explicit_override",
+      "type": "EVENT"
+    },
+    {
+      "alias": "St. Marvells Spring Meeting",
+      "canonical": "St. Marvells Spring Meeting",
+      "method": "explicit_override",
+      "type": "EVENT"
+    },
+    {
+      "alias": "the Races",
+      "canonical": "St. Marvells Spring Meeting",
+      "method": "explicit_override",
+      "type": "EVENT"
+    },
+    {
+      "alias": "Strong-box",
+      "canonical": "Strong Box",
+      "method": "explicit_override",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "the Strong Box",
+      "canonical": "Strong Box",
+      "method": "explicit_override",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "Strychnine",
+      "canonical": "Strychnine",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "strychnine",
+      "canonical": "strychnine",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "Sweet Lavender",
+      "canonical": "Sweet Lavender",
+      "method": "normalized_exact",
+      "type": "CREATIVE_WORK"
+    },
+    {
+      "alias": "Sydney",
+      "canonical": "Sydney",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "T. W. Hall",
+      "canonical": "T. W. Hall",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Tattersall's Ring",
+      "canonical": "Tattersall's Ring",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "the account",
+      "canonical": "the account",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "the arm-chair",
+      "canonical": "the arm-chair",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "the Bank",
+      "canonical": "the Bank",
+      "method": "normalized_exact",
+      "type": "ORGANIZATION"
+    },
+    {
+      "alias": "the Bishop",
+      "canonical": "the Bishop",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "the Bolus",
+      "canonical": "the Bolus",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "the brown paper patterns",
+      "canonical": "the brown paper patterns",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "The Cabinet Minister",
+      "canonical": "The Cabinet Minister",
+      "method": "normalized_exact",
+      "type": "CREATIVE_WORK"
+    },
+    {
+      "alias": "the Canons",
+      "canonical": "the Canons",
+      "method": "normalized_exact",
+      "type": "ORGANIZATION"
+    },
+    {
+      "alias": "the cell door",
+      "canonical": "the cell door",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "the Concordance",
+      "canonical": "the Concordance",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "Deanery",
+      "canonical": "The Deanery of St. Marvells",
+      "method": "explicit_override",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "Deanery of St. Marvells",
+      "canonical": "The Deanery of St. Marvells",
+      "method": "explicit_override",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "the Deanery",
+      "canonical": "The Deanery of St. Marvells",
+      "method": "explicit_override",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "the Deanery Stables",
+      "canonical": "the Deanery Stables",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "the fancy dresses",
+      "canonical": "the fancy dresses",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "the fire",
+      "canonical": "the fire",
+      "method": "normalized_exact",
+      "type": "EVENT"
+    },
+    {
+      "alias": "the fur cap",
+      "canonical": "the fur cap",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "the Hill",
+      "canonical": "the Hill",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "The Horse and its Ailments",
+      "canonical": "The Horse and its Ailments",
+      "method": "normalized_exact",
+      "type": "CREATIVE_WORK"
+    },
+    {
+      "alias": "the joint",
+      "canonical": "the joint",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "the kitchen",
+      "canonical": "the kitchen",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "the lane",
+      "canonical": "the lane",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "the Library",
+      "canonical": "the Library",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "the Military",
+      "canonical": "the Military",
+      "method": "normalized_exact",
+      "type": "ORGANIZATION"
+    },
+    {
+      "alias": "The Nettle",
+      "canonical": "The Nettle",
+      "method": "normalized_exact",
+      "type": "CREATIVE_WORK"
+    },
+    {
+      "alias": "the nursery",
+      "canonical": "the nursery",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "the old black retriever",
+      "canonical": "the old black retriever",
+      "method": "normalized_exact",
+      "type": "ANIMAL"
+    },
+    {
+      "alias": "the oven door",
+      "canonical": "the oven door",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "the piano",
+      "canonical": "the piano",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "The Schoolmistress",
+      "canonical": "The Schoolmistress",
+      "method": "normalized_exact",
+      "type": "CREATIVE_WORK"
+    },
+    {
+      "alias": "The Sport and Relaxation Repression Guild",
+      "canonical": "The Sport and Relaxation Repression Guild",
+      "method": "normalized_exact",
+      "type": "ORGANIZATION"
+    },
+    {
+      "alias": "the stable",
+      "canonical": "the stable",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "the street door",
+      "canonical": "the street door",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "Swan Inn",
+      "canonical": "The Swan Inn",
+      "method": "explicit_override",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "the \"Swan",
+      "canonical": "The Swan Inn",
+      "method": "model_alias_then_explicit_override",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "the Swan",
+      "canonical": "The Swan Inn",
+      "method": "explicit_override",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "The Swan Inn",
+      "canonical": "The Swan Inn",
+      "method": "explicit_override",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "The Times",
+      "canonical": "The Times",
+      "method": "explicit_override",
+      "type": "CREATIVE_WORK"
+    },
+    {
+      "alias": "Times",
+      "canonical": "The Times",
+      "method": "explicit_override",
+      "type": "CREATIVE_WORK"
+    },
+    {
+      "alias": "the wicket",
+      "canonical": "the wicket",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "the window",
+      "canonical": "the window",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "the writing-table",
+      "canonical": "the writing-table",
+      "method": "normalized_exact",
+      "type": "OBJECT"
+    },
+    {
+      "alias": "Tom Gallawood",
+      "canonical": "Tom Gallawood",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Toole's Theatre",
+      "canonical": "Toole's Theatre",
+      "method": "explicit_override",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "W. H. Denny",
+      "canonical": "W. H. Denny",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "W. Lugg",
+      "canonical": "W. Lugg",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Walter H. Baker",
+      "canonical": "Walter H. Baker",
+      "method": "normalized_exact",
+      "type": "ORGANIZATION"
+    },
+    {
+      "alias": "Wellington",
+      "canonical": "Wellington",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Wheatsheaf",
+      "canonical": "Wheatsheaf",
+      "method": "normalized_exact",
+      "type": "LOCATION"
+    },
+    {
+      "alias": "Whitaker",
+      "canonical": "Whitaker",
+      "method": "normalized_exact",
+      "type": "PERSON"
+    },
+    {
+      "alias": "Willis",
+      "canonical": "Willis",
+      "method": "normalized_exact",
+      "type": "CHARACTER"
+    }
+  ],
+  "version": "phase3-aliases-v1"
+}

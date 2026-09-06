@@ -1,0 +1,176 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act03s01_c0003",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "826d210e99ea9dd778ae41cc1f89bfa10cbb3899f80710131610665b7f383ba7",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"BLORE\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character from the Deanery who visits Hannah and Noah Topping.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"HANNAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Wife of Noah Topping, a police constable's wife.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"NOAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A rural Police Constable, husband of Hannah.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Mrs. Topping\",\n      \"type\": \"PERSON\",\n      \"description\": \"Referred to as Mrs. Topping, likely related to Noah Topping.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse mentioned by Blore in connection with the stables and medicine.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Deanery\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The place where Blore is from and where the stables are located.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"St. Marvells\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The place where Noah and Hannah have recently moved.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"HANNAH\",\n      \"relation\": \"MARRIED_TO\",\n      \"description\": \"Noah is Hannah's husband.\",\n      \"evidence_quote\": \"NOAH. [_Fiercely._] 'Annah!\",\n      \"source_chunk_id\": \"dd_act03s01_c0003\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"HANNAH\",\n      \"target\": \"NOAH\",\n      \"relation\": \"MARRIED_TO\",\n      \"description\": \"Hannah is Noah's wife.\",\n      \"evidence_quote\": \"HANNAH. [_Starting and replacing the book._] Oh don't! This is Mr. Blore from the Deanery come to see us--an old friend o' mine!\",\n      \"source_chunk_id\": \"dd_act03s01_c0003\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Blore is from the Deanery.\",\n      \"evidence_quote\": \"This is Mr. Blore from the Deanery come to see us\",\n      \"source_chunk_id\": \"dd_act03s01_c0003\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Noah and Hannah have recently moved to St. Marvells.\",\n      \"evidence_quote\": \"since we coom to St. Marvells\",\n      \"source_chunk_id\": \"dd_act03s01_c0003\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"HANNAH\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Hannah and Noah have recently moved to St. Marvells.\",\n      \"evidence_quote\": \"since we coom to St. Marvells\",\n      \"source_chunk_id\": \"dd_act03s01_c0003\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"HANNAH\",\n      \"relation\": \"FRIEND_OF\",\n      \"description\": \"Blore is an old friend of Hannah's.\",\n      \"evidence_quote\": \"an old friend o' mine!\",\n      \"source_chunk_id\": \"dd_act03s01_c0003\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"BLORE\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Noah greets Blore and holds his hand.\",\n      \"evidence_quote\": \"NOAH. [_Taking BLORE'S hand and holding it firmly._] A friend of hern is a friend o' mian!\",\n      \"source_chunk_id\": \"dd_act03s01_c0003\",\n      \"confidence\": 0.8\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674642,
+    "id": "408bf248-1c53-4b4d-b196-c2f4eecd25e1",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1037,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 921,
+      "prompt_tokens": 1561,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2598
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 11.579002,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:04:01.247051+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1037,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 921,
+          "prompt_tokens": 1561,
+          "total_tokens": 2598
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1037,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 921,
+      "prompt_tokens": 1561,
+      "total_tokens": 2598
+    },
+    "total_elapsed_seconds": 11.579002
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A character from the Deanery who visits Hannah and Noah Topping.",
+        "name": "BLORE",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Wife of Noah Topping, a police constable's wife.",
+        "name": "HANNAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A rural Police Constable, husband of Hannah.",
+        "name": "NOAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Referred to as Mrs. Topping, likely related to Noah Topping.",
+        "name": "Mrs. Topping",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "A horse mentioned by Blore in connection with the stables and medicine.",
+        "name": "Dandy Dick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "The place where Blore is from and where the stables are located.",
+        "name": "Deanery",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "The place where Noah and Hannah have recently moved.",
+        "name": "St. Marvells",
+        "type": "LOCATION"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Noah is Hannah's husband.",
+        "evidence_quote": "NOAH. [_Fiercely._] 'Annah!",
+        "relation": "MARRIED_TO",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0003",
+        "target": "HANNAH"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Hannah is Noah's wife.",
+        "evidence_quote": "HANNAH. [_Starting and replacing the book._] Oh don't! This is Mr. Blore from the Deanery come to see us--an old friend o' mine!",
+        "relation": "MARRIED_TO",
+        "source": "HANNAH",
+        "source_chunk_id": "dd_act03s01_c0003",
+        "target": "NOAH"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Blore is from the Deanery.",
+        "evidence_quote": "This is Mr. Blore from the Deanery come to see us",
+        "relation": "LOCATED_AT",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act03s01_c0003",
+        "target": "Deanery"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Noah and Hannah have recently moved to St. Marvells.",
+        "evidence_quote": "since we coom to St. Marvells",
+        "relation": "LOCATED_AT",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0003",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Hannah and Noah have recently moved to St. Marvells.",
+        "evidence_quote": "since we coom to St. Marvells",
+        "relation": "LOCATED_AT",
+        "source": "HANNAH",
+        "source_chunk_id": "dd_act03s01_c0003",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Blore is an old friend of Hannah's.",
+        "evidence_quote": "an old friend o' mine!",
+        "relation": "FRIEND_OF",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act03s01_c0003",
+        "target": "HANNAH"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Noah greets Blore and holds his hand.",
+        "evidence_quote": "NOAH. [_Taking BLORE'S hand and holding it firmly._] A friend of hern is a friend o' mian!",
+        "relation": "INTERACTS_WITH",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0003",
+        "target": "BLORE"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

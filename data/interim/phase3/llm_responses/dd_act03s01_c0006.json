@@ -1,0 +1,201 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act03s01_c0006",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "5b1a79da05340ed3ecf6cce0ff754a7e1353524febcbb3563b5f30ce0715b2eb",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A dean who is in trouble with the law and hiding from his family and community.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"HANNAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A woman who is helping the Dean, possibly a former servant, now married to Noah Topping.\",\n      \"aliases\": [\"Mrs. Topping\"]\n    },\n    {\n      \"name\": \"Noah\",\n      \"type\": \"PERSON\",\n      \"description\": \"Hannah's husband, a stranger to St. Marvells.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"St. Marvells\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The town where the Dean lives and where his name is known.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Durnstone\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A place the Dean is going to, where he hopes to avoid recognition.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Durnstone Superintendent\",\n      \"type\": \"PERSON\",\n      \"description\": \"The police superintendent at Durnstone, named John Ruggles.\",\n      \"aliases\": [\"John Ruggles\"]\n    },\n    {\n      \"name\": \"Whitaker\",\n      \"type\": \"PERSON\",\n      \"description\": \"An inspector at Durnstone.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Parker\",\n      \"type\": \"PERSON\",\n      \"description\": \"An inspector at Durnstone.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Deanery\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The Dean's home.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"HANNAH\",\n      \"target\": \"Noah\",\n      \"relation\": \"MARRIED_TO\",\n      \"description\": \"Hannah refers to her husband Noah.\",\n      \"evidence_quote\": \"my Noah don't recognize you\",\n      \"source_chunk_id\": \"dd_act03s01_c0006\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Dean's home is the Deanery.\",\n      \"evidence_quote\": \"a single word from me to those at the Deanery, would instantly restore me to home, family, and accustomed diet\",\n      \"source_chunk_id\": \"dd_act03s01_c0006\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Dean lives in St. Marvells.\",\n      \"evidence_quote\": \"How could I again walk erect in the streets of St. Marvells\",\n      \"source_chunk_id\": \"dd_act03s01_c0006\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Durnstone Superintendent\",\n      \"target\": \"Durnstone\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Superintendent is at Durnstone.\",\n      \"evidence_quote\": \"the Durnstone Superintendent\",\n      \"source_chunk_id\": \"dd_act03s01_c0006\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Whitaker\",\n      \"target\": \"Durnstone\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Whitaker is an inspector at Durnstone.\",\n      \"evidence_quote\": \"the two Inspectors, Whitaker and Parker\",\n      \"source_chunk_id\": \"dd_act03s01_c0006\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Parker\",\n      \"target\": \"Durnstone\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Parker is an inspector at Durnstone.\",\n      \"evidence_quote\": \"the two Inspectors, Whitaker and Parker\",\n      \"source_chunk_id\": \"dd_act03s01_c0006\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"Durnstone Superintendent\",\n      \"relation\": \"HELPS\",\n      \"description\": \"The Dean hopes the Superintendent will help him avoid recognition.\",\n      \"evidence_quote\": \"I have one great buoyant hope--that a word in the ear of the Durnstone Superintendent will send me forth an unquestioned man.\",\n      \"source_chunk_id\": \"dd_act03s01_c0006\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"HANNAH\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"HELPS\",\n      \"description\": \"Hannah is helping the Dean by hiding him and providing food.\",\n      \"evidence_quote\": \"HANNAH. [_Hysterically flinging herself upon THE DEAN._] Oh, Master, Master!\",\n      \"source_chunk_id\": \"dd_act03s01_c0006\",\n      \"confidence\": 0.6\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674678,
+    "id": "0862f83a-bb04-4b11-a768-68ef703ae073",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1207,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 898,
+      "prompt_tokens": 1538,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2745
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 11.22185,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:04:38.525850+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1207,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 898,
+          "prompt_tokens": 1538,
+          "total_tokens": 2745
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1207,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 898,
+      "prompt_tokens": 1538,
+      "total_tokens": 2745
+    },
+    "total_elapsed_seconds": 11.22185
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A dean who is in trouble with the law and hiding from his family and community.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Mrs. Topping"
+        ],
+        "description": "A woman who is helping the Dean, possibly a former servant, now married to Noah Topping.",
+        "name": "HANNAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Hannah's husband, a stranger to St. Marvells.",
+        "name": "Noah",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "The town where the Dean lives and where his name is known.",
+        "name": "St. Marvells",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A place the Dean is going to, where he hopes to avoid recognition.",
+        "name": "Durnstone",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [
+          "John Ruggles"
+        ],
+        "description": "The police superintendent at Durnstone, named John Ruggles.",
+        "name": "Durnstone Superintendent",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "An inspector at Durnstone.",
+        "name": "Whitaker",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "An inspector at Durnstone.",
+        "name": "Parker",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "The Dean's home.",
+        "name": "Deanery",
+        "type": "LOCATION"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Hannah refers to her husband Noah.",
+        "evidence_quote": "my Noah don't recognize you",
+        "relation": "MARRIED_TO",
+        "source": "HANNAH",
+        "source_chunk_id": "dd_act03s01_c0006",
+        "target": "Noah"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean's home is the Deanery.",
+        "evidence_quote": "a single word from me to those at the Deanery, would instantly restore me to home, family, and accustomed diet",
+        "relation": "LOCATED_AT",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s01_c0006",
+        "target": "Deanery"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Dean lives in St. Marvells.",
+        "evidence_quote": "How could I again walk erect in the streets of St. Marvells",
+        "relation": "LOCATED_AT",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s01_c0006",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The Superintendent is at Durnstone.",
+        "evidence_quote": "the Durnstone Superintendent",
+        "relation": "LOCATED_AT",
+        "source": "Durnstone Superintendent",
+        "source_chunk_id": "dd_act03s01_c0006",
+        "target": "Durnstone"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Whitaker is an inspector at Durnstone.",
+        "evidence_quote": "the two Inspectors, Whitaker and Parker",
+        "relation": "LOCATED_AT",
+        "source": "Whitaker",
+        "source_chunk_id": "dd_act03s01_c0006",
+        "target": "Durnstone"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Parker is an inspector at Durnstone.",
+        "evidence_quote": "the two Inspectors, Whitaker and Parker",
+        "relation": "LOCATED_AT",
+        "source": "Parker",
+        "source_chunk_id": "dd_act03s01_c0006",
+        "target": "Durnstone"
+      },
+      {
+        "confidence": 0.7,
+        "description": "The Dean hopes the Superintendent will help him avoid recognition.",
+        "evidence_quote": "I have one great buoyant hope--that a word in the ear of the Durnstone Superintendent will send me forth an unquestioned man.",
+        "relation": "HELPS",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s01_c0006",
+        "target": "Durnstone Superintendent"
+      },
+      {
+        "confidence": 0.6,
+        "description": "Hannah is helping the Dean by hiding him and providing food.",
+        "evidence_quote": "HANNAH. [_Hysterically flinging herself upon THE DEAN._] Oh, Master, Master!",
+        "relation": "HELPS",
+        "source": "HANNAH",
+        "source_chunk_id": "dd_act03s01_c0006",
+        "target": "THE DEAN"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

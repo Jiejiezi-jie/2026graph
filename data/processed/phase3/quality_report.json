@@ -1,0 +1,2867 @@
+{
+  "checks": [
+    {
+      "detail": 62,
+      "name": "input_chunk_count",
+      "passed": true
+    },
+    {
+      "detail": 124,
+      "name": "node_ids_unique",
+      "passed": true
+    },
+    {
+      "detail": 80,
+      "name": "edge_ids_unique",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "edge_endpoints_exist",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "edge_chunk_sources_valid",
+      "passed": true
+    },
+    {
+      "detail": [],
+      "name": "all_evidence_quotes_match",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "no_all_node",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "nonempty_nodes_and_edges",
+      "passed": true
+    },
+    {
+      "detail": [],
+      "name": "no_unsupported_self_loops",
+      "passed": true
+    },
+    {
+      "detail": {},
+      "name": "character_person_not_merged",
+      "passed": true
+    },
+    {
+      "detail": [],
+      "name": "required_sections_have_nodes_and_edges",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "every_chunk_accounted",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "all_outcomes_explicit",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "json_graph_reloadable",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "graphml_reloadable",
+      "passed": true
+    },
+    {
+      "detail": [],
+      "name": "symmetric_edges_single_logical_copy",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "allowed_entity_types",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "allowed_relation_types",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "weak_relations_excluded",
+      "passed": true
+    },
+    {
+      "detail": [
+        {
+          "name": "Dandy Dick",
+          "type": "ANIMAL"
+        }
+      ],
+      "name": "dandy_dick_is_animal",
+      "passed": true
+    },
+    {
+      "detail": 30,
+      "name": "manual_review_sample_at_least_30",
+      "passed": true
+    },
+    {
+      "detail": [],
+      "name": "manual_review_required_categories",
+      "passed": true
+    },
+    {
+      "detail": {
+        "passed": 30,
+        "reviewed": 30
+      },
+      "name": "manual_review_complete_and_supported",
+      "passed": true
+    }
+  ],
+  "manual_review": {
+    "passed": 30,
+    "reviewed": 30,
+    "sample_size": 30
+  },
+  "outcome_counts": {
+    "success": 62
+  },
+  "postprocess_digest_first": "fd8857deaa0c25dcdfad671497a3cbbdc2dc1b49c04613a250ace442dfc5a202",
+  "postprocess_digest_second": "fd8857deaa0c25dcdfad671497a3cbbdc2dc1b49c04613a250ace442dfc5a202",
+  "postprocess_hashes_identical": true,
+  "postprocess_warning_count": 393,
+  "postprocess_warning_counts": {
+    "blocked_ambiguous": 6,
+    "model_alias_not_auto_merged": 16,
+    "relation_direction_corrected": 22,
+    "relation_endpoint_unresolved": 9,
+    "relation_rejected_dandy_owner_not_explicit": 5,
+    "relation_rejected_event_mentioned_not_participated": 2,
+    "relation_rejected_evidence_too_short": 10,
+    "relation_rejected_location_not_asserted_for_source": 13,
+    "relation_rejected_location_target_type_invalid": 6,
+    "relation_rejected_ownership_target_type_invalid": 5,
+    "relation_rejected_performance_endpoint_types_invalid": 3,
+    "relation_rejected_portrayal_endpoint_types_invalid": 3,
+    "relation_rejected_portrayal_not_cast_evidence": 1,
+    "relation_rejected_predicate_not_explicit_in_evidence": 134,
+    "relation_rejected_racing_tip_not_participation": 1,
+    "relation_rejected_source_not_named_in_evidence": 28,
+    "relation_rejected_target_not_named_in_evidence": 28,
+    "relation_rejected_unsupported_arrest_direction": 1,
+    "relation_rejected_unsupported_parent_direction": 15,
+    "relation_rejected_weak_relation_excluded": 64,
+    "type_conflict_relinked_to_known_entity": 21
+  },
+  "postprocess_warnings": [
+    {
+      "canonical": "Royal Court Theatre",
+      "chunk_id": "dd_prod_c0002",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "Court Theatre"
+    },
+    {
+      "chunk_id": "dd_act01_c0003",
+      "kind": "blocked_ambiguous",
+      "name": "Miss Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0004",
+      "kind": "blocked_ambiguous",
+      "name": "Miss Jedd"
+    },
+    {
+      "candidate": "Charles the First",
+      "chunk_id": "dd_act01_c0006",
+      "kind": "model_alias_not_auto_merged",
+      "name": "Charles the Martyr"
+    },
+    {
+      "canonical": "Augustin Jedd",
+      "chunk_id": "dd_act01_c0008",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "Dr. Jedd"
+    },
+    {
+      "candidate": "St. Marvells",
+      "chunk_id": "dd_act01_c0010",
+      "kind": "model_alias_not_auto_merged",
+      "name": "Deanery of St. Marvells"
+    },
+    {
+      "canonical": "Georgiana Tidman",
+      "chunk_id": "dd_act01_c0013",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "George Tidd"
+    },
+    {
+      "candidate": "Dandy Dick",
+      "chunk_id": "dd_act01_c0015",
+      "kind": "model_alias_not_auto_merged",
+      "name": "Dick"
+    },
+    {
+      "candidate": "John Fielder",
+      "chunk_id": "dd_act01_c0015",
+      "kind": "model_alias_not_auto_merged",
+      "name": "John"
+    },
+    {
+      "candidate": "Dandy Dick",
+      "chunk_id": "dd_act01_c0016",
+      "kind": "model_alias_not_auto_merged",
+      "name": "Dick"
+    },
+    {
+      "canonical": "Augustin Jedd",
+      "chunk_id": "dd_act01_c0016",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "Augustin"
+    },
+    {
+      "canonical": "Augustin Jedd",
+      "chunk_id": "dd_act01_c0016",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "The Dean"
+    },
+    {
+      "canonical": "Major Tarver",
+      "chunk_id": "dd_act02_c0001",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "Major Tarver"
+    },
+    {
+      "canonical": "Nugent Darbey",
+      "chunk_id": "dd_act02_c0001",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "Mr. Darbey"
+    },
+    {
+      "canonical": "Augustin Jedd",
+      "chunk_id": "dd_act02_c0001",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "Papa"
+    },
+    {
+      "canonical": "St. Marvells Minster Spire",
+      "chunk_id": "dd_act02_c0004",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "Minster Spire"
+    },
+    {
+      "candidate": "Dandy Dick",
+      "chunk_id": "dd_act02_c0005",
+      "kind": "model_alias_not_auto_merged",
+      "name": "the horse"
+    },
+    {
+      "candidate": "Dandy Dick",
+      "chunk_id": "dd_act02_c0005",
+      "kind": "model_alias_not_auto_merged",
+      "name": "the animal"
+    },
+    {
+      "candidate": "Dandy Dick",
+      "chunk_id": "dd_act02_c0005",
+      "kind": "model_alias_not_auto_merged",
+      "name": "the homeless beast"
+    },
+    {
+      "canonical": "Hatcham",
+      "chunk_id": "dd_act02_c0006",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "Hatcham"
+    },
+    {
+      "candidate": "the nursery",
+      "chunk_id": "dd_act02_c0008",
+      "kind": "model_alias_not_auto_merged",
+      "name": "the old nursery"
+    },
+    {
+      "candidate": "Georgiana Tidman",
+      "chunk_id": "dd_act02_c0009",
+      "kind": "model_alias_not_auto_merged",
+      "name": "Gus's little sister"
+    },
+    {
+      "candidate": "Georgiana Tidman",
+      "chunk_id": "dd_act02_c0009",
+      "kind": "model_alias_not_auto_merged",
+      "name": "poor widowed sister"
+    },
+    {
+      "canonical": "Georgiana Tidman",
+      "chunk_id": "dd_act02_c0009",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "Mrs. Tidman"
+    },
+    {
+      "canonical": "Georgiana Tidman",
+      "chunk_id": "dd_act02_c0010",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "George Tidd"
+    },
+    {
+      "candidate": "Willis",
+      "chunk_id": "dd_act03s01_c0002",
+      "kind": "model_alias_not_auto_merged",
+      "name": "Willis the stable boy"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0002",
+      "kind": "blocked_ambiguous",
+      "name": "prisoner"
+    },
+    {
+      "canonical": "Hannah Topping",
+      "chunk_id": "dd_act03s01_c0003",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "Mrs. Topping"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0004",
+      "kind": "blocked_ambiguous",
+      "name": "the ruffian"
+    },
+    {
+      "candidate": "Augustin Jedd",
+      "chunk_id": "dd_act03s01_c0005",
+      "kind": "model_alias_not_auto_merged",
+      "name": "Master"
+    },
+    {
+      "canonical": "Noah Topping",
+      "chunk_id": "dd_act03s01_c0006",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "Noah"
+    },
+    {
+      "candidate": "Hannah Topping",
+      "chunk_id": "dd_act03s01_c0007",
+      "kind": "model_alias_not_auto_merged",
+      "name": "formerly Evans"
+    },
+    {
+      "candidate": "Hannah Topping",
+      "chunk_id": "dd_act03s01_c0009",
+      "kind": "model_alias_not_auto_merged",
+      "name": "Noahry"
+    },
+    {
+      "canonical": "Major Tarver",
+      "chunk_id": "dd_act03s02_c0002",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "Major"
+    },
+    {
+      "canonical": "Augustin Jedd",
+      "chunk_id": "dd_act03s02_c0002",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "Dean"
+    },
+    {
+      "canonical": "Georgiana Tidman",
+      "chunk_id": "dd_act03s02_c0002",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "Aunt Georgiana"
+    },
+    {
+      "candidate": "Georgiana Tidman",
+      "chunk_id": "dd_act03s02_c0004",
+      "kind": "model_alias_not_auto_merged",
+      "name": "Jedd"
+    },
+    {
+      "canonical": "Blore",
+      "chunk_id": "dd_act03s02_c0004",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "Blore"
+    },
+    {
+      "canonical": "Blore",
+      "chunk_id": "dd_act03s02_c0005",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "Blore"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0010",
+      "kind": "blocked_ambiguous",
+      "name": "the horse called Deception"
+    },
+    {
+      "canonical": "Georgiana Tidman",
+      "chunk_id": "dd_act03s02_c0011",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "George Tidd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0011",
+      "kind": "blocked_ambiguous",
+      "name": "Deception"
+    },
+    {
+      "canonical": "Royal Court Theatre",
+      "chunk_id": "dd_prod_c0001",
+      "kind": "type_conflict_relinked_to_known_entity",
+      "name": "Court Theatre"
+    },
+    {
+      "chunk_id": "dd_front_c0001",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "MANAGED_BY",
+      "source": "Dandy Dick (play)",
+      "target": "Walter H. Baker"
+    },
+    {
+      "chunk_id": "dd_prod_c0001",
+      "kind": "relation_direction_corrected",
+      "relation": "MANAGED_BY",
+      "source": "Royal Court Theatre",
+      "target": "Arthur Cecil"
+    },
+    {
+      "chunk_id": "dd_prod_c0001",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "MANAGED_BY",
+      "source": "Royal Court Theatre",
+      "target": "Arthur Cecil"
+    },
+    {
+      "chunk_id": "dd_prod_c0001",
+      "kind": "relation_direction_corrected",
+      "relation": "MANAGED_BY",
+      "source": "Royal Court Theatre",
+      "target": "John Clayton"
+    },
+    {
+      "chunk_id": "dd_prod_c0001",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "MANAGED_BY",
+      "source": "Royal Court Theatre",
+      "target": "John Clayton"
+    },
+    {
+      "chunk_id": "dd_prod_c0001",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "PARTICIPATES_IN",
+      "source": "John Clayton",
+      "target": "Dandy Dick (play)"
+    },
+    {
+      "chunk_id": "dd_prod_c0001",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "AUTHORED_BY",
+      "source": "The Schoolmistress",
+      "target": "Arthur W. Pinero"
+    },
+    {
+      "chunk_id": "dd_prod_c0001",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "PRECEDED_BY",
+      "source": "Dandy Dick (play)",
+      "target": "The Schoolmistress"
+    },
+    {
+      "chunk_id": "dd_prod_c0001",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "PARTICIPATES_IN",
+      "source": "Noah Topping",
+      "target": "Dandy Dick (play)"
+    },
+    {
+      "chunk_id": "dd_cast_c0001",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "PERFORMED_AT",
+      "source": "The Nettle",
+      "target": "Royal Court Theatre"
+    },
+    {
+      "chunk_id": "dd_cast_c0001",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_cast_c0001",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Blore",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_prod_c0002",
+      "kind": "relation_direction_corrected",
+      "relation": "MANAGED_BY",
+      "source": "Toole's Theatre",
+      "target": "John Clayton"
+    },
+    {
+      "chunk_id": "dd_prod_c0002",
+      "kind": "relation_direction_corrected",
+      "relation": "PERFORMED_AT",
+      "source": "Dandy Dick (play)",
+      "target": "Royal Court Theatre"
+    },
+    {
+      "chunk_id": "dd_prod_c0002",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "PERFORMED_AT",
+      "source": "Dandy Dick (play)",
+      "target": "Royal Court Theatre"
+    },
+    {
+      "chunk_id": "dd_prod_c0002",
+      "kind": "relation_rejected_performance_endpoint_types_invalid",
+      "relation": "PERFORMED_AT",
+      "source": "Mr. Daly",
+      "target": "Dandy Dick (play)"
+    },
+    {
+      "chunk_id": "dd_prod_c0002",
+      "kind": "relation_rejected_portrayal_endpoint_types_invalid",
+      "relation": "PORTRAYED_BY",
+      "source": "Miss Ada Rehan",
+      "target": "Mrs. John Wood"
+    },
+    {
+      "chunk_id": "dd_prod_c0002",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "PERFORMED_AT",
+      "source": "Dandy Dick (play)",
+      "target": "Melbourne"
+    },
+    {
+      "chunk_id": "dd_prod_c0002",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "PERFORMED_AT",
+      "source": "Dandy Dick (play)",
+      "target": "Sydney"
+    },
+    {
+      "chunk_id": "dd_prod_c0002",
+      "kind": "relation_rejected_performance_endpoint_types_invalid",
+      "relation": "PERFORMED_AT",
+      "source": "Mr. G. W. Anson",
+      "target": "Dandy Dick (play)"
+    },
+    {
+      "chunk_id": "dd_prod_c0002",
+      "kind": "relation_rejected_performance_endpoint_types_invalid",
+      "relation": "PERFORMED_AT",
+      "source": "Mr. Robert Brough",
+      "target": "Dandy Dick (play)"
+    },
+    {
+      "chunk_id": "dd_prod_c0002",
+      "kind": "relation_direction_corrected",
+      "relation": "AUTHORED_BY",
+      "source": "Dandy Dick (play)",
+      "target": "MALCOLM C. SALAMAK"
+    },
+    {
+      "chunk_id": "dd_prod_c0002",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "AUTHORED_BY",
+      "source": "Dandy Dick (play)",
+      "target": "MALCOLM C. SALAMAK"
+    },
+    {
+      "chunk_id": "dd_act01_c0001",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Salome Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0001",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Sheba Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0001",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "ROMANTIC_WITH",
+      "source": "Nugent Darbey",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0001",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "LOCATED_AT",
+      "source": "Fancy Dress Masked Ball",
+      "target": "Durnstone Athenaeum"
+    },
+    {
+      "chunk_id": "dd_act01_c0001",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "CAUSES",
+      "source": "Hussars",
+      "target": "Fancy Dress Masked Ball"
+    },
+    {
+      "chunk_id": "dd_act01_c0001",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Major Tarver",
+      "target": "Hussars"
+    },
+    {
+      "chunk_id": "dd_act01_c0001",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Nugent Darbey",
+      "target": "Hussars"
+    },
+    {
+      "chunk_id": "dd_act01_c0001",
+      "kind": "relation_rejected_location_not_asserted_for_source",
+      "relation": "LOCATED_AT",
+      "source": "Major Tarver",
+      "target": "London"
+    },
+    {
+      "chunk_id": "dd_act01_c0001",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Major Tarver",
+      "target": "costumier"
+    },
+    {
+      "chunk_id": "dd_act01_c0002",
+      "kind": "relation_direction_corrected",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0002",
+      "kind": "relation_direction_corrected",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0002",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "CAUSES",
+      "source": "the account",
+      "target": "the fancy dresses"
+    },
+    {
+      "chunk_id": "dd_act01_c0002",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "OWNS",
+      "source": "Augustin Jedd",
+      "target": "the Concordance"
+    },
+    {
+      "chunk_id": "dd_act01_c0003",
+      "kind": "relation_direction_corrected",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0003",
+      "kind": "relation_direction_corrected",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0003",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Salome Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0003",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "ROMANTIC_WITH",
+      "source": "Salome Jedd",
+      "target": "Major Tarver"
+    },
+    {
+      "chunk_id": "dd_act01_c0003",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "ROMANTIC_WITH",
+      "source": "Sheba Jedd",
+      "target": "Nugent Darbey"
+    },
+    {
+      "chunk_id": "dd_act01_c0003",
+      "kind": "relation_rejected_evidence_too_short",
+      "relation": "EMPLOYED_BY",
+      "source": "Blore",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0003",
+      "kind": "relation_endpoint_unresolved",
+      "relation": "INTERACTS_WITH"
+    },
+    {
+      "chunk_id": "dd_act01_c0004",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Major Tarver",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0004",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Nugent Darbey",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0004",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Blore",
+      "target": "Major Tarver"
+    },
+    {
+      "chunk_id": "dd_act01_c0004",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Blore",
+      "target": "Nugent Darbey"
+    },
+    {
+      "chunk_id": "dd_act01_c0004",
+      "kind": "relation_endpoint_unresolved",
+      "relation": "EMPLOYED_BY"
+    },
+    {
+      "chunk_id": "dd_act01_c0004",
+      "kind": "relation_endpoint_unresolved",
+      "relation": "PARENT_OF"
+    },
+    {
+      "chunk_id": "dd_act01_c0005",
+      "kind": "relation_rejected_evidence_too_short",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0005",
+      "kind": "relation_rejected_evidence_too_short",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0005",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Salome Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0005",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "FRIEND_OF",
+      "source": "Major Tarver",
+      "target": "Nugent Darbey"
+    },
+    {
+      "chunk_id": "dd_act01_c0005",
+      "kind": "relation_direction_corrected",
+      "relation": "EMPLOYED_BY",
+      "source": "Blore",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0005",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Blore",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0006",
+      "kind": "relation_rejected_portrayal_not_cast_evidence",
+      "relation": "PORTRAYED_BY",
+      "source": "Major Tarver",
+      "target": "Charles the First"
+    },
+    {
+      "chunk_id": "dd_act01_c0006",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Augustin Jedd",
+      "target": "Major Tarver"
+    },
+    {
+      "chunk_id": "dd_act01_c0006",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Augustin Jedd",
+      "target": "Nugent Darbey"
+    },
+    {
+      "chunk_id": "dd_act01_c0007",
+      "kind": "relation_rejected_evidence_too_short",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0007",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Sheba Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0008",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0008",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0008",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Sheba Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0008",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "CAUSES",
+      "source": "Restoration Fund",
+      "target": "St. Marvells Minster Spire"
+    },
+    {
+      "chunk_id": "dd_act01_c0008",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Augustin Jedd",
+      "target": "The Times"
+    },
+    {
+      "chunk_id": "dd_act01_c0008",
+      "kind": "relation_rejected_event_mentioned_not_participated",
+      "relation": "PARTICIPATES_IN",
+      "source": "Augustin Jedd",
+      "target": "St. Marvells Spring Meeting"
+    },
+    {
+      "chunk_id": "dd_act01_c0009",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Mr. Hodder",
+      "target": "The Sport and Relaxation Repression Guild"
+    },
+    {
+      "chunk_id": "dd_act01_c0009",
+      "kind": "relation_rejected_event_mentioned_not_participated",
+      "relation": "PARTICIPATES_IN",
+      "source": "Augustin Jedd",
+      "target": "St. Marvells Spring Meeting"
+    },
+    {
+      "chunk_id": "dd_act01_c0009",
+      "kind": "relation_rejected_racing_tip_not_participation",
+      "relation": "PARTICIPATES_IN",
+      "source": "Blore",
+      "target": "Durnstone Handicap"
+    },
+    {
+      "chunk_id": "dd_act01_c0010",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Blore",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0010",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Willis",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0011",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0011",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0011",
+      "kind": "relation_rejected_evidence_too_short",
+      "relation": "SIBLING_OF",
+      "source": "Salome Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0011",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Georgiana Tidman",
+      "target": "Shrewsbury and Talbot"
+    },
+    {
+      "chunk_id": "dd_act01_c0012",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "FRIEND_OF",
+      "source": "Augustin Jedd",
+      "target": "Sir Tristram Mardon"
+    },
+    {
+      "chunk_id": "dd_act01_c0013",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Sir Tristram Mardon",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act01_c0013",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Tom Gallawood",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act01_c0013",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Georgiana Tidman",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act01_c0013",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "FRIEND_OF",
+      "source": "Sir Tristram Mardon",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0014",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Sir Tristram Mardon",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act01_c0014",
+      "kind": "relation_rejected_unsupported_parent_direction",
+      "relation": "PARENT_OF",
+      "source": "Georgiana Tidman",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0014",
+      "kind": "relation_rejected_unsupported_parent_direction",
+      "relation": "PARENT_OF",
+      "source": "Georgiana Tidman",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0014",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0014",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0014",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "FRIEND_OF",
+      "source": "Sir Tristram Mardon",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0014",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Augustin Jedd",
+      "target": "Lord Beckslade"
+    },
+    {
+      "chunk_id": "dd_act01_c0015",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0015",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0015",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "FRIEND_OF",
+      "source": "Sir Tristram Mardon",
+      "target": "Georgiana Tidman"
+    },
+    {
+      "chunk_id": "dd_act01_c0015",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "FRIEND_OF",
+      "source": "Sir Tristram Mardon",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0015",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Georgiana Tidman",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0015",
+      "kind": "relation_rejected_dandy_owner_not_explicit",
+      "relation": "OWNS",
+      "source": "John Fielder",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act01_c0015",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Georgiana Tidman",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act01_c0016",
+      "kind": "relation_rejected_ownership_target_type_invalid",
+      "relation": "OWNS",
+      "source": "Georgiana Tidman",
+      "target": "Sir Tristram Mardon"
+    },
+    {
+      "chunk_id": "dd_act01_c0016",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Georgiana Tidman",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0016",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Sheba Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0016",
+      "kind": "relation_rejected_unsupported_parent_direction",
+      "relation": "PARENT_OF",
+      "source": "Georgiana Tidman",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0016",
+      "kind": "relation_rejected_unsupported_parent_direction",
+      "relation": "PARENT_OF",
+      "source": "Georgiana Tidman",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0016",
+      "kind": "relation_rejected_ownership_target_type_invalid",
+      "relation": "OWNS",
+      "source": "Sheba Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0016",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Sir Tristram Mardon",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0017",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Sheba Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0017",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Salome Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0017",
+      "kind": "relation_rejected_unsupported_parent_direction",
+      "relation": "PARENT_OF",
+      "source": "Georgiana Tidman",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0017",
+      "kind": "relation_rejected_unsupported_parent_direction",
+      "relation": "PARENT_OF",
+      "source": "Georgiana Tidman",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0017",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0017",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act01_c0017",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Sheba Jedd",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act01_c0017",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Salome Jedd",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act01_c0017",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Georgiana Tidman",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0001",
+      "kind": "relation_rejected_unsupported_parent_direction",
+      "relation": "PARENT_OF",
+      "source": "Georgiana Tidman",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0001",
+      "kind": "relation_rejected_unsupported_parent_direction",
+      "relation": "PARENT_OF",
+      "source": "Georgiana Tidman",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0001",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Salome Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0001",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Georgiana Tidman",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0001",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "LOCATED_AT",
+      "source": "Major Tarver",
+      "target": "The Deanery of St. Marvells"
+    },
+    {
+      "chunk_id": "dd_act02_c0001",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "LOCATED_AT",
+      "source": "Nugent Darbey",
+      "target": "The Deanery of St. Marvells"
+    },
+    {
+      "chunk_id": "dd_act02_c0002",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0002",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0002",
+      "kind": "relation_rejected_ownership_target_type_invalid",
+      "relation": "OWNS",
+      "source": "Augustin Jedd",
+      "target": "Restoration Fund"
+    },
+    {
+      "chunk_id": "dd_act02_c0002",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Georgiana Tidman",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0002",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Major Tarver",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0003",
+      "kind": "relation_rejected_ownership_target_type_invalid",
+      "relation": "OWNS",
+      "source": "Augustin Jedd",
+      "target": "Restoration Fund"
+    },
+    {
+      "chunk_id": "dd_act02_c0003",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Augustin Jedd",
+      "target": "The Times"
+    },
+    {
+      "chunk_id": "dd_act02_c0003",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Major Tarver",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0003",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Nugent Darbey",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0003",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Nugent Darbey",
+      "target": "Joachim"
+    },
+    {
+      "chunk_id": "dd_act02_c0004",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Nugent Darbey",
+      "target": "Joachim"
+    },
+    {
+      "chunk_id": "dd_act02_c0004",
+      "kind": "relation_rejected_ownership_target_type_invalid",
+      "relation": "OWNS",
+      "source": "Augustin Jedd",
+      "target": "Restoration Fund"
+    },
+    {
+      "chunk_id": "dd_act02_c0004",
+      "kind": "relation_rejected_location_target_type_invalid",
+      "relation": "LOCATED_AT",
+      "source": "Augustin Jedd",
+      "target": "St. Marvells Minster Spire"
+    },
+    {
+      "chunk_id": "dd_act02_c0004",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "PARTICIPATES_IN",
+      "source": "Georgiana Tidman",
+      "target": "Crumbleigh Stakes"
+    },
+    {
+      "chunk_id": "dd_act02_c0004",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Major Tarver",
+      "target": "Chest C"
+    },
+    {
+      "chunk_id": "dd_act02_c0004",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Blore",
+      "target": "The Times"
+    },
+    {
+      "chunk_id": "dd_act02_c0004",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Augustin Jedd",
+      "target": "The Times"
+    },
+    {
+      "chunk_id": "dd_act02_c0005",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Sir Tristram Mardon",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0005",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "LOCATED_AT",
+      "source": "Dandy Dick",
+      "target": "The Swan Inn"
+    },
+    {
+      "chunk_id": "dd_act02_c0005",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Sir Tristram Mardon",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0005",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Hatcham",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0005",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Georgiana Tidman",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0006",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Sir Tristram Mardon",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0006",
+      "kind": "relation_rejected_unsupported_parent_direction",
+      "relation": "PARENT_OF",
+      "source": "Georgiana Tidman",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0006",
+      "kind": "relation_direction_corrected",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0006",
+      "kind": "relation_direction_corrected",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0006",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Georgiana Tidman",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0006",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Sir Tristram Mardon",
+      "target": "Georgiana Tidman"
+    },
+    {
+      "chunk_id": "dd_act02_c0006",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "LOCATED_AT",
+      "source": "Dandy Dick",
+      "target": "the Deanery Stables"
+    },
+    {
+      "chunk_id": "dd_act02_c0006",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Nugent Darbey",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0006",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "OPPOSES",
+      "source": "Augustin Jedd",
+      "target": "Nugent Darbey"
+    },
+    {
+      "chunk_id": "dd_act02_c0006",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "HELPS",
+      "source": "Hatcham",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0007",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Sir Tristram Mardon",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0007",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Hatcham",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0007",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Hatcham",
+      "target": "Noah Topping"
+    },
+    {
+      "chunk_id": "dd_act02_c0007",
+      "kind": "relation_rejected_location_not_asserted_for_source",
+      "relation": "LOCATED_AT",
+      "source": "Hatcham",
+      "target": "The Swan Inn"
+    },
+    {
+      "chunk_id": "dd_act02_c0007",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "LOCATED_AT",
+      "source": "Dandy Dick",
+      "target": "The Deanery of St. Marvells"
+    },
+    {
+      "chunk_id": "dd_act02_c0007",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Augustin Jedd",
+      "target": "Blore"
+    },
+    {
+      "chunk_id": "dd_act02_c0008",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Georgiana Tidman",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0008",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Blore",
+      "target": "Sir Tristram Mardon"
+    },
+    {
+      "chunk_id": "dd_act02_c0008",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "CAUSES",
+      "source": "the Military",
+      "target": "Fancy Dress Masked Ball"
+    },
+    {
+      "chunk_id": "dd_act02_c0008",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "CAUSES",
+      "source": "the fire",
+      "target": "the Military"
+    },
+    {
+      "chunk_id": "dd_act02_c0009",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Georgiana Tidman",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0009",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Augustin Jedd",
+      "target": "St. Marvells Minster Spire"
+    },
+    {
+      "chunk_id": "dd_act02_c0009",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Georgiana Tidman",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0009",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Augustin Jedd",
+      "target": "Georgiana Tidman"
+    },
+    {
+      "chunk_id": "dd_act02_c0010",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Georgiana Tidman",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0010",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "PARTICIPATES_IN",
+      "source": "Blore",
+      "target": "St. Marvells Spring Meeting"
+    },
+    {
+      "chunk_id": "dd_act02_c0010",
+      "kind": "relation_rejected_location_not_asserted_for_source",
+      "relation": "LOCATED_AT",
+      "source": "Blore",
+      "target": "Tattersall's Ring"
+    },
+    {
+      "chunk_id": "dd_act02_c0010",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "OWNS",
+      "source": "Augustin Jedd",
+      "target": "St. Marvells Minster Spire"
+    },
+    {
+      "chunk_id": "dd_act02_c0010",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Georgiana Tidman",
+      "target": "Georgiana Tidman"
+    },
+    {
+      "chunk_id": "dd_act02_c0010",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Georgiana Tidman",
+      "target": "Heidsieck"
+    },
+    {
+      "chunk_id": "dd_act02_c0011",
+      "kind": "relation_direction_corrected",
+      "relation": "EMPLOYED_BY",
+      "source": "Blore",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0011",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Blore",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0011",
+      "kind": "relation_rejected_dandy_owner_not_explicit",
+      "relation": "OWNS",
+      "source": "Augustin Jedd",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0011",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Augustin Jedd",
+      "target": "Blore"
+    },
+    {
+      "chunk_id": "dd_act02_c0011",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Blore",
+      "target": "Bonny Betsy"
+    },
+    {
+      "chunk_id": "dd_act02_c0011",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OPPOSES",
+      "source": "Augustin Jedd",
+      "target": "Bonny Betsy"
+    },
+    {
+      "chunk_id": "dd_act02_c0011",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Augustin Jedd",
+      "target": "the Bank"
+    },
+    {
+      "chunk_id": "dd_act02_c0012",
+      "kind": "relation_rejected_dandy_owner_not_explicit",
+      "relation": "OWNS",
+      "source": "Augustin Jedd",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0012",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Augustin Jedd",
+      "target": "the Bolus"
+    },
+    {
+      "chunk_id": "dd_act02_c0012",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "OWNS",
+      "source": "Augustin Jedd",
+      "target": "The Horse and its Ailments"
+    },
+    {
+      "chunk_id": "dd_act02_c0012",
+      "kind": "relation_direction_corrected",
+      "relation": "EMPLOYED_BY",
+      "source": "Blore",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0012",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Blore",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0012",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "LOCATED_AT",
+      "source": "Augustin Jedd",
+      "target": "The Deanery of St. Marvells"
+    },
+    {
+      "chunk_id": "dd_act02_c0012",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Augustin Jedd",
+      "target": "St. Marvells Minster Spire"
+    },
+    {
+      "chunk_id": "dd_act02_c0013",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OPPOSES",
+      "source": "Blore",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0013",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "OWNS",
+      "source": "Blore",
+      "target": "Bonny Betsy"
+    },
+    {
+      "chunk_id": "dd_act02_c0013",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Blore",
+      "target": "Strychnine"
+    },
+    {
+      "chunk_id": "dd_act02_c0013",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "CAUSES",
+      "source": "Blore",
+      "target": "the old black retriever"
+    },
+    {
+      "chunk_id": "dd_act02_c0014",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "CAUSES",
+      "source": "Blore",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0014",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "LOCATED_AT",
+      "source": "Augustin Jedd",
+      "target": "the stable"
+    },
+    {
+      "chunk_id": "dd_act02_c0014",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Sir Tristram Mardon",
+      "target": "Georgiana Tidman"
+    },
+    {
+      "chunk_id": "dd_act02_c0015",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Georgiana Tidman",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0015",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Sir Tristram Mardon",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0015",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "FRIEND_OF",
+      "source": "Georgiana Tidman",
+      "target": "Sir Tristram Mardon"
+    },
+    {
+      "chunk_id": "dd_act02_c0015",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Salome Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0016",
+      "kind": "relation_rejected_unsupported_parent_direction",
+      "relation": "PARENT_OF",
+      "source": "Georgiana Tidman",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0016",
+      "kind": "relation_rejected_unsupported_parent_direction",
+      "relation": "PARENT_OF",
+      "source": "Georgiana Tidman",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0016",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Salome Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0016",
+      "kind": "relation_direction_corrected",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0016",
+      "kind": "relation_direction_corrected",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0016",
+      "kind": "relation_rejected_portrayal_endpoint_types_invalid",
+      "relation": "PORTRAYED_BY",
+      "source": "Nugent Darbey",
+      "target": "Nugent Darbey"
+    },
+    {
+      "chunk_id": "dd_act02_c0016",
+      "kind": "relation_rejected_portrayal_endpoint_types_invalid",
+      "relation": "PORTRAYED_BY",
+      "source": "Major Tarver",
+      "target": "Major Tarver"
+    },
+    {
+      "chunk_id": "dd_act02_c0016",
+      "kind": "relation_rejected_location_not_asserted_for_source",
+      "relation": "LOCATED_AT",
+      "source": "Nugent Darbey",
+      "target": "St. Marvells"
+    },
+    {
+      "chunk_id": "dd_act02_c0016",
+      "kind": "relation_rejected_location_not_asserted_for_source",
+      "relation": "LOCATED_AT",
+      "source": "Major Tarver",
+      "target": "St. Marvells"
+    },
+    {
+      "chunk_id": "dd_act02_c0016",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Salome Jedd",
+      "target": "Nugent Darbey"
+    },
+    {
+      "chunk_id": "dd_act02_c0016",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Sheba Jedd",
+      "target": "Major Tarver"
+    },
+    {
+      "chunk_id": "dd_act02_c0017",
+      "kind": "relation_rejected_unsupported_parent_direction",
+      "relation": "PARENT_OF",
+      "source": "Georgiana Tidman",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0017",
+      "kind": "relation_rejected_unsupported_parent_direction",
+      "relation": "PARENT_OF",
+      "source": "Georgiana Tidman",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act02_c0017",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Major Tarver",
+      "target": "Nugent Darbey"
+    },
+    {
+      "chunk_id": "dd_act02_c0017",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Sir Tristram Mardon",
+      "target": "Major Tarver"
+    },
+    {
+      "chunk_id": "dd_act02_c0017",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Hatcham",
+      "target": "Sir Tristram Mardon"
+    },
+    {
+      "chunk_id": "dd_act02_c0017",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Hatcham",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act02_c0017",
+      "kind": "relation_rejected_unsupported_arrest_direction",
+      "relation": "ARRESTS",
+      "source": "Augustin Jedd",
+      "target": "Hatcham"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0001",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "MARRIED_TO",
+      "source": "Hannah Topping",
+      "target": "Noah Topping"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0001",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Noah Topping",
+      "target": "St. Marvells"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0001",
+      "kind": "relation_rejected_location_not_asserted_for_source",
+      "relation": "LOCATED_AT",
+      "source": "Noah Topping",
+      "target": "Durnstone"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0001",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Blore",
+      "target": "The Deanery of St. Marvells"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0002",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "MARRIED_TO",
+      "source": "Hannah Topping",
+      "target": "Noah Topping"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0002",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "FRIEND_OF",
+      "source": "Blore",
+      "target": "Hannah Topping"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0002",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Blore",
+      "target": "Jane"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0002",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Blore",
+      "target": "Sarah"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0002",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Blore",
+      "target": "Willis"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0002",
+      "kind": "relation_endpoint_unresolved",
+      "relation": "LOCATED_AT"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0002",
+      "kind": "relation_endpoint_unresolved",
+      "relation": "ARRESTS"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0002",
+      "kind": "relation_endpoint_unresolved",
+      "relation": "LOCATED_AT"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0002",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Blore",
+      "target": "The Deanery of St. Marvells"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0003",
+      "kind": "relation_rejected_evidence_too_short",
+      "relation": "MARRIED_TO",
+      "source": "Noah Topping",
+      "target": "Hannah Topping"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0003",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "MARRIED_TO",
+      "source": "Hannah Topping",
+      "target": "Noah Topping"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0003",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "LOCATED_AT",
+      "source": "Hannah Topping",
+      "target": "St. Marvells"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0003",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Noah Topping",
+      "target": "Blore"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0004",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "MARRIED_TO",
+      "source": "Noah Topping",
+      "target": "Hannah Topping"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0004",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Blore",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0004",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Noah Topping",
+      "target": "Old Nick"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0004",
+      "kind": "relation_endpoint_unresolved",
+      "relation": "ARRESTS"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0004",
+      "kind": "relation_rejected_location_not_asserted_for_source",
+      "relation": "LOCATED_AT",
+      "source": "Noah Topping",
+      "target": "Durnstone"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0004",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Noah Topping",
+      "target": "Blore"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0005",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Hannah Topping",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0005",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "ARRESTS",
+      "source": "Noah Topping",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0005",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Hannah Topping",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0005",
+      "kind": "relation_rejected_location_target_type_invalid",
+      "relation": "LOCATED_AT",
+      "source": "Augustin Jedd",
+      "target": "the cell door"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0005",
+      "kind": "relation_rejected_location_target_type_invalid",
+      "relation": "LOCATED_AT",
+      "source": "Hannah Topping",
+      "target": "the street door"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0005",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Hannah Topping",
+      "target": "the oven door"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0005",
+      "kind": "relation_rejected_location_target_type_invalid",
+      "relation": "LOCATED_AT",
+      "source": "Augustin Jedd",
+      "target": "the wicket"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0005",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Augustin Jedd",
+      "target": "the fur cap"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0005",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Noah Topping",
+      "target": "Old Nick"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0006",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "MARRIED_TO",
+      "source": "Hannah Topping",
+      "target": "Noah Topping"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0006",
+      "kind": "relation_rejected_evidence_too_short",
+      "relation": "LOCATED_AT",
+      "source": "John Ruggles",
+      "target": "Durnstone"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0006",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Augustin Jedd",
+      "target": "John Ruggles"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0006",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Hannah Topping",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0007",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "MARRIED_TO",
+      "source": "Hannah Topping",
+      "target": "Noah Topping"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0007",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Hannah Topping",
+      "target": "The Deanery of St. Marvells"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0007",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "John Ruggles",
+      "target": "Durnstone"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0007",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Whitaker",
+      "target": "Durnstone"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0007",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Parker",
+      "target": "Durnstone"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0007",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Old Nick",
+      "target": "Durnstone Fire Brigade"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0007",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Noah Topping",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0007",
+      "kind": "relation_rejected_location_not_asserted_for_source",
+      "relation": "LOCATED_AT",
+      "source": "Augustin Jedd",
+      "target": "Durnstone"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0008",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Hannah Topping",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0008",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "OWNS",
+      "source": "Augustin Jedd",
+      "target": "the joint"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0008",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "OWNS",
+      "source": "Hannah Topping",
+      "target": "the joint"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0008",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OPPOSES",
+      "source": "Noah Topping",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0009",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "MARRIED_TO",
+      "source": "Noah Topping",
+      "target": "Hannah Topping"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0009",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OPPOSES",
+      "source": "Noah Topping",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0009",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Noah Topping",
+      "target": "Durnstone"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0009",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Hannah Topping",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0009",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Georgiana Tidman",
+      "target": "Sir Tristram Mardon"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0010",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "MARRIED_TO",
+      "source": "Noah Topping",
+      "target": "Hannah Topping"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0010",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Georgiana Tidman",
+      "target": "Noah Topping"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0010",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Sir Tristram Mardon",
+      "target": "Noah Topping"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0011",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Georgiana Tidman",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0011",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "FRIEND_OF",
+      "source": "Sir Tristram Mardon",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0011",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Augustin Jedd",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0011",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Noah Topping",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0012",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "OWNS",
+      "source": "Sir Tristram Mardon",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0012",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Georgiana Tidman",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0012",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Augustin Jedd",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0012",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Hannah Topping",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0012",
+      "kind": "relation_rejected_location_not_asserted_for_source",
+      "relation": "LOCATED_AT",
+      "source": "Augustin Jedd",
+      "target": "Deanery Stables"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0012",
+      "kind": "relation_rejected_location_not_asserted_for_source",
+      "relation": "LOCATED_AT",
+      "source": "Noah Topping",
+      "target": "Durnstone"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0013",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "ARRESTS",
+      "source": "Noah Topping",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0013",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "LOCATED_AT",
+      "source": "Augustin Jedd",
+      "target": "The Deanery of St. Marvells"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0013",
+      "kind": "relation_rejected_location_not_asserted_for_source",
+      "relation": "LOCATED_AT",
+      "source": "Noah Topping",
+      "target": "Durnstone"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0013",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Hannah Topping",
+      "target": "Old Nick"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0013",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Noah Topping",
+      "target": "Kitty"
+    },
+    {
+      "chunk_id": "dd_act03s01_c0013",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Noah Topping",
+      "target": "Old Nick"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0001",
+      "kind": "relation_rejected_evidence_too_short",
+      "relation": "SIBLING_OF",
+      "source": "Salome Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0001",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Sheba Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0001",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Major Tarver",
+      "target": "Dr. Middleton"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0001",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Nugent Darbey",
+      "target": "Major Tarver"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0002",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "ROMANTIC_WITH",
+      "source": "Nugent Darbey",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0002",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Dr. Middleton",
+      "target": "Major Tarver"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0002",
+      "kind": "relation_direction_corrected",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0003",
+      "kind": "relation_direction_corrected",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0003",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Georgiana Tidman",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0003",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "FRIEND_OF",
+      "source": "Sir Tristram Mardon",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0003",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Georgiana Tidman",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0003",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Sir Tristram Mardon",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0003",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Hatcham",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0003",
+      "kind": "relation_direction_corrected",
+      "relation": "EMPLOYED_BY",
+      "source": "Hatcham",
+      "target": "Sir Tristram Mardon"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0003",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Hatcham",
+      "target": "Sir Tristram Mardon"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0003",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "FRIEND_OF",
+      "source": "Georgiana Tidman",
+      "target": "Sir Tristram Mardon"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0004",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "HELPS",
+      "source": "Georgiana Tidman",
+      "target": "Sir Tristram Mardon"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0004",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "HELPS",
+      "source": "Georgiana Tidman",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0004",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Sir Tristram Mardon",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0004",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Georgiana Tidman",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0004",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "PARTICIPATES_IN",
+      "source": "Bonny Betsy",
+      "target": "the Hill"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0004",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Augustin Jedd",
+      "target": "St. Marvells Minster Spire"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0004",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "LOCATED_AT",
+      "source": "Georgiana Tidman",
+      "target": "the Hill"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0004",
+      "kind": "relation_rejected_location_not_asserted_for_source",
+      "relation": "LOCATED_AT",
+      "source": "Georgiana Tidman",
+      "target": "Pear Tree Lane"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0005",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OWNS",
+      "source": "Sir Tristram Mardon",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0005",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Sir Tristram Mardon",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0005",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Georgiana Tidman",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0005",
+      "kind": "relation_direction_corrected",
+      "relation": "AUTHORED_BY",
+      "source": "The Horse and its Ailments",
+      "target": "John Cox"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0005",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Salome Jedd",
+      "target": "Major Tarver"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0006",
+      "kind": "relation_rejected_evidence_too_short",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0006",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Sheba Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0006",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Sir Tristram Mardon",
+      "target": "Georgiana Tidman"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0006",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Hatcham",
+      "target": "Sir Tristram Mardon"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0007",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0007",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0007",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "SIBLING_OF",
+      "source": "Salome Jedd",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0007",
+      "kind": "relation_rejected_unsupported_parent_direction",
+      "relation": "PARENT_OF",
+      "source": "Georgiana Tidman",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0007",
+      "kind": "relation_rejected_unsupported_parent_direction",
+      "relation": "PARENT_OF",
+      "source": "Georgiana Tidman",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0007",
+      "kind": "relation_rejected_dandy_owner_not_explicit",
+      "relation": "OWNS",
+      "source": "Augustin Jedd",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0007",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "MARRIED_TO",
+      "source": "Sir Tristram Mardon",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0007",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OPPOSES",
+      "source": "Sir Tristram Mardon",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0008",
+      "kind": "relation_direction_corrected",
+      "relation": "EMPLOYED_BY",
+      "source": "Blore",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0008",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Blore",
+      "target": "Bonny Betsy"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0008",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Blore",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0008",
+      "kind": "relation_rejected_location_not_asserted_for_source",
+      "relation": "LOCATED_AT",
+      "source": "Augustin Jedd",
+      "target": "Deanery Stables"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0009",
+      "kind": "relation_rejected_dandy_owner_not_explicit",
+      "relation": "OWNS",
+      "source": "Augustin Jedd",
+      "target": "Dandy Dick"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0009",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Blore",
+      "target": "Bonny Betsy"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0009",
+      "kind": "relation_direction_corrected",
+      "relation": "EMPLOYED_BY",
+      "source": "Blore",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0009",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "EMPLOYED_BY",
+      "source": "Blore",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0009",
+      "kind": "relation_rejected_evidence_too_short",
+      "relation": "PARENT_OF",
+      "source": "Augustin Jedd",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0009",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "ROMANTIC_WITH",
+      "source": "Major Tarver",
+      "target": "Salome Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0009",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "ROMANTIC_WITH",
+      "source": "Nugent Darbey",
+      "target": "Sheba Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0009",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OPPOSES",
+      "source": "Noah Topping",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0009",
+      "kind": "relation_rejected_source_not_named_in_evidence",
+      "relation": "LOCATED_AT",
+      "source": "Augustin Jedd",
+      "target": "The Deanery of St. Marvells"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0010",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "MARRIED_TO",
+      "source": "Hannah Topping",
+      "target": "Noah Topping"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0010",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "OPPOSES",
+      "source": "Noah Topping",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0010",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Sir Tristram Mardon",
+      "target": "Hatcham"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0010",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Hatcham",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0010",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Augustin Jedd",
+      "target": "Noah Topping"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0010",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Georgiana Tidman",
+      "target": "Augustin Jedd"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0010",
+      "kind": "relation_rejected_location_target_type_invalid",
+      "relation": "LOCATED_AT",
+      "source": "Nugent Darbey",
+      "target": "the arm-chair"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0010",
+      "kind": "relation_rejected_location_target_type_invalid",
+      "relation": "LOCATED_AT",
+      "source": "Sheba Jedd",
+      "target": "the piano"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0010",
+      "kind": "relation_rejected_weak_relation_excluded",
+      "relation": "INTERACTS_WITH",
+      "source": "Sheba Jedd",
+      "target": "Nugent Darbey"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0010",
+      "kind": "relation_endpoint_unresolved",
+      "relation": "INTERACTS_WITH"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0011",
+      "kind": "relation_rejected_predicate_not_explicit_in_evidence",
+      "relation": "HELPS",
+      "source": "Georgiana Tidman",
+      "target": "Georgiana Tidman"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0011",
+      "kind": "relation_rejected_target_not_named_in_evidence",
+      "relation": "HELPS",
+      "source": "Georgiana Tidman",
+      "target": "St. Marvells Minster Spire"
+    },
+    {
+      "chunk_id": "dd_act03s02_c0011",
+      "kind": "relation_endpoint_unresolved",
+      "relation": "INTERACTS_WITH"
+    }
+  ],
+  "section_edge_counts": {
+    "act_1": 20,
+    "act_2": 22,
+    "act_3_scene_1": 14,
+    "act_3_scene_2": 21,
+    "cast": 14,
+    "front_matter": 5,
+    "production_history": 6
+  },
+  "section_fact_counts": {
+    "act_1": 132,
+    "act_2": 157,
+    "act_3_scene_1": 107,
+    "act_3_scene_2": 105,
+    "cast": 28,
+    "front_matter": 7,
+    "production_history": 19
+  },
+  "status": "pass"
+}

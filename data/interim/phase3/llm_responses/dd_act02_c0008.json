@@ -1,0 +1,245 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act02_c0008",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "fce4f01ead5afe40a18181b2cc8d21555fa648feb3f0345e40cb13cd2d5ae26b",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"HATCHAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who speaks about the horse Dandy's pride and bereavement.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who is staying at the Deanery and is put to bed in the nursery.\",\n      \"aliases\": [\"Tris\"]\n    },\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who is the Dean, referred to as Jedd and Gus, and is unhappy about Sir Tristram staying.\",\n      \"aliases\": [\"Jedd\", \"Gus\"]\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who is the Dean's sister, referred to as George, and arranges for Sir Tristram to stay in the nursery.\",\n      \"aliases\": [\"George\"]\n    },\n    {\n      \"name\": \"BLORE\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who is a servant, carries a lantern, and is instructed to put Sir Tristram to bed.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Dandy\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse referred to as 'our Dandy' and described as proud and bereaved.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Deanery\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The residence of the Dean where Sir Tristram is staying.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the nursery\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A room in the Deanery where Sir Tristram is to sleep.\",\n      \"aliases\": [\"the old nursery\"]\n    },\n    {\n      \"name\": \"Durnstone\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A place where the military has been sent for to watch the ruins.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Hathanaeum\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A place where a wicked Ball is to be stopped.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Military\",\n      \"type\": \"ORGANIZATION\",\n      \"description\": \"The military has been sent for to watch the ruins in case of another outbreak.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the fire\",\n      \"type\": \"EVENT\",\n      \"description\": \"A fire that has been extinguished and caused alarm.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Ball\",\n      \"type\": \"EVENT\",\n      \"description\": \"A wicked Ball at the Hathanaeum that will be stopped by the military presence.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Sheba\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character whose little cot is still standing in the old nursery.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"the Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Sir Tristram is staying at the Deanery.\",\n      \"evidence_quote\": \"I'll teach you during my stay at the Deanery.\",\n      \"source_chunk_id\": \"dd_act02_c0008\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"the nursery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Sir Tristram is to sleep in the nursery.\",\n      \"evidence_quote\": \"Put Sir Tristram to bed carefully in the nursery, Blore.\",\n      \"source_chunk_id\": \"dd_act02_c0008\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Georgiana is the Dean's sister.\",\n      \"evidence_quote\": \"Don't be unkind, Tris. Where shall we stow the dear old chap, Gus, my boy?\",\n      \"source_chunk_id\": \"dd_act02_c0008\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"the Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Dean lives at the Deanery.\",\n      \"evidence_quote\": \"I'll teach you during my stay at the Deanery.\",\n      \"source_chunk_id\": \"dd_act02_c0008\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"SIR TRISTRAM\",\n      \"relation\": \"HELPS\",\n      \"description\": \"Blore is instructed to put Sir Tristram to bed.\",\n      \"evidence_quote\": \"Put Sir Tristram to bed carefully in the nursery, Blore.\",\n      \"source_chunk_id\": \"dd_act02_c0008\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"the Military\",\n      \"target\": \"Durnstone\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The military has been sent for to Durnstone.\",\n      \"evidence_quote\": \"they've just sent into Durnstone hasking for the Military to watch the ruins\",\n      \"source_chunk_id\": \"dd_act02_c0008\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"the Military\",\n      \"target\": \"the Ball\",\n      \"relation\": \"CAUSES\",\n      \"description\": \"The military presence will stop the Ball.\",\n      \"evidence_quote\": \"It'll stop the wicked Ball at the Hathanaeum, it will!\",\n      \"source_chunk_id\": \"dd_act02_c0008\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"the fire\",\n      \"target\": \"the Military\",\n      \"relation\": \"CAUSES\",\n      \"description\": \"The fire led to the military being sent for.\",\n      \"evidence_quote\": \"they've just sent into Durnstone hasking for the Military to watch the ruins in case of another houtbreak.\",\n      \"source_chunk_id\": \"dd_act02_c0008\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"Sheba\",\n      \"target\": \"the nursery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Sheba's cot is in the nursery.\",\n      \"evidence_quote\": \"there's Sheba's little cot still standing in the old nursery.\",\n      \"source_chunk_id\": \"dd_act02_c0008\",\n      \"confidence\": 0.9\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674502,
+    "id": "db7ab946-0522-4b31-a3dd-25be8bb3c84c",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1586,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1003,
+      "prompt_tokens": 1643,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 3229
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 14.440343,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:01:42.029206+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1586,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 1003,
+          "prompt_tokens": 1643,
+          "total_tokens": 3229
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1586,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1003,
+      "prompt_tokens": 1643,
+      "total_tokens": 3229
+    },
+    "total_elapsed_seconds": 14.440343
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A character who speaks about the horse Dandy's pride and bereavement.",
+        "name": "HATCHAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Tris"
+        ],
+        "description": "A character who is staying at the Deanery and is put to bed in the nursery.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Jedd",
+          "Gus"
+        ],
+        "description": "A character who is the Dean, referred to as Jedd and Gus, and is unhappy about Sir Tristram staying.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "George"
+        ],
+        "description": "A character who is the Dean's sister, referred to as George, and arranges for Sir Tristram to stay in the nursery.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who is a servant, carries a lantern, and is instructed to put Sir Tristram to bed.",
+        "name": "BLORE",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A horse referred to as 'our Dandy' and described as proud and bereaved.",
+        "name": "Dandy",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "The residence of the Dean where Sir Tristram is staying.",
+        "name": "the Deanery",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [
+          "the old nursery"
+        ],
+        "description": "A room in the Deanery where Sir Tristram is to sleep.",
+        "name": "the nursery",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A place where the military has been sent for to watch the ruins.",
+        "name": "Durnstone",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A place where a wicked Ball is to be stopped.",
+        "name": "the Hathanaeum",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "The military has been sent for to watch the ruins in case of another outbreak.",
+        "name": "the Military",
+        "type": "ORGANIZATION"
+      },
+      {
+        "aliases": [],
+        "description": "A fire that has been extinguished and caused alarm.",
+        "name": "the fire",
+        "type": "EVENT"
+      },
+      {
+        "aliases": [],
+        "description": "A wicked Ball at the Hathanaeum that will be stopped by the military presence.",
+        "name": "the Ball",
+        "type": "EVENT"
+      },
+      {
+        "aliases": [],
+        "description": "A character whose little cot is still standing in the old nursery.",
+        "name": "Sheba",
+        "type": "CHARACTER"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "Sir Tristram is staying at the Deanery.",
+        "evidence_quote": "I'll teach you during my stay at the Deanery.",
+        "relation": "LOCATED_AT",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act02_c0008",
+        "target": "the Deanery"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Sir Tristram is to sleep in the nursery.",
+        "evidence_quote": "Put Sir Tristram to bed carefully in the nursery, Blore.",
+        "relation": "LOCATED_AT",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act02_c0008",
+        "target": "the nursery"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Georgiana is the Dean's sister.",
+        "evidence_quote": "Don't be unkind, Tris. Where shall we stow the dear old chap, Gus, my boy?",
+        "relation": "SIBLING_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act02_c0008",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.8,
+        "description": "The Dean lives at the Deanery.",
+        "evidence_quote": "I'll teach you during my stay at the Deanery.",
+        "relation": "LOCATED_AT",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0008",
+        "target": "the Deanery"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Blore is instructed to put Sir Tristram to bed.",
+        "evidence_quote": "Put Sir Tristram to bed carefully in the nursery, Blore.",
+        "relation": "HELPS",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act02_c0008",
+        "target": "SIR TRISTRAM"
+      },
+      {
+        "confidence": 0.9,
+        "description": "The military has been sent for to Durnstone.",
+        "evidence_quote": "they've just sent into Durnstone hasking for the Military to watch the ruins",
+        "relation": "LOCATED_AT",
+        "source": "the Military",
+        "source_chunk_id": "dd_act02_c0008",
+        "target": "Durnstone"
+      },
+      {
+        "confidence": 0.8,
+        "description": "The military presence will stop the Ball.",
+        "evidence_quote": "It'll stop the wicked Ball at the Hathanaeum, it will!",
+        "relation": "CAUSES",
+        "source": "the Military",
+        "source_chunk_id": "dd_act02_c0008",
+        "target": "the Ball"
+      },
+      {
+        "confidence": 0.7,
+        "description": "The fire led to the military being sent for.",
+        "evidence_quote": "they've just sent into Durnstone hasking for the Military to watch the ruins in case of another houtbreak.",
+        "relation": "CAUSES",
+        "source": "the fire",
+        "source_chunk_id": "dd_act02_c0008",
+        "target": "the Military"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Sheba's cot is in the nursery.",
+        "evidence_quote": "there's Sheba's little cot still standing in the old nursery.",
+        "relation": "LOCATED_AT",
+        "source": "Sheba",
+        "source_chunk_id": "dd_act02_c0008",
+        "target": "the nursery"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

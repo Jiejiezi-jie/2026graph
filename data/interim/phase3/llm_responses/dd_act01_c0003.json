@@ -1,0 +1,189 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act01_c0003",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "e072feb6f0e9d5a56b7f0f09f53241db388625e12d891ef4b632b1e45b0d520a",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A daughter of the Dean, referred to as Miss Salome.\",\n      \"aliases\": [\"Miss Salome\"]\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A daughter of the Dean, referred to as Miss Sheba.\",\n      \"aliases\": [\"Miss Sheba\"]\n    },\n    {\n      \"name\": \"BLORE\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"The butler, a venerable-looking person with a clerical suggestion about his dress.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"MAJOR TARVER\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A middle-aged, tall, angular officer with a thin face, yellow complexion, and red eyes.\",\n      \"aliases\": [\"Gerald Tarver\", \"Major Tarver\"]\n    },\n    {\n      \"name\": \"MR. DARBEY\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A mere boy, but with a pompous, patronizing manner.\",\n      \"aliases\": [\"Nugent Darbey\", \"Mr. Darbey\"]\n    },\n    {\n      \"name\": \"the Dean\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Father of Salome and Sheba, referred to as poor Papa.\",\n      \"aliases\": [\"poor Papa\", \"Papa\"]\n    },\n    {\n      \"name\": \"Miss Jedd\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A person at home, possibly one of the Dean's daughters, but not explicitly identified.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"the Dean\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Salome refers to the Dean as 'poor dear Papa', indicating he is her father.\",\n      \"evidence_quote\": \"Poor dear Papa!\",\n      \"source_chunk_id\": \"dd_act01_c0003\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SHEBA\",\n      \"target\": \"the Dean\",\n      \"relation\": \"PARENT_OF\",\n      \"description\": \"Sheba refers to the Dean as 'poor dear Papa', indicating he is her father.\",\n      \"evidence_quote\": \"poor dear Papa!\",\n      \"source_chunk_id\": \"dd_act01_c0003\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Salome and Sheba are sisters, as indicated by their conversation about being married and wearing short skirts.\",\n      \"evidence_quote\": \"You know I can't lengthen you till I'm married!\",\n      \"source_chunk_id\": \"dd_act01_c0003\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"MAJOR TARVER\",\n      \"relation\": \"ROMANTIC_WITH\",\n      \"description\": \"Salome says Gerald Tarver would die for her, indicating a romantic interest.\",\n      \"evidence_quote\": \"Gerald Tarver would die for me!\",\n      \"source_chunk_id\": \"dd_act01_c0003\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"SHEBA\",\n      \"target\": \"MR. DARBEY\",\n      \"relation\": \"ROMANTIC_WITH\",\n      \"description\": \"Sheba says Nugent Darbey would die for her, indicating a romantic interest.\",\n      \"evidence_quote\": \"So would Nugent Darbey for me\",\n      \"source_chunk_id\": \"dd_act01_c0003\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"BLORE\",\n      \"target\": \"the Dean\",\n      \"relation\": \"EMPLOYED_BY\",\n      \"description\": \"Blore is the butler, implying he is employed by the Dean's household.\",\n      \"evidence_quote\": \"BLORE, the butler\",\n      \"source_chunk_id\": \"dd_act01_c0003\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"MAJOR TARVER\",\n      \"target\": \"Miss Jedd\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Major Tarver asks about Miss Jedd and intends to ask after her father.\",\n      \"evidence_quote\": \"It would be discourteous to run away without asking Miss Jedd after her father.\",\n      \"source_chunk_id\": \"dd_act01_c0003\",\n      \"confidence\": 0.6\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674241,
+    "id": "7a7ab52f-c130-4334-8d43-85a9eaf49b69",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1087,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 967,
+      "prompt_tokens": 1607,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2694
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 10.017614,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T05:57:21.211482+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1087,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 967,
+          "prompt_tokens": 1607,
+          "total_tokens": 2694
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1087,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 967,
+      "prompt_tokens": 1607,
+      "total_tokens": 2694
+    },
+    "total_elapsed_seconds": 10.017614
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [
+          "Miss Salome"
+        ],
+        "description": "A daughter of the Dean, referred to as Miss Salome.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Miss Sheba"
+        ],
+        "description": "A daughter of the Dean, referred to as Miss Sheba.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "The butler, a venerable-looking person with a clerical suggestion about his dress.",
+        "name": "BLORE",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Gerald Tarver",
+          "Major Tarver"
+        ],
+        "description": "A middle-aged, tall, angular officer with a thin face, yellow complexion, and red eyes.",
+        "name": "MAJOR TARVER",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Nugent Darbey",
+          "Mr. Darbey"
+        ],
+        "description": "A mere boy, but with a pompous, patronizing manner.",
+        "name": "MR. DARBEY",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "poor Papa",
+          "Papa"
+        ],
+        "description": "Father of Salome and Sheba, referred to as poor Papa.",
+        "name": "the Dean",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A person at home, possibly one of the Dean's daughters, but not explicitly identified.",
+        "name": "Miss Jedd",
+        "type": "CHARACTER"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Salome refers to the Dean as 'poor dear Papa', indicating he is her father.",
+        "evidence_quote": "Poor dear Papa!",
+        "relation": "PARENT_OF",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act01_c0003",
+        "target": "the Dean"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Sheba refers to the Dean as 'poor dear Papa', indicating he is her father.",
+        "evidence_quote": "poor dear Papa!",
+        "relation": "PARENT_OF",
+        "source": "SHEBA",
+        "source_chunk_id": "dd_act01_c0003",
+        "target": "the Dean"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Salome and Sheba are sisters, as indicated by their conversation about being married and wearing short skirts.",
+        "evidence_quote": "You know I can't lengthen you till I'm married!",
+        "relation": "SIBLING_OF",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act01_c0003",
+        "target": "SHEBA"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Salome says Gerald Tarver would die for her, indicating a romantic interest.",
+        "evidence_quote": "Gerald Tarver would die for me!",
+        "relation": "ROMANTIC_WITH",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act01_c0003",
+        "target": "MAJOR TARVER"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Sheba says Nugent Darbey would die for her, indicating a romantic interest.",
+        "evidence_quote": "So would Nugent Darbey for me",
+        "relation": "ROMANTIC_WITH",
+        "source": "SHEBA",
+        "source_chunk_id": "dd_act01_c0003",
+        "target": "MR. DARBEY"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Blore is the butler, implying he is employed by the Dean's household.",
+        "evidence_quote": "BLORE, the butler",
+        "relation": "EMPLOYED_BY",
+        "source": "BLORE",
+        "source_chunk_id": "dd_act01_c0003",
+        "target": "the Dean"
+      },
+      {
+        "confidence": 0.6,
+        "description": "Major Tarver asks about Miss Jedd and intends to ask after her father.",
+        "evidence_quote": "It would be discourteous to run away without asking Miss Jedd after her father.",
+        "relation": "INTERACTS_WITH",
+        "source": "MAJOR TARVER",
+        "source_chunk_id": "dd_act01_c0003",
+        "target": "Miss Jedd"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

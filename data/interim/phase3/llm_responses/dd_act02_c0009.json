@@ -1,0 +1,152 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act02_c0009",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "e4613b0b7a6d358618e06f6b0f8e8cb204452b976fa7507d90adbafa65dca761",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Sister of the Dean, referred to as 'little sister' and 'poor widowed sister'.\",\n      \"aliases\": [\"Gus's little sister\", \"poor widowed sister\"]\n    },\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A dean who is short of money and concerned about the church spire.\",\n      \"aliases\": [\"Gus\", \"Augustin\"]\n    },\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse that Georgiana believes is a certainty to win a race.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Spire\",\n      \"type\": \"OBJECT\",\n      \"description\": \"A church spire that needs restoration and is in danger of crumbling.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Mrs. Tidman\",\n      \"type\": \"PERSON\",\n      \"description\": \"A person addressed by the Dean, likely Georgiana's married name.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Georgiana is the Dean's sister.\",\n      \"evidence_quote\": \"Gus, will you let your little sister lend you a hand?\",\n      \"source_chunk_id\": \"dd_act02_c0009\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Georgiana suggests betting on Dandy Dick, implying she has an interest in the horse.\",\n      \"evidence_quote\": \"clap it on to Dandy Dick!\",\n      \"source_chunk_id\": \"dd_act02_c0009\",\n      \"confidence\": 0.6\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"the Spire\",\n      \"relation\": \"OWNS\",\n      \"description\": \"The Dean is responsible for the spire's restoration.\",\n      \"evidence_quote\": \"Unless the restoration is immediately commenced the spire will certainly crumble.\",\n      \"source_chunk_id\": \"dd_act02_c0009\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"HELPS\",\n      \"description\": \"Georgiana offers to help the Dean by giving him a betting tip.\",\n      \"evidence_quote\": \"Gus, will you let your little sister lend you a hand?\",\n      \"source_chunk_id\": \"dd_act02_c0009\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"GEORGIANA\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"The Dean tells Georgiana to go to her room, expressing horror at her proposal.\",\n      \"evidence_quote\": \"Oh! Mrs. Tidman! Go to your room!\",\n      \"source_chunk_id\": \"dd_act02_c0009\",\n      \"confidence\": 0.7\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674517,
+    "id": "1a87541d-10e5-44c4-99d8-cea0a81a7d00",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 761,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 895,
+      "prompt_tokens": 1535,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2296
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 8.326546,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:01:56.471707+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 761,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 895,
+          "prompt_tokens": 1535,
+          "total_tokens": 2296
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 761,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 895,
+      "prompt_tokens": 1535,
+      "total_tokens": 2296
+    },
+    "total_elapsed_seconds": 8.326546
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [
+          "Gus's little sister",
+          "poor widowed sister"
+        ],
+        "description": "Sister of the Dean, referred to as 'little sister' and 'poor widowed sister'.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Gus",
+          "Augustin"
+        ],
+        "description": "A dean who is short of money and concerned about the church spire.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A horse that Georgiana believes is a certainty to win a race.",
+        "name": "Dandy Dick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "A church spire that needs restoration and is in danger of crumbling.",
+        "name": "the Spire",
+        "type": "OBJECT"
+      },
+      {
+        "aliases": [],
+        "description": "A person addressed by the Dean, likely Georgiana's married name.",
+        "name": "Mrs. Tidman",
+        "type": "PERSON"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "Georgiana is the Dean's sister.",
+        "evidence_quote": "Gus, will you let your little sister lend you a hand?",
+        "relation": "SIBLING_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act02_c0009",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.6,
+        "description": "Georgiana suggests betting on Dandy Dick, implying she has an interest in the horse.",
+        "evidence_quote": "clap it on to Dandy Dick!",
+        "relation": "OWNS",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act02_c0009",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.7,
+        "description": "The Dean is responsible for the spire's restoration.",
+        "evidence_quote": "Unless the restoration is immediately commenced the spire will certainly crumble.",
+        "relation": "OWNS",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0009",
+        "target": "the Spire"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Georgiana offers to help the Dean by giving him a betting tip.",
+        "evidence_quote": "Gus, will you let your little sister lend you a hand?",
+        "relation": "HELPS",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act02_c0009",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.7,
+        "description": "The Dean tells Georgiana to go to her room, expressing horror at her proposal.",
+        "evidence_quote": "Oh! Mrs. Tidman! Go to your room!",
+        "relation": "INTERACTS_WITH",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act02_c0009",
+        "target": "GEORGIANA"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

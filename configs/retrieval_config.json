@@ -1,0 +1,58 @@
+{
+  "schema_version": "phase4-v1",
+  "random_seed": 42,
+  "top_k_chunks": 5,
+  "max_seed_entities": 4,
+  "entity_similarity_threshold": 0.55,
+  "neighborhood_hops": 1,
+  "max_path_hops": 3,
+  "max_paths_per_pair": 3,
+  "embedding": {
+    "model_name": "BAAI/bge-small-en-v1.5",
+    "model_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "local_model_path": "/home/user/wangyuhan/models/bge-small-en-v1.5",
+    "weights_file": "model.safetensors",
+    "weights_sha256": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad",
+    "query_prefix": "Represent this sentence for searching relevant passages: ",
+    "document_prefix": "",
+    "pooling": "cls",
+    "normalize": true,
+    "max_length": 512,
+    "batch_size": 32,
+    "device": "cpu"
+  },
+  "neighborhood_scoring": {
+    "entity_weight": 0.6,
+    "chunk_similarity_weight": 0.4,
+    "hop_decay": 0.85
+  },
+  "path_scoring": {
+    "endpoint_weight": 0.45,
+    "length_weight": 0.2,
+    "chunk_similarity_weight": 0.35
+  },
+  "excluded_path_relations": [
+    "AUTHORED_BY",
+    "PORTRAYED_BY"
+  ],
+  "inputs": {
+    "chunks": "data/processed/phase2/chunks.jsonl",
+    "nodes": "data/processed/phase3/nodes.jsonl",
+    "edges": "data/processed/phase3/edges.jsonl",
+    "chunk_entity_map": "data/processed/phase3/chunk_entity_map.json",
+    "train_questions": "data/processed/phase1/train_questions.jsonl"
+  },
+  "indices": {
+    "directory": "data/interim/phase4",
+    "chunk_embeddings": "chunk_embeddings.npy",
+    "entity_embeddings": "entity_embeddings.npy",
+    "metadata": "index_metadata.json"
+  },
+  "outputs": {
+    "directory": "data/processed/phase4",
+    "results": "train_retrieval_results.jsonl",
+    "diagnostics": "retrieval_diagnostics.json",
+    "manifest": "retrieval_manifest.json",
+    "report": "reports/phase4_retrievers.md"
+  }
+}

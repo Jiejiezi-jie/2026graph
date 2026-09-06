@@ -1,0 +1,248 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_prod_c0002",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "d8b1e8daece8a1bb1177c9b1680dd0b27139ffc2ff8f84a2edad75a20d337cef",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"Dandy Dick\",\n      \"type\": \"CREATIVE_WORK\",\n      \"description\": \"A play by Arthur W. Pinero that was performed 171 times in London and later toured in the provinces and abroad.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Mr. Clayton\",\n      \"type\": \"PERSON\",\n      \"description\": \"A theatre manager associated with the Court Theatre who took a temporary lease of Toole's Theatre and later toured with a company performing Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Toole's Theatre\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A theatre in London where Dandy Dick was transferred after the old theatre was demolished.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Court Theatre\",\n      \"type\": \"ORGANIZATION\",\n      \"description\": \"The theatre management under whose auspices a company was sent out to perform Dandy Dick in the provinces.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Liverpool\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The city where Mr. Clayton died during the provincial tour of Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Mr. Daly\",\n      \"type\": \"PERSON\",\n      \"description\": \"An American producer who produced Dandy Dick in America.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Miss Ada Rehan\",\n      \"type\": \"PERSON\",\n      \"description\": \"An actress who played Mrs. John Wood's part in the American production of Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Mrs. John Wood\",\n      \"type\": \"PERSON\",\n      \"description\": \"An actress whose part was played by Miss Ada Rehan in the American production of Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Melbourne\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A city in Australia where Dandy Dick had an enthusiastic reception and ran for an unusual time.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Sydney\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A city in Australia where Dandy Dick had an enthusiastic reception and ran for an unusual time.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Mr. G. W. Anson\",\n      \"type\": \"PERSON\",\n      \"description\": \"An actor who achieved perhaps the greatest of his Australian successes in the character of the Dean in Dandy Dick.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Mr. Robert Brough\",\n      \"type\": \"PERSON\",\n      \"description\": \"An actor who made his mark as the policeman in Dandy Dick in Australia.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"MALCOLM C. SALAMAK\",\n      \"type\": \"PERSON\",\n      \"description\": \"The author of the production history note dated December 1892.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"Toole's Theatre\",\n      \"relation\": \"PERFORMED_AT\",\n      \"description\": \"Dandy Dick was transferred to Toole's Theatre and ran there for 75 nights.\",\n      \"evidence_quote\": \"Mr. Clayton took a temporary lease of Toole's Theatre, and transferred the play thither, where it ran 75 nights more.\",\n      \"source_chunk_id\": \"dd_prod_c0002\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"Mr. Clayton\",\n      \"target\": \"Toole's Theatre\",\n      \"relation\": \"MANAGED_BY\",\n      \"description\": \"Mr. Clayton took a temporary lease of Toole's Theatre.\",\n      \"evidence_quote\": \"Mr. Clayton took a temporary lease of Toole's Theatre\",\n      \"source_chunk_id\": \"dd_prod_c0002\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Court Theatre\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"PERFORMED_AT\",\n      \"description\": \"A company was sent out under the auspices of the Court management to perform Dandy Dick in the provinces.\",\n      \"evidence_quote\": \"A company had already been sent out, under the auspices of the Court management, to perform \\\"Dandy Dick\\\" in the provinces\",\n      \"source_chunk_id\": \"dd_prod_c0002\",\n      \"confidence\": 0.85\n    },\n    {\n      \"source\": \"Mr. Clayton\",\n      \"target\": \"Liverpool\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Mr. Clayton died at Liverpool during the tour.\",\n      \"evidence_quote\": \"it was during this tour that he died at Liverpool\",\n      \"source_chunk_id\": \"dd_prod_c0002\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Mr. Daly\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"PERFORMED_AT\",\n      \"description\": \"Mr. Daly produced Dandy Dick in America.\",\n      \"evidence_quote\": \"In America Mr. Daly produced \\\"Dandy Dick\\\"\",\n      \"source_chunk_id\": \"dd_prod_c0002\",\n      \"confidence\": 0.85\n    },\n    {\n      \"source\": \"Miss Ada Rehan\",\n      \"target\": \"Mrs. John Wood\",\n      \"relation\": \"PORTRAYED_BY\",\n      \"description\": \"Miss Ada Rehan played Mrs. John Wood's part in the American production.\",\n      \"evidence_quote\": \"with Miss Ada Rehan in Mrs. John Wood's part\",\n      \"source_chunk_id\": \"dd_prod_c0002\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"Melbourne\",\n      \"relation\": \"PERFORMED_AT\",\n      \"description\": \"Dandy Dick ran for quite an unusual time in Melbourne.\",\n      \"evidence_quote\": \"it ran for quite an unusual time both in Melbourne and Sydney\",\n      \"source_chunk_id\": \"dd_prod_c0002\",\n      \"confidence\": 0.85\n    },\n    {\n      \"source\": \"Dandy Dick\",\n      \"target\": \"Sydney\",\n      \"relation\": \"PERFORMED_AT\",\n      \"description\": \"Dandy Dick ran for quite an unusual time in Sydney.\",\n      \"evidence_quote\": \"it ran for quite an unusual time both in Melbourne and Sydney\",\n      \"source_chunk_id\": \"dd_prod_c0002\",\n      \"confidence\": 0.85\n    },\n    {\n      \"source\": \"Mr. G. W. Anson\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"PERFORMED_AT\",\n      \"description\": \"Mr. G. W. Anson achieved success in the character of the Dean in Dandy Dick.\",\n      \"evidence_quote\": \"In the character of the Dean, Mr. G. W. Anson achieved perhaps the greatest of his Australian successes\",\n      \"source_chunk_id\": \"dd_prod_c0002\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"Mr. Robert Brough\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"PERFORMED_AT\",\n      \"description\": \"Mr. Robert Brough made his mark as the policeman in Dandy Dick.\",\n      \"evidence_quote\": \"Mr. Robert Brough made his mark as the policeman\",\n      \"source_chunk_id\": \"dd_prod_c0002\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"MALCOLM C. SALAMAK\",\n      \"target\": \"Dandy Dick\",\n      \"relation\": \"AUTHORED_BY\",\n      \"description\": \"MALCOLM C. SALAMAK wrote the production history note about Dandy Dick.\",\n      \"evidence_quote\": \"MALCOLM C. SALAMAK. _December_, 1892.\",\n      \"source_chunk_id\": \"dd_prod_c0002\",\n      \"confidence\": 0.7\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674198,
+    "id": "1654c54a-67cf-445c-b388-fc370cb1b558",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1826,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 395,
+      "prompt_tokens": 1035,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2861
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 15.484338,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T05:56:38.615827+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1826,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 395,
+          "prompt_tokens": 1035,
+          "total_tokens": 2861
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1826,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 395,
+      "prompt_tokens": 1035,
+      "total_tokens": 2861
+    },
+    "total_elapsed_seconds": 15.484338
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A play by Arthur W. Pinero that was performed 171 times in London and later toured in the provinces and abroad.",
+        "name": "Dandy Dick",
+        "type": "CREATIVE_WORK"
+      },
+      {
+        "aliases": [],
+        "description": "A theatre manager associated with the Court Theatre who took a temporary lease of Toole's Theatre and later toured with a company performing Dandy Dick.",
+        "name": "Mr. Clayton",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "A theatre in London where Dandy Dick was transferred after the old theatre was demolished.",
+        "name": "Toole's Theatre",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "The theatre management under whose auspices a company was sent out to perform Dandy Dick in the provinces.",
+        "name": "Court Theatre",
+        "type": "ORGANIZATION"
+      },
+      {
+        "aliases": [],
+        "description": "The city where Mr. Clayton died during the provincial tour of Dandy Dick.",
+        "name": "Liverpool",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "An American producer who produced Dandy Dick in America.",
+        "name": "Mr. Daly",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "An actress who played Mrs. John Wood's part in the American production of Dandy Dick.",
+        "name": "Miss Ada Rehan",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "An actress whose part was played by Miss Ada Rehan in the American production of Dandy Dick.",
+        "name": "Mrs. John Wood",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "A city in Australia where Dandy Dick had an enthusiastic reception and ran for an unusual time.",
+        "name": "Melbourne",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A city in Australia where Dandy Dick had an enthusiastic reception and ran for an unusual time.",
+        "name": "Sydney",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "An actor who achieved perhaps the greatest of his Australian successes in the character of the Dean in Dandy Dick.",
+        "name": "Mr. G. W. Anson",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "An actor who made his mark as the policeman in Dandy Dick in Australia.",
+        "name": "Mr. Robert Brough",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "The author of the production history note dated December 1892.",
+        "name": "MALCOLM C. SALAMAK",
+        "type": "PERSON"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "Dandy Dick was transferred to Toole's Theatre and ran there for 75 nights.",
+        "evidence_quote": "Mr. Clayton took a temporary lease of Toole's Theatre, and transferred the play thither, where it ran 75 nights more.",
+        "relation": "PERFORMED_AT",
+        "source": "Dandy Dick",
+        "source_chunk_id": "dd_prod_c0002",
+        "target": "Toole's Theatre"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Mr. Clayton took a temporary lease of Toole's Theatre.",
+        "evidence_quote": "Mr. Clayton took a temporary lease of Toole's Theatre",
+        "relation": "MANAGED_BY",
+        "source": "Mr. Clayton",
+        "source_chunk_id": "dd_prod_c0002",
+        "target": "Toole's Theatre"
+      },
+      {
+        "confidence": 0.85,
+        "description": "A company was sent out under the auspices of the Court management to perform Dandy Dick in the provinces.",
+        "evidence_quote": "A company had already been sent out, under the auspices of the Court management, to perform \"Dandy Dick\" in the provinces",
+        "relation": "PERFORMED_AT",
+        "source": "Court Theatre",
+        "source_chunk_id": "dd_prod_c0002",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Mr. Clayton died at Liverpool during the tour.",
+        "evidence_quote": "it was during this tour that he died at Liverpool",
+        "relation": "LOCATED_AT",
+        "source": "Mr. Clayton",
+        "source_chunk_id": "dd_prod_c0002",
+        "target": "Liverpool"
+      },
+      {
+        "confidence": 0.85,
+        "description": "Mr. Daly produced Dandy Dick in America.",
+        "evidence_quote": "In America Mr. Daly produced \"Dandy Dick\"",
+        "relation": "PERFORMED_AT",
+        "source": "Mr. Daly",
+        "source_chunk_id": "dd_prod_c0002",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Miss Ada Rehan played Mrs. John Wood's part in the American production.",
+        "evidence_quote": "with Miss Ada Rehan in Mrs. John Wood's part",
+        "relation": "PORTRAYED_BY",
+        "source": "Miss Ada Rehan",
+        "source_chunk_id": "dd_prod_c0002",
+        "target": "Mrs. John Wood"
+      },
+      {
+        "confidence": 0.85,
+        "description": "Dandy Dick ran for quite an unusual time in Melbourne.",
+        "evidence_quote": "it ran for quite an unusual time both in Melbourne and Sydney",
+        "relation": "PERFORMED_AT",
+        "source": "Dandy Dick",
+        "source_chunk_id": "dd_prod_c0002",
+        "target": "Melbourne"
+      },
+      {
+        "confidence": 0.85,
+        "description": "Dandy Dick ran for quite an unusual time in Sydney.",
+        "evidence_quote": "it ran for quite an unusual time both in Melbourne and Sydney",
+        "relation": "PERFORMED_AT",
+        "source": "Dandy Dick",
+        "source_chunk_id": "dd_prod_c0002",
+        "target": "Sydney"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Mr. G. W. Anson achieved success in the character of the Dean in Dandy Dick.",
+        "evidence_quote": "In the character of the Dean, Mr. G. W. Anson achieved perhaps the greatest of his Australian successes",
+        "relation": "PERFORMED_AT",
+        "source": "Mr. G. W. Anson",
+        "source_chunk_id": "dd_prod_c0002",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Mr. Robert Brough made his mark as the policeman in Dandy Dick.",
+        "evidence_quote": "Mr. Robert Brough made his mark as the policeman",
+        "relation": "PERFORMED_AT",
+        "source": "Mr. Robert Brough",
+        "source_chunk_id": "dd_prod_c0002",
+        "target": "Dandy Dick"
+      },
+      {
+        "confidence": 0.7,
+        "description": "MALCOLM C. SALAMAK wrote the production history note about Dandy Dick.",
+        "evidence_quote": "MALCOLM C. SALAMAK. _December_, 1892.",
+        "relation": "AUTHORED_BY",
+        "source": "MALCOLM C. SALAMAK",
+        "source_chunk_id": "dd_prod_c0002",
+        "target": "Dandy Dick"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

@@ -1,0 +1,176 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act03s01_c0010",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "5f597c8faf3cb50c979037eaa23808409ad83fe24daf47a02c967558df25c9e2",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A lady visiting the police station, sister of Dr. Jedd, the Dean of St. Marvells.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"HANNAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Wife of Noah, works at the police station.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A gentleman accompanying Georgiana to the police station.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"NOAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"Man in charge at the police station, husband of Hannah.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Dr. Jedd\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"The Dean of St. Marvells, brother of Georgiana, who has mysteriously disappeared.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"St. Marvells\",\n      \"type\": \"LOCATION\",\n      \"description\": \"Place where Noah and Hannah have recently moved, and where Dr. Jedd is Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Durnstone\",\n      \"type\": \"LOCATION\",\n      \"description\": \"Location where the Bench sets, as mentioned by Hannah.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"Dr. Jedd\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Georgiana is the sister of Dr. Jedd.\",\n      \"evidence_quote\": \"This lady is Mrs. Tidman. Mrs. Tidman is the sister of Dr. Jedd, the Dean of St. Marvells.\",\n      \"source_chunk_id\": \"dd_act03s01_c0010\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"HANNAH\",\n      \"relation\": \"MARRIED_TO\",\n      \"description\": \"Noah is married to Hannah.\",\n      \"evidence_quote\": \"they generally coom to see my wife.\",\n      \"source_chunk_id\": \"dd_act03s01_c0010\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Noah and Hannah have recently moved to St. Marvells.\",\n      \"evidence_quote\": \"since we coom to St. Marvells.\",\n      \"source_chunk_id\": \"dd_act03s01_c0010\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"HANNAH\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Hannah has recently moved to St. Marvells with Noah.\",\n      \"evidence_quote\": \"since we coom to St. Marvells.\",\n      \"source_chunk_id\": \"dd_act03s01_c0010\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"Dr. Jedd\",\n      \"target\": \"St. Marvells\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Dr. Jedd is the Dean of St. Marvells.\",\n      \"evidence_quote\": \"Dr. Jedd, the Dean of St. Marvells.\",\n      \"source_chunk_id\": \"dd_act03s01_c0010\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"NOAH\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Georgiana speaks with Noah at the police station.\",\n      \"evidence_quote\": \"Are you the man in charge here?\",\n      \"source_chunk_id\": \"dd_act03s01_c0010\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"NOAH\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Sir Tristram speaks with Noah at the police station.\",\n      \"evidence_quote\": \"Now, look here, my man.\",\n      \"source_chunk_id\": \"dd_act03s01_c0010\",\n      \"confidence\": 0.7\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674725,
+    "id": "d6cb2a01-a804-4f35-8fac-c9cc728ef992",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1043,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1095,
+      "prompt_tokens": 1735,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2778
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 9.637604,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:05:25.287344+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1043,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 1095,
+          "prompt_tokens": 1735,
+          "total_tokens": 2778
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1043,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1095,
+      "prompt_tokens": 1735,
+      "total_tokens": 2778
+    },
+    "total_elapsed_seconds": 9.637604
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A lady visiting the police station, sister of Dr. Jedd, the Dean of St. Marvells.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Wife of Noah, works at the police station.",
+        "name": "HANNAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A gentleman accompanying Georgiana to the police station.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Man in charge at the police station, husband of Hannah.",
+        "name": "NOAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "The Dean of St. Marvells, brother of Georgiana, who has mysteriously disappeared.",
+        "name": "Dr. Jedd",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "Place where Noah and Hannah have recently moved, and where Dr. Jedd is Dean.",
+        "name": "St. Marvells",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "Location where the Bench sets, as mentioned by Hannah.",
+        "name": "Durnstone",
+        "type": "LOCATION"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "Georgiana is the sister of Dr. Jedd.",
+        "evidence_quote": "This lady is Mrs. Tidman. Mrs. Tidman is the sister of Dr. Jedd, the Dean of St. Marvells.",
+        "relation": "SIBLING_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s01_c0010",
+        "target": "Dr. Jedd"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Noah is married to Hannah.",
+        "evidence_quote": "they generally coom to see my wife.",
+        "relation": "MARRIED_TO",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0010",
+        "target": "HANNAH"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Noah and Hannah have recently moved to St. Marvells.",
+        "evidence_quote": "since we coom to St. Marvells.",
+        "relation": "LOCATED_AT",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0010",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Hannah has recently moved to St. Marvells with Noah.",
+        "evidence_quote": "since we coom to St. Marvells.",
+        "relation": "LOCATED_AT",
+        "source": "HANNAH",
+        "source_chunk_id": "dd_act03s01_c0010",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.95,
+        "description": "Dr. Jedd is the Dean of St. Marvells.",
+        "evidence_quote": "Dr. Jedd, the Dean of St. Marvells.",
+        "relation": "LOCATED_AT",
+        "source": "Dr. Jedd",
+        "source_chunk_id": "dd_act03s01_c0010",
+        "target": "St. Marvells"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Georgiana speaks with Noah at the police station.",
+        "evidence_quote": "Are you the man in charge here?",
+        "relation": "INTERACTS_WITH",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s01_c0010",
+        "target": "NOAH"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Sir Tristram speaks with Noah at the police station.",
+        "evidence_quote": "Now, look here, my man.",
+        "relation": "INTERACTS_WITH",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act03s01_c0010",
+        "target": "NOAH"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

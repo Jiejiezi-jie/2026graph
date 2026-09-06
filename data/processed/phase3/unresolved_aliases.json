@@ -1,0 +1,57 @@
+[
+  {
+    "alias": "Deception",
+    "candidates": [],
+    "reason": "This is the name of a metaphorical horse in Georgiana's speech, not a literal object or animal.",
+    "source_chunk_ids": [
+      "dd_act03s02_c0009",
+      "dd_act03s02_c0010",
+      "dd_act03s02_c0011"
+    ]
+  },
+  {
+    "alias": "Miss Jedd",
+    "candidates": [
+      "Salome Jedd",
+      "Sheba Jedd"
+    ],
+    "reason": "The surname-and-title reference can denote either Salome Jedd or Sheba Jedd.",
+    "source_chunk_ids": [
+      "dd_act01_c0003",
+      "dd_act01_c0004",
+      "dd_act01_c0005",
+      "dd_act02_c0003",
+      "dd_act02_c0016",
+      "dd_act03s02_c0001"
+    ]
+  },
+  {
+    "alias": "prisoner",
+    "candidates": [
+      "Augustin Jedd"
+    ],
+    "reason": "This generic contextual label cannot be globally resolved from the label alone, even though a later scene identifies Augustin Jedd as a detainee.",
+    "source_chunk_ids": [
+      "dd_act03s01_c0001",
+      "dd_act03s01_c0002",
+      "dd_act03s01_c0005"
+    ]
+  },
+  {
+    "alias": "the horse called Deception",
+    "candidates": [],
+    "reason": "This is an explicit metaphor in Georgiana's speech, not a literal animal entity.",
+    "source_chunk_ids": [
+      "dd_act03s02_c0010",
+      "dd_act03s02_c0011"
+    ]
+  },
+  {
+    "alias": "the ruffian",
+    "candidates": [],
+    "reason": "This is a generic contextual label for an unidentified detainee and is not a stable entity name.",
+    "source_chunk_ids": [
+      "dd_act03s01_c0004"
+    ]
+  }
+]

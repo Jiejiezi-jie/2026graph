@@ -1,0 +1,146 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act03s02_c0011",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "4aafca00b336f6d0fdb88a4a5908048bc072474f0790083620e72c7c51c14b0f",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play who speaks to the Dean and Sir Tristram.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play, addressed as Augustin and Gus, who is a dean.\",\n      \"aliases\": [\"Augustin\", \"Gus\"]\n    },\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play who speaks to the Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"George Tidd\",\n      \"type\": \"PERSON\",\n      \"description\": \"A person mentioned as someone who will lend money for the Spire.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Spire\",\n      \"type\": \"OBJECT\",\n      \"description\": \"An object referred to as 'the poor, innocent old Spire' for which money is to be lent.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Deception\",\n      \"type\": \"OBJECT\",\n      \"description\": \"A horse called Deception, used metaphorically.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Georgiana refers to the Dean as her brother Gus.\",\n      \"evidence_quote\": \"My brother Gus doesn't want us to be merry at his expense.\",\n      \"source_chunk_id\": \"dd_act03s02_c0011\",\n      \"confidence\": 0.95\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"George Tidd\",\n      \"relation\": \"HELPS\",\n      \"description\": \"Georgiana states that George Tidd will lend money for the Spire.\",\n      \"evidence_quote\": \"George Tidd will lend you that thousand for the poor, innocent old Spire.\",\n      \"source_chunk_id\": \"dd_act03s02_c0011\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"George Tidd\",\n      \"target\": \"the Spire\",\n      \"relation\": \"HELPS\",\n      \"description\": \"George Tidd will lend money for the Spire.\",\n      \"evidence_quote\": \"George Tidd will lend you that thousand for the poor, innocent old Spire.\",\n      \"source_chunk_id\": \"dd_act03s02_c0011\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"Deception\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Georgiana says the Dean has been riding the horse called Deception hardest.\",\n      \"evidence_quote\": \"Shall I tell you who has been riding the horse hardest? THE DEAN. Who? GEORGIANA. The Dean.\",\n      \"source_chunk_id\": \"dd_act03s02_c0011\",\n      \"confidence\": 0.8\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674904,
+    "id": "d68fe0bb-d400-4644-a1a0-e948fb68826f",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 728,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 547,
+      "prompt_tokens": 1187,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 1915
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 7.017803,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:08:24.491237+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 728,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 547,
+          "prompt_tokens": 1187,
+          "total_tokens": 1915
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 728,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 547,
+      "prompt_tokens": 1187,
+      "total_tokens": 1915
+    },
+    "total_elapsed_seconds": 7.017803
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A character in the play who speaks to the Dean and Sir Tristram.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Augustin",
+          "Gus"
+        ],
+        "description": "A character in the play, addressed as Augustin and Gus, who is a dean.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character in the play who speaks to the Dean.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A person mentioned as someone who will lend money for the Spire.",
+        "name": "George Tidd",
+        "type": "PERSON"
+      },
+      {
+        "aliases": [],
+        "description": "An object referred to as 'the poor, innocent old Spire' for which money is to be lent.",
+        "name": "the Spire",
+        "type": "OBJECT"
+      },
+      {
+        "aliases": [],
+        "description": "A horse called Deception, used metaphorically.",
+        "name": "Deception",
+        "type": "OBJECT"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.95,
+        "description": "Georgiana refers to the Dean as her brother Gus.",
+        "evidence_quote": "My brother Gus doesn't want us to be merry at his expense.",
+        "relation": "SIBLING_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s02_c0011",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Georgiana states that George Tidd will lend money for the Spire.",
+        "evidence_quote": "George Tidd will lend you that thousand for the poor, innocent old Spire.",
+        "relation": "HELPS",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s02_c0011",
+        "target": "George Tidd"
+      },
+      {
+        "confidence": 0.9,
+        "description": "George Tidd will lend money for the Spire.",
+        "evidence_quote": "George Tidd will lend you that thousand for the poor, innocent old Spire.",
+        "relation": "HELPS",
+        "source": "George Tidd",
+        "source_chunk_id": "dd_act03s02_c0011",
+        "target": "the Spire"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Georgiana says the Dean has been riding the horse called Deception hardest.",
+        "evidence_quote": "Shall I tell you who has been riding the horse hardest? THE DEAN. Who? GEORGIANA. The Dean.",
+        "relation": "INTERACTS_WITH",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s02_c0011",
+        "target": "Deception"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

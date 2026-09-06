@@ -1,0 +1,142 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act02_c0015",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "ddee60882037bddf6855b5c9dcd5a8903ab40996341325a7869c6ed61458661d",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play who is overtrained, emotional, and cares deeply for her share of the horse Dandy.\",\n      \"aliases\": [\"George\", \"Tidd\"]\n    },\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character in the play who interacts with Georgiana and offers to swap halves of the horse Dandy.\",\n      \"aliases\": [\"Tris\"]\n    },\n    {\n      \"name\": \"Dandy\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse that Georgiana and Sir Tristram co-own, with Georgiana owning the tail end and Sir Tristram the head.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SALOME\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who enters in a fancy dress and is upset about no ball.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SHEBA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A character who enters in a fancy dress and is upset about no ball.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"Dandy\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Georgiana owns the tail end of the horse Dandy.\",\n      \"evidence_quote\": \"I'm like a doating mother to my share of Dandy, and it's all the dearer because it's an invalid.\",\n      \"source_chunk_id\": \"dd_act02_c0015\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"SIR TRISTRAM\",\n      \"target\": \"Dandy\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Sir Tristram owns the head of the horse Dandy.\",\n      \"evidence_quote\": \"Swop halves and take his head, George, my boy.\",\n      \"source_chunk_id\": \"dd_act02_c0015\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"SIR TRISTRAM\",\n      \"relation\": \"FRIEND_OF\",\n      \"description\": \"Sir Tristram considers Georgiana an old friend, but feels he has lost the acquaintance of George Tidd and gained an introduction to Georgiana.\",\n      \"evidence_quote\": \"I mean that I seem to have dropped the acquaintance of George Tidd, Esquire, forever.\",\n      \"source_chunk_id\": \"dd_act02_c0015\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"SALOME\",\n      \"target\": \"SHEBA\",\n      \"relation\": \"INTERACTS_WITH\",\n      \"description\": \"Salome and Sheba enter together in fancy dresses and are both upset about no ball.\",\n      \"evidence_quote\": \"SALOME and SHEBA enter; both in their fancy dresses.\",\n      \"source_chunk_id\": \"dd_act02_c0015\",\n      \"confidence\": 0.6\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674576,
+    "id": "453905cb-8814-4c19-8aed-4aaf69a54ffc",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 725,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1022,
+      "prompt_tokens": 1662,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 2387
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 7.991154,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:02:56.445770+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 725,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 1022,
+          "prompt_tokens": 1662,
+          "total_tokens": 2387
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 725,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1022,
+      "prompt_tokens": 1662,
+      "total_tokens": 2387
+    },
+    "total_elapsed_seconds": 7.991154
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [
+          "George",
+          "Tidd"
+        ],
+        "description": "A character in the play who is overtrained, emotional, and cares deeply for her share of the horse Dandy.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [
+          "Tris"
+        ],
+        "description": "A character in the play who interacts with Georgiana and offers to swap halves of the horse Dandy.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A horse that Georgiana and Sir Tristram co-own, with Georgiana owning the tail end and Sir Tristram the head.",
+        "name": "Dandy",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "A character who enters in a fancy dress and is upset about no ball.",
+        "name": "SALOME",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A character who enters in a fancy dress and is upset about no ball.",
+        "name": "SHEBA",
+        "type": "CHARACTER"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Georgiana owns the tail end of the horse Dandy.",
+        "evidence_quote": "I'm like a doating mother to my share of Dandy, and it's all the dearer because it's an invalid.",
+        "relation": "OWNS",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act02_c0015",
+        "target": "Dandy"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Sir Tristram owns the head of the horse Dandy.",
+        "evidence_quote": "Swop halves and take his head, George, my boy.",
+        "relation": "OWNS",
+        "source": "SIR TRISTRAM",
+        "source_chunk_id": "dd_act02_c0015",
+        "target": "Dandy"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Sir Tristram considers Georgiana an old friend, but feels he has lost the acquaintance of George Tidd and gained an introduction to Georgiana.",
+        "evidence_quote": "I mean that I seem to have dropped the acquaintance of George Tidd, Esquire, forever.",
+        "relation": "FRIEND_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act02_c0015",
+        "target": "SIR TRISTRAM"
+      },
+      {
+        "confidence": 0.6,
+        "description": "Salome and Sheba enter together in fancy dresses and are both upset about no ball.",
+        "evidence_quote": "SALOME and SHEBA enter; both in their fancy dresses.",
+        "relation": "INTERACTS_WITH",
+        "source": "SALOME",
+        "source_chunk_id": "dd_act02_c0015",
+        "target": "SHEBA"
+      }
+    ]
+  },
+  "validation_warnings": []
+}

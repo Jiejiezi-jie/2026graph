@@ -1,0 +1,209 @@
+{
+  "cache_version": "phase3-cache-v1",
+  "chunk_id": "dd_act03s01_c0013",
+  "extraction_fingerprint": "16038d1e7c3cb9f044063a844f1b77cbd155faaa6fca1f1bf11bbbf7b1b47e67",
+  "input_sha256": "eeea49b6c69c242582df2a6757a819567be5b9af58778d8df5bec4dc24889483",
+  "model": "deepseek-v4-pro",
+  "outcome": "success",
+  "raw_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"THE DEAN\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A man discovered administering a remedy to a horse, accused of trespassing and alienating Noah's wife's affections.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"GEORGIANA\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A woman who is disappointed in the Dean and asks about a whistle.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"SIR TRISTRAM\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A man who tells Noah to release the Dean and asks the Dean for the key to his handcuffs.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"NOAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A constable who arrests the Dean for trespassing and alienating his wife's affections.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"HANNAH\",\n      \"type\": \"CHARACTER\",\n      \"description\": \"A woman who kneels at Georgiana's feet and says the Dean is the sweetest man in Durnshire.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Durnstone\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A place to which Noah intends to drive the Dean.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"the Deanery\",\n      \"type\": \"LOCATION\",\n      \"description\": \"The home of the Dean, where Georgiana has the privilege to shelter.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Durnshire\",\n      \"type\": \"LOCATION\",\n      \"description\": \"A region mentioned by Hannah as the place where the Dean is the sweetest man.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Kitty\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse that Noah has put in the cart.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Old Nick\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse that Noah has left at home.\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"Nick the fire-brigade horse\",\n      \"type\": \"ANIMAL\",\n      \"description\": \"A horse mentioned by Hannah as one of the three who will bring the Dean back.\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"ARRESTS\",\n      \"description\": \"Noah takes the Dean by the arm and leads him out, effectively arresting him.\",\n      \"evidence_quote\": \"NOAH takes him by the arm and leads him out.\",\n      \"source_chunk_id\": \"dd_act03s01_c0013\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"HANNAH\",\n      \"relation\": \"MARRIED_TO\",\n      \"description\": \"Noah is the husband of Hannah, as he charges the Dean with alienating his wife's affections.\",\n      \"evidence_quote\": \"I charge this person unknown with allynating the affections o' my wife\",\n      \"source_chunk_id\": \"dd_act03s01_c0013\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"THE DEAN\",\n      \"target\": \"the Deanery\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"The Dean is associated with the Deanery, as he speaks of the home he has apparently wrecked.\",\n      \"evidence_quote\": \"May I say a few parting words in the home I have apparently wrecked?\",\n      \"source_chunk_id\": \"dd_act03s01_c0013\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"GEORGIANA\",\n      \"target\": \"THE DEAN\",\n      \"relation\": \"SIBLING_OF\",\n      \"description\": \"Georgiana refers to the Dean as her brother.\",\n      \"evidence_quote\": \"Oh, what am I to think of my brother?\",\n      \"source_chunk_id\": \"dd_act03s01_c0013\",\n      \"confidence\": 0.9\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"Durnstone\",\n      \"relation\": \"LOCATED_AT\",\n      \"description\": \"Noah intends to drive the Dean to Durnstone.\",\n      \"evidence_quote\": \"I'm goin' to drive him over to Durnstone with the hevidence.\",\n      \"source_chunk_id\": \"dd_act03s01_c0013\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"HANNAH\",\n      \"target\": \"Nick the fire-brigade horse\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Hannah refers to Nick the fire-brigade horse as part of 'we three' who will bring the Dean back, implying ownership or association.\",\n      \"evidence_quote\": \"It's I and my whistle and Nick the fire-brigade horse what'll bring him back\",\n      \"source_chunk_id\": \"dd_act03s01_c0013\",\n      \"confidence\": 0.7\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"Kitty\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Noah has put Kitty in the cart, indicating he owns or controls the horse.\",\n      \"evidence_quote\": \"Noah's put Kitty in the cart\",\n      \"source_chunk_id\": \"dd_act03s01_c0013\",\n      \"confidence\": 0.8\n    },\n    {\n      \"source\": \"NOAH\",\n      \"target\": \"Old Nick\",\n      \"relation\": \"OWNS\",\n      \"description\": \"Noah has left Old Nick at home, indicating he owns or controls the horse.\",\n      \"evidence_quote\": \"and left Old Nick at home!\",\n      \"source_chunk_id\": \"dd_act03s01_c0013\",\n      \"confidence\": 0.8\n    }\n  ],\n  \"no_fact_reason\": null\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1788674753,
+    "id": "b6175412-ef0b-4d29-8a3c-b8beffa7f9c0",
+    "model": "deepseek-v4-pro",
+    "object": "chat.completion",
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+    "usage": {
+      "completion_tokens": 1384,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1072,
+      "prompt_tokens": 1712,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 3096
+    }
+  },
+  "request_audit": {
+    "attempt_count": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 13.056016,
+        "finish_reason": "stop",
+        "started_at_utc": "2026-09-06T06:05:53.014402+00:00",
+        "status": "success",
+        "token_usage": {
+          "completion_tokens": 1384,
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 1072,
+          "prompt_tokens": 1712,
+          "total_tokens": 3096
+        }
+      }
+    ],
+    "token_usage": {
+      "completion_tokens": 1384,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 1072,
+      "prompt_tokens": 1712,
+      "total_tokens": 3096
+    },
+    "total_elapsed_seconds": 13.056016
+  },
+  "validated_output": {
+    "entities": [
+      {
+        "aliases": [],
+        "description": "A man discovered administering a remedy to a horse, accused of trespassing and alienating Noah's wife's affections.",
+        "name": "THE DEAN",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A woman who is disappointed in the Dean and asks about a whistle.",
+        "name": "GEORGIANA",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A man who tells Noah to release the Dean and asks the Dean for the key to his handcuffs.",
+        "name": "SIR TRISTRAM",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A constable who arrests the Dean for trespassing and alienating his wife's affections.",
+        "name": "NOAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A woman who kneels at Georgiana's feet and says the Dean is the sweetest man in Durnshire.",
+        "name": "HANNAH",
+        "type": "CHARACTER"
+      },
+      {
+        "aliases": [],
+        "description": "A place to which Noah intends to drive the Dean.",
+        "name": "Durnstone",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "The home of the Dean, where Georgiana has the privilege to shelter.",
+        "name": "the Deanery",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A region mentioned by Hannah as the place where the Dean is the sweetest man.",
+        "name": "Durnshire",
+        "type": "LOCATION"
+      },
+      {
+        "aliases": [],
+        "description": "A horse that Noah has put in the cart.",
+        "name": "Kitty",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "A horse that Noah has left at home.",
+        "name": "Old Nick",
+        "type": "ANIMAL"
+      },
+      {
+        "aliases": [],
+        "description": "A horse mentioned by Hannah as one of the three who will bring the Dean back.",
+        "name": "Nick the fire-brigade horse",
+        "type": "ANIMAL"
+      }
+    ],
+    "no_fact_reason": null,
+    "relations": [
+      {
+        "confidence": 0.9,
+        "description": "Noah takes the Dean by the arm and leads him out, effectively arresting him.",
+        "evidence_quote": "NOAH takes him by the arm and leads him out.",
+        "relation": "ARRESTS",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0013",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Noah is the husband of Hannah, as he charges the Dean with alienating his wife's affections.",
+        "evidence_quote": "I charge this person unknown with allynating the affections o' my wife",
+        "relation": "MARRIED_TO",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0013",
+        "target": "HANNAH"
+      },
+      {
+        "confidence": 0.8,
+        "description": "The Dean is associated with the Deanery, as he speaks of the home he has apparently wrecked.",
+        "evidence_quote": "May I say a few parting words in the home I have apparently wrecked?",
+        "relation": "LOCATED_AT",
+        "source": "THE DEAN",
+        "source_chunk_id": "dd_act03s01_c0013",
+        "target": "the Deanery"
+      },
+      {
+        "confidence": 0.9,
+        "description": "Georgiana refers to the Dean as her brother.",
+        "evidence_quote": "Oh, what am I to think of my brother?",
+        "relation": "SIBLING_OF",
+        "source": "GEORGIANA",
+        "source_chunk_id": "dd_act03s01_c0013",
+        "target": "THE DEAN"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Noah intends to drive the Dean to Durnstone.",
+        "evidence_quote": "I'm goin' to drive him over to Durnstone with the hevidence.",
+        "relation": "LOCATED_AT",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0013",
+        "target": "Durnstone"
+      },
+      {
+        "confidence": 0.7,
+        "description": "Hannah refers to Nick the fire-brigade horse as part of 'we three' who will bring the Dean back, implying ownership or association.",
+        "evidence_quote": "It's I and my whistle and Nick the fire-brigade horse what'll bring him back",
+        "relation": "OWNS",
+        "source": "HANNAH",
+        "source_chunk_id": "dd_act03s01_c0013",
+        "target": "Nick the fire-brigade horse"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Noah has put Kitty in the cart, indicating he owns or controls the horse.",
+        "evidence_quote": "Noah's put Kitty in the cart",
+        "relation": "OWNS",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0013",
+        "target": "Kitty"
+      },
+      {
+        "confidence": 0.8,
+        "description": "Noah has left Old Nick at home, indicating he owns or controls the horse.",
+        "evidence_quote": "and left Old Nick at home!",
+        "relation": "OWNS",
+        "source": "NOAH",
+        "source_chunk_id": "dd_act03s01_c0013",
+        "target": "Old Nick"
+      }
+    ]
+  },
+  "validation_warnings": []
+}
