@@ -4,6 +4,7 @@ import asyncio
 import json
 import hashlib
 import math
+import re
 import sys
 from collections import Counter
 from dataclasses import dataclass
@@ -62,8 +63,18 @@ def parse_judge_json(text: str, kind: str, evidence: list[str]) -> Any:
                 raise JudgeResponseError("attributed must be 0 or 1")
     if kind == "correctness" and not any(data[k] for k in keys):
         raise JudgeResponseError("Classification cannot be entirely empty")
-    if kind == "evidence" and Counter(x["statement"] for x in data["classifications"]) != Counter(evidence):
-        raise JudgeResponseError("Classifications must cover every reference evidence exactly once")
+    if kind == "evidence":
+        # Judge 可能对 reference evidence 做无害标点改写(如 t(11;22)→t(11, 22))。
+        # 逐字 Counter 比对会把这类改写误判为不匹配;归一化(去空白/分号→逗号/小写)后再比对。
+        def _norm_evidence(s: str) -> str:
+            return re.sub(r"\s+", "", str(s)).replace(";", ",").lower()
+
+        if Counter(
+            _norm_evidence(x["statement"]) for x in data["classifications"]
+        ) != Counter(_norm_evidence(e) for e in evidence):
+            raise JudgeResponseError(
+                "Classifications must cover every reference evidence exactly once"
+            )
     return data
 
 

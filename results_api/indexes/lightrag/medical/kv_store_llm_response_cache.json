@@ -6238,5 +6238,1605 @@
     "create_time": 1788747392,
     "update_time": 1788747392,
     "_id": "hybrid:keywords:1886bd738a7bd884adaee54c7ca9cd0d"
+  },
+  "hybrid:keywords:1066d69b88e1d07b12bca64a5b0b5f0f": {
+    "return": "{\"high_level_keywords\": [\"chronic hepatitis C infection\", \"liver cancer risk\"], \"low_level_keywords\": [\"hepatitis C\", \"liver cancer\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "How does chronic hepatitis C infection affect liver cancer risk?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794665,
+    "update_time": 1788794665,
+    "_id": "hybrid:keywords:1066d69b88e1d07b12bca64a5b0b5f0f"
+  },
+  "hybrid:keywords:87d2fc18d95db60873217aaadc2881ea": {
+    "return": "{\"high_level_keywords\": [\"NSCLC classification\", \"Stage 1\"], \"low_level_keywords\": [\"NSCLC\", \"Stage 1\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "How is Stage 1 NSCLC classified?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794667,
+    "update_time": 1788794667,
+    "_id": "hybrid:keywords:87d2fc18d95db60873217aaadc2881ea"
+  },
+  "hybrid:keywords:3d2cef14720e0fc6740a2bca0164c6b3": {
+    "return": "{\"high_level_keywords\": [\"role of biopsy\", \"diagnosis\"], \"low_level_keywords\": [\"biopsy\", \"nasopharyngeal carcinoma\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What is the role of biopsy in diagnosing nasopharyngeal carcinoma?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794670,
+    "update_time": 1788794670,
+    "_id": "hybrid:keywords:3d2cef14720e0fc6740a2bca0164c6b3"
+  },
+  "hybrid:keywords:8b0ffe603fee46beb9c74b6511b74587": {
+    "return": "{\"high_level_keywords\": [\"hereditary syndromes\", \"pancreatic cancer risk\"], \"low_level_keywords\": [\"pancreatic cancer\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which hereditary syndromes increase the risk of pancreatic cancer?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794672,
+    "update_time": 1788794672,
+    "_id": "hybrid:keywords:8b0ffe603fee46beb9c74b6511b74587"
+  },
+  "hybrid:keywords:9c96ba131d5e94e91bf7fe20a68da1ca": {
+    "return": "{\"high_level_keywords\": [\"risk factors\", \"glioma\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What are the risk factors for glioma?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794675,
+    "update_time": 1788794675,
+    "_id": "hybrid:keywords:9c96ba131d5e94e91bf7fe20a68da1ca"
+  },
+  "hybrid:keywords:3e2b84e21065183f64f4b1d079265fbd": {
+    "return": "{\"high_level_keywords\": [\"anatomical sites\", \"primary CNS lymphoma\"], \"low_level_keywords\": [\"brain\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "List three anatomical sites, other than the brain, that primary CNS lymphoma can involve.",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794677,
+    "update_time": 1788794677,
+    "_id": "hybrid:keywords:3e2b84e21065183f64f4b1d079265fbd"
+  },
+  "hybrid:keywords:83725ac2a6c5e78ad8d05569e5abb5b6": {
+    "return": "{\"high_level_keywords\": [\"diagnostic significance\", \"excisional lymph node biopsy\", \"Hodgkin lymphoma\"], \"low_level_keywords\": [\"excisional lymph node biopsy\", \"Hodgkin lymphoma\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What is the diagnostic significance of excisional lymph node biopsy in Hodgkin lymphoma?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794680,
+    "update_time": 1788794680,
+    "_id": "hybrid:keywords:83725ac2a6c5e78ad8d05569e5abb5b6"
+  },
+  "hybrid:keywords:4818e6a9f5062bda0d229551f0dcb9ee": {
+    "return": "{\"high_level_keywords\": [\"side effects\", \"cancer treatment\"], \"low_level_keywords\": [\"bladder cancer\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What are common side effects of bladder cancer treatment?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794682,
+    "update_time": 1788794682,
+    "_id": "hybrid:keywords:4818e6a9f5062bda0d229551f0dcb9ee"
+  },
+  "hybrid:keywords:5b58c1d14c6b036a62b7e24397c1167c": {
+    "return": "{\"high_level_keywords\": [\"low-grade gliomas\", \"grades\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which grades are considered low-grade gliomas?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794685,
+    "update_time": 1788794685,
+    "_id": "hybrid:keywords:5b58c1d14c6b036a62b7e24397c1167c"
+  },
+  "hybrid:keywords:785dab8f31174bd56c1a4d71a5e7216e": {
+    "return": "{\"high_level_keywords\": [\"prostate cancer diagnosis\", \"biomarker tests\"], \"low_level_keywords\": [\"blood tests\", \"urine tests\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which blood and urine biomarker tests are used in prostate cancer diagnosis?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794687,
+    "update_time": 1788794687,
+    "_id": "hybrid:keywords:785dab8f31174bd56c1a4d71a5e7216e"
+  },
+  "hybrid:keywords:a31edeef4a093eeb19ab04e57cb38bec": {
+    "return": "{\"high_level_keywords\": [\"eye color\", \"risk assessment\", \"skin cancer\"], \"low_level_keywords\": [\"light eye color\", \"BCC\", \"basal cell carcinoma\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Is light eye color associated with increased risk of BCC?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794690,
+    "update_time": 1788794690,
+    "_id": "hybrid:keywords:a31edeef4a093eeb19ab04e57cb38bec"
+  },
+  "hybrid:keywords:e8c42f2b0230109e318e91433670214f": {
+    "return": "{\"high_level_keywords\": [\"diagnosis\", \"CLL/SLL\"], \"low_level_keywords\": [\"CLL/SLL\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "How is CLL/SLL diagnosed?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794692,
+    "update_time": 1788794692,
+    "_id": "hybrid:keywords:e8c42f2b0230109e318e91433670214f"
+  },
+  "hybrid:keywords:e9becb03152a4f5e6f50ff1d51682e59": {
+    "return": "{\"high_level_keywords\": [\"cancer type\", \"context\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What is the primary cancer type described in this context?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794694,
+    "update_time": 1788794694,
+    "_id": "hybrid:keywords:e9becb03152a4f5e6f50ff1d51682e59"
+  },
+  "hybrid:keywords:0ca647e7119cb44312ba3e13dd25dc82": {
+    "return": "{\"high_level_keywords\": [\"role of flow cytometry\", \"CLL diagnosis\"], \"low_level_keywords\": [\"flow cytometry\", \"CLL\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What is the role of flow cytometry in CLL diagnosis?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794695,
+    "update_time": 1788794695,
+    "_id": "hybrid:keywords:0ca647e7119cb44312ba3e13dd25dc82"
+  },
+  "hybrid:keywords:4d118a7850505abb4d17c6eb04e21c7e": {
+    "return": "{\"high_level_keywords\": [\"stomach cancer\", \"cancer spread\"], \"low_level_keywords\": [\"layers\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Through which layers does stomach cancer spread outward?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794697,
+    "update_time": 1788794697,
+    "_id": "hybrid:keywords:4d118a7850505abb4d17c6eb04e21c7e"
+  },
+  "hybrid:keywords:9ab6cdbb79964b5028ee5b29ef31fbfe": {
+    "return": "{\"high_level_keywords\": [\"bladder cancer\", \"subtype\"], \"low_level_keywords\": [\"most common subtype\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What is the most common subtype of bladder cancer?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794699,
+    "update_time": 1788794699,
+    "_id": "hybrid:keywords:9ab6cdbb79964b5028ee5b29ef31fbfe"
+  },
+  "hybrid:keywords:5ebb7629f1538b1dbe5e3df022fc7840": {
+    "return": "{\"high_level_keywords\": [\"biomarker evaluation\", \"kidney cancer\"], \"low_level_keywords\": [\"test\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which test is used to evaluate biomarkers in kidney cancer?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794701,
+    "update_time": 1788794701,
+    "_id": "hybrid:keywords:5ebb7629f1538b1dbe5e3df022fc7840"
+  },
+  "hybrid:keywords:1fac19ad31bc8d5c441d88139263a24c": {
+    "return": "{\"high_level_keywords\": [\"diagnostic methods\"], \"low_level_keywords\": [\"BCC\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which diagnostic methods are used for BCC?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794704,
+    "update_time": 1788794704,
+    "_id": "hybrid:keywords:1fac19ad31bc8d5c441d88139263a24c"
+  },
+  "hybrid:keywords:b76400c6808b79381c6fb803eea3fcd0": {
+    "return": "{\"high_level_keywords\": [\"chemotherapy regimen\", \"ovarian cancer treatment\"], \"low_level_keywords\": [\"surgery\", \"ovarian cancer\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What chemotherapy regimen is typically recommended after surgery for ovarian cancer?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794706,
+    "update_time": 1788794706,
+    "_id": "hybrid:keywords:b76400c6808b79381c6fb803eea3fcd0"
+  },
+  "hybrid:keywords:5e90c001c86686ca208e209c53812772": {
+    "return": "{\"high_level_keywords\": [\"anal cancer staging\", \"AJCC TNM stage\"], \"low_level_keywords\": [\"lymph node involvement\", \"invasion of nearby organs\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which AJCC TNM stage involves lymph node involvement and/or invasion of nearby organs in anal cancer?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794708,
+    "update_time": 1788794708,
+    "_id": "hybrid:keywords:5e90c001c86686ca208e209c53812772"
+  },
+  "hybrid:keywords:b247363b855ba196dce3bdc971d9d529": {
+    "return": "{\"high_level_keywords\": [\"adrenal tumor\", \"malignant\"], \"low_level_keywords\": [\"adrenal cortex\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which adrenal tumor arises from the adrenal cortex and is malignant?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794711,
+    "update_time": 1788794711,
+    "_id": "hybrid:keywords:b247363b855ba196dce3bdc971d9d529"
+  },
+  "hybrid:keywords:d3b3cee2cb1a8bfd877109bae1e29bbb": {
+    "return": "{\"high_level_keywords\": [\"cancer management\", \"recurrence\"], \"low_level_keywords\": [\"ovarian cancer\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "How is recurrence of ovarian cancer managed?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794713,
+    "update_time": 1788794713,
+    "_id": "hybrid:keywords:d3b3cee2cb1a8bfd877109bae1e29bbb"
+  },
+  "hybrid:keywords:cbad56544da7aeda836cabe3e4433dc4": {
+    "return": "{\"high_level_keywords\": [\"basal cell carcinoma\", \"risk factor\"], \"low_level_keywords\": [\"basal cell carcinoma\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What is the primary risk factor for basal cell carcinoma?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794717,
+    "update_time": 1788794717,
+    "_id": "hybrid:keywords:cbad56544da7aeda836cabe3e4433dc4"
+  },
+  "hybrid:keywords:3149dd129536e8cb9f48744075df0d72": {
+    "return": "{\"high_level_keywords\": [\"dental health\", \"mouth cancer\", \"cancer treatment\"], \"low_level_keywords\": [\"mouth cancer treatment\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "How is dental health affected by mouth cancer and its treatment?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794719,
+    "update_time": 1788794719,
+    "_id": "hybrid:keywords:3149dd129536e8cb9f48744075df0d72"
+  },
+  "hybrid:keywords:b2863494f6fc5596092437460efb4e6f": {
+    "return": "{\"high_level_keywords\": [\"role of ultrasound\", \"liver cancer\"], \"low_level_keywords\": [\"ultrasound\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What is the role of ultrasound in liver cancer?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794721,
+    "update_time": 1788794721,
+    "_id": "hybrid:keywords:b2863494f6fc5596092437460efb4e6f"
+  },
+  "hybrid:keywords:121eb3fbbdc792ec13cb285f4f7dd496": {
+    "return": "{\"high_level_keywords\": [\"clinical trials\", \"patient eligibility\"], \"low_level_keywords\": [\"anal cancer\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which patients are eligible for clinical trials in anal cancer?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794724,
+    "update_time": 1788794724,
+    "_id": "hybrid:keywords:121eb3fbbdc792ec13cb285f4f7dd496"
+  },
+  "hybrid:keywords:180d46e46ac12f02b09061369817efe7": {
+    "return": "{\"high_level_keywords\": [\"disease risk\", \"liver cancer\"], \"low_level_keywords\": [\"non-alcoholic fatty liver disease\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Does non-alcoholic fatty liver disease increase the risk of liver cancer?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794726,
+    "update_time": 1788794726,
+    "_id": "hybrid:keywords:180d46e46ac12f02b09061369817efe7"
+  },
+  "hybrid:keywords:ef492d89877769b09c76923f1d84623a": {
+    "return": "{\"high_level_keywords\": [\"growth pattern\", \"primary cutaneous B-cell lymphomas\"], \"low_level_keywords\": [\"primary cutaneous B-cell lymphomas\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What is the growth pattern of most primary cutaneous B-cell lymphomas?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794728,
+    "update_time": 1788794728,
+    "_id": "hybrid:keywords:ef492d89877769b09c76923f1d84623a"
+  },
+  "hybrid:keywords:7123bc40109edcf3eb199e6ed9d82161": {
+    "return": "{\"high_level_keywords\": [\"chromosome abnormality\", \"CML\"], \"low_level_keywords\": [\"chromosome 22\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What is the abnormality found on chromosome 22 in CML?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794730,
+    "update_time": 1788794730,
+    "_id": "hybrid:keywords:7123bc40109edcf3eb199e6ed9d82161"
+  },
+  "hybrid:keywords:edda3622358dc50f3938d4fbf98c235c": {
+    "return": "{\"high_level_keywords\": [\"cancer staging\", \"TNM system\"], \"low_level_keywords\": [\"AJCC\", \"NPC\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What are the main components of the AJCC TNM system for NPC staging?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794733,
+    "update_time": 1788794733,
+    "_id": "hybrid:keywords:edda3622358dc50f3938d4fbf98c235c"
+  },
+  "hybrid:keywords:ae6184a92afafe83cbb4191b9fe0a8f5": {
+    "return": "{\"high_level_keywords\": [\"lung cancer screening\", \"aim\"], \"low_level_keywords\": [\"lung cancer\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What is the aim of lung cancer screening?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794735,
+    "update_time": 1788794735,
+    "_id": "hybrid:keywords:ae6184a92afafe83cbb4191b9fe0a8f5"
+  },
+  "hybrid:keywords:057ad85f3e2e73ded796a9513c248961": {
+    "return": "{\"high_level_keywords\": [\"stomach adenocarcinoma\", \"targeted therapy\", \"mutations\"], \"low_level_keywords\": [\"subtype\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which subtype of stomach adenocarcinoma is more likely to have mutations treatable with targeted therapy?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794738,
+    "update_time": 1788794738,
+    "_id": "hybrid:keywords:057ad85f3e2e73ded796a9513c248961"
+  },
+  "hybrid:keywords:5292b496cd06a63d31ec4f80fa0bc3d3": {
+    "return": "{\"high_level_keywords\": [\"prostate cancer staging\"], \"low_level_keywords\": [\"regional prostate cancer\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What stage is regional prostate cancer classified as?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794740,
+    "update_time": 1788794740,
+    "_id": "hybrid:keywords:5292b496cd06a63d31ec4f80fa0bc3d3"
+  },
+  "hybrid:keywords:e2281a1fb6f001b30b5d17c5e22ab6fb": {
+    "return": "{\"high_level_keywords\": [\"lymph node involvement assessment\", \"breast cancer\"], \"low_level_keywords\": [\"lymph node\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "How is lymph node involvement assessed in breast cancer?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794742,
+    "update_time": 1788794742,
+    "_id": "hybrid:keywords:e2281a1fb6f001b30b5d17c5e22ab6fb"
+  },
+  "hybrid:keywords:ffb38c75406c4257445ff6156cd1fc9d": {
+    "return": "{\"high_level_keywords\": [\"cancer type\", \"fast growth\", \"origin in lymphocytes\"], \"low_level_keywords\": [\"lymphocytes\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What cancer type is characterized by fast growth and origin in lymphocytes?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794745,
+    "update_time": 1788794745,
+    "_id": "hybrid:keywords:ffb38c75406c4257445ff6156cd1fc9d"
+  },
+  "hybrid:keywords:3b61fd98070e7eb0cdfa96c2e95e8fc5": {
+    "return": "{\"high_level_keywords\": [\"TNM classification\", \"mouth cancer\"], \"low_level_keywords\": [\"T2\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "How is T2 defined in mouth cancer TNM classification?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794746,
+    "update_time": 1788794746,
+    "_id": "hybrid:keywords:3b61fd98070e7eb0cdfa96c2e95e8fc5"
+  },
+  "hybrid:keywords:0988ba9701a6ae55e24d3324fda8bf91": {
+    "return": "{\"high_level_keywords\": [\"genetic alteration\", \"Ewing sarcoma\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which genetic alteration is associated with Ewing sarcoma?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794749,
+    "update_time": 1788794749,
+    "_id": "hybrid:keywords:0988ba9701a6ae55e24d3324fda8bf91"
+  },
+  "hybrid:keywords:d7c15936597d5bba4cf8cea2117093f6": {
+    "return": "{\"high_level_keywords\": [\"anatomical layers\", \"tumor penetration\", \"serosa\", \"bile duct\"], \"low_level_keywords\": [\"tumor\", \"serosa\", \"bile duct\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What anatomical layers must a tumor penetrate to reach the serosa in the bile duct?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794751,
+    "update_time": 1788794751,
+    "_id": "hybrid:keywords:d7c15936597d5bba4cf8cea2117093f6"
+  },
+  "hybrid:keywords:009d49f2a89a41c4ea57f0d7d4757607": {
+    "return": "{\"high_level_keywords\": [\"advanced prostate cancer treatment\"], \"low_level_keywords\": [\"prostate cancer\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What is the mainstay of advanced prostate cancer treatment?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794754,
+    "update_time": 1788794754,
+    "_id": "hybrid:keywords:009d49f2a89a41c4ea57f0d7d4757607"
+  },
+  "hybrid:keywords:3a9a4e77b4bf28b5baedd179d52c1711": {
+    "return": "{\"high_level_keywords\": [\"risk group classification\", \"prognosis\", \"treatment decisions\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which risk group classification guides prognosis and treatment decisions?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794756,
+    "update_time": 1788794756,
+    "_id": "hybrid:keywords:3a9a4e77b4bf28b5baedd179d52c1711"
+  },
+  "hybrid:keywords:4282cdcf2053dd5815a6b3c546f325e9": {
+    "return": "{\"high_level_keywords\": [\"performance evaluation\", \"clinical trials eligibility\", \"primary CNS lymphoma\"], \"low_level_keywords\": [\"primary CNS lymphoma patients\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which performance evaluation is necessary before determining eligibility for clinical trials in primary CNS lymphoma patients and why?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794791,
+    "update_time": 1788794791,
+    "_id": "hybrid:keywords:4282cdcf2053dd5815a6b3c546f325e9"
+  },
+  "hybrid:keywords:d45b5f5e968c9b1bfd508d1b5cdf9ac6": {
+    "return": "{\"high_level_keywords\": [\"colon cancer\", \"early detection\", \"prevention strategies\"], \"low_level_keywords\": [\"adenomas\", \"origin\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "How does the origin of colon cancer from adenomas influence early detection and prevention strategies?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794794,
+    "update_time": 1788794794,
+    "_id": "hybrid:keywords:d45b5f5e968c9b1bfd508d1b5cdf9ac6"
+  },
+  "hybrid:keywords:1b9b11ca64722677043ecaef09b8e2d3": {
+    "return": "{\"high_level_keywords\": [\"cervical cancer progression\", \"diagnosis\"], \"low_level_keywords\": [\"high-grade squamous intraepithelial lesion\", \"HSIL\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "How is high-grade squamous intraepithelial lesion (HSIL) related to cervical cancer progression and diagnosis?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794796,
+    "update_time": 1788794796,
+    "_id": "hybrid:keywords:1b9b11ca64722677043ecaef09b8e2d3"
+  },
+  "hybrid:keywords:d05799853d2ab06cfa7172d055aec869": {
+    "return": "{\"high_level_keywords\": [\"Hodgkin lymphoma\", \"cell morphology\", \"distinguish\"], \"low_level_keywords\": [\"classic Hodgkin lymphoma\", \"nodular lymphocyte-predominant Hodgkin lymphoma\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "How can you distinguish between classic Hodgkin lymphoma and nodular lymphocyte-predominant Hodgkin lymphoma based on cell morphology?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794799,
+    "update_time": 1788794799,
+    "_id": "hybrid:keywords:d05799853d2ab06cfa7172d055aec869"
+  },
+  "hybrid:keywords:c9b1d246ceb241356a6b7324ad84d6f8": {
+    "return": "{\"high_level_keywords\": [\"skin cancer risk factors\", \"immunosuppression\", \"organ transplant complications\"], \"low_level_keywords\": [\"fair skin\", \"organ transplant\", \"basal cell carcinoma\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Why is a patient with fair skin and a history of organ transplant at particularly high risk for developing basal cell carcinoma?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794802,
+    "update_time": 1788794802,
+    "_id": "hybrid:keywords:c9b1d246ceb241356a6b7324ad84d6f8"
+  },
+  "hybrid:keywords:1ccb07cdf107304f60e6d45e3415ac46": {
+    "return": "{\"high_level_keywords\": [\"prognosis\", \"glioma\"], \"low_level_keywords\": [\"poorer prognosis\", \"glioma patients\", \"factors determined\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What factors contribute to a poorer prognosis in glioma patients, and how are these factors determined?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794805,
+    "update_time": 1788794805,
+    "_id": "hybrid:keywords:1ccb07cdf107304f60e6d45e3415ac46"
+  },
+  "hybrid:keywords:fad076561f14e3eb73c24fb53eab46ce": {
+    "return": "{\"high_level_keywords\": [\"diagnostic workup\", \"lumbar puncture\", \"childhood ALL\"], \"low_level_keywords\": [\"ALL\", \"lumbar puncture\", \"child\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Why would a lumbar puncture be performed in the diagnostic workup of a child with ALL?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794808,
+    "update_time": 1788794808,
+    "_id": "hybrid:keywords:fad076561f14e3eb73c24fb53eab46ce"
+  },
+  "hybrid:keywords:18de09325ffbcf5337439c95d43b1e11": {
+    "return": "{\"high_level_keywords\": [\"risk factors\", \"older adult\", \"organ transplant\", \"primary CNS lymphoma\"], \"low_level_keywords\": [\"history of organ transplant\", \"primary CNS lymphoma\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which risk factors should be considered for an older adult with a history of organ transplant who develops primary CNS lymphoma?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794810,
+    "update_time": 1788794810,
+    "_id": "hybrid:keywords:18de09325ffbcf5337439c95d43b1e11"
+  },
+  "hybrid:keywords:50cc06e64808f30a83a7ab415f73db68": {
+    "return": "{\"high_level_keywords\": [\"treatment decision\", \"watchful waiting\", \"CLL management\"], \"low_level_keywords\": [\"newly diagnosed CLL patient\", \"immediate treatment\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What factors determine whether a newly diagnosed CLL patient should begin treatment immediately or undergo watchful waiting?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794812,
+    "update_time": 1788794812,
+    "_id": "hybrid:keywords:50cc06e64808f30a83a7ab415f73db68"
+  },
+  "hybrid:keywords:b3a4b38a565d556b61b6ab7dff216c5a": {
+    "return": "{\"high_level_keywords\": [\"diagnostic step\", \"mediastinal mass\"], \"low_level_keywords\": [\"patient\", \"male\", \"aged 25\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "If a patient presents with a large mediastinal mass and is assigned male at birth aged 25, what additional diagnostic step is necessary?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794815,
+    "update_time": 1788794815,
+    "_id": "hybrid:keywords:b3a4b38a565d556b61b6ab7dff216c5a"
+  },
+  "hybrid:keywords:03ec5255614192aada543f388fdcf99b": {
+    "return": "{\"high_level_keywords\": [\"metastatic breast cancer\", \"clinical findings\", \"diagnostic results\", \"stage IV\"], \"low_level_keywords\": [\"breast cancer\", \"metastasis\", \"stage IV\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What combination of clinical findings and diagnostic results would indicate metastatic breast cancer (Stage IV)?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794818,
+    "update_time": 1788794818,
+    "_id": "hybrid:keywords:03ec5255614192aada543f388fdcf99b"
+  },
+  "hybrid:keywords:3445ff1aff214d1901b8a202e27e4f39": {
+    "return": "{\"high_level_keywords\": [\"Mohs surgery\", \"surgical options\", \"treatment\", \"high-risk local CSCC\"], \"low_level_keywords\": [\"Mohs surgery\", \"CSCC\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What distinguishes Mohs surgery from other surgical options in the treatment of high-risk local CSCC?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794820,
+    "update_time": 1788794820,
+    "_id": "hybrid:keywords:3445ff1aff214d1901b8a202e27e4f39"
+  },
+  "hybrid:keywords:a656167c813e114323cc2293aa027261": {
+    "return": "{\"high_level_keywords\": [\"clinical significance\", \"management\", \"metastatic breast cancer\"], \"low_level_keywords\": [\"PD-L1 expression\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What is the clinical significance of PD-L1 expression in the management of metastatic breast cancer?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794823,
+    "update_time": 1788794823,
+    "_id": "hybrid:keywords:a656167c813e114323cc2293aa027261"
+  },
+  "hybrid:keywords:051b10c609002b041737e91f71900a75": {
+    "return": "{\"high_level_keywords\": [\"treatment\", \"metastatic differentiated thyroid cancer\", \"iodine-avid disease\", \"non-iodine-avid disease\"], \"low_level_keywords\": [\"metastatic differentiated thyroid cancer\", \"iodine-avid\", \"not iodine-avid\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which treatments are used for metastatic differentiated thyroid cancer that is iodine-avid and which are considered if the disease is not iodine-avid?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794825,
+    "update_time": 1788794825,
+    "_id": "hybrid:keywords:051b10c609002b041737e91f71900a75"
+  },
+  "hybrid:keywords:c82d69478abbb80741631d2933569d11": {
+    "return": "{\"high_level_keywords\": [\"anatomical locations\", \"treatment planning\"], \"low_level_keywords\": [\"esophageal squamous cell carcinoma\", \"esophageal adenocarcinoma\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which anatomical locations are most associated with esophageal squamous cell carcinoma and esophageal adenocarcinoma, and how does this affect treatment planning?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794828,
+    "update_time": 1788794828,
+    "_id": "hybrid:keywords:c82d69478abbb80741631d2933569d11"
+  },
+  "hybrid:keywords:986743a32e3cea8da5d28b2829f310ad": {
+    "return": "{\"high_level_keywords\": [\"diagnostic tests\", \"risk factors\", \"jaundice\", \"family history\"], \"low_level_keywords\": [\"breast cancer\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "If a patient presents with jaundice and has a family history of breast cancer, which diagnostic tests and risk factors should be considered?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794830,
+    "update_time": 1788794830,
+    "_id": "hybrid:keywords:986743a32e3cea8da5d28b2829f310ad"
+  },
+  "hybrid:keywords:63b139954b3a19db53249799a4513b03": {
+    "return": "{\"high_level_keywords\": [\"diagnostic process\", \"symptoms\", \"imaging\", \"biopsy\", \"mouth cancer\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "How do symptoms guide the use of imaging and biopsy in the diagnostic process for mouth cancer?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794834,
+    "update_time": 1788794834,
+    "_id": "hybrid:keywords:63b139954b3a19db53249799a4513b03"
+  },
+  "hybrid:keywords:c492ed4ba8d9e65ac112bca20c22e40d": {
+    "return": "{\"high_level_keywords\": [\"diagnostic workflow\", \"lung cancer\"], \"low_level_keywords\": [\"lung nodule\", \"imaging\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "How does the presence of a lung nodule on imaging affect the diagnostic workflow for lung cancer?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794837,
+    "update_time": 1788794837,
+    "_id": "hybrid:keywords:c492ed4ba8d9e65ac112bca20c22e40d"
+  },
+  "hybrid:keywords:2f2fa9b3262f2fd8f759af33533b277b": {
+    "return": "{\"high_level_keywords\": [\"diagnostic methods\", \"lymph node involvement\", \"distant metastasis\", \"mouth cancer\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which diagnostic methods would be used to assess both lymph node involvement and distant metastasis in mouth cancer?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794839,
+    "update_time": 1788794839,
+    "_id": "hybrid:keywords:2f2fa9b3262f2fd8f759af33533b277b"
+  },
+  "hybrid:keywords:79470f65cc13857b2daa2056592f495f": {
+    "return": "{\"high_level_keywords\": [\"immune suppression\", \"radiation therapy\", \"BCC risk\", \"BCC management\"], \"low_level_keywords\": [\"BCC\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "How do immune suppression and prior radiation therapy interact to affect BCC risk and management?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794842,
+    "update_time": 1788794842,
+    "_id": "hybrid:keywords:79470f65cc13857b2daa2056592f495f"
+  },
+  "hybrid:keywords:cc85b12dfdf3de52b08696f760d44866": {
+    "return": "{\"high_level_keywords\": [\"nutritional status assessment\", \"speech/swallowing function assessment\", \"nasopharyngeal carcinoma\"], \"low_level_keywords\": [\"methods\", \"patients\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What methods are used to assess both nutritional status and speech/swallowing function in nasopharyngeal carcinoma patients?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794844,
+    "update_time": 1788794844,
+    "_id": "hybrid:keywords:cc85b12dfdf3de52b08696f760d44866"
+  },
+  "hybrid:keywords:0587fa70519336778e8df81e93f9949e": {
+    "return": "{\"high_level_keywords\": [\"diagnosis\", \"symptoms\", \"diagnostic methods\", \"central nervous system involvement\"], \"low_level_keywords\": [\"ALL\", \"central nervous system\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What combination of symptoms and diagnostic methods would most likely lead to an ALL diagnosis involving the central nervous system?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794847,
+    "update_time": 1788794847,
+    "_id": "hybrid:keywords:0587fa70519336778e8df81e93f9949e"
+  },
+  "hybrid:keywords:e66e38c0c0f0287365dcc0e9c8507b16": {
+    "return": "{\"high_level_keywords\": [\"cancer subtype\", \"nasopharynx\", \"cancer ontology\", \"classification\"], \"low_level_keywords\": [\"nasopharyngeal carcinoma\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which cancer subtype is most commonly found in the nasopharynx and how is it classified within the cancer ontology?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794850,
+    "update_time": 1788794850,
+    "_id": "hybrid:keywords:e66e38c0c0f0287365dcc0e9c8507b16"
+  },
+  "hybrid:keywords:f18c416aa4aef368c6659a290d0d5e21": {
+    "return": "{\"high_level_keywords\": [\"adrenal tumor\", \"benign\", \"metastasis\"], \"low_level_keywords\": [\"adrenal tumor\", \"benign\", \"metastasize\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What evidence would indicate that an adrenal tumor is benign and unlikely to metastasize?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794852,
+    "update_time": 1788794852,
+    "_id": "hybrid:keywords:f18c416aa4aef368c6659a290d0d5e21"
+  },
+  "hybrid:keywords:056e55edb3f866d3b43856108b9cf55a": {
+    "return": "{\"high_level_keywords\": [\"diagnostic methods\", \"throat cancer\", \"biomarkers\"], \"low_level_keywords\": [\"confirm\", \"determine\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which diagnostic methods are required to confirm throat cancer and determine its biomarkers?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794855,
+    "update_time": 1788794855,
+    "_id": "hybrid:keywords:056e55edb3f866d3b43856108b9cf55a"
+  },
+  "hybrid:keywords:a8fc3576972dbf8c75b28887f0dd600f": {
+    "return": "{\"high_level_keywords\": [\"primary cutaneous lymphoma\", \"B-cell origin\", \"slow-growing\"], \"low_level_keywords\": [\"patient\", \"diagnosed\", \"subtypes\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "If a patient is diagnosed with a slow-growing primary cutaneous lymphoma of B-cell origin, which subtypes are likely?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794858,
+    "update_time": 1788794858,
+    "_id": "hybrid:keywords:a8fc3576972dbf8c75b28887f0dd600f"
+  },
+  "hybrid:keywords:745f54980d57d2d153391bb65ce8ca1e": {
+    "return": "{\"high_level_keywords\": [\"liver cancer subtype\", \"younger patients\", \"risk factors\", \"parent cancer type\"], \"low_level_keywords\": [\"liver cancer\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which liver cancer subtype is most likely to be found in younger patients, and what are the main risk factors for its parent cancer type?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794861,
+    "update_time": 1788794861,
+    "_id": "hybrid:keywords:745f54980d57d2d153391bb65ce8ca1e"
+  },
+  "hybrid:keywords:3ab9de2be0ef674c29c2ea76394de615": {
+    "return": "{\"high_level_keywords\": [\"polyp types\", \"rectal cancer progression\", \"adenomas\"], \"low_level_keywords\": [\"polyp types\", \"rectal cancer\", \"adenomas\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which two polyp types are unlikely to progress to rectal cancer, and how does this contrast with adenomas?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794863,
+    "update_time": 1788794863,
+    "_id": "hybrid:keywords:3ab9de2be0ef674c29c2ea76394de615"
+  },
+  "hybrid:keywords:34f2cc4dc9a18dc7c7753512e9559457": {
+    "return": "{\"high_level_keywords\": [\"diagnosis\", \"CML\", \"abnormal blood counts\", \"genetic findings\"], \"low_level_keywords\": [\"CML\", \"blood counts\", \"genetic findings\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which abnormal blood counts and genetic findings together support a diagnosis of CML?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794866,
+    "update_time": 1788794866,
+    "_id": "hybrid:keywords:34f2cc4dc9a18dc7c7753512e9559457"
+  },
+  "hybrid:keywords:c6020c4c00b058f0ed99c961915c742e": {
+    "return": "{\"high_level_keywords\": [\"chemotherapy agents\", \"rectal cancer treatment regimens\", \"cancer stage\"], \"low_level_keywords\": [\"rectal cancer\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which chemotherapy agents may be included in rectal cancer treatment regimens and for what stage are they typically used?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794869,
+    "update_time": 1788794869,
+    "_id": "hybrid:keywords:c6020c4c00b058f0ed99c961915c742e"
+  },
+  "hybrid:keywords:7608741921a0d325c19f1bb2c8b19345": {
+    "return": "{\"high_level_keywords\": [\"treatment rationale\", \"surgery\", \"BCC lesions\", \"sun-exposed areas\"], \"low_level_keywords\": [\"BCC\", \"surgery\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What is the rationale for recommending surgery as the most common treatment for BCC lesions on sun-exposed areas?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794872,
+    "update_time": 1788794872,
+    "_id": "hybrid:keywords:7608741921a0d325c19f1bb2c8b19345"
+  },
+  "hybrid:keywords:3a9e90049cb56b08ac47b8761c4674bd": {
+    "return": "{\"high_level_keywords\": [\"carcinoma in situ\", \"spread\", \"blood vessels\", \"liver\"], \"low_level_keywords\": [\"carcinoma in situ\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Why does carcinoma in situ not involve spread to blood vessels or the liver?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794875,
+    "update_time": 1788794875,
+    "_id": "hybrid:keywords:3a9e90049cb56b08ac47b8761c4674bd"
+  },
+  "hybrid:keywords:15776b898b624a336cd71bf23fb90f9e": {
+    "return": "{\"high_level_keywords\": [\"systemic therapies\", \"bladder cancer\", \"advanced or metastatic disease\"], \"low_level_keywords\": [\"bladder cancer patients\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What systemic therapies are available for bladder cancer patients with advanced or metastatic disease?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794878,
+    "update_time": 1788794878,
+    "_id": "hybrid:keywords:15776b898b624a336cd71bf23fb90f9e"
+  },
+  "hybrid:keywords:62d990d2dcdb3b2d900acfbe8ee4db80": {
+    "return": "{\"high_level_keywords\": [\"treatment rationale\", \"ovarian cancer\", \"platinum-resistant\", \"FR\\u03b1-positive\"], \"low_level_keywords\": [\"mirvetuximab soravtansine-gynx\", \"patient\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Why might a patient with FRα-positive platinum-resistant ovarian cancer be treated with mirvetuximab soravtansine-gynx?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794883,
+    "update_time": 1788794883,
+    "_id": "hybrid:keywords:62d990d2dcdb3b2d900acfbe8ee4db80"
+  },
+  "hybrid:keywords:a42defaf30ad42e630c5ff58d93b0c5f": {
+    "return": "{\"high_level_keywords\": [\"anaplastic thyroid cancer\", \"distant metastasis\", \"combination of therapies\", \"recommended treatment\"], \"low_level_keywords\": [\"patient\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "For a patient with anaplastic thyroid cancer and distant metastasis, which combination of therapies is most likely to be recommended?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794886,
+    "update_time": 1788794886,
+    "_id": "hybrid:keywords:a42defaf30ad42e630c5ff58d93b0c5f"
+  },
+  "hybrid:keywords:96d14da822efeeff23503855806e3731": {
+    "return": "{\"high_level_keywords\": [\"primary liver cancer subtypes\", \"anatomical origin\"], \"low_level_keywords\": [\"intrahepatic cholangiocarcinoma\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What distinguishes intrahepatic cholangiocarcinoma from other primary liver cancer subtypes in terms of anatomical origin?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794889,
+    "update_time": 1788794889,
+    "_id": "hybrid:keywords:96d14da822efeeff23503855806e3731"
+  },
+  "hybrid:keywords:eb363df82b560d03097442c43cadc249": {
+    "return": "{\"high_level_keywords\": [\"breast cancer\", \"fertility preservation counseling\", \"treatment\"], \"low_level_keywords\": [\"patients\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which patients with breast cancer should receive fertility preservation counseling before treatment, and why?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794892,
+    "update_time": 1788794892,
+    "_id": "hybrid:keywords:eb363df82b560d03097442c43cadc249"
+  },
+  "hybrid:keywords:13b66065b27c239c5118a8ef8fcfc00d": {
+    "return": "{\"high_level_keywords\": [\"fertility preservation\", \"mouth cancer\", \"treatment discussion\"], \"low_level_keywords\": [\"mouth cancer patients\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Why should fertility preservation be discussed with certain mouth cancer patients before treatment?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794895,
+    "update_time": 1788794895,
+    "_id": "hybrid:keywords:13b66065b27c239c5118a8ef8fcfc00d"
+  },
+  "hybrid:keywords:572a5c6ba53c6199c40d2b5a5c7b2bf1": {
+    "return": "{\"high_level_keywords\": [\"treatment\", \"detection\", \"primary CNS lymphoma\", \"cerebrospinal fluid involvement\"], \"low_level_keywords\": [\"patient\", \"specialized treatment\", \"involvement detection\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "For a patient with primary CNS lymphoma and cerebrospinal fluid involvement, which specialized treatment is indicated and how is the involvement detected?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794898,
+    "update_time": 1788794898,
+    "_id": "hybrid:keywords:572a5c6ba53c6199c40d2b5a5c7b2bf1"
+  },
+  "hybrid:keywords:32631427a32d466f1b1d3ece5945e61a": {
+    "return": "{\"high_level_keywords\": [\"anatomic locations\", \"osteosarcoma\", \"giant cell tumor of bone\"], \"low_level_keywords\": [\"common locations\", \"association\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Which anatomic locations are most commonly associated with osteosarcoma and giant cell tumor of bone, and what do these locations have in common?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 5,
+      "max_entity_tokens": 1500,
+      "max_relation_tokens": 1500,
+      "max_total_tokens": 12000,
+      "user_prompt": "",
+      "enable_rerank": false
+    },
+    "create_time": 1788794901,
+    "update_time": 1788794901,
+    "_id": "hybrid:keywords:32631427a32d466f1b1d3ece5945e61a"
   }
 }

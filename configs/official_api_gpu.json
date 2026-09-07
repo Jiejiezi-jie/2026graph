@@ -1,0 +1,53 @@
+{
+  "seed": 42,
+  "benchmark_dir": "data/vendor/GraphRAG-Benchmark",
+  "question_types": [
+    "Fact Retrieval",
+    "Complex Reasoning"
+  ],
+  "p0_per_type": 5,
+  "p1_per_type": 60,
+  "train_fraction": 0.6,
+  "validation_fraction": 0.2,
+  "test_fraction": 0.2,
+  "chunk_tokens": 1200,
+  "chunk_overlap_tokens": 100,
+  "vector_top_k": 5,
+  "lightrag_top_k": 40,
+  "lightrag_chunk_top_k": 5,
+  "pathrag_top_k": 40,
+  "max_context_tokens": 5000,
+  "llm": {
+    "backend": "openai_compatible",
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-chat",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "temperature": 0.0,
+    "max_new_tokens": 256,
+    "max_callback_new_tokens": 4096,
+    "timeout_seconds": 120,
+    "max_retries": 3
+  },
+  "evaluation": {
+    "max_new_tokens": 4096,
+    "response_retries": 1,
+    "request_retries": 1
+  },
+  "embedding": {
+    "backend": "transformers",
+    "model_path": "models/bge-m3",
+    "device": "cuda:0",
+    "batch_size": 4,
+    "max_length": 2048,
+    "normalize": true
+  },
+  "router": {
+    "family": "tfidf_logistic_regression",
+    "selection_metric": "validation_macro_f1"
+  },
+  "generation_prompt": "Answer the medical question using only the supplied context. Give a direct, concise answer. If the context is insufficient, say I don't know.",
+  "results_dir": "results_api",
+  "lightrag_max_entity_tokens": 1500,
+  "lightrag_max_relation_tokens": 1500,
+  "lightrag_max_total_tokens": 12000
+}

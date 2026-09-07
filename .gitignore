@@ -12,3 +12,8 @@ results_official/debug/
 results_official/pipeline.log
 PathRAG.log
 artifacts/*.joblib
+
+# 评测自动归档与大体积缓存备份(不入库)
+results_api/**/*.bak
+results_api/**/*.pre_drop_*.bak
+results_api/**/*.jsonl.20*.bak

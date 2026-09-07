@@ -1,0 +1,33 @@
+{
+  "vector": {
+    "method": "vector",
+    "chunks": 199,
+    "index_time_ms": 592560.3951000376,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "llm_calls": 0,
+    "cached": true
+  },
+  "lightrag": {
+    "method": "lightrag",
+    "index_time_ms": 6194892.380699981,
+    "input_tokens": 1857395,
+    "output_tokens": 796116,
+    "llm_calls": 544,
+    "cached": true,
+    "graph_path": "/home/szj/2026graph/.wt-lightrag/results_api/indexes/lightrag/medical/graph_chunk_entity_relation.graphml",
+    "graph_nodes": 3396,
+    "graph_edges": 5693
+  },
+  "pathrag": {
+    "method": "pathrag",
+    "index_time_ms": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "llm_calls": 0,
+    "cached": true,
+    "graph_path": "/home/szj/2026graph/.wt-lightrag/results_api/indexes/pathrag/graph_chunk_entity_relation.graphml",
+    "graph_nodes": 4568,
+    "graph_edges": 9432
+  }
+}
