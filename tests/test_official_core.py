@@ -7,7 +7,12 @@ import numpy as np
 
 from src.official_analysis import choose_official_silver
 from src.official_backends.lightrag_backend import LightRAGBackend
-from src.official_backends.model_client import Generation, UsageSnapshot
+from src.official_backends.model_client import (
+    Generation,
+    OpenAICompatibleChatClient,
+    OpenAICompatibleEmbeddingClient,
+    UsageSnapshot,
+)
 from src.official_backends.pathrag_backend import PathRAGBackend, parse_pathrag_context
 from src.official_backends.vector_backend import VectorRAGBackend, chunk_by_token_window
 from src.official_data import p0_subset, stratified_sample_and_split
@@ -118,6 +123,60 @@ class OfficialCoreTests(unittest.IsolatedAsyncioTestCase):
             )
             await backend._initialize()
             self.assertIsNotNone(backend.rag)
+            await backend.close()
+
+    async def test_openai_compatible_chat_preserves_structured_output(self):
+        client = OpenAICompatibleChatClient(
+            "https://example.test/v1",
+            "test-key",
+            "test-chat",
+            max_new_tokens=32,
+            max_callback_new_tokens=128,
+            max_retries=0,
+        )
+        payloads = []
+
+        def fake_request(payload):
+            payloads.append(payload)
+            return {
+                "choices": [{"message": {"content": '{"ok": true}'}}],
+                "usage": {"prompt_tokens": 12, "completion_tokens": 4},
+            }
+
+        client._request_sync = fake_request
+        response = await client.complete("Return JSON", keyword_extraction=True)
+        self.assertEqual(response, '{"ok": true}')
+        self.assertEqual(payloads[0]["response_format"], {"type": "json_object"})
+        self.assertEqual(payloads[0]["max_tokens"], 128)
+        self.assertEqual(client.snapshot(), UsageSnapshot(12, 4, 1))
+
+    async def test_openai_compatible_embedding_batches_and_normalizes(self):
+        client = OpenAICompatibleEmbeddingClient(
+            "https://example.test/v1",
+            "test-key",
+            "test-embedding",
+            dimension=2,
+            dimensions=2,
+            batch_size=2,
+            max_retries=0,
+        )
+        payloads = []
+
+        def fake_request(payload):
+            payloads.append(payload)
+            return {
+                "data": [
+                    {"index": index, "embedding": [float(index + 1), 1.0]}
+                    for index, _ in enumerate(payload["input"])
+                ]
+            }
+
+        client._request_sync = fake_request
+        vectors = await client.embed(["a", "b", "c"])
+        self.assertEqual(vectors.shape, (3, 2))
+        self.assertEqual([len(payload["input"]) for payload in payloads], [2, 1])
+        self.assertTrue(all(payload["dimensions"] == 2 for payload in payloads))
+        np.testing.assert_allclose(np.linalg.norm(vectors, axis=1), np.ones(3))
 
     def test_parse_pathrag_context_and_paths(self):
         context = """
@@ -151,6 +210,18 @@ id,context
         self.assertEqual(parsed["contexts"], ["Evidence, with comma"])
         self.assertEqual(parsed["paths"], [["A", "B"]])
         self.assertEqual(len(parsed["entities"]), 2)
+
+    def test_parse_pathrag_context_strips_upstream_tabbed_headers(self):
+        context = """
+-----Sources-----
+```csv
+id,\tcontent
+1,\t"Medical evidence"
+```
+"""
+        self.assertEqual(
+            parse_pathrag_context(context)["contexts"], ["Medical evidence"]
+        )
 
     def test_official_silver_prefers_cheapest_correct(self):
         rows = {

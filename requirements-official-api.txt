@@ -1,0 +1,19 @@
+-r requirements.txt
+
+# GraphRAG-Bench official evaluation metrics
+langchain-core==0.3.69
+rouge-score==0.1.2
+json5
+json-repair
+
+-e third_party/LightRAG
+
+# PathRAG has no package metadata at the pinned commit. Its source is loaded
+# directly from third_party/PathRAG by the project adapter. LightRAG's core
+# dependencies also provide PathRAG's tiktoken, networkx and nano-vectordb
+# requirements.
+tqdm>=4.66,<5
+xxhash>=3.5,<4
+torch>=2.6
+transformers>=4.51,<6
+sentencepiece>=0.2,<1

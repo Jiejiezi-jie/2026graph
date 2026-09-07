@@ -65,16 +65,38 @@ class VectorRAGBackend(RAGBackend):
     def _vectors_path(self) -> Path:
         return self.working_dir / "vectors.npy"
 
+    def _index_identity(self) -> dict[str, Any]:
+        return {
+            "embedding_model": getattr(
+                self.embedding, "model_name", str(self.embedding.model_path)
+            ),
+            "embedding_dimension": self.embedding.dimension,
+            "chunk_tokens": self.chunk_tokens,
+            "chunk_overlap_tokens": self.chunk_overlap_tokens,
+        }
+
     async def index(self, corpus: str) -> dict[str, Any]:
         self.working_dir.mkdir(parents=True, exist_ok=True)
         corpus_hash = hashlib.sha256(corpus.encode("utf-8")).hexdigest()
         metadata_path = self._metadata_path()
         vectors_path = self._vectors_path()
+        identity = self._index_identity()
         if metadata_path.exists() and vectors_path.exists():
             metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
-            if metadata.get("corpus_sha256") == corpus_hash:
+            stored_identity = metadata.get("index_identity")
+            legacy_matches = (
+                stored_identity is None
+                and metadata.get("embedding_model") == identity["embedding_model"]
+                and metadata.get("chunk_tokens") == self.chunk_tokens
+                and metadata.get("chunk_overlap_tokens") == self.chunk_overlap_tokens
+            )
+            if metadata.get("corpus_sha256") == corpus_hash and (
+                stored_identity == identity or legacy_matches
+            ):
                 self.chunks = list(metadata["chunks"])
                 self.vectors = np.load(vectors_path)
+                if self.vectors.ndim != 2 or self.vectors.shape[1] != self.embedding.dimension:
+                    raise RuntimeError("Cached vector index has the wrong embedding dimension")
                 return {**metadata["index_stats"], "cached": True}
 
         started = time.perf_counter()
@@ -97,7 +119,8 @@ class VectorRAGBackend(RAGBackend):
             json.dumps(
                 {
                     "corpus_sha256": corpus_hash,
-                    "embedding_model": str(self.embedding.model_path),
+                    "embedding_model": identity["embedding_model"],
+                    "index_identity": identity,
                     "chunk_tokens": self.chunk_tokens,
                     "chunk_overlap_tokens": self.chunk_overlap_tokens,
                     "chunks": self.chunks,

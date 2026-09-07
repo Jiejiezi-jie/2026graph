@@ -1,0 +1,192 @@
+{
+  "status": "passed",
+  "backend": "lightrag",
+  "llm_model": "deepseek-chat",
+  "embedding_model": "bge-m3",
+  "index": {
+    "method": "lightrag",
+    "index_time_ms": 5899.366699974053,
+    "input_tokens": 4864,
+    "output_tokens": 739,
+    "llm_calls": 2,
+    "cached": false,
+    "graph_path": "C:\\Users\\Lenovo\\2026graph\\results_api\\smoke\\indexes\\lightrag\\medical\\graph_chunk_entity_relation.graphml",
+    "graph_nodes": 8,
+    "graph_edges": 7
+  },
+  "result": {
+    "question_id": "api-smoke-1",
+    "method": "lightrag",
+    "answer": "Ultraviolet radiation damages DNA in skin cells, which is a major risk factor for basal cell carcinoma. Immunosuppression after organ transplantation weakens immune surveillance, which also increases the risk of basal cell carcinoma.",
+    "contexts": [
+      "Basal cell carcinoma (BCC) is a common skin cancer. Ultraviolet radiation can\ndamage DNA in skin cells and is a major risk factor for BCC. Organ transplant\nrecipients take immunosuppressive medicines to prevent graft rejection.\nImmunosuppression weakens immune surveillance and increases the risk of BCC.\nMohs surgery removes thin layers of cancer-containing skin and is commonly used\nfor high-risk BCC in cosmetically sensitive areas."
+    ],
+    "entities": [
+      {
+        "entity_name": "Organ Transplant Recipients",
+        "entity_type": "person",
+        "description": "Individuals who have received organ transplants and take immunosuppressive medicines.",
+        "source_id": "doc-7e278c8064848a055817975088ed08f8-chunk-000",
+        "file_path": "unknown_source",
+        "created_at": 1788532589
+      },
+      {
+        "entity_name": "Basal Cell Carcinoma",
+        "entity_type": "concept",
+        "description": "A common type of skin cancer that is the subject of the text.",
+        "source_id": "doc-7e278c8064848a055817975088ed08f8-chunk-000",
+        "file_path": "unknown_source",
+        "created_at": 1788532589
+      },
+      {
+        "entity_name": "Immunosuppressive Medicines",
+        "entity_type": "artifact",
+        "description": "Medications taken by organ transplant recipients to prevent graft rejection, which weaken immune surveillance.",
+        "source_id": "doc-7e278c8064848a055817975088ed08f8-chunk-000",
+        "file_path": "unknown_source",
+        "created_at": 1788532589
+      },
+      {
+        "entity_name": "Ultraviolet Radiation",
+        "entity_type": "naturalobject",
+        "description": "A form of radiation that can damage DNA in skin cells and is a major risk factor for basal cell carcinoma.",
+        "source_id": "doc-7e278c8064848a055817975088ed08f8-chunk-000",
+        "file_path": "unknown_source",
+        "created_at": 1788532589
+      },
+      {
+        "entity_name": "Immunosuppression",
+        "entity_type": "concept",
+        "description": "The state of weakened immune surveillance resulting from immunosuppressive medicines, increasing the risk of basal cell carcinoma.",
+        "source_id": "doc-7e278c8064848a055817975088ed08f8-chunk-000",
+        "file_path": "unknown_source",
+        "created_at": 1788532589
+      },
+      {
+        "entity_name": "Mohs Surgery",
+        "entity_type": "method",
+        "description": "A surgical technique that removes thin layers of cancer-containing skin, commonly used for high-risk basal cell carcinoma in cosmetically sensitive areas.",
+        "source_id": "doc-7e278c8064848a055817975088ed08f8-chunk-000",
+        "file_path": "unknown_source",
+        "created_at": 1788532589
+      },
+      {
+        "entity_name": "Skin Cells",
+        "entity_type": "other",
+        "description": "Cells in the skin that can be damaged by ultraviolet radiation, potentially leading to cancer.",
+        "source_id": "doc-7e278c8064848a055817975088ed08f8-chunk-000",
+        "file_path": "unknown_source",
+        "created_at": 1788532589
+      },
+      {
+        "entity_name": "DNA",
+        "entity_type": "naturalobject",
+        "description": "The genetic material in skin cells that can be damaged by ultraviolet radiation.",
+        "source_id": "doc-7e278c8064848a055817975088ed08f8-chunk-000",
+        "file_path": "unknown_source",
+        "created_at": 1788532589
+      }
+    ],
+    "relations": [
+      {
+        "src_id": "Basal Cell Carcinoma",
+        "tgt_id": "Ultraviolet Radiation",
+        "description": "Ultraviolet radiation is a major risk factor for basal cell carcinoma.",
+        "keywords": "cause,risk factor",
+        "weight": 1.0,
+        "source_id": "doc-7e278c8064848a055817975088ed08f8-chunk-000",
+        "file_path": "unknown_source",
+        "created_at": 1788532589
+      },
+      {
+        "src_id": "Basal Cell Carcinoma",
+        "tgt_id": "Immunosuppression",
+        "description": "Immunosuppression increases the risk of basal cell carcinoma.",
+        "keywords": "increase,risk factor",
+        "weight": 1.0,
+        "source_id": "doc-7e278c8064848a055817975088ed08f8-chunk-000",
+        "file_path": "unknown_source",
+        "created_at": 1788532589
+      },
+      {
+        "src_id": "Immunosuppression",
+        "tgt_id": "Immunosuppressive Medicines",
+        "description": "Immunosuppressive medicines cause immunosuppression, which weakens immune surveillance.",
+        "keywords": "cause,effect",
+        "weight": 1.0,
+        "source_id": "doc-7e278c8064848a055817975088ed08f8-chunk-000",
+        "file_path": "unknown_source",
+        "created_at": 1788532589
+      },
+      {
+        "src_id": "Basal Cell Carcinoma",
+        "tgt_id": "Mohs Surgery",
+        "description": "Mohs surgery is used to remove basal cell carcinoma, especially high-risk cases in cosmetically sensitive areas.",
+        "keywords": "removal,treatment",
+        "weight": 1.0,
+        "source_id": "doc-7e278c8064848a055817975088ed08f8-chunk-000",
+        "file_path": "unknown_source",
+        "created_at": 1788532589
+      },
+      {
+        "src_id": "DNA",
+        "tgt_id": "Ultraviolet Radiation",
+        "description": "Ultraviolet radiation can damage DNA in skin cells.",
+        "keywords": "damage,risk factor",
+        "weight": 1.0,
+        "source_id": "doc-7e278c8064848a055817975088ed08f8-chunk-000",
+        "file_path": "unknown_source",
+        "created_at": 1788532589
+      },
+      {
+        "src_id": "DNA",
+        "tgt_id": "Skin Cells",
+        "description": "DNA is located in skin cells and can be damaged by ultraviolet radiation.",
+        "keywords": "damage,location",
+        "weight": 1.0,
+        "source_id": "doc-7e278c8064848a055817975088ed08f8-chunk-000",
+        "file_path": "unknown_source",
+        "created_at": 1788532589
+      },
+      {
+        "src_id": "Immunosuppressive Medicines",
+        "tgt_id": "Organ Transplant Recipients",
+        "description": "Organ transplant recipients take immunosuppressive medicines to prevent graft rejection.",
+        "keywords": "prevention,treatment",
+        "weight": 1.0,
+        "source_id": "doc-7e278c8064848a055817975088ed08f8-chunk-000",
+        "file_path": "unknown_source",
+        "created_at": 1788532589
+      }
+    ],
+    "paths": [],
+    "input_tokens": 2239,
+    "output_tokens": 83,
+    "llm_calls": 2,
+    "retrieval_time_ms": 1027.4344000499696,
+    "generation_time_ms": 812.6655000960454,
+    "total_time_ms": 1840.178200043738,
+    "retrieval_metadata": {
+      "query_mode": "hybrid",
+      "keywords": {
+        "high_level": [
+          "risk factors",
+          "basal cell carcinoma"
+        ],
+        "low_level": [
+          "ultraviolet exposure",
+          "immunosuppression",
+          "organ transplantation"
+        ]
+      },
+      "processing_info": {
+        "total_entities_found": 8,
+        "total_relations_found": 7,
+        "entities_after_truncation": 8,
+        "relations_after_truncation": 7,
+        "merged_chunks_count": 1,
+        "final_chunks_count": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "corpus_sha256": "3227bff90272429591b97f4ff73baa7632f479afb3884bd8be8c77810f37e3d1",
+  "upstream": "HKUDS/LightRAG@28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c",
+  "index_identity": {
+    "upstream": "HKUDS/LightRAG@28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c",
+    "llm_model": "deepseek-chat",
+    "embedding_model": "bge-m3",
+    "embedding_dimension": 1024,
+    "chunk_tokens": 300,
+    "chunk_overlap_tokens": 30
+  },
+  "index_stats": {
+    "method": "lightrag",
+    "index_time_ms": 5899.366699974053,
+    "input_tokens": 4864,
+    "output_tokens": 739,
+    "llm_calls": 2,
+    "cached": false,
+    "graph_path": "C:\\Users\\Lenovo\\2026graph\\results_api\\smoke\\indexes\\lightrag\\medical\\graph_chunk_entity_relation.graphml",
+    "graph_nodes": 8,
+    "graph_edges": 7
+  }
+}

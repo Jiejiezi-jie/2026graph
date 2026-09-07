@@ -1,0 +1,129 @@
+{
+  "note": "Non-official lexical diagnostics for 10 existing rows; not answer correctness.",
+  "rows": {
+    "vector": [
+      {
+        "question_id": "Medical-b7f57756",
+        "question_type": "Fact Retrieval",
+        "rouge_l_proxy": 0.23880597014925373,
+        "ground_truth_token_coverage": 1.0
+      },
+      {
+        "question_id": "Medical-0535a6b1",
+        "question_type": "Fact Retrieval",
+        "rouge_l_proxy": 0.25,
+        "ground_truth_token_coverage": 0.5714285714285714
+      },
+      {
+        "question_id": "Medical-a4081e18",
+        "question_type": "Fact Retrieval",
+        "rouge_l_proxy": 0.2926829268292683,
+        "ground_truth_token_coverage": 0.6153846153846154
+      },
+      {
+        "question_id": "Medical-ff590b8b",
+        "question_type": "Fact Retrieval",
+        "rouge_l_proxy": 0.41025641025641024,
+        "ground_truth_token_coverage": 0.5625
+      },
+      {
+        "question_id": "Medical-4cfb5a3a",
+        "question_type": "Fact Retrieval",
+        "rouge_l_proxy": 0.16,
+        "ground_truth_token_coverage": 0.5
+      },
+      {
+        "question_id": "Medical-5a6b98a7",
+        "question_type": "Complex Reasoning",
+        "rouge_l_proxy": 0.1917808219178082,
+        "ground_truth_token_coverage": 0.5333333333333333
+      },
+      {
+        "question_id": "Medical-09eac393",
+        "question_type": "Complex Reasoning",
+        "rouge_l_proxy": 0.3673469387755102,
+        "ground_truth_token_coverage": 0.5625
+      },
+      {
+        "question_id": "Medical-6e3e48fa",
+        "question_type": "Complex Reasoning",
+        "rouge_l_proxy": 0.14285714285714285,
+        "ground_truth_token_coverage": 0.8
+      },
+      {
+        "question_id": "Medical-7fba506d",
+        "question_type": "Complex Reasoning",
+        "rouge_l_proxy": 0.26666666666666666,
+        "ground_truth_token_coverage": 0.631578947368421
+      },
+      {
+        "question_id": "Medical-da2b7d6f",
+        "question_type": "Complex Reasoning",
+        "rouge_l_proxy": 0.2553191489361702,
+        "ground_truth_token_coverage": 0.6666666666666666
+      }
+    ],
+    "lightrag": [
+      {
+        "question_id": "Medical-b7f57756",
+        "question_type": "Fact Retrieval",
+        "rouge_l_proxy": 0.35714285714285715,
+        "ground_truth_token_coverage": 0.7777777777777778
+      },
+      {
+        "question_id": "Medical-0535a6b1",
+        "question_type": "Fact Retrieval",
+        "rouge_l_proxy": 0.7,
+        "ground_truth_token_coverage": 1.0
+      },
+      {
+        "question_id": "Medical-a4081e18",
+        "question_type": "Fact Retrieval",
+        "rouge_l_proxy": 0.375,
+        "ground_truth_token_coverage": 0.6153846153846154
+      },
+      {
+        "question_id": "Medical-ff590b8b",
+        "question_type": "Fact Retrieval",
+        "rouge_l_proxy": 0.5142857142857142,
+        "ground_truth_token_coverage": 0.5625
+      },
+      {
+        "question_id": "Medical-4cfb5a3a",
+        "question_type": "Fact Retrieval",
+        "rouge_l_proxy": 0.17391304347826086,
+        "ground_truth_token_coverage": 0.5
+      },
+      {
+        "question_id": "Medical-5a6b98a7",
+        "question_type": "Complex Reasoning",
+        "rouge_l_proxy": 0.0,
+        "ground_truth_token_coverage": 0.0
+      },
+      {
+        "question_id": "Medical-09eac393",
+        "question_type": "Complex Reasoning",
+        "rouge_l_proxy": 0.24242424242424243,
+        "ground_truth_token_coverage": 0.625
+      },
+      {
+        "question_id": "Medical-6e3e48fa",
+        "question_type": "Complex Reasoning",
+        "rouge_l_proxy": 0.23728813559322035,
+        "ground_truth_token_coverage": 0.8
+      },
+      {
+        "question_id": "Medical-7fba506d",
+        "question_type": "Complex Reasoning",
+        "rouge_l_proxy": 0.10638297872340426,
+        "ground_truth_token_coverage": 0.3157894736842105
+      },
+      {
+        "question_id": "Medical-da2b7d6f",
+        "question_type": "Complex Reasoning",
+        "rouge_l_proxy": 0.3404255319148936,
+        "ground_truth_token_coverage": 0.5333333333333333
+      }
+    ]
+  }
+}

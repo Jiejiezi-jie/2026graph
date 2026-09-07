@@ -1,0 +1,304 @@
+{
+  "status": "passed",
+  "backend": "pathrag",
+  "llm_model": "deepseek-chat",
+  "embedding_model": "bge-m3",
+  "index": {
+    "method": "pathrag",
+    "index_time_ms": 31902.854299987666,
+    "input_tokens": 5597,
+    "output_tokens": 1493,
+    "llm_calls": 2,
+    "cached": false,
+    "graph_path": "C:\\Users\\Lenovo\\2026graph\\results_api\\smoke\\indexes\\pathrag\\graph_chunk_entity_relation.graphml",
+    "graph_nodes": 12,
+    "graph_edges": 13
+  },
+  "result": {
+    "question_id": "api-smoke-1",
+    "method": "pathrag",
+    "answer": "Ultraviolet radiation damages DNA in skin cells, which is a major risk factor for developing basal cell carcinoma. Immunosuppression weakens immune surveillance, reducing the body's ability to detect and destroy cancer cells, which also increases the risk of basal cell carcinoma.",
+    "contexts": [
+      "Basal cell carcinoma (BCC) is a common skin cancer. Ultraviolet radiation can"
+    ],
+    "entities": [
+      {
+        "id": "0",
+        "entity": "IMMUNOSUPPRESSION",
+        "type": "CATEGORY",
+        "description": "Immunosuppression is the state of reduced immune system activity, often induced by medications. It weakens immune surveillance, allowing cancer cells to develop and grow, thereby increasing the risk of basal cell carcinoma.",
+        "rank": "3"
+      },
+      {
+        "id": "1",
+        "entity": "BASAL CELL CARCINOMA",
+        "type": "CATEGORY",
+        "description": "Basal cell carcinoma (BCC) is a common type of skin cancer that arises from basal cells in the epidermis. It is characterized by abnormal growth of these cells, often caused by DNA damage from ultraviolet radiation.",
+        "rank": "5"
+      },
+      {
+        "id": "2",
+        "entity": "ORGAN TRANSPLANT RECIPIENTS",
+        "type": "PERSON",
+        "description": "Organ transplant recipients are individuals who have received an organ transplant and take immunosuppressive medicines to prevent graft rejection. This immunosuppression increases their risk of developing basal cell carcinoma.",
+        "rank": "3"
+      },
+      {
+        "id": "3",
+        "entity": "ULTRAVIOLET RADIATION",
+        "type": "CATEGORY",
+        "description": "Ultraviolet radiation is a form of electromagnetic radiation from the sun or artificial sources. It can damage DNA in skin cells and is a major risk factor for developing basal cell carcinoma.",
+        "rank": "2"
+      },
+      {
+        "id": "4",
+        "entity": "SKIN CELLS",
+        "type": "CATEGORY",
+        "description": "Skin cells are the cells in the epidermis that can be damaged by ultraviolet radiation, and their DNA damage is a precursor to basal cell carcinoma development.",
+        "rank": "2"
+      },
+      {
+        "id": "5",
+        "entity": "IMMUNOSUPPRESSIVE MEDICINES",
+        "type": "CATEGORY",
+        "description": "Immunosuppressive medicines are drugs that reduce the activity of the immune system. They are used in organ transplant recipients to prevent graft rejection but weaken immune surveillance, increasing the risk of skin cancers like BCC.",
+        "rank": "2"
+      },
+      {
+        "id": "6",
+        "entity": "DNA",
+        "type": "CATEGORY",
+        "description": "DNA (deoxyribonucleic acid) is the genetic material in skin cells that can be damaged by ultraviolet radiation, leading to mutations that may cause basal cell carcinoma.",
+        "rank": "2"
+      },
+      {
+        "id": "7",
+        "entity": "IMMUNE SURVEILLANCE",
+        "type": "CATEGORY",
+        "description": "Immune surveillance is the process by which the immune system detects and destroys abnormal cells, including cancer cells. Immunosuppression weakens this process, increasing cancer risk.",
+        "rank": "1"
+      },
+      {
+        "id": "8",
+        "entity": "GRAFT REJECTION",
+        "type": "EVENT",
+        "description": "Graft rejection is an immune response where the body attacks a transplanted organ. Immunosuppressive medicines are used to prevent this rejection in organ transplant recipients.",
+        "rank": "1"
+      },
+      {
+        "id": "0",
+        "entity": "ULTRAVIOLET RADIATION",
+        "type": "CATEGORY",
+        "description": "Ultraviolet radiation is a form of electromagnetic radiation from the sun or artificial sources. It can damage DNA in skin cells and is a major risk factor for developing basal cell carcinoma.",
+        "rank": "2"
+      },
+      {
+        "id": "1",
+        "entity": "DNA",
+        "type": "CATEGORY",
+        "description": "DNA (deoxyribonucleic acid) is the genetic material in skin cells that can be damaged by ultraviolet radiation, leading to mutations that may cause basal cell carcinoma.",
+        "rank": "2"
+      },
+      {
+        "id": "2",
+        "entity": "SKIN CELLS",
+        "type": "CATEGORY",
+        "description": "Skin cells are the cells in the epidermis that can be damaged by ultraviolet radiation, and their DNA damage is a precursor to basal cell carcinoma development.",
+        "rank": "2"
+      },
+      {
+        "id": "3",
+        "entity": "IMMUNE SURVEILLANCE",
+        "type": "CATEGORY",
+        "description": "Immune surveillance is the process by which the immune system detects and destroys abnormal cells, including cancer cells. Immunosuppression weakens this process, increasing cancer risk.",
+        "rank": "1"
+      },
+      {
+        "id": "4",
+        "entity": "ORGAN TRANSPLANT RECIPIENTS",
+        "type": "PERSON",
+        "description": "Organ transplant recipients are individuals who have received an organ transplant and take immunosuppressive medicines to prevent graft rejection. This immunosuppression increases their risk of developing basal cell carcinoma.",
+        "rank": "3"
+      },
+      {
+        "id": "5",
+        "entity": "BASAL CELL CARCINOMA",
+        "type": "CATEGORY",
+        "description": "Basal cell carcinoma (BCC) is a common type of skin cancer that arises from basal cells in the epidermis. It is characterized by abnormal growth of these cells, often caused by DNA damage from ultraviolet radiation.",
+        "rank": "5"
+      },
+      {
+        "id": "6",
+        "entity": "IMMUNOSUPPRESSIVE MEDICINES",
+        "type": "CATEGORY",
+        "description": "Immunosuppressive medicines are drugs that reduce the activity of the immune system. They are used in organ transplant recipients to prevent graft rejection but weaken immune surveillance, increasing the risk of skin cancers like BCC.",
+        "rank": "2"
+      },
+      {
+        "id": "7",
+        "entity": "IMMUNOSUPPRESSION",
+        "type": "CATEGORY",
+        "description": "Immunosuppression is the state of reduced immune system activity, often induced by medications. It weakens immune surveillance, allowing cancer cells to develop and grow, thereby increasing the risk of basal cell carcinoma.",
+        "rank": "3"
+      },
+      {
+        "id": "8",
+        "entity": "GRAFT REJECTION",
+        "type": "EVENT",
+        "description": "Graft rejection is an immune response where the body attacks a transplanted organ. Immunosuppressive medicines are used to prevent this rejection in organ transplant recipients.",
+        "rank": "1"
+      },
+      {
+        "id": "9",
+        "entity": "HIGH-RISK BCC",
+        "type": "CATEGORY",
+        "description": "High-risk basal cell carcinoma refers to BCC that has features such as large size, deep invasion, or location in cosmetically sensitive areas, requiring specialized treatment like Mohs surgery.",
+        "rank": "1"
+      }
+    ],
+    "relations": [
+      {
+        "id": "0",
+        "source": "IMMUNOSUPPRESSION",
+        "target": "BASAL CELL CARCINOMA",
+        "description": "Immunosuppression weakens immune surveillance, which increases the risk of developing basal cell carcinoma.",
+        "keywords": "causation, risk factor",
+        "weight": "8.0",
+        "rank": "8"
+      },
+      {
+        "id": "1",
+        "source": "ORGAN TRANSPLANT RECIPIENTS",
+        "target": "BASAL CELL CARCINOMA",
+        "description": "Organ transplant recipients, due to immunosuppression, have an increased risk of developing basal cell carcinoma.",
+        "keywords": "risk, susceptibility",
+        "weight": "7.0",
+        "rank": "8"
+      },
+      {
+        "id": "2",
+        "source": "ULTRAVIOLET RADIATION",
+        "target": "BASAL CELL CARCINOMA",
+        "description": "Ultraviolet radiation damages DNA in skin cells, which is a major risk factor for the development of basal cell carcinoma.",
+        "keywords": "causation, risk factor",
+        "weight": "9.0",
+        "rank": "7"
+      },
+      {
+        "id": "3",
+        "source": "SKIN CELLS",
+        "target": "BASAL CELL CARCINOMA",
+        "description": "Basal cell carcinoma originates from abnormal growth of basal cells in the skin, which are a type of skin cell.",
+        "keywords": "biological origin, cancer development",
+        "weight": "9.0",
+        "rank": "7"
+      },
+      {
+        "id": "4",
+        "source": "ORGAN TRANSPLANT RECIPIENTS",
+        "target": "IMMUNOSUPPRESSION",
+        "description": "Organ transplant recipients experience immunosuppression due to their medications, which increases their risk of BCC.",
+        "keywords": "causation, risk factor",
+        "weight": "8.0",
+        "rank": "6"
+      },
+      {
+        "id": "5",
+        "source": "IMMUNOSUPPRESSIVE MEDICINES",
+        "target": "ORGAN TRANSPLANT RECIPIENTS",
+        "description": "Organ transplant recipients take immunosuppressive medicines to prevent graft rejection, which is a direct medical intervention.",
+        "keywords": "treatment, prevention",
+        "weight": "8.0",
+        "rank": "5"
+      },
+      {
+        "id": "6",
+        "source": "ULTRAVIOLET RADIATION",
+        "target": "DNA",
+        "description": "Ultraviolet radiation damages DNA in skin cells, which is a key step in the development of basal cell carcinoma.",
+        "keywords": "causation, DNA damage",
+        "weight": "9.0",
+        "rank": "4"
+      },
+      {
+        "id": "7",
+        "source": "IMMUNOSUPPRESSION",
+        "target": "IMMUNE SURVEILLANCE",
+        "description": "Immunosuppression weakens immune surveillance, reducing the body's ability to detect and destroy cancer cells.",
+        "keywords": "causation, immune function",
+        "weight": "8.0",
+        "rank": "4"
+      },
+      {
+        "id": "8",
+        "source": "DNA",
+        "target": "SKIN CELLS",
+        "description": "DNA is contained within skin cells, and damage to this DNA can lead to cancer formation.",
+        "keywords": "biological structure, damage",
+        "weight": "8.0",
+        "rank": "4"
+      },
+      {
+        "id": "9",
+        "source": "IMMUNOSUPPRESSIVE MEDICINES",
+        "target": "GRAFT REJECTION",
+        "description": "Immunosuppressive medicines are taken to prevent graft rejection in organ transplant recipients.",
+        "keywords": "prevention, medical treatment",
+        "weight": "9.0",
+        "rank": "3"
+      },
+      {
+        "id": "0",
+        "context": "['The entity \"BASAL CELL CARCINOMA\" is a \"CATEGORY\" with the description(\"Basal cell carcinoma (BCC) is a common type of skin cancer that arises from basal cells in the epidermis. It is characterized by abnormal growth of these cells, often caused by DNA damage from ultraviolet radiation.\")through edge(\"treatment, intervention\") to connect to \"BASAL CELL CARCINOMA\" and \"MOHS SURGERY\".The entity \"MOHS SURGERY\" is a \"EVENT\" with the description(\"Mohs surgery is a precise surgical technique used to remove skin cancer layer by layer, examining each layer for cancer cells until no more are found. It is commonly used for high-risk basal cell carcinoma in cosmetically sensitive areas.\")andThe entity \"MOHS SURGERY\" is a \"EVENT\" with the description(\"Mohs surgery is a precise surgical technique used to remove skin cancer layer by layer, examining each layer for cancer cells until no more are found. It is commonly used for high-risk basal cell carcinoma in cosmetically sensitive areas.\")through edge(\"treatment, precision\") to connect to \"MOHS SURGERY\" and \"HIGH-RISK BCC\".The entity \"HIGH-RISK BCC\" is a \"CATEGORY\" with the description(\"High-risk basal cell carcinoma refers to BCC that has features such as large size, deep invasion, or location in cosmetically sensitive areas, requiring specialized treatment like Mohs surgery.\")']"
+      },
+      {
+        "id": "1",
+        "context": "['The entity \"ORGAN TRANSPLANT RECIPIENTS\" is a \"PERSON\" with the description(\"Organ transplant recipients are individuals who have received an organ transplant and take immunosuppressive medicines to prevent graft rejection. This immunosuppression increases their risk of developing basal cell carcinoma.\")through edge(\"treatment, prevention\") to connect to \"ORGAN TRANSPLANT RECIPIENTS\" and \"IMMUNOSUPPRESSIVE MEDICINES\".The entity \"IMMUNOSUPPRESSIVE MEDICINES\" is a \"CATEGORY\" with the description(\"Immunosuppressive medicines are drugs that reduce the activity of the immune system. They are used in organ transplant recipients to prevent graft rejection but weaken immune surveillance, increasing the risk of skin cancers like BCC.\")andThe entity \"IMMUNOSUPPRESSIVE MEDICINES\" is a \"CATEGORY\" with the description(\"Immunosuppressive medicines are drugs that reduce the activity of the immune system. They are used in organ transplant recipients to prevent graft rejection but weaken immune surveillance, increasing the risk of skin cancers like BCC.\")through edge(\"prevention, medical treatment\") to connect to \"IMMUNOSUPPRESSIVE MEDICINES\" and \"GRAFT REJECTION\".The entity \"GRAFT REJECTION\" is a \"EVENT\" with the description(\"Graft rejection is an immune response where the body attacks a transplanted organ. Immunosuppressive medicines are used to prevent this rejection in organ transplant recipients.\")']"
+      },
+      {
+        "id": "2",
+        "context": "['The entity \"IMMUNOSUPPRESSIVE MEDICINES\" is a \"CATEGORY\" with the description(\"Immunosuppressive medicines are drugs that reduce the activity of the immune system. They are used in organ transplant recipients to prevent graft rejection but weaken immune surveillance, increasing the risk of skin cancers like BCC.\")through edge(\"prevention, medical treatment\") to connect to \"IMMUNOSUPPRESSIVE MEDICINES\" and \"GRAFT REJECTION\".The entity \"GRAFT REJECTION\" is a \"EVENT\" with the description(\"Graft rejection is an immune response where the body attacks a transplanted organ. Immunosuppressive medicines are used to prevent this rejection in organ transplant recipients.\")']"
+      },
+      {
+        "id": "3",
+        "context": "['The entity \"ORGAN TRANSPLANT RECIPIENTS\" is a \"PERSON\" with the description(\"Organ transplant recipients are individuals who have received an organ transplant and take immunosuppressive medicines to prevent graft rejection. This immunosuppression increases their risk of developing basal cell carcinoma.\")through edge(\"treatment, prevention\") to connect to \"ORGAN TRANSPLANT RECIPIENTS\" and \"IMMUNOSUPPRESSIVE MEDICINES\".The entity \"IMMUNOSUPPRESSIVE MEDICINES\" is a \"CATEGORY\" with the description(\"Immunosuppressive medicines are drugs that reduce the activity of the immune system. They are used in organ transplant recipients to prevent graft rejection but weaken immune surveillance, increasing the risk of skin cancers like BCC.\")']"
+      },
+      {
+        "id": "4",
+        "context": "['The entity \"IMMUNE SURVEILLANCE\" is a \"CATEGORY\" with the description(\"Immune surveillance is the process by which the immune system detects and destroys abnormal cells, including cancer cells. Immunosuppression weakens this process, increasing cancer risk.\")through edge(\"causation, immune function\") to connect to \"IMMUNE SURVEILLANCE\" and \"IMMUNOSUPPRESSION\".The entity \"IMMUNOSUPPRESSION\" is a \"CATEGORY\" with the description(\"Immunosuppression is the state of reduced immune system activity, often induced by medications. It weakens immune surveillance, allowing cancer cells to develop and grow, thereby increasing the risk of basal cell carcinoma.\")']"
+      }
+    ],
+    "paths": [
+      [
+        "\"BASAL CELL CARCINOMA\"",
+        "\"MOHS SURGERY\"",
+        "\"MOHS SURGERY\"",
+        "\"HIGH-RISK BCC\""
+      ],
+      [
+        "\"ORGAN TRANSPLANT RECIPIENTS\"",
+        "\"IMMUNOSUPPRESSIVE MEDICINES\"",
+        "\"IMMUNOSUPPRESSIVE MEDICINES\"",
+        "\"GRAFT REJECTION\""
+      ],
+      [
+        "\"IMMUNOSUPPRESSIVE MEDICINES\"",
+        "\"GRAFT REJECTION\""
+      ],
+      [
+        "\"ORGAN TRANSPLANT RECIPIENTS\"",
+        "\"IMMUNOSUPPRESSIVE MEDICINES\""
+      ],
+      [
+        "\"IMMUNE SURVEILLANCE\"",
+        "\"IMMUNOSUPPRESSION\""
+      ]
+    ],
+    "input_tokens": 3581,
+    "output_tokens": 133,
+    "llm_calls": 2,
+    "retrieval_time_ms": 1209.7806999227032,
+    "generation_time_ms": 686.3801999716088,
+    "total_time_ms": 1897.2550999606028
+  }
+}

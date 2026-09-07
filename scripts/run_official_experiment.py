@@ -10,8 +10,8 @@ from typing import Any
 from src.data import load_medical_benchmark
 from src.official_backends.lightrag_backend import LightRAGBackend
 from src.official_backends.model_client import (
-    TransformersChatClient,
-    TransformersEmbeddingClient,
+    build_chat_client,
+    build_embedding_client,
 )
 from src.official_backends.pathrag_backend import PathRAGBackend
 from src.official_backends.vector_backend import VectorRAGBackend
@@ -24,6 +24,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--stage", choices=["p0", "p1"], default="p0")
     parser.add_argument(
         "--backend", choices=["all", "vector", "lightrag", "pathrag"], default="all"
+    )
+    parser.add_argument(
+        "--p0-per-type",
+        type=int,
+        default=None,
+        help="Override the configured P0 questions per question type (for example, 20 gives 40 total).",
     )
     parser.add_argument("--skip-index", action="store_true")
     return parser.parse_args()
@@ -48,7 +54,10 @@ def _load_completed(path: Path) -> set[str]:
     with path.open(encoding="utf-8") as handle:
         for line in handle:
             if line.strip():
-                completed.add(json.loads(line)["question_id"])
+                row = json.loads(line)
+                # Failed rows must be retried when a run is resumed.
+                if not row.get("error"):
+                    completed.add(row["question_id"])
     return completed
 
 
@@ -92,8 +101,8 @@ def _build_backends(
     names: list[str],
     project_dir: Path,
     config: dict[str, Any],
-    llm: TransformersChatClient,
-    embedding: TransformersEmbeddingClient,
+    llm: Any,
+    embedding: Any,
 ) -> dict[str, Any]:
     results_dir = _resolve(project_dir, config["results_dir"])
     common = {
@@ -116,6 +125,9 @@ def _build_backends(
             working_dir=results_dir / "indexes" / "lightrag",
             top_k=config["lightrag_top_k"],
             chunk_top_k=config["lightrag_chunk_top_k"],
+            max_entity_tokens=config.get("lightrag_max_entity_tokens", 1500),
+            max_relation_tokens=config.get("lightrag_max_relation_tokens", 1500),
+            max_total_tokens=config.get("lightrag_max_total_tokens", 12000),
             **common,
         )
     if "pathrag" in names:
@@ -143,8 +155,11 @@ async def main() -> None:
         config["p1_per_type"],
         config["seed"],
     )
+    p0_per_type = config["p0_per_type"] if args.p0_per_type is None else args.p0_per_type
+    if p0_per_type <= 0:
+        raise ValueError("--p0-per-type must be positive")
     questions = (
-        p0_subset(p1_rows, config["question_types"], config["p0_per_type"])
+        p0_subset(p1_rows, config["question_types"], p0_per_type)
         if args.stage == "p0"
         else p1_rows
     )
@@ -152,27 +167,13 @@ async def main() -> None:
     _write_jsonl(split_dir / "p1_questions.jsonl", p1_rows)
     _write_jsonl(
         split_dir / "p0_questions.jsonl",
-        p0_subset(p1_rows, config["question_types"], config["p0_per_type"]),
+        p0_subset(p1_rows, config["question_types"], p0_per_type),
     )
 
     llm_config = config["llm"]
     embedding_config = config["embedding"]
-    llm = TransformersChatClient(
-        model_path=llm_config["model_path"],
-        device=llm_config["device"],
-        dtype=llm_config["dtype"],
-        temperature=llm_config["temperature"],
-        max_new_tokens=llm_config["max_new_tokens"],
-        max_callback_new_tokens=llm_config["max_callback_new_tokens"],
-        trust_remote_code=llm_config["trust_remote_code"],
-    )
-    embedding = TransformersEmbeddingClient(
-        model_path=embedding_config["model_path"],
-        device=embedding_config["device"],
-        batch_size=embedding_config["batch_size"],
-        max_length=embedding_config["max_length"],
-        normalize=embedding_config["normalize"],
-    )
+    llm = build_chat_client(llm_config)
+    embedding = build_embedding_client(embedding_config)
     names = ["vector", "lightrag", "pathrag"] if args.backend == "all" else [args.backend]
     backends = _build_backends(names, project_dir, config, llm, embedding)
     stage_dir = results_dir / args.stage

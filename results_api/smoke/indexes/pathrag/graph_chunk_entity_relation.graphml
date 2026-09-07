@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d5" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="&quot;IMMUNOSUPPRESSION&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Immunosuppression is the state of reduced immune system activity, often induced by medications. It weakens immune surveillance, allowing cancer cells to develop and grow, thereby increasing the risk of basal cell carcinoma."</data>
+      <data key="d2">chunk-7e278c8064848a055817975088ed08f8</data>
+    </node>
+    <node id="&quot;SKIN CELLS&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Skin cells are the cells in the epidermis that can be damaged by ultraviolet radiation, and their DNA damage is a precursor to basal cell carcinoma development."</data>
+      <data key="d2">chunk-7e278c8064848a055817975088ed08f8</data>
+    </node>
+    <node id="&quot;HIGH-RISK BCC&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"High-risk basal cell carcinoma refers to BCC that has features such as large size, deep invasion, or location in cosmetically sensitive areas, requiring specialized treatment like Mohs surgery."</data>
+      <data key="d2">chunk-7e278c8064848a055817975088ed08f8</data>
+    </node>
+    <node id="&quot;ULTRAVIOLET RADIATION&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Ultraviolet radiation is a form of electromagnetic radiation from the sun or artificial sources. It can damage DNA in skin cells and is a major risk factor for developing basal cell carcinoma."</data>
+      <data key="d2">chunk-7e278c8064848a055817975088ed08f8</data>
+    </node>
+    <node id="&quot;BASAL CELL CARCINOMA&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Basal cell carcinoma (BCC) is a common type of skin cancer that arises from basal cells in the epidermis. It is characterized by abnormal growth of these cells, often caused by DNA damage from ultraviolet radiation."</data>
+      <data key="d2">chunk-7e278c8064848a055817975088ed08f8</data>
+    </node>
+    <node id="&quot;IMMUNOSUPPRESSIVE MEDICINES&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Immunosuppressive medicines are drugs that reduce the activity of the immune system. They are used in organ transplant recipients to prevent graft rejection but weaken immune surveillance, increasing the risk of skin cancers like BCC."</data>
+      <data key="d2">chunk-7e278c8064848a055817975088ed08f8</data>
+    </node>
+    <node id="&quot;DNA&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"DNA (deoxyribonucleic acid) is the genetic material in skin cells that can be damaged by ultraviolet radiation, leading to mutations that may cause basal cell carcinoma."</data>
+      <data key="d2">chunk-7e278c8064848a055817975088ed08f8</data>
+    </node>
+    <node id="&quot;IMMUNE SURVEILLANCE&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Immune surveillance is the process by which the immune system detects and destroys abnormal cells, including cancer cells. Immunosuppression weakens this process, increasing cancer risk."</data>
+      <data key="d2">chunk-7e278c8064848a055817975088ed08f8</data>
+    </node>
+    <node id="&quot;ORGAN TRANSPLANT RECIPIENTS&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Organ transplant recipients are individuals who have received an organ transplant and take immunosuppressive medicines to prevent graft rejection. This immunosuppression increases their risk of developing basal cell carcinoma."</data>
+      <data key="d2">chunk-7e278c8064848a055817975088ed08f8</data>
+    </node>
+    <node id="&quot;MOHS SURGERY&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Mohs surgery is a precise surgical technique used to remove skin cancer layer by layer, examining each layer for cancer cells until no more are found. It is commonly used for high-risk basal cell carcinoma in cosmetically sensitive areas."</data>
+      <data key="d2">chunk-7e278c8064848a055817975088ed08f8</data>
+    </node>
+    <node id="&quot;GRAFT REJECTION&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Graft rejection is an immune response where the body attacks a transplanted organ. Immunosuppressive medicines are used to prevent this rejection in organ transplant recipients."</data>
+      <data key="d2">chunk-7e278c8064848a055817975088ed08f8</data>
+    </node>
+    <node id="&quot;COSMETICALLY SENSITIVE AREAS&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Cosmetically sensitive areas are parts of the body where preserving appearance is important, such as the face, ears, or neck. Mohs surgery is preferred for BCC in these areas to minimize scarring."</data>
+      <data key="d2">chunk-7e278c8064848a055817975088ed08f8</data>
+    </node>
+    <edge source="&quot;IMMUNOSUPPRESSION&quot;" target="&quot;IMMUNE SURVEILLANCE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Immunosuppression weakens immune surveillance, reducing the body's ability to detect and destroy cancer cells."</data>
+      <data key="d5">"causation, immune function"</data>
+      <data key="d6">chunk-7e278c8064848a055817975088ed08f8</data>
+    </edge>
+    <edge source="&quot;IMMUNOSUPPRESSION&quot;" target="&quot;BASAL CELL CARCINOMA&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Immunosuppression weakens immune surveillance, which increases the risk of developing basal cell carcinoma."</data>
+      <data key="d5">"causation, risk factor"</data>
+      <data key="d6">chunk-7e278c8064848a055817975088ed08f8</data>
+    </edge>
+    <edge source="&quot;SKIN CELLS&quot;" target="&quot;BASAL CELL CARCINOMA&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Basal cell carcinoma originates from abnormal growth of basal cells in the skin, which are a type of skin cell."</data>
+      <data key="d5">"biological origin, cancer development"</data>
+      <data key="d6">chunk-7e278c8064848a055817975088ed08f8</data>
+    </edge>
+    <edge source="&quot;ULTRAVIOLET RADIATION&quot;" target="&quot;BASAL CELL CARCINOMA&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Ultraviolet radiation damages DNA in skin cells, which is a major risk factor for the development of basal cell carcinoma."</data>
+      <data key="d5">"causation, risk factor"</data>
+      <data key="d6">chunk-7e278c8064848a055817975088ed08f8</data>
+    </edge>
+    <edge source="&quot;ULTRAVIOLET RADIATION&quot;" target="&quot;DNA&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Ultraviolet radiation damages DNA in skin cells, which is a key step in the development of basal cell carcinoma."</data>
+      <data key="d5">"causation, DNA damage"</data>
+      <data key="d6">chunk-7e278c8064848a055817975088ed08f8</data>
+    </edge>
+    <edge source="&quot;IMMUNOSUPPRESSIVE MEDICINES&quot;" target="&quot;GRAFT REJECTION&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Immunosuppressive medicines are taken to prevent graft rejection in organ transplant recipients."</data>
+      <data key="d5">"prevention, medical treatment"</data>
+      <data key="d6">chunk-7e278c8064848a055817975088ed08f8</data>
+    </edge>
+    <edge source="&quot;IMMUNOSUPPRESSIVE MEDICINES&quot;" target="&quot;ORGAN TRANSPLANT RECIPIENTS&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Organ transplant recipients take immunosuppressive medicines to prevent graft rejection, which is a direct medical intervention."</data>
+      <data key="d5">"treatment, prevention"</data>
+      <data key="d6">chunk-7e278c8064848a055817975088ed08f8</data>
+    </edge>
+    <edge source="&quot;DNA&quot;" target="&quot;SKIN CELLS&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"DNA is contained within skin cells, and damage to this DNA can lead to cancer formation."</data>
+      <data key="d5">"biological structure, damage"</data>
+      <data key="d6">chunk-7e278c8064848a055817975088ed08f8</data>
+    </edge>
+    <edge source="&quot;ORGAN TRANSPLANT RECIPIENTS&quot;" target="&quot;BASAL CELL CARCINOMA&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Organ transplant recipients, due to immunosuppression, have an increased risk of developing basal cell carcinoma."</data>
+      <data key="d5">"risk, susceptibility"</data>
+      <data key="d6">chunk-7e278c8064848a055817975088ed08f8</data>
+    </edge>
+    <edge source="&quot;ORGAN TRANSPLANT RECIPIENTS&quot;" target="&quot;IMMUNOSUPPRESSION&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Organ transplant recipients experience immunosuppression due to their medications, which increases their risk of BCC."</data>
+      <data key="d5">"causation, risk factor"</data>
+      <data key="d6">chunk-7e278c8064848a055817975088ed08f8</data>
+    </edge>
+    <edge source="&quot;MOHS SURGERY&quot;" target="&quot;COSMETICALLY SENSITIVE AREAS&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Mohs surgery is preferred for BCC in cosmetically sensitive areas because it minimizes tissue loss and scarring."</data>
+      <data key="d5">"treatment, cosmetic preservation"</data>
+      <data key="d6">chunk-7e278c8064848a055817975088ed08f8</data>
+    </edge>
+    <edge source="&quot;MOHS SURGERY&quot;" target="&quot;HIGH-RISK BCC&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Mohs surgery is commonly used to treat high-risk basal cell carcinoma, ensuring complete removal while preserving healthy tissue."</data>
+      <data key="d5">"treatment, precision"</data>
+      <data key="d6">chunk-7e278c8064848a055817975088ed08f8</data>
+    </edge>
+    <edge source="&quot;MOHS SURGERY&quot;" target="&quot;BASAL CELL CARCINOMA&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Mohs surgery is a treatment method used to remove basal cell carcinoma, particularly high-risk cases in cosmetically sensitive areas."</data>
+      <data key="d5">"treatment, intervention"</data>
+      <data key="d6">chunk-7e278c8064848a055817975088ed08f8</data>
+    </edge>
+  </graph>
+</graphml>

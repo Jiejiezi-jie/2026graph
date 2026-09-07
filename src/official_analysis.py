@@ -12,6 +12,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 
 from src.official_backends.base import METHODS
 from src.router import build_router
+from src.official_evaluation import valid_evaluation
 
 
 def choose_official_silver(
@@ -108,6 +109,17 @@ def analyze_official(
     output_dir: Path,
     seed: int = 42,
 ) -> dict[str, Any]:
+    protocols = set()
+    for method, rows in rows_by_method.items():
+        ids = [row["question_id"] for row in rows]
+        if len(set(ids)) != len(ids):
+            raise ValueError(f"Duplicate question IDs for {method}")
+        invalid = [row["question_id"] for row in rows if not valid_evaluation(row)]
+        if invalid:
+            raise ValueError(f"{method}: {len(invalid)}/{len(rows)} invalid or legacy evaluations; re-evaluate before analysis")
+        protocols.update(row["evaluation"].get("protocol") for row in rows)
+    if len(protocols) != 1 or not next(iter(protocols), None):
+        raise ValueError("Evaluation protocols are missing or inconsistent")
     output_dir.mkdir(parents=True, exist_ok=True)
     backend_rows: dict[str, dict[str, dict]] = {}
     question_info: dict[str, dict] = {}
@@ -118,6 +130,11 @@ def analyze_official(
     for qid, methods in backend_rows.items():
         if set(methods) != set(METHODS):
             raise ValueError(f"Question {qid} is not aligned across all official backends")
+        reference = next(iter(methods.values()))
+        if any(any(row.get(k) != reference.get(k) for k in
+                   ("question", "ground_truth", "evidence", "question_type", "split"))
+               for row in methods.values()):
+            raise ValueError(f"Question {qid} has inconsistent references across backends")
 
     labels = []
     for qid in sorted(backend_rows):
@@ -210,8 +227,9 @@ def analyze_official(
             - policies["vector"]["answer_correctness"],
         },
         "judge_limitation": (
-            "GraphRAG-Bench official metric code was used, but the local judge is the same "
-            "Qwen2.5-VL-7B family as the generator; scores may contain self-evaluation bias."
+            "GraphRAG-Bench scoring formulas were used with validated judge responses. "
+            "The configured judge may share the generator's model family; "
+            "scores may contain self-evaluation bias and sampling variance."
         ),
     }
     with (output_dir / "silver_labels.jsonl").open("w", encoding="utf-8") as handle:

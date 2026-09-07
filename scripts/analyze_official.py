@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 from src.official_analysis import analyze_official
-from src.official_evaluation import load_jsonl
+from src.official_evaluation import fingerprint, load_jsonl
 
 
 def main() -> None:
@@ -21,6 +21,13 @@ def main() -> None:
         method: load_jsonl(stage_dir / f"{method}_evaluated.jsonl")
         for method in ("vector", "lightrag", "pathrag")
     }
+    for method, evaluated in rows.items():
+        source_rows = load_jsonl(stage_dir / f"{method}.jsonl")
+        sources = {row["question_id"]: fingerprint(row) for row in source_rows}
+        if len(sources) != len(source_rows) or set(sources) != {row["question_id"] for row in evaluated}:
+            raise ValueError(f"{method}: evaluation does not cover the current source question set")
+        if any(row.get("evaluation", {}).get("source") != sources[row["question_id"]] for row in evaluated):
+            raise ValueError(f"{method}: stale evaluations; re-evaluate current answers first")
     summary = analyze_official(rows, stage_dir / "analysis", seed=config["seed"])
     print(json.dumps(summary, indent=2, ensure_ascii=False))
 

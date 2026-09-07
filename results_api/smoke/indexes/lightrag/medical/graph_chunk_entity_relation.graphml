@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d13" for="edge" attr.name="truncate" attr.type="string" />
+  <key id="d12" for="edge" attr.name="created_at" attr.type="long" />
+  <key id="d11" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d10" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d9" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d8" for="edge" attr.name="description" attr.type="string" />
+  <key id="d7" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d6" for="node" attr.name="truncate" attr.type="string" />
+  <key id="d5" for="node" attr.name="created_at" attr.type="long" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Basal Cell Carcinoma">
+      <data key="d0">Basal Cell Carcinoma</data>
+      <data key="d1">concept</data>
+      <data key="d2">A common type of skin cancer that is the subject of the text.</data>
+      <data key="d3">doc-7e278c8064848a055817975088ed08f8-chunk-000</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1788532589</data>
+      <data key="d6" />
+    </node>
+    <node id="Ultraviolet Radiation">
+      <data key="d0">Ultraviolet Radiation</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">A form of radiation that can damage DNA in skin cells and is a major risk factor for basal cell carcinoma.</data>
+      <data key="d3">doc-7e278c8064848a055817975088ed08f8-chunk-000</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1788532589</data>
+      <data key="d6" />
+    </node>
+    <node id="DNA">
+      <data key="d0">DNA</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">The genetic material in skin cells that can be damaged by ultraviolet radiation.</data>
+      <data key="d3">doc-7e278c8064848a055817975088ed08f8-chunk-000</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1788532589</data>
+      <data key="d6" />
+    </node>
+    <node id="Skin Cells">
+      <data key="d0">Skin Cells</data>
+      <data key="d1">other</data>
+      <data key="d2">Cells in the skin that can be damaged by ultraviolet radiation, potentially leading to cancer.</data>
+      <data key="d3">doc-7e278c8064848a055817975088ed08f8-chunk-000</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1788532589</data>
+      <data key="d6" />
+    </node>
+    <node id="Organ Transplant Recipients">
+      <data key="d0">Organ Transplant Recipients</data>
+      <data key="d1">person</data>
+      <data key="d2">Individuals who have received organ transplants and take immunosuppressive medicines.</data>
+      <data key="d3">doc-7e278c8064848a055817975088ed08f8-chunk-000</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1788532589</data>
+      <data key="d6" />
+    </node>
+    <node id="Immunosuppressive Medicines">
+      <data key="d0">Immunosuppressive Medicines</data>
+      <data key="d1">artifact</data>
+      <data key="d2">Medications taken by organ transplant recipients to prevent graft rejection, which weaken immune surveillance.</data>
+      <data key="d3">doc-7e278c8064848a055817975088ed08f8-chunk-000</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1788532589</data>
+      <data key="d6" />
+    </node>
+    <node id="Immunosuppression">
+      <data key="d0">Immunosuppression</data>
+      <data key="d1">concept</data>
+      <data key="d2">The state of weakened immune surveillance resulting from immunosuppressive medicines, increasing the risk of basal cell carcinoma.</data>
+      <data key="d3">doc-7e278c8064848a055817975088ed08f8-chunk-000</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1788532589</data>
+      <data key="d6" />
+    </node>
+    <node id="Mohs Surgery">
+      <data key="d0">Mohs Surgery</data>
+      <data key="d1">method</data>
+      <data key="d2">A surgical technique that removes thin layers of cancer-containing skin, commonly used for high-risk basal cell carcinoma in cosmetically sensitive areas.</data>
+      <data key="d3">doc-7e278c8064848a055817975088ed08f8-chunk-000</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1788532589</data>
+      <data key="d6" />
+    </node>
+    <edge source="Basal Cell Carcinoma" target="Ultraviolet Radiation">
+      <data key="d7">1.0</data>
+      <data key="d8">Ultraviolet radiation is a major risk factor for basal cell carcinoma.</data>
+      <data key="d9">cause,risk factor</data>
+      <data key="d10">doc-7e278c8064848a055817975088ed08f8-chunk-000</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1788532589</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Basal Cell Carcinoma" target="Immunosuppression">
+      <data key="d7">1.0</data>
+      <data key="d8">Immunosuppression increases the risk of basal cell carcinoma.</data>
+      <data key="d9">increase,risk factor</data>
+      <data key="d10">doc-7e278c8064848a055817975088ed08f8-chunk-000</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1788532589</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Basal Cell Carcinoma" target="Mohs Surgery">
+      <data key="d7">1.0</data>
+      <data key="d8">Mohs surgery is used to remove basal cell carcinoma, especially high-risk cases in cosmetically sensitive areas.</data>
+      <data key="d9">removal,treatment</data>
+      <data key="d10">doc-7e278c8064848a055817975088ed08f8-chunk-000</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1788532589</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ultraviolet Radiation" target="DNA">
+      <data key="d7">1.0</data>
+      <data key="d8">Ultraviolet radiation can damage DNA in skin cells.</data>
+      <data key="d9">damage,risk factor</data>
+      <data key="d10">doc-7e278c8064848a055817975088ed08f8-chunk-000</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1788532589</data>
+      <data key="d13" />
+    </edge>
+    <edge source="DNA" target="Skin Cells">
+      <data key="d7">1.0</data>
+      <data key="d8">DNA is located in skin cells and can be damaged by ultraviolet radiation.</data>
+      <data key="d9">damage,location</data>
+      <data key="d10">doc-7e278c8064848a055817975088ed08f8-chunk-000</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1788532589</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Organ Transplant Recipients" target="Immunosuppressive Medicines">
+      <data key="d7">1.0</data>
+      <data key="d8">Organ transplant recipients take immunosuppressive medicines to prevent graft rejection.</data>
+      <data key="d9">prevention,treatment</data>
+      <data key="d10">doc-7e278c8064848a055817975088ed08f8-chunk-000</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1788532589</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Immunosuppressive Medicines" target="Immunosuppression">
+      <data key="d7">1.0</data>
+      <data key="d8">Immunosuppressive medicines cause immunosuppression, which weakens immune surveillance.</data>
+      <data key="d9">cause,effect</data>
+      <data key="d10">doc-7e278c8064848a055817975088ed08f8-chunk-000</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1788532589</data>
+      <data key="d13" />
+    </edge>
+  </graph>
+</graphml>
