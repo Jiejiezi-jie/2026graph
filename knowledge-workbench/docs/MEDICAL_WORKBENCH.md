@@ -2,7 +2,7 @@
 
 ## 队友拉取后的数据准备
 
-在仓库根目录执行 `git pull --ff-only origin codex/knowledge-workbench`，
+在仓库根目录执行 `git pull --ff-only origin main`（2026-09 整合后 workbench 与 Medical 评测内容全部位于 main），
 然后进入 `knowledge-workbench`。下文的新机器依赖、模型安装步骤均从此目录执行。
 Medical 索引和路由模型已在同一仓库的队友提交中，使用固定提交导入，不需要重新建图：
 
@@ -13,15 +13,16 @@ python scripts/prepare_medical.py --repo .. --ref 2ce4e23b98ac4405e3e1c80454e5da
 ```
 
 已有导入目录时跳过导入。PathRAG 的共享索引兼容副本会在首次查询时自动创建。
-模型权重、本地 Python 环境、API Key 和查询历史不随代码提交；
-原先上传的 Novel 索引保留在 `exports/Novel-4128-runtime`。
+模型权重、本地 Python 环境、API Key 和查询历史不随代码提交。
+2026-09 仓库整合后 Novel-4128 数据与产物已从仓库移除，Medical 是工作台唯一数据源；
+legacy 本地建图运行时代码保留但非默认路径。
 
 网页查询使用 `POST /api/query/stream`：分类完成推送 routing，
 检索完成推送 retrieval，最终回答推送 result。原 `POST /api/query` 仍可使用。
 
 这份接入基于队友仓库的 `origin/lightRAG`，当前导入提交为
 `2ce4e23b98ac4405e3e1c80454e5daef8e5f3b95`。
-现有知图页面、回答生成和查询记录接口继续复用；原 Novel 工作空间不变。
+现有知图页面、回答生成和查询记录接口继续复用；legacy 本地建图运行时代码仍保留，仅 Medical 导入模式默认启用。
 
 ## 当前电脑：直接启动（2026-09-09 更新）
 
@@ -111,7 +112,7 @@ Adaptive 结果会显示实际方法、分类概率和生效参数。分类概�
 - 代码：`backend/app/medical/`
 - 导入工具：`scripts/prepare_medical.py`
 - Medical 数据、源码快照、路由模型及查询历史：`backend/data/medical/`
-- 原 Novel 数据与历史：仍在原来的目录。
+- 原 Novel 数据与历史：2026-09 整合时已从 Git 移除（legacy 建图运行时代码保留）。
 - 导入目录已被 Git 忽略。本次没有提交、推送或切换任何分支。
 
 导入工具只读取指定 Git 提交中的索引、适配器源码、路由模型与许可文件，
