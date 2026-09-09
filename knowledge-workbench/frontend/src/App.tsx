@@ -1,9 +1,11 @@
-import { useCallback, useEffect, useRef, useState, type FormEvent } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, type FormEvent } from 'react'
 import { ArrowUpRight, BookOpen, ChevronDown, ChevronRight, Clock3, Database, FolderOpen, History, Layers2, LoaderCircle, Minus, Plus, Network, Search, Settings2, X } from 'lucide-react'
 import Markdown from 'react-markdown'
 import GraphPanel from './GraphPanel'
+import { mergeGraphHits } from './graphDisplay'
 import ApiSettings from './ApiSettings'
-import { api, emptyGraph, type Dataset, type GraphData, type Health, type IndexStatus, type Method, type RecordData, type Run } from './api'
+import AdaptiveRouting from './AdaptiveRouting'
+import { api, streamQuery, emptyGraph, type Dataset, type GraphData, type Health, type IndexStatus, type Method, type RecordData, type Run, type Retrieval, type RoutingUpdate } from './api'
 
 const indexLabels: Record<string, string> = { ready: '索引已就绪', not_built: '尚未建立索引', building: '正在建立索引', failed: '索引未完成', interrupted: '上次构建已中断' }
 const seconds = (ms: number) => (ms / 1000).toFixed(1) + ' s'
@@ -29,7 +31,14 @@ export default function App() {
   const [topK, setTopK] = useState(5)
   const [query, setQuery] = useState('')
   const [preview, setPreview] = useState<GraphData>(emptyGraph)
+  const [previewMethod, setPreviewMethod] = useState('')
+  const [graphRevision, setGraphRevision] = useState(0)
+  const [graphLoading, setGraphLoading] = useState(false)
+  const graphCache = useRef(new Map<string, GraphData>())
   const [result, setResult] = useState<Run | null>(null)
+  const [routing, setRouting] = useState<RoutingUpdate | null>(null)
+  const [retrievalPreview, setRetrievalPreview] = useState<Retrieval | null>(null)
+  const [animateRouting, setAnimateRouting] = useState(false)
   const [graphExpanded, setGraphExpanded] = useState(false)
   const [history, setHistory] = useState<Run[]>([])
   const [page, setPage] = useState<'workbench' | 'history'>('workbench')
@@ -45,6 +54,7 @@ export default function App() {
   const refreshing = useRef(false)
   const graphRefreshQueued = useRef(false)
   const navigationVersion = useRef(0)
+  const graphMethod = String(routing?.metadata.selected_method || result?.retrieval.metadata.selected_method || result?.method_id || methodId)
   const method = methods.find(m => m.id === methodId)
 
   const refresh = useCallback(async (loadGraph = false): Promise<void> => {
@@ -60,8 +70,9 @@ export default function App() {
       ])
       setHealth(h); setDataset(d.dataset); setIndex(i); setHistory(r.runs)
       if (loadGraph && i.reusable) {
-        try { setPreview(await api<GraphData>('/graph')) } catch (e) { setError((e as Error).message) }
-      } else if (!i.reusable) setPreview(emptyGraph)
+        graphCache.current.clear()
+        setGraphRevision(value => value + 1)
+      } else if (!i.reusable) { graphCache.current.clear(); setPreview(emptyGraph); setPreviewMethod('') }
     } catch (e) { setError((e as Error).message) }
     finally {
       refreshing.current = false
@@ -83,6 +94,18 @@ export default function App() {
     }).catch(e => setError(e.message))
   }, [refresh])
   useEffect(() => {
+    if (!graphMethod || !index.reusable) { setGraphLoading(false); return }
+    let cancelled = false
+    const cached = graphCache.current.get(graphMethod)
+    if (cached) { setPreview(cached); setPreviewMethod(graphMethod); setGraphLoading(false); return }
+    setGraphLoading(true)
+    api<GraphData>('/graph?method_id=' + encodeURIComponent(graphMethod)).then(graph => {
+      if (!cancelled) { graphCache.current.set(graphMethod, graph); setPreview(graph); setPreviewMethod(graphMethod) }
+    }).catch(e => { if (!cancelled) setError(e.message) })
+      .finally(() => { if (!cancelled) setGraphLoading(false) })
+    return () => { cancelled = true }
+  }, [graphMethod, index.reusable, graphRevision])
+  useEffect(() => {
     if (index.status !== 'building') return
     const timer = setInterval(() => void refresh(true), 4000)
     return () => clearInterval(timer)
@@ -102,8 +125,13 @@ export default function App() {
     event.preventDefault()
     if (!query.trim() || busy || !Number.isInteger(topK) || topK < 1 || topK > 50) return
     setBusy(true); setElapsed(0); setError(''); setResult(null)
+    setRouting(null); setRetrievalPreview(null)
+    setAnimateRouting(true)
     try {
-      const data = await api<Run>('/query', { query, method_id: methodId, options, top_k: topK })
+      const data = await streamQuery({ query, method_id: methodId, options, top_k: topK }, event => {
+        if (event.type === 'routing') setRouting({id: event.id, metadata: event.metadata})
+        if (event.type === 'retrieval') { setRetrievalPreview(event.retrieval); setTab('chunks') }
+      })
       setResult(data); setTab('chunks')
       await refresh()
     } catch (e) { setError((e as Error).message) }
@@ -114,7 +142,7 @@ export default function App() {
     setSettingUp(true); setError('')
     try {
       await api('/dataset/select', { subset })
-      setResult(null); await refresh(true)
+      setResult(null); setRouting(null); setRetrievalPreview(null); await refresh(true)
     } catch (e) { setError((e as Error).message) }
     finally { setSettingUp(false) }
   }
@@ -125,7 +153,7 @@ export default function App() {
     setSettingUp(true); setError('')
     try {
       await api('/index/build', { rebuild })
-      setResult(null); await refresh(); setSetupOpen(false)
+      setResult(null); setRouting(null); setRetrievalPreview(null); await refresh(); setSetupOpen(false)
     } catch (e) { setError((e as Error).message) }
     finally { setSettingUp(false) }
   }
@@ -134,6 +162,8 @@ export default function App() {
     if (busy) return
     navigationVersion.current++
     setResult(null); setQuery(''); setTab('chunks'); setError(''); setElapsed(0)
+    setAnimateRouting(false)
+    setRouting(null); setRetrievalPreview(null)
     setGraphExpanded(false)
     setPage('workbench')
     void refresh(true)
@@ -146,15 +176,17 @@ export default function App() {
       const run = await api<Run>('/runs/' + id)
       if (version !== navigationVersion.current) return
       setResult(run); setQuery(run.query); setPage('workbench')
+      setRouting(null); setRetrievalPreview(null)
+      setAnimateRouting(false)
       if (methods.some(m => m.id === run.method_id)) {
         setMethodId(run.method_id); setOptions(run.options); setTopK(run.top_k)
       }
     } catch (e) { if (version === navigationVersion.current) setError((e as Error).message) }
   }
 
-  const graph = result?.retrieval.graph || preview
-  const unavailable = busy || !method || (methodId === 'lightrag' && !index.reusable) || index.status === 'building' || !Number.isInteger(topK) || topK < 1 || topK > 50
-  const evidence = result?.retrieval
+  const evidence = result?.retrieval ?? retrievalPreview
+  const graph = useMemo(() => mergeGraphHits(previewMethod === graphMethod ? preview : emptyGraph, evidence?.graph), [preview, previewMethod, graphMethod, evidence])
+  const unavailable = busy || !method || health?.retrieval_ready === false || ((methodId === 'lightrag' || health?.imported_profile) && !index.reusable) || index.status === 'building' || !Number.isInteger(topK) || topK < 1 || topK > 50
 
   return <div className="app-shell">
     <aside className="sidebar">
@@ -170,7 +202,7 @@ export default function App() {
         <p>{dataset ? 'GraphRAG-Bench / ' + dataset.subset : '导入一份小文本，开始探索'}</p>
         {dataset && <dl><div><dt>文本字符</dt><dd>{dataset.character_count.toLocaleString()}</dd></div><div><dt>词数</dt><dd>{dataset.word_count.toLocaleString()}</dd></div></dl>}
         <div className={'index-status ' + (index.reusable ? 'ready' : '')}><span className="status-dot" aria-hidden="true" />{index.status === 'ready' && !index.reusable ? '索引不可复用' : indexLabels[index.status] || index.status}</div>
-        <button className="dataset-button" disabled={busy} onClick={() => setSetupOpen(true)}><FolderOpen size={15} />管理数据与索引<ArrowUpRight size={14} /></button>
+        <button className="dataset-button" disabled={busy || health?.imported_profile} onClick={() => setSetupOpen(true)}><FolderOpen size={15} />{health?.imported_profile ? 'Medical 索引已导入' : '管理数据与索引'}<ArrowUpRight size={14} /></button>
       </div>
       <button className="settings-entry" disabled={busy || settingUp || index.status === 'building'} onClick={() => setApiSettingsOpen(true)}><Settings2 size={16} />API 设置<ArrowUpRight size={14} /></button>
       <div className="sidebar-bottom"><span className="small-dot" />本地工作空间<p>单数据集 · 可插拔检索<br />FastAPI / React / Cytoscape</p><span className="version">COURSE DEMO <span>V1.0</span></span></div>
@@ -182,6 +214,7 @@ export default function App() {
         <div className="page-heading"><div><span className="eyebrow">EXPLORE · RETRIEVE · UNDERSTAND</span><h1>{page === 'history' ? '每次探索，都有迹可循。' : '让答案，连接到证据。'}</h1><p>{page === 'history' ? '回看本地保存的查询、耗时与检索结果。' : '选择检索方式，在文本与图谱之间探索知识。'}</p></div><span className="outline-badge"><Database size={14} />{dataset?.corpus_name || 'NO DATASET'}</span></div>
         {error && <div className="alert error" role="alert">{error}<button aria-label="关闭提示" onClick={() => setError('')}><X size={16} /></button></div>}
         {health && !health.api_key_configured && <div className="alert">尚未配置 API Key。可以查看已有图谱；运行查询前请在侧栏「API 设置」中填写并保存。</div>}
+        {health?.runtime_issues && health.runtime_issues.length > 0 && <div className="alert"><strong>当前可以预览图谱，检索环境尚未就绪。</strong>{health.runtime_issues.map(issue => <p key={issue}>{issue}</p>)}</div>}
 
         {page === 'history' ? <section className="history-panel"><div className="section-heading"><h2>最近查询</h2><span className="muted">最近 20 条 · 本地保留最多 100 条</span></div>
           {!history.length && <div className="empty-copy"><History size={28} /><h3>还没有查询记录</h3><p>在检索工作台提出第一个问题。</p></div>}
@@ -189,10 +222,10 @@ export default function App() {
         </section> : <>
           <form className="query-composer" onSubmit={submit}>
             <label className="query-label" htmlFor="query">提出你的问题</label>
-            <textarea id="query" maxLength={4000} value={query} disabled={busy} onChange={e => setQuery(e.target.value)} placeholder="例如：故事中的核心人物是谁？他们之间有哪些重要关系？" onKeyDown={e => { if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') { e.preventDefault(); if (!unavailable) void submit(e) } }} />
+            <textarea id="query" maxLength={4000} value={query} disabled={busy} onChange={e => setQuery(e.target.value)} placeholder={dataset?.subset === 'medical' ? '输入 Medical 知识库问题；Adaptive 建议使用英文问题。' : '例如：故事中的核心人物是谁？他们之间有哪些重要关系？'} onKeyDown={e => { if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') { e.preventDefault(); if (!unavailable) void submit(e) } }} />
             <div className="query-controls">
               <fieldset className="retrieval-parameters"><legend className="sr-only">检索参数</legend>
-              <div className="control method-control"><label htmlFor="method">检索方法</label><Network className="parameter-icon" size={18} strokeWidth={1.5} aria-hidden="true" /><div className="parameter-select"><select id="method" value={methodId} disabled={busy} onChange={e => { setMethodId(e.target.value); const m = methods.find(item => item.id === e.target.value); setOptions(Object.fromEntries((m?.options || []).map(o => [o.key, o.default]))) }}>{!methods.length && <option value="">加载方法…</option>}{methods.map(m => <option value={m.id} key={m.id}>{m.name}</option>)}</select><ChevronDown size={14} strokeWidth={1.5} aria-hidden="true" /></div></div>
+              <div className="control method-control"><label htmlFor="method">检索方法</label><Network className="parameter-icon" size={18} strokeWidth={1.5} aria-hidden="true" /><div className="parameter-select"><select id="method" value={methodId} disabled={busy} onChange={e => { setResult(null); setRouting(null); setRetrievalPreview(null); setMethodId(e.target.value); const m = methods.find(item => item.id === e.target.value); setOptions(Object.fromEntries((m?.options || []).map(o => [o.key, o.default]))) }}>{!methods.length && <option value="">加载方法…</option>}{methods.map(m => <option value={m.id} key={m.id}>{m.name}</option>)}</select><ChevronDown size={14} strokeWidth={1.5} aria-hidden="true" /></div></div>
               {method?.options.map(o => <div className="control" key={o.key}><label htmlFor={'opt-' + o.key}>{o.label}</label><Layers2 className="parameter-icon" size={18} strokeWidth={1.5} aria-hidden="true" /><div className="parameter-select"><select id={'opt-' + o.key} disabled={busy} value={options[o.key] || o.default} onChange={e => setOptions({ ...options, [o.key]: e.target.value })}>{o.choices.map(c => <option key={c} value={c}>{o.key === 'mode' ? modeLabel(methodId, c) : c}</option>)}</select><ChevronDown size={14} strokeWidth={1.5} aria-hidden="true" /></div></div>)}
               <div className="control topk"><label htmlFor="topk">Top-K</label><div className="topk-stepper">
                 <button type="button" aria-label="减少 Top-K" disabled={busy || topK <= 1} onClick={() => setTopK(value => normalizeTopK(normalizeTopK(value) - 1))}><Minus size={14} strokeWidth={1.5} /></button>
@@ -204,23 +237,25 @@ export default function App() {
             </div>
             <div className="query-hint"><Settings2 size={14} /><span aria-live="polite">{methodId === 'lightrag' ? <>{modeDescriptions[options.mode] || method?.description}<small>{options.mode === 'naive' ? 'Top-K 控制候选文本片段数量。' : 'Top-K 控制检索候选数量，不等于最终展示的实体或关系总数。'}</small></> : method?.description || '正在加载检索方法…'}</span><kbd>Ctrl + Enter</kbd></div>
           </form>
+          {methodId === 'adaptive' && <AdaptiveRouting result={result} routing={routing} busy={busy} error={error} animate={animateRouting} />}
           <div className={'results-grid' + (graphExpanded ? ' graph-expanded' : '')}>
             <section className="answer-panel" hidden={graphExpanded}><div className="section-heading"><div><span className="eyebrow">GROUNDED ANSWER</span><h2>回答与依据</h2></div></div>
-              {busy ? <div className="empty-copy"><LoaderCircle className="spin" size={28} /><h3>正在检索证据并生成回答</h3><p>模型请求可能需要几分钟。请勿重复提交。<br />这里只显示实际等待时间，不模拟进度。</p><strong>{elapsed} s</strong></div> : result ? <>
+              {busy ? <div className="empty-copy"><LoaderCircle className="spin" size={28} /><h3>{retrievalPreview ? '检索已完成，正在生成回答' : routing ? '路由已完成，正在检索证据' : '正在检索证据并生成回答'}</h3><p>模型请求可能需要几分钟。请勿重复提交。<br />这里只显示实际等待时间，不模拟进度。</p><strong>{elapsed} s</strong></div> : result ? <>
                 <div className="run-meta"><span>{result.method_id} / {modeLabel(result.method_id, result.options.mode || 'default')}</span><span><Clock3 size={13} />{seconds(result.latency_ms)}</span></div>
                 <p className="result-provenance">{new Date(result.created_at).toLocaleString()} · {String(result.retrieval.metadata?.corpus_name || '数据来源未记录')}</p>
+                {result.method_id === 'adaptive' && evidence?.metadata.selected_method != null && <div className="result-provenance"><strong>Adaptive → {String(evidence.metadata.selected_method)}</strong><p>{String(evidence.metadata.routing_note || '')}</p><details><summary>路由详情</summary><pre>{JSON.stringify({ probabilities: evidence.metadata.routing_probabilities, top_k: evidence.metadata.effective_top_k, options: evidence.metadata.effective_options }, null, 2)}</pre></details></div>}
                 {result.error && <div className="alert error" role="alert">{result.error.message}<small>{result.error.code}</small></div>}
                 <div className="answer-content"><Markdown>{result.answer || '答案尚未生成。可在下方查看已获得的检索结果。'}</Markdown></div>
                 <div className="timings"><span>检索 <b>{seconds(result.retrieval_ms)}</b></span><span>生成 <b>{seconds(result.generation_ms)}</b></span></div>
                 {evidence?.warnings.map(w => <p className="warning-note" key={w}>{w}</p>)}
               </> : <div className="empty-copy answer-empty"><span className="empty-symbol"><BookOpen size={27} strokeWidth={1.3} /></span><h3>从一个好问题开始</h3><p>答案将基于实际检索到的证据生成。<br />你可以查看实体、关系与原文片段。</p><span className="empty-caption">YOUR QUESTION, CONNECTED.</span></div>}
             </section>
-            <GraphPanel graph={graph} queried={!!result} expanded={graphExpanded} onToggleExpanded={() => setGraphExpanded(value => !value)} />
+            <GraphPanel graph={graph} loading={graphLoading} queried={!!evidence} expanded={graphExpanded} onToggleExpanded={() => setGraphExpanded(value => !value)} sourceLabel={health?.imported_profile ? 'Medical / ' + graphMethod : undefined} />
           </div>
           <section className="evidence-panel"><div className="section-heading"><div><span className="eyebrow">RETRIEVAL DETAILS</span><h2>回到原始证据</h2></div><span className="muted">只展示方法实际返回的数据</span></div>
             <div className="evidence-tabs" role="tablist" aria-label="检索结果类型">{tabs.map(([key, name]) => <button role="tab" id={'tab-' + key} aria-controls="evidence-content" aria-selected={tab === key} key={key} className={tab === key ? 'selected' : ''} onClick={() => setTab(key)}>{name}{key !== 'context' && <span>{evidence?.[key].length || 0}</span>}</button>)}</div>
             <div id="evidence-content" role="tabpanel" aria-labelledby={'tab-' + tab} className="evidence-content">
-              {!evidence ? <p className="muted">完成一次查询后，这里会展示对应的检索证据。</p> : tab === 'context' ? <><p className="muted">按固定模板序列化的展示上下文；不是 LightRAG 内部最终 prompt。</p><pre>{evidence.context_text || '本次没有返回上下文。'}</pre></> :
+              {!evidence ? <p className="muted">完成一次查询后，这里会展示对应的检索证据。</p> : tab === 'context' ? <><p className="muted">{evidence.metadata.context_origin === 'pathrag_only_need_context' ? 'PathRAG 返回的检索上下文，交由统一回答模型使用。' : '按固定模板序列化的检索证据；不是检索框架内部最终 prompt。'}</p><pre>{evidence.context_text || '本次没有返回上下文。'}</pre></> :
                 <EvidenceList records={evidence[tab]} kind={tab} />}
             </div>
           </section>

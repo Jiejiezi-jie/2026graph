@@ -48,6 +48,60 @@ def test_custom_plugin_available_over_http_without_lightrag_workspace(tmp_path):
         assert client.get("/api/runs/not-found").status_code == 404
 
 
+def test_streaming_query_keeps_legacy_results_and_history(tmp_path):
+    with client_for(tmp_path) as client:
+        response = client.post("/api/query/stream", json={"query": "question", "method_id": "my-retrieval"})
+        assert response.status_code == 200
+        assert response.headers["content-type"].startswith("application/x-ndjson")
+        events = [json.loads(line) for line in response.text.splitlines()]
+        assert [event["type"] for event in events] == ["retrieval", "result"]
+        result = events[-1]["run"]
+        assert result["answer"] == "Grounded answer"
+        assert client.get("/api/runs").json()["runs"][0]["id"] == result["id"]
+        assert client.post("/api/query/stream", json={"query": " "}).status_code == 422
+        assert client.post("/api/query/stream", json={"query": "x", "method_id": "missing"}).status_code == 400
+
+
+def test_only_imported_readonly_graph_can_be_read_during_query(tmp_path):
+    from unittest.mock import Mock
+    with client_for(tmp_path) as client:
+        runtime = client.app.state.runtime
+        runtime.lock = Mock(locked=lambda: True)
+        assert client.get("/api/graph").status_code == 409
+        runtime.imported = True
+        runtime.status = lambda: {"reusable": True}
+        runtime.preview = lambda method: {"nodes": [], "method": method}
+        assert client.get("/api/graph?method_id=pathrag").json() == {"nodes": [], "method": "pathrag"}
+        runtime.imported = False
+
+
+def test_streaming_query_keeps_legacy_results_and_history(tmp_path):
+    with client_for(tmp_path) as client:
+        response = client.post("/api/query/stream", json={"query": "question", "method_id": "my-retrieval"})
+        assert response.status_code == 200
+        assert response.headers["content-type"].startswith("application/x-ndjson")
+        events = [json.loads(line) for line in response.text.splitlines()]
+        assert [event["type"] for event in events] == ["retrieval", "result"]
+        result = events[-1]["run"]
+        assert result["answer"] == "Grounded answer"
+        assert client.get("/api/runs").json()["runs"][0]["id"] == result["id"]
+        assert client.post("/api/query/stream", json={"query": " "}).status_code == 422
+        assert client.post("/api/query/stream", json={"query": "x", "method_id": "missing"}).status_code == 400
+
+
+def test_only_imported_readonly_graph_can_be_read_during_query(tmp_path):
+    from unittest.mock import Mock
+    with client_for(tmp_path) as client:
+        runtime = client.app.state.runtime
+        runtime.lock = Mock(locked=lambda: True)
+        assert client.get("/api/graph").status_code == 409
+        runtime.imported = True
+        runtime.status = lambda: {"reusable": True}
+        runtime.preview = lambda method: {"nodes": [], "method": method}
+        assert client.get("/api/graph?method_id=pathrag").json() == {"nodes": [], "method": "pathrag"}
+        runtime.imported = False
+
+
 def test_query_validation_unknown_method_and_no_dataset(tmp_path):
     with client_for(tmp_path) as client:
         for payload in ({"query": " "}, {"query": "a", "top_k": 0}, {"query": "a", "top_k": True}):

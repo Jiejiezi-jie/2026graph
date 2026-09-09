@@ -14,6 +14,7 @@ class GraphService:
         self.path = Path(path)
         self._stamp = None
         self._graph = None
+        self._full = None
 
     def _load(self):
         if not self.path.is_file():
@@ -23,6 +24,7 @@ class GraphService:
             try:
                 self._graph = nx.read_graphml(self.path)
                 self._stamp = stamp
+                self._full = None
             except Exception as exc:
                 raise AppError("INVALID_GRAPH", "GraphML 无法读取，请检查索引完整性。") from exc
         return self._graph
@@ -31,6 +33,18 @@ class GraphService:
         graph = self._load()
         nodes = sorted(graph, key=lambda n: (-graph.degree(n), str(n)))[:max_nodes]
         return self._render(graph, nodes, set(), set(), len(graph) > len(nodes))
+
+    def full(self) -> GraphData:
+        from app.services.graph_layout import cached_positions
+        graph = self._load()
+        if self._full is None:
+            key, positions = cached_positions(self.path, graph)
+            result = self._render(graph, sorted(graph), set(), set(), False, max_edges=None)
+            result.layout_key = key
+            for node in result.nodes:
+                node.position = positions[node.id]
+            self._full = result
+        return self._full
 
     def related(self, entities: list[dict], relationships: list[dict], max_nodes: int = 80) -> GraphData:
         graph = self._load()
@@ -48,13 +62,16 @@ class GraphService:
                 break
             selected.append(node)
         result = self._render(graph, selected, seeds, pairs, len(candidates) > len(selected))
+        # Records remain bounded, but retain every exact hit for the full canvas.
+        result.hit_node_ids = present
+        result.hit_edge_pairs = [list(pair) for pair in sorted(pairs) if graph.has_edge(*pair)]
         missing = len(seeds - set(graph))
         if missing:
             result.warnings.append(f"{missing} 个检索实体未能与 GraphML 精确匹配。")
         return result
 
     @staticmethod
-    def _render(graph, selected, direct, pairs, truncated):
+    def _render(graph, selected, direct, pairs, truncated, max_edges=200):
         nodes = [
             GraphNode(id=str(n), label=str(n), type=str(graph.nodes[n].get("entity_type", "UNKNOWN")),
                       description=str(graph.nodes[n].get("description", "")), retrieved=n in direct)
@@ -66,11 +83,11 @@ class GraphService:
         def hit(a, b):
             return (a, b) in pairs or (not graph.is_directed() and (b, a) in pairs)
         all_edges.sort(key=lambda e: (not hit(e[0], e[1]), str(e[0]), str(e[1])))
-        for i, (a, b, attrs) in enumerate(all_edges[:200]):
+        for i, (a, b, attrs) in enumerate(all_edges[:max_edges]):
             digest = hashlib.sha256(f"{a}\0{b}\0{i}".encode()).hexdigest()[:20]
             edges.append(GraphEdge(id="edge:" + digest, source=str(a), target=str(b),
                                    label=str(attrs.get("keywords", "")),
                                    description=str(attrs.get("description", "")),
                                    retrieved=hit(a, b), directed=graph.is_directed()))
-        return GraphData(nodes=nodes, edges=edges, truncated=truncated or len(all_edges) > 200,
+        return GraphData(nodes=nodes, edges=edges, truncated=truncated or (max_edges is not None and len(all_edges) > max_edges),
                          total_nodes=graph.number_of_nodes(), total_edges=graph.number_of_edges())

@@ -1,6 +1,6 @@
 from typing import Literal
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class HealthResponse(BaseModel):
@@ -9,6 +9,9 @@ class HealthResponse(BaseModel):
     llm_model: str
     embedding_model: str
     graph_storage: str
+    imported_profile: bool = False
+    retrieval_ready: bool = True
+    runtime_issues: list[str] = Field(default_factory=list)
 
 
 class DatasetSummary(BaseModel):

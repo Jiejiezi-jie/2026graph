@@ -12,7 +12,7 @@ class QueryService:
     def __init__(self, registry, generator, runs, lock: asyncio.Lock):
         self.registry, self.generator, self.runs, self.lock = registry, generator, runs, lock
 
-    async def query(self, request: RetrievalRequest) -> dict:
+    async def query(self, request: RetrievalRequest, *, on_event=None) -> dict:
         retriever = self.registry.get(request.method_id)
         if self.lock.locked():
             raise AppError("WORKSPACE_BUSY", "当前正在建索引或查询，请等待完成。")
@@ -28,8 +28,17 @@ class QueryService:
             phase = "retrieval"
             phase_start = started
             try:
-                result = await retriever.retrieve(request)
+                if callable(getattr(retriever, "route", None)) and callable(getattr(retriever, "retrieve_routed", None)):
+                    routed, metadata = await retriever.route(request)
+                    result.metadata.update(metadata)
+                    if on_event:
+                        await on_event("routing", {"id": response["id"], "metadata": metadata})
+                    result = await retriever.retrieve_routed(routed, metadata)
+                else:
+                    result = await retriever.retrieve(request)
                 response["retrieval_ms"] = round((time.perf_counter() - phase_start) * 1000, 2)
+                if on_event:
+                    await on_event("retrieval", {"id": response["id"], "retrieval": result.model_dump(mode="json")})
                 phase = "generation"
                 phase_start = time.perf_counter()
                 if result.context_text:

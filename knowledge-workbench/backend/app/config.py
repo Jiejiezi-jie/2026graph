@@ -33,6 +33,10 @@ class Settings(BaseSettings):
     chunk_token_size: int = 500
     chunk_overlap_token_size: int = 50
     graph_storage: str = "NetworkXStorage"
+    medical_bundle: Path | None = None
+    medical_embedding_path: Path | None = None
+    medical_pathrag_root: Path | None = None
+    medical_device: str = "cpu"
 
     @property
     def active_dir(self) -> Path:

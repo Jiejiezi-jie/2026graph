@@ -131,6 +131,8 @@ textarea::placeholder { color: #828b85; }
 .timings b { color: #465b4d; margin-left: 6px; font-weight: 500; font-variant-numeric: tabular-nums; }
 .graph-tools { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; padding-bottom: 16px; }
 .graph-tools select { font-size: 11px; min-width: 0; width: 180px; flex: 1; max-width: 240px; }
+.graph-tools #node-search { font-size: 12px; min-width: 120px; width: 180px; flex: 1; max-width: 320px; }
+.zoom-tools button span { font-size: 11px; margin-left: 4px; }
 .zoom-tools { margin-left: auto; display: flex; }
 .zoom-tools button { background: transparent; padding: 9px; color: #536c5d; border-radius: 3px; }
 .zoom-tools button:hover { background: #eff3f0; }

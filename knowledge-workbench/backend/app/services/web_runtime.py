@@ -19,8 +19,12 @@ class WebRuntime:
         self.context = context
         self.lock = asyncio.Lock()
         self.graph = GraphService(context.settings.workspace_dir / GRAPH_FILE_NAME)
-        self.registry = registry if registry is not None else build_registry(context, self.graph)
-        self.runs = RunStore(context.settings.app_root / "data" / "runs.sqlite3")
+        self.imported = getattr(context.workspace_service, "imported", False)
+        self.registry = registry if registry is not None else (
+            context.workspace_service.build_registry() if self.imported else build_registry(context, self.graph))
+        history_path = (context.settings.medical_bundle / "runs.sqlite3" if self.imported
+                        else context.settings.app_root / "data" / "runs.sqlite3")
+        self.runs = RunStore(history_path)
         self.queries = QueryService(self.registry, generator or DeepSeekAnswerGenerator(context.settings), self.runs, self.lock)
         self.build_task = None
         self.index_error = None
@@ -42,7 +46,10 @@ class WebRuntime:
                 settings.deepseek_api_key = payload.api_key
             settings.llm_base_url = payload.base_url
             workspace = self.context.workspace_service
-            workspace.runtime_fingerprint = workspace.factory.runtime_fingerprint()
+            if self.imported:
+                await workspace.engine.close()
+            else:
+                workspace.runtime_fingerprint = workspace.factory.runtime_fingerprint()
             self.session_override = True
             return self.connection_status()
 
@@ -66,6 +73,8 @@ class WebRuntime:
         return status
 
     async def select(self, subset: str):
+        if self.imported:
+            raise AppError("IMPORTED_PROFILE_READ_ONLY", "Medical 使用已导入的知识库；请通过启动参数切换工作空间。")
         if self.lock.locked():
             raise AppError("WORKSPACE_BUSY", "正在建索引或查询，暂时不能更换数据。")
         async with self.lock:
@@ -75,6 +84,8 @@ class WebRuntime:
             return self.context.dataset_service.get_status()
 
     async def start_build(self, rebuild: bool):
+        if self.imported:
+            raise AppError("IMPORTED_PROFILE_READ_ONLY", "Medical 已导入索引，此入口不执行重建。")
         if self.lock.locked():
             raise AppError("WORKSPACE_BUSY", "正在建索引或查询，请勿重复启动。")
         document = self.context.dataset_service.load_active()
@@ -126,3 +137,11 @@ class WebRuntime:
         if self.build_task is not None and not self.build_task.done():
             # Graceful shutdown waits for indexing. Force-kill will be shown as interrupted.
             await self.build_task
+        if self.imported:
+            await self.context.workspace_service.engine.close()
+
+    def preview(self, method_id="lightrag"):
+        if self.imported:
+            return self.context.workspace_service.preview(method_id)
+        self.registry.get(method_id)
+        return self.graph.full()

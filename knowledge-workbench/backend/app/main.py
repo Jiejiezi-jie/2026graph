@@ -4,7 +4,7 @@ import asyncio
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, StreamingResponse
 from fastapi.exceptions import RequestValidationError
 from fastapi.exception_handlers import request_validation_exception_handler
 from pydantic import BaseModel
@@ -21,6 +21,7 @@ from app.services.workspace_service import WorkspaceService
 from app.services.web_runtime import WebRuntime
 from app.domain.errors import AppError
 from app.retrieval.contracts import RetrievalRequest
+from app.services.query_stream import query_stream
 
 
 APP_ROOT = Path(__file__).resolve().parents[2]
@@ -28,6 +29,9 @@ APP_ROOT = Path(__file__).resolve().parents[2]
 
 def create_default_context() -> AppContext:
     settings = Settings(app_root=APP_ROOT, _env_file=APP_ROOT / ".env")
+    if settings.medical_bundle:
+        from app.medical.profile import create_medical_context
+        return create_medical_context(settings)
     factory = LightRAGFactory(settings)
     return AppContext(
         settings=settings,
@@ -72,7 +76,7 @@ def create_app(context: AppContext | None = None, *, registry=None, generator=No
     @app.exception_handler(AppError)
     async def app_error(request: Request, exc: AppError):
         code = 400
-        if exc.code in {"WORKSPACE_BUSY", "INDEX_NOT_READY", "REBUILD_CONFIRMATION_REQUIRED"}:
+        if exc.code in {"WORKSPACE_BUSY", "INDEX_NOT_READY", "REBUILD_CONFIRMATION_REQUIRED", "IMPORTED_PROFILE_READ_ONLY"}:
             code = 409
         elif exc.code in {"RUN_NOT_FOUND", "GRAPH_NOT_FOUND"}:
             code = 404
@@ -92,7 +96,7 @@ def create_app(context: AppContext | None = None, *, registry=None, generator=No
     async def unexpected_error(request: Request, exc: Exception):
         return JSONResponse(status_code=500, content={"status": "failure", "error": {"code": "INTERNAL_ERROR", "message": "后端处理失败，请检查本地文件与服务状态。"}})
 
-    @app.get("/api/health", response_model=HealthResponse)
+    @app.get("/api/health", response_model=HealthResponse, response_model_exclude_unset=True)
     def health(request: Request) -> dict:
         current: AppContext = request.app.state.context
         secret = current.settings.deepseek_api_key
@@ -103,6 +107,9 @@ def create_app(context: AppContext | None = None, *, registry=None, generator=No
             "llm_model": current.settings.llm_model,
             "embedding_model": current.settings.embedding_model,
             "graph_storage": current.settings.graph_storage,
+            **({"imported_profile": True,
+                "retrieval_ready": not current.workspace_service.runtime_issues,
+                "runtime_issues": current.workspace_service.runtime_issues} if runtime.imported else {}),
         }
 
     @app.get("/api/dataset/status", response_model=DatasetStatusResponse)
@@ -130,14 +137,29 @@ def create_app(context: AppContext | None = None, *, registry=None, generator=No
     async def query(payload: RetrievalRequest):
         return await runtime.queries.query(payload)
 
+    @app.post("/api/query/stream")
+    async def streaming_query(payload: RetrievalRequest):
+        runtime.registry.get(payload.method_id)
+        if runtime.lock.locked():
+            raise AppError("WORKSPACE_BUSY", "当前正在建索引或查询，请等待完成。")
+        return StreamingResponse(query_stream(runtime.queries, payload),
+                                 media_type="application/x-ndjson",
+                                 headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
+
     @app.get("/api/graph")
-    async def graph():
+    async def graph(method_id: str = "lightrag"):
+        # Imported Medical bundles cannot be rebuilt or replaced through this server.
+        # Their read-only graphs may be browsed while retrieval/generation is running.
+        if runtime.imported:
+            if not runtime.status()["reusable"]:
+                raise AppError("INDEX_NOT_READY", "当前数据尚无可复用的索引。")
+            return await asyncio.to_thread(runtime.preview, method_id)
         if runtime.lock.locked():
             raise AppError("WORKSPACE_BUSY", "正在建索引或查询，请稍后读取图谱。")
         async with runtime.lock:
             if not runtime.status()["reusable"]:
                 raise AppError("INDEX_NOT_READY", "当前数据尚无可复用的索引。")
-            return await asyncio.to_thread(runtime.graph.preview)
+            return await asyncio.to_thread(runtime.preview, method_id)
 
     @app.get("/api/runs")
     def runs():

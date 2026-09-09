@@ -38,6 +38,7 @@ class GraphNode(BaseModel):
     type: str = "UNKNOWN"
     description: str = ""
     retrieved: bool = False
+    position: dict[str, float] | None = None
 
 
 class GraphEdge(BaseModel):
@@ -57,6 +58,9 @@ class GraphData(BaseModel):
     total_nodes: int = 0
     total_edges: int = 0
     warnings: list[str] = Field(default_factory=list)
+    layout_key: str | None = None
+    hit_node_ids: list[str] = Field(default_factory=list)
+    hit_edge_pairs: list[list[str]] = Field(default_factory=list)
 
 
 class RetrievalResult(BaseModel):
