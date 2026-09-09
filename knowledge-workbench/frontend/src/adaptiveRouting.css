@@ -1,0 +1,45 @@
+.adaptive-routing { display: grid; grid-template-columns: minmax(210px, .85fr) minmax(0, 2fr); gap: 18px 24px; padding: 22px; margin: 20px 0 30px; border: 1px solid #dce8e0; border-radius: 6px; background: #f5f9f6; color: var(--ink); }
+.routing-summary { display: flex; align-items: flex-start; gap: 13px; padding: 8px 22px 8px 0; border-right: 1px solid #dfe9e2; }
+.routing-status-icon, .routing-method-icon { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 36px; height: 36px; border-radius: 50%; color: var(--green); background: #e7f0e9; }
+.routing-status-icon { width: 39px; height: 39px; }
+.routing-summary h3 { color: #244d38; font-size: 15px; font-weight: 600; line-height: 1.6; margin: 2px 0 7px; }
+.routing-summary p { font-size: 12px; line-height: 1.8; color: var(--muted); }
+.routing-candidates { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.routing-candidate { min-width: 0; padding: 14px 12px 12px; border: 1px solid #e4ebe6; border-radius: 6px; background: #ffffffc9; transition: border-color .18s ease, background-color .18s ease; }
+.routing-candidate.is-selected { border-color: #4e8867; background: #fbfefc; }
+.routing-candidate-title { display: flex; align-items: center; gap: 9px; }
+.routing-candidate-title strong { font-size: 13px; font-weight: 600; }
+.routing-method-icon { width: 30px; height: 30px; background: #edf5ef; }
+.routing-selected-mark { width: 16px; height: 16px; border-radius: 50%; margin-left: auto; display: inline-flex; justify-content: center; align-items: center; color: white; }
+.is-selected .routing-selected-mark { background: #2e7a50; animation: routing-mark-in .18s ease both; }
+.routing-score-row { display: flex; align-items: center; gap: 9px; margin: 11px 0 9px; }
+.routing-score-track { height: 7px; background: #e9eeeb; border-radius: 4px; overflow: hidden; flex: 1; position: relative; }
+.routing-score-fill { display: block; width: 100%; height: 100%; background: #91aa9a; transform-origin: left; transition: transform .3s ease-out, background-color .18s ease; border-radius: inherit; }
+.is-selected .routing-score-fill { background: #488665; }
+.routing-score { width: 46px; min-height: 16px; color: #64756b; font-size: 11px; font-variant-numeric: tabular-nums; text-align: right; }
+.routing-score.is-visible { animation: routing-score-in .18s ease-out both; }
+.is-selected .routing-score { color: var(--green); font-weight: 600; }
+.routing-score-skeleton { display: inline-block; width: 30px; height: 10px; border-radius: 3px; background: #e7ede9; }
+.routing-candidate p { font-size: 10px; line-height: 1.7; color: #76837b; }
+.routing-footnote { grid-column: 1 / -1; padding-top: 12px; border-top: 1px solid #e3ece6; font-size: 10px; line-height: 1.7; color: #7b887f; }
+.routing-score-track.is-loading::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, #a7bfae85, transparent); transform: translateX(-100%); animation: routing-shimmer 1.3s ease-in-out infinite; }
+.routing-status-icon.is-loading svg { animation: routing-turn 1.4s linear infinite; }
+@keyframes routing-shimmer { to { transform: translateX(100%); } }
+@keyframes routing-turn { to { transform: rotate(360deg); } }
+@keyframes routing-score-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes routing-mark-in { from { opacity: 0; } to { opacity: 1; } }
+@media (max-width: 1200px) {
+  .adaptive-routing { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .routing-summary { border-right: 0; padding: 0; align-items: center; }
+  .routing-summary h3 { margin: 0 0 3px; }
+}
+@media (max-width: 600px) {
+  .adaptive-routing { padding: 16px; }
+  .routing-candidates { grid-template-columns: minmax(0, 1fr); gap: 9px; }
+  .routing-candidate { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 3px 12px; }
+  .routing-candidate p { grid-column: 1 / -1; }
+  .routing-score-row { margin: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .adaptive-routing *, .adaptive-routing *::after { animation: none !important; transition: none !important; }
+}

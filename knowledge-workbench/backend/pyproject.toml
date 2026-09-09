@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lightrag-course-demo-backend"
+version = "0.1.0"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "datasets",
+    "fastapi>=0.115,<1",
+    "networkx>=3,<4",
+    "openai>=1,<3",
+    "pydantic>=2,<3",
+    "pydantic-settings>=2,<3",
+    "transformers",
+    "uvicorn[standard]>=0.34,<1",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8,<9",
+    "pytest-asyncio>=0.24,<2",
+    "httpx>=0.27,<1",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+pythonpath = [".", ".."]
+asyncio_mode = "auto"
