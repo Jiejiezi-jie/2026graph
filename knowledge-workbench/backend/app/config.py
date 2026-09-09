@@ -4,9 +4,11 @@ from pydantic import AliasChoices, Field, SecretStr
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
-DEFAULT_BENCHMARK_ROOT = Path(
-    r"D:\HuaweiMoveData\Users\huawei\Desktop\kg\GraphRAG-Benchmark"
-)
+REPO_ROOT = Path(__file__).resolve().parents[3]
+
+# Vendored GraphRAG-Bench checkout inside this repository, so the default
+# (non-bundle) profile works from any clone without an author-machine path.
+DEFAULT_BENCHMARK_ROOT = REPO_ROOT / "data" / "vendor" / "GraphRAG-Benchmark"
 
 
 class Settings(BaseSettings):
@@ -48,4 +50,4 @@ class Settings(BaseSettings):
 
     @property
     def default_corpus_path(self) -> Path:
-        return self.benchmark_root / "Datasets" / "Corpus" / "novel.json"
+        return self.benchmark_root / "Datasets" / "Corpus" / "medical.json"

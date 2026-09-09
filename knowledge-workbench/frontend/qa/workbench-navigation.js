@@ -10,7 +10,7 @@ async (page) => {
     const path = '/api/' + route.request().url().split('/api/')[1];
     let json;
     if (path === '/api/health') json = { api_key_configured: true, llm_model: 'qa', embedding_model: 'qa' };
-    else if (path === '/api/dataset/status') json = { dataset: { corpus_name: 'UI-QA', subset: 'novel', character_count: 100, word_count: 20 } };
+    else if (path === '/api/dataset/status') json = { dataset: { corpus_name: 'UI-QA', subset: 'medical', character_count: 100, word_count: 20 } };
     else if (path === '/api/index/status') json = { status: 'ready', reusable: true, error_type: null };
     else if (path === '/api/retrieval/methods') json = { methods: [{ id: 'lightrag', name: 'LightRAG', description: '', options: [{key: 'mode', label: '检索模式', choices: ['local','global','hybrid','mix','naive'], default: 'mix'}] }] };
     else if (path === '/api/runs') json = { runs: [record] };

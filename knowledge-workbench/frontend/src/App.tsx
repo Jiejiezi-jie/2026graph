@@ -48,7 +48,7 @@ export default function App() {
   const [elapsed, setElapsed] = useState(0)
   const [setupOpen, setSetupOpen] = useState(false)
   const [apiSettingsOpen, setApiSettingsOpen] = useState(false)
-  const [subset, setSubset] = useState('novel')
+  const [subset, setSubset] = useState('medical')
   const [settingUp, setSettingUp] = useState(false)
   const dialog = useRef<HTMLDialogElement>(null)
   const refreshing = useRef(false)
@@ -222,7 +222,7 @@ export default function App() {
         </section> : <>
           <form className="query-composer" onSubmit={submit}>
             <label className="query-label" htmlFor="query">提出你的问题</label>
-            <textarea id="query" maxLength={4000} value={query} disabled={busy} onChange={e => setQuery(e.target.value)} placeholder={dataset?.subset === 'medical' ? '输入 Medical 知识库问题；Adaptive 建议使用英文问题。' : '例如：故事中的核心人物是谁？他们之间有哪些重要关系？'} onKeyDown={e => { if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') { e.preventDefault(); if (!unavailable) void submit(e) } }} />
+            <textarea id="query" maxLength={4000} value={query} disabled={busy} onChange={e => setQuery(e.target.value)} placeholder="输入 Medical 知识库问题；Adaptive 建议使用英文问题。" onKeyDown={e => { if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') { e.preventDefault(); if (!unavailable) void submit(e) } }} />
             <div className="query-controls">
               <fieldset className="retrieval-parameters"><legend className="sr-only">检索参数</legend>
               <div className="control method-control"><label htmlFor="method">检索方法</label><Network className="parameter-icon" size={18} strokeWidth={1.5} aria-hidden="true" /><div className="parameter-select"><select id="method" value={methodId} disabled={busy} onChange={e => { setResult(null); setRouting(null); setRetrievalPreview(null); setMethodId(e.target.value); const m = methods.find(item => item.id === e.target.value); setOptions(Object.fromEntries((m?.options || []).map(o => [o.key, o.default]))) }}>{!methods.length && <option value="">加载方法…</option>}{methods.map(m => <option value={m.id} key={m.id}>{m.name}</option>)}</select><ChevronDown size={14} strokeWidth={1.5} aria-hidden="true" /></div></div>
@@ -268,7 +268,7 @@ export default function App() {
       <div className="modal-heading"><h2>数据与索引</h2><button aria-label="关闭数据管理" onClick={() => setSetupOpen(false)}><X size={20} /></button></div>
       <p className="muted">一次选用一份文本、一个 workspace。仅选择文本不会产生 API 费用。</p>
       {error && <div className="alert error" role="alert">{error}</div>}
-      <label className="field-label" htmlFor="subset">数据来源 · 自动选择最短文本</label><select id="subset" value={subset} onChange={e => setSubset(e.target.value)} disabled={settingUp || index.status === 'building'}><option value="novel">GraphRAG-Bench · Novel</option><option value="medical">GraphRAG-Bench · Medical</option></select>
+      <label className="field-label" htmlFor="subset">数据来源</label><select id="subset" value={subset} onChange={e => setSubset(e.target.value)} disabled={settingUp || index.status === 'building'}><option value="medical">GraphRAG-Bench · Medical</option></select>
       <button className="secondary wide" disabled={settingUp || busy || index.status === 'building'} onClick={() => void selectDataset()}>选择这份文本</button>
       <div className="setup-summary"><strong>{dataset?.corpus_name || '尚未选择'}</strong><span>{indexLabels[index.status]}{index.status === 'ready' && !index.reusable ? '（配置不匹配）' : ''}</span>{index.error_type && <p className="error-text">{index.error_type}</p>}</div>
       <p className="warning-note">建图会调用 LLM 抽取实体与关系，产生 API 费用；打开网页、选择文本、查看图谱不会重新建图。重建会保留原 workspace 备份。</p>

@@ -45,7 +45,7 @@ def create_default_context() -> AppContext:
 
 
 class DatasetSelection(BaseModel):
-    subset: Literal["novel", "medical"] = "novel"
+    subset: Literal["novel", "medical"] = "medical"
 
 
 class IndexRequest(BaseModel):

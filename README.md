@@ -1,5 +1,7 @@
 # Adaptive GraphRAG：阶段一可复现实验
 
+> 仓库整合说明(2026-09):本仓库已并入三条历史分支的全部成果——**Medical 官方后端评测主线**(vector / LightRAG / PathRAG 的 P0/P1、索引与 router,见 [P0_P1_RUNBOOK.md](P0_P1_RUNBOOK.md)、`results_api/` 与 `src/official_backends/`)与 **知图 · Medical 检索工作台**(`knowledge-workbench/`,FastAPI + React/Cytoscape 图谱问答演示,数据源为 GraphRAG-Bench Medical)。正文为最初阶段一协议实验文档,保留作历史参考。
+
 本项目把 Adaptive-RAG 的核心协议迁移到三个异构检索后端：
 
 1. `vector`：直接文本向量检索；
