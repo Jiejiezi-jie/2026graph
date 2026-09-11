@@ -1,0 +1,85 @@
+{
+  "experiment": "no_all_failed_tfidf",
+  "all_failed_policy": "excluded from train, validation, and test",
+  "split_counts": {
+    "train": 57,
+    "validation": 19,
+    "test": 15
+  },
+  "label_distribution": {
+    "train": {
+      "pathrag": 17,
+      "vector": 27,
+      "lightrag": 13
+    },
+    "validation": {
+      "pathrag": 7,
+      "vector": 9,
+      "lightrag": 3
+    },
+    "test": {
+      "vector": 8,
+      "pathrag": 3,
+      "lightrag": 4
+    }
+  },
+  "selected_hyperparameters": {
+    "feature_kind": "word",
+    "class_weight": "balanced",
+    "c_value": 0.5
+  },
+  "validation": {
+    "n": 19,
+    "accuracy": 0.42105263157894735,
+    "macro_f1": 0.41010101010101013,
+    "confusion_matrix": [
+      [
+        2,
+        4,
+        3
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        4
+      ]
+    ],
+    "prediction_distribution": {
+      "pathrag": 8,
+      "vector": 3,
+      "lightrag": 8
+    }
+  },
+  "test": {
+    "n": 15,
+    "accuracy": 0.26666666666666666,
+    "macro_f1": 0.22792022792022792,
+    "confusion_matrix": [
+      [
+        3,
+        2,
+        3
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1
+      ]
+    ],
+    "prediction_distribution": {
+      "lightrag": 4,
+      "pathrag": 6,
+      "vector": 5
+    }
+  }
+}

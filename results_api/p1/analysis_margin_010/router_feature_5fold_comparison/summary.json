@@ -1,0 +1,280 @@
+{
+  "protocol": {
+    "folds": 5,
+    "fold_stratification": "question_type",
+    "same_fold_membership_for_all_four experiments": true,
+    "hyperparameter_selection": "cross-validation Macro-F1, then accuracy",
+    "development_count": 96,
+    "test_count": 23
+  },
+  "experiments": {
+    "old_rule_tfidf": {
+      "experiment": "old_rule_tfidf",
+      "label_rule": "correctness >= 0.50; cheapest eligible method",
+      "all_failed_policy": "included as the rule's fallback method label",
+      "development_count": 96,
+      "test_count": 23,
+      "development_label_distribution": {
+        "vector": 64,
+        "lightrag": 16,
+        "pathrag": 16
+      },
+      "test_label_distribution": {
+        "vector": 16,
+        "lightrag": 1,
+        "pathrag": 6
+      },
+      "all_failed": 21,
+      "selected_hyperparameters": {
+        "feature_kind": "word_char",
+        "class_weight": "balanced",
+        "c_value": 2.0,
+        "cross_validation": {
+          "n": 96,
+          "accuracy": 0.5520833333333334,
+          "macro_f1": 0.35634224450013924,
+          "confusion_matrix": [
+            [
+              48,
+              10,
+              6
+            ],
+            [
+              12,
+              2,
+              2
+            ],
+            [
+              9,
+              4,
+              3
+            ]
+          ]
+        }
+      },
+      "test": {
+        "n": 23,
+        "accuracy": 0.5652173913043478,
+        "macro_f1": 0.39259259259259255,
+        "confusion_matrix": [
+          [
+            11,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            2
+          ]
+        ]
+      }
+    },
+    "old_rule_bge_m3": {
+      "experiment": "old_rule_bge_m3",
+      "label_rule": "correctness >= 0.50; cheapest eligible method",
+      "all_failed_policy": "included as the rule's fallback method label",
+      "development_count": 96,
+      "test_count": 23,
+      "development_label_distribution": {
+        "vector": 64,
+        "lightrag": 16,
+        "pathrag": 16
+      },
+      "test_label_distribution": {
+        "vector": 16,
+        "lightrag": 1,
+        "pathrag": 6
+      },
+      "all_failed": 21,
+      "selected_hyperparameters": {
+        "feature_kind": "bge_m3_cls",
+        "class_weight": "balanced",
+        "c_value": 0.5,
+        "cross_validation": {
+          "n": 96,
+          "accuracy": 0.5416666666666666,
+          "macro_f1": 0.36291194151015754,
+          "confusion_matrix": [
+            [
+              46,
+              10,
+              8
+            ],
+            [
+              7,
+              4,
+              5
+            ],
+            [
+              10,
+              4,
+              2
+            ]
+          ]
+        }
+      },
+      "test": {
+        "n": 23,
+        "accuracy": 0.6086956521739131,
+        "macro_f1": 0.42857142857142855,
+        "confusion_matrix": [
+          [
+            10,
+            3,
+            3
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            4
+          ]
+        ]
+      }
+    },
+    "new_rule_tfidf": {
+      "experiment": "new_rule_tfidf",
+      "label_rule": "correctness >= 0.60 and >= question best - 0.10; cheapest eligible method",
+      "all_failed_policy": "included as the rule's fallback method label",
+      "development_count": 96,
+      "test_count": 23,
+      "development_label_distribution": {
+        "pathrag": 30,
+        "vector": 46,
+        "lightrag": 20
+      },
+      "test_label_distribution": {
+        "vector": 11,
+        "pathrag": 8,
+        "lightrag": 4
+      },
+      "all_failed": 28,
+      "selected_hyperparameters": {
+        "feature_kind": "word_char",
+        "class_weight": "balanced",
+        "c_value": 2.0,
+        "cross_validation": {
+          "n": 96,
+          "accuracy": 0.3958333333333333,
+          "macro_f1": 0.3637786313842652,
+          "confusion_matrix": [
+            [
+              20,
+              7,
+              19
+            ],
+            [
+              8,
+              4,
+              8
+            ],
+            [
+              14,
+              2,
+              14
+            ]
+          ]
+        }
+      },
+      "test": {
+        "n": 23,
+        "accuracy": 0.5652173913043478,
+        "macro_f1": 0.49603174603174605,
+        "confusion_matrix": [
+          [
+            8,
+            3,
+            0
+          ],
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            4,
+            0,
+            4
+          ]
+        ]
+      }
+    },
+    "new_rule_bge_m3": {
+      "experiment": "new_rule_bge_m3",
+      "label_rule": "correctness >= 0.60 and >= question best - 0.10; cheapest eligible method",
+      "all_failed_policy": "included as the rule's fallback method label",
+      "development_count": 96,
+      "test_count": 23,
+      "development_label_distribution": {
+        "pathrag": 30,
+        "vector": 46,
+        "lightrag": 20
+      },
+      "test_label_distribution": {
+        "vector": 11,
+        "pathrag": 8,
+        "lightrag": 4
+      },
+      "all_failed": 28,
+      "selected_hyperparameters": {
+        "feature_kind": "bge_m3_cls",
+        "class_weight": "balanced",
+        "c_value": 0.01,
+        "cross_validation": {
+          "n": 96,
+          "accuracy": 0.4166666666666667,
+          "macro_f1": 0.37593441041716896,
+          "confusion_matrix": [
+            [
+              23,
+              9,
+              14
+            ],
+            [
+              7,
+              4,
+              9
+            ],
+            [
+              11,
+              6,
+              13
+            ]
+          ]
+        }
+      },
+      "test": {
+        "n": 23,
+        "accuracy": 0.391304347826087,
+        "macro_f1": 0.3610446570972887,
+        "confusion_matrix": [
+          [
+            3,
+            4,
+            4
+          ],
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            5
+          ]
+        ]
+      }
+    }
+  }
+}

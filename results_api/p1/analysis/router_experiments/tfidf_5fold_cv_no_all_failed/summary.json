@@ -1,0 +1,69 @@
+{
+  "experiment": "tfidf_5fold_cv_no_all_failed",
+  "all_failed_policy": "excluded from development and test evaluation",
+  "development_counts": {
+    "train": 57,
+    "validation": 19
+  },
+  "test_count": 15,
+  "development_label_distribution": {
+    "pathrag": 24,
+    "vector": 36,
+    "lightrag": 16
+  },
+  "test_label_distribution": {
+    "vector": 8,
+    "pathrag": 3,
+    "lightrag": 4
+  },
+  "selected_hyperparameters": {
+    "feature_kind": "word",
+    "class_weight": "balanced",
+    "c_value": 0.5,
+    "cross_validation": {
+      "n": 76,
+      "accuracy": 0.39473684210526316,
+      "macro_f1": 0.36916666666666664,
+      "confusion_matrix": [
+        [
+          14,
+          10,
+          12
+        ],
+        [
+          12,
+          3,
+          1
+        ],
+        [
+          8,
+          3,
+          13
+        ]
+      ]
+    }
+  },
+  "test": {
+    "n": 15,
+    "accuracy": 0.26666666666666666,
+    "macro_f1": 0.22792022792022792,
+    "confusion_matrix": [
+      [
+        3,
+        2,
+        3
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1
+      ]
+    ]
+  },
+  "folds": 5
+}

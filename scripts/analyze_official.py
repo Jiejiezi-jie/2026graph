@@ -12,6 +12,9 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", type=Path, default=Path("configs/official_local.json"))
     parser.add_argument("--stage", choices=["p0", "p1"], default="p1")
+    parser.add_argument("--correctness-threshold", type=float, default=0.60)
+    parser.add_argument("--best-margin", type=float, default=0.05)
+    parser.add_argument("--output-dir", type=Path)
     args = parser.parse_args()
     project_dir = Path(__file__).resolve().parents[1]
     config_path = args.config if args.config.is_absolute() else project_dir / args.config
@@ -28,7 +31,14 @@ def main() -> None:
             raise ValueError(f"{method}: evaluation does not cover the current source question set")
         if any(row.get("evaluation", {}).get("source") != sources[row["question_id"]] for row in evaluated):
             raise ValueError(f"{method}: stale evaluations; re-evaluate current answers first")
-    summary = analyze_official(rows, stage_dir / "analysis", seed=config["seed"])
+    output_dir = args.output_dir or (stage_dir / "analysis")
+    summary = analyze_official(
+        rows,
+        output_dir,
+        seed=config["seed"],
+        correctness_threshold=args.correctness_threshold,
+        best_margin=args.best_margin,
+    )
     print(json.dumps(summary, indent=2, ensure_ascii=False))
 
 

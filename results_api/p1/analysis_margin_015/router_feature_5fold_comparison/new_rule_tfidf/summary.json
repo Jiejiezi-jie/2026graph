@@ -1,0 +1,67 @@
+{
+  "experiment": "new_rule_tfidf",
+  "label_rule": "correctness >= 0.60 and >= question best - 0.15; cheapest eligible method",
+  "all_failed_policy": "included as the rule's fallback method label",
+  "development_count": 96,
+  "test_count": 23,
+  "development_label_distribution": {
+    "pathrag": 26,
+    "vector": 51,
+    "lightrag": 19
+  },
+  "test_label_distribution": {
+    "vector": 12,
+    "pathrag": 8,
+    "lightrag": 3
+  },
+  "all_failed": 28,
+  "selected_hyperparameters": {
+    "feature_kind": "word_char",
+    "class_weight": "balanced",
+    "c_value": 0.5,
+    "cross_validation": {
+      "n": 96,
+      "accuracy": 0.4270833333333333,
+      "macro_f1": 0.3747464503042597,
+      "confusion_matrix": [
+        [
+          27,
+          6,
+          18
+        ],
+        [
+          11,
+          4,
+          4
+        ],
+        [
+          13,
+          3,
+          10
+        ]
+      ]
+    }
+  },
+  "test": {
+    "n": 23,
+    "accuracy": 0.5217391304347826,
+    "macro_f1": 0.37606837606837606,
+    "confusion_matrix": [
+      [
+        9,
+        3,
+        0
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        5,
+        0,
+        3
+      ]
+    ]
+  }
+}

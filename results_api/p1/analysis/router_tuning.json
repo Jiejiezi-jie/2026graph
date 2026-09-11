@@ -4,24 +4,24 @@
     "feature_kind": "word",
     "class_weight": null,
     "c_value": 0.5,
-    "validation_accuracy": 0.75,
-    "validation_macro_f1": 0.2857142857142857
+    "validation_accuracy": 0.4583333333333333,
+    "validation_macro_f1": 0.2626262626262626
   },
   {
     "include_all_failed": false,
     "feature_kind": "word",
     "class_weight": null,
     "c_value": 1.0,
-    "validation_accuracy": 0.75,
-    "validation_macro_f1": 0.2857142857142857
+    "validation_accuracy": 0.375,
+    "validation_macro_f1": 0.2754036087369421
   },
   {
     "include_all_failed": false,
     "feature_kind": "word",
     "class_weight": null,
     "c_value": 2.0,
-    "validation_accuracy": 0.7083333333333334,
-    "validation_macro_f1": 0.2764227642276423
+    "validation_accuracy": 0.375,
+    "validation_macro_f1": 0.34304388422035487
   },
   {
     "include_all_failed": false,
@@ -29,166 +29,166 @@
     "class_weight": "balanced",
     "c_value": 0.5,
     "validation_accuracy": 0.4166666666666667,
-    "validation_macro_f1": 0.3463012083701739
+    "validation_macro_f1": 0.40256410256410263
   },
   {
     "include_all_failed": false,
     "feature_kind": "word",
     "class_weight": "balanced",
     "c_value": 1.0,
-    "validation_accuracy": 0.4166666666666667,
-    "validation_macro_f1": 0.3463012083701739
+    "validation_accuracy": 0.4583333333333333,
+    "validation_macro_f1": 0.45162907268170427
   },
   {
     "include_all_failed": false,
     "feature_kind": "word",
     "class_weight": "balanced",
     "c_value": 2.0,
-    "validation_accuracy": 0.4166666666666667,
-    "validation_macro_f1": 0.3463012083701739
+    "validation_accuracy": 0.4583333333333333,
+    "validation_macro_f1": 0.45162907268170427
   },
   {
     "include_all_failed": false,
     "feature_kind": "word_char",
     "class_weight": null,
     "c_value": 0.5,
-    "validation_accuracy": 0.75,
-    "validation_macro_f1": 0.2857142857142857
+    "validation_accuracy": 0.4583333333333333,
+    "validation_macro_f1": 0.29523809523809524
   },
   {
     "include_all_failed": false,
     "feature_kind": "word_char",
     "class_weight": null,
     "c_value": 1.0,
-    "validation_accuracy": 0.75,
-    "validation_macro_f1": 0.2857142857142857
+    "validation_accuracy": 0.4166666666666667,
+    "validation_macro_f1": 0.375
   },
   {
     "include_all_failed": false,
     "feature_kind": "word_char",
     "class_weight": null,
     "c_value": 2.0,
-    "validation_accuracy": 0.75,
-    "validation_macro_f1": 0.2857142857142857
+    "validation_accuracy": 0.375,
+    "validation_macro_f1": 0.3491050859471912
   },
   {
     "include_all_failed": false,
+    "feature_kind": "word_char",
+    "class_weight": "balanced",
+    "c_value": 0.5,
+    "validation_accuracy": 0.4166666666666667,
+    "validation_macro_f1": 0.4165413533834586
+  },
+  {
+    "include_all_failed": false,
+    "feature_kind": "word_char",
+    "class_weight": "balanced",
+    "c_value": 1.0,
+    "validation_accuracy": 0.375,
+    "validation_macro_f1": 0.37777777777777777
+  },
+  {
+    "include_all_failed": false,
+    "feature_kind": "word_char",
+    "class_weight": "balanced",
+    "c_value": 2.0,
+    "validation_accuracy": 0.375,
+    "validation_macro_f1": 0.37777777777777777
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word",
+    "class_weight": null,
+    "c_value": 0.5,
+    "validation_accuracy": 0.4583333333333333,
+    "validation_macro_f1": 0.2626262626262626
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word",
+    "class_weight": null,
+    "c_value": 1.0,
+    "validation_accuracy": 0.4166666666666667,
+    "validation_macro_f1": 0.30952380952380953
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word",
+    "class_weight": null,
+    "c_value": 2.0,
+    "validation_accuracy": 0.5,
+    "validation_macro_f1": 0.44973544973544977
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word",
+    "class_weight": "balanced",
+    "c_value": 0.5,
+    "validation_accuracy": 0.4583333333333333,
+    "validation_macro_f1": 0.43956043956043955
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word",
+    "class_weight": "balanced",
+    "c_value": 1.0,
+    "validation_accuracy": 0.4583333333333333,
+    "validation_macro_f1": 0.43956043956043955
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word",
+    "class_weight": "balanced",
+    "c_value": 2.0,
+    "validation_accuracy": 0.5,
+    "validation_macro_f1": 0.4904761904761905
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word_char",
+    "class_weight": null,
+    "c_value": 0.5,
+    "validation_accuracy": 0.5,
+    "validation_macro_f1": 0.34975369458128075
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word_char",
+    "class_weight": null,
+    "c_value": 1.0,
+    "validation_accuracy": 0.5,
+    "validation_macro_f1": 0.4444444444444445
+  },
+  {
+    "include_all_failed": true,
+    "feature_kind": "word_char",
+    "class_weight": null,
+    "c_value": 2.0,
+    "validation_accuracy": 0.5416666666666666,
+    "validation_macro_f1": 0.4823103154305201
+  },
+  {
+    "include_all_failed": true,
     "feature_kind": "word_char",
     "class_weight": "balanced",
     "c_value": 0.5,
     "validation_accuracy": 0.5,
-    "validation_macro_f1": 0.2888888888888889
+    "validation_macro_f1": 0.4904761904761905
   },
   {
-    "include_all_failed": false,
+    "include_all_failed": true,
     "feature_kind": "word_char",
     "class_weight": "balanced",
     "c_value": 1.0,
-    "validation_accuracy": 0.5416666666666666,
-    "validation_macro_f1": 0.3093681917211329
-  },
-  {
-    "include_all_failed": false,
-    "feature_kind": "word_char",
-    "class_weight": "balanced",
-    "c_value": 2.0,
-    "validation_accuracy": 0.5416666666666666,
-    "validation_macro_f1": 0.3119047619047619
-  },
-  {
-    "include_all_failed": true,
-    "feature_kind": "word",
-    "class_weight": null,
-    "c_value": 0.5,
-    "validation_accuracy": 0.75,
-    "validation_macro_f1": 0.2857142857142857
-  },
-  {
-    "include_all_failed": true,
-    "feature_kind": "word",
-    "class_weight": null,
-    "c_value": 1.0,
-    "validation_accuracy": 0.75,
-    "validation_macro_f1": 0.2857142857142857
-  },
-  {
-    "include_all_failed": true,
-    "feature_kind": "word",
-    "class_weight": null,
-    "c_value": 2.0,
-    "validation_accuracy": 0.75,
-    "validation_macro_f1": 0.5055555555555555
-  },
-  {
-    "include_all_failed": true,
-    "feature_kind": "word",
-    "class_weight": "balanced",
-    "c_value": 0.5,
     "validation_accuracy": 0.5,
-    "validation_macro_f1": 0.45292829775588395
+    "validation_macro_f1": 0.4904761904761905
   },
   {
     "include_all_failed": true,
-    "feature_kind": "word",
+    "feature_kind": "word_char",
     "class_weight": "balanced",
-    "c_value": 1.0,
+    "c_value": 2.0,
     "validation_accuracy": 0.5416666666666666,
-    "validation_macro_f1": 0.4733044733044733
-  },
-  {
-    "include_all_failed": true,
-    "feature_kind": "word",
-    "class_weight": "balanced",
-    "c_value": 2.0,
-    "validation_accuracy": 0.625,
-    "validation_macro_f1": 0.5611111111111111
-  },
-  {
-    "include_all_failed": true,
-    "feature_kind": "word_char",
-    "class_weight": null,
-    "c_value": 0.5,
-    "validation_accuracy": 0.75,
-    "validation_macro_f1": 0.2857142857142857
-  },
-  {
-    "include_all_failed": true,
-    "feature_kind": "word_char",
-    "class_weight": null,
-    "c_value": 1.0,
-    "validation_accuracy": 0.75,
-    "validation_macro_f1": 0.2857142857142857
-  },
-  {
-    "include_all_failed": true,
-    "feature_kind": "word_char",
-    "class_weight": null,
-    "c_value": 2.0,
-    "validation_accuracy": 0.75,
-    "validation_macro_f1": 0.2857142857142857
-  },
-  {
-    "include_all_failed": true,
-    "feature_kind": "word_char",
-    "class_weight": "balanced",
-    "c_value": 0.5,
-    "validation_accuracy": 0.5833333333333334,
-    "validation_macro_f1": 0.4276094276094276
-  },
-  {
-    "include_all_failed": true,
-    "feature_kind": "word_char",
-    "class_weight": "balanced",
-    "c_value": 1.0,
-    "validation_accuracy": 0.625,
-    "validation_macro_f1": 0.44934640522875813
-  },
-  {
-    "include_all_failed": true,
-    "feature_kind": "word_char",
-    "class_weight": "balanced",
-    "c_value": 2.0,
-    "validation_accuracy": 0.6666666666666666,
-    "validation_macro_f1": 0.5406162464985994
+    "validation_macro_f1": 0.5333333333333333
   }
 ]

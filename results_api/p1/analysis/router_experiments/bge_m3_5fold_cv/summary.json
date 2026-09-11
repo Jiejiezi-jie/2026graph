@@ -1,0 +1,35 @@
+{
+  "experiment": "bge_m3_5fold_cv_no_all_failed",
+  "all_failed_policy": "excluded from development and test evaluation",
+  "development_counts": {
+    "train": 57,
+    "validation": 19
+  },
+  "test_count": 15,
+  "development_label_distribution": {
+    "pathrag": 24,
+    "vector": 36,
+    "lightrag": 16
+  },
+  "test_label_distribution": {
+    "vector": 8,
+    "pathrag": 3,
+    "lightrag": 4
+  },
+  "selected_hyperparameters": {
+    "class_weight": "balanced",
+    "c_value": 0.5,
+    "cross_validation": {
+      "n": 76,
+      "accuracy": 0.3684210526315789,
+      "macro_f1": 0.3512944571768101
+    }
+  },
+  "test": {
+    "n": 15,
+    "accuracy": 0.4,
+    "macro_f1": 0.35978835978835977
+  },
+  "embedding_dimension": 1024,
+  "folds": 5
+}

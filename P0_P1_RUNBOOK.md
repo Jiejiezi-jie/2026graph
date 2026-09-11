@@ -110,6 +110,8 @@ EOF
 - `analyze_official` 产出 `results_api/p1/analysis/`：summary.json、silver_labels.jsonl、
   router_tuning.json、router_test_predictions.jsonl、router.joblib、quality_cost.png、router_confusion_matrix.png。
 
+正式评测的银标规则为：方法的 `answer_correctness` 必须不低于 `0.60`，并且不低于本题三种方法最高正确率减 `0.05`；满足条件的方法中按 token 成本、耗时和固定方法顺序选择银标。若本题没有方法达到 `0.60`，保留最高正确率方法作为 `all_failed` 兜底。
+
 ## 8. 结果检查
 
 ```bash

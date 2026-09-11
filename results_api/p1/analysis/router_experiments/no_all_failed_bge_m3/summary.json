@@ -1,0 +1,89 @@
+{
+  "experiment": "no_all_failed_bge_m3",
+  "all_failed_policy": "excluded from train, validation, and test",
+  "split_counts": {
+    "train": 57,
+    "validation": 19,
+    "test": 15
+  },
+  "label_distribution": {
+    "train": {
+      "pathrag": 17,
+      "vector": 27,
+      "lightrag": 13
+    },
+    "validation": {
+      "pathrag": 7,
+      "vector": 9,
+      "lightrag": 3
+    },
+    "test": {
+      "vector": 8,
+      "pathrag": 3,
+      "lightrag": 4
+    }
+  },
+  "selected_hyperparameters": {
+    "feature_kind": "bge_m3_cls",
+    "class_weight": "balanced",
+    "c_value": 0.1
+  },
+  "validation": {
+    "n": 19,
+    "accuracy": 0.5263157894736842,
+    "macro_f1": 0.49607843137254903,
+    "confusion_matrix": [
+      [
+        4,
+        1,
+        4
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        0,
+        5
+      ]
+    ],
+    "prediction_distribution": {
+      "vector": 7,
+      "lightrag": 2,
+      "pathrag": 10
+    }
+  },
+  "test": {
+    "n": 15,
+    "accuracy": 0.4,
+    "macro_f1": 0.35978835978835977,
+    "confusion_matrix": [
+      [
+        4,
+        2,
+        2
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        1
+      ]
+    ],
+    "prediction_distribution": {
+      "lightrag": 5,
+      "pathrag": 4,
+      "vector": 6
+    }
+  },
+  "embedding_model": "/home/szj/2026graph（old）/.wt-lightrag/models/bge-m3",
+  "embedding_device": "cuda:0",
+  "embedding_dimension": 1024,
+  "pooling": "first token (CLS)"
+}

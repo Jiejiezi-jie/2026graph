@@ -16,12 +16,28 @@ from src.official_evaluation import valid_evaluation
 
 
 def choose_official_silver(
-    method_rows: dict[str, dict[str, Any]], correctness_threshold: float = 0.5
+    method_rows: dict[str, dict[str, Any]],
+    correctness_threshold: float = 0.60,
+    best_margin: float = 0.05,
 ) -> tuple[str, bool]:
+    """Choose the cheapest method that is both correct enough and near-best.
+
+    A method is eligible only when its answer correctness is at least
+    ``correctness_threshold`` and at least ``best_margin`` below the best
+    method for the same question.  If no method is eligible, retain the
+    existing explicit all-failed fallback and choose the best-scoring method.
+    """
+    best_correctness = max(
+        method_rows[method]["answer_correctness"] for method in METHODS
+    )
     correct = [
         method
         for method in METHODS
-        if method_rows[method]["answer_correctness"] >= correctness_threshold
+        if (
+            method_rows[method]["answer_correctness"] >= correctness_threshold
+            and method_rows[method]["answer_correctness"]
+            >= best_correctness - best_margin
+        )
     ]
     if correct:
         chosen = min(
@@ -108,6 +124,8 @@ def analyze_official(
     rows_by_method: dict[str, list[dict[str, Any]]],
     output_dir: Path,
     seed: int = 42,
+    correctness_threshold: float = 0.60,
+    best_margin: float = 0.05,
 ) -> dict[str, Any]:
     protocols = set()
     for method, rows in rows_by_method.items():
@@ -139,7 +157,11 @@ def analyze_official(
     labels = []
     for qid in sorted(backend_rows):
         source = question_info[qid]
-        label, all_failed = choose_official_silver(backend_rows[qid])
+        label, all_failed = choose_official_silver(
+            backend_rows[qid],
+            correctness_threshold=correctness_threshold,
+            best_margin=best_margin,
+        )
         labels.append(
             {
                 "question_id": qid,
@@ -185,6 +207,11 @@ def analyze_official(
         "split_counts": dict(Counter(row["split"] for row in labels)),
         "silver_label_distribution": dict(Counter(row["silver_label"] for row in labels)),
         "all_failed": int(sum(row["all_failed"] for row in labels)),
+        "silver_rule": {
+            "correctness_threshold": correctness_threshold,
+            "best_margin": best_margin,
+            "selection": "cheapest eligible method",
+        },
         "router": {
             "family": "TF-IDF + Logistic Regression",
             "selected_on": "validation Macro-F1",
@@ -283,4 +310,3 @@ def _save_plots(summary: dict, matrix: np.ndarray, output_dir: Path) -> None:
     plt.tight_layout()
     plt.savefig(output_dir / "router_confusion_matrix.png", dpi=180)
     plt.close()
-

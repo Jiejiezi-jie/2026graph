@@ -234,7 +234,7 @@ id,\tcontent
                 "evidence_recall": 0.5,
             },
             "lightrag": {
-                "answer_correctness": 0.8,
+                "answer_correctness": 0.62,
                 "input_tokens": 120,
                 "output_tokens": 10,
                 "total_time_ms": 30,
@@ -242,7 +242,7 @@ id,\tcontent
                 "evidence_recall": 0.6,
             },
             "pathrag": {
-                "answer_correctness": 0.9,
+                "answer_correctness": 0.64,
                 "input_tokens": 200,
                 "output_tokens": 10,
                 "total_time_ms": 40,
@@ -251,6 +251,53 @@ id,\tcontent
             },
         }
         self.assertEqual(choose_official_silver(rows), ("vector", False))
+
+    def test_official_silver_requires_near_best_correctness(self):
+        rows = {
+            "vector": {
+                "answer_correctness": 0.60,
+                "input_tokens": 100,
+                "output_tokens": 10,
+                "total_time_ms": 20,
+                "rouge_l": 0.4,
+                "evidence_recall": 0.5,
+            },
+            "lightrag": {
+                "answer_correctness": 0.66,
+                "input_tokens": 120,
+                "output_tokens": 10,
+                "total_time_ms": 30,
+                "rouge_l": 0.5,
+                "evidence_recall": 0.6,
+            },
+            "pathrag": {
+                "answer_correctness": 0.70,
+                "input_tokens": 200,
+                "output_tokens": 10,
+                "total_time_ms": 40,
+                "rouge_l": 0.6,
+                "evidence_recall": 0.7,
+            },
+        }
+        self.assertEqual(choose_official_silver(rows), ("lightrag", False))
+
+    def test_official_silver_falls_back_when_no_method_reaches_threshold(self):
+        rows = {
+            method: {
+                "answer_correctness": score,
+                "input_tokens": 100,
+                "output_tokens": 10,
+                "total_time_ms": 20,
+                "rouge_l": 0.4,
+                "evidence_recall": 0.5,
+            }
+            for method, score in {
+                "vector": 0.40,
+                "lightrag": 0.45,
+                "pathrag": 0.50,
+            }.items()
+        }
+        self.assertEqual(choose_official_silver(rows), ("pathrag", True))
 
 
 if __name__ == "__main__":

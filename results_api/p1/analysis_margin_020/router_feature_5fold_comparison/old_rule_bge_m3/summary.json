@@ -1,0 +1,67 @@
+{
+  "experiment": "old_rule_bge_m3",
+  "label_rule": "correctness >= 0.50; cheapest eligible method",
+  "all_failed_policy": "included as the rule's fallback method label",
+  "development_count": 96,
+  "test_count": 23,
+  "development_label_distribution": {
+    "vector": 64,
+    "lightrag": 16,
+    "pathrag": 16
+  },
+  "test_label_distribution": {
+    "vector": 16,
+    "lightrag": 1,
+    "pathrag": 6
+  },
+  "all_failed": 21,
+  "selected_hyperparameters": {
+    "feature_kind": "bge_m3_cls",
+    "class_weight": "balanced",
+    "c_value": 0.5,
+    "cross_validation": {
+      "n": 96,
+      "accuracy": 0.5416666666666666,
+      "macro_f1": 0.36291194151015754,
+      "confusion_matrix": [
+        [
+          46,
+          10,
+          8
+        ],
+        [
+          7,
+          4,
+          5
+        ],
+        [
+          10,
+          4,
+          2
+        ]
+      ]
+    }
+  },
+  "test": {
+    "n": 23,
+    "accuracy": 0.6086956521739131,
+    "macro_f1": 0.42857142857142855,
+    "confusion_matrix": [
+      [
+        10,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        4
+      ]
+    ]
+  }
+}

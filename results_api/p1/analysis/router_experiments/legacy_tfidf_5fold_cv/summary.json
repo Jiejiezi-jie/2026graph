@@ -1,0 +1,72 @@
+{
+  "experiment": "legacy_tfidf_5fold_cv",
+  "label_source": "HEAD:results_api/p1/analysis/silver_labels.jsonl",
+  "label_rule": "answer_correctness >= 0.50; cheapest eligible method",
+  "all_failed_policy": "included",
+  "development_counts": {
+    "train": 72,
+    "validation": 24
+  },
+  "test_count": 23,
+  "development_label_distribution": {
+    "vector": 64,
+    "lightrag": 16,
+    "pathrag": 16
+  },
+  "test_label_distribution": {
+    "vector": 16,
+    "lightrag": 1,
+    "pathrag": 6
+  },
+  "all_failed": 21,
+  "selected_hyperparameters": {
+    "feature_kind": "word",
+    "class_weight": "balanced",
+    "c_value": 1.0,
+    "cross_validation": {
+      "n": 96,
+      "accuracy": 0.6041666666666666,
+      "macro_f1": 0.49082341269841273,
+      "confusion_matrix": [
+        [
+          47,
+          14,
+          3
+        ],
+        [
+          12,
+          3,
+          1
+        ],
+        [
+          5,
+          3,
+          8
+        ]
+      ]
+    }
+  },
+  "test": {
+    "n": 23,
+    "accuracy": 0.5217391304347826,
+    "macro_f1": 0.3703703703703704,
+    "confusion_matrix": [
+      [
+        10,
+        5,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        3,
+        1,
+        2
+      ]
+    ]
+  },
+  "folds": 5
+}
