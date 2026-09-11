@@ -1,6 +1,7 @@
 import tempfile
 import threading
 import unittest
+import json
 from pathlib import Path
 
 import numpy as np
@@ -16,6 +17,7 @@ from src.official_backends.model_client import (
 from src.official_backends.pathrag_backend import PathRAGBackend, parse_pathrag_context
 from src.official_backends.vector_backend import VectorRAGBackend, chunk_by_token_window
 from src.official_data import p0_subset, stratified_sample_and_split
+from scripts.run_official_experiment import _prepare_resume_output
 
 
 class FakeEmbedding:
@@ -60,6 +62,29 @@ class FakeLLM:
 
 
 class OfficialCoreTests(unittest.IsolatedAsyncioTestCase):
+    def test_resume_removes_failures_before_retry(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "results.jsonl"
+            rows = [
+                {"question_id": "done", "answer": "ok", "error": None},
+                {"question_id": "retry", "error": "temporary failure"},
+            ]
+            output.write_text(
+                "".join(json.dumps(row) + "\n" for row in rows),
+                encoding="utf-8",
+            )
+            self.assertEqual(_prepare_resume_output(output), {"done"})
+            retained = [json.loads(line) for line in output.read_text().splitlines()]
+            self.assertEqual([row["question_id"] for row in retained], ["done"])
+
+    def test_resume_rejects_duplicate_successes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "results.jsonl"
+            row = {"question_id": "duplicate", "answer": "ok", "error": None}
+            output.write_text(json.dumps(row) + "\n" + json.dumps(row) + "\n")
+            with self.assertRaisesRegex(ValueError, "duplicate successful"):
+                _prepare_resume_output(output)
+
     def test_frozen_stratified_split(self):
         questions = []
         for kind in ("Fact Retrieval", "Complex Reasoning"):
@@ -105,6 +130,26 @@ class OfficialCoreTests(unittest.IsolatedAsyncioTestCase):
             self.assertEqual(result["llm_calls"], 1)
             self.assertTrue(result["contexts"])
             self.assertEqual(result["answer"], "grounded answer")
+
+            resumed = VectorRAGBackend(
+                directory,
+                FakeLLM(),
+                FakeEmbedding(),
+                chunk_tokens=20,
+                chunk_overlap_tokens=2,
+                top_k=2,
+                max_context_tokens=100,
+            )
+            cached = resumed.load_cached_index("skin cancer evidence. " * 50)
+            resumed_result = await resumed.query("Which skin cancer?", "q-2")
+            self.assertTrue(cached["cached"])
+            self.assertEqual(resumed_result["question_id"], "q-2")
+
+    def test_vector_skip_index_rejects_missing_cache(self):
+        with tempfile.TemporaryDirectory() as directory:
+            backend = VectorRAGBackend(directory, FakeLLM(), FakeEmbedding())
+            with self.assertRaisesRegex(RuntimeError, "no compatible cached"):
+                backend.load_cached_index("corpus")
 
     async def test_lightrag_v157_adapter_initializes(self):
         with tempfile.TemporaryDirectory() as directory:

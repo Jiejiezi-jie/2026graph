@@ -52,9 +52,22 @@ def main() -> None:
         ),
     )
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument(
+        "--include-all-failed",
+        action="store_true",
+        help="Keep all-failed questions using the silver rule's fallback label.",
+    )
+    parser.add_argument(
+        "--stratify-by",
+        choices=("label", "question_type"),
+        default="label",
+        help="Field used to stratify the five cross-validation folds.",
+    )
     args = parser.parse_args()
 
-    labels = [row for row in load_jsonl(args.labels) if not row["all_failed"]]
+    labels = load_jsonl(args.labels)
+    if not args.include_all_failed:
+        labels = [row for row in labels if not row["all_failed"]]
     development = [row for row in labels if row["split"] in ("train", "validation")]
     test = [row for row in labels if row["split"] == "test"]
     questions = np.array([row["question"] for row in development], dtype=object)
@@ -62,6 +75,9 @@ def main() -> None:
     test_questions = [row["question"] for row in test]
     test_targets = [row["silver_label"] for row in test]
 
+    strata = targets
+    if args.stratify_by == "question_type":
+        strata = np.array([row["question_type"] for row in development])
     splitter = StratifiedKFold(n_splits=5, shuffle=True, random_state=args.seed)
     candidates = []
     for feature_kind in ("word", "word_char"):
@@ -70,7 +86,7 @@ def main() -> None:
                 fold_scores = []
                 all_truth = []
                 all_predicted = []
-                for train_indices, validation_indices in splitter.split(questions, targets):
+                for train_indices, validation_indices in splitter.split(questions, strata):
                     model = build_router(feature_kind, class_weight, c_value, args.seed)
                     model.fit(questions[train_indices].tolist(), targets[train_indices].tolist())
                     predicted = model.predict(questions[validation_indices].tolist()).tolist()
@@ -102,8 +118,17 @@ def main() -> None:
     predicted = model.predict(test_questions).tolist()
 
     summary = {
-        "experiment": "tfidf_5fold_cv_no_all_failed",
-        "all_failed_policy": "excluded from development and test evaluation",
+        "experiment": (
+            "tfidf_5fold_cv_with_all_failed"
+            if args.include_all_failed
+            else "tfidf_5fold_cv_no_all_failed"
+        ),
+        "all_failed_policy": (
+            "included using the silver rule's fallback method label"
+            if args.include_all_failed
+            else "excluded from development and test evaluation"
+        ),
+        "fold_stratification": args.stratify_by,
         "development_counts": dict(Counter(row["split"] for row in development)),
         "test_count": len(test),
         "development_label_distribution": dict(Counter(targets.tolist())),

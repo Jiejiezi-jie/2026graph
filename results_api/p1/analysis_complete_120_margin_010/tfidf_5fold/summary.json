@@ -1,0 +1,70 @@
+{
+  "experiment": "tfidf_5fold_cv_with_all_failed",
+  "all_failed_policy": "included using the silver rule's fallback method label",
+  "fold_stratification": "question_type",
+  "development_counts": {
+    "train": 72,
+    "validation": 24
+  },
+  "test_count": 24,
+  "development_label_distribution": {
+    "pathrag": 30,
+    "vector": 46,
+    "lightrag": 20
+  },
+  "test_label_distribution": {
+    "vector": 11,
+    "pathrag": 9,
+    "lightrag": 4
+  },
+  "selected_hyperparameters": {
+    "feature_kind": "word_char",
+    "class_weight": "balanced",
+    "c_value": 2.0,
+    "cross_validation": {
+      "n": 96,
+      "accuracy": 0.3958333333333333,
+      "macro_f1": 0.3637786313842652,
+      "confusion_matrix": [
+        [
+          20,
+          7,
+          19
+        ],
+        [
+          8,
+          4,
+          8
+        ],
+        [
+          14,
+          2,
+          14
+        ]
+      ]
+    }
+  },
+  "test": {
+    "n": 24,
+    "accuracy": 0.5416666666666666,
+    "macro_f1": 0.47444444444444445,
+    "confusion_matrix": [
+      [
+        8,
+        3,
+        0
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        5,
+        0,
+        4
+      ]
+    ]
+  },
+  "folds": 5
+}

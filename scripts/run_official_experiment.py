@@ -47,17 +47,44 @@ def _write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
             handle.write(json.dumps(row, ensure_ascii=False) + "\n")
 
 
-def _load_completed(path: Path) -> set[str]:
+def _prepare_resume_output(path: Path) -> set[str]:
+    """Remove failed retry placeholders and return unique completed IDs.
+
+    A failed P1 row must remain visible after its run, but it must not remain in
+    the JSONL when the next run retries that question.  Otherwise a successful
+    retry is appended after the failure and downstream evaluation sees a
+    duplicate question ID.
+    """
+
     if not path.exists():
         return set()
-    completed = set()
+    completed: set[str] = set()
+    retained: list[dict[str, Any]] = []
+    removed_failure = False
     with path.open(encoding="utf-8") as handle:
-        for line in handle:
+        for line_number, line in enumerate(handle, start=1):
             if line.strip():
                 row = json.loads(line)
-                # Failed rows must be retried when a run is resumed.
-                if not row.get("error"):
-                    completed.add(row["question_id"])
+                question_id = row.get("question_id")
+                if not isinstance(question_id, str) or not question_id:
+                    raise ValueError(
+                        f"{path}:{line_number}: missing a valid question_id"
+                    )
+                if row.get("error"):
+                    removed_failure = True
+                    continue
+                if question_id in completed:
+                    raise ValueError(
+                        f"{path}: duplicate successful question_id {question_id}"
+                    )
+                completed.add(question_id)
+                retained.append(row)
+    if removed_failure:
+        temporary = path.with_name(path.name + ".resume.tmp")
+        with temporary.open("w", encoding="utf-8") as handle:
+            for row in retained:
+                handle.write(json.dumps(row, ensure_ascii=False) + "\n")
+        temporary.replace(path)
     return completed
 
 
@@ -183,8 +210,11 @@ async def main() -> None:
     try:
         for name, backend in backends.items():
             output_path = stage_dir / f"{name}.jsonl"
-            completed = _load_completed(output_path)
-            if not args.skip_index:
+            completed = _prepare_resume_output(output_path)
+            if args.skip_index and isinstance(backend, VectorRAGBackend):
+                print(f"[{name}] loading cached index", flush=True)
+                backend.load_cached_index(corpus)
+            elif not args.skip_index:
                 print(f"[{name}] indexing or loading index", flush=True)
                 index_stats[name] = await backend.index(corpus)
                 index_stats_path.write_text(

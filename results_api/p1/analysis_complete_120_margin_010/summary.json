@@ -1,0 +1,130 @@
+{
+  "status": "Official backend results; proxy results are excluded.",
+  "questions": 120,
+  "split_counts": {
+    "train": 72,
+    "test": 24,
+    "validation": 24
+  },
+  "silver_label_distribution": {
+    "pathrag": 39,
+    "vector": 57,
+    "lightrag": 24
+  },
+  "all_failed": 29,
+  "silver_rule": {
+    "correctness_threshold": 0.6,
+    "best_margin": 0.1,
+    "selection": "cheapest eligible method"
+  },
+  "router": {
+    "family": "TF-IDF + Logistic Regression",
+    "selected_on": "validation Macro-F1",
+    "selected_hyperparameters": {
+      "include_all_failed": true,
+      "feature_kind": "word_char",
+      "class_weight": "balanced",
+      "c_value": 2.0,
+      "validation_accuracy": 0.5833333333333334,
+      "validation_macro_f1": 0.5888888888888889
+    },
+    "test_accuracy": 0.5416666666666666,
+    "test_macro_f1": 0.47444444444444445,
+    "labels": [
+      "vector",
+      "lightrag",
+      "pathrag"
+    ],
+    "confusion_matrix": [
+      [
+        8,
+        3,
+        0
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        5,
+        0,
+        4
+      ]
+    ],
+    "majority_route": "vector",
+    "majority_accuracy": 0.4583333333333333,
+    "majority_macro_f1": 0.20952380952380953
+  },
+  "test_policies": {
+    "vector": {
+      "n": 24,
+      "answer_correctness": 0.5844941417584487,
+      "rouge_l": 0.287755591818337,
+      "evidence_recall": 0.6520833333333332,
+      "input_tokens": 4984.416666666667,
+      "output_tokens": 49.833333333333336,
+      "latency_ms": 1183.0955764393518,
+      "route_distribution": {
+        "vector": 24
+      }
+    },
+    "lightrag": {
+      "n": 24,
+      "answer_correctness": 0.5336980319415806,
+      "rouge_l": 0.2614023731320844,
+      "evidence_recall": 0.53125,
+      "input_tokens": 5638.916666666667,
+      "output_tokens": 84.95833333333333,
+      "latency_ms": 2754.9854761666666,
+      "route_distribution": {
+        "lightrag": 24
+      }
+    },
+    "pathrag": {
+      "n": 24,
+      "answer_correctness": 0.561624553722529,
+      "rouge_l": 0.3032591962608871,
+      "evidence_recall": 0.4305555555555555,
+      "input_tokens": 5490.833333333333,
+      "output_tokens": 114.16666666666667,
+      "latency_ms": 20247.03450777967,
+      "route_distribution": {
+        "pathrag": 24
+      }
+    },
+    "adaptive": {
+      "n": 24,
+      "answer_correctness": 0.6151270522689529,
+      "rouge_l": 0.31944887100936786,
+      "evidence_recall": 0.5340277777777778,
+      "input_tokens": 5222.125,
+      "output_tokens": 65.95833333333333,
+      "latency_ms": 6847.40598864793,
+      "route_distribution": {
+        "lightrag": 4,
+        "vector": 14,
+        "pathrag": 6
+      }
+    },
+    "oracle": {
+      "n": 24,
+      "answer_correctness": 0.6665572350500734,
+      "rouge_l": 0.3444999740503045,
+      "evidence_recall": 0.6243055555555556,
+      "input_tokens": 5281.75,
+      "output_tokens": 80.75,
+      "latency_ms": 8621.412286696266,
+      "route_distribution": {
+        "vector": 11,
+        "pathrag": 9,
+        "lightrag": 4
+      }
+    }
+  },
+  "comparisons": {
+    "adaptive_cost_reduction_vs_pathrag": 0.05654177817424921,
+    "adaptive_quality_gain_vs_vector": 0.030632910510504208
+  },
+  "judge_limitation": "GraphRAG-Bench scoring formulas were used with validated judge responses. The configured judge may share the generator's model family; scores may contain self-evaluation bias and sampling variance."
+}

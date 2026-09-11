@@ -20,6 +20,37 @@ class JudgeResponseError(ValueError):
     pass
 
 
+def split_reference_evidence(value: str) -> list[str]:
+    """Split semicolon-delimited evidence without breaking medical notation.
+
+    GraphRAG-Bench stores multiple evidence statements in one string separated
+    by semicolons.  A semicolon can also occur inside parenthesized notation,
+    for example ``t(11;22)``.  Only top-level semicolons are delimiters.
+    """
+
+    parts: list[str] = []
+    current: list[str] = []
+    depths = {"(": 0, "[": 0, "{": 0}
+    closing = {")": "(", "]": "[", "}": "{"}
+    for character in str(value or ""):
+        if character in depths:
+            depths[character] += 1
+        elif character in closing:
+            opener = closing[character]
+            depths[opener] = max(0, depths[opener] - 1)
+        if character == ";" and not any(depths.values()):
+            part = "".join(current).strip()
+            if part:
+                parts.append(part)
+            current = []
+        else:
+            current.append(character)
+    part = "".join(current).strip()
+    if part:
+        parts.append(part)
+    return parts
+
+
 def fingerprint(value: Any) -> str:
     return hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False,
                                      allow_nan=False).encode("utf-8")).hexdigest()
@@ -41,6 +72,14 @@ def parse_judge_json(text: str, kind: str, evidence: list[str]) -> Any:
         text = "\n".join(lines[1:-1])
     data = json.loads(text)
     if kind == "statements":
+        # Match the upstream GraphRAG-Bench parser: it accepts either the
+        # documented JSON array or an object containing a common list key.
+        if isinstance(data, dict):
+            for key in ("statements", "answers", "items", "list", "output", "result"):
+                value = data.get(key)
+                if isinstance(value, list):
+                    data = value
+                    break
         if not isinstance(data, list) or not data or not all(
             isinstance(s, str) and s.strip() for s in data
         ):
@@ -161,7 +200,7 @@ async def evaluate_official_row(
     answer_correctness, evidence_recall, rouge_score = _load_official_metrics(
         benchmark_dir
     )
-    evidence = [part.strip() for part in row.get("evidence", "").split(";") if part.strip()]
+    evidence = split_reference_evidence(row.get("evidence", ""))
     judge = LocalJudgeLLM(judge_client, evidence, max_tokens, retries)
     embeddings = LocalJudgeEmbeddings(embedding_client)
     before = judge_client.snapshot()
@@ -212,4 +251,3 @@ async def evaluate_official_row(
 def load_jsonl(path: Path) -> list[dict[str, Any]]:
     with path.open(encoding="utf-8") as handle:
         return [json.loads(line) for line in handle if line.strip()]
-

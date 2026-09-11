@@ -75,29 +75,53 @@ class VectorRAGBackend(RAGBackend):
             "chunk_overlap_tokens": self.chunk_overlap_tokens,
         }
 
+    def _load_cached(
+        self, corpus_hash: str, identity: dict[str, Any]
+    ) -> dict[str, Any] | None:
+        metadata_path = self._metadata_path()
+        vectors_path = self._vectors_path()
+        if not metadata_path.exists() or not vectors_path.exists():
+            return None
+        metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+        stored_identity = metadata.get("index_identity")
+        legacy_matches = (
+            stored_identity is None
+            and metadata.get("embedding_model") == identity["embedding_model"]
+            and metadata.get("chunk_tokens") == self.chunk_tokens
+            and metadata.get("chunk_overlap_tokens") == self.chunk_overlap_tokens
+        )
+        if metadata.get("corpus_sha256") != corpus_hash or not (
+            stored_identity == identity or legacy_matches
+        ):
+            return None
+        self.chunks = list(metadata["chunks"])
+        self.vectors = np.load(vectors_path)
+        if self.vectors.ndim != 2 or self.vectors.shape[1] != self.embedding.dimension:
+            raise RuntimeError("Cached vector index has the wrong embedding dimension")
+        return {**metadata["index_stats"], "cached": True}
+
+    def load_cached_index(self, corpus: str) -> dict[str, Any]:
+        """Load a compatible index without permitting an implicit rebuild."""
+
+        cached = self._load_cached(
+            hashlib.sha256(corpus.encode("utf-8")).hexdigest(),
+            self._index_identity(),
+        )
+        if cached is None:
+            raise RuntimeError(
+                "--skip-index requested, but no compatible cached vector index exists"
+            )
+        return cached
+
     async def index(self, corpus: str) -> dict[str, Any]:
         self.working_dir.mkdir(parents=True, exist_ok=True)
         corpus_hash = hashlib.sha256(corpus.encode("utf-8")).hexdigest()
         metadata_path = self._metadata_path()
         vectors_path = self._vectors_path()
         identity = self._index_identity()
-        if metadata_path.exists() and vectors_path.exists():
-            metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
-            stored_identity = metadata.get("index_identity")
-            legacy_matches = (
-                stored_identity is None
-                and metadata.get("embedding_model") == identity["embedding_model"]
-                and metadata.get("chunk_tokens") == self.chunk_tokens
-                and metadata.get("chunk_overlap_tokens") == self.chunk_overlap_tokens
-            )
-            if metadata.get("corpus_sha256") == corpus_hash and (
-                stored_identity == identity or legacy_matches
-            ):
-                self.chunks = list(metadata["chunks"])
-                self.vectors = np.load(vectors_path)
-                if self.vectors.ndim != 2 or self.vectors.shape[1] != self.embedding.dimension:
-                    raise RuntimeError("Cached vector index has the wrong embedding dimension")
-                return {**metadata["index_stats"], "cached": True}
+        cached = self._load_cached(corpus_hash, identity)
+        if cached is not None:
+            return cached
 
         started = time.perf_counter()
         self.chunks = chunk_by_token_window(
@@ -172,4 +196,3 @@ class VectorRAGBackend(RAGBackend):
         row["retrieved_chunk_ids"] = [int(index) for index in selected]
         row["retrieval_scores"] = [float(scores[int(index)]) for index in selected]
         return row
-

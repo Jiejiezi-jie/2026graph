@@ -8,7 +8,8 @@ import numpy as np
 from scripts.evaluate_official import prepare_target, reusable_rows
 from src.official_backends.model_client import Generation, OpenAICompatibleChatClient, UsageSnapshot
 from src.official_evaluation import (
-    JudgeResponseError, evaluate_official_row, fingerprint, parse_judge_json, valid_evaluation,
+    JudgeResponseError, evaluate_official_row, fingerprint, parse_judge_json,
+    split_reference_evidence, valid_evaluation,
 )
 
 
@@ -49,6 +50,29 @@ class Embedding:
 
 
 class EvaluationIntegrityTests(unittest.IsolatedAsyncioTestCase):
+    def test_evidence_split_preserves_parenthesized_semicolon(self):
+        evidence = (
+            "Ewing sarcoma is associated with the t(11;22) translocation.; "
+            "A second statement."
+        )
+        self.assertEqual(
+            split_reference_evidence(evidence),
+            [
+                "Ewing sarcoma is associated with the t(11;22) translocation.",
+                "A second statement.",
+            ],
+        )
+
+    def test_statement_parser_accepts_upstream_compatible_object(self):
+        self.assertEqual(
+            parse_judge_json(
+                '{"statements": ["Ewing sarcoma has t(11;22)."]}',
+                "statements",
+                [],
+            ),
+            ["Ewing sarcoma has t(11;22)."],
+        )
+
     async def test_real_metrics_accept_fences_and_preserve_formula(self):
         judge = Judge()
         result = await evaluate_official_row(ROW, judge, Embedding(), BENCHMARK, protocol="test")
