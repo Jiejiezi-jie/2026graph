@@ -1,0 +1,123 @@
+{
+  "mode": "sample_weighted",
+  "correctness_threshold": 0.5,
+  "best_margin": 0.1,
+  "feature": "bge_m3",
+  "development_count": 276,
+  "test_count": 24,
+  "development_label_distribution": {
+    "pathrag": 97,
+    "vector": 141,
+    "lightrag": 38
+  },
+  "test_label_distribution": {
+    "pathrag": 9,
+    "vector": 14,
+    "lightrag": 1
+  },
+  "development_weight_category_distribution": {
+    "ambiguous": 125,
+    "all_failed": 40,
+    "stable": 111
+  },
+  "cross_validation": {
+    "n": 276,
+    "accuracy": 0.4311594202898551,
+    "macro_f1": 0.37364374183061616,
+    "confusion_matrix": [
+      [
+        66,
+        31,
+        44
+      ],
+      [
+        20,
+        7,
+        11
+      ],
+      [
+        34,
+        17,
+        46
+      ]
+    ],
+    "prediction_distribution": {
+      "pathrag": 101,
+      "lightrag": 55,
+      "vector": 120
+    }
+  },
+  "sample_weighted_cross_validation": {
+    "n": 276,
+    "accuracy": 0.4140161725067386,
+    "macro_f1": 0.3600114399726995,
+    "confusion_matrix": [
+      [
+        38.4,
+        18.0,
+        25.6
+      ],
+      [
+        14.3,
+        4.3999999999999995,
+        8.3
+      ],
+      [
+        28.900000000000002,
+        13.600000000000001,
+        34.00000000000001
+      ]
+    ],
+    "prediction_distribution": {
+      "pathrag": 101,
+      "lightrag": 55,
+      "vector": 120
+    }
+  },
+  "test": {
+    "n": 24,
+    "accuracy": 0.25,
+    "macro_f1": 0.20634920634920637,
+    "confusion_matrix": [
+      [
+        3,
+        6,
+        5
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        4,
+        2,
+        3
+      ]
+    ],
+    "prediction_distribution": {
+      "lightrag": 8,
+      "pathrag": 9,
+      "vector": 7
+    }
+  },
+  "majority_accuracy": 0.5833333333333334,
+  "selected_hyperparameters": {
+    "feature_kind": "bge_m3_cls",
+    "class_weight": "balanced",
+    "C": 1.0
+  },
+  "test_policy": {
+    "n": 24,
+    "answer_correctness": 0.5344103432958314,
+    "evidence_recall": 0.6048611111111111,
+    "input_tokens": 5367.75,
+    "output_tokens": 81.70833333333333,
+    "latency_ms": 3261.742907253771,
+    "route_distribution": {
+      "lightrag": 8,
+      "pathrag": 9,
+      "vector": 7
+    }
+  }
+}

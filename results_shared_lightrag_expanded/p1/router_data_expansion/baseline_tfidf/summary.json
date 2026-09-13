@@ -1,0 +1,88 @@
+{
+  "feature": "tfidf",
+  "development_count": 96,
+  "test_count": 24,
+  "development_label_distribution": {
+    "vector": 48,
+    "pathrag": 29,
+    "lightrag": 19
+  },
+  "test_label_distribution": {
+    "pathrag": 11,
+    "vector": 12,
+    "lightrag": 1
+  },
+  "development_all_failed": 20,
+  "cross_validation": {
+    "n": 96,
+    "accuracy": 0.4479166666666667,
+    "macro_f1": 0.37508588340996774,
+    "confusion_matrix": [
+      [
+        30,
+        7,
+        11
+      ],
+      [
+        13,
+        3,
+        3
+      ],
+      [
+        14,
+        5,
+        10
+      ]
+    ],
+    "prediction_distribution": {
+      "vector": 57,
+      "pathrag": 24,
+      "lightrag": 15
+    }
+  },
+  "test": {
+    "n": 24,
+    "accuracy": 0.4166666666666667,
+    "macro_f1": 0.3277777777777778,
+    "confusion_matrix": [
+      [
+        7,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        5,
+        3,
+        3
+      ]
+    ],
+    "prediction_distribution": {
+      "lightrag": 8,
+      "vector": 12,
+      "pathrag": 4
+    }
+  },
+  "selected_hyperparameters": {
+    "feature_kind": "word_char",
+    "class_weight": "balanced",
+    "C": 2.0
+  },
+  "test_policy": {
+    "n": 24,
+    "answer_correctness": 0.5658179848085413,
+    "evidence_recall": 0.5729166666666666,
+    "input_tokens": 5267.625,
+    "output_tokens": 71.83333333333333,
+    "latency_ms": 2397.178783077379,
+    "route_distribution": {
+      "lightrag": 8,
+      "vector": 12,
+      "pathrag": 4
+    }
+  }
+}

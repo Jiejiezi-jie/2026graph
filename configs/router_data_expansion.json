@@ -1,0 +1,76 @@
+{
+  "seed": 42,
+  "expansion_seed": 4242,
+  "benchmark_dir": "data/vendor/GraphRAG-Benchmark",
+  "question_types": [
+    "Fact Retrieval",
+    "Complex Reasoning"
+  ],
+  "additional_per_type": 90,
+  "additional_train_per_type": 72,
+  "additional_validation_per_type": 18,
+  "correctness_threshold": 0.60,
+  "best_margin": 0.10,
+  "baseline_inputs": {
+    "vector": "results_api/p1/vector_evaluated.jsonl",
+    "lightrag": "results_api/p1/lightrag_evaluated.jsonl",
+    "pathrag": "results_shared_lightrag_current_main/p1/pathrag_evaluated.jsonl"
+  },
+  "question_file": "results_shared_lightrag_expanded/splits/expansion_questions.jsonl",
+  "selection_manifest": "results_shared_lightrag_expanded/splits/expansion_manifest.json",
+  "index_dirs": {
+    "vector": "results_api/indexes/vector",
+    "lightrag": "results_api/indexes/lightrag",
+    "pathrag": "results_shared_lightrag_current_main/indexes/pathrag"
+  },
+  "chunk_tokens": 1200,
+  "chunk_overlap_tokens": 100,
+  "vector_top_k": 5,
+  "lightrag_top_k": 40,
+  "lightrag_chunk_top_k": 5,
+  "pathrag_top_k": 20,
+  "max_context_tokens": 5000,
+  "llm": {
+    "backend": "openai_compatible",
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-chat",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "temperature": 0.0,
+    "max_new_tokens": 256,
+    "max_callback_new_tokens": 4096,
+    "timeout_seconds": 120,
+    "max_retries": 3
+  },
+  "evaluation": {
+    "max_new_tokens": 4096,
+    "response_retries": 1,
+    "request_retries": 1
+  },
+  "embedding": {
+    "backend": "transformers",
+    "model_path": "models/bge-m3",
+    "device": "cuda:0",
+    "batch_size": 4,
+    "max_length": 2048,
+    "normalize": true
+  },
+  "router": {
+    "family": "bge_m3_logistic_regression",
+    "selection_metric": "oof_macro_f1",
+    "features": ["tfidf", "bge_m3"]
+  },
+  "generation_prompt": "Answer the medical question using only the supplied context. Give a direct, concise answer. If the context is insufficient, say I don't know.",
+  "results_dir": "results_shared_lightrag_expanded",
+  "lightrag_max_entity_tokens": 1500,
+  "lightrag_max_relation_tokens": 1500,
+  "lightrag_max_total_tokens": 12000,
+  "comparison_baseline": {
+    "development_count": 96,
+    "test_count": 24,
+    "bge_m3_oof_accuracy": 0.5,
+    "bge_m3_oof_macro_f1": 0.41640455,
+    "test_accuracy": 0.4583333333333333,
+    "test_macro_f1": 0.34848484848484845
+  },
+  "_note": "Fixed data-size pilot. Additions enter train/validation only; the original 24-question test set is immutable. All methods use current main implementations; LightRAG and PathRAG use the byte-identical shared LightRAG graph."
+}

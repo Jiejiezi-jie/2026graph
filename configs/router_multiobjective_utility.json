@@ -1,0 +1,28 @@
+{
+  "seed": 42,
+  "folds": 5,
+  "feature": "bge_m3_cls",
+  "target_order": [
+    "vector_answer_correctness",
+    "vector_evidence_recall",
+    "lightrag_answer_correctness",
+    "lightrag_evidence_recall",
+    "pathrag_answer_correctness",
+    "pathrag_evidence_recall"
+  ],
+  "ridge_alpha_candidates": [0.001, 0.01, 0.1, 1.0, 10.0, 100.0],
+  "evidence_weight_candidates": [0.0, 0.05, 0.10, 0.15, 0.20, 0.25, 0.50, 1.0],
+  "bootstrap_samples": 20000,
+  "selection": {
+    "reference": "300-question sample-weighted hard-label router at threshold=0.60 and margin=0.10",
+    "constraint": "OOF answer correctness and evidence recall must both be no lower than the reference",
+    "objective": "maximize the smaller of the two absolute OOF gains, then their sum"
+  },
+  "expansion_config": "configs/router_data_expansion.json",
+  "embedding_cache": "results_shared_lightrag_expanded/p1/router_data_expansion/question_embeddings.npz",
+  "reference_300_oof": "results_shared_lightrag_expanded/p1/router_hard_weight_grid_300/sample_weighted/threshold_0.60_margin_0.10_bge_m3/oof_predictions.jsonl",
+  "reference_300_test": "results_shared_lightrag_expanded/p1/router_hard_weight_grid_300/sample_weighted/threshold_0.60_margin_0.10_bge_m3/test_predictions.jsonl",
+  "reference_120_test": "results_shared_lightrag_current_main/p1/weighted_router_experiment/weighted_test_predictions.jsonl",
+  "output_dir": "results_shared_lightrag_expanded/p1/multiobjective_utility_router",
+  "note": "The router input is question-only BGE-M3. Method evaluation scores are development targets, never inference features. Candidate selection uses development OOF results only."
+}

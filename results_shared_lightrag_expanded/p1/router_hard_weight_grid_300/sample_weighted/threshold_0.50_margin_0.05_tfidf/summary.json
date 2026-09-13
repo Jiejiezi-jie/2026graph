@@ -1,0 +1,119 @@
+{
+  "mode": "sample_weighted",
+  "correctness_threshold": 0.5,
+  "best_margin": 0.05,
+  "feature": "tfidf",
+  "development_count": 276,
+  "test_count": 24,
+  "development_label_distribution": {
+    "pathrag": 102,
+    "vector": 133,
+    "lightrag": 41
+  },
+  "test_label_distribution": {
+    "pathrag": 9,
+    "vector": 12,
+    "lightrag": 3
+  },
+  "development_weight_category_distribution": {
+    "ambiguous": 104,
+    "all_failed": 40,
+    "stable": 132
+  },
+  "cross_validation": {
+    "n": 276,
+    "accuracy": 0.4528985507246377,
+    "macro_f1": 0.31885012069343865,
+    "confusion_matrix": [
+      [
+        81,
+        0,
+        52
+      ],
+      [
+        22,
+        0,
+        19
+      ],
+      [
+        58,
+        0,
+        44
+      ]
+    ],
+    "prediction_distribution": {
+      "vector": 161,
+      "pathrag": 115
+    }
+  },
+  "sample_weighted_cross_validation": {
+    "n": 276,
+    "accuracy": 0.4290816326530612,
+    "macro_f1": 0.3083165335863179,
+    "confusion_matrix": [
+      [
+        49.3,
+        0.0,
+        33.2
+      ],
+      [
+        15.100000000000001,
+        0.0,
+        15.9
+      ],
+      [
+        47.69999999999999,
+        0.0,
+        34.8
+      ]
+    ],
+    "prediction_distribution": {
+      "vector": 161,
+      "pathrag": 115
+    }
+  },
+  "test": {
+    "n": 24,
+    "accuracy": 0.4583333333333333,
+    "macro_f1": 0.29022988505747127,
+    "confusion_matrix": [
+      [
+        9,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        7,
+        0,
+        2
+      ]
+    ],
+    "prediction_distribution": {
+      "vector": 17,
+      "pathrag": 7
+    }
+  },
+  "majority_accuracy": 0.5,
+  "selected_hyperparameters": {
+    "feature_kind": "word_char",
+    "class_weight": null,
+    "C": 0.5
+  },
+  "test_policy": {
+    "n": 24,
+    "answer_correctness": 0.5680527901652377,
+    "evidence_recall": 0.6104166666666666,
+    "input_tokens": 5133.125,
+    "output_tokens": 69.54166666666667,
+    "latency_ms": 2220.2714747723653,
+    "route_distribution": {
+      "vector": 17,
+      "pathrag": 7
+    }
+  }
+}

@@ -1,0 +1,3372 @@
+[
+  {
+    "feature_kind": "bge_m3_cls",
+    "class_weight": null,
+    "C": 0.01,
+    "fold_scores": [
+      {
+        "fold": 1,
+        "unweighted": {
+          "n": 56,
+          "accuracy": 0.5178571428571429,
+          "macro_f1": 0.22745098039215686,
+          "confusion_matrix": [
+            [
+              29,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              21,
+              0,
+              0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 56
+          }
+        },
+        "sample_weighted": {
+          "n": 56,
+          "accuracy": 0.431578947368421,
+          "macro_f1": 0.20098039215686272,
+          "confusion_matrix": [
+            [
+              16.400000000000002,
+              0.0,
+              0.0
+            ],
+            [
+              3.9000000000000004,
+              0.0,
+              0.0
+            ],
+            [
+              17.7,
+              0.0,
+              0.0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 56
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.509090909090909,
+          "macro_f1": 0.2248995983935743,
+          "confusion_matrix": [
+            [
+              28,
+              0,
+              0
+            ],
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              20,
+              0,
+              0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.46177370030581044,
+          "macro_f1": 0.21059972105997213,
+          "confusion_matrix": [
+            [
+              15.100000000000001,
+              0.0,
+              0.0
+            ],
+            [
+              3.5,
+              0.0,
+              0.0
+            ],
+            [
+              14.100000000000001,
+              0.0,
+              0.0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.5272727272727272,
+          "macro_f1": 0.23015873015873015,
+          "confusion_matrix": [
+            [
+              29,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              21,
+              0,
+              0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.46347607052896733,
+          "macro_f1": 0.2111302352266208,
+          "confusion_matrix": [
+            [
+              18.400000000000002,
+              0.0,
+              0.0
+            ],
+            [
+              4.3,
+              0.0,
+              0.0
+            ],
+            [
+              17.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.4,
+          "macro_f1": 0.19047619047619047,
+          "confusion_matrix": [
+            [
+              22,
+              0,
+              0
+            ],
+            [
+              10,
+              0,
+              0
+            ],
+            [
+              23,
+              0,
+              0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.37336814621409925,
+          "macro_f1": 0.1812420785804816,
+          "confusion_matrix": [
+            [
+              14.3,
+              0.0,
+              0.0
+            ],
+            [
+              7.3999999999999995,
+              0.0,
+              0.0
+            ],
+            [
+              16.6,
+              0.0,
+              0.0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.36363636363636365,
+          "macro_f1": 0.17777777777777778,
+          "confusion_matrix": [
+            [
+              20,
+              0,
+              0
+            ],
+            [
+              16,
+              0,
+              0
+            ],
+            [
+              19,
+              0,
+              0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.31937172774869116,
+          "macro_f1": 0.16137566137566134,
+          "confusion_matrix": [
+            [
+              12.2,
+              0.0,
+              0.0
+            ],
+            [
+              11.899999999999999,
+              0.0,
+              0.0
+            ],
+            [
+              14.100000000000003,
+              0.0,
+              0.0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        }
+      }
+    ],
+    "cross_validation": {
+      "n": 276,
+      "accuracy": 0.463768115942029,
+      "macro_f1": 0.21122112211221122,
+      "confusion_matrix": [
+        [
+          128,
+          0,
+          0
+        ],
+        [
+          44,
+          0,
+          0
+        ],
+        [
+          104,
+          0,
+          0
+        ]
+      ],
+      "prediction_distribution": {
+        "vector": 276
+      }
+    },
+    "sample_weighted_cross_validation": {
+      "n": 276,
+      "accuracy": 0.40877474585339757,
+      "macro_f1": 0.19344220787441435,
+      "confusion_matrix": [
+        [
+          76.39999999999996,
+          0.0,
+          0.0
+        ],
+        [
+          31.00000000000001,
+          0.0,
+          0.0
+        ],
+        [
+          79.49999999999996,
+          0.0,
+          0.0
+        ]
+      ],
+      "prediction_distribution": {
+        "vector": 276
+      }
+    }
+  },
+  {
+    "feature_kind": "bge_m3_cls",
+    "class_weight": null,
+    "C": 0.05,
+    "fold_scores": [
+      {
+        "fold": 1,
+        "unweighted": {
+          "n": 56,
+          "accuracy": 0.5178571428571429,
+          "macro_f1": 0.22745098039215686,
+          "confusion_matrix": [
+            [
+              29,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              21,
+              0,
+              0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 56
+          }
+        },
+        "sample_weighted": {
+          "n": 56,
+          "accuracy": 0.431578947368421,
+          "macro_f1": 0.20098039215686272,
+          "confusion_matrix": [
+            [
+              16.400000000000002,
+              0.0,
+              0.0
+            ],
+            [
+              3.9000000000000004,
+              0.0,
+              0.0
+            ],
+            [
+              17.7,
+              0.0,
+              0.0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 56
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.509090909090909,
+          "macro_f1": 0.2248995983935743,
+          "confusion_matrix": [
+            [
+              28,
+              0,
+              0
+            ],
+            [
+              7,
+              0,
+              0
+            ],
+            [
+              20,
+              0,
+              0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.46177370030581044,
+          "macro_f1": 0.21059972105997213,
+          "confusion_matrix": [
+            [
+              15.100000000000001,
+              0.0,
+              0.0
+            ],
+            [
+              3.5,
+              0.0,
+              0.0
+            ],
+            [
+              14.100000000000001,
+              0.0,
+              0.0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.5272727272727272,
+          "macro_f1": 0.23015873015873015,
+          "confusion_matrix": [
+            [
+              29,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              21,
+              0,
+              0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.46347607052896733,
+          "macro_f1": 0.2111302352266208,
+          "confusion_matrix": [
+            [
+              18.400000000000002,
+              0.0,
+              0.0
+            ],
+            [
+              4.3,
+              0.0,
+              0.0
+            ],
+            [
+              17.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.4,
+          "macro_f1": 0.19047619047619047,
+          "confusion_matrix": [
+            [
+              22,
+              0,
+              0
+            ],
+            [
+              10,
+              0,
+              0
+            ],
+            [
+              23,
+              0,
+              0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.37336814621409925,
+          "macro_f1": 0.1812420785804816,
+          "confusion_matrix": [
+            [
+              14.3,
+              0.0,
+              0.0
+            ],
+            [
+              7.3999999999999995,
+              0.0,
+              0.0
+            ],
+            [
+              16.6,
+              0.0,
+              0.0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.36363636363636365,
+          "macro_f1": 0.17777777777777778,
+          "confusion_matrix": [
+            [
+              20,
+              0,
+              0
+            ],
+            [
+              16,
+              0,
+              0
+            ],
+            [
+              19,
+              0,
+              0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.31937172774869116,
+          "macro_f1": 0.16137566137566134,
+          "confusion_matrix": [
+            [
+              12.2,
+              0.0,
+              0.0
+            ],
+            [
+              11.899999999999999,
+              0.0,
+              0.0
+            ],
+            [
+              14.100000000000003,
+              0.0,
+              0.0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        }
+      }
+    ],
+    "cross_validation": {
+      "n": 276,
+      "accuracy": 0.463768115942029,
+      "macro_f1": 0.21122112211221122,
+      "confusion_matrix": [
+        [
+          128,
+          0,
+          0
+        ],
+        [
+          44,
+          0,
+          0
+        ],
+        [
+          104,
+          0,
+          0
+        ]
+      ],
+      "prediction_distribution": {
+        "vector": 276
+      }
+    },
+    "sample_weighted_cross_validation": {
+      "n": 276,
+      "accuracy": 0.40877474585339757,
+      "macro_f1": 0.19344220787441435,
+      "confusion_matrix": [
+        [
+          76.39999999999996,
+          0.0,
+          0.0
+        ],
+        [
+          31.00000000000001,
+          0.0,
+          0.0
+        ],
+        [
+          79.49999999999996,
+          0.0,
+          0.0
+        ]
+      ],
+      "prediction_distribution": {
+        "vector": 276
+      }
+    }
+  },
+  {
+    "feature_kind": "bge_m3_cls",
+    "class_weight": null,
+    "C": 0.1,
+    "fold_scores": [
+      {
+        "fold": 1,
+        "unweighted": {
+          "n": 56,
+          "accuracy": 0.5178571428571429,
+          "macro_f1": 0.22745098039215686,
+          "confusion_matrix": [
+            [
+              29,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              21,
+              0,
+              0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 56
+          }
+        },
+        "sample_weighted": {
+          "n": 56,
+          "accuracy": 0.431578947368421,
+          "macro_f1": 0.20098039215686272,
+          "confusion_matrix": [
+            [
+              16.400000000000002,
+              0.0,
+              0.0
+            ],
+            [
+              3.9000000000000004,
+              0.0,
+              0.0
+            ],
+            [
+              17.7,
+              0.0,
+              0.0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 56
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.4909090909090909,
+          "macro_f1": 0.2222222222222222,
+          "confusion_matrix": [
+            [
+              27,
+              0,
+              1
+            ],
+            [
+              6,
+              0,
+              1
+            ],
+            [
+              20,
+              0,
+              0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 53,
+            "pathrag": 2
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.4464831804281346,
+          "macro_f1": 0.21022318214542834,
+          "confusion_matrix": [
+            [
+              14.600000000000001,
+              0.0,
+              0.5
+            ],
+            [
+              2.5,
+              0.0,
+              1.0
+            ],
+            [
+              14.100000000000001,
+              0.0,
+              0.0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 53,
+            "pathrag": 2
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.509090909090909,
+          "macro_f1": 0.2248995983935743,
+          "confusion_matrix": [
+            [
+              28,
+              0,
+              1
+            ],
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              21,
+              0,
+              0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 54,
+            "pathrag": 1
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.45088161209068023,
+          "macro_f1": 0.20717592592592596,
+          "confusion_matrix": [
+            [
+              17.900000000000002,
+              0.0,
+              0.5
+            ],
+            [
+              4.3,
+              0.0,
+              0.0
+            ],
+            [
+              17.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 54,
+            "pathrag": 1
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.4,
+          "macro_f1": 0.19047619047619047,
+          "confusion_matrix": [
+            [
+              22,
+              0,
+              0
+            ],
+            [
+              10,
+              0,
+              0
+            ],
+            [
+              23,
+              0,
+              0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.37336814621409925,
+          "macro_f1": 0.1812420785804816,
+          "confusion_matrix": [
+            [
+              14.3,
+              0.0,
+              0.0
+            ],
+            [
+              7.3999999999999995,
+              0.0,
+              0.0
+            ],
+            [
+              16.6,
+              0.0,
+              0.0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.36363636363636365,
+          "macro_f1": 0.17777777777777778,
+          "confusion_matrix": [
+            [
+              20,
+              0,
+              0
+            ],
+            [
+              16,
+              0,
+              0
+            ],
+            [
+              19,
+              0,
+              0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.31937172774869116,
+          "macro_f1": 0.16137566137566134,
+          "confusion_matrix": [
+            [
+              12.2,
+              0.0,
+              0.0
+            ],
+            [
+              11.899999999999999,
+              0.0,
+              0.0
+            ],
+            [
+              14.100000000000003,
+              0.0,
+              0.0
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 55
+          }
+        }
+      }
+    ],
+    "cross_validation": {
+      "n": 276,
+      "accuracy": 0.45652173913043476,
+      "macro_f1": 0.2094763092269327,
+      "confusion_matrix": [
+        [
+          126,
+          0,
+          2
+        ],
+        [
+          43,
+          0,
+          1
+        ],
+        [
+          104,
+          0,
+          0
+        ]
+      ],
+      "prediction_distribution": {
+        "vector": 273,
+        "pathrag": 3
+      }
+    },
+    "sample_weighted_cross_validation": {
+      "n": 276,
+      "accuracy": 0.40342429106474054,
+      "macro_f1": 0.19237147595356538,
+      "confusion_matrix": [
+        [
+          75.39999999999996,
+          0.0,
+          1.0
+        ],
+        [
+          30.00000000000001,
+          0.0,
+          1.0
+        ],
+        [
+          79.49999999999996,
+          0.0,
+          0.0
+        ]
+      ],
+      "prediction_distribution": {
+        "vector": 273,
+        "pathrag": 3
+      }
+    }
+  },
+  {
+    "feature_kind": "bge_m3_cls",
+    "class_weight": null,
+    "C": 0.5,
+    "fold_scores": [
+      {
+        "fold": 1,
+        "unweighted": {
+          "n": 56,
+          "accuracy": 0.48214285714285715,
+          "macro_f1": 0.2771929824561403,
+          "confusion_matrix": [
+            [
+              24,
+              0,
+              5
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              18,
+              0,
+              3
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 47,
+            "pathrag": 9
+          }
+        },
+        "sample_weighted": {
+          "n": 56,
+          "accuracy": 0.4184210526315789,
+          "macro_f1": 0.23943661971830987,
+          "confusion_matrix": [
+            [
+              14.3,
+              0.0,
+              2.1
+            ],
+            [
+              2.9000000000000004,
+              0.0,
+              1.0
+            ],
+            [
+              16.1,
+              0.0,
+              1.6
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 47,
+            "pathrag": 9
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.5818181818181818,
+          "macro_f1": 0.4055555555555556,
+          "confusion_matrix": [
+            [
+              21,
+              0,
+              7
+            ],
+            [
+              5,
+              0,
+              2
+            ],
+            [
+              9,
+              0,
+              11
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 35,
+            "pathrag": 20
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.6146788990825689,
+          "macro_f1": 0.4300009921900469,
+          "confusion_matrix": [
+            [
+              11.9,
+              0.0,
+              3.2
+            ],
+            [
+              2.1999999999999997,
+              0.0,
+              1.3
+            ],
+            [
+              5.8999999999999995,
+              0.0,
+              8.2
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 35,
+            "pathrag": 20
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.5454545454545454,
+          "macro_f1": 0.3709349593495935,
+          "confusion_matrix": [
+            [
+              20,
+              0,
+              9
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              11,
+              0,
+              10
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 35,
+            "pathrag": 20
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.5340050377833754,
+          "macro_f1": 0.3755223481429479,
+          "confusion_matrix": [
+            [
+              11.9,
+              0.0,
+              6.5
+            ],
+            [
+              3.3,
+              0.0,
+              1.0
+            ],
+            [
+              7.699999999999999,
+              0.0,
+              9.3
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 35,
+            "pathrag": 20
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.41818181818181815,
+          "macro_f1": 0.2962962962962963,
+          "confusion_matrix": [
+            [
+              16,
+              0,
+              6
+            ],
+            [
+              10,
+              0,
+              0
+            ],
+            [
+              16,
+              0,
+              7
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 42,
+            "pathrag": 13
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.3942558746736293,
+          "macro_f1": 0.28509021842355176,
+          "confusion_matrix": [
+            [
+              10.0,
+              0.0,
+              4.3
+            ],
+            [
+              7.3999999999999995,
+              0.0,
+              0.0
+            ],
+            [
+              11.5,
+              0.0,
+              5.1
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 42,
+            "pathrag": 13
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.41818181818181815,
+          "macro_f1": 0.3162775293922835,
+          "confusion_matrix": [
+            [
+              16,
+              0,
+              4
+            ],
+            [
+              13,
+              0,
+              3
+            ],
+            [
+              12,
+              0,
+              7
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 41,
+            "pathrag": 14
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.36910994764397914,
+          "macro_f1": 0.2809245885119247,
+          "confusion_matrix": [
+            [
+              9.899999999999999,
+              0.0,
+              2.3
+            ],
+            [
+              9.6,
+              0.0,
+              2.3
+            ],
+            [
+              9.900000000000002,
+              0.0,
+              4.2
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 41,
+            "pathrag": 14
+          }
+        }
+      }
+    ],
+    "cross_validation": {
+      "n": 276,
+      "accuracy": 0.4891304347826087,
+      "macro_f1": 0.33789521228545616,
+      "confusion_matrix": [
+        [
+          97,
+          0,
+          31
+        ],
+        [
+          37,
+          0,
+          7
+        ],
+        [
+          66,
+          0,
+          38
+        ]
+      ],
+      "prediction_distribution": {
+        "vector": 200,
+        "pathrag": 76
+      }
+    },
+    "sample_weighted_cross_validation": {
+      "n": 276,
+      "accuracy": 0.46227929373996784,
+      "macro_f1": 0.32688432417094493,
+      "confusion_matrix": [
+        [
+          57.999999999999986,
+          0.0,
+          18.400000000000006
+        ],
+        [
+          25.400000000000006,
+          0.0,
+          5.6
+        ],
+        [
+          51.09999999999998,
+          0.0,
+          28.40000000000001
+        ]
+      ],
+      "prediction_distribution": {
+        "vector": 200,
+        "pathrag": 76
+      }
+    }
+  },
+  {
+    "feature_kind": "bge_m3_cls",
+    "class_weight": null,
+    "C": 1.0,
+    "fold_scores": [
+      {
+        "fold": 1,
+        "unweighted": {
+          "n": 56,
+          "accuracy": 0.44642857142857145,
+          "macro_f1": 0.2606981981981982,
+          "confusion_matrix": [
+            [
+              22,
+              0,
+              7
+            ],
+            [
+              5,
+              0,
+              1
+            ],
+            [
+              18,
+              0,
+              3
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 45,
+            "pathrag": 11
+          }
+        },
+        "sample_weighted": {
+          "n": 56,
+          "accuracy": 0.39210526315789473,
+          "macro_f1": 0.2276511229283303,
+          "confusion_matrix": [
+            [
+              13.3,
+              0.0,
+              3.1
+            ],
+            [
+              2.9000000000000004,
+              0.0,
+              1.0
+            ],
+            [
+              16.1,
+              0.0,
+              1.6
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 45,
+            "pathrag": 11
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.5636363636363636,
+          "macro_f1": 0.39391555205874634,
+          "confusion_matrix": [
+            [
+              20,
+              0,
+              8
+            ],
+            [
+              5,
+              0,
+              2
+            ],
+            [
+              9,
+              0,
+              11
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 34,
+            "pathrag": 21
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.5993883792048931,
+          "macro_f1": 0.4198973794349516,
+          "confusion_matrix": [
+            [
+              11.399999999999999,
+              0.0,
+              3.6999999999999997
+            ],
+            [
+              2.1999999999999997,
+              0.0,
+              1.3
+            ],
+            [
+              5.8999999999999995,
+              0.0,
+              8.2
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 34,
+            "pathrag": 21
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.5454545454545454,
+          "macro_f1": 0.37777777777777777,
+          "confusion_matrix": [
+            [
+              18,
+              0,
+              11
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              9,
+              0,
+              12
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 31,
+            "pathrag": 24
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.5465994962216625,
+          "macro_f1": 0.38538755786298234,
+          "confusion_matrix": [
+            [
+              10.4,
+              0.0,
+              8.0
+            ],
+            [
+              3.3,
+              0.0,
+              1.0
+            ],
+            [
+              5.699999999999999,
+              0.0,
+              11.3
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 31,
+            "pathrag": 24
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.4,
+          "macro_f1": 0.2882733912084883,
+          "confusion_matrix": [
+            [
+              14,
+              0,
+              8
+            ],
+            [
+              8,
+              0,
+              2
+            ],
+            [
+              15,
+              0,
+              8
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 37,
+            "pathrag": 18
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.36292428198433424,
+          "macro_f1": 0.2646293962002748,
+          "confusion_matrix": [
+            [
+              8.5,
+              0.0,
+              5.8
+            ],
+            [
+              5.3999999999999995,
+              0.0,
+              2.0
+            ],
+            [
+              11.2,
+              0.0,
+              5.4
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 37,
+            "pathrag": 18
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.41818181818181815,
+          "macro_f1": 0.32354312354312353,
+          "confusion_matrix": [
+            [
+              14,
+              0,
+              6
+            ],
+            [
+              11,
+              0,
+              5
+            ],
+            [
+              10,
+              0,
+              9
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 35,
+            "pathrag": 20
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.34554973821989543,
+          "macro_f1": 0.26826986244102474,
+          "confusion_matrix": [
+            [
+              8.4,
+              0.0,
+              3.8
+            ],
+            [
+              8.3,
+              0.0,
+              3.5999999999999996
+            ],
+            [
+              9.3,
+              0.0,
+              4.8
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 35,
+            "pathrag": 20
+          }
+        }
+      }
+    ],
+    "cross_validation": {
+      "n": 276,
+      "accuracy": 0.4746376811594203,
+      "macro_f1": 0.3340284566091018,
+      "confusion_matrix": [
+        [
+          88,
+          0,
+          40
+        ],
+        [
+          33,
+          0,
+          11
+        ],
+        [
+          61,
+          0,
+          43
+        ]
+      ],
+      "prediction_distribution": {
+        "vector": 182,
+        "pathrag": 94
+      }
+    },
+    "sample_weighted_cross_validation": {
+      "n": 276,
+      "accuracy": 0.44569288389513106,
+      "macro_f1": 0.31927421834335884,
+      "confusion_matrix": [
+        [
+          51.99999999999999,
+          0.0,
+          24.400000000000006
+        ],
+        [
+          22.1,
+          0.0,
+          8.899999999999999
+        ],
+        [
+          48.19999999999999,
+          0.0,
+          31.30000000000001
+        ]
+      ],
+      "prediction_distribution": {
+        "vector": 182,
+        "pathrag": 94
+      }
+    }
+  },
+  {
+    "feature_kind": "bge_m3_cls",
+    "class_weight": "balanced",
+    "C": 0.01,
+    "fold_scores": [
+      {
+        "fold": 1,
+        "unweighted": {
+          "n": 56,
+          "accuracy": 0.32142857142857145,
+          "macro_f1": 0.2615705931495405,
+          "confusion_matrix": [
+            [
+              13,
+              9,
+              7
+            ],
+            [
+              2,
+              1,
+              3
+            ],
+            [
+              13,
+              4,
+              4
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 28,
+            "pathrag": 14,
+            "lightrag": 14
+          }
+        },
+        "sample_weighted": {
+          "n": 56,
+          "accuracy": 0.3,
+          "macro_f1": 0.2587192203889603,
+          "confusion_matrix": [
+            [
+              7.8,
+              5.3,
+              3.3
+            ],
+            [
+              0.6,
+              1.0,
+              2.3
+            ],
+            [
+              11.100000000000001,
+              4.0,
+              2.5999999999999996
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 28,
+            "pathrag": 14,
+            "lightrag": 14
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.45454545454545453,
+          "macro_f1": 0.4089264740427531,
+          "confusion_matrix": [
+            [
+              12,
+              7,
+              9
+            ],
+            [
+              2,
+              2,
+              3
+            ],
+            [
+              3,
+              6,
+              11
+            ]
+          ],
+          "prediction_distribution": {
+            "lightrag": 15,
+            "vector": 17,
+            "pathrag": 23
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.44954128440366986,
+          "macro_f1": 0.3885142115134901,
+          "confusion_matrix": [
+            [
+              6.6,
+              3.3999999999999995,
+              5.1
+            ],
+            [
+              0.6,
+              0.6,
+              2.3
+            ],
+            [
+              1.6,
+              5.0,
+              7.499999999999999
+            ]
+          ],
+          "prediction_distribution": {
+            "lightrag": 15,
+            "vector": 17,
+            "pathrag": 23
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.5272727272727272,
+          "macro_f1": 0.48792270531400966,
+          "confusion_matrix": [
+            [
+              12,
+              7,
+              10
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              4,
+              3,
+              14
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 17,
+            "lightrag": 13,
+            "pathrag": 25
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.49874055415617136,
+          "macro_f1": 0.45297807514549976,
+          "confusion_matrix": [
+            [
+              5.6,
+              6.0,
+              6.8
+            ],
+            [
+              1.0,
+              2.3,
+              1.0
+            ],
+            [
+              2.6,
+              2.5,
+              11.900000000000002
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 17,
+            "lightrag": 13,
+            "pathrag": 25
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.41818181818181815,
+          "macro_f1": 0.3762978875760831,
+          "confusion_matrix": [
+            [
+              9,
+              3,
+              10
+            ],
+            [
+              4,
+              2,
+              4
+            ],
+            [
+              7,
+              4,
+              12
+            ]
+          ],
+          "prediction_distribution": {
+            "pathrag": 26,
+            "vector": 20,
+            "lightrag": 9
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.3681462140992168,
+          "macro_f1": 0.3516942966160294,
+          "confusion_matrix": [
+            [
+              5.5,
+              2.0,
+              6.8
+            ],
+            [
+              1.9000000000000001,
+              2.0,
+              3.5
+            ],
+            [
+              7.0,
+              3.0,
+              6.6
+            ]
+          ],
+          "prediction_distribution": {
+            "pathrag": 26,
+            "vector": 20,
+            "lightrag": 9
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.32727272727272727,
+          "macro_f1": 0.3220779220779221,
+          "confusion_matrix": [
+            [
+              8,
+              6,
+              6
+            ],
+            [
+              8,
+              4,
+              4
+            ],
+            [
+              6,
+              7,
+              6
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 22,
+            "pathrag": 16,
+            "lightrag": 17
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.30890052356020953,
+          "macro_f1": 0.30497256019212426,
+          "confusion_matrix": [
+            [
+              5.3,
+              3.6,
+              3.3
+            ],
+            [
+              5.6,
+              3.3,
+              3.0
+            ],
+            [
+              5.3,
+              5.6,
+              3.1999999999999993
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 22,
+            "pathrag": 16,
+            "lightrag": 17
+          }
+        }
+      }
+    ],
+    "cross_validation": {
+      "n": 276,
+      "accuracy": 0.40942028985507245,
+      "macro_f1": 0.37724201086270054,
+      "confusion_matrix": [
+        [
+          54,
+          32,
+          42
+        ],
+        [
+          17,
+          12,
+          15
+        ],
+        [
+          33,
+          24,
+          47
+        ]
+      ],
+      "prediction_distribution": {
+        "pathrag": 104,
+        "vector": 104,
+        "lightrag": 68
+      }
+    },
+    "sample_weighted_cross_validation": {
+      "n": 276,
+      "accuracy": 0.38416265382557524,
+      "macro_f1": 0.3607640704149324,
+      "confusion_matrix": [
+        [
+          30.8,
+          20.3,
+          25.300000000000004
+        ],
+        [
+          9.7,
+          9.2,
+          12.1
+        ],
+        [
+          27.600000000000005,
+          20.1,
+          31.80000000000001
+        ]
+      ],
+      "prediction_distribution": {
+        "pathrag": 104,
+        "vector": 104,
+        "lightrag": 68
+      }
+    }
+  },
+  {
+    "feature_kind": "bge_m3_cls",
+    "class_weight": "balanced",
+    "C": 0.05,
+    "fold_scores": [
+      {
+        "fold": 1,
+        "unweighted": {
+          "n": 56,
+          "accuracy": 0.32142857142857145,
+          "macro_f1": 0.2615705931495405,
+          "confusion_matrix": [
+            [
+              13,
+              9,
+              7
+            ],
+            [
+              2,
+              1,
+              3
+            ],
+            [
+              13,
+              4,
+              4
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 28,
+            "pathrag": 14,
+            "lightrag": 14
+          }
+        },
+        "sample_weighted": {
+          "n": 56,
+          "accuracy": 0.3,
+          "macro_f1": 0.2587192203889603,
+          "confusion_matrix": [
+            [
+              7.8,
+              5.3,
+              3.3
+            ],
+            [
+              0.6,
+              1.0,
+              2.3
+            ],
+            [
+              11.100000000000001,
+              4.0,
+              2.5999999999999996
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 28,
+            "pathrag": 14,
+            "lightrag": 14
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.45454545454545453,
+          "macro_f1": 0.40794774262923905,
+          "confusion_matrix": [
+            [
+              12,
+              7,
+              9
+            ],
+            [
+              2,
+              2,
+              3
+            ],
+            [
+              4,
+              5,
+              11
+            ]
+          ],
+          "prediction_distribution": {
+            "lightrag": 14,
+            "vector": 18,
+            "pathrag": 23
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.44954128440366986,
+          "macro_f1": 0.3860749952892406,
+          "confusion_matrix": [
+            [
+              6.6,
+              3.3999999999999995,
+              5.1
+            ],
+            [
+              0.6,
+              0.6,
+              2.3
+            ],
+            [
+              2.1,
+              4.5,
+              7.499999999999999
+            ]
+          ],
+          "prediction_distribution": {
+            "lightrag": 14,
+            "vector": 18,
+            "pathrag": 23
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.509090909090909,
+          "macro_f1": 0.4515426892311041,
+          "confusion_matrix": [
+            [
+              12,
+              7,
+              10
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              4,
+              3,
+              14
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 18,
+            "lightrag": 12,
+            "pathrag": 25
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.47355163727959704,
+          "macro_f1": 0.408168972375593,
+          "confusion_matrix": [
+            [
+              5.6,
+              6.0,
+              6.8
+            ],
+            [
+              2.0,
+              1.3,
+              1.0
+            ],
+            [
+              2.6,
+              2.5,
+              11.900000000000002
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 18,
+            "lightrag": 12,
+            "pathrag": 25
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.41818181818181815,
+          "macro_f1": 0.3762978875760831,
+          "confusion_matrix": [
+            [
+              9,
+              3,
+              10
+            ],
+            [
+              4,
+              2,
+              4
+            ],
+            [
+              7,
+              4,
+              12
+            ]
+          ],
+          "prediction_distribution": {
+            "pathrag": 26,
+            "vector": 20,
+            "lightrag": 9
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.3681462140992168,
+          "macro_f1": 0.3516942966160294,
+          "confusion_matrix": [
+            [
+              5.5,
+              2.0,
+              6.8
+            ],
+            [
+              1.9000000000000001,
+              2.0,
+              3.5
+            ],
+            [
+              7.0,
+              3.0,
+              6.6
+            ]
+          ],
+          "prediction_distribution": {
+            "pathrag": 26,
+            "vector": 20,
+            "lightrag": 9
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.32727272727272727,
+          "macro_f1": 0.3220779220779221,
+          "confusion_matrix": [
+            [
+              8,
+              6,
+              6
+            ],
+            [
+              8,
+              4,
+              4
+            ],
+            [
+              6,
+              7,
+              6
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 22,
+            "pathrag": 16,
+            "lightrag": 17
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.30890052356020953,
+          "macro_f1": 0.30497256019212426,
+          "confusion_matrix": [
+            [
+              5.3,
+              3.6,
+              3.3
+            ],
+            [
+              5.6,
+              3.3,
+              3.0
+            ],
+            [
+              5.3,
+              5.6,
+              3.1999999999999993
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 22,
+            "pathrag": 16,
+            "lightrag": 17
+          }
+        }
+      }
+    ],
+    "cross_validation": {
+      "n": 276,
+      "accuracy": 0.4057971014492754,
+      "macro_f1": 0.37115384615384617,
+      "confusion_matrix": [
+        [
+          54,
+          32,
+          42
+        ],
+        [
+          18,
+          11,
+          15
+        ],
+        [
+          34,
+          23,
+          47
+        ]
+      ],
+      "prediction_distribution": {
+        "pathrag": 104,
+        "vector": 106,
+        "lightrag": 66
+      }
+    },
+    "sample_weighted_cross_validation": {
+      "n": 276,
+      "accuracy": 0.3788121990369182,
+      "macro_f1": 0.3523190303121894,
+      "confusion_matrix": [
+        [
+          30.8,
+          20.3,
+          25.300000000000004
+        ],
+        [
+          10.700000000000001,
+          8.2,
+          12.1
+        ],
+        [
+          28.100000000000005,
+          19.6,
+          31.80000000000001
+        ]
+      ],
+      "prediction_distribution": {
+        "pathrag": 104,
+        "vector": 106,
+        "lightrag": 66
+      }
+    }
+  },
+  {
+    "feature_kind": "bge_m3_cls",
+    "class_weight": "balanced",
+    "C": 0.1,
+    "fold_scores": [
+      {
+        "fold": 1,
+        "unweighted": {
+          "n": 56,
+          "accuracy": 0.32142857142857145,
+          "macro_f1": 0.26118999323867476,
+          "confusion_matrix": [
+            [
+              13,
+              9,
+              7
+            ],
+            [
+              3,
+              1,
+              2
+            ],
+            [
+              13,
+              4,
+              4
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 29,
+            "pathrag": 13,
+            "lightrag": 14
+          }
+        },
+        "sample_weighted": {
+          "n": 56,
+          "accuracy": 0.3,
+          "macro_f1": 0.25830309898062404,
+          "confusion_matrix": [
+            [
+              7.8,
+              5.3,
+              3.3
+            ],
+            [
+              0.8999999999999999,
+              1.0,
+              2.0
+            ],
+            [
+              11.100000000000001,
+              4.0,
+              2.5999999999999996
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 29,
+            "pathrag": 13,
+            "lightrag": 14
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.43636363636363634,
+          "macro_f1": 0.39312169312169315,
+          "confusion_matrix": [
+            [
+              11,
+              7,
+              10
+            ],
+            [
+              2,
+              2,
+              3
+            ],
+            [
+              4,
+              5,
+              11
+            ]
+          ],
+          "prediction_distribution": {
+            "lightrag": 14,
+            "vector": 17,
+            "pathrag": 24
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.44036697247706436,
+          "macro_f1": 0.37825565641831754,
+          "confusion_matrix": [
+            [
+              6.3,
+              3.3999999999999995,
+              5.3999999999999995
+            ],
+            [
+              0.6,
+              0.6,
+              2.3
+            ],
+            [
+              2.1,
+              4.5,
+              7.499999999999999
+            ]
+          ],
+          "prediction_distribution": {
+            "lightrag": 14,
+            "vector": 17,
+            "pathrag": 24
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.4909090909090909,
+          "macro_f1": 0.4376906318082789,
+          "confusion_matrix": [
+            [
+              12,
+              7,
+              10
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              5,
+              3,
+              13
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 19,
+            "lightrag": 12,
+            "pathrag": 24
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.46599496221662473,
+          "macro_f1": 0.4031010176927868,
+          "confusion_matrix": [
+            [
+              5.6,
+              6.0,
+              6.8
+            ],
+            [
+              2.0,
+              1.3,
+              1.0
+            ],
+            [
+              2.9000000000000004,
+              2.5,
+              11.600000000000001
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 19,
+            "lightrag": 12,
+            "pathrag": 24
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.43636363636363634,
+          "macro_f1": 0.4096067695370831,
+          "confusion_matrix": [
+            [
+              9,
+              3,
+              10
+            ],
+            [
+              3,
+              3,
+              4
+            ],
+            [
+              7,
+              4,
+              12
+            ]
+          ],
+          "prediction_distribution": {
+            "pathrag": 26,
+            "vector": 19,
+            "lightrag": 10
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.3759791122715405,
+          "macro_f1": 0.3647596548254226,
+          "confusion_matrix": [
+            [
+              5.5,
+              2.0,
+              6.8
+            ],
+            [
+              1.6,
+              2.3,
+              3.5
+            ],
+            [
+              7.0,
+              3.0,
+              6.6
+            ]
+          ],
+          "prediction_distribution": {
+            "pathrag": 26,
+            "vector": 19,
+            "lightrag": 10
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.3090909090909091,
+          "macro_f1": 0.3052625796528236,
+          "confusion_matrix": [
+            [
+              7,
+              5,
+              8
+            ],
+            [
+              8,
+              4,
+              4
+            ],
+            [
+              6,
+              7,
+              6
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 21,
+            "pathrag": 18,
+            "lightrag": 16
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.26963350785340323,
+          "macro_f1": 0.26955950288531827,
+          "confusion_matrix": [
+            [
+              3.8,
+              3.1,
+              5.3
+            ],
+            [
+              5.6,
+              3.3,
+              3.0
+            ],
+            [
+              5.3,
+              5.6,
+              3.1999999999999993
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 21,
+            "pathrag": 18,
+            "lightrag": 16
+          }
+        }
+      }
+    ],
+    "cross_validation": {
+      "n": 276,
+      "accuracy": 0.39855072463768115,
+      "macro_f1": 0.3682417123573663,
+      "confusion_matrix": [
+        [
+          52,
+          31,
+          45
+        ],
+        [
+          18,
+          12,
+          14
+        ],
+        [
+          35,
+          23,
+          46
+        ]
+      ],
+      "prediction_distribution": {
+        "pathrag": 105,
+        "vector": 105,
+        "lightrag": 66
+      }
+    },
+    "sample_weighted_cross_validation": {
+      "n": 276,
+      "accuracy": 0.36918138041733545,
+      "macro_f1": 0.3452432242227535,
+      "confusion_matrix": [
+        [
+          29.0,
+          19.8,
+          27.6
+        ],
+        [
+          10.700000000000001,
+          8.5,
+          11.8
+        ],
+        [
+          28.400000000000006,
+          19.6,
+          31.50000000000001
+        ]
+      ],
+      "prediction_distribution": {
+        "pathrag": 105,
+        "vector": 105,
+        "lightrag": 66
+      }
+    }
+  },
+  {
+    "feature_kind": "bge_m3_cls",
+    "class_weight": "balanced",
+    "C": 0.5,
+    "fold_scores": [
+      {
+        "fold": 1,
+        "unweighted": {
+          "n": 56,
+          "accuracy": 0.32142857142857145,
+          "macro_f1": 0.24986383442265794,
+          "confusion_matrix": [
+            [
+              14,
+              8,
+              7
+            ],
+            [
+              4,
+              1,
+              1
+            ],
+            [
+              16,
+              2,
+              3
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 34,
+            "pathrag": 11,
+            "lightrag": 11
+          }
+        },
+        "sample_weighted": {
+          "n": 56,
+          "accuracy": 0.2868421052631579,
+          "macro_f1": 0.2381319330471873,
+          "confusion_matrix": [
+            [
+              8.3,
+              4.8,
+              3.3
+            ],
+            [
+              1.9,
+              1.0,
+              1.0
+            ],
+            [
+              14.100000000000001,
+              2.0,
+              1.6
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 34,
+            "pathrag": 11,
+            "lightrag": 11
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.4909090909090909,
+          "macro_f1": 0.4549397987794821,
+          "confusion_matrix": [
+            [
+              13,
+              6,
+              9
+            ],
+            [
+              1,
+              3,
+              3
+            ],
+            [
+              5,
+              4,
+              11
+            ]
+          ],
+          "prediction_distribution": {
+            "lightrag": 13,
+            "vector": 19,
+            "pathrag": 23
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.4954128440366973,
+          "macro_f1": 0.4299526319639447,
+          "confusion_matrix": [
+            [
+              7.8,
+              2.8999999999999995,
+              4.4
+            ],
+            [
+              0.3,
+              0.8999999999999999,
+              2.3
+            ],
+            [
+              3.0999999999999996,
+              3.5,
+              7.499999999999999
+            ]
+          ],
+          "prediction_distribution": {
+            "lightrag": 13,
+            "vector": 19,
+            "pathrag": 23
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.45454545454545453,
+          "macro_f1": 0.407756071901471,
+          "confusion_matrix": [
+            [
+              10,
+              7,
+              12
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              5,
+              3,
+              13
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 17,
+            "lightrag": 12,
+            "pathrag": 26
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.4408060453400504,
+          "macro_f1": 0.37746301768402235,
+          "confusion_matrix": [
+            [
+              4.6,
+              5.0,
+              8.8
+            ],
+            [
+              2.0,
+              1.3,
+              1.0
+            ],
+            [
+              2.9000000000000004,
+              2.5,
+              11.600000000000001
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 17,
+            "lightrag": 12,
+            "pathrag": 26
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.45454545454545453,
+          "macro_f1": 0.42418101992570073,
+          "confusion_matrix": [
+            [
+              10,
+              3,
+              9
+            ],
+            [
+              4,
+              3,
+              3
+            ],
+            [
+              6,
+              5,
+              12
+            ]
+          ],
+          "prediction_distribution": {
+            "pathrag": 24,
+            "vector": 20,
+            "lightrag": 11
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.3890339425587468,
+          "macro_f1": 0.37389422933156674,
+          "confusion_matrix": [
+            [
+              6.0,
+              2.0,
+              6.3
+            ],
+            [
+              2.1,
+              2.3,
+              3.0
+            ],
+            [
+              6.0,
+              4.0,
+              6.6
+            ]
+          ],
+          "prediction_distribution": {
+            "pathrag": 24,
+            "vector": 20,
+            "lightrag": 11
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.2909090909090909,
+          "macro_f1": 0.28305190744215136,
+          "confusion_matrix": [
+            [
+              6,
+              5,
+              9
+            ],
+            [
+              7,
+              3,
+              6
+            ],
+            [
+              6,
+              6,
+              7
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 19,
+            "pathrag": 22,
+            "lightrag": 14
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.25654450261780115,
+          "macro_f1": 0.2566228947197295,
+          "confusion_matrix": [
+            [
+              3.3,
+              3.1,
+              5.8
+            ],
+            [
+              4.8,
+              3.0,
+              4.1
+            ],
+            [
+              5.3,
+              5.3,
+              3.4999999999999996
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 19,
+            "pathrag": 22,
+            "lightrag": 14
+          }
+        }
+      }
+    ],
+    "cross_validation": {
+      "n": 276,
+      "accuracy": 0.40217391304347827,
+      "macro_f1": 0.3713080168776371,
+      "confusion_matrix": [
+        [
+          53,
+          29,
+          46
+        ],
+        [
+          18,
+          12,
+          14
+        ],
+        [
+          38,
+          20,
+          46
+        ]
+      ],
+      "prediction_distribution": {
+        "pathrag": 106,
+        "vector": 109,
+        "lightrag": 61
+      }
+    },
+    "sample_weighted_cross_validation": {
+      "n": 276,
+      "accuracy": 0.3707865168539325,
+      "macro_f1": 0.3468946712042318,
+      "confusion_matrix": [
+        [
+          30.0,
+          17.8,
+          28.6
+        ],
+        [
+          11.100000000000001,
+          8.5,
+          11.4
+        ],
+        [
+          31.400000000000006,
+          17.3,
+          30.800000000000015
+        ]
+      ],
+      "prediction_distribution": {
+        "pathrag": 106,
+        "vector": 109,
+        "lightrag": 61
+      }
+    }
+  },
+  {
+    "feature_kind": "bge_m3_cls",
+    "class_weight": "balanced",
+    "C": 1.0,
+    "fold_scores": [
+      {
+        "fold": 1,
+        "unweighted": {
+          "n": 56,
+          "accuracy": 0.35714285714285715,
+          "macro_f1": 0.2708333333333333,
+          "confusion_matrix": [
+            [
+              16,
+              7,
+              6
+            ],
+            [
+              3,
+              1,
+              2
+            ],
+            [
+              16,
+              2,
+              3
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 35,
+            "pathrag": 11,
+            "lightrag": 10
+          }
+        },
+        "sample_weighted": {
+          "n": 56,
+          "accuracy": 0.3263157894736842,
+          "macro_f1": 0.2638161513989587,
+          "confusion_matrix": [
+            [
+              9.8,
+              3.8,
+              2.8
+            ],
+            [
+              1.6,
+              1.0,
+              1.3
+            ],
+            [
+              14.100000000000001,
+              2.0,
+              1.6
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 35,
+            "pathrag": 11,
+            "lightrag": 10
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.4909090909090909,
+          "macro_f1": 0.4549397987794821,
+          "confusion_matrix": [
+            [
+              13,
+              6,
+              9
+            ],
+            [
+              1,
+              3,
+              3
+            ],
+            [
+              5,
+              4,
+              11
+            ]
+          ],
+          "prediction_distribution": {
+            "lightrag": 13,
+            "vector": 19,
+            "pathrag": 23
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.4954128440366973,
+          "macro_f1": 0.4299526319639447,
+          "confusion_matrix": [
+            [
+              7.8,
+              2.8999999999999995,
+              4.4
+            ],
+            [
+              0.3,
+              0.8999999999999999,
+              2.3
+            ],
+            [
+              3.0999999999999996,
+              3.5,
+              7.499999999999999
+            ]
+          ],
+          "prediction_distribution": {
+            "lightrag": 13,
+            "vector": 19,
+            "pathrag": 23
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.4,
+          "macro_f1": 0.3655112368721771,
+          "confusion_matrix": [
+            [
+              9,
+              7,
+              13
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              7,
+              3,
+              11
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 18,
+            "lightrag": 12,
+            "pathrag": 25
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.3954659949622166,
+          "macro_f1": 0.3440199695275219,
+          "confusion_matrix": [
+            [
+              4.1,
+              5.0,
+              9.3
+            ],
+            [
+              2.0,
+              1.3,
+              1.0
+            ],
+            [
+              4.199999999999999,
+              2.5,
+              10.3
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 18,
+            "lightrag": 12,
+            "pathrag": 25
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.45454545454545453,
+          "macro_f1": 0.42418101992570073,
+          "confusion_matrix": [
+            [
+              10,
+              3,
+              9
+            ],
+            [
+              4,
+              3,
+              3
+            ],
+            [
+              6,
+              5,
+              12
+            ]
+          ],
+          "prediction_distribution": {
+            "pathrag": 24,
+            "vector": 20,
+            "lightrag": 11
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.3890339425587468,
+          "macro_f1": 0.37389422933156674,
+          "confusion_matrix": [
+            [
+              6.0,
+              2.0,
+              6.3
+            ],
+            [
+              2.1,
+              2.3,
+              3.0
+            ],
+            [
+              6.0,
+              4.0,
+              6.6
+            ]
+          ],
+          "prediction_distribution": {
+            "pathrag": 24,
+            "vector": 20,
+            "lightrag": 11
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "unweighted": {
+          "n": 55,
+          "accuracy": 0.2909090909090909,
+          "macro_f1": 0.28305190744215136,
+          "confusion_matrix": [
+            [
+              6,
+              5,
+              9
+            ],
+            [
+              7,
+              3,
+              6
+            ],
+            [
+              6,
+              6,
+              7
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 19,
+            "pathrag": 22,
+            "lightrag": 14
+          }
+        },
+        "sample_weighted": {
+          "n": 55,
+          "accuracy": 0.25654450261780115,
+          "macro_f1": 0.2566228947197295,
+          "confusion_matrix": [
+            [
+              3.3,
+              3.1,
+              5.8
+            ],
+            [
+              4.8,
+              3.0,
+              4.1
+            ],
+            [
+              5.3,
+              5.3,
+              3.4999999999999996
+            ]
+          ],
+          "prediction_distribution": {
+            "vector": 19,
+            "pathrag": 22,
+            "lightrag": 14
+          }
+        }
+      }
+    ],
+    "cross_validation": {
+      "n": 276,
+      "accuracy": 0.39855072463768115,
+      "macro_f1": 0.36790156917882094,
+      "confusion_matrix": [
+        [
+          54,
+          28,
+          46
+        ],
+        [
+          17,
+          12,
+          15
+        ],
+        [
+          40,
+          20,
+          44
+        ]
+      ],
+      "prediction_distribution": {
+        "pathrag": 105,
+        "vector": 111,
+        "lightrag": 60
+      }
+    },
+    "sample_weighted_cross_validation": {
+      "n": 276,
+      "accuracy": 0.36918138041733545,
+      "macro_f1": 0.3456746268106472,
+      "confusion_matrix": [
+        [
+          31.0,
+          16.8,
+          28.6
+        ],
+        [
+          10.8,
+          8.5,
+          11.7
+        ],
+        [
+          32.7,
+          17.3,
+          29.500000000000014
+        ]
+      ],
+      "prediction_distribution": {
+        "pathrag": 105,
+        "vector": 111,
+        "lightrag": 60
+      }
+    }
+  }
+]

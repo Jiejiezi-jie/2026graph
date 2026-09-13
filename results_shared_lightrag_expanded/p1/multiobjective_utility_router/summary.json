@@ -1,0 +1,258 @@
+{
+  "status": "completed offline; no retrieval, generation, evaluation, or API calls",
+  "protocol": {
+    "total_questions": 300,
+    "development_count": 276,
+    "frozen_test_count": 24,
+    "feature": "bge_m3_cls",
+    "model": "multi-output Ridge regression",
+    "model_inputs": [
+      "question BGE-M3 embedding"
+    ],
+    "development_targets": [
+      "vector_answer_correctness",
+      "vector_evidence_recall",
+      "lightrag_answer_correctness",
+      "lightrag_evidence_recall",
+      "pathrag_answer_correctness",
+      "pathrag_evidence_recall"
+    ],
+    "inference_utility": "predicted_answer_correctness + evidence_weight * predicted_evidence_recall",
+    "folds": 5,
+    "fold_stratification": "question_type",
+    "seed": 42,
+    "candidate_selection": {
+      "reference": "300-question sample-weighted hard-label router at threshold=0.60 and margin=0.10",
+      "constraint": "OOF answer correctness and evidence recall must both be no lower than the reference",
+      "objective": "maximize the smaller of the two absolute OOF gains, then their sum"
+    },
+    "evaluation_protocol": "209096a999b2a761cfd08eb9ddadd88a804f51ecd79acf8a61a8b592ed9fd851",
+    "scikit_learn_version": "1.7.2",
+    "test_used_for_training_or_selection": false,
+    "new_api_calls": 0,
+    "input_sha256": {
+      "baseline_vector": "cc119fb15503a65f7fc97cd8a79a1ea848af252fa4de26817bbc969bfa7f9a2f",
+      "baseline_lightrag": "8d83b3c619e7870933c19df43d8b91ce4487ba738f18fff79bdbae6e431bd6df",
+      "baseline_pathrag": "755175db208906c16509d4bb3a1d8c9449df4d9d80083729d9437deb05511bcd",
+      "expansion_vector": "5b400583ba06ed190be833d11c83382b99c82bcda73e242ee6cd53139d5f060c",
+      "expansion_lightrag": "2a3c58fb0fbc066d4904f31fb6be2dfaf6927bba43a7c7b58c4d89eb010187d7",
+      "expansion_pathrag": "d897d2434e21d8f5ff4abb4755344bc321f7972f443c56284927345a394c92ad",
+      "embedding_cache": "8b8b982303b95473c0f2deefccc6d4fb915c108daec50195eedf77693ff34855",
+      "reference_300_oof": "5295a181ce2bb85a5c0735e716a7de07caf6e7df32a2e53deb2fbe31cc41736c",
+      "config": "63dbb495d56ffa20ecf45fda4bd8e5ecb20dbc4be0e8e8489469d6711db62a02"
+    },
+    "git_commit": "a934157e67a0b6b5ec11b817025f3629e87d3042"
+  },
+  "selected_parameters": {
+    "ridge_alpha": 0.001,
+    "evidence_weight": 0.15
+  },
+  "development_oof": {
+    "reference_300_weighted_hard_router": {
+      "n": 276,
+      "answer_correctness": 0.6202854346929257,
+      "evidence_recall": 0.5929559570863918,
+      "joint_harmonic_mean": 0.606312883960678,
+      "route_distribution": {
+        "vector": 109,
+        "lightrag": 59,
+        "pathrag": 108
+      }
+    },
+    "multiobjective_utility_router": {
+      "n": 276,
+      "answer_correctness": 0.6305682938632579,
+      "evidence_recall": 0.605274797666102,
+      "joint_harmonic_mean": 0.6176627099325825,
+      "route_distribution": {
+        "vector": 98,
+        "lightrag": 81,
+        "pathrag": 97
+      }
+    },
+    "delta": {
+      "answer_correctness": 0.010282859170332115,
+      "evidence_recall": 0.012318840579710222
+    },
+    "classification_against_hard_silver_labels": {
+      "accuracy": 0.40217391304347827,
+      "macro_f1": 0.3727501398689208,
+      "confusion_matrix": [
+        [
+          50,
+          50,
+          35
+        ],
+        [
+          19,
+          11,
+          12
+        ],
+        [
+          29,
+          20,
+          50
+        ]
+      ],
+      "prediction_distribution": {
+        "pathrag": 97,
+        "lightrag": 81,
+        "vector": 98
+      }
+    }
+  },
+  "frozen_test": {
+    "fixed_methods": {
+      "vector": {
+        "n": 24,
+        "answer_correctness": 0.5844941417584487,
+        "evidence_recall": 0.6520833333333332,
+        "joint_harmonic_mean": 0.616441583239038,
+        "route_distribution": {
+          "vector": 24,
+          "lightrag": 0,
+          "pathrag": 0
+        },
+        "input_tokens": 4984.416666666667,
+        "output_tokens": 49.833333333333336,
+        "latency_ms": 1183.0955764393518
+      },
+      "lightrag": {
+        "n": 24,
+        "answer_correctness": 0.5336980319415806,
+        "evidence_recall": 0.53125,
+        "joint_harmonic_mean": 0.5324712022840153,
+        "route_distribution": {
+          "vector": 0,
+          "lightrag": 24,
+          "pathrag": 0
+        },
+        "input_tokens": 5638.916666666667,
+        "output_tokens": 84.95833333333333,
+        "latency_ms": 2754.9854761666666
+      },
+      "pathrag": {
+        "n": 24,
+        "answer_correctness": 0.5815485856950279,
+        "evidence_recall": 0.5215277777777777,
+        "joint_harmonic_mean": 0.549905249737163,
+        "route_distribution": {
+          "vector": 0,
+          "lightrag": 0,
+          "pathrag": 24
+        },
+        "input_tokens": 5481.166666666667,
+        "output_tokens": 114.04166666666667,
+        "latency_ms": 4878.0001235427335
+      }
+    },
+    "reference_120_weighted_hard_router": {
+      "n": 24,
+      "answer_correctness": 0.6041792780207568,
+      "evidence_recall": 0.6048611111111111,
+      "joint_harmonic_mean": 0.6045200023075249,
+      "route_distribution": {
+        "vector": 8,
+        "lightrag": 5,
+        "pathrag": 11
+      },
+      "input_tokens": 5343.416666666667,
+      "output_tokens": 89.45833333333333,
+      "latency_ms": 3531.2213576967983
+    },
+    "reference_300_weighted_hard_router": {
+      "n": 24,
+      "answer_correctness": 0.5733464806991374,
+      "evidence_recall": 0.6256944444444444,
+      "joint_harmonic_mean": 0.5983777537405841,
+      "route_distribution": {
+        "vector": 8,
+        "lightrag": 6,
+        "pathrag": 10
+      },
+      "input_tokens": 5352.458333333333,
+      "output_tokens": 84.83333333333333,
+      "latency_ms": 3236.3507457906358
+    },
+    "multiobjective_utility_router": {
+      "n": 24,
+      "answer_correctness": 0.6762350127508867,
+      "evidence_recall": 0.642361111111111,
+      "joint_harmonic_mean": 0.6588629623612609,
+      "route_distribution": {
+        "vector": 7,
+        "lightrag": 7,
+        "pathrag": 10
+      },
+      "input_tokens": 5355.666666666667,
+      "output_tokens": 91.33333333333333,
+      "latency_ms": 3296.4379554406
+    },
+    "delta_vs_reference_120": {
+      "answer_correctness": 0.07205573473012994,
+      "evidence_recall": 0.03749999999999998
+    },
+    "paired_bootstrap_vs_reference_120": {
+      "samples": 20000,
+      "seed": 42,
+      "answer_correctness": {
+        "mean_delta": 0.0720557347301299,
+        "paired_bootstrap_95ci": [
+          0.0032739314109356335,
+          0.15788113423385466
+        ],
+        "questions_better_equal_worse": {
+          "better": 6,
+          "equal": 15,
+          "worse": 3
+        }
+      },
+      "evidence_recall": {
+        "mean_delta": 0.0375,
+        "paired_bootstrap_95ci": [
+          0.0,
+          0.09583333333333333
+        ],
+        "questions_better_equal_worse": {
+          "better": 2,
+          "equal": 22,
+          "worse": 0
+        }
+      }
+    },
+    "classification_against_hard_silver_labels": {
+      "accuracy": 0.5416666666666666,
+      "macro_f1": 0.43274853801169594,
+      "confusion_matrix": [
+        [
+          6,
+          4,
+          2
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          3,
+          7
+        ]
+      ],
+      "prediction_distribution": {
+        "pathrag": 10,
+        "lightrag": 7,
+        "vector": 7
+      }
+    }
+  },
+  "artifacts": {
+    "model": "results_shared_lightrag_expanded/p1/multiobjective_utility_router/router.joblib",
+    "model_sha256": "468f81d82a5036122c70788c4ffd6cbf07db64b62eca4c329a5561609d4664d9",
+    "oof_predictions": "results_shared_lightrag_expanded/p1/multiobjective_utility_router/oof_predictions.jsonl",
+    "test_predictions": "results_shared_lightrag_expanded/p1/multiobjective_utility_router/test_predictions.jsonl",
+    "candidates": "results_shared_lightrag_expanded/p1/multiobjective_utility_router/candidates.json"
+  },
+  "elapsed_seconds": 0.5674796039238572
+}

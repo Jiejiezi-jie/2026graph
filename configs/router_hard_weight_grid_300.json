@@ -1,0 +1,26 @@
+{
+  "seed": 42,
+  "folds": 5,
+  "thresholds": [0.50, 0.60],
+  "best_margins": [0.05, 0.10, 0.15],
+  "features": ["tfidf", "bge_m3"],
+  "weights": {
+    "stable": 1.0,
+    "ambiguous": 0.5,
+    "all_failed": 0.3
+  },
+  "tfidf": {
+    "feature_kinds": ["word", "word_char"],
+    "C_candidates": [0.5, 1.0, 2.0]
+  },
+  "bge_m3": {
+    "feature_kinds": ["bge_m3_cls"],
+    "C_candidates": [0.01, 0.05, 0.1, 0.5, 1.0]
+  },
+  "class_weight_candidates": [null, "balanced"],
+  "max_iter": 2000,
+  "expansion_config": "configs/router_data_expansion.json",
+  "embedding_cache": "results_shared_lightrag_expanded/p1/router_data_expansion/question_embeddings.npz",
+  "output_dir": "results_shared_lightrag_expanded/p1/router_hard_weight_grid_300",
+  "note": "Compare unweighted hard labels with the prior fixed per-sample down-weighting. The original 24-question test set remains frozen."
+}

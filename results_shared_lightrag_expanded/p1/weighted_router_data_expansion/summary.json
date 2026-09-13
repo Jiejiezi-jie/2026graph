@@ -1,0 +1,275 @@
+{
+  "status": "completed entirely offline from frozen generations, evaluations, and embeddings",
+  "protocol": {
+    "feature": "BGE-M3 CLS embedding",
+    "correctness_threshold": 0.6,
+    "best_margin": 0.1,
+    "weights": {
+      "stable": 1.0,
+      "ambiguous": 0.5,
+      "all_failed": 0.3
+    },
+    "folds": 5,
+    "fold_stratification": "question_type",
+    "seed": 42,
+    "scikit_learn_version": "1.7.2",
+    "evaluation_protocol": "209096a999b2a761cfd08eb9ddadd88a804f51ecd79acf8a61a8b592ed9fd851",
+    "frozen_test_count": 24,
+    "new_api_calls": 0,
+    "input_sha256": {
+      "baseline_vector": "cc119fb15503a65f7fc97cd8a79a1ea848af252fa4de26817bbc969bfa7f9a2f",
+      "baseline_lightrag": "8d83b3c619e7870933c19df43d8b91ce4487ba738f18fff79bdbae6e431bd6df",
+      "baseline_pathrag": "755175db208906c16509d4bb3a1d8c9449df4d9d80083729d9437deb05511bcd",
+      "expansion_vector": "5b400583ba06ed190be833d11c83382b99c82bcda73e242ee6cd53139d5f060c",
+      "expansion_lightrag": "2a3c58fb0fbc066d4904f31fb6be2dfaf6927bba43a7c7b58c4d89eb010187d7",
+      "expansion_pathrag": "d897d2434e21d8f5ff4abb4755344bc321f7972f443c56284927345a394c92ad",
+      "embedding_cache": "8b8b982303b95473c0f2deefccc6d4fb915c108daec50195eedf77693ff34855",
+      "expansion_config": "4965017e213239e35ccc810f85ee40fe4dd835429da34f02a1d37af79d68c1ce"
+    },
+    "git_commit": "a934157e67a0b6b5ec11b817025f3629e87d3042"
+  },
+  "experiments": {
+    "baseline_weighted": {
+      "development_count": 96,
+      "test_count": 24,
+      "development_label_distribution": {
+        "vector": 48,
+        "pathrag": 29,
+        "lightrag": 19
+      },
+      "development_weight_category_distribution": {
+        "ambiguous": 38,
+        "stable": 38,
+        "all_failed": 20
+      },
+      "selected_hyperparameters": {
+        "C": 0.01,
+        "class_weight": "balanced"
+      },
+      "cross_validation": {
+        "n": 96,
+        "accuracy": 0.4166666666666667,
+        "macro_f1": 0.34696257949062087,
+        "confusion_matrix": [
+          [
+            25,
+            12,
+            11
+          ],
+          [
+            11,
+            1,
+            7
+          ],
+          [
+            11,
+            4,
+            14
+          ]
+        ],
+        "prediction_distribution": {
+          "vector": 47,
+          "lightrag": 17,
+          "pathrag": 32
+        }
+      },
+      "sample_weighted_cross_validation": {
+        "n": 96,
+        "accuracy": 0.4047619047619048,
+        "macro_f1": 0.3473488301491932,
+        "confusion_matrix": [
+          [
+            14.0,
+            7.3,
+            7.3
+          ],
+          [
+            8.1,
+            1.0,
+            3.6
+          ],
+          [
+            9.1,
+            2.1,
+            10.5
+          ]
+        ],
+        "prediction_distribution": {
+          "vector": 47,
+          "lightrag": 17,
+          "pathrag": 32
+        }
+      },
+      "test": {
+        "n": 24,
+        "accuracy": 0.4583333333333333,
+        "macro_f1": 0.34848484848484845,
+        "confusion_matrix": [
+          [
+            5,
+            3,
+            4
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            3,
+            2,
+            6
+          ]
+        ],
+        "prediction_distribution": {
+          "lightrag": 5,
+          "pathrag": 11,
+          "vector": 8
+        }
+      },
+      "test_policy": {
+        "n": 24,
+        "answer_correctness": 0.6041792780207568,
+        "evidence_recall": 0.6048611111111111,
+        "input_tokens": 5343.416666666667,
+        "output_tokens": 89.45833333333333,
+        "latency_ms": 3531.2213576967983,
+        "route_distribution": {
+          "lightrag": 5,
+          "pathrag": 11,
+          "vector": 8
+        }
+      }
+    },
+    "expanded_weighted": {
+      "development_count": 276,
+      "test_count": 24,
+      "development_label_distribution": {
+        "pathrag": 99,
+        "vector": 135,
+        "lightrag": 42
+      },
+      "development_weight_category_distribution": {
+        "all_failed": 63,
+        "ambiguous": 105,
+        "stable": 108
+      },
+      "selected_hyperparameters": {
+        "C": 0.5,
+        "class_weight": "balanced"
+      },
+      "cross_validation": {
+        "n": 276,
+        "accuracy": 0.4166666666666667,
+        "macro_f1": 0.37197688645082133,
+        "confusion_matrix": [
+          [
+            59,
+            28,
+            48
+          ],
+          [
+            20,
+            9,
+            13
+          ],
+          [
+            30,
+            22,
+            47
+          ]
+        ],
+        "prediction_distribution": {
+          "pathrag": 108,
+          "lightrag": 59,
+          "vector": 109
+        }
+      },
+      "sample_weighted_cross_validation": {
+        "n": 276,
+        "accuracy": 0.3996655518394649,
+        "macro_f1": 0.3620379365457347,
+        "confusion_matrix": [
+          [
+            34.0,
+            15.800000000000002,
+            27.600000000000005
+          ],
+          [
+            11.5,
+            6.3999999999999995,
+            10.100000000000001
+          ],
+          [
+            24.8,
+            17.900000000000002,
+            31.30000000000001
+          ]
+        ],
+        "prediction_distribution": {
+          "pathrag": 108,
+          "lightrag": 59,
+          "vector": 109
+        }
+      },
+      "test": {
+        "n": 24,
+        "accuracy": 0.3333333333333333,
+        "macro_f1": 0.2587301587301587,
+        "confusion_matrix": [
+          [
+            3,
+            5,
+            4
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            5,
+            1,
+            5
+          ]
+        ],
+        "prediction_distribution": {
+          "pathrag": 10,
+          "lightrag": 6,
+          "vector": 8
+        }
+      },
+      "test_policy": {
+        "n": 24,
+        "answer_correctness": 0.5733464806991374,
+        "evidence_recall": 0.6256944444444444,
+        "input_tokens": 5352.458333333333,
+        "output_tokens": 84.83333333333333,
+        "latency_ms": 3236.3507457906358,
+        "route_distribution": {
+          "pathrag": 10,
+          "lightrag": 6,
+          "vector": 8
+        }
+      }
+    }
+  },
+  "delta_expanded_minus_baseline_weighted": {
+    "oof_accuracy": 0.0,
+    "oof_macro_f1": 0.02501430696020046,
+    "test_accuracy": -0.125,
+    "test_macro_f1": -0.08975468975468975,
+    "test_answer_correctness": -0.030832797321619365,
+    "test_evidence_recall": 0.02083333333333337
+  },
+  "delta_expanded_weighted_minus_expanded_unweighted": {
+    "oof_accuracy": 0.014492753623188415,
+    "oof_macro_f1": 0.006981940402460085,
+    "test_accuracy": -0.08333333333333337,
+    "test_macro_f1": -0.058730158730158744,
+    "test_answer_correctness": -0.038169567476513566,
+    "test_evidence_recall": 0.02083333333333337
+  },
+  "baseline_reproduces_prior_weighted_experiment": true,
+  "elapsed_seconds": 2.2424907786771655
+}

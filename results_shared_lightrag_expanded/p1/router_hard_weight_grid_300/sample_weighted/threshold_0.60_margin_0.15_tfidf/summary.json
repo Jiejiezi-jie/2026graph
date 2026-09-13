@@ -1,0 +1,123 @@
+{
+  "mode": "sample_weighted",
+  "correctness_threshold": 0.6,
+  "best_margin": 0.15,
+  "feature": "tfidf",
+  "development_count": 276,
+  "test_count": 24,
+  "development_label_distribution": {
+    "pathrag": 94,
+    "vector": 143,
+    "lightrag": 39
+  },
+  "test_label_distribution": {
+    "vector": 13,
+    "lightrag": 1,
+    "pathrag": 10
+  },
+  "development_weight_category_distribution": {
+    "all_failed": 63,
+    "ambiguous": 117,
+    "stable": 96
+  },
+  "cross_validation": {
+    "n": 276,
+    "accuracy": 0.41304347826086957,
+    "macro_f1": 0.3365093698452115,
+    "confusion_matrix": [
+      [
+        73,
+        23,
+        47
+      ],
+      [
+        19,
+        4,
+        16
+      ],
+      [
+        39,
+        18,
+        37
+      ]
+    ],
+    "prediction_distribution": {
+      "lightrag": 45,
+      "vector": 131,
+      "pathrag": 100
+    }
+  },
+  "sample_weighted_cross_validation": {
+    "n": 276,
+    "accuracy": 0.3875432525951557,
+    "macro_f1": 0.31198291656182936,
+    "confusion_matrix": [
+      [
+        40.5,
+        12.2,
+        26.200000000000003
+      ],
+      [
+        12.6,
+        1.4000000000000001,
+        11.0
+      ],
+      [
+        30.200000000000006,
+        14.000000000000004,
+        25.30000000000001
+      ]
+    ],
+    "prediction_distribution": {
+      "lightrag": 45,
+      "vector": 131,
+      "pathrag": 100
+    }
+  },
+  "test": {
+    "n": 24,
+    "accuracy": 0.4583333333333333,
+    "macro_f1": 0.3435294117647059,
+    "confusion_matrix": [
+      [
+        7,
+        4,
+        2
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        5,
+        1,
+        4
+      ]
+    ],
+    "prediction_distribution": {
+      "vector": 12,
+      "pathrag": 7,
+      "lightrag": 5
+    }
+  },
+  "majority_accuracy": 0.5416666666666666,
+  "selected_hyperparameters": {
+    "feature_kind": "word",
+    "class_weight": "balanced",
+    "C": 2.0
+  },
+  "test_policy": {
+    "n": 24,
+    "answer_correctness": 0.5942321611010791,
+    "evidence_recall": 0.5756944444444444,
+    "input_tokens": 5272.75,
+    "output_tokens": 77.5,
+    "latency_ms": 2906.2595606731825,
+    "route_distribution": {
+      "vector": 12,
+      "pathrag": 7,
+      "lightrag": 5
+    }
+  }
+}

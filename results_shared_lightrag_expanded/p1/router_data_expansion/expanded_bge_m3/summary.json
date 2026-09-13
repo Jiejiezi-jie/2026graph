@@ -1,0 +1,88 @@
+{
+  "feature": "bge_m3",
+  "development_count": 276,
+  "test_count": 24,
+  "development_label_distribution": {
+    "pathrag": 99,
+    "vector": 135,
+    "lightrag": 42
+  },
+  "test_label_distribution": {
+    "pathrag": 11,
+    "vector": 12,
+    "lightrag": 1
+  },
+  "development_all_failed": 63,
+  "cross_validation": {
+    "n": 276,
+    "accuracy": 0.40217391304347827,
+    "macro_f1": 0.36499494604836125,
+    "confusion_matrix": [
+      [
+        56,
+        38,
+        41
+      ],
+      [
+        18,
+        10,
+        14
+      ],
+      [
+        34,
+        20,
+        45
+      ]
+    ],
+    "prediction_distribution": {
+      "vector": 108,
+      "pathrag": 100,
+      "lightrag": 68
+    }
+  },
+  "test": {
+    "n": 24,
+    "accuracy": 0.4166666666666667,
+    "macro_f1": 0.31746031746031744,
+    "confusion_matrix": [
+      [
+        5,
+        3,
+        4
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        4,
+        2,
+        5
+      ]
+    ],
+    "prediction_distribution": {
+      "pathrag": 10,
+      "vector": 9,
+      "lightrag": 5
+    }
+  },
+  "selected_hyperparameters": {
+    "feature_kind": "bge_m3_cls",
+    "class_weight": "balanced",
+    "C": 0.05
+  },
+  "test_policy": {
+    "n": 24,
+    "answer_correctness": 0.611516048175651,
+    "evidence_recall": 0.6048611111111111,
+    "input_tokens": 5322.708333333333,
+    "output_tokens": 84.95833333333333,
+    "latency_ms": 3261.3159820629485,
+    "route_distribution": {
+      "pathrag": 10,
+      "vector": 9,
+      "lightrag": 5
+    }
+  }
+}
