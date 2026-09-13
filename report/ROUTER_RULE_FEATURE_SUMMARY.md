@@ -171,15 +171,27 @@ GraphML 逐字节 SHA-256 均为：
 TF-IDF，因此若严格只根据开发集 5 折结果选择特征，应选择 BGE-M3。测试结果只用于最终
 报告，不参与这一选择。
 
-### 本轮固定方法结果
+### 本轮固定方法与新路由结果
 
-完整 24 题测试集上的固定方法结果为：
+完整 24 题测试集上，使用 `>=0.60，最高-0.10 + BGE-M3` 新路由器的结果为：
 
 | 方法 | Answer Correctness | Evidence Recall |
 |---|---:|---:|
 | Vector | 0.5845 | 0.6521 |
 | LightRAG | 0.5337 | 0.5313 |
 | PathRAG | 0.5815 | 0.5215 |
+| Adaptive（新路由器） | **0.5946** | 0.5382 |
+| Oracle | 0.7000 | 0.6007 |
+
+Adaptive 的实际预测路由分布为 `Vector 10 / LightRAG 5 / PathRAG 9`；Oracle
+银标路由分布为 `Vector 12 / LightRAG 1 / PathRAG 11`。这里的 Oracle 与项目既有
+`official_analysis` 定义一致：按照同一阈值、容差和成本规则得到的逐题银标选择，而不是
+简单取每题 Answer Correctness 最大的方法。若仅取每题最高 Answer Correctness，质量上限
+为 0.7066，对应 Evidence Recall 为 0.6174。
+
+与最好的固定正确性结果 Vector 相比，新 Adaptive 的 Answer Correctness 提高约 0.0101
+（1.01 个百分点），但 Evidence Recall 下降约 0.1139。因此当前路由器带来了小幅答案质量
+提升，但证据覆盖仍有明显改进空间。
 
 ### 耗时与复现性
 
