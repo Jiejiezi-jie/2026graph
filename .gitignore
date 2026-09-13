@@ -21,3 +21,11 @@ results_api/**/*.pre_drop_*.bak
 results_api/**/*.jsonl.20*.bak
 results_shared_lightrag_expanded/logs/
 results_shared_lightrag_expanded/**/*.bak
+
+# Current-batch runtime index copies and logs (compact p1 results stay versioned)
+results_shared_lightrag_unified_latency/indexes/
+results_shared_lightrag_unified_latency/logs/
+results_shared_lightrag_unified_latency/splits/
+results_shared_lightrag_current_main/indexes/
+results_shared_lightrag_current_main/p0/
+results_shared_lightrag_current_main/splits/

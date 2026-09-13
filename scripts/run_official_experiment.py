@@ -32,6 +32,12 @@ def parse_args() -> argparse.Namespace:
         help="Override the configured P0 questions per question type (for example, 20 gives 40 total).",
     )
     parser.add_argument("--skip-index", action="store_true")
+    parser.add_argument(
+        "--split",
+        choices=["all", "train", "validation", "test"],
+        default="all",
+        help="Run only the selected frozen split; default keeps the original behavior.",
+    )
     return parser.parse_args()
 
 
@@ -190,6 +196,10 @@ async def main() -> None:
         if args.stage == "p0"
         else p1_rows
     )
+    if args.split != "all":
+        questions = [row for row in questions if row["split"] == args.split]
+        if not questions:
+            raise ValueError(f"No questions found for split={args.split}")
     split_dir = results_dir / "splits"
     _write_jsonl(split_dir / "p1_questions.jsonl", p1_rows)
     _write_jsonl(

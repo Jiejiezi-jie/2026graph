@@ -62,6 +62,12 @@ def parse_args() -> argparse.Namespace:
         default=Path("results_shared_lightrag_current_main/p1/analysis_threshold_margin_grid"),
     )
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument(
+        "--allowed-evaluation-protocol",
+        action="append",
+        default=[],
+        help="Explicitly permit a known protocol hash; repeat for each allowed hash.",
+    )
     return parser.parse_args()
 
 
@@ -103,7 +109,9 @@ def score(truth: list[str], predicted: list[str]) -> dict[str, Any]:
 
 
 def validate_inputs(
-    paths: dict[str, Path], rows: dict[str, list[dict[str, Any]]]
+    paths: dict[str, Path],
+    rows: dict[str, list[dict[str, Any]]],
+    allowed_protocols: set[str] | None = None,
 ) -> tuple[list[str], str]:
     if any(len(method_rows) != 120 for method_rows in rows.values()):
         raise ValueError(
@@ -130,7 +138,7 @@ def validate_inputs(
         for method_rows in rows.values()
         for row in method_rows
     }
-    if len(protocols) != 1:
+    if len(protocols) != 1 and protocols != (allowed_protocols or set()):
         raise ValueError(f"Evaluation protocols differ: {sorted(protocols)}")
 
     by_method = {
@@ -146,7 +154,12 @@ def validate_inputs(
                     raise ValueError(f"{qid}: inconsistent {field} for {method}")
     # Match analyze_official's canonical ordering so the fixed 5-fold split is
     # comparable with earlier audited router experiments.
-    return sorted(reference_ids), next(iter(protocols))
+    protocol = (
+        next(iter(protocols))
+        if len(protocols) == 1
+        else "explicitly-allowed:" + ",".join(sorted(protocols))
+    )
+    return sorted(reference_ids), protocol
 
 
 def build_labels(
@@ -236,7 +249,9 @@ def main() -> None:
     args = parse_args()
     paths = {method: resolve(getattr(args, method)) for method in METHODS}
     rows = {method: load_jsonl(path) for method, path in paths.items()}
-    ordered_ids, evaluation_protocol = validate_inputs(paths, rows)
+    ordered_ids, evaluation_protocol = validate_inputs(
+        paths, rows, set(args.allowed_evaluation_protocol)
+    )
 
     lightrag_graph = resolve(args.lightrag_graph)
     pathrag_graph = resolve(args.pathrag_graph)

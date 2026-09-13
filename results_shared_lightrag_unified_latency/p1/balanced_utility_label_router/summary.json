@@ -1,0 +1,86 @@
+{
+  "status": "completed offline; no API, retrieval, generation, or evaluation calls",
+  "protocol": {
+    "total_questions": 300,
+    "development_count": 276,
+    "frozen_test_count": 24,
+    "feature": "bge_m3_cls",
+    "folds": 5,
+    "fold_stratification": "question_type",
+    "seed": 42,
+    "candidate_count": 540,
+    "selection_metric": "development OOF joint harmonic mean of actual answer correctness and evidence recall",
+    "test_used_for_training_or_selection": false,
+    "evaluation_protocol": "explicitly-allowed:209096a999b2a761cfd08eb9ddadd88a804f51ecd79acf8a61a8b592ed9fd851,d1f6aaf676bddfd08f81e0e7ccafc78fa3cbe92e8d50bbd47687a775cf2d6abd",
+    "scikit_learn_version": "1.7.2",
+    "new_api_calls": 0,
+    "input_sha256": {
+      "baseline_vector": "95a8f9574839e6d2e5fa1c58c775768ce558a8cdaa30a28b150f65c7975db1f0",
+      "baseline_lightrag": "4618bd37149d72d40abc080f32aca6c50288cad278586f6edd8ba0d27a129397",
+      "baseline_pathrag": "755175db208906c16509d4bb3a1d8c9449df4d9d80083729d9437deb05511bcd",
+      "expansion_vector": "5b400583ba06ed190be833d11c83382b99c82bcda73e242ee6cd53139d5f060c",
+      "expansion_lightrag": "2a3c58fb0fbc066d4904f31fb6be2dfaf6927bba43a7c7b58c4d89eb010187d7",
+      "expansion_pathrag": "d897d2434e21d8f5ff4abb4755344bc321f7972f443c56284927345a394c92ad",
+      "embedding_cache": "8b8b982303b95473c0f2deefccc6d4fb915c108daec50195eedf77693ff34855",
+      "config": "b54fb8764e607214624c6c4436148d466fa1835a162e71184428dca1209605c3"
+    },
+    "git_commit": "8396aa3de129e8fc98ab5817f56810a6c2f529c7"
+  },
+  "selected_candidate": {
+    "family": "logistic_utility_labels",
+    "utility": "minimum",
+    "parameter": 1.0,
+    "tie_tolerance": 0.0,
+    "class_weight": null,
+    "sample_weight": "utility_gap",
+    "oof_policy": {
+      "n": 276,
+      "answer_correctness": 0.607135889675059,
+      "evidence_recall": 0.7137806637806637,
+      "joint_harmonic_mean": 0.6561532705507939,
+      "route_distribution": {
+        "vector": 260,
+        "lightrag": 4,
+        "pathrag": 12
+      }
+    },
+    "development_label_distribution": {
+      "vector": 162,
+      "lightrag": 59,
+      "pathrag": 55
+    }
+  },
+  "development_oof": {
+    "n": 276,
+    "answer_correctness": 0.607135889675059,
+    "evidence_recall": 0.7137806637806637,
+    "joint_harmonic_mean": 0.6561532705507939,
+    "route_distribution": {
+      "vector": 260,
+      "lightrag": 4,
+      "pathrag": 12
+    }
+  },
+  "frozen_test": {
+    "n": 24,
+    "answer_correctness": 0.5228071373878543,
+    "evidence_recall": 0.6826388888888889,
+    "joint_harmonic_mean": 0.5921268569310328,
+    "route_distribution": {
+      "vector": 23,
+      "lightrag": 0,
+      "pathrag": 1
+    },
+    "input_tokens": 5008.958333333333,
+    "output_tokens": 55.041666666666664,
+    "latency_ms": 1257.4787792594482
+  },
+  "artifacts": {
+    "model": "results_shared_lightrag_unified_latency/p1/balanced_utility_label_router/router.joblib",
+    "model_sha256": "b572a31a8176a18eb5f7150d9bb55588cdc0059f19901001fd54cc0a0990bc0e",
+    "oof_predictions": "results_shared_lightrag_unified_latency/p1/balanced_utility_label_router/oof_predictions.jsonl",
+    "test_predictions": "results_shared_lightrag_unified_latency/p1/balanced_utility_label_router/test_predictions.jsonl",
+    "candidates": "results_shared_lightrag_unified_latency/p1/balanced_utility_label_router/candidates.json"
+  },
+  "elapsed_seconds": 31.71109865512699
+}

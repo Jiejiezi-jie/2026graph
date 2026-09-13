@@ -1,0 +1,69 @@
+{
+  "seed": 42,
+  "expansion_seed": 4242,
+  "benchmark_dir": "data/vendor/GraphRAG-Benchmark",
+  "question_types": ["Fact Retrieval", "Complex Reasoning"],
+  "additional_per_type": 90,
+  "additional_train_per_type": 72,
+  "additional_validation_per_type": 18,
+  "correctness_threshold": 0.60,
+  "best_margin": 0.10,
+  "allowed_evaluation_protocols": [
+    "209096a999b2a761cfd08eb9ddadd88a804f51ecd79acf8a61a8b592ed9fd851",
+    "d1f6aaf676bddfd08f81e0e7ccafc78fa3cbe92e8d50bbd47687a775cf2d6abd"
+  ],
+  "baseline_inputs": {
+    "vector": "results_shared_lightrag_unified_latency/p1/vector_evaluated.jsonl",
+    "lightrag": "results_shared_lightrag_unified_latency/p1/lightrag_evaluated.jsonl",
+    "pathrag": "results_shared_lightrag_current_main/p1/pathrag_evaluated.jsonl"
+  },
+  "question_file": "results_shared_lightrag_expanded/splits/expansion_questions.jsonl",
+  "selection_manifest": "results_shared_lightrag_expanded/splits/expansion_manifest.json",
+  "index_dirs": {
+    "vector": "results_shared_lightrag_unified_latency/indexes/vector",
+    "lightrag": "results_shared_lightrag_unified_latency/indexes/lightrag",
+    "pathrag": "results_shared_lightrag_unified_latency/indexes/pathrag"
+  },
+  "chunk_tokens": 1200,
+  "chunk_overlap_tokens": 100,
+  "vector_top_k": 5,
+  "lightrag_top_k": 40,
+  "lightrag_chunk_top_k": 5,
+  "pathrag_top_k": 20,
+  "max_context_tokens": 5000,
+  "llm": {
+    "backend": "openai_compatible",
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-chat",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "temperature": 0.0,
+    "max_new_tokens": 256,
+    "max_callback_new_tokens": 4096,
+    "timeout_seconds": 120,
+    "max_retries": 3
+  },
+  "evaluation": {
+    "max_new_tokens": 4096,
+    "response_retries": 1,
+    "request_retries": 1
+  },
+  "embedding": {
+    "backend": "transformers",
+    "model_path": "models/bge-m3",
+    "device": "cuda:5",
+    "batch_size": 4,
+    "max_length": 2048,
+    "normalize": true
+  },
+  "router": {
+    "family": "bge_m3_logistic_regression",
+    "selection_metric": "oof_macro_f1",
+    "features": ["tfidf", "bge_m3"]
+  },
+  "generation_prompt": "Answer the medical question using only the supplied context. Give a direct, concise answer. If the context is insufficient, say I don't know.",
+  "results_dir": "results_shared_lightrag_expanded",
+  "lightrag_max_entity_tokens": 1500,
+  "lightrag_max_relation_tokens": 1500,
+  "lightrag_max_total_tokens": 12000,
+  "_note": "Flash-aligned merge: rerun baseline Vector/LightRAG, existing new-batch PathRAG, and existing new-batch 180-question expansion."
+}

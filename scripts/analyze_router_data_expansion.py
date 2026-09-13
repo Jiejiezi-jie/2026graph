@@ -115,7 +115,8 @@ def validate_and_merge(
 
     if group_ids["baseline"].intersection(group_ids["expansion"]):
         raise ValueError("Expansion overlaps baseline IDs")
-    if len(protocols) != 1:
+    allowed_protocols = set(config.get("allowed_evaluation_protocols", []))
+    if len(protocols) != 1 and protocols != allowed_protocols:
         raise ValueError(f"Evaluation protocol mismatch: {sorted(protocols)}")
     if any(len(method_rows) != len(METHODS) for method_rows in merged.values()):
         raise ValueError("At least one question is missing a method")
@@ -134,7 +135,12 @@ def validate_and_merge(
     }
     if len(baseline_test) != 24:
         raise ValueError(f"Expected frozen 24-row test, got {len(baseline_test)}")
-    return merged, group_ids["baseline"], group_ids["expansion"], next(iter(protocols)), input_hashes
+    protocol = (
+        next(iter(protocols))
+        if len(protocols) == 1
+        else "explicitly-allowed:" + ",".join(sorted(protocols))
+    )
+    return merged, group_ids["baseline"], group_ids["expansion"], protocol, input_hashes
 
 
 def build_labels(

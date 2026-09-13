@@ -1,0 +1,123 @@
+{
+  "mode": "hard",
+  "correctness_threshold": 0.6,
+  "best_margin": 0.05,
+  "feature": "tfidf",
+  "development_count": 276,
+  "test_count": 24,
+  "development_label_distribution": {
+    "pathrag": 109,
+    "vector": 127,
+    "lightrag": 40
+  },
+  "test_label_distribution": {
+    "lightrag": 2,
+    "vector": 14,
+    "pathrag": 8
+  },
+  "development_weight_category_distribution": {
+    "all_failed": 66,
+    "ambiguous": 82,
+    "stable": 128
+  },
+  "cross_validation": {
+    "n": 276,
+    "accuracy": 0.3804347826086957,
+    "macro_f1": 0.311042565914245,
+    "confusion_matrix": [
+      [
+        57,
+        17,
+        53
+      ],
+      [
+        21,
+        3,
+        16
+      ],
+      [
+        48,
+        16,
+        45
+      ]
+    ],
+    "prediction_distribution": {
+      "pathrag": 114,
+      "vector": 126,
+      "lightrag": 36
+    }
+  },
+  "sample_weighted_cross_validation": {
+    "n": 276,
+    "accuracy": 0.3373940677966102,
+    "macro_f1": 0.27195733121055143,
+    "confusion_matrix": [
+      [
+        31.200000000000003,
+        12.200000000000003,
+        29.300000000000004
+      ],
+      [
+        16.1,
+        0.8999999999999999,
+        13.9
+      ],
+      [
+        40.2,
+        13.400000000000002,
+        31.60000000000001
+      ]
+    ],
+    "prediction_distribution": {
+      "pathrag": 114,
+      "vector": 126,
+      "lightrag": 36
+    }
+  },
+  "test": {
+    "n": 24,
+    "accuracy": 0.4166666666666667,
+    "macro_f1": 0.2835595776772248,
+    "confusion_matrix": [
+      [
+        8,
+        0,
+        6
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        3,
+        3,
+        2
+      ]
+    ],
+    "prediction_distribution": {
+      "vector": 12,
+      "pathrag": 9,
+      "lightrag": 3
+    }
+  },
+  "majority_accuracy": 0.5833333333333334,
+  "selected_hyperparameters": {
+    "feature_kind": "word_char",
+    "class_weight": "balanced",
+    "C": 2.0
+  },
+  "test_policy": {
+    "n": 24,
+    "answer_correctness": 0.5153318333733393,
+    "evidence_recall": 0.5381944444444444,
+    "input_tokens": 5262.458333333333,
+    "output_tokens": 77.95833333333333,
+    "latency_ms": 2681.0138723036894,
+    "route_distribution": {
+      "vector": 12,
+      "pathrag": 9,
+      "lightrag": 3
+    }
+  }
+}
