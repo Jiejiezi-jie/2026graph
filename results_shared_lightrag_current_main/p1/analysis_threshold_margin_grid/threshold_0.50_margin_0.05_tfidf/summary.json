@@ -1,0 +1,78 @@
+{
+  "correctness_threshold": 0.5,
+  "best_margin": 0.05,
+  "feature": "tfidf",
+  "development_count": 96,
+  "test_count": 24,
+  "development_label_distribution": {
+    "pathrag": 32,
+    "vector": 44,
+    "lightrag": 20
+  },
+  "test_label_distribution": {
+    "pathrag": 9,
+    "vector": 12,
+    "lightrag": 3
+  },
+  "all_failed": 14,
+  "cross_validation": {
+    "n": 96,
+    "accuracy": 0.46875,
+    "macro_f1": 0.40923520923520923,
+    "confusion_matrix": [
+      [
+        26,
+        7,
+        11
+      ],
+      [
+        10,
+        3,
+        7
+      ],
+      [
+        11,
+        5,
+        16
+      ]
+    ],
+    "prediction_distribution": {
+      "lightrag": 15,
+      "vector": 47,
+      "pathrag": 34
+    }
+  },
+  "test": {
+    "n": 24,
+    "accuracy": 0.4166666666666667,
+    "macro_f1": 0.30036630036630035,
+    "confusion_matrix": [
+      [
+        8,
+        2,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        4,
+        3,
+        2
+      ]
+    ],
+    "prediction_distribution": {
+      "lightrag": 5,
+      "vector": 14,
+      "pathrag": 5
+    }
+  },
+  "majority_accuracy": 0.5,
+  "selected_hyperparameters": {
+    "feature_kind": "word_char",
+    "class_weight": "balanced",
+    "C": 0.5
+  }
+}

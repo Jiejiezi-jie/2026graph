@@ -1,0 +1,78 @@
+{
+  "correctness_threshold": 0.5,
+  "best_margin": 0.15,
+  "feature": "bge_m3",
+  "development_count": 96,
+  "test_count": 24,
+  "development_label_distribution": {
+    "vector": 53,
+    "pathrag": 26,
+    "lightrag": 17
+  },
+  "test_label_distribution": {
+    "vector": 15,
+    "lightrag": 1,
+    "pathrag": 8
+  },
+  "all_failed": 14,
+  "cross_validation": {
+    "n": 96,
+    "accuracy": 0.4895833333333333,
+    "macro_f1": 0.370704037370704,
+    "confusion_matrix": [
+      [
+        35,
+        7,
+        11
+      ],
+      [
+        10,
+        1,
+        6
+      ],
+      [
+        13,
+        2,
+        11
+      ]
+    ],
+    "prediction_distribution": {
+      "vector": 58,
+      "pathrag": 28,
+      "lightrag": 10
+    }
+  },
+  "test": {
+    "n": 24,
+    "accuracy": 0.5833333333333334,
+    "macro_f1": 0.4486274509803922,
+    "confusion_matrix": [
+      [
+        8,
+        4,
+        3
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        6
+      ]
+    ],
+    "prediction_distribution": {
+      "lightrag": 5,
+      "vector": 10,
+      "pathrag": 9
+    }
+  },
+  "majority_accuracy": 0.625,
+  "selected_hyperparameters": {
+    "feature_kind": "bge_m3_cls",
+    "class_weight": "balanced",
+    "C": 1.0
+  }
+}
