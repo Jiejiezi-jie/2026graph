@@ -1,0 +1,293 @@
+{
+  "protocol": {
+    "change_under_test": "fixed sample weighting only",
+    "unchanged": [
+      "120 questions and 96/24 development/test split",
+      "silver labels (threshold=0.60, best_margin=0.10)",
+      "BGE-M3 embeddings",
+      "question-type-stratified five folds",
+      "LogisticRegression candidate grid and seed"
+    ],
+    "weight_definition": {
+      "stable": 1.0,
+      "ambiguous": 0.5,
+      "all_failed": 0.3
+    },
+    "category_definition": {
+      "stable": "exactly one eligible method",
+      "ambiguous": "two or three eligible methods",
+      "all_failed": "no method reaches the threshold and margin rule"
+    },
+    "category_counts": {
+      "train": {
+        "ambiguous": 30,
+        "stable": 25,
+        "all_failed": 17
+      },
+      "validation": {
+        "ambiguous": 8,
+        "stable": 13,
+        "all_failed": 3
+      },
+      "test": {
+        "stable": 8,
+        "all_failed": 8,
+        "ambiguous": 8
+      },
+      "all": {
+        "ambiguous": 46,
+        "stable": 46,
+        "all_failed": 28
+      }
+    },
+    "input_sha256": {
+      "vector": "cc119fb15503a65f7fc97cd8a79a1ea848af252fa4de26817bbc969bfa7f9a2f",
+      "lightrag": "8d83b3c619e7870933c19df43d8b91ce4487ba738f18fff79bdbae6e431bd6df",
+      "pathrag": "755175db208906c16509d4bb3a1d8c9449df4d9d80083729d9437deb05511bcd",
+      "labels": "c4a34487bfbb10e578839909981b5961b56ae2861743d08e6a62c623f29f8ad7",
+      "embeddings": "9b98898f83d3ba256df7bf25a9aa0a9a96a7998c431ee1e53adcc19b3b7da45f",
+      "baseline_summary": "ce116a7e5c78ef6b642e366ecb1a63f12b633b5b49b3df879299e36f0e520e44"
+    },
+    "config_sha256": "b94451a4835ed6b3c43802515bfa4c7e1d4b21b8829b3629ab48ceeeaefd354a",
+    "git_commit": "fbc179691c02a9edb0b244da310ace6d53c125b6"
+  },
+  "experiments": {
+    "unweighted": {
+      "sample_weighting_enabled": false,
+      "selected_hyperparameters": {
+        "C": 0.05,
+        "class_weight": "balanced"
+      },
+      "cross_validation": {
+        "n": 96,
+        "accuracy": 0.5,
+        "macro_f1": 0.4164045546534026,
+        "confusion_matrix": [
+          [
+            30,
+            6,
+            12
+          ],
+          [
+            11,
+            2,
+            6
+          ],
+          [
+            9,
+            4,
+            16
+          ]
+        ],
+        "prediction_distribution": {
+          "vector": 50,
+          "lightrag": 12,
+          "pathrag": 34
+        }
+      },
+      "sample_weighted_cross_validation": {
+        "n": 96,
+        "accuracy": 0.4857142857142857,
+        "macro_f1": 0.41520506550508224,
+        "confusion_matrix": [
+          [
+            17.3,
+            3.5,
+            7.8
+          ],
+          [
+            8.6,
+            1.5,
+            2.6
+          ],
+          [
+            7.1,
+            2.8,
+            11.8
+          ]
+        ],
+        "prediction_distribution": {
+          "vector": 50,
+          "lightrag": 12,
+          "pathrag": 34
+        }
+      },
+      "test": {
+        "n": 24,
+        "accuracy": 0.4583333333333333,
+        "macro_f1": 0.34848484848484845,
+        "confusion_matrix": [
+          [
+            6,
+            3,
+            3
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            4,
+            2,
+            5
+          ]
+        ],
+        "prediction_distribution": {
+          "lightrag": 5,
+          "pathrag": 9,
+          "vector": 10
+        }
+      },
+      "adaptive_policy": {
+        "n": 24,
+        "answer_correctness": 0.5946008086907221,
+        "evidence_recall": 0.5381944444444444,
+        "input_tokens": 5297.291666666667,
+        "output_tokens": 83.75,
+        "latency_ms": 3175.639924189985,
+        "route_distribution": {
+          "lightrag": 5,
+          "pathrag": 9,
+          "vector": 10
+        }
+      },
+      "oracle_policy": {
+        "n": 24,
+        "answer_correctness": 0.7000019076123563,
+        "evidence_recall": 0.6006944444444444,
+        "input_tokens": 5236.041666666667,
+        "output_tokens": 81.08333333333333,
+        "latency_ms": 2922.712472410543,
+        "route_distribution": {
+          "pathrag": 11,
+          "vector": 12,
+          "lightrag": 1
+        }
+      }
+    },
+    "weighted": {
+      "sample_weighting_enabled": true,
+      "selected_hyperparameters": {
+        "C": 0.01,
+        "class_weight": "balanced"
+      },
+      "cross_validation": {
+        "n": 96,
+        "accuracy": 0.4166666666666667,
+        "macro_f1": 0.34696257949062087,
+        "confusion_matrix": [
+          [
+            25,
+            12,
+            11
+          ],
+          [
+            11,
+            1,
+            7
+          ],
+          [
+            11,
+            4,
+            14
+          ]
+        ],
+        "prediction_distribution": {
+          "vector": 47,
+          "lightrag": 17,
+          "pathrag": 32
+        }
+      },
+      "sample_weighted_cross_validation": {
+        "n": 96,
+        "accuracy": 0.4047619047619048,
+        "macro_f1": 0.3473488301491932,
+        "confusion_matrix": [
+          [
+            14.0,
+            7.3,
+            7.3
+          ],
+          [
+            8.1,
+            1.0,
+            3.6
+          ],
+          [
+            9.1,
+            2.1,
+            10.5
+          ]
+        ],
+        "prediction_distribution": {
+          "vector": 47,
+          "lightrag": 17,
+          "pathrag": 32
+        }
+      },
+      "test": {
+        "n": 24,
+        "accuracy": 0.4583333333333333,
+        "macro_f1": 0.34848484848484845,
+        "confusion_matrix": [
+          [
+            5,
+            3,
+            4
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            3,
+            2,
+            6
+          ]
+        ],
+        "prediction_distribution": {
+          "lightrag": 5,
+          "pathrag": 11,
+          "vector": 8
+        }
+      },
+      "adaptive_policy": {
+        "n": 24,
+        "answer_correctness": 0.6041792780207568,
+        "evidence_recall": 0.6048611111111111,
+        "input_tokens": 5343.416666666667,
+        "output_tokens": 89.45833333333333,
+        "latency_ms": 3531.2213576967983,
+        "route_distribution": {
+          "lightrag": 5,
+          "pathrag": 11,
+          "vector": 8
+        }
+      },
+      "oracle_policy": {
+        "n": 24,
+        "answer_correctness": 0.7000019076123563,
+        "evidence_recall": 0.6006944444444444,
+        "input_tokens": 5236.041666666667,
+        "output_tokens": 81.08333333333333,
+        "latency_ms": 2922.712472410543,
+        "route_distribution": {
+          "pathrag": 11,
+          "vector": 12,
+          "lightrag": 1
+        }
+      }
+    }
+  },
+  "delta_weighted_minus_unweighted": {
+    "cross_validation_accuracy": -0.08333333333333331,
+    "cross_validation_macro_f1": -0.06944197516278172,
+    "test_accuracy": 0.0,
+    "test_macro_f1": 0.0,
+    "adaptive_answer_correctness": 0.0095784693300347,
+    "adaptive_evidence_recall": 0.06666666666666665
+  },
+  "elapsed_seconds": 1.326090064831078
+}
