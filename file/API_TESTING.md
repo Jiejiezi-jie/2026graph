@@ -54,6 +54,12 @@ not make network requests.
 The source setup script pins GraphRAG-Bench, LightRAG, and PathRAG to the
 commits used by this project. It is safe to run again.
 
+`deps/LightRAG` and `deps/PathRAG` already ship in the repository as pruned
+upstream copies, so the script does not clone them: it checks the revision
+declared in their `UPSTREAM_COMMIT` marker against the pinned commit and
+reports a mismatch instead of cloning into a non-empty directory. Only
+`data/vendor/GraphRAG-Benchmark` is downloaded.
+
 ## Check the API and local embedding
 
 ```powershell
