@@ -217,7 +217,11 @@ git -C artifacts/medical-upstream/PathRAG checkout --detach 32567bfc93605b839399
 
 2026-09 重组后仓库已自带同一提交的精简上游（仅 `PathRAG/` 包 + 依赖清单，
 见 `deps/PathRAG`），可直接用 `--medical-pathrag-root deps/PathRAG`，
-不必再克隆一份。
+不必再克隆一份。该目录不带 `.git`，因此固定提交由其中的 `UPSTREAM_COMMIT`
+标记声明，preflight 只在目录是独立 Git 检出时才读 `git rev-parse HEAD`；
+两条路径任一满足即可通过版本校验。
+若目录既不是独立检出、也没有该标记（例如被手工删过文件），
+preflight 会明确报告「无法确认 PathRAG 固定 Git 提交」而不会静默放过。
 
 ## 2. 下载 BGE-M3
 

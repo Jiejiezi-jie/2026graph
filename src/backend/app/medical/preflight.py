@@ -8,6 +8,33 @@ PATHRAG_COMMIT = "32567bfc93605b8393996d5fa9ccdc0edbb865b2"
 LIGHTRAG_COMMIT = "28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c"
 
 
+def pathrag_revision(upstream):
+    """Revision of a PathRAG source tree.
+
+    A real checkout reports its own Git HEAD. The vendored `deps/PathRAG` copy
+    ships without `.git`, where `git rev-parse` would silently resolve to the
+    enclosing repository, so it carries an `UPSTREAM_COMMIT` marker instead.
+    """
+    if (upstream / ".git").exists():
+        try:
+            result = subprocess.run(["git", "-C", str(upstream), "rev-parse", "HEAD"],
+                                    check=True, capture_output=True, text=True, timeout=10)
+            return result.stdout.strip()
+        except (OSError, subprocess.SubprocessError):
+            return None
+    marker = upstream / "UPSTREAM_COMMIT"
+    if not marker.is_file():
+        return None
+    try:
+        for line in marker.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if line and not line.startswith("#"):
+                return line
+    except OSError:
+        return None
+    return None
+
+
 def runtime_issues(settings):
     issues = []
     for name, expected in [("scikit-learn", "1.7.2"), ("lightrag-hku", "1.5.7"),
@@ -38,11 +65,9 @@ def runtime_issues(settings):
     if not upstream or not (upstream / "PathRAG/__init__.py").is_file():
         issues.append("未配置 PathRAG 源码：设置 --medical-pathrag-root，固定提交 " + PATHRAG_COMMIT + "。")
     else:
-        try:
-            result = subprocess.run(["git", "-C", str(upstream), "rev-parse", "HEAD"],
-                                    check=True, capture_output=True, text=True, timeout=10)
-            if result.stdout.strip() != PATHRAG_COMMIT:
-                issues.append("PathRAG 源码版本与 Medical 索引要求不符。")
-        except (OSError, subprocess.SubprocessError):
-            issues.append("无法确认 PathRAG 固定 Git 提交。")
+        actual = pathrag_revision(upstream)
+        if actual is None:
+            issues.append("无法确认 PathRAG 固定 Git 提交：既不是独立 Git 检出，也没有 UPSTREAM_COMMIT 标记。")
+        elif actual != PATHRAG_COMMIT:
+            issues.append("PathRAG 源码版本与 Medical 索引要求不符。")
     return issues

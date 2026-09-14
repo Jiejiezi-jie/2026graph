@@ -22,7 +22,7 @@ export DEEPSEEK_API_KEY='<your-key>'
 python src/backend/scripts/serve_web.py --port 8000 \
   --medical-bundle src/backend/data/medical \
   --medical-embedding-path <BGE-M3 权重目录> \
-  --medical-pathrag-root <PathRAG upstream checkout>
+  --medical-pathrag-root deps/PathRAG     # 仓库自带精简上游;也可指向独立克隆的固定提交检出
 ```
 
 终端 2(前端):
