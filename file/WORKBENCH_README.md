@@ -3,7 +3,7 @@
 FastAPI + React/Cytoscape 知识检索工作台,面向本项目 **GraphRAG-Bench Medical** 评测:
 在 LightRAG / PathRAG 共享的 Medical 知识图谱上做检索问答演示,并展示 vector / LightRAG / PathRAG / **Adaptive(router 自动路由)** 四种检索方法的差异。
 
-> 详细运行手册见 [docs/MEDICAL_WORKBENCH.md](docs/MEDICAL_WORKBENCH.md)——导入索引、preflight、四方法验证、常见问题都以它为准。
+> 详细运行手册见 [MEDICAL_WORKBENCH.md](MEDICAL_WORKBENCH.md)——导入索引、preflight、四方法验证、常见问题都以它为准。
 
 ## 启动网页
 
@@ -12,7 +12,7 @@ FastAPI + React/Cytoscape 知识检索工作台,面向本项目 **GraphRAG-Bench
 ```bash
 # 从仓库自身导入 Medical 索引 + router + vendor 化 official_backends 到运行时 bundle
 python src/backend/scripts/prepare_medical.py --repo <本仓库路径> --ref <本仓库 medical 集成 commit> \
-  --output backend/data/medical
+  --output src/backend/data/medical
 ```
 
 终端 1(后端):
@@ -20,7 +20,7 @@ python src/backend/scripts/prepare_medical.py --repo <本仓库路径> --ref <�
 ```bash
 export DEEPSEEK_API_KEY='<your-key>'
 python src/backend/scripts/serve_web.py --port 8000 \
-  --medical-bundle backend/data/medical \
+  --medical-bundle src/backend/data/medical \
   --medical-embedding-path <BGE-M3 权重目录> \
   --medical-pathrag-root <PathRAG upstream checkout>
 ```
@@ -28,7 +28,7 @@ python src/backend/scripts/serve_web.py --port 8000 \
 终端 2(前端):
 
 ```bash
-cd frontend
+cd src/frontend
 npm ci
 npm run dev
 ```
@@ -47,19 +47,19 @@ npm run dev
 
 ## 代码结构
 
-- `backend/app/`:FastAPI 应用。`main.py` 入口;`medical/`(engine / retrievers / preflight / profile / pathrag_protocol / shared_index)是 Medical 模式的全部接线;`retrieval/` 检索插件契约;`api/`、`services/`、`domain/` 通用服务。
-- `frontend/`:React 19 + Vite + Cytoscape,`src/AdaptiveRouting.tsx` 为路由可视化卡片。
+- `src/backend/app/`:FastAPI 应用。`main.py` 入口;`medical/`(engine / retrievers / preflight / profile / pathrag_protocol / shared_index)是 Medical 模式的全部接线;`retrieval/` 检索插件契约;`api/`、`services/`、`domain/` 通用服务。
+- `src/frontend/`:React 19 + Vite + Cytoscape,`src/AdaptiveRouting.tsx` 为路由可视化卡片。
 - `src/backend/scripts/serve_web.py`:启动器(支持 `--check` / `--preview-only`);`src/backend/scripts/prepare_medical.py`:从仓库生成只读导入 bundle(sha256 校验)。
-- `tests/`:pytest;`frontend/qa/`:Playwright 离线冒烟(拦截查询请求,不调付费 API)。
+- `test/workbench/`:pytest;`src/frontend/qa/`:Playwright 离线冒烟(拦截查询请求,不调付费 API)。
 
 ## 验证
 
 ```bash
-cd backend && python -m pytest tests -q
-cd frontend && npm run build
+python -m pytest test/workbench -q
+cd src/frontend && npm run build
 ```
 
-离线浏览器检查在前后端启动后运行 `frontend/qa/*.js`(脚本拦截查询,不产生 API 调用)。
+离线浏览器检查在前后端启动后运行 `src/frontend/qa/*.js`(脚本拦截查询,不产生 API 调用)。
 
 ## Runtime 契约
 

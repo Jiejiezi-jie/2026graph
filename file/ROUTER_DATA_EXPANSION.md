@@ -150,7 +150,7 @@ result/shared_expanded/p1/{vector,lightrag,pathrag}.jsonl
 result/shared_expanded/p1/{vector,lightrag,pathrag}_evaluated.jsonl
 result/shared_expanded/p1/router_data_expansion/
 result/shared_expanded/p1/weighted_router_data_expansion/
-tests/test_router_data_expansion.py
+test/test_router_data_expansion.py
 ```
 
 API 密钥未写入配置、结果或报告。两条裁判瞬时异常最终均已通过单条重试，正式结果中无

@@ -76,7 +76,7 @@
 configs/router_hard_weight_grid_300.json
 src/router/run_router_hard_weight_grid_300.py
 result/shared_expanded/p1/router_hard_weight_grid_300/
-tests/test_router_hard_weight_grid_300.py
+test/test_router_hard_weight_grid_300.py
 ```
 
 正式结果由 scikit-learn 1.7.2 生成。完整训练耗时约 50.36 秒；未调用生成式模型或评测 API。

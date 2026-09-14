@@ -88,7 +88,7 @@ Evidence Recall weight λ = 0.15
 configs/router_multiobjective_utility.json
 src/router/run_multiobjective_utility_router.py
 result/shared_expanded/p1/multiobjective_utility_router/
-tests/test_multiobjective_utility_router.py
+test/test_multiobjective_utility_router.py
 ```
 
 本实验完全离线，未调用检索器、生成模型、评测模型或外部 API。
