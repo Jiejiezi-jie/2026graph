@@ -142,6 +142,22 @@ async def test_pathrag_csv_names_resolve_to_quoted_graph_ids_without_fuzzy_match
     assert result.entities[0]["entity_name"] == "Alpha"
 
 
+def test_pathrag_highlights_verified_path_edges_without_inventing_shortcuts(medical_bundle):
+    from app.medical.bundle import MedicalBundle
+    from app.medical.retrievers import MedicalRetriever
+    from app.services.graph_service import GraphService
+    graph = nx.Graph()
+    graph.add_edges_from([("Alpha", "Beta"), ("Beta", "Gamma"), ("Alpha", "Gamma")])
+    path = medical_bundle / "indexes/lightrag/medical/graph_chunk_entity_relation.graphml"
+    nx.write_graphml(graph, path)
+    plugin = MedicalRetriever("pathrag", None, MedicalBundle(medical_bundle), {"pathrag": GraphService(path)})
+    evidence = RetrievalResult(metadata={"paths": [["Alpha", "Beta", "Beta", "Gamma", "Unknown"]]})
+    hits = plugin.related_graph(evidence)
+    assert set(hits.hit_node_ids) == {"Alpha", "Beta", "Gamma"}
+    assert {frozenset(pair) for pair in hits.hit_edge_pairs} == {frozenset(["Alpha", "Beta"]), frozenset(["Beta", "Gamma"])}
+    assert evidence.entities == [] and evidence.relationships == []
+
+
 @pytest.mark.asyncio
 async def test_adaptive_dispatches_once_and_uses_shared_answer_service(tmp_path):
     from app.medical.retrievers import AdaptiveRetriever

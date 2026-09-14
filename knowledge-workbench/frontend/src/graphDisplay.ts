@@ -5,10 +5,14 @@ export function mergeGraphHits(full: GraphData, hits?: GraphData): GraphData {
   if (!hits) return full
   const ids = new Set(hits.hit_node_ids?.length ? hits.hit_node_ids : hits.nodes.filter(n => n.retrieved).map(n => n.id))
   const pairs = new Set((hits.hit_edge_pairs?.length ? hits.hit_edge_pairs : hits.edges.filter(e => e.retrieved).map(e => [e.source, e.target])).map(pair => JSON.stringify(pair)))
+  const available = new Set(full.nodes.map(node => node.id))
+  const missing = [...ids].filter(id => !available.has(id)).length
+  const mismatched = full.nodes.length && missing
+    ? [missing + ' 个检索命中实体无法匹配当前图谱；记录可能来自旧索引。请重启更新后的后端并重新查询。'] : []
   return { ...full,
     nodes: full.nodes.map(n => ({ ...n, retrieved: ids.has(n.id) })),
     edges: full.edges.map(e => ({ ...e, retrieved: pairs.has(JSON.stringify([e.source, e.target])) || (!e.directed && pairs.has(JSON.stringify([e.target, e.source]))) })),
-    warnings: [...new Set([...full.warnings, ...hits.warnings])],
+    warnings: [...new Set([...full.warnings, ...hits.warnings, ...mismatched])],
   }
 }
 

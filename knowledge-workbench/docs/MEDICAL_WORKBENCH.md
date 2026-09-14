@@ -1,3 +1,29 @@
+# 最新工作台更新（2026-09-14）
+
+Adaptive 使用 300 题实验的加权 BGE-M3 CLS + Logistic Regression 选择头，
+开发集 276 题，阈值 0.60、容差 0.10。模型来自 main 提交 `5f374e2`。
+图谱、Chunk 与向量索引不需要重新生成。
+
+已有 Medical bundle：停止后端，用 Medical Python 环境在 knowledge-workbench 目录执行：
+
+```powershell
+python scripts/install_medical_router.py --repo .. --ref 5f374e2 --bundle backend/data/medical
+```
+
+新机器：`prepare_medical.py --repo .. --ref origin/main` 默认安装新选择头。
+导入旧提交需添加 `--legacy-router`，再运行上述安装命令。
+安装器保留旧模型和 `bundle-before-router-*.json`，回退时停止后端并恢复对应旧清单。
+请使用 scikit-learn 1.7.2。BGE-M3 权重仍按下文下载，不将 API Key 或本机缓存提交。
+
+关键词提取默认预算提高到 4096，可用环境变量 `MEDICAL_KEYWORD_MAX_TOKENS` 调整。
+LightRAG 的 JSON 输出格式正确转发；两种图检索均检查截断、空响应和格式错误。
+日志仅记录结束原因、token 数及响应长度，不记录密钥或思考正文。
+
+图谱命中展示支持 PathRAG 路径的已验证节点和边；旧记录不能匹配当前图谱时显示提示。
+重启后端并刷新网页，对新问题生效。下方保留原有环境与启动说明。
+
+---
+
 # Medical 知识库接入与启动
 
 ## 队友拉取后的数据准备

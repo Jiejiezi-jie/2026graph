@@ -82,6 +82,6 @@ export default function AdaptiveRouting({ result, routing, busy, error, animate 
         </article>
       })}
     </div>
-    <p className="routing-footnote">分数为检索方法的分类概率，不代表答案正确率。{complete && decision && Object.values(decision.scores).some(score => score === null) ? ' 部分分类分数未返回。' : ''}</p>
+    <p className="routing-footnote">{metadata?.router_kind === 'bge_m3_cls_logistic_regression' ? 'BGE-M3 语义路由 · ' : ''}分数为检索方法的分类概率，不代表答案正确率。{complete && decision && Object.values(decision.scores).some(score => score === null) ? ' 部分分类分数未返回。' : ''}</p>
   </section>
 }

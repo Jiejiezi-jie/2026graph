@@ -37,7 +37,8 @@ class ImportedWorkspace:
     def build_registry(self):
         registry = RetrievalRegistry([MedicalRetriever(method, self.engine, self.bundle, self.graphs)
                                       for method in ("lightrag", "vector", "pathrag")])
-        registry.register(AdaptiveRetriever(registry, self.engine.load_router))
+        registry.register(AdaptiveRetriever(registry, self.engine.load_router,
+                                            self.engine.router_features, self.engine.router_kind))
         return registry
 
     def preview(self, method):

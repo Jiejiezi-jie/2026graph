@@ -23,6 +23,15 @@ test('older records still highlight recorded hits', () => {
   assert.equal(mergeGraphHits(full, { nodes: [{id:'a',retrieved:true}], edges: [], warnings: [] }).nodes[0].retrieved, true)
 })
 
+test('old graph IDs report missing highlights without fuzzy matching', () => {
+  const full = { nodes:[{id:'Alpha'}], edges:[], warnings:[] }
+  const hits = { nodes:[], edges:[], hit_node_ids:['"ALPHA"'], hit_edge_pairs:[], warnings:[] }
+  const result = mergeGraphHits(full,hits)
+  assert.equal(result.nodes[0].retrieved,false)
+  assert.ok(result.warnings.some(w=>w.includes('无法匹配') && w.includes('重新查询')))
+  assert.equal(full.warnings.length,0)
+})
+
 test('motion work is bounded by visible nodes and affected edges', () => {
   const candidates = Array.from({length: 4500}, (_,i) => ({ id: String(i), x: i * 100, y: 0, degree: i === 0 ? 1000 : 15 }))
   const selected = motionCandidates(candidates, {x1:0,y1:-10,x2:1000000,y2:10})

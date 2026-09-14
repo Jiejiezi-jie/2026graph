@@ -65,7 +65,7 @@ class MedicalBundle:
             counts["vector_chunks"] = vectors.shape[0]
         except (ValueError, OSError) as exc:
             raise AppError("INVALID_MEDICAL_BUNDLE", "Vector 向量文件无法读取。") from exc
-        self.require(self.root / "router.joblib")
+        self.require(self.root / self.manifest.get("router", {}).get("artifact", "router.joblib"))
         self.document = CorpusDocument(corpus_name=self.manifest.get("corpus_name", "Medical"),
                                        subset="medical", context=content,
                                        character_count=len(content), word_count=len(content.split()))

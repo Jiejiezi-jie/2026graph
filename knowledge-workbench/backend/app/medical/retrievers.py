@@ -79,11 +79,22 @@ class MedicalRetriever:
                 # Upstream CSV parsing removes one pair of literal double quotes.
                 # Prefer an exact raw ID, then one exactly wrapped ID. No case/alias guessing.
                 quoted = '"' + value + '"'
-                return value if value in graph else quoted if quoted in graph else value
+                unquoted = value[1:-1] if len(value) > 1 and value.startswith('"') and value.endswith('"') else value
+                return value if value in graph else quoted if quoted in graph else unquoted if unquoted in graph else value
             entities = [{**row, "entity_name": identifier(row.get("entity_name"))} for row in entities]
             relationships = [{**row, "src_id": identifier(row.get("src_id")),
                                "tgt_id": identifier(row.get("tgt_id"))}
                               for row in relationships if row.get("src_id") and row.get("tgt_id")]
+            # PathRAG also returns path evidence as prose, without src_id/tgt_id rows.
+            # Highlight only explicit consecutive path nodes and edges present in the graph.
+            for path in result.metadata.get("paths", []):
+                if not isinstance(path, list) or not all(isinstance(node, str) for node in path):
+                    continue
+                resolved = [identifier(node) for node in path]
+                entities.extend({"entity_name": node} for node in resolved if node in graph)
+                relationships.extend({"src_id": source, "tgt_id": target}
+                                     for source, target in zip(resolved, resolved[1:])
+                                     if source != target and graph.has_edge(source, target))
         return service.related(entities, relationships)
 
 
@@ -92,26 +103,28 @@ class AdaptiveRetriever:
         id="adaptive", name="Adaptive",
         description="Medical 自适应路由：由英文 Medical 问题分类器选择 Vector、LightRAG 或 PathRAG，只执行选中的检索。Top-K 传给选中方法；LightRAG 图谱候选另设为 40。")
 
-    def __init__(self, registry, predictor_loader):
+    def __init__(self, registry, predictor_loader, feature_encoder=None, router_kind="tfidf_logistic_regression"):
         self.registry, self.predictor_loader = registry, predictor_loader
+        self.feature_encoder, self.router_kind = feature_encoder, router_kind
 
     async def route(self, request):
         if request.options:
             raise AppError("INVALID_RETRIEVAL_OPTIONS", "Adaptive 自动选择方法，不接受手动 mode 参数。")
         predictor = await asyncio.to_thread(self.predictor_loader)
-        selected = str((await asyncio.to_thread(predictor.predict, [request.query]))[0])
+        features = await self.feature_encoder(request.query) if self.feature_encoder else [request.query]
+        selected = str((await asyncio.to_thread(predictor.predict, features))[0])
         if selected not in {"vector", "lightrag", "pathrag"}:
             raise AppError("INVALID_ROUTER", "路由模型返回了未知的检索方法。")
         probabilities = {}
         if hasattr(predictor, "predict_proba"):
-            values = (await asyncio.to_thread(predictor.predict_proba, [request.query]))[0]
+            values = (await asyncio.to_thread(predictor.predict_proba, features))[0]
             classes = predictor.classes_
             probabilities = {str(label): float(value) for label, value in zip(classes, values)}
         # Keep the teammate's evaluated graph candidate budget; don't reduce it to UI default 5.
         options = {"mode": "hybrid", "graph_top_k": "40"} if selected == "lightrag" else {}
         routed = request.model_copy(update={"method_id": selected, "options": options})
         metadata = dict(selected_method=selected, routing_probabilities=probabilities,
-                               router_kind="tfidf_logistic_regression", effective_top_k=routed.top_k,
+                               router_kind=self.router_kind, effective_top_k=routed.top_k,
                                effective_options=options,
                                routing_note="路由概率是方法分类概率，不是答案正确率。训练域为英文 Medical。")
         return routed, metadata

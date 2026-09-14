@@ -39,6 +39,7 @@ class Settings(BaseSettings):
     medical_embedding_path: Path | None = None
     medical_pathrag_root: Path | None = None
     medical_device: str = "cpu"
+    medical_keyword_max_tokens: int = Field(default=4096, ge=256, le=32768)
 
     @property
     def active_dir(self) -> Path:

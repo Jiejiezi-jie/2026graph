@@ -37,6 +37,13 @@ export default function GraphPanel({ graph, queried, expanded, onToggleExpanded,
   }, [graph, visibleNodes, onlyHits, queried])
   const suggestions = useMemo(() => search.trim() ? visibleNodes.filter(n => n.label.toLowerCase().includes(search.toLowerCase())).slice(0, 20) : [], [visibleNodes, search])
   const layoutKey = graph.layout_key || graph.nodes.map(n => n.id).join('|')
+  const hitNodes = graph.nodes.filter(node => node.retrieved).length
+  const hitEdges = graph.edges.filter(edge => edge.retrieved).length
+  const locateDisabled = loading || !queried || hitNodes + hitEdges === 0
+  const locateHint = loading ? '图谱加载中，载入后可定位命中'
+    : !queried ? '检索证据返回后可定位命中'
+    : hitNodes + hitEdges === 0 ? '当前没有与图谱匹配的命中，请查看下方提示；旧索引记录需重新查询'
+    : '将实际命中的节点和关系适应到画布'
   const filterKey = onlyHits && queried ? visibleNodes.map(n => n.id).join('|') + visibleEdges.map(e => e.id).join('|') : ''
   useEffect(() => {
     setSelected(null); setEdgeInfo(null)
@@ -68,8 +75,10 @@ export default function GraphPanel({ graph, queried, expanded, onToggleExpanded,
         { selector: 'node.overview', style: { width: 64, height: 64, 'background-image-opacity': 0 } },
         { selector: 'edge', style: { width: .7, opacity: .3, 'line-color': '#bac9c0', 'curve-style': 'straight', 'target-arrow-color': '#9bafa1', 'arrow-scale': .65 } },
         { selector: '.directed', style: { 'target-arrow-shape': 'triangle' } },
-        { selector: 'node.hit', style: { 'border-width': 2, 'border-color': '#448364', 'font-weight': 'bold' } },
-        { selector: 'edge.hit', style: { width: 1.8, opacity: .85, 'line-color': '#66927a', 'target-arrow-color': '#66927a' } },
+        { selector: 'node.context-muted', style: { opacity: .28, 'text-opacity': .4 } },
+        { selector: 'edge.context-muted', style: { opacity: .07 } },
+        { selector: 'node.hit', style: { 'border-width': 3, 'border-color': '#28764f', 'font-weight': 'bold', color: '#20573c', 'underlay-color': '#76a58b', 'underlay-opacity': .16, 'underlay-padding': 5, 'z-index': 5 } },
+        { selector: 'edge.hit', style: { width: 2.5, opacity: 1, 'line-color': '#387a55', 'target-arrow-color': '#387a55', 'z-index': 4 } },
         { selector: 'node.neighbor', style: { opacity: .7 } },
         { selector: 'node.adjacent', style: { opacity: 1 } },
         { selector: 'edge.adjacent, edge:selected', style: { width: 1.8, opacity: .95, 'line-color': '#648e78', 'target-arrow-color': '#648e78' } },
@@ -141,7 +150,7 @@ export default function GraphPanel({ graph, queried, expanded, onToggleExpanded,
     updateHighlight.current = () => {
       clearFocus()
       instance.batch(() => {
-        instance.elements().removeClass('hit neighbor')
+        instance.elements().removeClass('hit neighbor context-muted')
         for (const node of graphRef.current.nodes) {
           const element = instance.getElementById('node:' + node.id)
           element.data('retrieved', node.retrieved)
@@ -152,7 +161,9 @@ export default function GraphPanel({ graph, queried, expanded, onToggleExpanded,
           element.data('retrieved', edge.retrieved)
           if (edge.retrieved) element.addClass('hit')
         }
+        if (instance.elements('.hit').length) instance.elements().not('.hit').addClass('context-muted')
       })
+      scheduleLabels()
     }
     selectNode.current = id => {
       if (!id || id === focusedNodeId) {
@@ -248,6 +259,7 @@ export default function GraphPanel({ graph, queried, expanded, onToggleExpanded,
         <button className="graph-expand-button" aria-expanded={expanded} aria-controls="knowledge-graph-stage" onClick={onToggleExpanded}>{expanded ? <Minimize2 size={15} /> : <Maximize2 size={15} />}{expanded ? '收起图谱' : '展开图谱'}</button>
       </div>
     </div>
+    {queried && <p className="graph-note" role="status">本次检索命中：{hitNodes} 个实体 · {hitEdges} 条关系。绿色为检索证据，淡色为背景图谱；不代表模型逐条引用。</p>}
     <div className="graph-tools">
       <label className="sr-only" htmlFor="node-search">定位图中实体</label>
       <input id="node-search" list="node-suggestions" placeholder="搜索并定位实体…" value={search} onChange={e => {
@@ -260,6 +272,10 @@ export default function GraphPanel({ graph, queried, expanded, onToggleExpanded,
       <datalist id="node-suggestions">{suggestions.map(n => <option key={n.id} value={n.label} />)}</datalist>
       {queried && <label className="checkbox-label"><input type="checkbox" checked={onlyHits} onChange={e => setOnlyHits(e.target.checked)} />仅命中</label>}
       <div className="zoom-tools">
+        <button aria-label="定位命中" title={locateHint} disabled={locateDisabled} onClick={() => {
+          focusNode(''); const instance = cy.current
+          if (instance) { instance.stop(); instance.fit(instance.elements('.hit'), 60) }
+        }}>定位命中</button>
         <button aria-label={motionPaused ? '恢复漂动' : '暂停漂动'} title={motionPaused ? '恢复漂动' : '暂停漂动'} aria-pressed={motionPaused} onClick={() => { paused.current = !paused.current; setMotionPaused(paused.current) }}>{motionPaused ? <Play size={15} /> : <Pause size={15} />}</button>
         <button aria-label="放大图谱" onClick={() => zoomBy(1.2)}><Plus size={16} /></button>
         <button aria-label="缩小图谱" onClick={() => zoomBy(1 / 1.2)}><Minus size={16} /></button>
@@ -267,6 +283,7 @@ export default function GraphPanel({ graph, queried, expanded, onToggleExpanded,
         <button aria-label="局部视角" title="恢复适合阅读的节点大小" onClick={() => { focusNode(''); readingView.current() }}>局部</button>
       </div>
     </div>
+    {queried && !loading && hitNodes + hitEdges === 0 && <p className="graph-note">定位命中暂不可用：本次结果没有与当前图谱匹配的实体或关系。若为旧记录，请重新查询。</p>}
     <div className="graph-stage" id="knowledge-graph-stage">
       <div ref={canvas} className="graph-canvas" role="img" aria-label="完整索引图谱；绿色描边与连线标示实际检索命中。可搜索实体、拖动和缩放。" />
       {(loading || !graph.nodes.length) && <div className="graph-empty"><Network size={44} strokeWidth={1} /><h3>{loading ? '正在载入完整图谱…' : queried ? '本次没有可展示的图节点' : '图谱将在这里展开'}</h3><p>{loading ? '首次打开会计算并缓存显示布局。' : queried ? '纯文本方法可以只返回 chunks，不必提供图谱。' : '建立或载入索引后，查看实体之间的连接。'}</p></div>}

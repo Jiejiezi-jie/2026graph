@@ -4,6 +4,7 @@ import hashlib
 import importlib
 import importlib.util
 import json
+import logging
 from pathlib import Path
 import sys
 import warnings
@@ -35,6 +36,11 @@ class SessionLLM:
         keyword_request = self.pathrag_keywords and kwargs.get("keyword_extraction", False)
         if keyword_request:
             prompt = keyword_prompt(prompt, self.keyword_examples)
+        response_format = kwargs.get("response_format")
+        if keyword_request:
+            response_format = {"type": "json_object"}
+        structured_keywords = keyword_request or (isinstance(response_format, dict) and response_format.get("type") == "json_object")
+        budget = int(kwargs.get("max_tokens") or self.settings.medical_keyword_max_tokens)
         messages = ([{"role": "system", "content": system_prompt}] if system_prompt else [])
         messages += list(history_messages or [])
         messages.append({"role": "user", "content": prompt})
@@ -42,14 +48,35 @@ class SessionLLM:
                                timeout=120, max_retries=1) as client:
             response = await client.chat.completions.create(
                 model=self.model_name, messages=messages, temperature=0,
-                max_tokens=int(kwargs.get("max_tokens") or 768),
-                **({"response_format": {"type": "json_object"}} if keyword_request else {}))
-        if keyword_request and response.choices[0].finish_reason == "length":
-            raise AppError("PATHRAG_KEYWORDS_TRUNCATED",
-                           "PathRAG 关键词响应达到输出长度上限，尚未开始图谱召回。")
-        content = response.choices[0].message.content
-        if not content:
+                max_tokens=budget,
+                **({"response_format": response_format} if response_format else {}))
+        if not response.choices:
+            raise AppError("EMPTY_LLM_RESPONSE", "检索关键词模型未返回候选响应。")
+        choice = response.choices[0]
+        content = choice.message.content
+        usage = getattr(response, "usage", None)
+        details = getattr(usage, "completion_tokens_details", None)
+        logging.getLogger(__name__).info(
+            "retrieval_llm model=%s max_tokens=%s finish_reason=%s prompt_tokens=%s completion_tokens=%s reasoning_tokens=%s content_chars=%s reasoning_chars=%s",
+            self.model_name, budget, choice.finish_reason,
+            getattr(usage, "prompt_tokens", None), getattr(usage, "completion_tokens", None),
+            getattr(details, "reasoning_tokens", None), len(content or ""),
+            len(getattr(choice.message, "reasoning_content", None) or ""))
+        if choice.finish_reason == "length":
+            code = "PATHRAG_KEYWORDS_TRUNCATED" if keyword_request else "LLM_KEYWORDS_TRUNCATED"
+            raise AppError(code, "关键词响应达到输出长度上限，尚未开始图谱召回。请检查关键词输出预算。")
+        if not content or not content.strip():
             raise AppError("EMPTY_LLM_RESPONSE", "检索关键词模型未返回有效内容。")
+        if structured_keywords and not keyword_request:
+            try:
+                parsed = json.loads(content)
+                if not isinstance(parsed, dict) or any(
+                    not isinstance(parsed.get(key), list) or any(not isinstance(item, str) for item in parsed[key])
+                    for key in ("high_level_keywords", "low_level_keywords")
+                ):
+                    raise ValueError("Invalid keyword structure")
+            except (ValueError, TypeError) as exc:
+                raise AppError("LLM_KEYWORDS_INVALID", "关键词模型未返回有效的关键词 JSON，尚未开始图谱召回。") from exc
         return normalize_keywords(content) if keyword_request else content
 
 
@@ -85,8 +112,11 @@ class MedicalEngine:
                 from sklearn.exceptions import InconsistentVersionWarning
             except ImportError as exc:
                 raise AppError("MEDICAL_DEPENDENCIES_MISSING", "请安装 Medical 独立环境中的 joblib 和 scikit-learn。") from exc
-            path = self.bundle.root / "router.joblib"
-            expected = self.bundle.manifest.get("files", {}).get("router.joblib", {}).get("sha256")
+            artifact = self.bundle.manifest.get("router", {}).get("artifact", "router.joblib")
+            path = self.bundle.root / artifact
+            if not path.resolve().is_relative_to(self.bundle.root.resolve()):
+                raise AppError("INVALID_ROUTER", "路由模型路径不合法。")
+            expected = self.bundle.manifest.get("files", {}).get(artifact, {}).get("sha256")
             if not expected or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
                 raise AppError("INVALID_ROUTER", "路由模型与导入清单不一致，请重新导入。")
             with warnings.catch_warnings():
@@ -114,6 +144,35 @@ class MedicalEngine:
                 raise AppError("EMBEDDING_MISMATCH", "Medical 查询模型必须是 1024 维 BGE-M3。")
             self.embedding = client
         return self.embedding
+
+    @property
+    def router_kind(self):
+        return self.bundle.manifest.get("router", {}).get("kind", "tfidf_logistic_regression")
+
+    async def router_features(self, question):
+        if self.router_kind == "tfidf_logistic_regression":
+            return [question]
+        if self.router_kind != "bge_m3_cls_logistic_regression":
+            raise AppError("INVALID_ROUTER", "不支持的路由特征配置。")
+        client = await self.get_embedding()
+        # Reuse retrieval weights, but preserve the router's training cutoff (512).
+        # The imported client's lock also serializes retrieval inference.
+        def encode():
+            import torch
+            import torch.nn.functional as functional
+            with client._lock:
+                client._load()
+                encoded = client._tokenizer([question], padding=True, truncation=True,
+                                            max_length=512, return_tensors="pt")
+                encoded = {key: value.to(client.device) for key, value in encoded.items()}
+                with torch.inference_mode():
+                    hidden = client._model(**encoded).last_hidden_state[:, 0]
+                    vectors = functional.normalize(hidden, p=2, dim=1)
+                return vectors.float().cpu().numpy()
+        features = await asyncio.to_thread(encode)
+        if features.shape != (1, 1024) or not np.isfinite(features).all():
+            raise AppError("INVALID_ROUTER", "路由问题向量必须为有效的 1024 维向量。")
+        return features
 
     async def graph_backend(self, method):
         if method not in self.backends:

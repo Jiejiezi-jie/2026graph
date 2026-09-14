@@ -64,10 +64,14 @@ def export_bundle(repo: Path, ref: str, output: Path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo", type=Path, required=True)
-    parser.add_argument("--ref", default="origin/lightRAG")
+    parser.add_argument("--ref", default="origin/main")
+    parser.add_argument("--legacy-router", action="store_true", help="保留旧 TF-IDF 选择头，仅用于旧提交")
     parser.add_argument("--output", type=Path, default=Path(__file__).resolve().parents[1] / "backend/data/medical")
     args = parser.parse_args()
     manifest = export_bundle(args.repo, args.ref, args.output)
+    if not args.legacy_router:
+        from install_medical_router import install_router
+        install_router(args.repo, args.ref, args.output)
     print(f"Exported {len(manifest['files'])} files at commit {manifest['source_commit']}")
     print(f"Medical bundle: {args.output.resolve()}")
     print("Next: run scripts/serve_web.py --medical-bundle PATH --check")

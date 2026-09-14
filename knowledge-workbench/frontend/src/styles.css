@@ -136,6 +136,7 @@ textarea::placeholder { color: #828b85; }
 .zoom-tools { margin-left: auto; display: flex; }
 .zoom-tools button { background: transparent; padding: 9px; color: #536c5d; border-radius: 3px; }
 .zoom-tools button:hover { background: #eff3f0; }
+.zoom-tools button:disabled { opacity: .45; cursor: not-allowed; background: transparent; }
 .zoom-tools button[aria-pressed="true"] { color: var(--green); background: #e9efea; }
 .graph-navigation-hint { font-size: 10px; color: var(--muted); line-height: 1.8; padding-top: 10px; }
 .checkbox-label { font-size: 11px; display: flex; gap: 5px; align-items: center; white-space: nowrap; }
