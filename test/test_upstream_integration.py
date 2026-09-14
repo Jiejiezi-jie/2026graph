@@ -7,14 +7,14 @@ from unittest.mock import patch
 
 import numpy as np
 
-from src.official_backends.lightrag_backend import LightRAGBackend
-from src.official_backends.model_client import Generation, UsageSnapshot
-from src.official_backends.pathrag_backend import PathRAGBackend
+from src.backend.lightRAG.lightrag_backend import LightRAGBackend
+from src.backend.common.model_client import Generation, UsageSnapshot
+from src.backend.pathRAG.pathrag_backend import PathRAGBackend
 
 
 ROOT = Path(__file__).parents[1]
-UPSTREAMS_AVAILABLE = (ROOT / "third_party" / "LightRAG").exists() and (
-    ROOT / "third_party" / "PathRAG"
+UPSTREAMS_AVAILABLE = (ROOT / "deps" / "LightRAG").exists() and (
+    ROOT / "deps" / "PathRAG"
 ).exists()
 
 CORPUS = (
@@ -156,7 +156,7 @@ class PinnedUpstreamIntegrationTests(unittest.IsolatedAsyncioTestCase):
     async def test_pathrag_indexes_graph_and_retrieves(self):
         with tempfile.TemporaryDirectory() as directory:
             backend = PathRAGBackend(
-                ROOT / "third_party" / "PathRAG",
+                ROOT / "deps" / "PathRAG",
                 directory,
                 DeterministicLLM(),
                 DeterministicEmbedding(),

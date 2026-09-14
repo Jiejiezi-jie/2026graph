@@ -14,7 +14,7 @@ def load_medical_benchmark(benchmark_dir: Path) -> tuple[str, list[dict]]:
     questions_path = benchmark_dir / "Datasets" / "Questions" / "medical_questions.json"
     if not corpus_path.exists() or not questions_path.exists():
         raise FileNotFoundError(
-            "GraphRAG-Bench files are missing. Run scripts/fetch_benchmark.sh or "
+            "GraphRAG-Bench files are missing. Run src/backend/common/fetch_benchmark.sh or "
             "pass --benchmark-dir to the official checkout."
         )
     corpus_obj = json.loads(corpus_path.read_text(encoding="utf-8"))

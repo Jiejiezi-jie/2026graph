@@ -7,15 +7,15 @@ import sys
 from pathlib import Path
 from typing import Any
 
-from src.data import load_medical_benchmark
-from src.official_backends.lightrag_backend import LightRAGBackend
-from src.official_backends.model_client import (
+from src.backend.common.data import load_medical_benchmark
+from src.backend.lightRAG.lightrag_backend import LightRAGBackend
+from src.backend.common.model_client import (
     build_chat_client,
     build_embedding_client,
 )
-from src.official_backends.pathrag_backend import PathRAGBackend
-from src.official_backends.vector_backend import VectorRAGBackend
-from src.official_data import p0_subset, stratified_sample_and_split
+from src.backend.pathRAG.pathrag_backend import PathRAGBackend
+from src.backend.vector.vector_backend import VectorRAGBackend
+from src.backend.common.official_data import p0_subset, stratified_sample_and_split
 
 
 def parse_args() -> argparse.Namespace:
@@ -165,7 +165,7 @@ def _build_backends(
         )
     if "pathrag" in names:
         backends["pathrag"] = PathRAGBackend(
-            upstream_dir=project_dir / "third_party" / "PathRAG",
+            upstream_dir=project_dir / "deps" / "PathRAG",
             working_dir=results_dir / "indexes" / "pathrag",
             top_k=config["pathrag_top_k"],
             **common,
@@ -175,7 +175,7 @@ def _build_backends(
 
 async def main() -> None:
     args = parse_args()
-    project_dir = Path(__file__).resolve().parents[1]
+    project_dir = Path(__file__).resolve().parents[3]
     config_path = _resolve(project_dir, str(args.config))
     config = json.loads(config_path.read_text(encoding="utf-8"))
     _check_cuda_headroom(config)

@@ -27,7 +27,3 @@ test = [
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["app*"]
-
-[tool.pytest.ini_options]
-pythonpath = [".", ".."]
-asyncio_mode = "auto"

@@ -1,7 +1,7 @@
 import unittest
 
-from src.data import chunk_by_word_window
-from src.metrics import choose_silver_label, evidence_scores, rouge_l_f1
+from src.backend.common.data import chunk_by_word_window
+from src.backend.common.metrics import choose_silver_label, evidence_scores, rouge_l_f1
 
 
 class CoreTests(unittest.TestCase):

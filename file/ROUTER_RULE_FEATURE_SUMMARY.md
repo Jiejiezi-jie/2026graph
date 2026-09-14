@@ -120,7 +120,7 @@
 完整 120 题最终规则对应的原始结果和银标文件位于：
 
 ```text
-results_api/p1/analysis_complete_120_margin_010/
+result/api/p1/analysis_complete_120_margin_010/
 ```
 
 其中包括：
@@ -206,7 +206,7 @@ Adaptive 的实际预测路由分布为 `Vector 10 / LightRAG 5 / PathRAG 9`；O
 本节的完整产物位于：
 
 ```text
-results_shared_lightrag_current_main/p1/
+result/shared_current_main/p1/
 ├── pathrag.jsonl
 ├── pathrag_evaluated.jsonl
 ├── analysis_inputs/question_embeddings.npz
@@ -261,8 +261,8 @@ results_shared_lightrag_current_main/p1/
 
 ```text
 configs/router_sample_weighting.json
-scripts/run_weighted_router_experiment.py
-results_shared_lightrag_current_main/p1/weighted_router_experiment/
+src/router/run_weighted_router_experiment.py
+result/shared_current_main/p1/weighted_router_experiment/
 ```
 
 离线重复运行时，非耗时汇总、OOF/测试预测及模型文件哈希均一致。

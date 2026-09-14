@@ -20,7 +20,7 @@
   "class_weight_candidates": [null, "balanced"],
   "max_iter": 2000,
   "expansion_config": "configs/router_data_expansion.json",
-  "embedding_cache": "results_shared_lightrag_expanded/p1/router_data_expansion/question_embeddings.npz",
-  "output_dir": "results_shared_lightrag_expanded/p1/router_hard_weight_grid_300",
+  "embedding_cache": "result/shared_expanded/p1/router_data_expansion/question_embeddings.npz",
+  "output_dir": "result/shared_expanded/p1/router_hard_weight_grid_300",
   "note": "Compare unweighted hard labels with the prior fixed per-sample down-weighting. The original 24-question test set remains frozen."
 }

@@ -15,13 +15,13 @@ import sklearn
 from sklearn.linear_model import LogisticRegression, Ridge
 from sklearn.model_selection import StratifiedKFold
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from scripts.analyze_router_data_expansion import resolve, validate_and_merge
-from scripts.run_multiobjective_utility_router import full_policy_metrics, sha256
-from src.official_backends.base import METHODS
+from src.router.analyze_router_data_expansion import resolve, validate_and_merge
+from src.router.run_multiobjective_utility_router import full_policy_metrics, sha256
+from src.backend.common.base import METHODS
 
 
 def parse_args() -> argparse.Namespace:

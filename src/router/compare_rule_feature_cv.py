@@ -13,16 +13,16 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 from sklearn.model_selection import StratifiedKFold
 
-from src.official_backends.base import METHODS
+from src.backend.common.base import METHODS
 from src.router import build_router
 
 
-ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "results_api/p1/analysis/router_experiments/rule_feature_5fold_comparison"
-CURRENT_LABELS = ROOT / "results_api/p1/analysis/silver_labels.jsonl"
+ROOT = Path(__file__).resolve().parents[2]
+OUTPUT = ROOT / "result/api/p1/analysis/router_experiments/rule_feature_5fold_comparison"
+CURRENT_LABELS = ROOT / "result/api/p1/analysis/silver_labels.jsonl"
 EMBEDDINGS = (
     ROOT
-    / "results_api/p1/analysis/router_experiments/with_all_failed_bge_m3/"
+    / "result/api/p1/analysis/router_experiments/with_all_failed_bge_m3/"
     "question_embeddings.npz"
 )
 
@@ -33,7 +33,7 @@ def parse_jsonl(content: str) -> list[dict[str, Any]]:
 
 def load_labels() -> dict[str, list[dict[str, Any]]]:
     legacy = subprocess.check_output(
-        ["git", "show", "HEAD:results_api/p1/analysis/silver_labels.jsonl"],
+        ["git", "show", "HEAD:result/api/p1/analysis/silver_labels.jsonl"],
         cwd=ROOT,
         text=True,
     )

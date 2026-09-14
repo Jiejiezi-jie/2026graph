@@ -11,7 +11,7 @@ FastAPI + React/Cytoscape 知识检索工作台,面向本项目 **GraphRAG-Bench
 
 ```bash
 # 从仓库自身导入 Medical 索引 + router + vendor 化 official_backends 到运行时 bundle
-python scripts/prepare_medical.py --repo <本仓库路径> --ref <本仓库 medical 集成 commit> \
+python src/backend/scripts/prepare_medical.py --repo <本仓库路径> --ref <本仓库 medical 集成 commit> \
   --output backend/data/medical
 ```
 
@@ -19,7 +19,7 @@ python scripts/prepare_medical.py --repo <本仓库路径> --ref <本仓库 medi
 
 ```bash
 export DEEPSEEK_API_KEY='<your-key>'
-python scripts/serve_web.py --port 8000 \
+python src/backend/scripts/serve_web.py --port 8000 \
   --medical-bundle backend/data/medical \
   --medical-embedding-path <BGE-M3 权重目录> \
   --medical-pathrag-root <PathRAG upstream checkout>
@@ -49,7 +49,7 @@ npm run dev
 
 - `backend/app/`:FastAPI 应用。`main.py` 入口;`medical/`(engine / retrievers / preflight / profile / pathrag_protocol / shared_index)是 Medical 模式的全部接线;`retrieval/` 检索插件契约;`api/`、`services/`、`domain/` 通用服务。
 - `frontend/`:React 19 + Vite + Cytoscape,`src/AdaptiveRouting.tsx` 为路由可视化卡片。
-- `scripts/serve_web.py`:启动器(支持 `--check` / `--preview-only`);`scripts/prepare_medical.py`:从仓库生成只读导入 bundle(sha256 校验)。
+- `src/backend/scripts/serve_web.py`:启动器(支持 `--check` / `--preview-only`);`src/backend/scripts/prepare_medical.py`:从仓库生成只读导入 bundle(sha256 校验)。
 - `tests/`:pytest;`frontend/qa/`:Playwright 离线冒烟(拦截查询请求,不调付费 API)。
 
 ## 验证

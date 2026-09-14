@@ -4,8 +4,8 @@ import argparse
 import json
 from pathlib import Path
 
-from src.official_analysis import analyze_official
-from src.official_evaluation import fingerprint, load_jsonl
+from src.router.official_analysis import analyze_official
+from src.backend.common.official_evaluation import fingerprint, load_jsonl
 
 
 def main() -> None:
@@ -16,7 +16,7 @@ def main() -> None:
     parser.add_argument("--best-margin", type=float, default=0.05)
     parser.add_argument("--output-dir", type=Path)
     args = parser.parse_args()
-    project_dir = Path(__file__).resolve().parents[1]
+    project_dir = Path(__file__).resolve().parents[2]
     config_path = args.config if args.config.is_absolute() else project_dir / args.config
     config = json.loads(config_path.read_text(encoding="utf-8"))
     stage_dir = project_dir / config["results_dir"] / args.stage

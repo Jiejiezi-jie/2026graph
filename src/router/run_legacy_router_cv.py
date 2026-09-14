@@ -11,7 +11,7 @@ import numpy as np
 from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 from sklearn.model_selection import StratifiedKFold
 
-from src.official_backends.base import METHODS
+from src.backend.common.base import METHODS
 from src.router import build_router
 
 
@@ -39,7 +39,7 @@ def load_legacy_labels() -> list[dict]:
         [
             "git",
             "show",
-            "HEAD:results_api/p1/analysis/silver_labels.jsonl",
+            "HEAD:result/api/p1/analysis/silver_labels.jsonl",
         ],
         text=True,
     )
@@ -52,7 +52,7 @@ def main() -> None:
         "--output-dir",
         type=Path,
         default=Path(
-            "results_api/p1/analysis/router_experiments/legacy_tfidf_5fold_cv"
+            "result/api/p1/analysis/router_experiments/legacy_tfidf_5fold_cv"
         ),
     )
     parser.add_argument("--seed", type=int, default=42)
@@ -107,7 +107,7 @@ def main() -> None:
 
     summary = {
         "experiment": "legacy_tfidf_5fold_cv",
-        "label_source": "HEAD:results_api/p1/analysis/silver_labels.jsonl",
+        "label_source": "HEAD:result/api/p1/analysis/silver_labels.jsonl",
         "label_rule": "answer_correctness >= 0.50; cheapest eligible method",
         "all_failed_policy": "included",
         "development_counts": dict(Counter(row["split"] for row in development)),

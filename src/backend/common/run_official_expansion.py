@@ -8,16 +8,16 @@ import sys
 from pathlib import Path
 from typing import Any
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from scripts.run_official_experiment import _check_cuda_headroom, _prepare_resume_output
-from src.data import load_medical_benchmark
-from src.official_backends.lightrag_backend import LightRAGBackend
-from src.official_backends.model_client import build_chat_client, build_embedding_client
-from src.official_backends.pathrag_backend import PathRAGBackend
-from src.official_backends.vector_backend import VectorRAGBackend
+from src.backend.common.run_official_experiment import _check_cuda_headroom, _prepare_resume_output
+from src.backend.common.data import load_medical_benchmark
+from src.backend.lightRAG.lightrag_backend import LightRAGBackend
+from src.backend.common.model_client import build_chat_client, build_embedding_client
+from src.backend.pathRAG.pathrag_backend import PathRAGBackend
+from src.backend.vector.vector_backend import VectorRAGBackend
 
 
 def parse_args() -> argparse.Namespace:
@@ -78,7 +78,7 @@ def build_backend(
             **common,
         )
     return PathRAGBackend(
-        upstream_dir=ROOT / "third_party" / "PathRAG",
+        upstream_dir=ROOT / "deps" / "PathRAG",
         working_dir=working_dir,
         top_k=config["pathrag_top_k"],
         **common,

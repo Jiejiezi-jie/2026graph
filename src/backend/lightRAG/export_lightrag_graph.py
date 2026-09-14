@@ -17,7 +17,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--index-dir",
         type=Path,
-        default=Path("results_official/indexes/lightrag"),
+        default=Path("result/official/indexes/lightrag"),
     )
     parser.add_argument(
         "--output-dir", type=Path, default=Path("artifacts/lightrag")

@@ -16,7 +16,7 @@
   "class_weight_candidates": [null, "balanced"],
   "max_iter": 2000,
   "expansion_config": "configs/router_data_expansion_flash.json",
-  "embedding_cache": "results_shared_lightrag_expanded/p1/router_data_expansion/question_embeddings.npz",
-  "output_dir": "results_shared_lightrag_unified_latency/p1/router_hard_weight_grid_300",
+  "embedding_cache": "result/shared_expanded/p1/router_data_expansion/question_embeddings.npz",
+  "output_dir": "result/shared_unified_latency/p1/router_hard_weight_grid_300",
   "note": "Flash-aligned 300-question hard-label and sample-weight grid."
 }

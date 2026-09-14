@@ -3,9 +3,15 @@ from __future__ import annotations
 import argparse
 import json
 import subprocess
+import sys
 import time
 from collections import Counter
 from pathlib import Path
+
+# Frozen phase-one proxy: keep it runnable as a plain script from any cwd.
+# This directory provides `backends`; the repository root provides `src.*`.
+CODE_DIR = Path(__file__).resolve().parent
+sys.path[:0] = [str(CODE_DIR.parents[2]), str(CODE_DIR)]
 
 import joblib
 import matplotlib.pyplot as plt
@@ -14,9 +20,9 @@ import pandas as pd
 from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 from sklearn.model_selection import train_test_split
 
-from src.backends import OfflineGraphIndex
-from src.data import chunk_by_word_window, load_medical_benchmark, select_questions
-from src.metrics import choose_silver_label, evidence_scores, rouge_l_f1
+from backends import OfflineGraphIndex
+from src.backend.common.data import chunk_by_word_window, load_medical_benchmark, select_questions
+from src.backend.common.metrics import choose_silver_label, evidence_scores, rouge_l_f1
 from src.router import build_router
 
 
@@ -32,7 +38,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run the Adaptive GraphRAG phase-one protocol")
     parser.add_argument("--benchmark-dir", type=Path, required=True)
     parser.add_argument("--config", type=Path, default=Path("configs/phase1.json"))
-    parser.add_argument("--output-dir", type=Path, default=Path("results"))
+    parser.add_argument("--output-dir", type=Path, default=Path("result/phase1_proxy/outputs"))
     return parser.parse_args()
 
 

@@ -7,7 +7,7 @@ import asyncio
 import json
 from pathlib import Path
 
-from src.official_backends.model_client import build_chat_client, build_embedding_client
+from src.backend.common.model_client import build_chat_client, build_embedding_client
 
 
 async def main() -> None:

@@ -11,12 +11,12 @@ import json
 import sys
 from pathlib import Path
 
-PROJECT = Path(__file__).resolve().parents[1]
+PROJECT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(PROJECT))
 
 from lightrag import QueryParam  # noqa: E402
 
-from src.official_backends.lightrag_backend import LightRAGBackend  # noqa: E402
+from src.backend.lightRAG.lightrag_backend import LightRAGBackend  # noqa: E402
 
 
 class _OfflineLLM:
@@ -42,7 +42,7 @@ async def main() -> None:
         r["question_id"]: r
         for r in (
             json.loads(line)
-            for line in (PROJECT / "results_api/p0/vector_evaluated.jsonl")
+            for line in (PROJECT / "result/api/p0/vector_evaluated.jsonl")
             .read_text(encoding="utf-8")
             .splitlines()
         )
@@ -51,11 +51,11 @@ async def main() -> None:
                "Medical-b7f57756", "Medical-0535a6b1"]
     payloads: dict[str, list[str]] = {}
 
-    from src.official_backends.model_client import build_embedding_client
+    from src.backend.common.model_client import build_embedding_client
 
     embedding = build_embedding_client(config["embedding"])
     backend = LightRAGBackend(
-        working_dir=PROJECT / "results_api/indexes/lightrag",
+        working_dir=PROJECT / "result/api/indexes/lightrag",
         llm=_OfflineLLM(),
         embedding=embedding,
         chunk_tokens=config["chunk_tokens"],
@@ -102,7 +102,7 @@ async def main() -> None:
                             [w for w in gt.lower().replace(".", " ").split()
                              if len(w) > 6][:6])
             print(f"   gt-keyword hit in payload: {probe_hit}")
-        (PROJECT / "results_api/p0/_probe_lightrag_new_chunks.json").write_text(
+        (PROJECT / "result/api/p0/_probe_lightrag_new_chunks.json").write_text(
             json.dumps(payloads, ensure_ascii=False, indent=1), encoding="utf-8"
         )
     finally:

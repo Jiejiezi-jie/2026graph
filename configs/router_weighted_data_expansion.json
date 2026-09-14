@@ -14,9 +14,9 @@
     "max_iter": 2000
   },
   "expansion_config": "configs/router_data_expansion.json",
-  "embedding_cache": "results_shared_lightrag_expanded/p1/router_data_expansion/question_embeddings.npz",
-  "prior_weighted_summary": "results_shared_lightrag_current_main/p1/weighted_router_experiment/summary.json",
-  "expanded_unweighted_summary": "results_shared_lightrag_expanded/p1/router_data_expansion/summary.json",
-  "output_dir": "results_shared_lightrag_expanded/p1/weighted_router_data_expansion",
+  "embedding_cache": "result/shared_expanded/p1/router_data_expansion/question_embeddings.npz",
+  "prior_weighted_summary": "result/shared_current_main/p1/weighted_router_experiment/summary.json",
+  "expanded_unweighted_summary": "result/shared_expanded/p1/router_data_expansion/summary.json",
+  "output_dir": "result/shared_expanded/p1/weighted_router_data_expansion",
   "note": "Exact fixed weighting scheme from the prior successful end-to-end experiment, applied to the expanded development set. No labels, generations, or embeddings are regenerated."
 }

@@ -14,12 +14,12 @@ import numpy as np
 import sklearn
 from sklearn.model_selection import StratifiedKFold
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from scripts.analyze_router_data_expansion import build_labels, resolve, route_policy, validate_and_merge
-from scripts.run_weighted_router_experiment import (
+from src.router.analyze_router_data_expansion import build_labels, resolve, route_policy, validate_and_merge
+from src.router.run_weighted_router_experiment import (
     classify_weight,
     estimator,
     fit_estimator,
@@ -28,7 +28,7 @@ from scripts.run_weighted_router_experiment import (
     tune,
     write_predictions,
 )
-from src.official_backends.base import METHODS
+from src.backend.common.base import METHODS
 
 
 def parse_args() -> argparse.Namespace:

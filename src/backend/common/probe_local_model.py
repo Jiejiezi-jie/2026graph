@@ -7,8 +7,8 @@ import re
 from pathlib import Path
 
 import torch
-from src.data import chunk_by_word_window, load_medical_benchmark
-from src.official_backends.model_client import TransformersChatClient
+from src.backend.common.data import chunk_by_word_window, load_medical_benchmark
+from src.backend.common.model_client import TransformersChatClient
 
 
 EXTRACTION_SYSTEM = (
@@ -26,7 +26,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--model-path", type=Path, required=True)
     parser.add_argument("--device", default="cuda:1")
     parser.add_argument(
-        "--output", type=Path, default=Path("results_official/model_probe.json")
+        "--output", type=Path, default=Path("result/official/model_probe.json")
     )
     return parser.parse_args()
 

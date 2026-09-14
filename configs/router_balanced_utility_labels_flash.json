@@ -20,7 +20,7 @@
   "minimum_sample_weight": 0.3,
   "selection_metric": "development OOF joint harmonic mean of actual answer correctness and evidence recall",
   "expansion_config": "configs/router_data_expansion_flash.json",
-  "embedding_cache": "results_shared_lightrag_expanded/p1/router_data_expansion/question_embeddings.npz",
-  "output_dir": "results_shared_lightrag_unified_latency/p1/balanced_utility_label_router",
+  "embedding_cache": "result/shared_expanded/p1/router_data_expansion/question_embeddings.npz",
+  "output_dir": "result/shared_unified_latency/p1/balanced_utility_label_router",
   "note": "Exploratory question-only router. Candidate selection uses 276 development OOF rows; the frozen 24-question test is consumed only after selection."
 }

@@ -6,10 +6,10 @@ rouge-score==0.1.2
 json5
 json-repair
 
--e third_party/LightRAG
+-e deps/LightRAG
 
 # PathRAG has no package metadata at the pinned commit. Its source is loaded
-# directly from third_party/PathRAG by the project adapter. LightRAG's core
+# directly from deps/PathRAG by the project adapter. LightRAG's core
 # dependencies also provide PathRAG's tiktoken, networkx and nano-vectordb
 # requirements.
 tqdm>=4.66,<5

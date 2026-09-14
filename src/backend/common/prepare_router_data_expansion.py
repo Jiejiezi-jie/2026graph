@@ -9,13 +9,13 @@ from collections import Counter
 from pathlib import Path
 from typing import Any
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from src.data import load_medical_benchmark
-from src.official_backends.base import METHODS
-from src.official_evaluation import valid_evaluation
+from src.backend.common.data import load_medical_benchmark
+from src.backend.common.base import METHODS
+from src.backend.common.official_evaluation import valid_evaluation
 
 
 def parse_args() -> argparse.Namespace:

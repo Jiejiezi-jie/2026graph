@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 """从已有 PathRAG graphml 恢复缺失的索引(不重新调用 LLM 抽取)。
 
-背景: results_api/indexes/pathrag/ 的 graphml(4568 节点/9432 边)是完整的实体抽取产物,
+背景: result/api/indexes/pathrag/ 的 graphml(4568 节点/9432 边)是完整的实体抽取产物,
 但 vdb_entities/vdb_relationships 为空、kv_store_text_chunks/full_docs 为空、无 manifest,
 导致 pathrag_backend.index() 会触发全量 ainsert 重新抽取。本脚本从 graphml + 语料
 重建缺失存储,使索引可被 query 使用且 index() 走 cached 分支。
 
 只重建存储文件,不修改 graphml,不调用任何 LLM。
 用法:
-  PYTHONPATH=. .venv_official/bin/python scripts/restore_pathrag_index.py
+  PYTHONPATH=. .venv_official/bin/python src/backend/pathRAG/restore_pathrag_index.py
 """
 from __future__ import annotations
 
@@ -21,8 +21,8 @@ from pathlib import Path
 
 import networkx as nx
 
-PROJECT = Path(__file__).resolve().parents[1]
-INDEX_DIR = PROJECT / "results_api" / "indexes" / "pathrag"
+PROJECT = Path(__file__).resolve().parents[3]
+INDEX_DIR = PROJECT / "result/api" / "indexes" / "pathrag"
 BENCH_DIR = PROJECT / "data" / "vendor" / "GraphRAG-Benchmark"
 GRAPH = INDEX_DIR / "graph_chunk_entity_relation.graphml"
 
@@ -154,7 +154,7 @@ def main() -> None:
     import sys
 
     sys.path.insert(0, str(PROJECT))
-    from src.official_backends.model_client import build_embedding_client
+    from src.backend.common.model_client import build_embedding_client
 
     print("== 1/4 语料切块(重建 text_chunks/full_docs) ==", flush=True)
     corpus, _ = load_benchmark()

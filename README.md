@@ -1,6 +1,6 @@
 # Adaptive GraphRAG：阶段一可复现实验
 
-> 仓库整合说明(2026-09):本仓库已并入三条历史分支的全部成果——**Medical 官方后端评测主线**(vector / LightRAG / PathRAG 的 P0/P1、索引与 router,见 [P0_P1_RUNBOOK.md](P0_P1_RUNBOOK.md)、`results_api/` 与 `src/official_backends/`)与 **知图 · Medical 检索工作台**(`knowledge-workbench/`,FastAPI + React/Cytoscape 图谱问答演示,数据源为 GraphRAG-Bench Medical)。正文为最初阶段一协议实验文档,保留作历史参考。
+> 仓库整合说明(2026-09):本仓库已并入三条历史分支的全部成果——**Medical 官方后端评测主线**(vector / LightRAG / PathRAG 的 P0/P1、索引与 router,见 [P0_P1_RUNBOOK.md](P0_P1_RUNBOOK.md)、`result/api/` 与 `src/backend/`)与 **知图 · Medical 检索工作台**(`knowledge-workbench/`,FastAPI + React/Cytoscape 图谱问答演示,数据源为 GraphRAG-Bench Medical)。正文为最初阶段一协议实验文档,保留作历史参考。
 
 本项目把 Adaptive-RAG 的核心协议迁移到三个异构检索后端：
 
@@ -39,7 +39,7 @@
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-bash scripts/fetch_benchmark.sh
+bash src/backend/common/fetch_benchmark.sh
 bash scripts/run_phase1.sh
 python -m unittest discover -s tests -v
 ```
@@ -53,7 +53,7 @@ bash scripts/run_phase1.sh /absolute/path/to/GraphRAG-Benchmark
 运行一条自动路由查询：
 
 ```bash
-python -m src.demo \
+python result/phase1_proxy/code/demo.py \
   "Why are fair skin and organ transplantation both risk factors for BCC?" \
   --benchmark-dir data/vendor/GraphRAG-Benchmark
 ```
@@ -94,8 +94,8 @@ Q(r,q) >= max_r Q(r,q) - 0.02
 ## 正式本地后端（新增）
 
 原 `src/backends.py`、`results/` 和 `artifacts/router.joblib` 仍是 phase-one
-proxy 基线，未被覆盖。正式实现位于 `src/official_backends/`，正式输出只写入
-`results_official/`。
+proxy 基线，未被覆盖。正式实现位于 `src/backend/`，正式输出只写入
+`result/official/`。
 
 固定上游版本：
 
@@ -106,16 +106,16 @@ proxy 基线，未被覆盖。正式实现位于 `src/official_backends/`，正�
 环境安装命令：
 
 ```bash
-bash scripts/fetch_benchmark.sh
+bash src/backend/common/fetch_benchmark.sh
 git clone --depth 1 --branch v1.5.7 \
-  https://github.com/HKUDS/LightRAG.git third_party/LightRAG
+  https://github.com/HKUDS/LightRAG.git deps/LightRAG
 git clone --depth 1 \
-  https://github.com/BUPT-GAMMA/PathRAG.git third_party/PathRAG
+  https://github.com/BUPT-GAMMA/PathRAG.git deps/PathRAG
 
 uv venv --python /home/user/.miniforge3/envs/qwen_saliency/bin/python \
   --system-site-packages .venv_official
 uv pip install --python .venv_official/bin/python \
-  -e third_party/LightRAG \
+  -e deps/LightRAG \
   scikit-learn==1.7.2 matplotlib==3.10.6 joblib==1.5.2 \
   rouge-score==0.1.2 json5 'langchain-core>=0.3,<2'
 ```
@@ -141,26 +141,26 @@ Qwen2.5-VL-7B 的纯文本 5 问答 + 5 JSON 探针：
 
 ```bash
 CUDA_VISIBLE_DEVICES=1 PYTHONPATH=. conda run --no-capture-output \
-  -n qwen_saliency .venv_official/bin/python scripts/probe_local_model.py \
+  -n qwen_saliency .venv_official/bin/python src/backend/common/probe_local_model.py \
   --benchmark-dir data/vendor/GraphRAG-Benchmark \
   --model-path /home/user/wangyuhan/models/Qwen2.5-VL-7B-Instruct \
   --device cuda:0 \
-  --output results_official/model_probe_qwen25vl7b.json
+  --output result/official/model_probe_qwen25vl7b.json
 ```
 
 P0 必须先完整通过（每类 5 题、三个后端）：
 
 ```bash
-bash scripts/run_official_local.sh --stage p0 --backend all
-PYTHONPATH=. .venv_official/bin/python -m scripts.validate_p0
+bash src/backend/common/run_official_local.sh --stage p0 --backend all
+PYTHONPATH=. .venv_official/bin/python -m src.backend.common.validate_p0
 PYTHONPATH=. conda run --no-capture-output -n qwen_saliency \
-  .venv_official/bin/python -m scripts.evaluate_official --stage p0
+  .venv_official/bin/python -m src.backend.common.evaluate_official --stage p0
 ```
 
 LightRAG 完成全部 Chunk 的实体/关系抽取和图合并后，可校验并导出 GraphML：
 
 ```bash
-PYTHONPATH=. .venv_official/bin/python -m scripts.export_lightrag_graph
+PYTHONPATH=. .venv_official/bin/python -m src.backend.lightRAG.export_lightrag_graph
 ```
 
 脚本只接受同时存在完成态索引清单、非空节点和非空边的图，输出到
@@ -171,10 +171,10 @@ P1 固定为每类 60 题，60%/20%/20% 划分在模型运行前冻结；runner 
 逐题 JSONL 自动续跑：
 
 ```bash
-bash scripts/run_official_local.sh --stage p1 --backend all
+bash src/backend/common/run_official_local.sh --stage p1 --backend all
 PYTHONPATH=. conda run --no-capture-output -n qwen_saliency \
-  .venv_official/bin/python -m scripts.evaluate_official --stage p1
-PYTHONPATH=. .venv_official/bin/python -m scripts.analyze_official --stage p1
+  .venv_official/bin/python -m src.backend.common.evaluate_official --stage p1
+PYTHONPATH=. .venv_official/bin/python -m src.router.analyze_official --stage p1
 ```
 
 测试命令：

@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = (
     ROOT
-    / "results_shared_lightrag_unified_latency"
+    / "result/shared_unified_latency"
     / "p1"
     / "balanced_utility_label_router"
 )

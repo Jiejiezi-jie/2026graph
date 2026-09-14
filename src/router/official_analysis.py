@@ -10,9 +10,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 
-from src.official_backends.base import METHODS
+from src.backend.common.base import METHODS
 from src.router import build_router
-from src.official_evaluation import valid_evaluation
+from src.backend.common.official_evaluation import valid_evaluation
 
 
 def choose_official_silver(

@@ -11,7 +11,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, f1_score
 from sklearn.model_selection import StratifiedKFold
 
-from src.official_backends.base import METHODS
+from src.backend.common.base import METHODS
 
 
 def load_jsonl(path: Path) -> list[dict]:
@@ -39,20 +39,20 @@ def main() -> None:
     parser.add_argument(
         "--labels",
         type=Path,
-        default=Path("results_api/p1/analysis/silver_labels.jsonl"),
+        default=Path("result/api/p1/analysis/silver_labels.jsonl"),
     )
     parser.add_argument(
         "--embeddings",
         type=Path,
         default=Path(
-            "results_api/p1/analysis/router_experiments/no_all_failed_bge_m3/"
+            "result/api/p1/analysis/router_experiments/no_all_failed_bge_m3/"
             "question_embeddings.npz"
         ),
     )
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=Path("results_api/p1/analysis/router_experiments/bge_m3_5fold_cv"),
+        default=Path("result/api/p1/analysis/router_experiments/bge_m3_5fold_cv"),
     )
     parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()

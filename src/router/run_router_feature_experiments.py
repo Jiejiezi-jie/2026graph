@@ -12,8 +12,8 @@ import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 
-from src.official_backends.base import METHODS
-from src.official_backends.model_client import TransformersEmbeddingClient
+from src.backend.common.base import METHODS
+from src.backend.common.model_client import TransformersEmbeddingClient
 from src.router import build_router
 
 
@@ -259,12 +259,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--labels",
         type=Path,
-        default=Path("results_api/p1/analysis/silver_labels.jsonl"),
+        default=Path("result/api/p1/analysis/silver_labels.jsonl"),
     )
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=Path("results_api/p1/analysis/router_experiments"),
+        default=Path("result/api/p1/analysis/router_experiments"),
     )
     parser.add_argument("--model-path", type=Path)
     parser.add_argument("--device", default="cpu")

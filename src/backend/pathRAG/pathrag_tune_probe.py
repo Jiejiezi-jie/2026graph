@@ -5,7 +5,7 @@
 用法(用户终端,需 GPU+key):
   export PYTHONPATH=.
   export DEEPSEEK_API_KEY=...
-  .venv_official/bin/python scripts/pathrag_tune_probe.py
+  .venv_official/bin/python src/backend/pathRAG/pathrag_tune_probe.py
 """
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ import sys
 import time
 from pathlib import Path
 
-PROJECT = Path(__file__).resolve().parents[1]
+PROJECT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(PROJECT))
 
 QUESTION = (
@@ -25,7 +25,7 @@ QUESTION = (
 
 
 def _parse(rag, raw) -> dict:
-    from src.official_backends.pathrag_backend import parse_pathrag_context
+    from src.backend.pathRAG.pathrag_backend import parse_pathrag_context
 
     parsed = parse_pathrag_context(str(raw or ""))
     return parsed
@@ -38,17 +38,17 @@ async def probe(top_k: int, threshold: float, question: str) -> dict:
     # 本机无 GPU 调试: 允许 DSH_PROBE_CPU=1 走 CPU embedding(仅实验,不影响正式 config)
     if __import__("os").environ.get("DSH_PROBE_CPU"):
         config["embedding"]["device"] = "cpu"
-    from src.official_backends.model_client import (
+    from src.backend.common.model_client import (
         build_chat_client,
         build_embedding_client,
     )
-    from src.official_backends.pathrag_backend import PathRAGBackend
+    from src.backend.pathRAG.pathrag_backend import PathRAGBackend
 
     llm = build_chat_client(config["llm"])
     emb = build_embedding_client(config["embedding"])
     backend = PathRAGBackend(
-        upstream_dir=PROJECT / "third_party" / "PathRAG",
-        working_dir=PROJECT / "results_api" / "indexes" / "pathrag",
+        upstream_dir=PROJECT / "deps" / "PathRAG",
+        working_dir=PROJECT / "result/api" / "indexes" / "pathrag",
         top_k=top_k,
         llm=llm,
         embedding=emb,

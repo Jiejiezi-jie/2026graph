@@ -13,16 +13,16 @@
     "d1f6aaf676bddfd08f81e0e7ccafc78fa3cbe92e8d50bbd47687a775cf2d6abd"
   ],
   "baseline_inputs": {
-    "vector": "results_shared_lightrag_unified_latency/p1/vector_evaluated.jsonl",
-    "lightrag": "results_shared_lightrag_unified_latency/p1/lightrag_evaluated.jsonl",
-    "pathrag": "results_shared_lightrag_current_main/p1/pathrag_evaluated.jsonl"
+    "vector": "result/shared_unified_latency/p1/vector_evaluated.jsonl",
+    "lightrag": "result/shared_unified_latency/p1/lightrag_evaluated.jsonl",
+    "pathrag": "result/shared_current_main/p1/pathrag_evaluated.jsonl"
   },
-  "question_file": "results_shared_lightrag_expanded/splits/expansion_questions.jsonl",
-  "selection_manifest": "results_shared_lightrag_expanded/splits/expansion_manifest.json",
+  "question_file": "result/shared_expanded/splits/expansion_questions.jsonl",
+  "selection_manifest": "result/shared_expanded/splits/expansion_manifest.json",
   "index_dirs": {
-    "vector": "results_shared_lightrag_unified_latency/indexes/vector",
-    "lightrag": "results_shared_lightrag_unified_latency/indexes/lightrag",
-    "pathrag": "results_shared_lightrag_unified_latency/indexes/pathrag"
+    "vector": "result/shared_unified_latency/indexes/vector",
+    "lightrag": "result/shared_unified_latency/indexes/lightrag",
+    "pathrag": "result/shared_unified_latency/indexes/pathrag"
   },
   "chunk_tokens": 1200,
   "chunk_overlap_tokens": 100,
@@ -61,7 +61,7 @@
     "features": ["tfidf", "bge_m3"]
   },
   "generation_prompt": "Answer the medical question using only the supplied context. Give a direct, concise answer. If the context is insufficient, say I don't know.",
-  "results_dir": "results_shared_lightrag_expanded",
+  "results_dir": "result/shared_expanded",
   "lightrag_max_entity_tokens": 1500,
   "lightrag_max_relation_tokens": 1500,
   "lightrag_max_total_tokens": 12000,

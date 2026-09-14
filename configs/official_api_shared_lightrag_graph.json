@@ -46,7 +46,7 @@
     "selection_metric": "validation_macro_f1"
   },
   "generation_prompt": "Answer the medical question using only the supplied context. Give a direct, concise answer. If the context is insufficient, say I don't know.",
-  "results_dir": "results_shared_lightrag_current_main",
+  "results_dir": "result/shared_current_main",
   "lightrag_max_entity_tokens": 1500,
   "lightrag_max_relation_tokens": 1500,
   "lightrag_max_total_tokens": 12000,

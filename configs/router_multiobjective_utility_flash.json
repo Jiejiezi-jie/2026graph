@@ -19,10 +19,10 @@
     "objective": "maximize the smaller of the two absolute OOF gains, then their sum"
   },
   "expansion_config": "configs/router_data_expansion_flash.json",
-  "embedding_cache": "results_shared_lightrag_expanded/p1/router_data_expansion/question_embeddings.npz",
-  "reference_300_oof": "results_shared_lightrag_unified_latency/p1/router_hard_weight_grid_300/sample_weighted/threshold_0.60_margin_0.10_bge_m3/oof_predictions.jsonl",
-  "reference_300_test": "results_shared_lightrag_unified_latency/p1/router_hard_weight_grid_300/sample_weighted/threshold_0.60_margin_0.10_bge_m3/test_predictions.jsonl",
-  "reference_120_test": "results_shared_lightrag_unified_latency/p1/weighted_router_experiment/weighted_test_predictions.jsonl",
-  "output_dir": "results_shared_lightrag_unified_latency/p1/multiobjective_utility_router",
+  "embedding_cache": "result/shared_expanded/p1/router_data_expansion/question_embeddings.npz",
+  "reference_300_oof": "result/shared_unified_latency/p1/router_hard_weight_grid_300/sample_weighted/threshold_0.60_margin_0.10_bge_m3/oof_predictions.jsonl",
+  "reference_300_test": "result/shared_unified_latency/p1/router_hard_weight_grid_300/sample_weighted/threshold_0.60_margin_0.10_bge_m3/test_predictions.jsonl",
+  "reference_120_test": "result/shared_unified_latency/p1/weighted_router_experiment/weighted_test_predictions.jsonl",
+  "output_dir": "result/shared_unified_latency/p1/multiobjective_utility_router",
   "note": "Question-only BGE-M3 multi-output Ridge trained on Flash-aligned method evaluations."
 }

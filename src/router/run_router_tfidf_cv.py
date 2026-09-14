@@ -10,7 +10,7 @@ import numpy as np
 from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 from sklearn.model_selection import StratifiedKFold
 
-from src.official_backends.base import METHODS
+from src.backend.common.base import METHODS
 from src.router import build_router
 
 
@@ -42,13 +42,13 @@ def main() -> None:
     parser.add_argument(
         "--labels",
         type=Path,
-        default=Path("results_api/p1/analysis/silver_labels.jsonl"),
+        default=Path("result/api/p1/analysis/silver_labels.jsonl"),
     )
     parser.add_argument(
         "--output-dir",
         type=Path,
         default=Path(
-            "results_api/p1/analysis/router_experiments/tfidf_5fold_cv_no_all_failed"
+            "result/api/p1/analysis/router_experiments/tfidf_5fold_cv_no_all_failed"
         ),
     )
     parser.add_argument("--seed", type=int, default=42)

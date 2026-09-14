@@ -48,7 +48,7 @@ the 72B cache is only 2.6 GiB and does not contain complete weights. The local
 - Generation/extraction model: Qwen2.5-VL-7B-Instruct in text-only mode. It
   passed 5/5 answer and 5/5 strict-JSON checks (1,732 input and 764 output
   tokens over ten calls). The 3B checkpoint is not used for official indexing
-  or answers. Raw probes are saved under `results_official/model_probe_*.json`.
+  or answers. Raw probes are saved under `result/official/model_probe_*.json`.
 - Embedding model: BAAI/bge-m3, shared by Vector RAG, LightRAG and PathRAG.
   It was fetched from the BAAI ModelScope mirror at commit
   `a46a13810c9d7f876fccd8d7017512ebc265d2c1`; the main weight SHA-256 is

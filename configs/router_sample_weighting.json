@@ -16,12 +16,12 @@
     "max_iter": 2000
   },
   "inputs": {
-    "vector": "results_api/p1/vector_evaluated.jsonl",
-    "lightrag": "results_api/p1/lightrag_evaluated.jsonl",
-    "pathrag": "results_shared_lightrag_current_main/p1/pathrag_evaluated.jsonl",
-    "labels": "results_shared_lightrag_current_main/p1/analysis_threshold_margin_grid/threshold_0.60_margin_0.10_bge_m3/silver_labels.jsonl",
-    "embeddings": "results_shared_lightrag_current_main/p1/analysis_inputs/question_embeddings.npz",
-    "baseline_summary": "results_shared_lightrag_current_main/p1/analysis_threshold_margin_grid/threshold_0.60_margin_0.10_bge_m3/summary.json"
+    "vector": "result/api/p1/vector_evaluated.jsonl",
+    "lightrag": "result/api/p1/lightrag_evaluated.jsonl",
+    "pathrag": "result/shared_current_main/p1/pathrag_evaluated.jsonl",
+    "labels": "result/shared_current_main/p1/analysis_threshold_margin_grid/threshold_0.60_margin_0.10_bge_m3/silver_labels.jsonl",
+    "embeddings": "result/shared_current_main/p1/analysis_inputs/question_embeddings.npz",
+    "baseline_summary": "result/shared_current_main/p1/analysis_threshold_margin_grid/threshold_0.60_margin_0.10_bge_m3/summary.json"
   },
-  "output_dir": "results_shared_lightrag_current_main/p1/weighted_router_experiment"
+  "output_dir": "result/shared_current_main/p1/weighted_router_experiment"
 }

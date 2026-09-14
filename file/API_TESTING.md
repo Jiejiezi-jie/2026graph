@@ -41,7 +41,7 @@ configuration file or result files.
 ## Setup on Windows PowerShell
 
 ```powershell
-python scripts/setup_official_sources.py
+python src/backend/common/setup_official_sources.py
 .venv_api\Scripts\python.exe -m pip install torch --index-url https://download.pytorch.org/whl/cpu
 .venv_api\Scripts\python.exe -m pip install -r requirements-official-api.txt
 $env:DEEPSEEK_API_KEY = "your-deepseek-key"
@@ -57,7 +57,7 @@ commits used by this project. It is safe to run again.
 ## Check the API and local embedding
 
 ```powershell
-.venv_api\Scripts\python.exe -m scripts.probe_api --config configs/official_api.json
+.venv_api\Scripts\python.exe -m src.backend.common.probe_api --config configs/official_api.json
 ```
 
 The probe must return a non-empty chat response and a BGE-M3 embedding shape
@@ -66,16 +66,16 @@ of `[2, 1024]` with unit-length vectors.
 ## Run the real upstream backends on a tiny corpus
 
 This is the cheapest integration check and writes only to
-`results_api/smoke/`:
+`result/api/smoke/`:
 
 ```powershell
-.venv_api\Scripts\python.exe -m scripts.smoke_api_backends --backend all
+.venv_api\Scripts\python.exe -m src.backend.common.smoke_api_backends --backend all
 ```
 
 If a previous smoke run stopped during indexing, rebuild its generated cache:
 
 ```powershell
-.venv_api\Scripts\python.exe -m scripts.smoke_api_backends --backend all --reset
+.venv_api\Scripts\python.exe -m src.backend.common.smoke_api_backends --backend all --reset
 ```
 
 The command requires the DeepSeek key. It validates that official LightRAG and
@@ -85,18 +85,18 @@ relationships, and an answer. Embeddings are computed locally by BGE-M3.
 ## Run the fixed P0 sample
 
 ```powershell
-.venv_api\Scripts\python.exe -m scripts.run_official_experiment --config configs/official_api.json --stage p0 --backend lightrag
-.venv_api\Scripts\python.exe -m scripts.run_official_experiment --config configs/official_api.json --stage p0 --backend pathrag
+.venv_api\Scripts\python.exe -m src.backend.common.run_official_experiment --config configs/official_api.json --stage p0 --backend lightrag
+.venv_api\Scripts\python.exe -m src.backend.common.run_official_experiment --config configs/official_api.json --stage p0 --backend pathrag
 ```
 
 To compare Vector and LightRAG on 40 fixed questions (20 Fact Retrieval and 20
 Complex Reasoning), keep the same configuration and override the P0 size:
 
 ```powershell
-.venv_api\Scripts\python.exe -m scripts.run_official_experiment --config configs/official_api.json --stage p0 --backend vector --p0-per-type 20
-.venv_api\Scripts\python.exe -m scripts.run_official_experiment --config configs/official_api.json --stage p0 --backend lightrag --p0-per-type 20
-.venv_api\Scripts\python.exe -m scripts.evaluate_official --config configs/official_api.json --stage p0 --backend vector
-.venv_api\Scripts\python.exe -m scripts.evaluate_official --config configs/official_api.json --stage p0 --backend lightrag
+.venv_api\Scripts\python.exe -m src.backend.common.run_official_experiment --config configs/official_api.json --stage p0 --backend vector --p0-per-type 20
+.venv_api\Scripts\python.exe -m src.backend.common.run_official_experiment --config configs/official_api.json --stage p0 --backend lightrag --p0-per-type 20
+.venv_api\Scripts\python.exe -m src.backend.common.evaluate_official --config configs/official_api.json --stage p0 --backend vector
+.venv_api\Scripts\python.exe -m src.backend.common.evaluate_official --config configs/official_api.json --stage p0 --backend lightrag
 ```
 
 The runner resumes by `question_id`, so the existing ten rows are retained and
@@ -105,13 +105,13 @@ ROUGE-L, and evidence recall scores should be compared over all 40 successful
 rows, with the same model and temperature for both backends.
 
 Run Vector separately if the API configuration should be compared with the
-existing local Vector result. The API results live under `results_api/` and do
-not overwrite `results_official/`.
+existing local Vector result. The API results live under `result/api/` and do
+not overwrite `result/official/`.
 
 After all three API result files contain ten successful rows, validate them:
 
 ```powershell
-.venv_api\Scripts\python.exe -m scripts.validate_p0 --dir results_api/p0
+.venv_api\Scripts\python.exe -m src.backend.common.validate_p0 --dir result/api/p0
 ```
 
 API-backed results are engineering validation, not the original local-Qwen

@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SUMMARY = (
     ROOT
-    / "results_shared_lightrag_expanded"
+    / "result/shared_expanded"
     / "p1"
     / "router_hard_weight_grid_300"
     / "summary.json"
@@ -71,7 +71,7 @@ def test_grid_reproduces_existing_060_010_results() -> None:
     expansion = json.loads(
         (
             ROOT
-            / "results_shared_lightrag_expanded"
+            / "result/shared_expanded"
             / "p1"
             / "router_data_expansion"
             / "summary.json"
@@ -80,7 +80,7 @@ def test_grid_reproduces_existing_060_010_results() -> None:
     weighted_expansion = json.loads(
         (
             ROOT
-            / "results_shared_lightrag_expanded"
+            / "result/shared_expanded"
             / "p1"
             / "weighted_router_data_expansion"
             / "summary.json"

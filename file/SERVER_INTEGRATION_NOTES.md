@@ -45,16 +45,16 @@ The following parts must be replaced for official results:
 The reusable parts are Medical data loading, deterministic sampling/splitting,
 basic text normalization, ROUGE-L support, TF-IDF + Logistic Regression router
 construction, policy aggregation/plots, and the existing unit-test style. New
-official code and outputs live in `src/official_backends/` and
-`results_official/`, respectively.
+official code and outputs live in `src/backend/` and
+`result/official/`, respectively.
 
 ## Pinned upstream sources
 
 | Component | Repository | Pin | Local path |
 |---|---|---|---|
 | GraphRAG-Bench | `https://github.com/GraphRAG-Bench/GraphRAG-Benchmark.git` | `fdbab5959b18c96532580877ffe27d112bccc0ec` | `data/vendor/GraphRAG-Benchmark` |
-| LightRAG | `https://github.com/HKUDS/LightRAG.git` | tag `v1.5.7`, `28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c` | `third_party/LightRAG` |
-| PathRAG | `https://github.com/BUPT-GAMMA/PathRAG.git` | `32567bfc93605b8393996d5fa9ccdc0edbb865b2` | `third_party/PathRAG` |
+| LightRAG | `https://github.com/HKUDS/LightRAG.git` | tag `v1.5.7`, `28ff1b05f2ac3f3e6fa14dd2cd33656579bd0c9c` | `deps/LightRAG` |
+| PathRAG | `https://github.com/BUPT-GAMMA/PathRAG.git` | `32567bfc93605b8393996d5fa9ccdc0edbb865b2` | `deps/PathRAG` |
 
 LightRAG v1.5.7 exposes structured `aquery_data`, so no core patch is required
 to save entities, relationships, and chunks. The current PathRAG checkout has

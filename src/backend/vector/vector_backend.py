@@ -9,8 +9,8 @@ from typing import Any
 import numpy as np
 import tiktoken
 
-from .base import BackendResult, RAGBackend
-from .model_client import (
+from ..common.base import BackendResult, RAGBackend
+from ..common.model_client import (
     ANSWER_SYSTEM_PROMPT,
     TransformersChatClient,
     TransformersEmbeddingClient,

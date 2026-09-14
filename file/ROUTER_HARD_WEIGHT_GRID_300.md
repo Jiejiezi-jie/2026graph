@@ -74,8 +74,8 @@
 
 ```text
 configs/router_hard_weight_grid_300.json
-scripts/run_router_hard_weight_grid_300.py
-results_shared_lightrag_expanded/p1/router_hard_weight_grid_300/
+src/router/run_router_hard_weight_grid_300.py
+result/shared_expanded/p1/router_hard_weight_grid_300/
 tests/test_router_hard_weight_grid_300.py
 ```
 

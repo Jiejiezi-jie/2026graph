@@ -139,17 +139,17 @@ scikit-learn 1.9.0 会因 LogisticRegression 实现版本变化产生不同结�
 
 ```text
 configs/router_data_expansion.json
-scripts/prepare_router_data_expansion.py
-scripts/run_official_expansion.py
-scripts/analyze_router_data_expansion.py
+src/backend/common/prepare_router_data_expansion.py
+src/backend/common/run_official_expansion.py
+src/router/analyze_router_data_expansion.py
 configs/router_weighted_data_expansion.json
-scripts/analyze_weighted_router_data_expansion.py
-results_shared_lightrag_expanded/splits/expansion_questions.jsonl
-results_shared_lightrag_expanded/splits/expansion_manifest.json
-results_shared_lightrag_expanded/p1/{vector,lightrag,pathrag}.jsonl
-results_shared_lightrag_expanded/p1/{vector,lightrag,pathrag}_evaluated.jsonl
-results_shared_lightrag_expanded/p1/router_data_expansion/
-results_shared_lightrag_expanded/p1/weighted_router_data_expansion/
+src/router/analyze_weighted_router_data_expansion.py
+result/shared_expanded/splits/expansion_questions.jsonl
+result/shared_expanded/splits/expansion_manifest.json
+result/shared_expanded/p1/{vector,lightrag,pathrag}.jsonl
+result/shared_expanded/p1/{vector,lightrag,pathrag}_evaluated.jsonl
+result/shared_expanded/p1/router_data_expansion/
+result/shared_expanded/p1/weighted_router_data_expansion/
 tests/test_router_data_expansion.py
 ```
 

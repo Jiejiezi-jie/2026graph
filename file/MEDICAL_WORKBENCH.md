@@ -7,7 +7,7 @@ Adaptive 使用 300 题实验的加权 BGE-M3 CLS + Logistic Regression 选择�
 已有 Medical bundle：停止后端，用 Medical Python 环境在 knowledge-workbench 目录执行：
 
 ```powershell
-python scripts/install_medical_router.py --repo .. --ref 5f374e2 --bundle backend/data/medical
+python src/backend/scripts/install_medical_router.py --repo .. --ref 5f374e2 --bundle backend/data/medical
 ```
 
 新机器：`prepare_medical.py --repo .. --ref origin/main` 默认安装新选择头。
@@ -35,7 +35,7 @@ Medical 索引和路由模型已在同一仓库的队友提交中，使用固定
 ```powershell
 git fetch origin lightRAG
 cd knowledge-workbench
-python scripts/prepare_medical.py --repo .. --ref 2ce4e23b98ac4405e3e1c80454e5daef8e5f3b95 --output backend/data/medical
+python src/backend/scripts/prepare_medical.py --repo .. --ref 2ce4e23b98ac4405e3e1c80454e5daef8e5f3b95 --output backend/data/medical
 ```
 
 已有导入目录时跳过导入。PathRAG 的共享索引兼容副本会在首次查询时自动创建。
@@ -78,7 +78,7 @@ Vector 实际召回 3 个片段；路由模型成功加载；LightRAG 和 PathRA
 ```powershell
 Set-Location 'D:\HuaweiMoveData\Users\huawei\Desktop\AI知识库\知识图谱'
 $env:LLM_MODEL = 'deepseek-chat'
-& '.\artifacts\medical-env\Scripts\python.exe' scripts/serve_web.py --port 18000 --medical-bundle backend/data/medical --medical-embedding-path artifacts/models/bge-m3 --medical-pathrag-root artifacts/medical-upstream/PathRAG
+& '.\artifacts\medical-env\Scripts\python.exe' src/backend/scripts/serve_web.py --port 18000 --medical-bundle backend/data/medical --medical-embedding-path artifacts/models/bge-m3 --medical-pathrag-root artifacts/medical-upstream/PathRAG
 ```
 
 **窗口二：前端**
@@ -136,7 +136,7 @@ Adaptive 结果会显示实际方法、分类概率和生效参数。分类概�
 ## 文件与运行隔离
 
 - 代码：`backend/app/medical/`
-- 导入工具：`scripts/prepare_medical.py`
+- 导入工具：`src/backend/scripts/prepare_medical.py`
 - Medical 数据、源码快照、路由模型及查询历史：`backend/data/medical/`
 - 原 Novel 数据与历史：2026-09 整合时已从 Git 移除（legacy 建图运行时代码保留）。
 - 导入目录已被 Git 忽略。本次没有提交、推送或切换任何分支。
@@ -227,7 +227,7 @@ conda run -n medical-workbench python -c "from huggingface_hub import snapshot_d
 ## 3. 检查后启动后端
 
 ```powershell
-conda run -n medical-workbench python scripts/serve_web.py --medical-bundle backend/data/medical --medical-embedding-path artifacts/models/bge-m3 --medical-pathrag-root artifacts/medical-upstream/PathRAG --check
+conda run -n medical-workbench python src/backend/scripts/serve_web.py --medical-bundle backend/data/medical --medical-embedding-path artifacts/models/bge-m3 --medical-pathrag-root artifacts/medical-upstream/PathRAG --check
 ```
 
 这个预检读取索引、模型配置和依赖版本，不加载模型权重、不调用 API。
@@ -238,7 +238,7 @@ conda run -n medical-workbench python scripts/serve_web.py --medical-bundle back
 
 ```powershell
 $env:LLM_MODEL = 'deepseek-chat'
-conda run --no-capture-output -n medical-workbench python scripts/serve_web.py --medical-bundle backend/data/medical --medical-embedding-path artifacts/models/bge-m3 --medical-pathrag-root artifacts/medical-upstream/PathRAG
+conda run --no-capture-output -n medical-workbench python src/backend/scripts/serve_web.py --medical-bundle backend/data/medical --medical-embedding-path artifacts/models/bge-m3 --medical-pathrag-root artifacts/medical-upstream/PathRAG
 ```
 
 后端地址为 `http://127.0.0.1:8000`。先停止占用此端口的旧后端。
@@ -248,7 +248,7 @@ API Key / URL 仍通过网页“API 设置”填写，Key 只在当前后端进�
 如暂时只想检查图谱和下拉框，可用已有 Python 环境：
 
 ```powershell
-& 'D:\Anaconda\envs\lightrag\python.exe' scripts/serve_web.py --medical-bundle backend/data/medical --preview-only
+& 'D:\Anaconda\envs\lightrag\python.exe' src/backend/scripts/serve_web.py --medical-bundle backend/data/medical --preview-only
 ```
 
 缺少模型时页面会显示未就绪原因并禁用查询；预览不会假装完成真实检索。
@@ -288,7 +288,7 @@ Medical 模式禁止通过原有“选择最短文本/重新建图”入口覆�
 先拉取队友仓库，再运行：
 
 ```powershell
-python scripts/prepare_medical.py --repo 'D:\HuaweiMoveData\Users\huawei\Desktop\kg\2026graph' --ref origin/lightRAG --output backend/data/medical
+python src/backend/scripts/prepare_medical.py --repo 'D:\HuaweiMoveData\Users\huawei\Desktop\kg\2026graph' --ref origin/lightRAG --output backend/data/medical
 ```
 
 为了复现本次快照，可将 `--ref` 改成上面记录的完整提交哈希。

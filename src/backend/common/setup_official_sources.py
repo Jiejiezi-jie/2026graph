@@ -40,7 +40,7 @@ def ensure_repo(path: Path, url: str, commit: str) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--root", type=Path, default=Path("third_party"))
+    parser.add_argument("--root", type=Path, default=Path("deps"))
     parser.add_argument(
         "--benchmark-dir",
         type=Path,

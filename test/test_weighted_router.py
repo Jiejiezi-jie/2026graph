@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import numpy as np
 
-from scripts.run_weighted_router_experiment import (
+from src.router.run_weighted_router_experiment import (
     classify_weight,
     estimator,
     fit_estimator,

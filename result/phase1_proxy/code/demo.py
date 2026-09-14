@@ -2,12 +2,18 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
+
+# Frozen phase-one proxy: keep it runnable as a plain script from any cwd.
+# This directory provides `backends`; the repository root provides `src.*`.
+CODE_DIR = Path(__file__).resolve().parent
+sys.path[:0] = [str(CODE_DIR.parents[2]), str(CODE_DIR)]
 
 import joblib
 
-from src.backends import OfflineGraphIndex
-from src.data import chunk_by_word_window, load_medical_benchmark
+from backends import OfflineGraphIndex
+from src.backend.common.data import chunk_by_word_window, load_medical_benchmark
 
 
 def main() -> None:

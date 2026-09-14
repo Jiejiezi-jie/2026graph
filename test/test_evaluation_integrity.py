@@ -5,9 +5,9 @@ from pathlib import Path
 
 import numpy as np
 
-from scripts.evaluate_official import prepare_target, reusable_rows
-from src.official_backends.model_client import Generation, OpenAICompatibleChatClient, UsageSnapshot
-from src.official_evaluation import (
+from src.backend.common.evaluate_official import prepare_target, reusable_rows
+from src.backend.common.model_client import Generation, OpenAICompatibleChatClient, UsageSnapshot
+from src.backend.common.official_evaluation import (
     JudgeResponseError, evaluate_official_row, fingerprint, parse_judge_json,
     split_reference_evidence, valid_evaluation,
 )
@@ -128,7 +128,7 @@ class EvaluationIntegrityTests(unittest.IsolatedAsyncioTestCase):
             parse_judge_json('{"classifications": []}', "evidence", ["A"])
 
     async def test_nonfinite_embeddings_and_invalid_analysis_are_rejected(self):
-        from src.official_analysis import analyze_official
+        from src.router.official_analysis import analyze_official
 
         class BadEmbedding:
             async def embed(self, texts):

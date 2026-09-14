@@ -6,8 +6,9 @@ import json
 from pathlib import Path
 
 
+# The backend package (app.*) and its .env / runtime data live in src/backend.
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "backend"))
+sys.path.insert(0, str(ROOT))
 
 
 def main():
@@ -31,7 +32,7 @@ def main():
         from app.medical.bundle import MedicalBundle
         from app.medical.preflight import runtime_issues
         from app.domain.errors import AppError
-        settings = Settings(app_root=ROOT / "backend", _env_file=ROOT / "backend/.env")
+        settings = Settings(app_root=ROOT, _env_file=ROOT / ".env")
         try:
             bundle = MedicalBundle(settings.medical_bundle)
         except AppError as exc:

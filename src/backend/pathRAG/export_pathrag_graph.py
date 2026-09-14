@@ -10,8 +10,8 @@ import networkx as nx
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--graph', type=Path, default=Path('results_api/indexes/pathrag/graph_chunk_entity_relation.graphml'))
-    parser.add_argument('--output', type=Path, default=Path('results_api/graph_preview/pathrag_full_explorer.html'))
+    parser.add_argument('--graph', type=Path, default=Path('result/api/indexes/pathrag/graph_chunk_entity_relation.graphml'))
+    parser.add_argument('--output', type=Path, default=Path('result/api/graph_preview/pathrag_full_explorer.html'))
     args = parser.parse_args()
     raw = args.graph.read_bytes()
     graph = nx.parse_graphml(raw.decode('utf-8'))

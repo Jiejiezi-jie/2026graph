@@ -8,24 +8,47 @@ __pycache__/
 .venv_api/
 models/
 data/vendor/
-third_party/
-results_official/indexes/
-results_official/debug/
-results_official/pipeline.log
 PathRAG.log
 artifacts/*.joblib
+output/
+.playwright-cli/
+*.tsbuildinfo
+*.egg-info/
+
+# Medical workbench (src/backend) local state
+src/backend/.env
+src/backend/data/raw/
+src/backend/data/processed/
+src/backend/data/indexes/
+src/backend/data/active/
+src/backend/data/workspace/
+src/backend/data/workspace_backups/
+src/backend/data/runs.sqlite3*
+exports/*.zip
+.superpowers/
+.worktrees/
+
+# Frontend build artifacts
+src/frontend/node_modules/
+src/frontend/dist/
 
 # 评测自动归档与大体积缓存备份(不入库)
-results_api/**/*.bak
-results_api/**/*.pre_drop_*.bak
-results_api/**/*.jsonl.20*.bak
-results_shared_lightrag_expanded/logs/
-results_shared_lightrag_expanded/**/*.bak
+result/api/**/*.bak
+result/api/**/*.pre_drop_*.bak
+result/api/**/*.jsonl.20*.bak
+result/official/indexes/
+result/official/debug/
+result/official/pipeline.log
+result/shared_expanded/logs/
+result/shared_expanded/**/*.bak
 
 # Current-batch runtime index copies and logs (compact p1 results stay versioned)
-results_shared_lightrag_unified_latency/indexes/
-results_shared_lightrag_unified_latency/logs/
-results_shared_lightrag_unified_latency/splits/
-results_shared_lightrag_current_main/indexes/
-results_shared_lightrag_current_main/p0/
-results_shared_lightrag_current_main/splits/
+result/shared_unified_latency/indexes/
+result/shared_unified_latency/logs/
+result/shared_unified_latency/splits/
+result/shared_current_main/indexes/
+result/shared_current_main/p0/
+result/shared_current_main/splits/
+
+# 阶段一代理输出中的中间产物
+result/phase1_proxy/outputs/**/*.bak

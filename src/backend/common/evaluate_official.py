@@ -7,11 +7,11 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from src.official_backends.model_client import (
+from src.backend.common.model_client import (
     build_chat_client,
     build_embedding_client,
 )
-from src.official_evaluation import (
+from src.backend.common.official_evaluation import (
     EVALUATION_VERSION, _load_official_metrics, evaluate_official_row,
     fingerprint, load_jsonl, valid_evaluation,
 )
@@ -66,7 +66,7 @@ def prepare_target(target: Path, kept: list[dict]) -> None:
 
 async def main() -> None:
     args = parse_args()
-    project_dir = Path(__file__).resolve().parents[1]
+    project_dir = Path(__file__).resolve().parents[3]
     config_path = args.config if args.config.is_absolute() else project_dir / args.config
     config = json.loads(config_path.read_text(encoding="utf-8"))
     result_dir = project_dir / config["results_dir"] / args.stage

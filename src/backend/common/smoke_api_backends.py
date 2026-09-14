@@ -8,8 +8,8 @@ import json
 import shutil
 from pathlib import Path
 
-from scripts.run_official_experiment import _build_backends
-from src.official_backends.model_client import build_chat_client, build_embedding_client
+from src.backend.common.run_official_experiment import _build_backends
+from src.backend.common.model_client import build_chat_client, build_embedding_client
 
 
 SMOKE_CORPUS = """
@@ -39,7 +39,7 @@ async def main() -> None:
         help="Remove the generated smoke index/results before rebuilding",
     )
     args = parser.parse_args()
-    project_dir = Path(__file__).resolve().parents[1]
+    project_dir = Path(__file__).resolve().parents[3]
     config_path = args.config if args.config.is_absolute() else project_dir / args.config
     config = json.loads(config_path.read_text(encoding="utf-8"))
     config = {

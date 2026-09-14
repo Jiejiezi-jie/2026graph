@@ -6,18 +6,18 @@ from pathlib import Path
 
 import numpy as np
 
-from src.official_analysis import choose_official_silver
-from src.official_backends.lightrag_backend import LightRAGBackend
-from src.official_backends.model_client import (
+from src.router.official_analysis import choose_official_silver
+from src.backend.lightRAG.lightrag_backend import LightRAGBackend
+from src.backend.common.model_client import (
     Generation,
     OpenAICompatibleChatClient,
     OpenAICompatibleEmbeddingClient,
     UsageSnapshot,
 )
-from src.official_backends.pathrag_backend import PathRAGBackend, parse_pathrag_context
-from src.official_backends.vector_backend import VectorRAGBackend, chunk_by_token_window
-from src.official_data import p0_subset, stratified_sample_and_split
-from scripts.run_official_experiment import _prepare_resume_output
+from src.backend.pathRAG.pathrag_backend import PathRAGBackend, parse_pathrag_context
+from src.backend.vector.vector_backend import VectorRAGBackend, chunk_by_token_window
+from src.backend.common.official_data import p0_subset, stratified_sample_and_split
+from src.backend.common.run_official_experiment import _prepare_resume_output
 
 
 class FakeEmbedding:
@@ -161,7 +161,7 @@ class OfficialCoreTests(unittest.IsolatedAsyncioTestCase):
     async def test_pathrag_adapter_initializes_with_locked_clients(self):
         with tempfile.TemporaryDirectory() as directory:
             backend = PathRAGBackend(
-                Path(__file__).parents[1] / "third_party" / "PathRAG",
+                Path(__file__).parents[1] / "deps" / "PathRAG",
                 directory,
                 FakeLLM(),
                 FakeEmbedding(),

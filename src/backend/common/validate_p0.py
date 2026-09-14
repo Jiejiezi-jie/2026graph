@@ -4,8 +4,8 @@ import argparse
 import json
 from pathlib import Path
 
-from src.official_backends.base import METHODS
-from src.official_evaluation import load_jsonl
+from src.backend.common.base import METHODS
+from src.backend.common.official_evaluation import load_jsonl
 
 
 REQUIRED_FIELDS = {
@@ -27,7 +27,7 @@ REQUIRED_FIELDS = {
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dir", type=Path, default=Path("results_official/p0"))
+    parser.add_argument("--dir", type=Path, default=Path("result/official/p0"))
     args = parser.parse_args()
     ids_by_method = {}
     for method in METHODS:

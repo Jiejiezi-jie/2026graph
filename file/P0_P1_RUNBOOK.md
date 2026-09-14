@@ -16,11 +16,11 @@ export DEEPSEEK_API_KEY='你的key'           # 只放环境变量
 export PYTHONPATH=/home/szj/2026graph/.wt-lightrag
 ```
 
-已就绪（勿删）：`data/vendor/GraphRAG-Benchmark`(fdbab59)、`third_party/LightRAG`(28ff1b05)、`third_party/PathRAG`(32567bfc)、`models/bge-m3`(2.2GB)。
+已就绪（勿删）：`data/vendor/GraphRAG-Benchmark`(fdbab59)、`deps/LightRAG`(28ff1b05)、`deps/PathRAG`(32567bfc)、`models/bge-m3`(2.2GB)。
 
 ## 1. PathRAG 索引：现状与决策
 
-`results_api/indexes/pathrag/` 只有 **graphml(4568 节点/9432 边) + identity + vdb_chunks(仅向量)**；
+`result/api/indexes/pathrag/` 只有 **graphml(4568 节点/9432 边) + identity + vdb_chunks(仅向量)**；
 缺 `official_index_manifest.json`，`vdb_entities/relationships` 为空，kv 存储为 `{}`。
 
 **结论：该目录不能触发 cached 复用，runner 会全量重建 `ainsert()`。**
@@ -28,7 +28,7 @@ export PYTHONPATH=/home/szj/2026graph/.wt-lightrag
 选项：
 - **A（推荐，干净）**：先备份/移走残缺目录，让重建从零开始：
   ```bash
-  mv results_api/indexes/pathrag results_api/indexes/pathrag.INCOMPLETE.bak
+  mv result/api/indexes/pathrag result/api/indexes/pathrag.INCOMPLETE.bak
   ```
 - B：保留现状直接跑（残留 graphml 可能造成状态污染/重复，不推荐）。
 
@@ -36,37 +36,37 @@ export PYTHONPATH=/home/szj/2026graph/.wt-lightrag
 
 > ⚠️ 必须 `--p0-per-type 20`：config 默认 `p0_per_type=5`（10 题），会用 10 题覆盖 splits，
 > 破坏与现有 40 行 vector/lightrag 的对齐。实测 `--p0-per-type 20` 重写的 splits 与已提交的
-> `results_api/splits/*.jsonl` **逐字节顺序一致**（已验证）。
-> ⚠️ 不要用 `scripts/run_official_local.sh`：它内部 `conda run -n qwen_saliency`，本机无此 env。
+> `result/api/splits/*.jsonl` **逐字节顺序一致**（已验证）。
+> ⚠️ 不要用 `src/backend/common/run_official_local.sh`：它内部 `conda run -n qwen_saliency`，本机无此 env。
 
 ```bash
-.venv_official/bin/python -m scripts.run_official_experiment \
+.venv_official/bin/python -m src.backend.common.run_official_experiment \
   --config configs/official_api.json --stage p0 --backend pathrag --p0-per-type 20
 ```
 - 首次将全量重建 PathRAG 索引（数百次 LLM 调用，1-2 小时级 + bge-m3 向量化）；
 - 断点续跑：已完成 question_id 自动跳过，失败行记 `error`（P0 失败会 raise）；
-- 产物：`results_api/p0/pathrag.jsonl`（40 行）。
+- 产物：`result/api/p0/pathrag.jsonl`（40 行）。
 
 ## 3. LightRAG P0（确认/补齐）
 
 ```bash
-.venv_official/bin/python -m scripts.run_official_experiment \
+.venv_official/bin/python -m src.backend.common.run_official_experiment \
   --config configs/official_api.json --stage p0 --backend lightrag --p0-per-type 20
 ```
-- 现有 `results_api/p0/lightrag.jsonl` 40 行已存在（cached 索引复用）；重复跑会跳过已完成行，幂等。
+- 现有 `result/api/p0/lightrag.jsonl` 40 行已存在（cached 索引复用）；重复跑会跳过已完成行，幂等。
 
 ## 4. 验证 P0（注意与 40 题规模的差异）
 
-⚠️ `scripts/validate_p0.py` **硬编码期望 10 行、默认目录 `results_official/p0`**，仅适配本地 10 题线，
+⚠️ `src/backend/common/validate_p0.py` **硬编码期望 10 行、默认目录 `result/official/p0`**，仅适配本地 10 题线，
 **不适用于 API 40 题线**。40 题规模的等价校验改为：
 
 ```bash
 .venv_official/bin/python - <<'EOF'
 import json
 from pathlib import Path
-from src.official_evaluation import load_jsonl
-from src.official_backends.base import METHODS
-d = Path("results_api/p0")
+from src.backend.common.official_evaluation import load_jsonl
+from src.backend.common.base import METHODS
+d = Path("result/api/p0")
 ids = {}
 for m in METHODS:
     rows = load_jsonl(d / f"{m}.jsonl")
@@ -86,16 +86,16 @@ EOF
 ## 5. P0 官方评估（三指标）
 
 ```bash
-.venv_official/bin/python -m scripts.evaluate_official \
+.venv_official/bin/python -m src.backend.common.evaluate_official \
   --config configs/official_api.json --stage p0
 ```
-- 生成 `results_api/p0/{vector,lightrag,pathrag}_evaluated.jsonl`（version-2 协议，指纹复用 + `.bak` 归档）；
+- 生成 `result/api/p0/{vector,lightrag,pathrag}_evaluated.jsonl`（version-2 协议，指纹复用 + `.bak` 归档）；
 - `--check-only` 可离线查看可复用/待评行；`--force` 全量重评。
 
 ## 6. P1 全部三后端（120 题）
 
 ```bash
-.venv_official/bin/python -m scripts.run_official_experiment \
+.venv_official/bin/python -m src.backend.common.run_official_experiment \
   --config configs/official_api.json --stage p1 --backend all
 ```
 - 120 题 = FR 60 / CR 60（train 36 + val 12 + test 12 每类）；失败行自动重试、断点续跑；
@@ -104,10 +104,10 @@ EOF
 ## 7. P1 评估 + 路由分析
 
 ```bash
-.venv_official/bin/python -m scripts.evaluate_official --config configs/official_api.json --stage p1
-.venv_official/bin/python -m scripts.analyze_official  --config configs/official_api.json --stage p1
+.venv_official/bin/python -m src.backend.common.evaluate_official --config configs/official_api.json --stage p1
+.venv_official/bin/python -m src.router.analyze_official  --config configs/official_api.json --stage p1
 ```
-- `analyze_official` 产出 `results_api/p1/analysis/`：summary.json、silver_labels.jsonl、
+- `analyze_official` 产出 `result/api/p1/analysis/`：summary.json、silver_labels.jsonl、
   router_tuning.json、router_test_predictions.jsonl、router.joblib、quality_cost.png、router_confusion_matrix.png。
 
 正式评测的银标规则为：方法的 `answer_correctness` 必须不低于 `0.60`，并且不低于本题三种方法最高正确率减 `0.05`；满足条件的方法中按 token 成本、耗时和固定方法顺序选择银标。若本题没有方法达到 `0.60`，保留最高正确率方法作为 `all_failed` 兜底。
@@ -115,9 +115,9 @@ EOF
 ## 8. 结果检查
 
 ```bash
-wc -l results_api/p1/{vector,lightrag,pathrag}.jsonl          # 应各 120
-python3 -m json.tool results_api/p1/analysis/summary.json      # 三策略 + 路由指标
-ls results_api/p1/analysis/
+wc -l result/api/p1/{vector,lightrag,pathrag}.jsonl          # 应各 120
+python3 -m json.tool result/api/p1/analysis/summary.json      # 三策略 + 路由指标
+ls result/api/p1/analysis/
 ```
 
 ## 备注

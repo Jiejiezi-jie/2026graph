@@ -8,6 +8,23 @@ import tempfile
 import tarfile
 
 
+# Current layout (post 2026-09 restructure) first, pre-restructure paths second,
+# so bundles can still be exported from historical commits.
+INDEX_PREFIXES = ("result/api/indexes/", "results_api/indexes/")
+ROUTER_PATH_CANDIDATES = (
+    "result/api/p1/analysis/router.joblib",
+    "results_api/p1/analysis/router.joblib",
+)
+ADAPTER_SOURCES = (
+    "src/backend/common/base.py",
+    "src/backend/common/model_client.py",
+    "src/backend/vector/vector_backend.py",
+    "src/backend/lightRAG/lightrag_backend.py",
+    "src/backend/pathRAG/pathrag_backend.py",
+)
+LEGACY_ADAPTER_PREFIX = "src/official_backends/"
+
+
 def export_bundle(repo: Path, ref: str, output: Path):
     repo, output = repo.resolve(), output.resolve()
     if output.exists():
@@ -18,11 +35,14 @@ def export_bundle(repo: Path, ref: str, output: Path):
     names = git("ls-tree", "-r", "--name-only", commit).decode().splitlines()
     selected = {}
     for name in names:
-        if name.startswith("results_api/indexes/"):
-            selected[name] = "indexes/" + name.removeprefix("results_api/indexes/")
-        elif name.startswith("src/official_backends/") and name.endswith(".py"):
+        index_prefix = next((p for p in INDEX_PREFIXES if name.startswith(p)), None)
+        if index_prefix:
+            selected[name] = "indexes/" + name.removeprefix(index_prefix)
+        elif name in ADAPTER_SOURCES and name.endswith(".py"):
             selected[name] = "vendor/official_backends/" + name.rsplit("/", 1)[-1]
-        elif name == "results_api/p1/analysis/router.joblib":
+        elif name.startswith(LEGACY_ADAPTER_PREFIX) and name.endswith(".py"):
+            selected[name] = "vendor/official_backends/" + name.rsplit("/", 1)[-1]
+        elif name in ROUTER_PATH_CANDIDATES:
             selected[name] = "router.joblib"
         elif name.upper() in {"LICENSE", "LICENSE.MD", "LICENSE.TXT", "NOTICE"}:
             selected[name] = "vendor/" + name
@@ -66,7 +86,7 @@ def main():
     parser.add_argument("--repo", type=Path, required=True)
     parser.add_argument("--ref", default="origin/main")
     parser.add_argument("--legacy-router", action="store_true", help="保留旧 TF-IDF 选择头，仅用于旧提交")
-    parser.add_argument("--output", type=Path, default=Path(__file__).resolve().parents[1] / "backend/data/medical")
+    parser.add_argument("--output", type=Path, default=Path(__file__).resolve().parents[1] / "data/medical")
     args = parser.parse_args()
     manifest = export_bundle(args.repo, args.ref, args.output)
     if not args.legacy_router:
@@ -74,7 +94,7 @@ def main():
         install_router(args.repo, args.ref, args.output)
     print(f"Exported {len(manifest['files'])} files at commit {manifest['source_commit']}")
     print(f"Medical bundle: {args.output.resolve()}")
-    print("Next: run scripts/serve_web.py --medical-bundle PATH --check")
+    print("Next: run src/backend/scripts/serve_web.py --medical-bundle PATH --check")
 
 
 if __name__ == "__main__":

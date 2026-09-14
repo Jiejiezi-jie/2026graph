@@ -15,12 +15,12 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 from sklearn.model_selection import StratifiedKFold
 
-from src.official_analysis import choose_official_silver
-from src.official_backends.base import METHODS
-from src.official_evaluation import valid_evaluation
+from src.router.official_analysis import choose_official_silver
+from src.backend.common.base import METHODS
+from src.backend.common.official_evaluation import valid_evaluation
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 
 def resolve(path: str | Path) -> Path:

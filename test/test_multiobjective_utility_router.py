@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = (
     ROOT
-    / "results_shared_lightrag_expanded"
+    / "result/shared_expanded"
     / "p1"
     / "multiobjective_utility_router"
 )

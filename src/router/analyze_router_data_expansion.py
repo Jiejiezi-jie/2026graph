@@ -16,15 +16,15 @@ import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import StratifiedKFold
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from scripts.run_shared_graph_rule_grid import evaluate_candidates, score
-from src.official_analysis import choose_official_silver
-from src.official_backends.base import METHODS
-from src.official_backends.model_client import build_embedding_client
-from src.official_evaluation import valid_evaluation
+from src.router.run_shared_graph_rule_grid import evaluate_candidates, score
+from src.router.official_analysis import choose_official_silver
+from src.backend.common.base import METHODS
+from src.backend.common.model_client import build_embedding_client
+from src.backend.common.official_evaluation import valid_evaluation
 from src.router import build_router
 
 
@@ -193,7 +193,7 @@ def load_or_build_embeddings(
     else:
         baseline_cache = (
             ROOT
-            / "results_shared_lightrag_current_main/p1/analysis_inputs/question_embeddings.npz"
+            / "result/shared_current_main/p1/analysis_inputs/question_embeddings.npz"
         )
         if baseline_cache.exists():
             data = np.load(baseline_cache)

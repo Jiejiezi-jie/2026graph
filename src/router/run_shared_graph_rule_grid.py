@@ -15,51 +15,51 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 from sklearn.model_selection import StratifiedKFold
 
-from src.official_analysis import choose_official_silver
-from src.official_backends.base import METHODS
-from src.official_evaluation import valid_evaluation
+from src.router.official_analysis import choose_official_silver
+from src.backend.common.base import METHODS
+from src.backend.common.official_evaluation import valid_evaluation
 from src.router import build_router
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Run the 2 x 3 label-rule grid with TF-IDF and BGE-M3."
     )
-    parser.add_argument("--vector", type=Path, default=Path("results_api/p1/vector_evaluated.jsonl"))
-    parser.add_argument("--lightrag", type=Path, default=Path("results_api/p1/lightrag_evaluated.jsonl"))
+    parser.add_argument("--vector", type=Path, default=Path("result/api/p1/vector_evaluated.jsonl"))
+    parser.add_argument("--lightrag", type=Path, default=Path("result/api/p1/lightrag_evaluated.jsonl"))
     parser.add_argument(
         "--pathrag",
         type=Path,
-        default=Path("results_shared_lightrag_current_main/p1/pathrag_evaluated.jsonl"),
+        default=Path("result/shared_current_main/p1/pathrag_evaluated.jsonl"),
     )
     parser.add_argument(
         "--embeddings",
         type=Path,
         default=Path(
-            "results_shared_lightrag_current_main/p1/analysis_inputs/"
+            "result/shared_current_main/p1/analysis_inputs/"
             "question_embeddings.npz"
         ),
     )
     parser.add_argument(
         "--lightrag-graph",
         type=Path,
-        default=Path("results_api/indexes/lightrag/medical/graph_chunk_entity_relation.graphml"),
+        default=Path("result/api/indexes/lightrag/medical/graph_chunk_entity_relation.graphml"),
     )
     parser.add_argument(
         "--pathrag-graph",
         type=Path,
         default=Path(
-            "results_shared_lightrag_current_main/indexes/pathrag/"
+            "result/shared_current_main/indexes/pathrag/"
             "graph_chunk_entity_relation.graphml"
         ),
     )
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=Path("results_shared_lightrag_current_main/p1/analysis_threshold_margin_grid"),
+        default=Path("result/shared_current_main/p1/analysis_threshold_margin_grid"),
     )
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument(

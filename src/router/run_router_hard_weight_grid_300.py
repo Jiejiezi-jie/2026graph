@@ -15,13 +15,13 @@ import sklearn
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import StratifiedKFold
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from scripts.analyze_router_data_expansion import build_labels, resolve, route_policy, validate_and_merge
-from scripts.run_weighted_router_experiment import classify_weight, metrics, sha256
-from src.official_backends.base import METHODS
+from src.router.analyze_router_data_expansion import build_labels, resolve, route_policy, validate_and_merge
+from src.router.run_weighted_router_experiment import classify_weight, metrics, sha256
+from src.backend.common.base import METHODS
 from src.router import build_router
 
 

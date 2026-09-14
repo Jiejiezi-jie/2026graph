@@ -4,9 +4,9 @@ import json
 from collections import Counter
 from pathlib import Path
 
-from scripts.prepare_router_data_expansion import prepare
-from src.official_backends.base import METHODS
-from src.official_evaluation import valid_evaluation
+from src.backend.common.prepare_router_data_expansion import prepare
+from src.backend.common.base import METHODS
+from src.backend.common.official_evaluation import valid_evaluation
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -47,7 +47,7 @@ def test_expansion_is_disjoint_and_keeps_test_frozen(tmp_path: Path) -> None:
 
 
 def test_completed_expansion_is_aligned_with_baseline_protocol() -> None:
-    result_dir = ROOT / "results_shared_lightrag_expanded" / "p1"
+    result_dir = ROOT / "result/shared_expanded" / "p1"
     rows = {
         method: load_jsonl(result_dir / f"{method}_evaluated.jsonl")
         for method in METHODS
@@ -69,7 +69,7 @@ def test_completed_expansion_is_aligned_with_baseline_protocol() -> None:
         for row in method_rows
     }
     baseline_protocol = load_jsonl(
-        ROOT / "results_api" / "p1" / "vector_evaluated.jsonl"
+        ROOT / "result/api" / "p1" / "vector_evaluated.jsonl"
     )[0]["evaluation"]["protocol"]
     assert protocols == {baseline_protocol}
     assert all(row["split"] != "test" for row in rows["vector"])
@@ -78,7 +78,7 @@ def test_completed_expansion_is_aligned_with_baseline_protocol() -> None:
 def test_analysis_reproduces_baseline_and_keeps_frozen_test() -> None:
     path = (
         ROOT
-        / "results_shared_lightrag_expanded"
+        / "result/shared_expanded"
         / "p1"
         / "router_data_expansion"
         / "summary.json"
@@ -98,7 +98,7 @@ def test_analysis_reproduces_baseline_and_keeps_frozen_test() -> None:
 def test_weighted_expansion_reuses_prior_scheme_and_frozen_test() -> None:
     path = (
         ROOT
-        / "results_shared_lightrag_expanded"
+        / "result/shared_expanded"
         / "p1"
         / "weighted_router_data_expansion"
         / "summary.json"
