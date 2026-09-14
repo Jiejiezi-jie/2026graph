@@ -27,9 +27,97 @@ deps/{LightRAG,PathRAG}/  固定提交的精简上游依赖
 configs/               全部实验 JSON 配置
 ```
 
-关键文档:[file/P0_P1_RUNBOOK.md](file/P0_P1_RUNBOOK.md)、[file/MEDICAL_WORKBENCH.md](file/MEDICAL_WORKBENCH.md)、[file/WORKBENCH_README.md](file/WORKBENCH_README.md)、[file/MODEL_AUDIT.md](file/MODEL_AUDIT.md)、[file/SERVER_INTEGRATION_NOTES.md](file/SERVER_INTEGRATION_NOTES.md)。
+关键文档：[file/MEDICAL_WORKBENCH.md](file/MEDICAL_WORKBENCH.md)、[file/WORKBENCH_README.md](file/WORKBENCH_README.md)、[file/SERVER_INTEGRATION_NOTES.md](file/SERVER_INTEGRATION_NOTES.md)。历史追溯资料：[file/P0_P1_RUNBOOK.md](file/P0_P1_RUNBOOK.md)、[file/MODEL_AUDIT.md](file/MODEL_AUDIT.md)。
 
-## 阶段一：可复现离线代理实验(历史)
+## Quick Start
+
+以下命令都从仓库根目录执行。三条运行路线相互独立，建议分别创建环境：
+
+| 目标 | 环境 | 是否需要模型/API |
+|---|---|---|
+| 运行离线代理实验 | Python 3.11 | 不需要 GPU 和 LLM API |
+| 运行 Vector/LightRAG/PathRAG 正式实验 | Python 3.11 | 需要 BGE-M3；生成和评估需要 API Key |
+| 启动 Medical Web 工作台 | Python 3.10 + Node.js | 需要 BGE-M3；真实问答需要 API Key |
+
+三个运行环境统一使用 `scikit-learn==1.7.2`，LightRAG 统一从仓库内的
+`deps/LightRAG` 安装。需要运行测试时，在对应环境中额外安装：
+
+```bash
+python -m pip install -r requirements-dev.txt
+```
+
+### A. 离线代理实验
+
+这是最容易验证的完整流程，不会产生 API 费用：
+
+```bash
+conda create -n graph2026-proxy python=3.11 pip -y
+conda activate graph2026-proxy
+python -m pip install -r requirements.txt
+bash src/backend/common/fetch_benchmark.sh
+bash result/phase1_proxy/code/run_phase1.sh
+```
+
+### B. 正式三后端实验
+
+```bash
+conda create -n graph2026-official python=3.11 pip -y
+conda activate graph2026-official
+python -m pip install -r requirements-official-api.txt
+bash src/backend/common/fetch_benchmark.sh
+```
+
+将 BGE-M3 放在 `models/bge-m3/`，并仅通过环境变量提供密钥：
+
+```bash
+export DEEPSEEK_API_KEY='<your-key>'
+python -m src.backend.common.run_official_experiment \
+  --config configs/official_api.json --stage p0 --backend vector
+```
+
+上面的命令会调用外部 API。确认 Vector 小规模流程正常后，再运行 LightRAG、PathRAG
+或 `--backend all`。如果使用包装脚本，它默认调用 `.venv_official/bin/python`；
+也可以通过 `OFFICIAL_PYTHON` 指定当前环境的解释器：
+
+```bash
+OFFICIAL_PYTHON="$CONDA_PREFIX/bin/python" \
+  bash src/backend/common/run_official_local.sh --stage p0 --backend vector
+```
+
+### C. Medical Web 工作台
+
+```bash
+conda create -n medical-workbench python=3.10 pip -y
+conda activate medical-workbench
+python -m pip install -r requirements-medical.txt
+python src/backend/scripts/prepare_medical.py \
+  --repo . --ref HEAD --output src/backend/data/medical
+```
+
+将 BGE-M3 放在 `models/bge-m3/` 后，先执行不调用 API 的预检：
+
+```bash
+python src/backend/scripts/serve_web.py --check \
+  --medical-bundle src/backend/data/medical \
+  --medical-embedding-path models/bge-m3 \
+  --medical-pathrag-root deps/PathRAG
+```
+
+预检通过后去掉 `--check` 启动后端；另开终端启动前端：
+
+```bash
+cd src/frontend
+npm ci
+npm run dev
+```
+
+打开 `http://127.0.0.1:5173`，在页面的 API 设置中填写 DeepSeek Key。模型权重、
+API Key、运行时 bundle 和查询缓存都不会提交到 Git。
+
+## 阶段一：可复现离线代理实验（历史快照）
+
+> 本节用于解释最初的代理实验和既有结果，不代表当前正式后端的推荐配置。
+> 新用户请从上面的 Quick Start 开始。
 
 本项目把 Adaptive-RAG 的核心协议迁移到三个异构检索后端：
 
@@ -41,7 +129,7 @@ configs/               全部实验 JSON 配置
 
 ### 重要边界
 
-当前环境没有 LLM API、Ollama、GPU 和 Transformers，因此仓库中的首轮数字属于**检索层离线代理实验**：
+首轮实验环境没有 LLM API、Ollama、GPU 和 Transformers，因此该批数字属于**检索层离线代理实验**：
 
 - 使用真实 GraphRAG-Bench Medical 语料、问题、答案和证据；
 - 使用确定性的TF-IDF、文本块图扩散和路径搜索；
@@ -142,26 +230,22 @@ git clone --depth 1 \
   https://github.com/BUPT-GAMMA/PathRAG.git deps/PathRAG
 ```
 
-环境安装命令：
+建议创建独立环境：
 
 ```bash
-uv venv --python /home/user/.miniforge3/envs/qwen_saliency/bin/python \
-  --system-site-packages .venv_official
-uv pip install --python .venv_official/bin/python \
-  -e deps/LightRAG \
-  scikit-learn==1.7.2 matplotlib==3.10.6 joblib==1.5.2 \
-  rouge-score==0.1.2 json5 'langchain-core>=0.3,<2'
+conda create -n graph2026-official python=3.11 pip -y
+conda activate graph2026-official
+python -m pip install -r requirements-official-api.txt
 ```
 
-三个后端统一使用 `BAAI/bge-m3`（本机路径
-`/home/user/wangyuhan/models/bge-m3`）。Hugging Face 大文件通道在服务器
-代理下不稳定，因此从 BAAI ModelScope 官方镜像拉取同一权重：
+三个后端统一使用 `BAAI/bge-m3`，默认路径为 `models/bge-m3`。可从 BAAI
+ModelScope 官方镜像拉取同一权重：
 
 ```bash
 GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 \
   https://www.modelscope.cn/BAAI/bge-m3.git \
-  /home/user/wangyuhan/models/bge-m3
-git -C /home/user/wangyuhan/models/bge-m3 lfs pull \
+  models/bge-m3
+git -C models/bge-m3 lfs pull \
   --include='pytorch_model.bin,tokenizer.json,sentencepiece.bpe.model' \
   --exclude='onnx/**,colbert_linear.pt,sparse_linear.pt'
 ```
@@ -173,10 +257,9 @@ git -C /home/user/wangyuhan/models/bge-m3 lfs pull \
 Qwen2.5-VL-7B 的纯文本 5 问答 + 5 JSON 探针：
 
 ```bash
-CUDA_VISIBLE_DEVICES=1 PYTHONPATH=. conda run --no-capture-output \
-  -n qwen_saliency .venv_official/bin/python -m src.backend.common.probe_local_model \
+CUDA_VISIBLE_DEVICES=0 PYTHONPATH=. python -m src.backend.common.probe_local_model \
   --benchmark-dir data/vendor/GraphRAG-Benchmark \
-  --model-path /home/user/wangyuhan/models/Qwen2.5-VL-7B-Instruct \
+  --model-path models/Qwen2.5-VL-7B-Instruct \
   --device cuda:0 \
   --output result/official/model_probe_qwen25vl7b.json
 ```
@@ -185,9 +268,8 @@ P0 必须先完整通过（每类 5 题、三个后端）：
 
 ```bash
 bash src/backend/common/run_official_local.sh --stage p0 --backend all
-PYTHONPATH=. .venv_official/bin/python -m src.backend.common.validate_p0
-PYTHONPATH=. conda run --no-capture-output -n qwen_saliency \
-  .venv_official/bin/python -m src.backend.common.evaluate_official --stage p0
+PYTHONPATH=. python -m src.backend.common.validate_p0
+PYTHONPATH=. python -m src.backend.common.evaluate_official --stage p0
 ```
 
 LightRAG 完成全部 Chunk 的实体/关系抽取和图合并后，可校验并导出 GraphML：
@@ -205,9 +287,8 @@ P1 固定为每类 60 题，60%/20%/20% 划分在模型运行前冻结；runner 
 
 ```bash
 bash src/backend/common/run_official_local.sh --stage p1 --backend all
-PYTHONPATH=. conda run --no-capture-output -n qwen_saliency \
-  .venv_official/bin/python -m src.backend.common.evaluate_official --stage p1
-PYTHONPATH=. .venv_official/bin/python -m src.router.analyze_official --stage p1
+PYTHONPATH=. python -m src.backend.common.evaluate_official --stage p1
+PYTHONPATH=. python -m src.router.analyze_official --stage p1
 ```
 
 模型、GPU 和上游兼容性细节见 [file/MODEL_AUDIT.md](file/MODEL_AUDIT.md) 与
@@ -244,9 +325,9 @@ cd src/frontend && npm ci && npm run dev
 ## 测试
 
 ```bash
-python -m unittest discover -s test -v     # 官方流水线测试
-python -m pytest test/workbench -q        # 工作台测试(需 fastapi / pytest-asyncio / lightrag)
-cd src/frontend && npm run build           # 前端类型检查 + 生产构建
+python -m pip install -r requirements-dev.txt
+python -m pytest test -q                  # 官方流水线、选择头与工作台测试
+cd src/frontend && npm ci && npm run build # 前端锁定依赖、类型检查与生产构建
 ```
 
 根目录 `pytest.ini` 已设置 `pythonpath = . src/backend`,使 `src.*` 与工作台的 `app.*` 均可导入。

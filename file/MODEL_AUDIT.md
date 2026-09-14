@@ -1,5 +1,9 @@
 # Model and server audit
 
+> **历史环境审计。** 本页的用户名、绝对路径、GPU 编号和 Conda 环境名仅描述
+> 2026-09-04 当时的服务器，不是运行要求。通用安装方式见仓库根目录
+> [README.md](../README.md#quick-start)。
+
 Audit time: 2026-09-04 (Asia/Shanghai). Free-memory values are a point-in-time
 snapshot and may change on this shared machine.
 

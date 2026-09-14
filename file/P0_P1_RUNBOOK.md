@@ -1,5 +1,10 @@
 # lightRAG API 线补齐：P0 → P1 操作手册（2026-09-07 实测版）
 
+> **历史归档：不要将本页命令作为新机器的 Quick Start。** 本页记录旧
+> `.wt-lightrag` 工作树和特定服务器环境，用于追溯当时的 P0/P1 补跑过程，
+> 因而保留了旧路径、环境名和题量约束。当前通用安装与运行方式以仓库根目录
+> [README.md](../README.md#quick-start) 为准。
+>
 > 环境：`.wt-lightrag` worktree（HEAD `60ebc48`），Python venv `.venv_official`。
 > 目标：补齐 PathRAG（索引未完成 → 重建），对齐已有 vector/lightrag 结果，跑通 P0→P1→评估→路由分析。
 
@@ -37,7 +42,8 @@ export PYTHONPATH=/home/szj/2026graph/.wt-lightrag
 > ⚠️ 必须 `--p0-per-type 20`：config 默认 `p0_per_type=5`（10 题），会用 10 题覆盖 splits，
 > 破坏与现有 40 行 vector/lightrag 的对齐。实测 `--p0-per-type 20` 重写的 splits 与已提交的
 > `result/api/splits/*.jsonl` **逐字节顺序一致**（已验证）。
-> ⚠️ 不要用 `src/backend/common/run_official_local.sh`：它内部 `conda run -n qwen_saliency`，本机无此 env。
+> 历史说明：当时版本的 `run_official_local.sh` 写死了 `qwen_saliency` 环境，
+> 因此这次记录没有使用包装脚本；当前 main 已取消该硬编码。
 
 ```bash
 .venv_official/bin/python -m src.backend.common.run_official_experiment \

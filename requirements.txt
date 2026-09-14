@@ -1,8 +1,8 @@
+# Offline proxy experiment and shared router dependencies.
 joblib>=1.5,<2
 matplotlib>=3.10,<4
 numpy>=2.3,<3
 pandas>=2.2,<3
-scikit-learn>=1.8,<2
+scikit-learn==1.7.2
 scipy>=1.17,<2
 tiktoken>=0.7
-

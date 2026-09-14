@@ -5,5 +5,9 @@ project_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)"
 cd "$project_dir"
 export PYTHONPATH="$project_dir${PYTHONPATH:+:$PYTHONPATH}"
 
-exec conda run --no-capture-output -n qwen_saliency \
-  "$project_dir/.venv_official/bin/python" -m src.backend.common.run_official_experiment "$@"
+python_bin="${OFFICIAL_PYTHON:-$project_dir/.venv_official/bin/python}"
+if [[ ! -x "$python_bin" ]]; then
+  python_bin="${PYTHON:-python}"
+fi
+
+exec "$python_bin" -m src.backend.common.run_official_experiment "$@"
